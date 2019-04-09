@@ -1,4 +1,4 @@
-# visualisations
+# lomediehus/visualisations
 
 Visualiseringar att ladda in på LO Mediehus sajter.
 
