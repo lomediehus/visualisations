@@ -65,7 +65,6 @@ position: fixed;
   position: relative;
   /* z-index: 1; */
   margin-top: 70px;
-  min-height: 600px;
   /* background-image: url("bilder/jul.svg"); */
   /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/jul.svg"); */
   /* background-position: right -30px; */
@@ -74,7 +73,7 @@ position: fixed;
   margin-left: 16.67%;
   max-width: 948px;
   width: 100%;
-  min-height: 2053px;
+  min-height: 800px;
   /* background-attachment: scroll; */
   /* background-position: 0px 50px; */
 
