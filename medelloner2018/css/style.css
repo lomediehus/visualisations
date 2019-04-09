@@ -1,0 +1,395 @@
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+
+}
+
+body {
+  font: 12px sans-serif;
+  padding: 0px;
+  background-color: #f5f7f7;
+}
+
+h1 {
+  background-color: #1c3448;
+  color: white;
+  padding: 4px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 0 5px 0 5px;
+}
+
+h4 {
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  font-size: 1.4em;
+}
+
+h2 {
+}
+
+select {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.7em;
+  letter-spacing: 0px;
+}
+
+
+path {
+  stroke-width: 1px;
+  stroke: white;
+  fill: steelblue;
+  cursor: pointer;
+}
+
+path:hover, path.highlighted {
+  fill: tomato;
+}
+
+
+div.tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  padding: 4px 8px;
+  display: none;
+}
+
+button:active {
+  background-color: black;
+}
+
+table.tabellstil {
+  width: auto;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+label {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.4em;
+}
+
+
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* pointer-events: none; */
+}
+
+#jamforyrkediv {
+}
+
+#valjlandsting {
+  display: none;
+  margin-bottom: 10px;
+}
+
+#mintabell {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#mintabelldiv {
+  max-height: 225px;
+  overflow: auto;
+  position: relative;
+}
+
+
+#showmore {
+  position: relative;
+  bottom: 20px;
+
+  background: linear-gradient(rgba(10,10,10,0),rgba(10,10,10,1));
+
+  height: 20px;
+  line-height: 70px;
+  width: 100%;
+  pointer-events: none;
+  }
+
+
+input {
+  display: inline-block;
+}
+
+table.tabellstil th {
+  vertical-align: text-top;
+  padding: 5px 0px 0px 5px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 26px;
+  background-color: steelblue;
+
+  color: white;
+  overflow: auto;
+}
+
+
+table.tabellstil td {
+  vertical-align: text-top;
+  font-size: 1.5em;
+  padding: 0 0px 0 5px;
+  line-height: 28px;
+  overflow: auto;
+}
+
+
+table.karttabell {
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  line-height: 25px;
+}
+
+
+.karttabell td {
+  white-space: normal;
+  font-size:1em;
+  padding: 0 5px 0 5px;
+  line-height: 25px;
+  color: black;
+}
+
+
+tr:nth-child(odd) {
+  background-color: #b5cde1;
+}
+
+.bubbla:hover {
+  background-color: grey;
+}
+
+
+.bubblatext {
+    visibility: hidden;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    width: 130px;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    text-align: left;
+    position: absolute;
+    left: 30px;
+    padding: 10px;
+    z-index: 1;
+}
+
+#lansdiv {
+  position: relative;
+}
+
+#kartpopup {
+  display: none;
+  width: 50%;
+  min-width: 250px;
+  max-width: 450px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 2px solid black;
+  position: absolute;
+  left: 20%;
+  top: 80px;
+  z-index: 10;
+}
+
+#kartpopuprubbe {
+  width: 90%;
+}
+
+#kartpopup2 {
+  display: none;
+  width: 50%;
+  min-width: 215px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 2px solid black;
+  position: absolute;
+  left: 20%;
+  top: 680px;
+  z-index: 10;
+}
+
+#kartpopup p {
+  padding: 0px 10px 0px 10px;
+}
+
+span.closex {
+  font-size: 3em;
+  }
+
+span.closex:hover {
+  color: steelblue;
+}
+
+
+
+div.close {
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+
+
+
+.bold {
+  font-weight: bold;
+}
+
+
+.kartknappklass {
+  position: absolute;
+  top: 0px;
+  left: 60%;
+  border: 0;
+  box-shadow: 3px 3px 5px;
+  right: 10px;
+  width: 127px;
+  height: 127px;
+  border-radius: 65px;
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 1.1em;
+  z-index: 5;
+}
+
+.kartknappklass:hover {
+  background-color: #cccc00;
+}
+
+
+
+.knapprad {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-left: 1px;
+  padding-top: 10px;
+  left: 3px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+p.knapptext {
+  padding: 0px 3px 0px 3px;
+  margin: 0px;
+}
+
+#sortknapp button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+
+#sortknapp button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.sortknapp {
+  font-size: 1.5em;
+  height: 25px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #660000;
+  color: white;
+  /*font-weight: bold;*/
+  padding: 0 5px 0 5px;
+  border: 0;
+  margin: 0px;
+  text-align: left;
+  /*vertical-align: bottom;*/
+}
+
+.sortknapp:hover {
+  background-color: #cc0000;
+}
+
+#sortknapp button:first-child:hover {
+  background-color: #660000;
+
+}
+
+
+.mindre {
+  font-size: 80%;
+}
+
+
+
+#content {
+  width: 100%;
+  max-width: 732px;
+  padding: 0px;
+  background-color: #f5f7f7;
+}
+
+#lonlista {
+  width: 100%;
+}
+
+.psmal {
+  width: 40%;
+  position: absolute;
+  float: left;
+  font-size: 1.5em;
+  font-weight: 550;
+  background-color: white;
+  opacity: 0.8;
+  padding: 2px;mintabell
+}
+
+.pstor {
+  font-size: 1.5em;
+}
+
+table {
+    width: 400px; /* 140px * 5 column + 16px scrollbar width */
+    border-spacing: 0;
+}
+
+#searchfield {
+font-size: 20px;
+}
+
+/* #valjlandsting {
+  font-size: 20px;
+} */
+
+/* SVG stuff for the bar chart */
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  fill: #f5f7f7;
+  font: 14px sans-serif;
+  text-anchor: end;
+}

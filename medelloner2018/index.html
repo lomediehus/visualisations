@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Medelloner2018</title>
+  <html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Lon17</title>
+
+  <script src="d3.v3.min.js"></script>
+
+
+  <div id="content">
+      <h1>Löner i olika yrken</h1>
+    <!-- <h2> -->
+      <select id="valjyrke">
+        <option value="Väljyrke">Välj yrke</option>
+        <option value="Ambulanssjukvårdare">Ambulanssjukvårdare (landsting)</option>
+        <option value="Anläggningsarbetare">Anläggningsarbetare (kommun)</option>
+
+        <option value="Barnskötare">Barnskötare (kommun)</option>
+        <option value="Barnsköterska">Barnsköterska (landsting)</option>
+        <option value="Biträde">Biträde (landsting)</option>
+        <option value="Elevassistent">Elevassistent (kommun)</option>
+        <option value="Fastighetsskötare">Fastighetsskötare (kommun)</option>
+        <option value="Fordonsförare">Fordonsförare (kommun/landsting)</option>
+        <option value="Fotvårdsspecialist">Fotvårdsspecialist (landsting)</option>
+        <option value="Fritidsledare">Fritidsledare (kommun)</option>
+        <option value="Förrådsarbetare">Förrådsarbetare (landsting)</option>
+        <option value="Kock_kokerska">Kock-kokerska (kommun/landsting)</option>
+        <option value="Laboratoriebiträde">Laboratoriebiträde(landsting)</option>
+        <option value="Måltidspersonal">Måltidspersonal (kommun/landsting)</option>
+        <option value="Park-_och_trädgårdsarbetare">Park- och trädgårdsarbetare (kommun)</option>
+        <option value="Personlig_assistent">Personlig assistent (kommun)</option>
+        <option value="Skötare">Skötare (kommun/landsting)</option>
+        <option value="Städare">Städare (kommun/landsting)</option>
+        <option value="Undersköterska">Undersköterska (kommun/landsting)</option>
+        <option value="Vaktmästare">Vaktmästare (kommun/landsting)</option>
+        <option value="Vårdare">Vårdare (kommun)</option>
+        <option value="Vårdbiträde">Vårdbiträde (kommun)</option>
+      </select>
+    <!-- </h2> -->
+
+    <div id="overlay"></div>
+    <div id="kartdiv">
+
+      <div id="lansdiv">
+        <p class="psmal">Välj yrke i menyn ovan, klicka sen på ett län för att se lönerna i kommunerna och/eller landstinget-regionen.</p>
+        <div id="kartpopup">
+
+          <div id="kartpopuprubbe"></div>
+          <div class="close"><span id="closex" class="closex">&#10006;<span></div>
+          <table id="karttabell" class="karttabell"></table>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div id="lonlista">
+      <p class="pstor" id=valtyrkep>Välj yrke för att se lönelista.</p>
+
+      <input type="radio" name="alt" value="listKommuner" class="yrkesbutton" id="listKommuner"><label>kommuner</label>
+      <input type="radio" name="alt" value="listLandsting" class="yrkesbutton" id="listLandsting"><label >landsting</label>
+      <br>
+
+      <div id="sortknapp" class="knapprad">
+          <button class = sortknapp><p class="knapptext">Sortera på: </p></button><button id="sortKommun" class="sortknapp"><p class="knapptext">namn</p></button><button id="sortLonFall" class="sortknapp"><p class="knapptext">lön<span class="mindre"> &#9660;</p></span></button><button id="sortLonStig" class="sortknapp"><p class="knapptext">lön<span class="mindre"> &#9650;</p></span></button>
+
+      </div>
+      <div id="mintabelldiv" style="width:100%">
+        <table id="mintabell" class="tabellstil"></table>
+      </div>
+
+      <div id="showmore"></div>
+
+      </div>
+
+
+      <div></div>
+
+    <div id="jamforyrkediv">
+
+        <h1>Jämför yrken</h1>
+        <input type="radio" name="alt" value="kommuner" class="yrkesbutton"><label id="kommuner">kommuner</label>
+        <input type="radio" name="alt" value="landsting" class="yrkesbutton"><label id="landsting">landsting</label>
+        <p class="pstor" id="yrkep">Visar <span id="yrkesspan">genomsnitt för alla kommuner.</span></p>
+        <p class="input pstor" id="sokkommun">Sök kommun</h2>
+        <input type="text" name="search" placeholder="Kommun" id="searchfield"></p>
+
+          <select id="valjlandsting">
+          <option value="RIKSSNITT">Välj landsting</option>
+          <option value="Landstinget Blekinge">Landstinget Blekinge</option>
+          <option value="Landstinget Dalarna">Landstinget Dalarna</option>
+
+          <option value="Landstinget i Kalmar län">Landstinget i Kalmar län</option>
+          <option value="Landstinget i Värmland">Landstinget i Värmland</option>
+          <option value="Landstinget Sörmland">Landstinget Sörmland</option>
+          <option value="Landstinget Västernorrland">Landstinget Västernorrland</option>
+          <option value="Region Gotland">Region Gotland</option>
+          <option value="Region Gävleborg">Region Gävleborg</option>
+          <option value="Region Halland">Region Halland</option>
+          <option value="Region Jämtland Härjedalen">Region Jämtland Härjedalen</option>
+          <option value="Region Jönköpings län">Region Jönköpings län</option>
+          <option value="Region Kronoberg">Region Kronoberg</option>
+          <option value="Region Norrbotten">Region Norrbotten</option>
+          <option value="Region Skåne">Region Skåne</option>
+          <option value="Region Uppsala">Region Uppsala</option>
+          <option value="Region Västmanland">Region Västmanland</option>
+          <option value="Region Örebro län">Region Örebro län</option>
+          <option value="Region Östergötland">Region Östergötland</option>
+          <option value="Stockholms läns landsting">Stockholms läns landsting</option>
+          <option value="Västerbottens läns landsting">Västerbottens läns landsting</option>
+          <option value="Västra Götalandsregionen">Västra Götalandsregionen</option>
+        </select>
+
+        <div id="yrken">
+          <table id="yrkestabell" class="tabellstil"></table>
+          <svg class="chart" id="chart"></svg>
+        </div>
+      </div>
+</div>
+
+
+
+<script type="text/javascript">
+    var sokvagYrkeslon = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/kommunloner18.json";
+    var sokvagYrkesLandsting = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/landstingsloner18.json"
+    var sokvagGeografi = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/SverigesLan.geojson"
+</script>
+
+
+<script src="lon17.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/d3.v3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
