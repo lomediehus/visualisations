@@ -4,7 +4,7 @@ Visualiseringar att ladda in på LO Mediehus sajter.
 
 ## Instruktioner
 
-Se en demo-film här: https://visualiseringar.lomediehus.se/visualisations.webm
+Se en demo-film här: https://lomediehus.github.io/visualisations/visualisations.webm
 
 1. Förbered en mapp med koden, t.ex. genom att exportera som zip från CodePen.
 
@@ -12,7 +12,7 @@ Se en demo-film här: https://visualiseringar.lomediehus.se/visualisations.webm
 
 3. Vänta på att filerna laddas upp, skriv eventuellt ett loggmeddelande och klicka på "Commit changes"
 
-4. Om mappen heter t.ex. `mitt-projekt` kommer filerna att finnas tillgängliga på https://visualiseringar.lomediehus.se/mitt-projekt (det kan ta någon minut innan de dyker upp)
+4. Om mappen heter t.ex. `mitt-projekt` kommer filerna att finnas tillgängliga på https://lomediehus.github.io/visualisations/mitt-projekt (det kan ta någon minut innan de dyker upp)
 
 ### Uppdatera
 
