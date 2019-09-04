@@ -205,7 +205,7 @@ svg.call(zoom);
 
 
 
-d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/worldmap.geojson",function(error,geodata) {
+d3.json(""https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/custom.geo.json"",function(error,geodata) {
   if (error) return console.log(error); //unknown error, check the console
 
   //Create a path for each map feature in the data
