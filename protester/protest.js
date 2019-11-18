@@ -102,7 +102,7 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/protester_orter.js
   }
 );
 
-d3.json("sverige.geojson",function(error,geodata) {
+d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/sverige.geojson",function(error,geodata) {
   if (error) return console.log(error); //unknown error, check the console
 
   //Create a path for each map feature in the data
