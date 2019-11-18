@@ -1,0 +1,52 @@
+[
+  {
+    "Stad": "Luleå, Norrbotten, Sweden",
+    "lat": 65.584816,
+    "long": 22.156704
+  },
+  {
+    "Stad": "Trollhättan, Sweden",
+    "lat": 58.283489,
+    "long": 12.285821
+  },
+  {
+    "Stad": "Västerås, Sweden",
+    "lat": 59.611366,
+    "long": 16.545025
+  },
+  {
+    "Stad": "Umeå, Sweden",
+    "lat": 63.825848,
+    "long": 20.263035
+  },
+  {
+    "Stad": "Norrköping, Östergötland, Sweden",
+    "lat": 58.588455,
+    "long": 16.188313
+  },
+  {
+    "Stad": "Stockholm, Sweden",
+    "lat": 59.334591,
+    "long": 18.06324
+  },
+  {
+    "Stad": "Uddevalla, Sweden",
+    "lat": 58.351307,
+    "long": 11.885834
+  },
+  {
+    "Stad": "Västervik, Sweden",
+    "lat": 57.751442,
+    "long": 16.628838
+  },
+  {
+    "Stad": "Gothenburg, Sweden",
+    "lat": 57.70887,
+    "long": 11.97456
+  },
+  {
+    "Stad": "Visby, Gotland Island, Sweden",
+    "lat": 57.6348,
+    "long": 18.29484
+  }
+]
