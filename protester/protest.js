@@ -78,7 +78,7 @@ var tooltip = d3.select("body").append("div").attr("class","tooltip");
 
 
 //read the file of cities
-d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/protester_orter.json", function(error, data)
+d3.json("protester_orter.json", function(error, data)
   {
     //add circles
     svg
