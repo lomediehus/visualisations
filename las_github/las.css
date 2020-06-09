@@ -43,3 +43,7 @@ body {
 .kursiv {
   font-style: italic;
 }
+
+strong.bigger {
+  font-size: 16px;
+}
