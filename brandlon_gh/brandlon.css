@@ -1,0 +1,253 @@
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  background-color: #f5f7f7;
+}
+
+div#header {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+div#header h1 {
+  display: block;
+}
+
+/* borders of the map. Fill is set in js code */
+path {
+  stroke-width: 0.2px;
+  stroke: white;
+  cursor: pointer;
+}
+
+path:hover, path.highlighted {
+  fill: #a9aaaa;
+}
+
+div.tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 4px 8px;
+  display: none;
+}
+
+button:active {
+  background-color: black;
+}
+
+table.tabellstil {
+  width: auto;
+  text-align: left;
+}
+
+label {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.4em;
+}
+
+/* .aboveOverlay {
+  position: relative;
+  z-index: 3;
+} */
+
+#mintabell {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+#mintabelldiv {
+  overflow: auto;
+  position: relative;
+}
+
+table.tabellstil thead {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+table.tabellstil thead td {
+  vertical-align: text-top;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 28px;
+  background-color: #a9aaaa;
+  color: white;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
+}
+
+table.tabellstil thead td:hover {
+  background-color: #878888;
+}
+
+table.tabellstil th {
+  vertical-align: text-top;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 26px;
+  background-color: #a9aaaa;
+  color: white;
+  overflow: auto;
+}
+
+table.tabellstil td {
+  vertical-align: text-top;
+  font-size: 18px;
+  line-height: 28px;
+  overflow: auto;
+}
+
+tr:nth-child(odd) {
+  background-color: #ddebeb;
+}
+
+#kartdiv {
+  height: 670px;
+  position: relative;
+}
+
+#kartpopup {
+  display: none;
+  width: 50%;
+  width: 300px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  z-index: 10;
+}
+
+#kartpopup p {
+  padding: 0px 10px 0px 10px;
+}
+
+#tabellpopup {
+  display: none;
+  width: 50%;
+  min-width: 250px;
+  max-width: 450px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  left: 20%;
+  top: 80px;
+  z-index: 10;
+  padding-top: 10px;
+}
+
+#tabellpopuptext {
+  padding: 10px;
+}
+
+
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 30px;
+}
+
+div.close {
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.basecontainer {
+  width: 360px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#searchfield {
+font-size: 20px;
+}
+
+/* SVG stuff for the bar chart */
+.chart rect {
+  fill: #ffeb76;
+  /* filter: drop-shadow(3px 0px 2px gray);
+  -webkit-filter: drop-shadow(3px 0px 2px gray); */
+}
+
+.chart text {
+  fill: black;
+  /* font: 14px sans-serif; */
+  text-anchor: end;
+}
+
+/* nya för brandmannalöner */
+span.pil {
+  color: grey;
+  text-shadow: grey;
+  font-size: 1em;
+}
+
+p.tabellkommuner {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+p.invisible {
+  display: none;
+}
+
+text.legend {
+  font-size: 0.6em;
+}
+
+#jamforyrkediv {
+  min-height: 600px;
+  max-height: 770px;
+  margin-right: 0px;
+}
+
+#jamforyrkediv h1 {
+  margin-bottom: 10px;
+}
+
+
+p .nomargin {
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 1120px) {
+  /* don't use "space between" on smaller screens since it doesn't look good when the third box jumps down and leaves only two boxes visible on top */
+  #content {
+    justify-content: flex-start; }
+}
