@@ -1,0 +1,94 @@
+body {
+  background-color: #f5f7f7;
+  }
+
+
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+
+h1.u-textMetaDeca {
+  font-size: 30px;
+}
+
+.scene {
+  /* width: 500px; */
+  width: 100%;
+
+  /* height: 260px; */
+  /* border: 1px solid #CCC; */
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  /* width: 400px; */
+  width: 100%;
+
+  height: 300px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  /* transparent border since padding doesn't seem to work with a background image that covers */
+  border-bottom: 10px solid transparent;
+
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* line-height: 260px; */
+  /* color: white; */
+  text-align: center;
+  /* font-weight: bold; */
+  /* font-size: 40px; */
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+span.underline {
+  background-color: rgba(116, 178, 178, 0.8);
+  display: block;
+  /* font-weight: bold; */
+  font-size: 24px;
+  /* padding: 10px; */
+}
+
+.card__face--front {
+  /* background-image: url("https://cdn.ka.se/app/uploads/sites/5/2020/04/22144329/colourbox29074732-scaled.jpg"); */
+  background-size: cover;
+  /* height: 260px; */
+  /* background: red; */
+}
+
+.card__face--back {
+  background: #e3e5e5;
+  transform: rotateY(180deg);
+  /* background-size: cover; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+img.graf {
+  /* position: absolute;
+  top: 20px; */
+  height: 80%;
+}
+
+span.byline {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.hidden {
+  display: none;
+}
