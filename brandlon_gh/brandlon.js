@@ -121,8 +121,8 @@ close.addEventListener("click", function() {
 
 //Reading a file
 $.ajax({
-        url: "brandlon.json",
-        // url: "https://assets.codepen.io/2076398/brandlon.json",
+        // url: "brandlon.json",
+        url: "https://assets.codepen.io/2076398/brandlon.json",
 
         dataType: "json",
         mimeType: "application/json",
@@ -285,8 +285,8 @@ function makeMap(data) {
   var bana = d3.geoPath().projection(projection);
 
   //read the file, which is specific data joined with a file of sveriges kommuner
-  var map = d3.json("brandlon_karta.geojson");
-  // var map = d3.json("https://assets.codepen.io/2076398/brandlon_karta.geojson");
+  // var map = d3.json("brandlon_karta.geojson");
+  var map = d3.json("https://assets.codepen.io/2076398/brandlon_karta.geojson");
 
   //Create a tooltip, hidden at the start
   var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
