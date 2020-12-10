@@ -10,6 +10,7 @@ var tabellpopup = document.getElementById('tabellpopup');
 var tabellpopuptext = document.getElementById('tabellpopuptext');
 var close2 = document.getElementById('closex2');
 
+//array for the bar graph
 var yrken = [
   {
     "yrke": "Lärarassistent",
@@ -113,14 +114,15 @@ var yrken = [
   }
 ]
 
+//close the popup by clicking the "x"
 close.addEventListener("click", function() {
   kartpopup.style.display = "none";
 })
 
 //Reading a file
 $.ajax({
-        // url: "brandlon.json",
-        url: "https://assets.codepen.io/2076398/brandlon.json",
+        url: "brandlon.json",
+        // url: "https://assets.codepen.io/2076398/brandlon.json",
 
         dataType: "json",
         mimeType: "application/json",
@@ -142,8 +144,9 @@ function maketable(data) {
     let lonform;
     //format number and assign result to variable "lonform", if there is a number to format, otherwise lonform will be assigned the value "*"
     row.Lon === '' ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&nbsp;");
-    let kommunerna = '';
-    kommunerna = row.Kommunlista.join(', ');
+    //make a string out of array Kommunlista
+    let kommunerna = row.Kommunlista.join(', ');
+    //create the table
     let rad = tabell.insertRow();
     let cell1 = rad.insertCell(0);
     let cell2 = rad.insertCell(1);
@@ -159,7 +162,6 @@ function maketable(data) {
     //Text to add if there is a note
     if (row.Fotnot != '') {
       cell1.innerHTML += "<p class='tabellkommuner'>(" + row.Fotnot + ")</p>"
-      console.log(row.Raddningstjanst)
     }
 
     //html for the second table cell
@@ -174,7 +176,7 @@ function maketable(data) {
 
   })
 
-  //Create and insert the table head and give the heades the classes needed to make clickable, thereby sorting the table
+  //Create and insert the table head and give the headers the classes needed to make clickable, thereby sorting the table
   let header = tabell.createTHead();
   let row = header.insertRow(0);
   let cell1 = row.insertCell(0);
@@ -283,8 +285,8 @@ function makeMap(data) {
   var bana = d3.geoPath().projection(projection);
 
   //read the file, which is specific data joined with a file of sveriges kommuner
-  // var map = d3.json("brandlon_karta.geojson");
-  var map = d3.json("https://assets.codepen.io/2076398/brandlon_karta.geojson");
+  var map = d3.json("brandlon_karta.geojson");
+  // var map = d3.json("https://assets.codepen.io/2076398/brandlon_karta.geojson");
 
   //Create a tooltip, hidden at the start
   var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
@@ -349,6 +351,7 @@ function makeMap(data) {
 
   //this is what happens when you click a certain kommun.
   function clicked(d,i) {
+    //store the property Räddningstjänst of the clicked element
     let grupp = d.properties.Räddningstjänst;
     //Conditional to assign a value to "lon". if there is a lön, i.e. not the string #SAKNAS! in the field, format the lön and assign it. Otherwise assign an string to explain why there is no lön.
     let lon = (d.properties.Lön != '#SAKNAS!') ? $.number(d.properties.Lön, 0, ',', "&nbsp;") + ' kr/mån': 'Lönen visas inte eftersom räddningstjänsten har färre än fem anställda.';
