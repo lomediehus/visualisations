@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Begravning</title>
+    <link rel="stylesheet" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css" type="text/css">
+    <link rel="stylesheet" href="begravning.css" type="text/css">
+
+
+</head>
+
+
+<body>
+
+  <div id="fixit">
+
+
+
+
+    <div class="red" id="header">
+      <div class="modefield" id="modefieldLeft"><span class="u-textMetaDeca u-textStrong modebutton" id="modebuttonLeft">Sök avtal efter yrke</span></div>
+
+      <div class="modefield" id="modefieldRight"><span class="u-textMetaDeca u-textStrong modebutton passive" id="modebuttonRight">Alla avtal</span></div>
+    </div>
+  </div>
+
+
+
+  <!-- <div id="mainContent" class="paddingTop10"> -->
+    <div id="mainContent">
+
+
+
+    <div id=sokYrkeWrapper>
+
+      <p>Skriv ditt yrke i rutan för att hitta ditt avtal:</p>
+
+      <form autocomplete="off">
+
+        <div class="autocomplete" style="width:200px;">
+          <input id="sokYrkeKnapp" type="text" name="mittYrke" placeholder="Yrke" class="u-textMeta yrkeInput">
+        </div>
+        <button type="button" id="searchButton" class="u-textMeta u-textStrong Button lessPadding">Sök</button>
+      </form>
+
+
+      <div id="resultdiv"></div>
+
+      <!-- Här presenteras resultaten -->
+      <div id="messagediv">
+      </div>
+    </div>
+
+    <div id="allaAvtalWrapper">Alla avtal</div>
+  </div>
+
+  <div id="bottom" class="u-textMeta">Kommunal har cirka 60 avtal. Om ditt avtal inte är med här, eller om du inte vet vilket avtal du tillhör, kan du kontakta ditt lokala fack eller <a href="https://www.kommunal.se/kommunal-direkt" target="blank">Kommunal direkt</a>.</div>
+
+
+  <!-- <script src="avtal_ob_test_2018.js"></script> -->
+  <script src="jquery-3.1.1.min.js"></script>
+  <!-- <script src="nyarsavtal.js"></script>
+  <script src="julavtal.js"></script>
+  <script src="trettonhelgsavtal.js"></script> -->
+  <script src="begravning_avtalen.js"></script>
+
+  <script src="begravning.js"></script>
+
+
+
+</body>
