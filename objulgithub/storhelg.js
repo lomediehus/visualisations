@@ -4,16 +4,16 @@ let kombo = [];
 
 //read data from files into arrays
 $.ajax({
-        url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
-        // url: "OBavtal.json",
+        // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
+        url: "OBavtal.json",
         dataType: "json",
         mimeType: "application/json",
         success: function (data) {
             filearray.push(...data)
 
             $.ajax({
-                    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal_tillagg.json",
-                    // url: "OBavtal_tillagg.json",
+                    // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal_tillagg.json",
+                    url: "OBavtal_tillagg.json",
                     dataType: "json",
                     mimeType: "application/json",
                     success: function (data) {
@@ -137,7 +137,7 @@ function doStuff() {
     //if current date is also after nyar
     if (date.getTime() > trettonhelgsdatum.getTime()) {
       document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/trettonhelg.svg';
-      goActive(helgknapp6);
+      goActive(helgknapp3);
       helgnr = "3";
     }
     else {
@@ -347,7 +347,6 @@ function doStuff() {
   //complete list of yrken
   var yrken = [ "administratör", "aktiveringsassistent", "aktiveringspedagog", "aktivitetsledare", "ambulanssjukvårdare", "anläggningsarbetare", "arbetshandledare", "arbetsledare", "assistent/församlingsarbete", "avbytare", "badmästare", "badpersonal", "banarbetare", "barnskötare", "barnsköterska", "barntimmeledare", "behandlare", "behandlingsassistent", "biträden", "boendeassistent", "boendehandledare", "boendestödjare", "brandman", "buss övriga", "bussförare", "butikspersonal", "chaufför", "diakoniassistent", "djurskötare", "driftsledare", "ekonomibiträde", "elevassistent", "fastighetsskötare", "fordonsförare", "fotvårdare", "fritidsledare", "fältarbetare", "fönsterputsare", "förrådsarbetare", "församlingshemsvärd", "garagepersonal", "habiliteringsassistent", "habiliteringsbiträde", "habiliteringspedagog", "habiliteringspersonal", "handledare", "husmor", "hästskötare", "instruktör", "internlärare", "kock", "kokerska", "kontorsvaktmästare", "kundtjänstmedarbetare", "kyrkogårdsarbetare", "kyrkogårdsföreståndare", "kyrkvaktmästare", "köksbiträde", "kökspersonal", "laboratoriebiträde", "lagerarbetare", "lantarbetare", "ledsagare", "logopedassistent", "lokalvårdare", "maskinförare", "maskinskötare", "medlevare", "mekaniker", "montör", "motorfordonsmekaniker", "måltidspersonal", "obduktionstekniker", "omsorgsassistent", "park- och trädgårdsarbetare", "personlig assistent", "receptionist", "renhållningsarbetare", "reparatör", "ridlärare", "serveringsbiträde", "servicevärd", "sjukgymnastassistent", "skötare", "socialpedagog", "spårvagnsförare", "städare", "stödassistent", "stödbiträde", "stödpedagog", "stödpersonal", "teamledare", "traktorförare", "tvätteribiträde", "tvätterimedarbetare", "tvättmaskinskötare", "undersköterska", "ungdomsassistent", "ungdomsledare", "vaktmästare", "verkstadspersonal", "vård- och omsorgspersonal", "vårdare", "vårdbiträde"]
 
-  console.log(yrken.length)
 
 
   //invoke autocomplete function
