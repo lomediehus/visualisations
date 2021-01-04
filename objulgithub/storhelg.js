@@ -4,16 +4,16 @@ let kombo = [];
 
 //read data from files into arrays
 $.ajax({
-        // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
-        url: "OBavtal.json",
+        url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
+        // url: "OBavtal.json",
         dataType: "json",
         mimeType: "application/json",
         success: function (data) {
             filearray.push(...data)
 
             $.ajax({
-                    // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal_tillagg.json",
-                    url: "OBavtal_tillagg.json",
+                    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal_tillagg.json",
+                    // url: "OBavtal_tillagg.json",
                     dataType: "json",
                     mimeType: "application/json",
                     success: function (data) {
