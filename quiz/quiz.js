@@ -36,7 +36,9 @@ $.ajax({
             content.innerHTML += makeMarkup(index);
             }
           //add submit button
-          content.innerHTML += "<button id='submitButton' class='Button'>Se ditt resultat</button>"
+          content.innerHTML += "<button id='submitButton' class='Button'>Se ditt resultat</button>";
+
+          informHeight();
 
           var submitButton = document.getElementById("submitButton");
           submitButton.addEventListener("click", function(){
