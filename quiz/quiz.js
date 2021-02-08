@@ -34,6 +34,8 @@ $.ajax({
 
           function fillContent(item, index) {
             content.innerHTML += makeMarkup(index);
+            informHeight();
+
             }
           //add submit button
           content.innerHTML += "<button id='submitButton' class='Button'>Se ditt resultat</button>";
@@ -117,7 +119,6 @@ $.ajax({
 
           clickButton();
 
-          informHeight();
 
           // function addAnswer() {
           //   console.log('addAnswer')
