@@ -38,7 +38,7 @@ $.ajax({
           //add submit button
           content.innerHTML += "<button id='submitButton' class='Button'>Se ditt resultat</button>";
 
-          informHeight();
+
 
           var submitButton = document.getElementById("submitButton");
           submitButton.addEventListener("click", function(){
@@ -116,6 +116,8 @@ $.ajax({
           }
 
           clickButton();
+
+          informHeight();
 
           // function addAnswer() {
           //   console.log('addAnswer')
