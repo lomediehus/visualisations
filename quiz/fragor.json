@@ -1,0 +1,36 @@
+[
+  {
+      "divid": "fraga1",
+      "rubrik": "Fråga 1",
+      "fraga": "Här är ett nytt litet hus på Uvö i Stockholms skärgård. Vem äger huset?",
+      "alt1": "Elin och Håkan",
+      "value1": "rätt",
+      "symbol1": "&#10004;",
+      "alt2": "Erik",
+      "value2": "fel",
+      "symbol2": "&#x274C;",
+      "alt3": "Donald Trump",
+      "value3": "fel",
+      "symbol3": "&#x274C;",
+      "svar": "Det fina, nya lilla huset ägs av Elin och Håkan. De är jätteglada över att de har ett litet hus."
+
+
+  },
+  {
+      "divid": "fraga2",
+      "rubrik": "Fråga 2",
+      "fraga": "Vilket vädersträck är bilden tagen mot?",
+      "alt1": "Nordost",
+      "value1": "fel",
+      "symbol1": "&#x274C;",
+      "alt2": "Sydväst",
+      "value2": "rätt",
+      "symbol2": "&#10004;",
+      "alt3": "Syd",
+      "value3": "fel",
+      "symbol3": "&#x274C;",
+      "svar": "Bilden är tagen mot sydväst. Det betyder att vi kommer att ha eftermiddagssol när vi sitter på uteplatsen och fikar. "
+
+
+  }
+]
