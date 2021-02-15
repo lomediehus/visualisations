@@ -1,11 +1,4 @@
-function getDocumentHeight() {
-    console.log("hej")
-    return Math.max(
-      body.offsetHeight
-    );
-  }
-  
-  
+
   let quizName = "Arbetsmiljötestet"
   
   var root = document.body;
