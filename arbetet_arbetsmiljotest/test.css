@@ -1,0 +1,122 @@
+
+body {
+    background: #f9f8f2;
+}
+
+.container {
+  border-left-style: solid;
+  border-top-style: solid;
+  border-width: 0px;
+  border-color: red;
+  max-width: 500px; 
+}
+
+
+
+.slidecontainer { 
+  margin-bottom: 75px;
+}
+
+
+.buttondiv {
+    width: 100%;
+}
+
+.questionBox {
+  font-size: 130%;
+}
+
+.bubbledLeft{
+  font-size: 90%;
+  margin-top: 20px;
+    padding: 5px 9px;
+    clear: both;
+    position: relative;
+  bottom: 0;
+  width: 65%;
+  
+  left: 75px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -o-border-radius: 8px 8px 8px 8px;
+    -ms-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #e7e6e0;
+}
+.textBlock {
+  display: block;
+  position: relative;
+}
+
+.messageBox {
+  max-width: 350px;
+  min-height: 60px;
+  position: relative;
+  display: block;
+}
+
+.messageImg {
+  position: absolute;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+}
+
+.bubbledLeft:before {
+    border-bottom: 10px solid #e7e6e0;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 25px;
+    left: -8px;
+    content: "";
+}
+
+button {
+  display: block;
+}
+
+.Button:hover {
+  background-color: #ee492e;
+}
+
+.noUi-handle {
+  background: #ee492e;
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.noUi-target {
+  background: rgb(199, 198, 193);;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  padding: 0 17px;
+}
+
+.noUi-pips {
+  left: 17px;
+  width: calc(100% - 34px);
+}
+
+.noUi-connects {
+    margin: 0 -17px;
+    width: calc(100% + 34px);
+}
+
+.noUi-value-horizontal {
+  padding-top: 5px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+
