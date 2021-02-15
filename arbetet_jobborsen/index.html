@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://arbetet.se/app/themes/lo-mediehus/assets/stylesheets/codepen/arbetet.css">
+    <link rel="stylesheet" type="text/css" href="jobborsen.css">
+    <script src="https://arbetet.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+    <script src="chart.js"></script>
+    <script src="d3.v4.min.js"></script>
+    <script src="jobborsen.js"></script>
+</head>
+
+
+
+
+<body>
+
+
+
+    <div id="arbring" class="ringbox u-spacingBottomM">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+<div id="arbetsloshet-allt"></div>
+
+<div class="chart">
+<canvas id="arbchart"></canvas></div>
+<p class="u-textMeta">Grafen visar arbetslösheten månadsvis (i procent) för gruppen 15-74 år. Siffrorna är säsongsrensade, alltså utjämnade för variationer under året.</p>
+
+
+<div id="langarbetsloshet-allt"></div>
+
+
+<div class="chart">
+    <div id="langring" class="ringbox u-spacingBottomM"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+
+    <canvas id="langchart"></canvas></div>
+<p class="u-textMeta">Grafen visar andelen personer som varit arbetslösa i minst ett halvår (i procent) av alla arbetslösa, månadsvis för gruppen 15-74 år. Siffrorna är inte säsongsrensade och varierar därför stort under året.</p>
+
+<div id="ungdomsarbetsloshet-allt"></div>
+
+
+
+<div class="chart">
+    <div id="ungring" class="ringbox u-spacingBottomM"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+
+    <canvas id="ungchart"></canvas>
+</div>
+<p class="u-textMeta">Grafen visar arbetslösheten månadsvis över tid för gruppen 15-24 år. Siffrorna är inte säsongsrensade och varierar därför stort under året.</p>
+
+
+<div id="utin-allt"></div>
+
+<div class="chart">
+    <div id="utring" class="ringbox u-spacingBottomM"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+
+    <canvas id="utinchart"></canvas></div>
+<p class="u-textMeta">Grafen visar arbetslösheten för inrikes och utrikes födda, 15-74 år i procent samt skillnaden mellan grupperna i procentenheter. Siffrorna är inte säsongsrensade och varierar därför stort under året.</p>
+
+
+<div id="nyckeltal-allt"></div>
+
+<h2 class="u-textMetaDeca u-spacingBottomS u-spacingTopM">Arbetslöshetssiffrorna nedbrutna</h2>
+<div class="waffle-div u-textMeta u-spacingBottomL u-spacingTopXL">
+    <h2 class="u-textMetaDeca" style="color: #80807d">Arbetskraften</h2>
+<span id="arbetskraften_avtusen"></span> av 1 000 svenskar mellan 15 och 74 år var en del av arbetskraften i den senaste undersökningen.
+
+<figure class="waffle1 waffle" ></figure>
+
+
+<h2 class="u-textMetaDeca" style="color: #ee492e">Arbetslösa</h2>
+<span id="arbetslosa_avtusen"> </span> av dem var arbetslösa under samma månad.
+
+<figure class="waffle2 waffle"></figure>
+
+
+<h2 class="u-textMetaDeca" style="color: #00805e">Sysselsatta</h2>
+
+
+<span id="sysselsatta_avtusen"></span> räknades som sysselsatta. Även de var en del av arbetskraften.
+
+<figure class="waffle4 waffle"></figure>
+
+</div>
+
+</body>
+</html>
