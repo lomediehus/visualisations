@@ -1,0 +1,149 @@
+body {
+  background-color: #f5f7f7;
+  }
+
+
+
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+
+h1.u-textMetaDeca {
+  font-size: 30px;
+}
+
+.scene {
+  /* width: 500px; */
+  width: 100%;
+
+  /* height: 260px; */
+  /* border: 1px solid #CCC; */
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  /* width: 400px; */
+  width: 100%;
+  max-width: 300px;
+
+  height: 300px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  /* transparent border since padding doesn't seem to work with a background image that covers */
+  /* border-bottom: 10px solid transparent; */
+  border: 10px solid transparent;
+  display: inline-block;
+  /* padding: 20px; */
+
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* line-height: 260px; */
+  /* color: white; */
+
+  /* font-weight: bold; */
+  /* font-size: 40px; */
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+span.underline {
+  background-color: rgba(116, 178, 178, 0.8);
+  background-color: #64a9a9;
+  display: block;
+  /* position: absolute; */
+  width: 300px;
+  /* font-weight: bold; */
+  font-size: 24px;
+  /* padding: 10px; */
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+.card__face--front {
+  /* background-image: url("https://cdn.ka.se/app/uploads/sites/5/2020/04/22144329/colourbox29074732-scaled.jpg"); */
+  background-size: cover;
+  background-position: center top;
+  /* background-color: rgba(200,100,0,.5);  */
+ /*  background-color: rgba(0,255,255,.3); 
+
+
+  background-blend-mode: multiply; */
+  /* height: 260px; */
+  /* background: red; */
+}
+
+.card__face--back {
+  background: #e3e5e5;
+  transform: rotateY(180deg);
+  /* background-size: cover; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.card__face--back p {
+padding: 10px;
+}
+.card__face--back h2 {
+  padding: 10px 10px 0px 10px;
+  }
+
+img.graf {
+  /* position: absolute;
+  top: 20px; */
+  height: 80%;
+}
+
+span.byline {
+  position: absolute;
+  right: 8px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Image smaller than container to make container crop image */
+.card-img {
+  width: 320px;
+  /* Funny height that adds upp like this: div .back-img 273px + span .underline 27px = 300px which is the height of div .card. Makes front and back of card same height */
+  height: 290px;
+/*   filter: blur(4px);
+  -webkit-filter: blur(4px); */
+  /* background: rgba(0,255,255,.9); 
+
+
+  background-blend-mode: multiply;
+
+ */
+
+ opacity: 0.6;
+ /* take away pointer events, otherwise img will be event target instead av link elements */
+ pointer-events: none;
+}  
+
+/* Container smaller than image to crop the blurred edges */
+.card-img-container {
+  width: 300px;
+  height: 273px;
+  /* hide overflow to crop image */
+  overflow: hidden;
+  /* background-color:rgba(0,255,255); */
+  background-color: rgba(116, 178, 178);
+
+}
