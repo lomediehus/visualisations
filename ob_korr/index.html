@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Storhelg</title>
+    <link rel="stylesheet" href="storhelg.css" type="text/css">
+    <link rel="stylesheet" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css" type="text/css">
+
+
+</head>
+
+
+<body>
+
+  <div id="fixit">
+
+    <div class="helg-wrapper">
+      <div class="modefield helgknappar u-colorBgSecondary-2" id="jul"><span class="u-textMetaDeca modebutton hscrollbutton" id="helg1">JUL20</span></div>
+      <div class="modefield helgknappar u-colorBgSecondary-2" id="nyar"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg2">NYÅR20-21</span></div>
+      <div class="modefield helgknappar u-colorBgSecondary-2" id="trettonhelg"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg3">TRETTONHELG21</span></div>
+      <div class="modefield helgknappar u-colorBgSecondary-2" id="pask"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg4">PÅSK21</span></div>
+      <div class="modefield helgknappar u-colorBgSecondary-2" id="pingst"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg5">PINGST20</span></div>
+      <div class="modefield helgknappar u-colorBgSecondary-2" id="midsommar"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg6">MIDSOMMAR20</span></div>
+    </div>
+
+
+
+
+    <div class="bluer" id="header">
+      <div class="modefield" id="modefieldLeft"><span class="u-textMetaDeca u-textStrong modebutton" id="modebuttonLeft">Sök avtal efter yrke</span></div>
+
+      <div class="modefield" id="modefieldRight"><span class="u-textMetaDeca u-textStrong modebutton passive" id="modebuttonRight">Alla avtal</span></div>
+    </div>
+  </div>
+
+
+  <img id="helgbild"></img>
+
+  <div id="mainContent" class="paddingTop10">
+
+
+    <div id=sokYrkeWrapper>
+
+      <p>Skriv ditt yrke i rutan för att hitta ditt avtal:</p>
+
+      <form autocomplete="off">
+
+        <div class="autocomplete" style="width:200px;">
+          <input id="sokYrkeKnapp" type="text" name="mittYrke" placeholder="Yrke" class="u-textMeta yrkeInput">
+        </div>
+        <button type="button" id="searchButton" class="u-textMeta u-textStrong Button lessPadding">Sök</button>
+      </form>
+
+
+      <div id="resultdiv"></div>
+
+      <!-- Här presenteras resultaten -->
+      <div id="messagediv">
+      </div>
+    </div>
+
+    <div id="allaAvtalWrapper">Alla avtal</div>
+  </div>
+
+  <div id="bottom" class="u-textMeta">Kommunal har cirka 60 avtal. Om ditt avtal inte är med här, eller om du inte vet vilket avtal du tillhör, kan du kontakta ditt lokala fack eller <a href="https://www.kommunal.se/kommunal-direkt" target="blank">Kommunal direkt</a>.</div>
+
+
+  <script src="jquery-3.1.1.min.js"></script>
+
+  <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+
+  <script src="storhelg.js"></script>
+
+
+
+
+
+</body>
