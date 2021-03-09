@@ -1,7 +1,7 @@
 body {
   background-color: #f5f7f7;
+  height: 1500px;
   }
-
 
 
 /* *, *::before, *::after {
@@ -60,7 +60,6 @@ h1.u-textMetaDeca {
 
 span.underline {
   background-color: rgba(116, 178, 178, 0.8);
-  background-color: #64a9a9;
   display: block;
   /* position: absolute; */
   width: 300px;
@@ -68,8 +67,6 @@ span.underline {
   font-size: 24px;
   /* padding: 10px; */
   text-align: center;
-  color: white;
-  font-weight: 200;
 }
 
 .card__face--front {
@@ -77,10 +74,10 @@ span.underline {
   background-size: cover;
   background-position: center top;
   /* background-color: rgba(200,100,0,.5);  */
- /*  background-color: rgba(0,255,255,.3); 
+  background-color: rgba(0,255,255,.3); 
 
 
-  background-blend-mode: multiply; */
+  background-blend-mode: multiply;
   /* height: 260px; */
   /* background: red; */
 }
@@ -109,7 +106,7 @@ img.graf {
 
 span.byline {
   position: absolute;
-  right: 8px;
+  right: 0px;
   bottom: 0px;
   z-index: 4;
 }
@@ -118,32 +115,24 @@ span.byline {
   display: none;
 }
 
-/* Image smaller than container to make container crop image */
-.card-img {
-  width: 320px;
-  /* Funny height that adds upp like this: div .back-img 273px + span .underline 27px = 300px which is the height of div .card. Makes front and back of card same height */
-  height: 290px;
-/*   filter: blur(4px);
-  -webkit-filter: blur(4px); */
-  /* background: rgba(0,255,255,.9); 
 
 
-  background-blend-mode: multiply;
 
- */
 
- opacity: 0.6;
- /* take away pointer events, otherwise img will be event target instead av link elements */
- pointer-events: none;
-}  
-
-/* Container smaller than image to crop the blurred edges */
 .card-img-container {
   width: 300px;
+  /* Funny height that adds upp like this: div .back-img 273px + span .underline 27px = 300px which is the height of div .card. Makes front and back of card same height */
   height: 273px;
-  /* hide overflow to crop image */
+  
   overflow: hidden;
-  /* background-color:rgba(0,255,255); */
-  background-color: rgba(116, 178, 178);
-
 }
+
+
+.card-img {
+  /* Width and height must be slightly bigger than container, to make container crop away the blurr and make sharp borders  */
+  width: 320px;
+  height: 290px;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+
+}  
