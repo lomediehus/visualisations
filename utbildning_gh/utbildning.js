@@ -9,10 +9,8 @@ d3.json("utbildning.json")
     .data(d).enter()
     .append("div").html(function(d, i) {
 
-      var html = `
-      <!--<div class="card__face card__face--front u-textMetaDeca" style="background-image: url(${d.Bild_front})"><span class="underline">${d.Bransch}</span><span class="byline u-textMeta">Foto: ${d.Foto}</span></div>  -->
+      var html = `      
       <div class="card__face card__face--front u-textMetaDeca"><span class="underline">${d.Bransch}</span><span class="byline u-textMeta">Foto: ${d.Foto}</span>
-      <!--<div style="background-image: url(${d.Bild_front})" class="back-img"></div>-->
         <div class="card-img-container"><img class="card-img" src=${d.Bild_front}> </div>
 
       </div>
@@ -49,12 +47,9 @@ d3.json("utbildning.json")
     }
 
 
-    d.forEach(function (grej) {
-      for (var key in grej) {
-      }
-    })
+    
 
-
+    informHeight();
 
 
 
