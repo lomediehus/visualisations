@@ -4,16 +4,18 @@ let kombo = [];
 
 //read data from files into arrays
 $.ajax({
-        url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
-        // url: "OBavtal.json",
+        // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
+        url: "OBavtal.json",
+        // url: "test.json",
+
         dataType: "json",
         mimeType: "application/json",
         success: function (data) {
             filearray.push(...data)
 
             $.ajax({
-                    url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal_tillagg.json",
-                    // url: "OBavtal_tillagg.json",
+                    // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal_tillagg.json",
+                    url: "OBavtal_tillagg.json",
                     dataType: "json",
                     mimeType: "application/json",
                     success: function (data) {
@@ -131,26 +133,36 @@ function doStuff() {
   var pingstdatum = new Date("June 02 2020");
   var midsommardatum = new Date("June 22 2020");
 
+  //Variable for current date
+  var date = new Date();
+  //variables for set dates
+  var nyarsdatum = new Date("December 27 2020");
+  var trettonhelgsdatum = new Date("January 2 2021");
+  var paskdatum = new Date("February 12 2021");
+  var pingstdatum = new Date("April 15 2021");
+
+
   //handling dates:
-  //Check if current date is after jul;
+  //Check if current date is after nyar;
   if (date.getTime() > nyarsdatum.getTime()) {
-    //if current date is also after nyar
-    if (date.getTime() > trettonhelgsdatum.getTime()) {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/trettonhelg.svg';
-      goActive(helgknapp3);
-      helgnr = "3";
+    //if current date is also after trettondagen
+    if (date.getTime() > pingstdatum.getTime()) {
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
+      goActive(helgknapp4);
+      helgnr = "5";
     }
     else {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/nyar.svg';
-      goActive(helgknapp5);
-      helgnr = "2";
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+      goActive(helgknapp4);
+      helgnr = "4";
     }
   }
   else {
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/jul.svg';
-    goActive(helgknapp1);
-    helgnr = "1";
+    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/trettonhelg.svg';
+    goActive(helgknapp2);
+    helgnr = "2";
   }
+
 
   //clicks for helgknapps
   helgknapp1.addEventListener('click', function(){
