@@ -1,0 +1,14 @@
+video {
+    width: 100%;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+}
+
+
+.center {
+    margin: auto;
+    max-width: 609px;
+  }
