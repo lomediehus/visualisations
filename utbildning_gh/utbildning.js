@@ -24,8 +24,7 @@ d3.json("utbildning.json")
       return html;
 
     })
-
-
+    
     .attr("class", "card")
 
     var card = document.getElementsByClassName('card');
@@ -33,26 +32,15 @@ d3.json("utbildning.json")
       card[i].addEventListener( 'click', function(e) {
         //do not flip the card if you click on the link ('A')
         if (e.target.tagName === 'A') {
-          console.log('länk') 
-          console.log(e.target.tagName)
-          return;
-  
+          return;  
         }
-        console.log(e.target.tagName)
-
         this.classList.toggle('is-flipped');
         let child = this.firstElementChild;
         child.children[1].classList.toggle('hidden');                
       });
     }
 
-
-    
-
     informHeight();
-
-
-
   })
 
   console.log("Card flip outline is made by Dave deSandro and published on CodePen under the MIT license. (https://opensource.org/licenses/MIT)")
