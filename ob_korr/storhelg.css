@@ -64,6 +64,11 @@ pointer-events: none;
 
 .fetLon {
   font-weight: bold;
+  color: black;
+}
+
+.rod {
+  color: #e00f00;
 }
 
 
@@ -225,6 +230,8 @@ h4.underline {
   font-weight: bold;
   text-decoration: underline;
 }
+
+
 
 @media only screen and (max-width: 1150px) {
   body {

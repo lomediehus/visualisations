@@ -131,7 +131,7 @@ function doStuff() {
   var trettonhelgsdatum = new Date("January 2 2021");
   var paskdatum = new Date("April 14 2020");
   var pingstdatum = new Date("June 02 2020");
-  var midsommardatum = new Date("June 22 2020");
+  var midsommardatum = new Date("June 09 2021");
 
   //Variable for current date
   var date = new Date();
@@ -144,12 +144,12 @@ function doStuff() {
 
   //handling dates:
   //Check if current date is after nyar;
-  if (date.getTime() > nyarsdatum.getTime()) {
+  if (date.getTime() > paskdatum.getTime()) {
     //if current date is also after trettondagen
-    if (date.getTime() > pingstdatum.getTime()) {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
-      goActive(helgknapp4);
-      helgnr = "5";
+    if (date.getTime() > midsommardatum.getTime()) {
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/midsommar.svg';
+      goActive(helgknapp6);
+      helgnr = "6";
     }
     else {
       document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
