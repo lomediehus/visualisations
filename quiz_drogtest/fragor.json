@@ -1,0 +1,36 @@
+[
+  {
+      "divid": "fraga1",
+      "rubrik": "Fråga 1",
+      "fraga": "Kan arbetsgivaren kräva att jag gör ett drogtest när jag söker jobb?",
+      "alt1": "Ja",
+      "value1": "rätt",
+      "symbol1": "&#10004;",
+      "alt2": "Nej",
+      "value2": "fel",
+      "symbol2": "&#x274C;",
+      "alt3": "Donald Trump",
+      "value3": "fel",
+      "symbol3": "&#x274C;",
+      "svar": "En privat arbetsgivare kan kräva att den som söker en tjänst ska göra ett drogtest. En arbetsgivare som är en kommun eller region kan kräva det om den kan visa att verksamheten motiverar detta, till exempel trafik och räddningstjänst."
+
+
+  },
+  {
+      "divid": "fraga2",
+      "rubrik": "Fråga 2",
+      "fraga": "Kan arbetsgivaren kräva slumpmässiga drogtester av anställda i kommuner och regioner?",
+      "alt1": "Ja",
+      "value1": "fel",
+      "symbol1": "&#x274C;",
+      "alt2": "Nej",
+      "value2": "rätt",
+      "symbol2": "",
+      "alt3": "Syd",
+      "value3": "fel",
+      "symbol3": "&#x274C;",
+      "svar": "För anställda i offentlig verksamhet sätter grundlagen stopp för drogtester."
+
+
+  }
+]
