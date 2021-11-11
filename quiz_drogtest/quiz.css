@@ -6,6 +6,7 @@ body {
 div#content {
   margin: auto;
   width: 400px;
+  max-width: fit-content;
 }
 
 label {
