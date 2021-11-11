@@ -25,12 +25,57 @@
       "symbol1": "&#x274C;",
       "alt2": "Nej",
       "value2": "rätt",
-      "symbol2": "",
+      "symbol2": "&#10004;",
       "alt3": "Syd",
       "value3": "fel",
       "symbol3": "&#x274C;",
       "svar": "För anställda i offentlig verksamhet sätter grundlagen stopp för drogtester."
 
 
+  },
+  {
+      "divid": "fraga3",
+      "rubrik": "Fråga 3",
+      "fraga": "Måste jag lämna drogtest om jag är anställd i ett kommunalt eller regionalt bolag?",
+      "alt1": "Ja",
+      "value1": "rätt",
+      "symbol1": "&#10004;",
+      "alt2": "Nej",
+      "value2": "fel",
+      "symbol2": "&#x274C;",
+      "alt3": "Syd",
+      "value3": "fel",
+      "symbol3": "&#x274C;",
+      "svar": "Arbetsgivaren får kräva drogtest om vissa krav är uppfyllda, till exempel om du riskerar att skada andra om du är drogpåverkad på jobbet."
+  },
+  {
+      "divid": "fraga4",
+      "rubrik": "Fråga 4",
+      "fraga": "Är jag som privatanställd skyldig att lämna drogtest?",
+      "alt1": "Ja",
+      "value1": "rätt",
+      "symbol1": "&#10004;",
+      "alt2": "Nej",
+      "value2": "fel",
+      "symbol2": "&#x274C;",
+      "alt3": "Syd",
+      "value3": "fel",
+      "symbol3": "&#x274C;",
+      "svar": "Men den anställdes rätt till personlig integritet vägas mot arbetsgivarens intresse. Drogtest kan till exempel göras om någon ska köra tunga fordon eller arbeta med ungdomar som har missbruksproblem."
+  },
+  {
+      "divid": "fraga4",
+      "rubrik": "Fråga 4",
+      "fraga": "Måste arbetsgivaren polisanmäla mig om testet är positivt?",
+      "alt1": "Ja",
+      "value1": "fel",
+      "symbol1": "&#x274C;",
+      "alt2": "Nej",
+      "value2": "rätt",
+      "symbol2": "&#10004;",
+      "alt3": "Syd",
+      "value3": "fel",
+      "symbol3": "&#x274C;",
+      "svar": "Arbetsgivaren är inte skyldig att polisanmäla."
   }
 ]

@@ -111,3 +111,7 @@ div.close {
 h3.bold {
   font-weight: bold;
 }
+
+.checkbox {
+  color: green;
+}

@@ -70,7 +70,7 @@ $.ajax({
               var resultMarkup = `
               <h2>Resultat</h2>
                 <p><strong>Du fick ${points} rätt av ${data.length} möjliga.</strong></p>
-                <p>Här går det att fylla på med en massa text, kanske vill man vara lite folkbildande och förklara lite extra. Här går det att fylla på med en massa text, kanske vill man vara lite folkbildande och förklara lite extra. Här går det att fylla på med en massa text, kanske vill man vara lite folkbildande och förklara lite extra. Här går det att fylla på med en massa text, kanske vill man vara lite folkbildande och förklara lite extra. Här går det att fylla på med en massa text, kanske vill man vara lite folkbildande och förklara lite extra.</p>
+                <p>Drogtester regleras på flera olika sätt: I grundlagen och andra lagar som diskrimineringslagen och datskyddsförordningen, i rättspraxis och i avtal mellan facket och arbetsgivaren. <a href="https://ka.se/">Här kan du läsa mer om vad som gäller. </a></p>
               `;
               result.innerHTML = resultMarkup;
 
@@ -105,6 +105,10 @@ $.ajax({
                //change color the clicked label
                 this.parentElement.style.backgroundColor = "#74b2b2";
 
+                // this.style.color = "green";
+                // console.log('blev den grön?');
+                console.log(this);
+
                 //Get the text from the last paragraph of the parent of the clicked button
                 var textContent = $(this).parent().siblings("p:last-of-type").text();
                 //Replace the text with the value of the clicked button and the text that was collected
@@ -128,6 +132,9 @@ $.ajax({
               for (var i = 0; i < boxarna.length; i++) {
                 //make the "wrong" and "correct" symbols visible
                 boxarna[i].nextElementSibling.style.visibility = "visible";
+                //make the "correct" symbol green. Actually affects also the "wrong" symbol, but does not work on it.
+                boxarna[i].nextElementSibling.style.color = "green";
+
 
                 // console.log(boxarna[i].value)
                 if (boxarna[i].value === "rätt") {
