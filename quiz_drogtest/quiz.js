@@ -28,7 +28,8 @@ $.ajax({
             <div id="${data[x].divid}" class="u-paddedBottomXL">
               <h3 id="rubrik${x+1}" class="u-textMetaDeca bold">${data[x].rubrik}</h3>
               <p class="u-textMetaDeca">${data[x].fraga}</p>
-              <img src="bild${x+1}.png" width="400">
+
+              ${/*<img src="bild${x+1}.png" width="400"> //image element, commented out */''}
               <label class="u-textMetaDeca"><input type="radio" name="fraga${(x+1).toString()}" value="${data[x].value1}" class="checkbox">${data[x].alt1}<span>  ${data[x].symbol1}</span></label><br>
               <label class="u-textMetaDeca"><input type="radio" name="fraga${(x+1).toString()}" value="${data[x].value2}" class="checkbox">${data[x].alt2}<span>  ${data[x].symbol2}</span></label>
               <p class="u-textMeta hidden u-paddedTopXS">${data[x].svar}</p>

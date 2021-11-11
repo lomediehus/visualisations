@@ -2,7 +2,7 @@
   {
       "divid": "fraga1",
       "rubrik": "Fråga 1",
-      "fraga": "Kan arbetsgivaren kräva att jag gör ett drogtest när jag söker jobb?",
+      "fraga": "Kan arbetsgivaren kräva att du gör ett drogtest när du söker jobb?",
       "alt1": "Ja",
       "value1": "rätt",
       "symbol1": "&#10004;",
@@ -36,7 +36,7 @@
   {
       "divid": "fraga3",
       "rubrik": "Fråga 3",
-      "fraga": "Måste jag lämna drogtest om jag är anställd i ett kommunalt eller regionalt bolag?",
+      "fraga": "Måste du lämna drogtest om du är anställd i ett kommunalt eller regionalt bolag?",
       "alt1": "Ja",
       "value1": "rätt",
       "symbol1": "&#10004;",
@@ -51,7 +51,7 @@
   {
       "divid": "fraga4",
       "rubrik": "Fråga 4",
-      "fraga": "Är jag som privatanställd skyldig att lämna drogtest?",
+      "fraga": "Är du som privatanställd skyldig att lämna drogtest?",
       "alt1": "Ja",
       "value1": "rätt",
       "symbol1": "&#10004;",
@@ -66,7 +66,7 @@
   {
       "divid": "fraga4",
       "rubrik": "Fråga 4",
-      "fraga": "Måste arbetsgivaren polisanmäla mig om testet är positivt?",
+      "fraga": "Måste arbetsgivaren polisanmäla dig om testet är positivt?",
       "alt1": "Ja",
       "value1": "fel",
       "symbol1": "&#x274C;",
