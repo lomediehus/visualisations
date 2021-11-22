@@ -107,7 +107,7 @@ label:visited {
 } */
 
 #overlay {
-  width: 360px;
+  width: 320px;
   height: 80px;
   display: none;
   background-color: #ffef58;
@@ -125,7 +125,6 @@ label:visited {
 }
 
 img.closex:hover {
-  background-color: #c4dcdc;
   background-color: #ffe91d;
 
 }
