@@ -107,7 +107,7 @@ label:visited {
 } */
 
 #overlay {
-  width: 200px;
+  width: 360px;
   height: 80px;
   display: none;
   background-color: #ffef58;
@@ -120,13 +120,9 @@ label:visited {
   z-index: 5;
   padding: 20px;
   padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
-  animation: blinker 2s linear infinite;
 }
 
-@keyframes blinker {
-  50% {
-   opacity: 0;
- }
+
 
 }
 
