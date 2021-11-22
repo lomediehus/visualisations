@@ -10,7 +10,6 @@ div#content {
 }
 
 label {
-/* background-color: green; */
 display: block;
 width: 80%;
 }
@@ -36,15 +35,14 @@ input[type=radio] {
 
 
 label {
-  /* display: block; */
   height: 30px;
   width: 400px;
-  /* padding-left: -20px; */
-  background-color: #74b2b2;
-  background-color: #c4c5c5;
-  background-color: #ddebeb;
-  /* box-shadow: 4px 4px #888888; */
-  /* box-shadow: 0 0.6em #c2bb11, 0 0.9em rgba(0, 0, 0, 0.4); */
+  display: block;
+  width: 80%;
+  padding-top: 8px;
+
+  background-color: #dcebe5;
+
 
   box-shadow:   #7e7f7f 1px 1px 0,
                 #7e7f7f 2px 2px 0,
@@ -77,24 +75,44 @@ label:visited {
   margin-bottom: 50px;
 }
 
-#overlay {
+/* #overlay {
   width: 200px;
-  height: 200px;
+  height: 80px;
   display: none;
   background-color: #ddebeb;
   border-radius: 20px;
   margin: auto;
-  /* position: absolute; */
   position: fixed;
-  top: 50px; left: 50px;
-  bottom: 50px; right: 50px;
+  top: 50%; left: 50%;
+  bottom: 50%; right: 50%;
   color: black;
   z-index:5;
   padding: 20px;
+} */
+
+#overlay {
+  width: 200px;
+  height: 80px;
+  display: none;
+  background-color: #ffef58;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: black;
+  z-index: 5;
+  padding: 20px;
+  /*negative half of height, to center vertically*/
+  margin-top: -40px;
+  /*margin left tested to look horizontally centered*/
+  margin-left: -140px;
+
 }
 
 img.closex:hover {
   background-color: #c4dcdc;
+  background-color: #ffe91d;
+
 }
 
 img.closex {
