@@ -90,7 +90,7 @@ label:visited {
   padding: 20px;
 } */
 
-#overlay {
+/* #overlay {
   width: 200px;
   height: 80px;
   display: none;
@@ -102,13 +102,24 @@ label:visited {
   color: black;
   z-index: 5;
   padding: 20px;
-  /*negative half of height, to center vertically*/
   margin-top: -40px;
-  /*margin left tested to look horizontally centered*/
   margin-left: -140px;
+} */
+
+#overlay {
+  width: 200px;
+  height: 80px;
+  display: none;
+  background-color: #ffef58;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: black;
+  z-index: 5;
+  padding: 20px;
   padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
-
-
 }
 
 img.closex:hover {
