@@ -113,13 +113,21 @@ label:visited {
   background-color: #ffef58;
   border-radius: 20px;
   position: fixed;
-  bottom: 0px;
+  bottom: 60px;
   left: 0px;
   right: 0px;
   color: black;
   z-index: 5;
   padding: 20px;
   padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+   opacity: 0;
+ }
+
 }
 
 img.closex:hover {
