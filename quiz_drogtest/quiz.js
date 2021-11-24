@@ -71,7 +71,7 @@ $.ajax({
               var resultMarkup = `
               <h2>Resultat</h2>
                 <p><strong>Du fick ${points} rätt av ${data.length} möjliga.</strong></p>
-                <p>Drogtester regleras på flera olika sätt: I grundlagen och andra lagar som diskrimineringslagen och datskyddsförordningen, i rättspraxis och i avtal mellan facket och arbetsgivaren. <a href="https://ka.se/">Här kan du läsa mer om vad som gäller. </a></p>
+                <p>Drogtester regleras på flera olika sätt: I grundlagen och andra lagar som diskrimineringslagen och datskyddsförordningen, i rättspraxis och i avtal mellan facket och arbetsgivaren. <a href="https://ka.se/2021/11/24/viktigt-att-veta-om-drogtest-pa-jobbet/">Här kan du läsa mer om vad som gäller. </a></p>
               `;
               result.innerHTML = resultMarkup;
 
