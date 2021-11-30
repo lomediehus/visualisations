@@ -545,6 +545,7 @@ function doStuff() {
     if (!isNaN(input) && input != null) {
       // siffra = parseInt(input);
       siffra = Number(input);
+      console.log(siffra)
       if (siffra >= tak) {
         siffra = tak;
       }
@@ -568,7 +569,7 @@ function doStuff() {
       else mathResult = siffra/divisor[i];
 
       //OBS TILLFÄLLIG FIX FÖR AVRUNDNINGSFEL JUST DETTA ÅR
-      if (mathResult = 108.145) mathResult = 108.15;
+      if (mathResult === 108.145) mathResult = 108.15;
 
       stringResult.push(mathResult.toFixed(2))
     }
