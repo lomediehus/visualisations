@@ -127,40 +127,39 @@ function doStuff() {
   //Variable for current date
   var date = new Date();
   //variables for set dates
-  var nyarsdatum = new Date("December 27 2020");
-  var trettonhelgsdatum = new Date("January 2 2021");
-  var paskdatum = new Date("April 14 2020");
-  var pingstdatum = new Date("June 02 2020");
+  var nyarsdatum = new Date("December 27 2021");
+  var trettonhelgsdatum = new Date("January 2 2022");
+  var paskdatum = new Date("April 14 2021");
+  var pingstdatum = new Date("June 02 2021");
   var midsommardatum = new Date("June 09 2021");
 
   //Variable for current date
   var date = new Date();
   //variables for set dates
-  var nyarsdatum = new Date("December 27 2020");
-  var trettonhelgsdatum = new Date("January 2 2021");
+  var nyarsdatum = new Date("December 27 2021");
+  var trettonhelgsdatum = new Date("January 2 2022");
   var paskdatum = new Date("February 12 2021");
   var pingstdatum = new Date("April 15 2021");
 
-
   //handling dates:
   //Check if current date is after nyar;
-  if (date.getTime() > paskdatum.getTime()) {
+  if (date.getTime() > nyarsdatum.getTime()) {
     //if current date is also after trettondagen
-    if (date.getTime() > midsommardatum.getTime()) {
+    if (date.getTime() > trettonhelgsdatum.getTime()) {
       document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/midsommar.svg';
-      goActive(helgknapp6);
-      helgnr = "6";
+      goActive(helgknapp3);
+      helgnr = "3";
     }
     else {
       document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
-      goActive(helgknapp4);
-      helgnr = "4";
+      goActive(helgknapp2);
+      helgnr = "2";
     }
   }
   else {
     document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/trettonhelg.svg';
-    goActive(helgknapp2);
-    helgnr = "2";
+    goActive(helgknapp1);
+    helgnr = "1";
   }
 
 
@@ -404,7 +403,7 @@ function doStuff() {
           valtYrke = kombo[i].yrke[j];
 
           rubrik = `
-            <h3 class="u-textMetaDeca">  ${kombo[i].avtalsrubrik} </h3>
+            <h3 class="u-textMetaDeca" style="font-weight: bold">  ${kombo[i].avtalsrubrik} </h3>
           `
 
           let textvarre;
@@ -490,7 +489,7 @@ function doStuff() {
     }
     // var string = message.join('');
     if (hittad === true) {
-      messagediv.innerHTML += '<h3 class="u-textMetaDeca paddingTop10">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal">Skicka mejl</a>';
+      messagediv.innerHTML += '<h3 class="u-textMetaDeca paddingTop10" style="font-weight: bold">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal">Skicka mejl</a>';
     }
 
     // messagediv.innerHTML = string;
@@ -546,6 +545,7 @@ function doStuff() {
     if (!isNaN(input) && input != null) {
       // siffra = parseInt(input);
       siffra = Number(input);
+      console.log(siffra)
       if (siffra >= tak) {
         siffra = tak;
       }
@@ -567,6 +567,10 @@ function doStuff() {
       if (!divisor[i]) {
       }
       else mathResult = siffra/divisor[i];
+
+      //OBS TILLFÄLLIG FIX FÖR AVRUNDNINGSFEL JUST DETTA ÅR
+      if (mathResult === 108.145) mathResult = 108.15;
+
       stringResult.push(mathResult.toFixed(2))
     }
     dividedToDiv(stringResult);
@@ -613,7 +617,7 @@ function doStuff() {
         <p class="u-paddedBottomXXS u-spacingTopM u-textMetaDeca caps">${item.bransch}</p>
           `;
       rubrik = `
-        <h3 class="u-textMetaDeca">  ${item.avtalsrubrik} </h3>
+        <h3 class="u-textMetaDeca" style="font-weight: bold">  ${item.avtalsrubrik} </h3>
       `;
 
 

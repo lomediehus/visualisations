@@ -71,6 +71,10 @@ pointer-events: none;
   color: #e00f00;
 }
 
+h3 .fetRubrik {
+  font-weight: bold;
+}
+
 
 #mainContent {
   position: relative;
