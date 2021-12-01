@@ -45,7 +45,7 @@ pointer-events: none;
 
 
 .bluer {
-  background-color: #ddebeb;
+  background-color: #dcebe5;
 }
 
 .modefield {
@@ -125,6 +125,10 @@ h3 .fetRubrik {
   display: block;
 }
 
+#sokYrkeWrapper:first-child {
+  padding-top: 10px;
+}
+
 #allaAvtalWrapper {
   display: none;
   margin-bottom: 50px;
@@ -148,7 +152,7 @@ input.yrkeInput {
   bottom: 0px;
   margin-left: 16.67%;
   max-width: 948px;
-  background-color: #ddebeb;
+  background-color: #dcebe5;
   padding: 3px;
   float: left;
 }
