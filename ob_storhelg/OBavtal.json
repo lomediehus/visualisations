@@ -301,6 +301,9 @@
             "jul": "92,28 kr/tim från klockan 22.00 kvällen före julafton till klockan 06.30 på dagen närmast efter storhelgen, alltså måndagen den 27 december i år.",
             "nyar": "92,28 kr/tim från klockan 22.00 kvällen före nyårsafton till klockan 06.30 på dagen närmast efter storhelgen, alltså söndagen den 2 januari 2022, då gäller vanligt helg-ob, vilket är 61,52 kr/tim.",
             "trettonhelg": "61,52 kr/tim på trettondagen från klockan 00.00 till klockan 24.00",
+            "pask": "Vi har inga uppgifter för denna helg.",
+            "pingst": "Vi har inga uppgifter för denna helg.",
+            "midsommar": "Vi har inga uppgifter för denna helg.",
             "yrke": "djurvårdare,legitimerad djursjukskötare"
         }
     ]
