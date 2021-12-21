@@ -1,4 +1,4 @@
-[
+ [
         {
             "avtalnr": "1",
             "branschnr": "1",
@@ -75,8 +75,8 @@
             "bransch": "Anställda i privat vård",
             "avtalsrubrik": "Avtalet med Sobona (fd KFS) Vård och omsorg",
             "jul": "112,90 kr/tim från klockan 18.00 kvällen före julafton till klockan 07.00 vardagen närmast efter helgdagsafton, alltså måndagen den 27 december i år.",
-            "nyar": "112,90 kr/tim från klockan 18.00 kvällen före nyårsafton till klockan 00.00. (Här slutar detta avtal att gälla!) 133,80 kr/tim (natt-ob) natten mot nyårsdagen 00.00 till 06.00.  (Enligt SKR-avtalet) 111,40 kr/tim från kl 06.00 på nyårsdagen till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså måndagen den 3 januari 2022. (Enligt SKR-avtalet)",
-            "trettonhelg": "58,10 kr/tim från klockan 16.00 onsdagen den 5 januari till klockan 07.00 fredagen den 7 januari. (Enligt SKR-avtalet) 66,70 (ob för helgnatt) mellan klockan 22.00 och 06.00 natten mot trettondag jul. (Enligt SKR-avtalet) OBS!  Efter överenskommelse mellan arbetstagaren och arbetsgivaren kan obekväm arbetstid ersättas med ledighet.",
+            "nyar": "112,90 kr/tim från klockan 18.00 kvällen före nyårsafton till klockan 00.00. (Här slutar detta avtal att gälla!)\r\n133,80 kr/tim (natt-ob) natten mot nyårsdagen 00.00 till 06.00.  (Enligt SKR-avtalet)\r\n111,40 kr/tim från kl 06.00 på nyårsdagen till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså måndagen den 3 januari 2022. (Enligt SKR-avtalet)",
+            "trettonhelg": "58,10 kr/tim från klockan 16.00 onsdagen den 5 januari till klockan 07.00 fredagen den 7 januari. (Enligt SKR-avtalet) 66,70 kr/tim (ob för helgnatt) mellan klockan 22.00 och 06.00 natten mot trettondag jul. (Enligt SKR-avtalet) OBS!  Efter överenskommelse mellan arbetstagaren och arbetsgivaren kan obekväm arbetstid ersättas med ledighet.",
             "pask": "112,90 kr/tim från klockan 18.00 på skärtorsdagen till klockan 07.00 dagen efter annandag påsk, alltså tisdagen den 6 april.",
             "pingst": "112,90 kr/tim från klockan 18.00 dagen före pingstafton till klockan 07.00 vardagen närmast efter helgdagsaftonen, alltså måndagen den 10 juni.",
             "midsommar": "112,90 kr/tim från klockan 18.00 dagen före midsommarafton till klockan 07.00 vardagen närmast efter helgdagsafton, alltså måndagen den 28 juni.",
@@ -292,5 +292,15 @@
             "midsommar": "94,77 kr/tim från klockan 06.00 på midsommarafton till klockan 06.00 vardagen efter helgdagsaftonen, alltså måndagen den 28 juni.",
             "knapp": "nej",
             "yrke": "lokalvårdare,städare"
+        },
+        {
+            "avtalnr": "22",
+            "branschnr": "13",
+            "bransch": "Anställda i djursjukvård",
+            "avtalsrubrik": "Avtalet med Gröna Arbetsgivare (Djursjukvård)",
+            "jul": "92,28 kr/tim från klockan 22.00 kvällen före julafton till klockan 06.30 på dagen närmast efter storhelgen, alltså måndagen den 27 december i år.",
+            "nyar": "92,28 kr/tim från klockan 22.00 kvällen före nyårsafton till klockan 06.30 på dagen närmast efter storhelgen, alltså söndagen den 2 januari 2022, då gäller vanligt helg-ob, vilket är 61,52 kr/tim.",
+            "trettonhelg": "61,52 kr/tim på trettondagen från klockan 00.00 till klockan 24.00",
+            "yrke": "djurvårdare,legitimerad djursjukskötare"
         }
     ]
