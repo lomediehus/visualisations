@@ -394,6 +394,9 @@ function doStuff() {
     if (yrke.startsWith('usk')|| yrke.startsWith('uska')) {
       yrke = 'undersköterska';
     }
+    if (yrke.startsWith('djursjukskötare')) {
+      yrke = 'legitimerad djursjukskötare';
+    }
     messagediv.innerHTML = '';
     for (var i = 0; i < kombo.length; i++) {
       for (var j = 0; j < kombo[i].yrke.length; j++) {
