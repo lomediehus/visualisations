@@ -2,6 +2,12 @@
 
 var $el, $ps, $up, totalHeight;
 
+var rubriker = [...document.getElementsByTagName('h3')];
+console.log(rubriker);
+function addBolderClass(el) {
+  el.classList.add("bolder");
+}
+rubriker.forEach(addBolderClass);
 
 $(".lasdiv .knapp").click(function() {
 
@@ -18,7 +24,7 @@ $(".lasdiv .knapp").click(function() {
       // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
       $ps.each(function() {
         totalHeight += $(this).outerHeight();
-        totalHeight += 15;
+        totalHeight += 20;
       });
 
       $up
@@ -32,7 +38,6 @@ $(".lasdiv .knapp").click(function() {
         },
         {
         complete: function() {
-          console.log('komplett')
           informHeight()
           }
         }

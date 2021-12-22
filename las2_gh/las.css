@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f7f7;
+  background-color: #fcfaf5;
   /* height: 100%;
   position: relative; */
 }
@@ -46,4 +46,9 @@ body {
 
 strong.bigger {
   font-size: 16px;
+  font-weight: bold;
+}
+
+h3.bolder {
+  font-weight: bold;
 }
