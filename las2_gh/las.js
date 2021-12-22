@@ -3,11 +3,12 @@
 var $el, $ps, $up, totalHeight;
 
 var rubriker = [...document.getElementsByTagName('h3')];
-console.log(rubriker);
 function addBolderClass(el) {
   el.classList.add("bolder");
 }
 rubriker.forEach(addBolderClass);
+
+informHeight();
 
 $(".lasdiv .knapp").click(function() {
 
