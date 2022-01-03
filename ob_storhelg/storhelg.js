@@ -146,18 +146,18 @@ function doStuff() {
   if (date.getTime() > nyarsdatum.getTime()) {
     //if current date is also after trettondagen
     if (date.getTime() > trettonhelgsdatum.getTime()) {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/midsommar.svg';
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/trettonhelg.svg';
       goActive(helgknapp3);
       helgnr = "3";
     }
     else {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/nyar.svg';
       goActive(helgknapp2);
       helgnr = "2";
     }
   }
   else {
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/trettonhelg.svg';
+    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/jul.svg';
     goActive(helgknapp1);
     helgnr = "1";
   }
