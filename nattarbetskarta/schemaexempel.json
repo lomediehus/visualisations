@@ -88,5 +88,15 @@
             "admin_name": "Skåne",
             "capital": "minor",
             "text": "Anställda vid psykiatrin och sjukhusen i Lund, Landskrona och Höör får en natt mindre per schemaperiod."
+        },
+        {
+            "city": "Region Västerbotten",
+            "lat": "63.8285",
+            "lng": "19.6",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Västerbotten",
+            "capital": "admin",
+            "text": "Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön."
         }
     ]
