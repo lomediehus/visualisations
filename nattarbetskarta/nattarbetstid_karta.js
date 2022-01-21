@@ -83,6 +83,7 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/sverige.geojson",f
   .enter()
   .append("path")
   .attr("d",path2);
+  // informHeight();
 
 
 });
