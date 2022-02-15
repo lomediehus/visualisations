@@ -588,8 +588,8 @@ function maketable(data, tabell) {
     }
 
   else {
-    //if there is a row.Kommun use the value in rikssnittp, otherwise use the value for row.Region
-    row.Kommun ? rikssnittp.innerHTML = row.Kommun + ' ' + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån' : rikssnittp.innerHTML = row.Region + ' ' + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån'
+    //if there is a row.Kommun use the value in rikssnittp, otherwise use the value for row.Region (Changed from data in row.Kommun and row.Region to only text before the number)
+    row.Kommun ? rikssnittp.innerHTML = 'Genomsnittslön för hela landet: ' + '<strong>' + $.number(row[yrke], 0, ',', '&nbsp;') + '</strong> kr/mån.' : rikssnittp.innerHTML = 'Genomsnittslön för hela landet:  ' + '<strong>' + $.number(row[yrke], 0, ',', '&nbsp;') + '</strong> kr/mån.'
   }
 
   //When to show the yellow bubbles
