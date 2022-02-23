@@ -1,1 +1,4 @@
-console.log('kör bara kör')
+console.log('kör kör kör');
+
+
+informHeight();
