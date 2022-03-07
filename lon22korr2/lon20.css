@@ -32,14 +32,28 @@ h4 {
   font-size: 1.4em;
 }
 
+/* #selectOverlay {
+  width: 740px;
+  margin-top: 20px;
+  pointer-events: none;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.2;
+} */
+
 select#valjyrke {
   width: 740px;
   margin-top: 20px;
+  /* pointer-events: auto; */
   font-size: 1em;
   z-index: 4;
   position: relative;
   letter-spacing: 0px;
 }
+
+
 
 div#header {
   padding-bottom: 20px;
@@ -113,7 +127,7 @@ label {
   position: relative;
   top: 10px;
   text-align: center;
-  font-size: 36px;
+  font-size: 18px;
 }
 
 #blinkcontainer {
@@ -132,16 +146,17 @@ label {
 
 .sign {
   position: fixed;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   /* margin: 0 auto; */
   background-color: #ffef58;;
   position: relative;
-  top: 150px;
+  top: 50px;
   /* margin: 0 auto; */
-  left: 30px;
+  left: 400px;
   border-radius: 50%;
-  z-index: 3;
+  z-index: 5;
+  padding: 10px;
 }
 
 .blink {

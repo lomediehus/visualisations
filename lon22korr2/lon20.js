@@ -50,7 +50,7 @@ var rikssnittp = document.getElementById('rikssnittp');
 var highest, place, highestKommun = 0, highestLandsting = 0, placeKommun = '', placeLandsting = '';
 var lowest, place2, lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
 var semitransparent = document.getElementsByClassName('semitransparent');
-// var blinkcontainer= document.getElementById("blinkcontainer");
+var blinkcontainer= document.getElementById("blinkcontainer");
 console.log(selectelement)
 
 
@@ -116,8 +116,8 @@ $(document).ready(function() {
       //take away overlay when a selection is made
       if (yrke != "Väljyrke") {
         overlay.style.display = "none";
-        // blinkcontainer.style.display = "none";
-        selectelement.classList.remove("blink");
+        blinkcontainer.style.display = "none";
+        // selectelement.classList.remove("blink");
         overlay.style.cursor = "pointer";
         fillHighlowdiv();
         [...semitransparent].forEach(function(element){
@@ -127,8 +127,8 @@ $(document).ready(function() {
       }
       else if (yrke === "Väljyrke") {
         overlay.style.display = "block";
-        // blinkcontainer.style.display = "block";
-        selectelement.classList.add("blink");
+        blinkcontainer.style.display = "block";
+        // selectelement.classList.add("blink");
         $('#highlowdiv').hide();
         tabell.innerHTML = '';
         rikssnittp.innerHTML = '';
