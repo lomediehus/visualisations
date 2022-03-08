@@ -174,7 +174,7 @@ label {
         }
       }
 
-#jamforyrkediv {
+/* #jamforyrkediv {
   background-color: #e3e5e5;
   min-height: 600px;
   max-height: 650px;
@@ -184,7 +184,28 @@ label {
   padding-top: 20px;
   padding-bottom: 50px;
   margin-right: 0px;
+} */
+
+#logga img {
+  position: absolute;
+  width: 250px;
+  pointer-events: none;
 }
+
+#kartdiv {
+  pointer-events: auto;
+}
+
+#jamforyrkediv {
+
+  min-height: 600px;
+  max-height: 770px;
+  margin-right: 0px;
+}
+
+/* #jamforyrkediv h1 {
+  font-weight: 900;
+} */
 
 
 
@@ -364,13 +385,11 @@ div.close {
 
 
 .bold {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 
-.vinjett {
-  /* background-image: linear-gradient(#ddebeb, #ddebeb, #f5f7f7 );
-  background-image: linear-gradient(#61a2a2, #61a2a2, #f5f7f7 ); */
+/* .vinjett {
   background-image: linear-gradient(#6eaaaa, #6eaaaa, #f5f7f7 );
   line-height: 1.5em;
   width: 100%;
@@ -386,7 +405,7 @@ div.close {
   vertical-align: top;
   line-height: normal;
   padding: 3px;
-}
+} */
 
 .knapprad {
   width: 100%;
@@ -442,12 +461,26 @@ p.knapptext {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
+  justify-content: space-between;
 }
+
+/* .basecontainer {
+  width: 360px;
+  margin-right: 20px;
+  align-items: flex-start;
+} */
 
 .basecontainer {
   width: 360px;
   margin-right: 20px;
-  align-items: flex-start;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.basecontainer h1 {
+  font-weight: 900;
 }
 
 #lonlista {
