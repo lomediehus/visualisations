@@ -1,0 +1,84 @@
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Brandlöntest</title>
+  <link rel="stylesheet" type="text/css" href="brandlon.css">
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
+</head>
+<body>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- <div id="header">
+    <h1 class="u-textMetaDeca Label">Löner för Sveriges brandmän</h1>
+    <p>Här är löner för Sveriges räddningstjänster. Vi visar lönen för dem som har fler än fyra anställda. Övriga är markerade med *. Sortera tabellen efter lön eller bokstavsordning genom att klicka på tabellrubrikerna. </p>
+
+  </div> -->
+  <div id="content">
+
+  <div class='basecontainer'>
+
+
+
+  <div id="mintabelldiv" style="width:100%">
+    <h1 class="u-textMetaDeca">Löner i räddningstjänsterna</h1>
+
+
+    <p class="u-textMeta">Vi visar lönen för dem som har fler än fyra anställda, övriga är markerade med *.</p>
+
+
+    <p class="input u-textMeta" id="sokkommun">Sök kommun <input type="text" name="search" placeholder="Kommun" id="searchfield" class="u-textMeta"></p>
+
+    <table id="mintabell" class="tabellstil u-textMeta">
+    </table>
+
+
+    <p class="invisible"><button type="button" class="u-textMeta Button" id="rensaknapp">Visa hela listan igen</button></p>
+
+
+  </div>
+
+
+</div>
+
+
+    <div id="kartdiv" class="basecontainer">
+      <h1 class="u-textMetaDeca">Karta över räddningstjänster</h1>
+      <p class="u-textMeta">Klicka för att se räddningstjänst, lön och vilka kommuner som ingår.</p>
+
+      <div id="kartpopup">
+        <div id="kartpopuprubbe" class="u-textMeta"></div>
+
+        <div class="close"><img id="closex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
+        <div id="popuptext"></div>
+        <!-- <table id="karttabell" class="karttabell u-textMeta"></table> -->
+      </div>
+
+    </div>
+
+    <div id="jamforyrkediv" class="chart basecontainer">
+      <h1 class="u-textMetaDeca">Jämför med andra yrken</h1>
+      <p class="u-textMeta">Här kan du jämföra brandmännens löner med 24 andra kommunalaryrken. Mer om lönerna i dessa yrken hittar du <a class="Link" target="blank" href="https://ka.se/2020/03/09/medelloner-kommunalare/">här.</a></p>
+    </div>
+
+
+</div>
+
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script> -->
+
+
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
+
+
+  <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+  <script src="brandlon.js"></script>
+
+
+
+
+  </body>
