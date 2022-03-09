@@ -63,7 +63,7 @@ path {
   stroke-width: 1px;
   stroke: white;
   /* fill: steelblue; */
-  fill: #74b2b2;
+  fill: #048676;
   cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ label {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: rgba(0,0,0,0.4); /* Black background with opacity */ */
+    /* background-color: rgba(0,0,0,0.4); /* Black background with opacity */
 
     /* pointer-events: none; */
 }
@@ -134,24 +134,26 @@ label {
   position: absolute; /* Sit on top of the page content */
   display: block; /* Hidden by default
   width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
+  height: 1000px; /* Full height (cover the whole page) */
+  top: 70px;
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: rgba(0,0,0,0.4); /* Black background with opacity */ */
-  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  /* background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
 
 }
 
 .sign {
   position: fixed;
+  position: absolute;
+  top: -25px;
   width: 100px;
   height: 100px;
   /* margin: 0 auto; */
   background-color: #ffef58;;
   position: relative;
-  top: 50px;
+  /* top: 50px; */
   /* margin: 0 auto; */
   left: 200px;
   border-radius: 50%;
@@ -294,7 +296,9 @@ table.karttabell td {
 }
 
 tr:nth-child(odd) {
-  background-color: #ddebeb;
+  /* background-color: #ddebeb; */
+  background-color: #dcebe5;
+
 }
 
 .bubbla:hover {
@@ -305,7 +309,7 @@ tr:nth-child(odd) {
     line-height: 22px;
     font-weight: normal;
     width: 130px;
-    background-color: #ffeb76;
+    background-color: #ffef58;
     color: black;
     text-align: center;
     padding: 5px 0;
@@ -374,7 +378,7 @@ div.close {
   border-radius: 6px;
   box-shadow: 3px 3px 3px gray;
   padding: 5px;
-  background-color: #ffeb76;
+  background-color: #ffef58;
   position: absolute;
   top: 370px;
   right: 10px;
@@ -388,6 +392,13 @@ div.close {
   font-weight: 900;
 }
 
+.red {
+  color: #da4042;
+}
+
+.big {
+  font-size: 28px;
+}
 
 /* .vinjett {
   background-image: linear-gradient(#6eaaaa, #6eaaaa, #f5f7f7 );
@@ -500,10 +511,23 @@ table {
 font-size: 20px;
 }
 
+#rikssnittp {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.yrkesbutton {
+  width: 20px;
+  height: 20px;
+}
+
+.text-top {
+  vertical-align: text-top;
+}
 
 /* SVG stuff for the bar chart */
 .chart rect {
-  fill: #ffeb76;
+  fill: #ffef58;
   /* filter: drop-shadow(3px 0px 2px gray);
   -webkit-filter: drop-shadow(3px 0px 2px gray); */
 }

@@ -139,8 +139,14 @@ $(document).ready(function() {
       }
     //end of change-function
     });
+
+    // document.addEventListener("click", function(){
+    //   alert('Välj ett yrke i listan först')
+    // })
+
 //end of document-ready-function
 });
+
 
 
 //Comparing values to get the highest and lowest salary
@@ -599,15 +605,27 @@ function maketable(data, tabell) {
     // row.Kommun ? rikssnittp.innerHTML = 'Genomsnittslön kommun: ' + '<strong>' + $.number(row[yrke], 0, ',', '&nbsp;') + '</strong> kr/mån.' : rikssnittp.innerHTML = 'Genomsnittslön region:  ' + '<strong>' + $.number(row[yrke], 0, ',', '&nbsp;') + '</strong> kr/mån.';
     let regionsnitt = rdata[22][yrke];
 
-    if (row.Kommun) {
-      rikssnittp.innerHTML = 'Genomsnittslön kommun: ' + '<strong>' + $.number(row[yrke], 0, ',', '&nbsp;') + '</strong> kr/mån.';
-      if (rdata[22][yrke] != undefined) {
-        rikssnittp.innerHTML += '<br>' + 'Genomsnittslön region: ' + '<strong>' + $.number(regionsnitt, 0, ',', '&nbsp;') + '</strong> kr/mån.';
-      }
+
+    if (row.Kommun && rdata[22][yrke] != undefined) {
+      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong> (kommun)';
+      rikssnittp.innerHTML += '<br>' + "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong> (region)';
+    
+
+
+    // if (row.Kommun) {
+    //   rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong> (kommun)';
+    //   if (rdata[22][yrke] != undefined) {
+    //     rikssnittp.innerHTML += '<br>' + "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong> (region)';
+    //   }
 
     }
+
+    else if (row.Kommun) {
+      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong>';
+    }
+
     else {
-      rikssnittp.innerHTML = 'Genomsnittslön region: ' + '<strong>' + $.number(regionsnitt, 0, ',', '&nbsp;') + '</strong> kr/mån.';
+      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong>';
     }
 
   }
