@@ -141,7 +141,7 @@ tr:nth-child(odd) {
 
 #popuptext h3 {
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 18px;
   padding: 0 5px 0 5px;
   font-weight: 700;
 }
