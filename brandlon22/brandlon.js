@@ -380,8 +380,9 @@
 
           //using urdinary javascript to style since d3,js doesnt have the innerHTML
           let html = `
-            <p class='u-textMetaDeca'>${d.properties.Räddningstjänst}</p>
-            <p class='u-textMeta nomargin'><strong>${lon}</strong><p>
+            <h3 class="u-textMeta">${d.properties.Räddningstjänst}</h3>
+
+            <p class='u-textMeta nomargin'>${lon}<p>
             <p class='u-textMeta nomargin'><strong>Kommuner som ingår:</strong> ${kommungrupp.join(', ')}.</p>
           `
           // if (d.properties.Fotnot != '') {
