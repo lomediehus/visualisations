@@ -8,7 +8,7 @@
 
 body {
   padding: 0px;
-  background-color: #f5f7f7;
+  background-color: #fcfaf5;
 }
 
 div#header {
@@ -111,7 +111,7 @@ table.tabellstil td {
 }
 
 tr:nth-child(odd) {
-  background-color: #ddebeb;
+  background-color: #dcebe5;
 }
 
 #kartdiv {
@@ -203,7 +203,8 @@ font-size: 20px;
 
 /* SVG stuff for the bar chart */
 .chart rect {
-  fill: #ffeb76;
+  /* fill: #ffeb76; */
+  fill: #ffef58;
   /* filter: drop-shadow(3px 0px 2px gray);
   -webkit-filter: drop-shadow(3px 0px 2px gray); */
 }

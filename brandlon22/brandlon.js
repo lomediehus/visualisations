@@ -17,107 +17,107 @@
 
     //array for the bar graph
     var yrken = [
-      {
-        "yrke": "Lärarassistent",
-        "lön": 27873
-      },
-      {
-        "yrke": "Ambulanssjukvårdare",
-        "lön": 28791
-      },
-      {
-        "yrke": "Anläggningsarbetare",
-        "lön": 28767
-      },
-      {
-        "yrke": "Fotvårdsspecialist",
-        "lön": 28335
-      },
-      {
-        "yrke": "Brandman",
-        "lön": 28190
-      },
-      {
-        "yrke": "Barnsköterska",
-        "lön": 27746
-      },
-      {
-        "yrke": "Fritidsledare",
-        "lön": 27426
-      },
-      {
-        "yrke": "Fastighetsskötare",
-        "lön": 27235
-      },
-      {
-        "yrke": "Fordonsförare",
-        "lön": 27034
-      },
-      {
-        "yrke": "Park- och trädgårdsarbetare",
-        "lön": 26985
-      },
-      {
-        "yrke": "Kock/Kokerska",
-        "lön": 26946
-      },
-      {
-        "yrke": "Skötare",
-        "lön": 26688
-      },
-      {
-        "yrke": "Undersköterska",
-        "lön": 26416
-      },
-      {
-        "yrke": "Stödassistent",
-        "lön": 26284
-      },
-      {
-        "yrke": "Vaktmästare",
-        "lön": 26213
-      },
-      {
-        "yrke": "Boendestödjare",
-        "lön": 25977
-      },
-      {
-        "yrke": "Elevassistent",
-        "lön": 25541
-      },
-      {
-        "yrke": "Förrådsarbetare",
-        "lön": 25378
-      },
-      {
-        "yrke": "Barnskötare",
-        "lön": 25369
-      },
-      {
-        "yrke": "Personlig assistent",
-        "lön": 25090
-      },
-      {
-        "yrke": "Måltidspersonal",
-        "lön": 24371
-      },
-      {
-        "yrke": "Städare/Lokalvårdare",
-        "lön": 24122
-      },
-      {
-        "yrke": "Vårdbiträde funktionshinder",
-        "lön": 24117
-      },
-      {
-        "yrke": "Vårdbiträde",
-        "lön": 23678
-      },
-      {
-        "yrke": "Biträde",
-        "lön": 23287
-      }
-    ]
+  {
+    "yrke": "Lärarassistent",
+    "lön": 28828
+  },
+  {
+    "yrke": "Ambulanssjukvårdare",
+    "lön": 29921
+  },
+  {
+    "yrke": "Anläggningsarbetare",
+    "lön": 29882
+  },
+  {
+    "yrke": "Fotvårdsspecialist",
+    "lön": 29769
+  },
+  {
+    "yrke": "Brandman",
+    "lön": 29003
+  },
+  {
+    "yrke": "Barnsköterska",
+    "lön": 28412
+  },
+  {
+    "yrke": "Fritidsledare",
+    "lön": 28643
+  },
+  {
+    "yrke": "Fastighetsskötare",
+    "lön": 28637
+  },
+  {
+    "yrke": "Fordonsförare",
+    "lön": 28203
+  },
+  {
+    "yrke": "Park- och trädgårdsarbetare",
+    "lön": 27990
+  },
+  {
+    "yrke": "Kock/Kokerska",
+    "lön": 28134
+  },
+  {
+    "yrke": "Skötare",
+    "lön": 27733
+  },
+  {
+    "yrke": "Undersköterska",
+    "lön": 27465
+  },
+  {
+    "yrke": "Stödassistent",
+    "lön": 27452
+  },
+  {
+    "yrke": "Vaktmästare",
+    "lön": 27299
+  },
+  {
+    "yrke": "Boendestödjare",
+    "lön": 27147
+  },
+  {
+    "yrke": "Elevassistent",
+    "lön": 26593
+  },
+  {
+    "yrke": "Förrådsarbetare",
+    "lön": 26325
+  },
+  {
+    "yrke": "Barnskötare",
+    "lön": 26332
+  },
+  {
+    "yrke": "Personlig assistent",
+    "lön": 26074
+  },
+  {
+    "yrke": "Måltidspersonal",
+    "lön": 25283
+  },
+  {
+    "yrke": "Städare/Lokalvårdare",
+    "lön": 24999
+  },
+  {
+    "yrke": "Vårdbiträde funktionshinder",
+    "lön": 24765
+  },
+  {
+    "yrke": "Vårdbiträde",
+    "lön": 24138
+  },
+  {
+    "yrke": "Biträde",
+    "lön": 24017
+  }
+]
 
     //close the popup by clicking the "x"
     close.addEventListener("click", function() {
@@ -310,10 +310,10 @@
             //make the paths grey if they don't have a number for lön
             .style('fill', function(d){
               if (d.properties.Lön === '#SAKNAS!') {
-                return "grey"
+                return "#9a9a9a"
               }
               //otherwise make them bluegreen
-              else return '#74b2b2';
+              else return '#048676';
             })
             .on("mouseover",showTooltip)
             .on("mousemove",moveTooltip)
@@ -324,7 +324,7 @@
             //color and text for the legend. (Addding an extra item to the domain and range arrays will create a new legend item)
             var color = d3.scaleOrdinal()
                 .domain(["Här finns löneuppgifter", "Uppgift saknas"])
-                .range(["#74b2b2", "grey"]);
+                .range(["#048676", "#9a9a9a"]);
 
             var legend = d3.select("svg")
                 .append("g")
@@ -366,13 +366,13 @@
             .style('fill', function(d) {
               //check all the paths to see if they have the same value for Räddningstjänst as the clicked path. If they do, color them yellow
               if (d.properties.Räddningstjänst === grupp){
-                return '#f5cc00';
+                return '#ffef58';
                 }
               //otherwise just give them the same colors they had from start
               else if (d.properties.Lön === '#SAKNAS!') {
-                return "grey"
+                return "#9a9a9a"
               }
-              else return '#74b2b2';
+              else return '#048676';
               });
 
           //show the kartopup
