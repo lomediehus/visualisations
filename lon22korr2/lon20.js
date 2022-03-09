@@ -51,7 +51,7 @@ var highest, place, highestKommun = 0, highestLandsting = 0, placeKommun = '', p
 var lowest, place2, lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
 var semitransparent = document.getElementsByClassName('semitransparent');
 var blinkcontainer= document.getElementById("blinkcontainer");
-console.log(selectelement)
+var regioner = document.getElementsByClassName('regioner');
 
 
 $('#highlowdiv').hide();
@@ -117,12 +117,12 @@ $(document).ready(function() {
       if (yrke != "Väljyrke") {
         overlay.style.display = "none";
         blinkcontainer.style.display = "none";
+        console.log(regioner[0])
         // selectelement.classList.remove("blink");
         overlay.style.cursor = "pointer";
         fillHighlowdiv();
         [...semitransparent].forEach(function(element){
           element.style.opacity = 1;
-          console.log(element)
         })
       }
       else if (yrke === "Väljyrke") {
@@ -609,7 +609,7 @@ function maketable(data, tabell) {
     if (row.Kommun && rdata[22][yrke] != undefined) {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong> (kommun)';
       rikssnittp.innerHTML += '<br>' + "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong> (region)';
-    
+
 
 
     // if (row.Kommun) {
@@ -751,7 +751,7 @@ Promise.all([map]).then(function(values) {
       .data(values[0].features)
       .enter()
       .append("path")
-      // .attr("class", "continent")
+      .attr("class", "semitransparent")
       .attr("d", bana)
       .on("mouseover",showTooltip)
       .on("mousemove",moveTooltip)
