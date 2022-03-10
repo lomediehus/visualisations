@@ -14,6 +14,7 @@
     var tabellpopup = document.getElementById('tabellpopup');
     var tabellpopuptext = document.getElementById('tabellpopuptext');
     var close2 = document.getElementById('closex2');
+    var rikssnittp = document.getElementById("rikssnittp");
 
     //array for the bar graph
     var yrken = [
@@ -142,6 +143,8 @@
             }
     })
 
+  
+
     //Function to make a table from loaded date
     function maketable(data) {
       tabell.innerHTML = '';
@@ -172,14 +175,19 @@
         //html for the second table cell
         cell2.innerHTML = lonform;
 
-
-        //hide the p element that contains the string of kommuner
-        $(".tabellkommuner").hide();
-        //hide the kartpopup (because you probably don't need to see it when you focus on the table, and it looks messy to leave it visible)
-        kartpopup.style.display = "none";
+        if (row.Raddningstjanst === "Rikssnitt"){
+          console.log(lonform)
+          rikssnittp.innerHTML = "<strong class='big red'>" + lonform + " kr/mån</strong>";
+        }
 
 
       })
+
+      //hide the p element that contains the string of kommuner
+      $(".tabellkommuner").hide();
+      //hide the kartpopup (because you probably don't need to see it when you focus on the table, and it looks messy to leave it visible)
+      kartpopup.style.display = "none";
+
 
       //Create and insert the table head and give the headers the classes needed to make clickable, thereby sorting the table
       let header = tabell.createTHead();
@@ -336,7 +344,9 @@
                   .attr("transform", function(d,i) {
                     var height = legendRectSize;
                     var horz = 0;
+                    // var vert = i * height;
                     var vert = i * height;
+                    console.log(vert)
                     return "translate(" + horz + "," + vert + ")";
                   })
 
@@ -382,7 +392,7 @@
           let html = `
             <h3 class="u-textMeta">${d.properties.Räddningstjänst}</h3>
 
-            <p class='u-textMeta nomargin'>${lon}<p>
+            <p class='u-textMetaDeca nomargin'>${lon}<p>
             <p class='u-textMeta nomargin'><strong>Kommuner som ingår:</strong> ${kommungrupp.join(', ')}.</p>
           `
           // if (d.properties.Fotnot != '') {

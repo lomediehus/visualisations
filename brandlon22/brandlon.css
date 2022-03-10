@@ -20,6 +20,18 @@ div#header h1 {
   display: block;
 }
 
+#rikssnittp {
+  height: 45px;
+  margin-left: 10px;
+}
+
+#logga img {
+  position: absolute;
+  top: 150px;
+  width: 120px;
+  pointer-events: none;
+}
+
 /* borders of the map. Fill is set in js code */
 path {
   stroke-width: 0.2px;
@@ -103,9 +115,17 @@ table.tabellstil th {
   overflow: auto;
 }
 
-table.tabellstil td {
+/* table.tabellstil td {
   vertical-align: text-top;
   font-size: 18px;
+  line-height: 28px;
+  overflow: auto;
+} */
+
+table.tabellstil td {
+  vertical-align: text-top;
+  font-size: 1.3em;
+  padding: 0 0px 0 5px;
   line-height: 28px;
   overflow: auto;
 }
@@ -184,6 +204,14 @@ div.close {
 
 .bold {
   font-weight: bolder;
+}
+
+.red {
+  color: #da4042;
+}
+
+.big {
+  font-size: 26px;
 }
 
 #content {
