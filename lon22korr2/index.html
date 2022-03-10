@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Lon20d3v5dropdown</title>
+  <title>Löner kommunalare 2021</title>
   <link rel="stylesheet" type="text/css" href="lon20.css">
   <!-- <link rel="stylesheet" type="text/css" href="brandlon.css"> -->
   <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
@@ -57,109 +57,109 @@
 
 
 
-  <div id="content">
+    <div id="content">
 
-    <div class="basecontainer fixed-height">
-      <h1 class="u-textMetaDeca semitransparent">Karta regioner och kommuner</h1>
-      <div id="kartdiv">
-        <!-- <div class="vinjett"><span class="u-textMeta">Karta</span></div> -->
-        <div id="lansdiv">
-          <p class="u-textMetaDeca semitransparent">Klicka på ett län för att se lönerna i kommunerna och/eller regionen.</p>
-          <div id="logga"><img src="lonekoll_logga.png" alt="logotype" width="400px"></div>
-          <div id="kartpopup">
-            <div id="kartpopuprubbe" class="u-textMeta"></div>
-            <div class="close"><img id="closex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
-            <table id="karttabell" class="karttabell u-textMeta"></table>
+      <div class="basecontainer fixed-height">
+        <h1 class="u-textMetaDeca semitransparent">Karta regioner och kommuner</h1>
+        <div id="kartdiv">
+          <!-- <div class="vinjett"><span class="u-textMeta">Karta</span></div> -->
+          <div id="lansdiv">
+            <p class="u-textMetaDeca semitransparent">Klicka på ett län för att se lönerna i kommunerna och/eller regionen.</p>
+            <div id="logga"><img src="lonekoll_logga.png" alt="logotype" width="400px"></div>
+            <div id="kartpopup">
+              <div id="kartpopuprubbe" class="u-textMeta"></div>
+              <div class="close"><img id="closex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
+              <table id="karttabell" class="karttabell u-textMeta"></table>
+            </div>
+
+            <div id="highlowdiv"></div>
+
           </div>
+        </div>
+      </div>
 
-          <div id="highlowdiv"></div>
+
+      <div id="blinkcontainer">
+        <div class="sign blink">
+          <!-- <h1>&uArr;<br>Välj yrke först!</h1> -->
+          <h1>Välj yrke först!</h1>
 
         </div>
       </div>
-    </div>
+
+      <div id="overlay"></div>
 
 
-    <div id="blinkcontainer">
-      <div class="sign blink">
-        <!-- <h1>&uArr;<br>Välj yrke först!</h1> -->
-        <h1>Välj yrke först!</h1>
+      <div id="lonlista" class="basecontainer">
+        <h1 class="u-textMetaDeca semitransparent">Lönetabell</h1>
+        <!-- <div class="vinjett"><span class="u-textMeta">Tabell</span></div> -->
 
-      </div>
-    </div>
-
-    <div id="overlay"></div>
-
-
-    <div id="lonlista" class="basecontainer">
-      <h1 class="u-textMetaDeca semitransparent">Lönetabell</h1>
-      <!-- <div class="vinjett"><span class="u-textMeta">Tabell</span></div> -->
-
-      <input type="radio" name="tabellknapp" value="listKommuner" class="yrkesbutton" id="listKommuner"><label class="u-textMeta semitransparent text-top">kommuner</label>
-      <input type="radio" name="tabellknapp" value="listLandsting" class="yrkesbutton" id="listLandsting"><label class="u-textMeta semitransparent text-top">regioner</label>
-      <p></p>
-      <!-- <p class="u-textMetaDeca" id=rikssnittp></p> -->
+        <input type="radio" name="tabellknapp" value="listKommuner" class="yrkesbutton" id="listKommuner"><label class="u-textMeta semitransparent text-top">kommuner</label>
+        <input type="radio" name="tabellknapp" value="listLandsting" class="yrkesbutton" id="listLandsting"><label class="u-textMeta semitransparent text-top">regioner</label>
+        <p></p>
+        <!-- <p class="u-textMetaDeca" id=rikssnittp></p> -->
 
 
-      <div id="sortknapp" class="knapprad">
-        <span class="knapptext u-textMeta semitransparent">Sortera på: </span><button id="sortKommun" class="sortknapp"><p class="knapptext u-textMeta semitransparent">namn</p></button><button id="sortLonFall" class="sortknapp"><p class="knapptext u-textMeta semitransparent">lön<span class="mindre"> &#9660;</span></p></button><button id="sortLonStig" class="sortknapp"><p class="knapptext u-textMeta semitransparent">lön<span class="mindre"> &#9650;</p></span></button>
+        <div id="sortknapp" class="knapprad">
+          <span class="knapptext u-textMeta semitransparent">Sortera på: </span><button id="sortKommun" class="sortknapp"><p class="knapptext u-textMeta semitransparent">namn</p></button><button id="sortLonFall" class="sortknapp"><p class="knapptext u-textMeta semitransparent">lön<span class="mindre"> &#9660;</span></p></button><button id="sortLonStig" class="sortknapp"><p class="knapptext u-textMeta semitransparent">lön<span class="mindre"> &#9650;</p></span></button>
+
+        </div>
+
+        <div id="mintabelldiv" style="width:100%">
+          <table id="mintabell" class="tabellstil u-textMeta"></table>
+        </div>
 
       </div>
 
-      <div id="mintabelldiv" style="width:100%">
-        <table id="mintabell" class="tabellstil u-textMeta"></table>
-      </div>
+      <div></div>
 
-    </div>
-
-    <div></div>
-
-    <div id="jamforyrkediv" class="basecontainer semitransparent">
+      <div id="jamforyrkediv" class="basecontainer semitransparent">
 
 
-      <h1 class="u-textMetaDeca">Jämför yrken</h1>
-      <input type="radio" name="yrkesknapp" value="kommuner" class="yrkesbutton"><label id="kommuner" class="u-textMeta text-top">kommuner</label>
-      <input type="radio" name="yrkesknapp" value="landsting" class="yrkesbutton"><label id="landsting" class="u-textMeta text-top">regioner</label>
-      <p class="u-textMeta" id="yrkep">Visar <span id="yrkesspan">genomsnitt för alla kommuner. Välj en kommun i listan.</span></p>
-      <!-- <h2 class="input u-textMeta" id="sokkommun">Sök kommun</h2> -->
+        <h1 class="u-textMetaDeca">Jämför yrken</h1>
+        <input type="radio" name="yrkesknapp" value="kommuner" class="yrkesbutton"><label id="kommuner" class="u-textMeta text-top">kommuner</label>
+        <input type="radio" name="yrkesknapp" value="landsting" class="yrkesbutton"><label id="landsting" class="u-textMeta text-top">regioner</label>
+        <p class="u-textMeta" id="yrkep">Visar <span id="yrkesspan">genomsnitt för alla kommuner. Välj en kommun i listan.</span></p>
+        <!-- <h2 class="input u-textMeta" id="sokkommun">Sök kommun</h2> -->
 
-        <!-- This list is populated by the javascript file -->
-        <select id="valjkommun" class="u-textMeta valjLandstingKommun">
-          <option value="RIKSSNITT">Välj kommun</option>
-        </select>
+          <!-- This list is populated by the javascript file -->
+          <select id="valjkommun" class="u-textMeta valjLandstingKommun">
+            <option value="RIKSSNITT">Välj kommun</option>
+          </select>
 
-        <!-- <input type="text" name="search" placeholder="Kommun" id="searchfield" class="u-textMeta"></p> -->
+          <!-- <input type="text" name="search" placeholder="Kommun" id="searchfield" class="u-textMeta"></p> -->
 
-        <select id="valjlandsting" class="u-textMeta valjLandstingKommun">
-          <option value="RIKSSNITT">Välj region</option>
-          <option value="Region Blekinge">Region Blekinge</option>
-          <option value="Region Dalarna">Region Dalarna</option>
-          <option value="Region Kalmar län">Region Kalmar län</option>
-          <option value="Region Värmland">Region Värmland</option>
-          <option value="Region Sörmland">Region Sörmland</option>
-          <option value="Region Västernorrland">Region Västernorrland</option>
-          <option value="Region Gotland">Region Gotland</option>
-          <option value="Region Gävleborg">Region Gävleborg</option>
-          <option value="Region Halland">Region Halland</option>
-          <option value="Region Jämtland Härjedalen">Region Jämtland Härjedalen</option>
-          <option value="Region Jönköpings län">Region Jönköpings län</option>
-          <option value="Region Kronoberg">Region Kronoberg</option>
-          <option value="Region Norrbotten">Region Norrbotten</option>
-          <option value="Region Skåne">Region Skåne</option>
-          <option value="Region Uppsala">Region Uppsala</option>
-          <option value="Region Västmanland">Region Västmanland</option>
-          <option value="Region Örebro län">Region Örebro län</option>
-          <option value="Region Östergötland">Region Östergötland</option>
-          <option value="Region Stockholm">Region Stockholm</option>
-          <option value="Region Västerbotten">Region Västerbotten</option>
-          <option value="Västra Götalandsregionen">Västra Götalandsregionen</option>
-        </select>
+          <select id="valjlandsting" class="u-textMeta valjLandstingKommun">
+            <option value="RIKSSNITT">Välj region</option>
+            <option value="Region Blekinge">Region Blekinge</option>
+            <option value="Region Dalarna">Region Dalarna</option>
+            <option value="Region Kalmar län">Region Kalmar län</option>
+            <option value="Region Värmland">Region Värmland</option>
+            <option value="Region Sörmland">Region Sörmland</option>
+            <option value="Region Västernorrland">Region Västernorrland</option>
+            <option value="Region Gotland">Region Gotland</option>
+            <option value="Region Gävleborg">Region Gävleborg</option>
+            <option value="Region Halland">Region Halland</option>
+            <option value="Region Jämtland Härjedalen">Region Jämtland Härjedalen</option>
+            <option value="Region Jönköpings län">Region Jönköpings län</option>
+            <option value="Region Kronoberg">Region Kronoberg</option>
+            <option value="Region Norrbotten">Region Norrbotten</option>
+            <option value="Region Skåne">Region Skåne</option>
+            <option value="Region Uppsala">Region Uppsala</option>
+            <option value="Region Västmanland">Region Västmanland</option>
+            <option value="Region Örebro län">Region Örebro län</option>
+            <option value="Region Östergötland">Region Östergötland</option>
+            <option value="Region Stockholm">Region Stockholm</option>
+            <option value="Region Västerbotten">Region Västerbotten</option>
+            <option value="Västra Götalandsregionen">Västra Götalandsregionen</option>
+          </select>
 
-        <div id="yrken">
-          <table id="yrkestabell" class="tabellstil"></table>
-          <svg class="chart" id="chart"></svg>
+          <div id="yrken">
+            <table id="yrkestabell" class="tabellstil"></table>
+            <svg class="chart" id="chart"></svg>
+          </div>
         </div>
       </div>
-    </div>
 
 
 
