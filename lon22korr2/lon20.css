@@ -493,6 +493,10 @@ p.knapptext {
   margin-bottom: 30px;
 }
 
+.fixed-height {
+  height: 750px;
+}
+
 .basecontainer h1 {
   font-weight: 900;
 }

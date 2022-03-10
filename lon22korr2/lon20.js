@@ -117,7 +117,6 @@ $(document).ready(function() {
       if (yrke != "Väljyrke") {
         overlay.style.display = "none";
         blinkcontainer.style.display = "none";
-        console.log(regioner[0])
         // selectelement.classList.remove("blink");
         overlay.style.cursor = "pointer";
         fillHighlowdiv();
@@ -710,6 +709,7 @@ function bubbelvillkor(row) {
     showhide(rad, bubbla);
     }
   else if (row.Kommun === 'Sollentuna AB Solom') {
+    console.log('Solom')
     rad.classList.add('bubbla');
     var cl1 = bubbla.cloneNode(true);
     rad.appendChild(cl1);
@@ -768,10 +768,10 @@ function clicked(d,i) {
   hideTooltip;
   karttabell.innerHTML = '';
   kartpopuprubbe.innerHTML = '';
-  if (yrke === 'Väljyrke') {
-
-    karttabell.innerHTML = "<p class=\"u-textMeta\">Du måste välja ett yrke i listan först</p>";
-  }
+  // if (yrke === 'Väljyrke') {
+  //
+  //   karttabell.innerHTML = "<p class=\"u-textMeta\">Du måste välja ett yrke i listan först</p>";
+  // }
 
 
   var lan = d.properties.lan_namn;
@@ -853,6 +853,21 @@ function clicked(d,i) {
   if (karttabell.innerHTML === '') {
     karttabell.innerHTML = '<p>Uppgift saknas då det finns för få eller inga anställda i yrkeskategorin.</p>';
   }
+
+  //Position of kartpopup. If kartpopup is small, position it on the mouseclick position
+  if (kartpopup.clientHeight < 200) {
+    kartpopup.style.top = (event.offsetY) + 'px';
+  }
+  //If kartpopup is not that small, position it in the middle of parent div.
+  else {
+    kartpopup.style.top = (325-kartpopup.clientHeight/2) + 'px';
+    //if the position is negative (above parent div), change position to top of parent div
+    if (kartpopup.offsetTop <= 0) {
+      kartpopup.style.top = "0px"
+    }
+  }
+
+
 }
 
 //Create a tooltip, hidden at the start
