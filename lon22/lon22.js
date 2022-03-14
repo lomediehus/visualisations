@@ -138,7 +138,7 @@ $(document).ready(function() {
           })
       }
 
-
+    //get the number for rikssnitt and put them in place
     if (regionsnitt === undefined) {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong>';
     } else if (kommunsnitt === undefined) {
@@ -147,10 +147,9 @@ $(document).ready(function() {
     else {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&nbsp;') + " kr/mån</strong> (kommun)<br> <strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + " kr/mån</strong> (region)";
     }
+
     //end of change-function
     });
-
-
 
 //end of document-ready-function
 });
@@ -163,12 +162,11 @@ function getHighLow(yrke) {
   highest = 0, lowest = 50000, highestKommun = 0, highestLandsting = 0, placeKommun = '', placeLandsting = '', lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
 
   rdata.forEach(function(row) {
-    //get the rikssnitt, to show in the "rikssnittp"
-
+    //get the rikssnitt, to show in the "rikssnittp". (Has nothing to do with the high-low-values, just found a place in the code where the data was traversed)
     if (row.Region === "RIKSSNITT") {
       regionsnitt = row[yrke];
-
     }
+
     if (row[yrke] > highestLandsting) {
       highestLandsting = row[yrke];
       placeLandsting = row.Region;
@@ -180,10 +178,11 @@ function getHighLow(yrke) {
   })
 
   kdata.forEach(function(row) {
-    //get the rikssnitt, to show in the "rikssnittp"
+    //get the rikssnitt, to show in the "rikssnittp". (Has nothing to do with the high-low-values, just found a place in the code where the data was traversed)
     if (row.Kommun === "RIKSSNITT") {
       kommunsnitt = row[yrke];
     }
+
     if (row[yrke] > highestKommun) {
       highestKommun = row[yrke];
       placeKommun = row.Kommun;
@@ -531,7 +530,7 @@ function populateKommunDropdown() {
     else if (getvalue(yrkesknappar) === "landsting") {
 
 
-        //index for rdata is 1 because that is the position of the first proffesion in that array
+        //index for rdata is 2 because that is the position of the first proffesion in that array
         jamforyrke(rdata, 'RIKSSNITT', 2);
         //show which data is chosen
         yrkesspan.innerHTML = 'genomsnitt för alla regioner.<p></p>Välj en region i listan:';
@@ -617,23 +616,6 @@ function maketable(data, tabell) {
       cell2.innerHTML = yrkeform;
     }
 
-  else {
-    //if there is a row.Kommun use the value in rikssnittp, otherwise use the value for row.Region (Changed from data in row.Kommun and row.Region to only text before the number)
-
-    // console.log(isNaN(row.Kommun))
-    // console.log(row.Region)
-    // console.log(row[yrke])
-
-    // rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong>';
-
-
-
-
-
-
-
-  }
-
   //When to show the yellow bubbles
   bubbelvillkor(row);
   })
@@ -679,8 +661,6 @@ function showhide(row, bubble) {
   })
 
 };
-
-
 
 
 
@@ -826,7 +806,7 @@ function clicked(d,i) {
           rad = karttabell.insertRow(karttabell.rows.length);
           cell1 = rad.insertCell(0);
           cell2 = rad.insertCell(1);
-          cell1.innerHTML = 'Regionen';
+          cell1.innerHTML = 'Regionanställda';
           //formatted variable for lön with space as thousand separator, will be a string
           var yrkeform = $.number(row[yrke], 0, ',', '&nbsp;');
           //changing zero to blanks
@@ -870,7 +850,7 @@ function clicked(d,i) {
     }
   }
 
-
+//end of 'clicked'-function
 }
 
 //Create a tooltip, hidden at the start
