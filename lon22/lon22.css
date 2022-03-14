@@ -551,4 +551,8 @@ font-size: 20px;
   select#valjyrke {
     width: 360px;
   }
+  /* don't use "space between" on smaller screens since it doesn't look good when the third box jumps down and leaves only two boxes visible on top */
+  #content {
+    justify-content: flex-start; }
+  }
 }
