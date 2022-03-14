@@ -52,6 +52,8 @@ var lowest, place2, lowestKommun = 50000, lowestLandsting = 50000, place2Kommun 
 var semitransparent = document.getElementsByClassName('semitransparent');
 var blinkcontainer= document.getElementById("blinkcontainer");
 var regioner = document.getElementsByClassName('regioner');
+var regionsnitt;
+var kommunsnitt;
 
 
 $('#highlowdiv').hide();
@@ -68,7 +70,6 @@ $(document).ready(function() {
       getHighLow(yrke);
       kartpopup.style.display = "none";
 
-      // console.log(rdata[22][yrke])
 
       //Check if yrke is present in file "kdata", if it is, make table from "kdata"
       for (var i = 0; i < kdata.length; i++) {
@@ -136,12 +137,20 @@ $(document).ready(function() {
             // element.classList.add('semitransparent');
           })
       }
+
+
+    if (regionsnitt === undefined) {
+      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong>';
+    } else if (kommunsnitt === undefined) {
+      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong>';
+    }
+    else {
+      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&nbsp;') + " kr/mån</strong> (kommun)<br> <strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + " kr/mån</strong> (region)";
+    }
     //end of change-function
     });
 
-    // document.addEventListener("click", function(){
-    //   alert('Välj ett yrke i listan först')
-    // })
+
 
 //end of document-ready-function
 });
@@ -154,6 +163,12 @@ function getHighLow(yrke) {
   highest = 0, lowest = 50000, highestKommun = 0, highestLandsting = 0, placeKommun = '', placeLandsting = '', lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
 
   rdata.forEach(function(row) {
+    //get the rikssnitt, to show in the "rikssnittp"
+
+    if (row.Region === "RIKSSNITT") {
+      regionsnitt = row[yrke];
+
+    }
     if (row[yrke] > highestLandsting) {
       highestLandsting = row[yrke];
       placeLandsting = row.Region;
@@ -165,6 +180,10 @@ function getHighLow(yrke) {
   })
 
   kdata.forEach(function(row) {
+    //get the rikssnitt, to show in the "rikssnittp"
+    if (row.Kommun === "RIKSSNITT") {
+      kommunsnitt = row[yrke];
+    }
     if (row[yrke] > highestKommun) {
       highestKommun = row[yrke];
       placeKommun = row.Kommun;
@@ -183,7 +202,6 @@ function getHighLow(yrke) {
     place2 = 'Västra Götalands\&shy;regionen';
   }
   if (place2 === 'Region Östergötland') {
-    console.log("Det är ju Östergötland")
     place2 = 'Region Öster\&shy;götland';
   }
   if (place === 'Västra Götalandsregionen'){
@@ -360,7 +378,6 @@ function makeGraph(data1) {
 
   //sort the data
   data1.sort(function(x, y){
-    // console.log(x.lön + '   '  + y.lön)
      return d3.descending(x.lön, y.lön);
   })
 
@@ -583,6 +600,7 @@ function maketable(data, tabell) {
       kommun = true;
     }
     if (row.Kommun !== 'RIKSSNITT' && row.Region !== 'RIKSSNITT' ) {
+
       rad = tabell.insertRow();
       cell1 = rad.insertCell(0);
       cell2 = rad.insertCell(1);
@@ -601,31 +619,18 @@ function maketable(data, tabell) {
 
   else {
     //if there is a row.Kommun use the value in rikssnittp, otherwise use the value for row.Region (Changed from data in row.Kommun and row.Region to only text before the number)
-    // row.Kommun ? rikssnittp.innerHTML = 'Genomsnittslön kommun: ' + '<strong>' + $.number(row[yrke], 0, ',', '&nbsp;') + '</strong> kr/mån.' : rikssnittp.innerHTML = 'Genomsnittslön region:  ' + '<strong>' + $.number(row[yrke], 0, ',', '&nbsp;') + '</strong> kr/mån.';
-    let regionsnitt = rdata[22][yrke];
+
+    // console.log(isNaN(row.Kommun))
+    // console.log(row.Region)
+    // console.log(row[yrke])
+
+    // rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong>';
 
 
-    if (row.Kommun && rdata[22][yrke] != undefined) {
-      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong> (kommun)';
-      rikssnittp.innerHTML += '<br>' + "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong> (region)';
 
 
 
-    // if (row.Kommun) {
-    //   rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong> (kommun)';
-    //   if (rdata[22][yrke] != undefined) {
-    //     rikssnittp.innerHTML += '<br>' + "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong> (region)';
-    //   }
 
-    }
-
-    else if (row.Kommun) {
-      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(row[yrke], 0, ',', '&nbsp;') + ' kr/mån</strong>';
-    }
-
-    else {
-      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong>';
-    }
 
   }
 
@@ -709,7 +714,6 @@ function bubbelvillkor(row) {
     showhide(rad, bubbla);
     }
   else if (row.Kommun === 'Sollentuna AB Solom') {
-    console.log('Solom')
     rad.classList.add('bubbla');
     var cl1 = bubbla.cloneNode(true);
     rad.appendChild(cl1);
@@ -797,7 +801,6 @@ function clicked(d,i) {
           rad = karttabell.insertRow(0);
           cell1 = rad.insertCell(0);
           cell2 = rad.insertCell(1);
-          // console.log(row.Kommun)
           cell1.innerHTML = row.Kommun;
           if (typeof row[yrke] === 'undefined'){
             cell2.innerHTML = '';
