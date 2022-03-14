@@ -177,17 +177,7 @@ label {
         }
       }
 
-/* #jamforyrkediv {
-  background-color: #e3e5e5;
-  min-height: 600px;
-  max-height: 650px;
-  border-radius: 25px;
-  padding-right: 5px;
-  padding-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  margin-right: 0px;
-} */
+
 
 #logga img {
   position: absolute;
@@ -205,11 +195,6 @@ label {
   max-height: 770px;
   margin-right: 0px;
 }
-
-/* #jamforyrkediv h1 {
-  font-weight: 900;
-} */
-
 
 
 #valjlandsting {
@@ -403,23 +388,7 @@ div.close {
   font-size: 26px;
 }
 
-/* .vinjett {
-  background-image: linear-gradient(#6eaaaa, #6eaaaa, #f5f7f7 );
-  line-height: 1.5em;
-  width: 100%;
-  color: white;
-  text-transform: uppercase;
-  padding-left: 5px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 
-.vinjett span {
-  display: inline-block;
-  vertical-align: top;
-  line-height: normal;
-  padding: 3px;
-} */
 
 .knapprad {
   width: 100%;
@@ -551,8 +520,10 @@ font-size: 20px;
   select#valjyrke {
     width: 360px;
   }
+}
+
+@media only screen and (max-width: 1120px) {
   /* don't use "space between" on smaller screens since it doesn't look good when the third box jumps down and leaves only two boxes visible on top */
   #content {
     justify-content: flex-start; }
   }
-}
