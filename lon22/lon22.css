@@ -522,8 +522,9 @@ font-size: 20px;
   }
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1130px) {
   /* don't use "space between" on smaller screens since it doesn't look good when the third box jumps down and leaves only two boxes visible on top */
   #content {
     justify-content: flex-start; }
   }
+}
