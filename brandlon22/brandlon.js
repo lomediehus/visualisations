@@ -143,7 +143,7 @@
             }
     })
 
-  
+
 
     //Function to make a table from loaded date
     function maketable(data) {
@@ -176,7 +176,6 @@
         cell2.innerHTML = lonform;
 
         if (row.Raddningstjanst === "Rikssnitt"){
-          console.log(lonform)
           rikssnittp.innerHTML = "<strong class='big red'>" + lonform + " kr/mån</strong>";
         }
 
@@ -344,9 +343,7 @@
                   .attr("transform", function(d,i) {
                     var height = legendRectSize;
                     var horz = 0;
-                    // var vert = i * height;
                     var vert = i * height;
-                    console.log(vert)
                     return "translate(" + horz + "," + vert + ")";
                   })
 
@@ -404,7 +401,7 @@
             }
 
           popuptext.innerHTML = html;
-          //variable that stors the vertical position of the clicked path
+          //variable that stores the vertical position of the clicked path
           let ev = d3.event.pageY;
           //variable that stores the vertical position of the containing div
           let divpos = $('#kartdiv').offset().top
@@ -503,15 +500,7 @@
     }
 
     makeGraph(yrken);
-
-
-
   }
 
 
-
-
-
-
-
-})()
+})();
