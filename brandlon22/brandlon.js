@@ -36,7 +36,7 @@
   },
   {
     "yrke": "Brandman",
-    "lön": 29018
+    "lön": 29004
   },
   {
     "yrke": "Barnsköterska",
