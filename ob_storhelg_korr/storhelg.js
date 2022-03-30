@@ -5,8 +5,8 @@ let kombo = [];
 //read data from files into arrays
 $.ajax({
         // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
-        // url: "OBavtal.json",
-        url: "test2.json",
+        url: "OBavtal.json",
+        // url: "test2.json",
 
         dataType: "json",
         mimeType: "application/json",
