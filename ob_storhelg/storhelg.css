@@ -87,6 +87,17 @@ h3 .fetRubrik {
   min-height: 800px;
 }
 
+/* .center {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 100px);
+  background-color: white;
+  border: 2px solid #048676;
+  border-radius: 5%;
+} */
+
 #header {
   position: relative;
   width: 100%;

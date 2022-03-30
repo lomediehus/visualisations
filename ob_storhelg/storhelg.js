@@ -6,7 +6,7 @@ let kombo = [];
 $.ajax({
         // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
         url: "OBavtal.json",
-        // url: "test.json",
+        // url: "test2.json",
 
         dataType: "json",
         mimeType: "application/json",
@@ -138,22 +138,22 @@ function doStuff() {
   //variables for set dates
   var nyarsdatum = new Date("December 27 2021");
   var trettonhelgsdatum = new Date("January 2 2022");
-  var paskdatum = new Date("February 12 2021");
-  var pingstdatum = new Date("April 15 2021");
+  var paskdatum = new Date("February 12 2022");
+  var pingstdatum = new Date("April 22 2022");
 
   //handling dates:
   //Check if current date is after nyar;
-  if (date.getTime() > nyarsdatum.getTime()) {
+  if (date.getTime() > paskdatum.getTime()) {
     //if current date is also after trettondagen
-    if (date.getTime() > trettonhelgsdatum.getTime()) {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/trettonhelg.svg';
-      goActive(helgknapp3);
-      helgnr = "3";
+    if (date.getTime() > pingstdatum.getTime()) {
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
+      goActive(helgknapp5);
+      helgnr = "5";
     }
     else {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/nyar.svg';
-      goActive(helgknapp2);
-      helgnr = "2";
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+      goActive(helgknapp4);
+      helgnr = "4";
     }
   }
   else {
