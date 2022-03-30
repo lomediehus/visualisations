@@ -1,0 +1,69 @@
+[{
+		"avtalnr": 10,
+		"helg1": {
+			"fall1": "Max 108,15 kr/tim från klockan 07.00 på julafton till klockan 00.00 första vardagen efter helgen, alltså måndagen den 27 december i år. OBS! Lokal eller individuell överenskommelse kan träffas.",
+			"fall2": "",
+			"fall3": "",
+			"fall4": "",
+			"fall1divisor": 200,
+			"fall2divisor": "",
+			"fall3divisor": "",
+			"fall4divisor": "",
+			"tak": 21629
+			},
+		"helg2": {
+			"fall1": "Max 108,15 kr/tim från klockan 07.00 på nyårsafton till klockan 00.00 vardagen efter nyår, alltså måndagen den 3 januari 2022. OBS! Lokal eller individuell överenskommelse kan träffas.",
+			"fall2": "",
+			"fall3": "",
+			"fall4": "",
+			"fall1divisor": 200,
+			"fall2divisor": "",
+			"fall3divisor": "",
+			"fall4divisor": "",
+			"tak": 21629
+			},
+		"helg3": {
+			"fall1": "Max 108,15 kr/tim från klockan 06.00 på trettondag jul till klockan 00.00 fredagen den 7 januari. OBS! Lokal eller individuell överenskommelse kan träffas.",
+			"fall2": "",
+			"fall3": "",
+			"fall4": "",
+			"fall1divisor": 200,
+			"fall2divisor": "",
+			"fall3divisor": "",
+			"fall4divisor": "",
+			"tak": 21629
+			},
+		"helg4": {
+			"fall1": "Max 108,15 kr/tim från klockan 18.00 på skärtorsdagen till klockan 24.00 annandag påsk. (Månadslönen på heltid dividerat med 200, med ett tak på 21&nbsp;629 kr/månad.)",
+			"fall2": "",
+			"fall3": "",
+			"fall4": "",
+			"fall1divisor": 200,
+			"fall2divisor": "",
+			"fall3divisor": "",
+			"fall4divisor": "",
+			"tak": 21629
+			},
+		"helg5": {
+			"fall1": "Max 104,59 kr/tim från klockan 07.00 på pingstafton till klockan 00.00 vardagen närmast efter helgdagsaftonen, alltså måndagen den 1 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 20&nbsp;918 kr/månad.)",
+			"fall2": "",
+			"fall3": "",
+			"fall4": "",
+			"fall1divisor": 200,
+			"fall2divisor": "",
+			"fall3divisor": "",
+			"fall4divisor": "",
+			"tak": 20918
+			},
+		"helg6": {
+			"fall1": "Max 104,59 kr/tim från klockan 07.00 på midsommarafton till klockan 00.00 vardagen närmast efter helgdagsaftonen, alltså måndagen den 22 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 20&nbsp;918 kr/månad.)",
+			"fall2": "",
+			"fall3": "",
+			"fall4": "",
+			"fall1divisor": 200,
+			"fall2divisor": "",
+			"fall3divisor": "",
+			"fall4divisor": "",
+			"tak": 20918
+		}
+		  }]
