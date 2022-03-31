@@ -19,8 +19,9 @@ body {
 }
 
 #helgbild {
-position: fixed;
-pointer-events: none;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 

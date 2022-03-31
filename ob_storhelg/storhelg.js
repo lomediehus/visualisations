@@ -169,13 +169,14 @@ function doStuff() {
     helgnr = "1";
     helgknapp(this);
     document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/jul.svg';
+
   });
 
   helgknapp2.addEventListener('click', function(){
     // NEW change source of helgnr
     helgnr = "2";
     helgknapp(this);
-     document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/nyar.svg';
+    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/nyar.svg';
   });
 
   helgknapp3.addEventListener('click', function(){
@@ -188,6 +189,8 @@ function doStuff() {
     helgnr = "4"
     helgknapp(this);
     document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+    console.log("bildnamn " + helgbild.nameProp)
+
   });
 
   helgknapp5.addEventListener('click', function(){
