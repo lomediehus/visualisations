@@ -223,6 +223,7 @@ div.close {
   flex-wrap: wrap;
   padding: 0px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .basecontainer {
