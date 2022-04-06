@@ -122,7 +122,6 @@ $(document).ready(function() {
       }
 
       if (yrke === "Brandman") {
-        console.log("Det brinner utav helvete")
         brandlondiv.style.display = "block";
         content.style.display = "none";
 
