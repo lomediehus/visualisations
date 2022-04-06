@@ -763,7 +763,7 @@ function doStuff() {
   document.body.addEventListener("touchstart", removeFocus);
 
   //set focus on input field
-  document.getElementById('sokYrkeKnapp').focus();
+  // document.getElementById('sokYrkeKnapp').focus();
 
 //end of doStuff-function
 }
