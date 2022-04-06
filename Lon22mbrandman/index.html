@@ -26,11 +26,11 @@
         <option value="Väljyrke">Välj yrke</option>
         <option value="Ambulanssjukvårdare">Ambulanssjukvårdare (region)</option>
         <option value="Anläggningsarbetare">Anläggningsarbetare (kommun)</option>
-        <option value="Brandman">Brandman</option>
         <option value="Barnskötare">Barnskötare (kommun)</option>
         <option value="Barnsköterska">Barnsköterska (region)</option>
         <option value="Biträde">Biträde (region)</option>
         <option value="Boendestödjare">Boendestödjare (kommun)</option>
+        <option value="Brandman">Brandman</option>
         <option value="Elevassistent">Elevassistent (kommun)</option>
         <option value="Fastighetsskötare">Fastighetsskötare (kommun)</option>
         <option value="Fordonsförare">Fordonsförare (kommun/region)</option>
@@ -161,6 +161,7 @@
             <table id="yrkestabell" class="tabellstil"></table>
             <svg class="chart" id="chart"></svg>
           </div>
+            <p class="u-textMeta bottom">För att jämföra med brandmännens löner, välj "Brandman" som yrke i menyn högst upp.</p>
         </div>
 
 
@@ -189,7 +190,7 @@
       <div id="brandcontent">
 
 
-        <div id="brandkartdiv" class="basecontainer">
+        <div id="brandkartdiv" class="basecontainer fixed-height">
           <h1 class="u-textMetaDeca">Karta över räddningstjänster</h1>
           <p class="u-textMeta">Klicka för att se räddningstjänst, lön och vilka kommuner som ingår.</p>
           <div id="brandlogga"><img src="lonekoll_logga.png" alt="logotype" width="320px"></div>
@@ -221,7 +222,7 @@
 
       <div id="brandjamforyrkediv" class="basecontainer">
         <h1 class="u-textMetaDeca">Jämför med andra yrken</h1>
-        <p class="u-textMeta">Här kan du jämföra brandmännens löner med 24 andra kommunalaryrken.</p>
+        <p class="u-textMeta">Brandmännens lön jämförd med 24 andra kommunalaryrken. (Genomsnitt för hela landet.)</p>
         <!-- <svg class="chart" id="brandchart"></svg> -->
       </div>
 
@@ -235,10 +236,9 @@
   <!-- <script type="text/javascript"> -->
 
 
-  <!-- <script>
-    var brandsnitt;
-  </script> -->
+
   <script src="lon22.js"></script>
+
   <script src="brandlon.js"></script>
 
 

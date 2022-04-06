@@ -390,6 +390,8 @@ function jamforyrke(data, valdkommun, index) {
       }
     });
 
+    // console.log("yrkesarray  "  + yrkesarray)
+
 
     //make a bar chart with d3
     makeGraph(yrkesarray);

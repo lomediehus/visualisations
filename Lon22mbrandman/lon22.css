@@ -92,6 +92,10 @@ label {
   z-index: 3;
 }
 
+p.bottom {
+  position: absolute;
+  bottom: 0px;
+}
 
 
 #overlay {
@@ -181,7 +185,7 @@ label {
 }
 
 #jamforyrkediv {
-  min-height: 600px;
+  /* min-height: 600px; */
   max-height: 770px;
   margin-right: 0px;
 }
