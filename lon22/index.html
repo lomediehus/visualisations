@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>Löner kommunalare 2021</title>
   <link rel="stylesheet" type="text/css" href="lon22.css">
-  <!-- <link rel="stylesheet" type="text/css" href="brandlon.css"> -->
+  <link rel="stylesheet" type="text/css" href="brandlon.css">
   <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -30,6 +30,7 @@
         <option value="Barnsköterska">Barnsköterska (region)</option>
         <option value="Biträde">Biträde (region)</option>
         <option value="Boendestödjare">Boendestödjare (kommun)</option>
+        <option value="Brandman">Brandman</option>
         <option value="Elevassistent">Elevassistent (kommun)</option>
         <option value="Fastighetsskötare">Fastighetsskötare (kommun)</option>
         <option value="Fordonsförare">Fordonsförare (kommun/region)</option>
@@ -60,6 +61,14 @@
 
     <div id="content">
 
+      <div id="blinkcontainer">
+        <div class="sign blink">
+          <h1>Välj yrke först!</h1>
+        </div>
+      </div>
+
+      <div id="overlay"></div>
+
       <div class="basecontainer fixed-height">
         <h1 class="u-textMetaDeca semitransparent">Karta regioner och kommuner</h1>
         <div id="kartdiv">
@@ -81,25 +90,15 @@
       </div>
 
 
-      <div id="blinkcontainer">
-        <div class="sign blink">
-          <!-- <h1>&uArr;<br>Välj yrke först!</h1> -->
-          <h1>Välj yrke först!</h1>
-
-        </div>
-      </div>
-
-      <div id="overlay"></div>
 
 
-      <div id="lonlista" class="basecontainer">
+      <div id="lonlista" class="basecontainer fixed-height">
         <h1 class="u-textMetaDeca semitransparent">Lönetabell</h1>
         <!-- <div class="vinjett"><span class="u-textMeta">Tabell</span></div> -->
         <p class='u-textMeta semitransparent'>Lönen visas för de kommuner/regioner som har minst fem anställda i yrket.</p>
         <input type="radio" name="tabellknapp" value="listKommuner" class="yrkesbutton" id="listKommuner"><label class="u-textMeta semitransparent text-top">kommuner</label>
         <input type="radio" name="tabellknapp" value="listLandsting" class="yrkesbutton" id="listLandsting"><label class="u-textMeta semitransparent text-top">regioner</label>
         <p></p>
-        <!-- <p class="u-textMetaDeca" id=rikssnittp></p> -->
 
 
         <div id="sortknapp" class="knapprad">
@@ -113,9 +112,11 @@
 
       </div>
 
-      <div></div>
 
-      <div id="jamforyrkediv" class="basecontainer semitransparent">
+
+      <!-- <div></div> -->
+
+      <div id="jamforyrkediv" class="basecontainer fixed-height semitransparent">
 
 
         <h1 class="u-textMetaDeca">Jämför yrken</h1>
@@ -160,23 +161,89 @@
             <table id="yrkestabell" class="tabellstil"></table>
             <svg class="chart" id="chart"></svg>
           </div>
+            <p class="u-textMeta bottom">För att jämföra med brandmännens löner, välj "Brandman" som yrke i menyn högst upp.</p>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
 
 
 
   </div>
 
-    <script src="jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
-    <script type="text/javascript">
-    </script>
+  <div id="brandlondiv">
+
+      <div id="brandcontent">
 
 
-    <script src="lon22.js"></script>
+        <div id="brandkartdiv" class="basecontainer fixed-height">
+          <h1 class="u-textMetaDeca">Karta över räddningstjänster</h1>
+          <p class="u-textMeta">Klicka för att se räddningstjänst, lön och vilka kommuner som ingår.</p>
+          <div id="brandlogga"><img src="lonekoll_logga.png" alt="logotype" width="320px"></div>
 
 
-    <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+          <div id="brandkartpopup">
+            <!-- <div id="brandkartpopuprubbe" class="u-textMeta"></div> -->
+
+            <div class="close"><img id="brandclosex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
+            <div id="popuptext"></div>
+          </div>
+
+        </div>
+
+
+        <div class='basecontainer'>
+          <div id="brandtabelldiv" style="width:100%">
+            <h1 class="u-textMetaDeca">Löner i räddningstjänsterna</h1>
+            <p class="u-textMeta">Vi visar lönen för dem som har fler än fyra anställda, övriga är markerade med *.</p>
+            <p class="input u-textMeta" id="sokkommun">Sök kommun <input type="text" name="search" placeholder="Kommun" id="searchfield" class="u-textMeta"></p>
+            <table id="brandtabell" class="brandtabellstil u-textMeta">
+            </table>
+            <p class="invisible"><button type="button" class="u-textMeta Button" id="rensaknapp">Visa hela listan igen</button></p>
+          </div>
+
+
+      </div>
+
+
+      <div id="brandjamforyrkediv" class="basecontainer">
+        <h1 class="u-textMetaDeca">Jämför med andra yrken</h1>
+        <p class="u-textMeta">Brandmännens lön jämförd med 24 andra kommunalaryrken. (Genomsnitt för hela landet.)</p>
+        <!-- <svg class="chart" id="brandchart"></svg> -->
+      </div>
+
+
+  </div>
+
+  </div>
+
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
+  <!-- <script type="text/javascript"> -->
+
+
+
+  <script src="lon22.js"></script>
+
+  <script src="brandlon.js"></script>
+
+
+  <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+
 
 
 

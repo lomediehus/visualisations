@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 
+
+
 // var kommunloner = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/kommunloner20.json";
 var kommunloner = "kommunloner22.json";
 // var regionloner = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/regionloner20.json";
@@ -54,6 +56,11 @@ var blinkcontainer= document.getElementById("blinkcontainer");
 var regioner = document.getElementsByClassName('regioner');
 var regionsnitt;
 var kommunsnitt;
+var brandlondiv = document.getElementById("brandlondiv");
+var content = document.getElementById("content");
+//change brandsnitt manually when numbers are updated, or find a way to find variable across files
+var brandsnitt = 29004;
+
 
 
 $('#highlowdiv').hide();
@@ -114,32 +121,47 @@ $(document).ready(function() {
         }
       }
 
-      //take away overlay when a selection is made
-      if (yrke != "Väljyrke") {
-        overlay.style.display = "none";
-        blinkcontainer.style.display = "none";
-        // selectelement.classList.remove("blink");
-        overlay.style.cursor = "pointer";
-        fillHighlowdiv();
-        [...semitransparent].forEach(function(element){
-          element.style.opacity = 1;
-        })
+      if (yrke === "Brandman") {
+        brandlondiv.style.display = "block";
+        content.style.display = "none";
+
       }
-      else if (yrke === "Väljyrke") {
-        overlay.style.display = "block";
-        blinkcontainer.style.display = "block";
-        // selectelement.classList.add("blink");
-        $('#highlowdiv').hide();
-        tabell.innerHTML = '';
-        rikssnittp.innerHTML = '';
-        [...semitransparent].forEach(function(element){
-            element.style.opacity = 0.3;
-            // element.classList.add('semitransparent');
+      else {
+        brandlondiv.style.display = "none";
+        content.style.display = "flex";
+        //take away overlay when a selection is made
+        if (yrke != "Väljyrke") {
+          overlay.style.display = "none";
+          blinkcontainer.style.display = "none";
+          overlay.style.cursor = "pointer";
+          fillHighlowdiv();
+          [...semitransparent].forEach(function(element){
+            element.style.opacity = 1;
           })
+          // rikssnittp.innerHTML = '';
+        }
+        else if (yrke === "Väljyrke") {
+          overlay.style.display = "block";
+          blinkcontainer.style.display = "block";
+          $('#highlowdiv').hide();
+          tabell.innerHTML = '';
+          rikssnittp.innerHTML = '';
+          [...semitransparent].forEach(function(element){
+              element.style.opacity = 0.3;
+              // element.classList.add('semitransparent');
+            })
+        }
       }
 
+
+
+
     //get the number for rikssnitt and put them in place
-    if (regionsnitt === undefined) {
+    if (yrke === "Väljyrke") {
+      rikssnittp.innerHTML = '';
+    } else if (regionsnitt === undefined && kommunsnitt === undefined) {
+      rikssnittp.innerHTML = "<strong class='red big'>" + $.number(brandsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong>';
+    } else if (regionsnitt === undefined) {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong>';
     } else if (kommunsnitt === undefined) {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&nbsp;') + ' kr/mån</strong>';
@@ -366,6 +388,8 @@ function jamforyrke(data, valdkommun, index) {
         }
       }
     });
+
+    // console.log("yrkesarray  "  + yrkesarray)
 
 
     //make a bar chart with d3
@@ -879,6 +903,7 @@ function moveTooltip() {
 function hideTooltip() {
   tooltip.style("display","none");
 }
+
 
 
 })();

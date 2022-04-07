@@ -32,16 +32,7 @@ h4 {
   font-size: 1.4em;
 }
 
-/* #selectOverlay {
-  width: 740px;
-  margin-top: 20px;
-  pointer-events: none;
-  height: 40px;
-  background-color: red;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.2;
-} */
+
 
 select#valjyrke {
   width: 740px;
@@ -73,12 +64,12 @@ path:hover, path.highlighted {
 }
 
 div.tooltip {
-  position: absolute;
   background-color: white;
   border: 1px solid black;
   color: black;
-  padding: 4px 8px;
   display: none;
+  padding: 4px 8px;
+  position: absolute;
 }
 
 button:active {
@@ -101,6 +92,10 @@ label {
   z-index: 3;
 }
 
+p.bottom {
+  position: relative;
+  bottom: 0px;
+}
 
 
 #overlay {
@@ -190,8 +185,7 @@ label {
 }
 
 #jamforyrkediv {
-
-  min-height: 600px;
+  /* min-height: 600px; */
   max-height: 770px;
   margin-right: 0px;
 }
@@ -229,17 +223,16 @@ table.tabellstil thead {
 }
 
 table.tabellstil thead td {
-  vertical-align: text-top;
-  padding: 5px 0px 0px 5px;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  line-height: 28px;
   background-color: #a9aaaa;
   color: white;
-  /* overflow: auto; */
+  font-size: 1.4em;
+  line-height: 28px;
+  padding: 5px 0px 0px 5px;
   position: sticky;
   -webkit-position: sticky;
+  text-transform: uppercase;
   top: 0;
+  vertical-align: text-top;
 }
 
 table.tabellstil th {
@@ -444,26 +437,24 @@ p.knapptext {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
-/* .basecontainer {
-  width: 360px;
-  margin-right: 20px;
-  align-items: flex-start;
-} */
+
 
 .basecontainer {
   width: 360px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   background-color: white;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 30px;
+  /* position: relative; */
 }
 
 .fixed-height {
-  height: 750px;
+  min-height: 750px;
 }
 
 .basecontainer h1 {
