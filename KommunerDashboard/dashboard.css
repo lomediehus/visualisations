@@ -1,0 +1,55 @@
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  background-color: #fcfaf5;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+#valjkommun {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px;
+  /* font-size: 20px; */
+}
+
+
+.basecontainer {
+  width: 300px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.fixed-height {
+  height: 300px;
+}
+
+.basecontainer h1 {
+  font-weight: 900;
+}
+
+.semitransparent {
+  opacity: 0.3;
+}
+
+div.basestil {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  line-height: 200px;
+}
