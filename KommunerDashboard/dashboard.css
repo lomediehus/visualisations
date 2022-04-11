@@ -9,7 +9,11 @@
 body {
   padding: 0px;
   background-color: #fcfaf5;
+  width: 80vw;
+  /* width: 1200px; */
 }
+
+
 
 #content {
   display: flex;
