@@ -9,17 +9,21 @@
 body {
   padding: 0px;
   background-color: #fcfaf5;
-  width: 80vw;
+  /* width: 80vw; */
   /* width: 1200px; */
 }
 
+#header {
+  width: 940px;
+}
 
 
 #content {
   display: flex;
+  /* width: 1000px; */
   flex-wrap: wrap;
   padding: 0px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 #valjkommun {
