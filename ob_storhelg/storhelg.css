@@ -63,6 +63,10 @@ body {
   font-weight: bold;
 }
 
+#searchButton {
+  margin: 10px;
+}
+
 .fetLon {
   font-weight: bold;
   color: black;

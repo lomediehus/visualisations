@@ -189,7 +189,7 @@ function doStuff() {
     helgnr = "4"
     helgknapp(this);
     document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
-    console.log("bildnamn " + helgbild.nameProp)
+    // console.log("bildnamn " + helgbild.nameProp)
 
   });
 
@@ -540,18 +540,13 @@ function doStuff() {
   function checkInput(input, target) {
 
     var counter = document.getElementsByClassName('counter');
-
-
-
     divisorAttr.push(sparvarre.fall1divisor, sparvarre.fall2divisor, sparvarre.fall3divisor, sparvarre.fall4divisor);
     tak = sparvarre.tak;
 
-
     //if input is a number and also not null (which would be handled as zero)
-    if (!isNaN(input) && input != null) {
+    if (!isNaN(input) && input != null && input !='' && input != undefined) {
       // siffra = parseInt(input);
       siffra = Number(input);
-      console.log(siffra)
       if (siffra >= tak) {
         siffra = tak;
       }
@@ -575,7 +570,7 @@ function doStuff() {
       else mathResult = siffra/divisor[i];
 
       //OBS TILLFÄLLIG FIX FÖR AVRUNDNINGSFEL JUST DETTA ÅR
-      if (mathResult === 108.145) mathResult = 108.15;
+      // if (mathResult === 108.145) mathResult = 108.15;
 
       stringResult.push(mathResult.toFixed(2))
     }
@@ -595,6 +590,8 @@ function doStuff() {
       node.setAttribute("class", "Label");
       node.setAttribute("id", "div" + i)
       var textnode;
+
+      console.log(nodecontent)
 
       if (nodecontent === 'tom') {
         textnode = document.createTextNode('Nåt blev fel, prova att skriva din lön igen.');
@@ -625,7 +622,6 @@ function doStuff() {
       rubrik = `
         <h3 class="u-textMetaDeca" style="font-weight: bold">  ${item.avtalsrubrik} </h3>
       `;
-
 
       let textvarre;
 
@@ -660,6 +656,7 @@ function doStuff() {
           sparvarre = helgvarre;
       }
 
+
       textvarre = textvarre.replace(/100 procent/g, "<strong>100 procent</strong>");
       textvarre = textvarre.replace(/\r\n/g, "<br>")
 
@@ -674,8 +671,6 @@ function doStuff() {
         `;
         }
         else extratext3 = '';
-
-
 
       if (helgvarre && helgvarre.fall2) {
         extratext2 = `
@@ -714,9 +709,6 @@ function doStuff() {
       }
       //the flag is used to check if the "bransch" is new or if it is the same as in the last item
       flag = item.bransch;
-
-
-
     })
 
   }
@@ -744,7 +736,6 @@ function doStuff() {
     //checks when DOM has finished updating
     window.requestAnimationFrame(informHeight);
 
-
     sokYrke.style.display = "none";
     allaAvtal.style.display = "block";
     modebuttonLeft.classList.add('passive');
@@ -762,7 +753,7 @@ function doStuff() {
     }
   document.body.addEventListener("touchstart", removeFocus);
 
-  //set focus on input field
+  //set focus on input field. Disabled because window will scroll down to show input field, and that´s not good when two articles are shown on the same page on ka.se
   // document.getElementById('sokYrkeKnapp').focus();
 
 //end of doStuff-function
