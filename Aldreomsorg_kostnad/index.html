@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Kommuner dashboard</title>
+  <link rel="stylesheet" type="text/css" href="dashboard.css">
+  <!-- <link rel="stylesheet" type="text/css" href="brandlon.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script> -->
+
+
+
+    <div id="header">
+      <!-- This list is populated by the javascript file -->
+      <select id="valjkommun" class="u-textMetaDeca valjLandstingKommun">
+        <option value="valjkommun">Välj kommun</option>
+      </select>
+
+
+    </div>
+
+
+    <div id="content">
+
+      <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Äldreomsorgen</h2>
+        <div id="aldreomsorgen" class="basestil u-textMeta semitransparent"></div>
+
+      </div>
+
+      <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Invånare 65+</h2>
+        <div id="seniorer" class="basestil u-textMeta semitransparent"></div>
+      </div>
+
+      <!-- <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Försörjningskvot</h2>
+        <div id="seniorer" class="basestil u-textMeta semitransparent"></div>
+      </div> -->
+
+      <!-- <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Övrigt</h2>
+        <div id="ovrigt" class="basestil u-textMeta semitransparent" >XX%</div>
+      </div> -->
+
+
+
+
+    </div>
+
+
+
+
+
+    <div id="forklaring" class="forklaring u-textMetaDeca u-paddedBottomL"></div>
+
+    <div class="basecontainer fixed-height">
+      <h2 class="u-textMetaDeca">Försörjningskvot</h2>
+      <div id="forsorjningskvot" class="basestil u-textMeta semitransparent"></div>
+
+    </div>
+
+
+    <!-- <div class=buttonparent><button id="visamerknapp" type="button" class="Button" style="display:none;">Mer om försörjningskvot</button></div> -->
+
+
+    <div id="visamer" class='u-textMeta'>
+
+      <p>  <p class='u-textMeta'>*Försörjningskvoten räknar man fram genom att lägga ihop alla under 20 och över 64 år, och dela summan med antalet personer 20-64 år gamla. En kvot som är högre än ett betyder att det är fler barn och gamla än personer i yrkesverksam ålder.</p></p>
+
+      <!-- <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Förskola</h2>
+        <div id="forskolan" class="basestil u-textMeta semitransparent"></div>
+
+      </div>
+
+      <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Funktionshinder</h2>
+        <div id="funktionshinder" class="basestil u-textMeta semitransparent"></div>
+      </div>
+
+    <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Övrigt</h2>
+        <div id="ovrigt" class="basestil u-textMeta semitransparent" >XX%</div>
+      </div> -->
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
+    <script type="text/javascript">
+    </script>
+
+
+    <script src="dashboard.js"></script>
+
+
+    <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+
+
+
+  </body>
