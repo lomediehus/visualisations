@@ -90,7 +90,7 @@ function fillBoxes() {
 
   forsorjningskvot_fyll = `
     <h3>2020:<br><span class="storfet">X,XX</span></h3>
-      <p>Genomsnitt för Sverige: ${$.number(fkvot_snitt, 2, ',', '&nbsp;')}%</p>
+      <p>Genomsnitt för Sverige: ${$.number(fkvot_snitt, 2, ',', '&nbsp;')}</p>
       <hr class='rounded u-spacingBottomXS'>
   `;
 
@@ -170,8 +170,8 @@ valjkommun.addEventListener("change", function(){
         }
 
         forsorjningskvot_fyll = `
-          <h3>2020:<br><span class="storfet">${$.number(fkvot, 2, ',', '&nbsp;')}%</span></h3>
-            <p>Genomsnitt för Sverige: ${$.number(fkvot_snitt, 2, ',', '&nbsp;')}%</p>
+          <h3>2020:<br><span class="storfet">${$.number(fkvot, 2, ',', '&nbsp;')}</span></h3>
+            <p>Genomsnitt för Sverige: ${$.number(fkvot_snitt, 2, ',', '&nbsp;')}</p>
             <hr class='rounded u-spacingBottomXS'>
             <p>Försörjningskvoten kan förklaras som att en person i arbetsför ålder har  ${$.number(fkvot, 2, ',', '&nbsp;')} barn och gamla att försörja. (Summan av alla 0-19 och över 64 år, delat i antal personer 20-64 år.)</p>
         `;
