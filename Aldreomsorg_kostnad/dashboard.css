@@ -9,36 +9,27 @@
 body {
   padding: 20px;
   background-color: #fcfaf5;
-  /* width: 80vw; */
-  /* width: 1200px; */
 }
 
 #header {
   width: 640px;
 }
 
-
-#content {
+.flexcontainer {
   display: flex;
-  /* width: 1000px; */
-
   flex-wrap: wrap;
   padding: 0px;
-  /* justify-content: center; */
 }
 
 #valjkommun {
   margin-bottom: 20px;
   width: 100%;
   padding: 5px;
-  /* font-size: 20px; */
 }
-
 
 .basecontainer {
   width: 300px;
   margin-right: 20px;
-  /* background-color: white; */
   background-color: #dcebe5;
   padding: 10px;
   border-radius: 10px;
@@ -60,18 +51,8 @@ body {
   opacity: 0.3;
 }
 
-/* div.basestil {
-  font-size: 3em;
-  font-weight: 900;
-  text-align: center;
-  line-height: 200px;
-} */
-
 div.basestil {
-  /* font-size: 3em; */
-  /* font-weight: 900; */
   text-align: center;
-  /* line-height: 200px; */
 }
 
 .storfet {
@@ -79,55 +60,28 @@ div.basestil {
   font-weight: 600;
 }
 
-/* p.kursiv {
-  font-style: italic;
-} */
-
 hr.rounded {
   border: 0;
   border-top: 6px dotted #da4042;
-  /* border-radius: 5px; */
 }
 
 div.forklaring {
   width: 600px;
 }
 
-#visamer {
-  display: none;
-  /* visibility: hidden; */
-}
-
-/* #visamerknapp {
-  margin: 30px;
-} */
-
-/* button {
-  border: none;
-  background-color: inherit;
-  margin: 0 auto;
-}
-
-button.storfet {
-  font-size: 3em;
-} */
-
 div.buttonparent {
   width: 600px;
-  /* margin: 0 auto; */
   text-align: center;
   margin: 30px;
 }
 
-
-
 @media screen and (max-width: 679px) {
 
   #header {
-    width: 320px;
+    width: 300px;
   }
 
   div.forklaring {
-    width: 320px;
+    width: 300px;
   }
 }
