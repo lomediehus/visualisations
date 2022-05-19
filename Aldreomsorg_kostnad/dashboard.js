@@ -161,6 +161,7 @@ valjkommun.addEventListener("change", function(){
 
         let forklaring_fyll = `
         <p>I ${kommunnamn} går en ${andel1} andel av budgeten till äldreomsorgen än genomsnittet för Sverige. Andelen har ${skillnad1} sedan ${artal === '2002' ? artal : artal + '*'}.</p><p>Andelen seniorer är ${andel2} än genomsnittet för Sverige. Andelen har ${skillnad2} sedan ${artal2}.</p>
+        <p class="u-textMeta">Källa: Kolada</p>
         `;
 
         if (artal != "2002") {
