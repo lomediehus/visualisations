@@ -167,6 +167,15 @@ valjkommun.addEventListener("change", function(){
         if (artal != "2002") {
           forklaring_fyll = `
           <p>I ${kommunnamn} går en ${andel1} andel av budgeten till äldreomsorgen än genomsnittet för Sverige. Andelen har ${skillnad1}. Skillnaden för Sverige är sedan 2002. För ${kommunnamn} saknas den siffran, därför visas istället skillnaden sedan ${artal}.</p><p>Andelen seniorer är ${andel2} än genomsnittet för Sverige. Andelen har ${skillnad2} sedan ${artal2}.</p>
+          <p class="u-textMeta">Källa: Kolada</p>
+          `;
+        }
+
+        if (item.Kommun === "Gotland") {
+          forklaring_fyll = `
+          <p>I ${kommunnamn} går en ${andel1} andel av budgeten till äldreomsorgen än genomsnittet för Sverige. Andelen har ${skillnad1} sedan ${artal === '2002' ? artal : artal + '*'}. (Gotland kan inte jämföras med andra kommuner eftersom de är både region  och kommun och har fler uppgifter som delar på driftsbudgeten än andra kommuner.)</p>
+          <p>Andelen seniorer är ${andel2} än genomsnittet för Sverige. Andelen har ${skillnad2} sedan ${artal2}.</p>
+          <p class="u-textMeta">Källa: Kolada</p>
           `;
         }
 
