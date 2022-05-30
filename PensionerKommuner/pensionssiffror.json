@@ -1,0 +1,2330 @@
+[
+  {
+    "Kommun": "Ale",
+    "AndelAldreomsorg": "1.9%",
+    "AndelBarnomsorg": "0.5%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Alingsås",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Alvesta",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Aneby",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Arboga",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Arjeplog",
+    "AndelAldreomsorg": "1.2%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Arvidsjaur",
+    "AndelAldreomsorg": "0.6%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Arvika",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Askersund",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Avesta",
+    "AndelAldreomsorg": "Ej svar denna fråga",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Bengtsfors",
+    "AndelAldreomsorg": "1.6%",
+    "AndelBarnomsorg": "3.2%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Berg",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Bjurholm",
+    "AndelAldreomsorg": "1.9%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Bjuv",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": "1.3%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Boden",
+    "AndelAldreomsorg": "1.9%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Bollebygd",
+    "AndelAldreomsorg": "2.0%",
+    "AndelBarnomsorg": "5.1%",
+    "UppsagningAldreomsorg": "Nej",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Bollnäs",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": "3.9%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Borgholm",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Borlänge",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Borås",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": "2.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Botkyrka",
+    "AndelAldreomsorg": "2.7%",
+    "AndelBarnomsorg": "1.1%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Boxholm",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Bromölla",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Bräcke",
+    "AndelAldreomsorg": "0.5%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Burlöv",
+    "AndelAldreomsorg": "1.6%",
+    "AndelBarnomsorg": "1.0%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Båstad",
+    "AndelAldreomsorg": "2.9%",
+    "AndelBarnomsorg": "2.6%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Dals-Ed",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Danderyd",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Degerfors",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Dorotea",
+    "AndelAldreomsorg": "2.9%",
+    "AndelBarnomsorg": "20%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Eda",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Ekerö",
+    "AndelAldreomsorg": "2.3%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Eksjö",
+    "AndelAldreomsorg": "1.4%",
+    "AndelBarnomsorg": "1.1%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Emmaboda",
+    "AndelAldreomsorg": "1.2%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Enköping",
+    "AndelAldreomsorg": "1.2%",
+    "AndelBarnomsorg": "1.6%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Eskilstuna",
+    "AndelAldreomsorg": "1.2%",
+    "AndelBarnomsorg": "0.9%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Eslöv",
+    "AndelAldreomsorg": "1.0%",
+    "AndelBarnomsorg": "1.0%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Essunga",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Fagersta",
+    "AndelAldreomsorg": "0.6%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Falkenberg",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Falköping",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Falun",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": "0.9%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Filipstad",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Finspång",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "2.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Flen",
+    "AndelAldreomsorg": "2.0%",
+    "AndelBarnomsorg": "3.9%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Forshaga",
+    "AndelAldreomsorg": "0.3%",
+    "AndelBarnomsorg": "5.1%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Färgelanda",
+    "AndelAldreomsorg": "1.0%",
+    "AndelBarnomsorg": "4.8%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Gagnef",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Gislaved",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Gnesta",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Gnosjö",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Gotland",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Grums",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "4.0%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Grästorp",
+    "AndelAldreomsorg": "1.6%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Gullspång",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Gällivare",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Gävle",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": "0.7%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Göteborg",
+    "AndelAldreomsorg": "2.1%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ej svar denna fråga",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Götene",
+    "AndelAldreomsorg": "0.3%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Habo",
+    "AndelAldreomsorg": "39.5%",
+    "AndelBarnomsorg": "15.6%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hagfors",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hallsberg",
+    "AndelAldreomsorg": "0.3%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hallstahammar",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Halmstad",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "1.9%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hammarö",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Haninge",
+    "AndelAldreomsorg": "2.3%",
+    "AndelBarnomsorg": "1.0%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Haparanda",
+    "AndelAldreomsorg": "Ej svar denna fråga",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Heby",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Hedemora",
+    "AndelAldreomsorg": "3.6%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Helsingborg",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "1.1%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Herrljunga",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Hjo",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Hofors",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Huddinge",
+    "AndelAldreomsorg": "2.4%",
+    "AndelBarnomsorg": "1.1%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hudiksvall",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "1.3%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hultsfred",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "4.2%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hylte",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Håbo",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Hällefors",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": "5.6%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Härjedalen",
+    "AndelAldreomsorg": "2.7%",
+    "AndelBarnomsorg": "3.6%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Härnösand",
+    "AndelAldreomsorg": "8.7%",
+    "AndelBarnomsorg": "8.1%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Härryda",
+    "AndelAldreomsorg": "2.1%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hässleholm",
+    "AndelAldreomsorg": "6.7%",
+    "AndelBarnomsorg": "1.0%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Höganäs",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "4.0%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Högsby",
+    "AndelAldreomsorg": "0.6%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Hörby",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Höör",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Jokkmokk",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Järfälla",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "1.1%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Jönköping",
+    "AndelAldreomsorg": "1.0%",
+    "AndelBarnomsorg": "1.5%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kalix",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kalmar",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "0.8%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Karlsborg",
+    "AndelAldreomsorg": "0.6%",
+    "AndelBarnomsorg": "3.6%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Karlshamn",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Karlskoga",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": "0.9%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Karlskrona",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Karlstad",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Katrineholm",
+    "AndelAldreomsorg": "1.9%",
+    "AndelBarnomsorg": "3.1%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kil",
+    "AndelAldreomsorg": "3.5%",
+    "AndelBarnomsorg": "1.5%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kinda",
+    "AndelAldreomsorg": "0.5%",
+    "AndelBarnomsorg": "1.3%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kiruna",
+    "AndelAldreomsorg": "1.4%",
+    "AndelBarnomsorg": "3.2%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Klippan",
+    "AndelAldreomsorg": "0.4%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Knivsta",
+    "AndelAldreomsorg": "2.7%",
+    "AndelBarnomsorg": "0.7%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kommun",
+    "AndelAldreomsorg": "AndelAldreomsorg",
+    "AndelBarnomsorg": "AndelBarnomsorg",
+    "UppsagningAldreomsorg": "UppsagningAldreomsorg",
+    "UppsagningBarnomsorg": "UppsagningBarnomsorg",
+    "Svarat": "Svarat"
+  },
+  {
+    "Kommun": "Kramfors",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "1.2%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kristianstad",
+    "AndelAldreomsorg": "1.2%",
+    "AndelBarnomsorg": "1.7%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kristinehamn",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Krokom",
+    "AndelAldreomsorg": "2.3%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kumla",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": "1.1%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kungsbacka",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Kungsör",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Kungälv",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Kävlinge",
+    "AndelAldreomsorg": "2%",
+    "AndelBarnomsorg": "0.5%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Köping",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Laholm",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Landskrona",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Laxå",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Lekeberg",
+    "AndelAldreomsorg": "0.7%",
+    "AndelBarnomsorg": "1.9%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Leksand",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Lerum",
+    "AndelAldreomsorg": "2.7%",
+    "AndelBarnomsorg": "3.2%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Lessebo",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Lidingö",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Lidköping",
+    "AndelAldreomsorg": "3.4%",
+    "AndelBarnomsorg": "2.8%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Lilla Edet",
+    "AndelAldreomsorg": "0.7%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Lindesberg",
+    "AndelAldreomsorg": "2.0%",
+    "AndelBarnomsorg": "0.8%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Linköping",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Ljungby",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "1.3%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Ljusdal",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": "3.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Ljusnarsberg",
+    "AndelAldreomsorg": "0.8%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Lomma",
+    "AndelAldreomsorg": "1.4%",
+    "AndelBarnomsorg": "1.0%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Ludvika",
+    "AndelAldreomsorg": "5.1%",
+    "AndelBarnomsorg": "6.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Luleå",
+    "AndelAldreomsorg": "1.6%",
+    "AndelBarnomsorg": "1.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Lund",
+    "AndelAldreomsorg": "1.4%",
+    "AndelBarnomsorg": "2.4%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Lycksele",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": "1.3%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Lysekil",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Malmö",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Malung-Sälen",
+    "AndelAldreomsorg": "3.2%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Malå",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Inga anställda i den åldern",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Mariestad",
+    "AndelAldreomsorg": "0.7%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Mark",
+    "AndelAldreomsorg": "Ogilitgt svar",
+    "AndelBarnomsorg": "Ogiltigt svar",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Markaryd",
+    "AndelAldreomsorg": "0.5%",
+    "AndelBarnomsorg": "1.2%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Mellerud",
+    "AndelAldreomsorg": "0.8%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Mjölby",
+    "AndelAldreomsorg": "0.3%",
+    "AndelBarnomsorg": "0.6%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Mora",
+    "AndelAldreomsorg": "1.4%",
+    "AndelBarnomsorg": "2.5%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Motala",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": "0.9%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Mullsjö",
+    "AndelAldreomsorg": "2.6%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Inga anställda i den åldern",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Munkedal",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Munkfors",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Mölndal",
+    "AndelAldreomsorg": "2.0%",
+    "AndelBarnomsorg": "1.2%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Mönsterås",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Mörbylånga",
+    "AndelAldreomsorg": "21.4%",
+    "AndelBarnomsorg": "12.0%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Nacka",
+    "AndelAldreomsorg": "3.2%",
+    "AndelBarnomsorg": "1.5%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Nora",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Norberg",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Nordanstig",
+    "AndelAldreomsorg": "1.9%",
+    "AndelBarnomsorg": "2.9%",
+    "UppsagningAldreomsorg": "Nej",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Nordmaling",
+    "AndelAldreomsorg": "1.6%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Norrköping",
+    "AndelAldreomsorg": "1.4%",
+    "AndelBarnomsorg": "0.4%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Norrtälje",
+    "AndelAldreomsorg": "Ej svar denna fråga",
+    "AndelBarnomsorg": "0.6%",
+    "UppsagningAldreomsorg": "Ej svar denna fråga",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Norsjö",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Nybro",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "1.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Nykvarn",
+    "AndelAldreomsorg": "2.4%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Nyköping",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "0.4%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Nynäshamn",
+    "AndelAldreomsorg": "2.5%",
+    "AndelBarnomsorg": "0.5%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Nässjö",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Ockelbo",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Olofström",
+    "AndelAldreomsorg": "0.6%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Orsa",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Orust",
+    "AndelAldreomsorg": "1.2%",
+    "AndelBarnomsorg": "3.8%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Osby",
+    "AndelAldreomsorg": "0.7%",
+    "AndelBarnomsorg": "1.4%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Oskarshamn",
+    "AndelAldreomsorg": "2.9%",
+    "AndelBarnomsorg": "11.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Ovanåker",
+    "AndelAldreomsorg": "0.7%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Nej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Oxelösund",
+    "AndelAldreomsorg": 0,
+    "AndelBarnomsorg": "1.4%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Pajala",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Partille",
+    "AndelAldreomsorg": "2.2%",
+    "AndelBarnomsorg": "0.4%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Perstorp",
+    "AndelAldreomsorg": "3.6%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Piteå",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Ragunda",
+    "AndelAldreomsorg": "4.3%",
+    "AndelBarnomsorg": "2.3%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Robertsfors",
+    "AndelAldreomsorg": "1.0%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Ronneby",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "0.7%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Rättvik",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sala",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Salem",
+    "AndelAldreomsorg": "3.3%",
+    "AndelBarnomsorg": "4.1%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sandviken",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sigtuna",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Simrishamn",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": "1.6%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sjöbo",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Skara",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Skellefteå",
+    "AndelAldreomsorg": "0.6%",
+    "AndelBarnomsorg": "6.8%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Skinnskatteberg",
+    "AndelAldreomsorg": "2.2%",
+    "AndelBarnomsorg": "1.2%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Skurup",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Skövde",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "1.4%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Smedjebacken",
+    "AndelAldreomsorg": "2.0%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sollefteå",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Sollentuna",
+    "AndelAldreomsorg": "Ej svar denna fråga",
+    "AndelBarnomsorg": "1.4%",
+    "UppsagningAldreomsorg": "Ej svar denna fråga",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Solna",
+    "AndelAldreomsorg": "2.9%",
+    "AndelBarnomsorg": "1.4%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sorsele",
+    "AndelAldreomsorg": "2.7%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sotenäs",
+    "AndelAldreomsorg": "2.1%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Staffanstorp",
+    "AndelAldreomsorg": "Ej svar denna fråga",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Stenungsund",
+    "AndelAldreomsorg": "4.4%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Stockholm",
+    "AndelAldreomsorg": "3.7%",
+    "AndelBarnomsorg": "1.1%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Storfors",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Storuman",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Strängnäs",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Strömstad",
+    "AndelAldreomsorg": "3.5%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Nej",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Strömsund",
+    "AndelAldreomsorg": "1.0%",
+    "AndelBarnomsorg": "3.3%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sundbyberg",
+    "AndelAldreomsorg": "2.3%",
+    "AndelBarnomsorg": "2.1%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sundsvall",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Sunne",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Surahammar",
+    "AndelAldreomsorg": "0.6%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Svalöv",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": "3.2%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Svedala",
+    "AndelAldreomsorg": "0.4%",
+    "AndelBarnomsorg": "0.9%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Svenljunga",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Säffle",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Säter",
+    "AndelAldreomsorg": "0.05%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sävsjö",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Söderhamn",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Söderköping",
+    "AndelAldreomsorg": "0.6%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Södertälje",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": "0.5%",
+    "UppsagningAldreomsorg": "Ej svar denna fråga",
+    "UppsagningBarnomsorg": "Ej svar denna fråga",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Sölvesborg",
+    "AndelAldreomsorg": "1.7%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Tanum",
+    "AndelAldreomsorg": "3.6%",
+    "AndelBarnomsorg": "2.2%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Tibro",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Tidaholm",
+    "AndelAldreomsorg": "2.3%",
+    "AndelBarnomsorg": "1.3%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Tierp",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Timrå",
+    "AndelAldreomsorg": "0.3%",
+    "AndelBarnomsorg": "1.0%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Tingsryd",
+    "AndelAldreomsorg": "2.1%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Tjörn",
+    "AndelAldreomsorg": "5.2%",
+    "AndelBarnomsorg": "2.1%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Tomelilla",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Torsby",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Torsås",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Tranemo",
+    "AndelAldreomsorg": "1.0%",
+    "AndelBarnomsorg": "3.7%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Tranås",
+    "AndelAldreomsorg": "3.3%",
+    "AndelBarnomsorg": "3.1%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Trelleborg",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "2.0%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Trollhättan",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Trosa",
+    "AndelAldreomsorg": "1.6%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Tyresö",
+    "AndelAldreomsorg": "2.2%",
+    "AndelBarnomsorg": "1.3%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Täby",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Töreboda",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Uddevalla",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Ulricehamn",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": "1.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Umeå",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": "0.4%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Upplands Väsby",
+    "AndelAldreomsorg": "Ej svar denna fråga",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Upplands-Bro",
+    "AndelAldreomsorg": "1.3%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Uppsala",
+    "AndelAldreomsorg": "2.7%",
+    "AndelBarnomsorg": "1.5%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, ett flertal",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Uppvidinge",
+    "AndelAldreomsorg": "2.1%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Inga anställda i den åldern",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vadstena",
+    "AndelAldreomsorg": "0.4%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vaggeryd",
+    "AndelAldreomsorg": "1.4%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Valdemarsvik",
+    "AndelAldreomsorg": "1.4%",
+    "AndelBarnomsorg": "3.4%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vallentuna",
+    "AndelAldreomsorg": "2.0%",
+    "AndelBarnomsorg": "0.5%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vansbro",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Vara",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Varberg",
+    "AndelAldreomsorg": "2.1%",
+    "AndelBarnomsorg": "1.0%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vaxholm",
+    "AndelAldreomsorg": "7.4%",
+    "AndelBarnomsorg": "3.8%",
+    "UppsagningAldreomsorg": "Nej",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vellinge",
+    "AndelAldreomsorg": "Inga anställda",
+    "AndelBarnomsorg": "2.5%",
+    "UppsagningAldreomsorg": "Inga anställda i den åldern",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vetlanda",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Vilhelmina",
+    "AndelAldreomsorg": "1.6%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vimmerby",
+    "AndelAldreomsorg": "1.9%",
+    "AndelBarnomsorg": "1.2%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vindeln",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": "2.3%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vingåker",
+    "AndelAldreomsorg": "0.4%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vårgårda",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Vänersborg",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": "1.1%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Vännäs",
+    "AndelAldreomsorg": "1.8%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Värmdö",
+    "AndelAldreomsorg": "5.2%",
+    "AndelBarnomsorg": "0.3%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Värnamo",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Västervik",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Västerås",
+    "AndelAldreomsorg": "0.9%",
+    "AndelBarnomsorg": "1.3%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Växjö",
+    "AndelAldreomsorg": "1.9%",
+    "AndelBarnomsorg": "2.3%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Ydre",
+    "AndelAldreomsorg": "1.9%",
+    "AndelBarnomsorg": "2.4%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Ystad",
+    "AndelAldreomsorg": "1.2%",
+    "AndelBarnomsorg": "4.5%",
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Åmål",
+    "AndelAldreomsorg": "1.1%",
+    "AndelBarnomsorg": "3.8%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Ånge",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Åre",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Årjäng",
+    "AndelAldreomsorg": "2.0%",
+    "AndelBarnomsorg": "3.3%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Åsele",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Åstorp",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Åtvidaberg",
+    "AndelAldreomsorg": "1.2%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Älmhult",
+    "AndelAldreomsorg": "1.0%",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Älvdalen",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Älvkarleby",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Älvsbyn",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Ängelholm",
+    "AndelAldreomsorg": "1.6%",
+    "AndelBarnomsorg": "0.7%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Öckerö",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Ödeshög",
+    "AndelAldreomsorg": "Ej svar denna fråga",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Örebro",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Örkelljunga",
+    "AndelAldreomsorg": "0.5%",
+    "AndelBarnomsorg": "1.6%",
+    "UppsagningAldreomsorg": "Vet ej",
+    "UppsagningBarnomsorg": "Vet ej",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Örnsköldsvik",
+    "AndelAldreomsorg": "0.8%",
+    "AndelBarnomsorg": "0.6%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Östersund",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Österåker",
+    "AndelAldreomsorg": "2.0%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, ett flertal",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Östhammar",
+    "AndelAldreomsorg": "Ej svar",
+    "AndelBarnomsorg": "Ej svar",
+    "UppsagningAldreomsorg": "Ej svar",
+    "UppsagningBarnomsorg": "Ej svar",
+    "Svarat": "nej"
+  },
+  {
+    "Kommun": "Östra Göinge",
+    "AndelAldreomsorg": "1.0%",
+    "AndelBarnomsorg": "3.2%",
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Överkalix",
+    "AndelAldreomsorg": "1.5%",
+    "AndelBarnomsorg": 0,
+    "UppsagningAldreomsorg": "Ja, enstaka",
+    "UppsagningBarnomsorg": "Ja, enstaka",
+    "Svarat": "ja"
+  },
+  {
+    "Kommun": "Övertorneå",
+    "AndelAldreomsorg": "Ej svar denna fråga",
+    "AndelBarnomsorg": "Ej svar denna fråga",
+    "UppsagningAldreomsorg": "Nej",
+    "UppsagningBarnomsorg": "Nej",
+    "Svarat": "ja"
+  }
+]

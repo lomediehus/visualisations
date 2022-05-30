@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Kommuner dashboard</title>
+  <link rel="stylesheet" type="text/css" href="dashboard.css">
+  <!-- <link rel="stylesheet" type="text/css" href="brandlon.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon_KA/favicon.ico">
+</head>
+<body>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script> -->
+
+
+
+    <div id="header">
+      <!-- This list is populated by the javascript file -->
+      <select id="valjkommun" class="u-textMetaDeca valjLandstingKommun">
+        <option value="valjkommun">Välj kommun</option>
+      </select>
+
+
+    </div>
+
+
+    <div id="content">
+
+      <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Äldreomsorgen</h2>
+        <div id="aldreomsorgen" class="basestil u-textMeta semitransparent"></div>
+
+      </div>
+
+      <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Barnomsorg</h2>
+        <div id="seniorer" class="basestil u-textMeta semitransparent"></div>
+      </div>
+
+      <!-- <div class="basecontainer fixed-height">
+        <h2 class="u-textMetaDeca">Övrigt</h2>
+        <div id="ovrigt" class="basestil u-textMeta semitransparent" >XX%</div>
+      </div> -->
+
+
+
+
+    </div>
+
+    <div id="forklaring" class="forklaring"></div>
+
+
+
+
+
+
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
+    <script type="text/javascript">
+    </script>
+
+
+    <script src="dashboard.js"></script>
+
+
+    <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+
+
+
+  </body>
