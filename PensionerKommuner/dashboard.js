@@ -1,6 +1,6 @@
 const valjkommun = document.getElementById('valjkommun');
 // const data = '';
-const [aldreomsorgen, seniorer, forklaring] = [document.getElementById('aldreomsorgen'),  document.getElementById('seniorer'), document.getElementById('forklaring')];
+const [aldreomsorgen, barnomsorgen, forklaring] = [document.getElementById('aldreomsorgen'),  document.getElementById('barnomsorgen'), document.getElementById('forklaring')];
 
 
 const strans = [...document.getElementsByClassName('semitransparent')];
@@ -70,9 +70,9 @@ function fillBoxes() {
 
 
   aldreomsorg_fyll = `
-    <h3>Andel 64 år och äldre:<br><span class="storfet">XX%</span></h3>
+    <h3>Andel 64 år och äldre:<br><span class="stormager">XX%</span></h3>
     <hr class='rounded -spacingBottomXS'>
-    <h3>Har 62-65-åringar sagt upp sig?<br><span class="storfet"> XX%</span></h3>
+    <h3>Har 62–65-åringar sagt upp sig?<br><span class="stormager"></span></h3>
   `
 
   aldreomsorgen.innerHTML = aldreomsorg_fyll;
@@ -80,20 +80,23 @@ function fillBoxes() {
   // seniorer_andel_gs = kdata[0]["65+ år 2020"];
   // seniorer_skillnad_gs = kdata[0]["Andel 65+ 2002-2020"];
 
-  seniorer_fyll = `
-    <h3>Andel 64 år och äldre:<br><span class="storfet">XX%</span></h3>
+  barnomsorg_fyll = `
+    <h3>Andel 64 år och äldre:<br><span class="stormager">XX%</span></h3>
     <hr class='rounded -spacingBottomXS'>
-    <h3>Har 62-65-åringar sagt upp sig?<br><span class="storfet"> XX%</span></h3>
+    <h3>Har 62–65-åringar sagt upp sig?<br><span class="stormager></span></h3>
   `
 
-  seniorer.innerHTML = seniorer_fyll;
-  forklaring.innerHTML = '';
+  barnomsorgen.innerHTML = barnomsorg_fyll;
+  // forklaring.innerHTML = '';
 }
 
 
 
 
 valjkommun.addEventListener("change", function(){
+
+
+
   let num = 0;
   if (this.value === 'valjkommun') {
     fillBoxes();
@@ -104,6 +107,7 @@ valjkommun.addEventListener("change", function(){
 
     if (item.Kommun === this.value) {
 
+
       andel_aldre = item['AndelAldreomsorg'];
       uppsagd_aldre = item['UppsagningAldreomsorg'];
       // aldre_skillnad = item['Äldreomsorg 2002-2020'];
@@ -111,24 +115,38 @@ valjkommun.addEventListener("change", function(){
       andel_barn = item['AndelBarnomsorg'];
       uppsagd_barn = item['UppsagningBarnomsorg'];
 
+      let ord = "Detta ord";
+      let siffra = "2.0%"
+
+      function hasNumber(myString) {
+        return /\d/.test(myString);
+      }
+
+      console.log(andel_aldre)
+      console.log(hasNumber(andel_aldre))
+      console.log(typeof andel_aldre)
+
+
+
+
+
       aldreomsorgen.innerHTML = '';
 
-      // alde_andel_gs = kdata.Samtliga
       aldreomsorg_fyll = `
-        <h3>Andel 64 år och äldre:<br><span class="storfet">${$.number(andel_aldre, 1, ',', '&nbsp;')}%</span></h3>
+        <h3>Andel 64 år och äldre:<br><span class="stormager">${(hasNumber(andel_aldre)) ? $.number(andel_aldre, 1, ',', '&nbsp;') + "%" : "Svar saknas."}</span></h3>
         <hr class='rounded u-spacingBottomXS'>
-        <h3>Har 62-65-åringar sagt upp sig?<br><span class="storfet"> ${uppsagd_aldre}</span></h3>
+        <h3>Har 62–65-åringar sagt upp sig?<br><span class="stormager"> ${uppsagd_aldre}.</span></h3>
       `
 
       aldreomsorgen.innerHTML = aldreomsorg_fyll;
 
-      seniorer_fyll = `
-        <h3>Andel 64 år och äldre::<br><span class="storfet">${$.number(andel_barn, 1, ',', '&nbsp;')}%</span></h3>
+      barnomsorg_fyll = `
+        <h3>Andel 64 år och äldre::<br><span class="stormager">${(hasNumber(andel_barn)) ? $.number(andel_barn, 1, ',', '&nbsp;') + "%" : "Svar saknas."}</span></h3>
         <hr class='rounded u-spacingBottomXS'>
-        <h3>Har 62-65-åringar sagt upp sig?<br><span class="storfet">${uppsagd_barn}</span></h3>
+        <h3>Har 62–65-åringar sagt upp sig?<br><span class="stormager">${uppsagd_barn}.</span></h3>
       `
 
-      seniorer.innerHTML = seniorer_fyll;
+      barnomsorgen.innerHTML = barnomsorg_fyll;
 
 
       // let kommunnamn = item.Kommun;

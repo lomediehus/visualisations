@@ -78,6 +78,11 @@ div.basestil {
   font-weight: 600;
 }
 
+.stormager {
+  font-size: 2em;
+  font-weight: normal;
+}
+
 hr.rounded {
   border: 0;
   border-top: 6px dotted #da4042;
