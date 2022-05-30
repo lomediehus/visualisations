@@ -13,6 +13,11 @@ body {
   /* width: 1200px; */
 }
 
+#center {
+  width: 800px;
+  margin: 0 auto;
+}
+
 #header {
   width: 640px;
 }
@@ -93,8 +98,19 @@ div.forklaring {
   width: 600px;
 }
 
+@media screen and (max-width: 800px) {
+
+  #center {
+    width: 600px;
+  }
+}
+
 
 @media screen and (max-width: 679px) {
+
+  #center {
+    width: 500px;
+  }
 
   #header {
     width: 320px;
