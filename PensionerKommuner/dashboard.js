@@ -1,27 +1,18 @@
 const valjkommun = document.getElementById('valjkommun');
-// const data = '';
 const [aldreomsorgen, barnomsorgen, forklaring] = [document.getElementById('aldreomsorgen'),  document.getElementById('barnomsorgen'), document.getElementById('forklaring')];
-
-
 const strans = [...document.getElementsByClassName('semitransparent')];
-
 let kdata = [];
-
 let andel_aldre = '';
-// let aldre_andel_gs = '';
 let uppsagd_aldre = '';
-// let aldre_skillnad_gs = '';
-
 let andel_barn = '';
-// let seniorer_andel_gs = '';
 let uppsagd_barn = '';
-// let seniorer_skillnad_gs = '';
-
 let aldreomsorg_fyll = '';
 let barnomsorg_fyll = '';
 
-
-
+//function to check if a string contains a number. Used in the change-event.
+function hasNumber(myString) {
+  return /\d/.test(myString);
+  }
 
 $.ajax({
         url: "pensionssiffror.json",
@@ -29,10 +20,7 @@ $.ajax({
         mimeType: "application/json",
         success: function (data) {
             kdata = data;
-
-            //Make the graph that compares proffessions
-            // jamforyrke(kdata, 'RIKSSNITT', 4);
-            populateKommunDropdown();
+            populateKommunDropdown(kdata);
             fillBoxes();
             informHeight();
             },
@@ -42,16 +30,14 @@ $.ajax({
 })
 
 
-
-function populateKommunDropdown() {
-  // kdata.sort((a, b) => a.Kommun.localeCompare(b.Kommun))
-  // console.log(kdata)
-
-  kdata.forEach((item, i) => {
+//function to make the list of select options from a datafile
+function populateKommunDropdown(data) {
+  //traverse the data, create dom elements and append them
+  data.forEach((item, i) => {
       let el = document.createElement("option");
       el.textContent = item.Kommun;
-
       valjkommun.appendChild(el);
+      //disable options that fulfill a condition
       if (item.Svarat === "nej") {
         el.setAttribute("disabled","disabled");
       }
@@ -65,10 +51,6 @@ function populateKommunDropdown() {
 
 function fillBoxes() {
 
-  // aldre_andel_gs = kdata[0]['Äldreomsorg 2020'];
-  // aldre_skillnad_gs = kdata[0]['Äldreomsorg 2002-2020'];
-
-
   aldreomsorg_fyll = `
     <h3>Andel 64 år och äldre:<br><span class="stormager">XX%</span></h3>
     <hr class='rounded -spacingBottomXS'>
@@ -77,9 +59,6 @@ function fillBoxes() {
 
   aldreomsorgen.innerHTML = aldreomsorg_fyll;
 
-  // seniorer_andel_gs = kdata[0]["65+ år 2020"];
-  // seniorer_skillnad_gs = kdata[0]["Andel 65+ 2002-2020"];
-
   barnomsorg_fyll = `
     <h3>Andel 64 år och äldre:<br><span class="stormager">XX%</span></h3>
     <hr class='rounded -spacingBottomXS'>
@@ -87,50 +66,21 @@ function fillBoxes() {
   `
 
   barnomsorgen.innerHTML = barnomsorg_fyll;
-  // forklaring.innerHTML = '';
 }
 
-
-
-
 valjkommun.addEventListener("change", function(){
-
-
-
-  let num = 0;
+  //fill boxes with default text if no kommun is chosen
   if (this.value === 'valjkommun') {
     fillBoxes();
 
   } else {
-
   kdata.forEach((item, i) => {
 
     if (item.Kommun === this.value) {
-
-
       andel_aldre = item['AndelAldreomsorg'];
       uppsagd_aldre = item['UppsagningAldreomsorg'];
-      // aldre_skillnad = item['Äldreomsorg 2002-2020'];
-      // aldre_skillnad_gs = kdata[0]['Äldreomsorg 2002-2020'];
       andel_barn = item['AndelBarnomsorg'];
       uppsagd_barn = item['UppsagningBarnomsorg'];
-
-      let ord = "Detta ord";
-      let siffra = "2.0%"
-
-      function hasNumber(myString) {
-        return /\d/.test(myString);
-      }
-
-      console.log(andel_aldre)
-      console.log(hasNumber(andel_aldre))
-      console.log(typeof andel_aldre)
-
-
-
-
-
-      aldreomsorgen.innerHTML = '';
 
       aldreomsorg_fyll = `
         <h3>Andel 64 år och äldre:<br><span class="stormager">${(hasNumber(andel_aldre)) ? $.number(andel_aldre, 1, ',', '&nbsp;') + "%" : "Svar saknas."}</span></h3>
@@ -141,50 +91,18 @@ valjkommun.addEventListener("change", function(){
       aldreomsorgen.innerHTML = aldreomsorg_fyll;
 
       barnomsorg_fyll = `
-        <h3>Andel 64 år och äldre::<br><span class="stormager">${(hasNumber(andel_barn)) ? $.number(andel_barn, 1, ',', '&nbsp;') + "%" : "Svar saknas."}</span></h3>
+        <h3>Andel 64 år och äldre:<br><span class="stormager">${(hasNumber(andel_barn)) ? $.number(andel_barn, 1, ',', '&nbsp;') + "%" : "Svar saknas."}</span></h3>
         <hr class='rounded u-spacingBottomXS'>
         <h3>Har 62–65-åringar sagt upp sig?<br><span class="stormager">${uppsagd_barn}.</span></h3>
       `
 
       barnomsorgen.innerHTML = barnomsorg_fyll;
 
-
-      // let kommunnamn = item.Kommun;
-      // let andel1 = (aldre_andel > aldre_andel_gs ? 'större' : 'mindre');
-      // let skillnad1 = (aldre_skillnad >= 0 ? 'ökat' : 'minskat');
-      // let andel2 = (seniorer_andel > seniorer_andel_gs ? 'större' : 'mindre');
-      // let skillnad2 = (seniorer_skillnad >= 0 ? 'ökat' : 'minskat');
-      //
-      // let forklaring_fyll = `
-      // <p class='u-textMeta'>I ${kommunnamn} går en ${andel1} andel av budgeten till äldreomsorgen än genomsnittet för Sverige. Andelen har ${skillnad1} sedan 2002.<br>Andelen seniorer är ${andel2} än genomsnittet för Sverige. Andelen har ${skillnad2} sedan 2002.</p>
-      // `
-      //
-      // forklaring.innerHTML = forklaring_fyll;
-
-
-
       informHeight();
 
-    }
-
-
-      // if (item["Äldreomsorg 2002-2020"] < 0 && item["Andel 65+ 2002-2020"] > 0) {
-      //
-      //   console.log(item.Kommun)
-      //   console.log(num)
-      //     num++;
-      // }
-
-
-
-
-
-
-    })
-
-
-
-}
+        }
+      })
+  }
 
   strans.forEach((item, index) => {
     if (this.value != "valjkommun"){
@@ -195,11 +113,4 @@ valjkommun.addEventListener("change", function(){
       }
     });
 
-
 })
-
-// window.onresize = function() {
-//   console.log('content ' + document.getElementById('content').offsetWidth)
-//   console.log('window ' + window.innerWidth)
-//
-// }
