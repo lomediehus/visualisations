@@ -19,7 +19,7 @@ body {
 }
 
 #header {
-  width: 640px;
+  width: 600px;
 }
 
 
@@ -40,7 +40,7 @@ body {
 
 
 .basecontainer {
-  width: 300px;
+  width: 280px;
   margin-right: 20px;
   /* background-color: white; */
   background-color: #dcebe5;
