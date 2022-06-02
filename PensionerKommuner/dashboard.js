@@ -114,3 +114,25 @@ valjkommun.addEventListener("change", function(){
     });
 
 })
+
+// function logScreenWidth() {
+//   console.log(screen.width)
+// }
+//
+// window.addEventListener("onresize", logScreenWidth())
+
+
+
+function reportWindowSize() {
+  if (window.innerWidth < 800 && window.innerWidth > 790) {
+    console.log(window.innerWidth + "Hurra");
+  }
+  if (window.innerWidth < 679 && window.innerWidth > 669) {
+    console.log(window.innerWidth + "hejhopp");
+  }
+  // console.log(window.innerWidth);
+
+    // console.log(window.innerHeight);
+}
+
+window.onresize = reportWindowSize;
