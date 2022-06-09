@@ -3,179 +3,254 @@
 
 const filearray = [
   {
-    "Födelseår": 1953,
-    "Lägsta pensionsålder": 61,
-    "Riktålder": 65
-  },
-  {
-    "Födelseår": 1954,
-    "Lägsta pensionsålder": 61,
-    "Riktålder": 65
-  },
-  {
-    "Födelseår": 1955,
-    "Lägsta pensionsålder": 61,
-    "Riktålder": 65
-  },
-  {
-    "Födelseår": 1956,
-    "Lägsta pensionsålder": 61,
-    "Riktålder": 65
-  },
-  {
     "Födelseår": 1957,
-    "Lägsta pensionsålder": 61,
-    "Riktålder": 65
+    "Riktålder": 65,
+    "Lägsta pensionsålder": 61
   },
   {
     "Födelseår": 1958,
-    "Lägsta pensionsålder": 61,
-    "Riktålder": 66
+    "Riktålder": 66,
+    "Lägsta pensionsålder": 61
   },
   {
     "Födelseår": 1959,
-    "Lägsta pensionsålder": 62,
-    "Riktålder": 66
+    "Riktålder": 66,
+    "Lägsta pensionsålder": 62
   },
   {
     "Födelseår": 1960,
-    "Lägsta pensionsålder": 62,
-    "Riktålder": 67
+    "Riktålder": 67,
+    "Lägsta pensionsålder": 62
   },
   {
     "Födelseår": 1961,
-    "Lägsta pensionsålder": 63,
-    "Riktålder": 67
+    "Riktålder": 67,
+    "Lägsta pensionsålder": 63
   },
   {
     "Födelseår": 1962,
-    "Lägsta pensionsålder": 63,
-    "Riktålder": 67
+    "Riktålder": 67,
+    "Lägsta pensionsålder": 63
   },
   {
     "Födelseår": 1963,
-    "Lägsta pensionsålder": 64,
-    "Riktålder": 67
+    "Riktålder": 67,
+    "Lägsta pensionsålder": 64
   },
   {
     "Födelseår": 1964,
-    "Lägsta pensionsålder": 64,
-    "Riktålder": 67
+    "Riktålder": 67,
+    "Lägsta pensionsålder": 64
   },
   {
     "Födelseår": 1965,
-    "Lägsta pensionsålder": 64,
-    "Riktålder": 67
+    "Riktålder": 67,
+    "Lägsta pensionsålder": 64
   },
   {
     "Födelseår": 1966,
-    "Lägsta pensionsålder": 64,
-    "Riktålder": 67
+    "Riktålder": 67,
+    "Lägsta pensionsålder": 64
   },
   {
     "Födelseår": 1967,
-    "Lägsta pensionsålder": 64,
-    "Riktålder": 67
+    "Riktålder": 67,
+    "Lägsta pensionsålder": 64
   },
   {
     "Födelseår": 1968,
-    "Lägsta pensionsålder": 64,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 64
   },
   {
     "Födelseår": 1969,
-    "Lägsta pensionsålder": 64,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 64
   },
   {
     "Födelseår": 1970,
-    "Lägsta pensionsålder": 64,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 64
   },
   {
     "Födelseår": 1971,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1972,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1973,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1974,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1975,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1976,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1977,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1978,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1979,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1980,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1981,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 68,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1982,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 68
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1983,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 69
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1984,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 69
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 65
   },
   {
     "Födelseår": 1985,
-    "Lägsta pensionsålder": 65,
-    "Riktålder": 69
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
   },
   {
     "Födelseår": 1986,
-    "Lägsta pensionsålder": 66,
-    "Riktålder": 69
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
   },
   {
     "Födelseår": 1987,
-    "Lägsta pensionsålder": 66,
-    "Riktålder": 69
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1988,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1989,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1990,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1991,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1992,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1993,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1994,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1995,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1996,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1997,
+    "Riktålder": 69,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1998,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 1999,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 2000,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 66
+  },
+  {
+    "Födelseår": 2001,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 67
+  },
+  {
+    "Födelseår": 2002,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 67
+  },
+  {
+    "Födelseår": 2003,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 67
+  },
+  {
+    "Födelseår": 2004,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 67
+  },
+  {
+    "Födelseår": 2005,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 67
+  },
+  {
+    "Födelseår": 2006,
+    "Riktålder": 70,
+    "Lägsta pensionsålder": 67
   }
 ];
 
