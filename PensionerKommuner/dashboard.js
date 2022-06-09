@@ -126,6 +126,6 @@ valjkommun.addEventListener("change", function(){
 //     console.log(window.innerWidth + "hejhopp");
 //   }
 
-}
+// }
 
 // window.onresize = reportWindowSize;
