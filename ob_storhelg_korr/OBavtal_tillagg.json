@@ -45,7 +45,7 @@
 			"tak": 21629
 			},
 		"helg5": {
-			"fall1": "Max 108,14 kr/tim från klockan 07.00 på pingstafton till klockan 00.00 vardagen närmast efter helgdagsaftonen, alltså måndagen den 1 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 20&nbsp;918 kr/månad.)",
+			"fall1": "Max 108,14 kr/tim från klockan 07.00 på pingstafton till klockan 00.00 vardagen närmast efter helgdagsaftonen, alltså måndagen den 1 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 21&nbsp;629 kr/månad.)",
 			"fall2": "",
 			"fall3": "",
 			"fall4": "",
@@ -56,7 +56,7 @@
 			"tak": 21629
 			},
 		"helg6": {
-			"fall1": "Max 104,59 kr/tim från klockan 07.00 på midsommarafton till klockan 00.00 vardagen närmast efter helgdagsaftonen, alltså måndagen den 22 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 20&nbsp;918 kr/månad.)",
+			"fall1": "Max 108,145 kr/tim från klockan 07.00 på midsommarafton till klockan 00.00 vardagen närmast efter helgen, alltså måndagen 27 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 21&nbsp;629 kr/månad.)",
 			"fall2": "",
 			"fall3": "",
 			"fall4": "",
@@ -64,6 +64,6 @@
 			"fall2divisor": "",
 			"fall3divisor": "",
 			"fall4divisor": "",
-			"tak": 20918
+			"tak": 21629
 		}
 		  }]

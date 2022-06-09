@@ -129,31 +129,27 @@ function doStuff() {
   //variables for set dates
   var nyarsdatum = new Date("December 27 2021");
   var trettonhelgsdatum = new Date("January 2 2022");
-  var paskdatum = new Date("April 14 2021");
-  var pingstdatum = new Date("June 02 2021");
-  var midsommardatum = new Date("June 09 2021");
-
-  //Variable for current date
-  var date = new Date();
-  //variables for set dates
-  var nyarsdatum = new Date("December 27 2021");
-  var trettonhelgsdatum = new Date("January 2 2022");
   var paskdatum = new Date("February 12 2022");
   var pingstdatum = new Date("April 22 2022");
 
+  var midsommardatum = new Date("June 07 2022");
+
+  //Variable for current date
+  //variables for set dates
+
   //handling dates:
   //Check if current date is after nyar;
-  if (date.getTime() > paskdatum.getTime()) {
+  if (date.getTime() > pingstdatum.getTime()) {
     //if current date is also after trettondagen
-    if (date.getTime() > pingstdatum.getTime()) {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
-      goActive(helgknapp5);
-      helgnr = "5";
+    if (date.getTime() > midsommardatum.getTime()) {
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/midsommar.svg';
+      goActive(helgknapp6);
+      helgnr = "6";
     }
     else {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
       goActive(helgknapp4);
-      helgnr = "4";
+      helgnr = "45";
     }
   }
   else {
@@ -580,9 +576,11 @@ function doStuff() {
   //Appending a textnode with the calculated result in a div, also checking if its a number
   function dividedToDiv(nodecontent) {
     var dividedResultHere = document.getElementsByClassName('counter');
+    console.log("början av dividedtodiv")
     for (let i = 0; i < nodecontent.length; i++) {
       var tobedeleted = document.getElementById('div' + i)
       if (tobedeleted !== null) {
+        console.log("här stod nåt")
         tobedeleted.parentNode.removeChild(tobedeleted)
       }
       // var elem = dividedResultHere[i].lastElementChild;
