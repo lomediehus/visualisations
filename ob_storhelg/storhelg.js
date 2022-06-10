@@ -129,31 +129,27 @@ function doStuff() {
   //variables for set dates
   var nyarsdatum = new Date("December 27 2021");
   var trettonhelgsdatum = new Date("January 2 2022");
-  var paskdatum = new Date("April 14 2021");
-  var pingstdatum = new Date("June 02 2021");
-  var midsommardatum = new Date("June 09 2021");
-
-  //Variable for current date
-  var date = new Date();
-  //variables for set dates
-  var nyarsdatum = new Date("December 27 2021");
-  var trettonhelgsdatum = new Date("January 2 2022");
   var paskdatum = new Date("February 12 2022");
   var pingstdatum = new Date("April 22 2022");
 
+  var midsommardatum = new Date("June 07 2022");
+
+  //Variable for current date
+  //variables for set dates
+
   //handling dates:
   //Check if current date is after nyar;
-  if (date.getTime() > paskdatum.getTime()) {
+  if (date.getTime() > pingstdatum.getTime()) {
     //if current date is also after trettondagen
-    if (date.getTime() > pingstdatum.getTime()) {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
-      goActive(helgknapp5);
-      helgnr = "5";
+    if (date.getTime() > midsommardatum.getTime()) {
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/midsommar.svg';
+      goActive(helgknapp6);
+      helgnr = "6";
     }
     else {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
       goActive(helgknapp4);
-      helgnr = "4";
+      helgnr = "45";
     }
   }
   else {
@@ -591,7 +587,6 @@ function doStuff() {
       node.setAttribute("id", "div" + i)
       var textnode;
 
-      console.log(nodecontent)
 
       if (nodecontent === 'tom') {
         textnode = document.createTextNode('Nåt blev fel, prova att skriva din lön igen.');
@@ -602,7 +597,10 @@ function doStuff() {
       node.appendChild(textnode)
 
       //append child if there dividedResultHere has content ( is true )
-      if (dividedResultHere[i]) { dividedResultHere[i].appendChild(node); }
+      if (dividedResultHere[i]) {
+        dividedResultHere[i].appendChild(node);
+        $('#div0').hide().fadeIn();
+ }
 
       //empty array before next round
       divisorAttr = [];
