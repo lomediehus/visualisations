@@ -576,11 +576,9 @@ function doStuff() {
   //Appending a textnode with the calculated result in a div, also checking if its a number
   function dividedToDiv(nodecontent) {
     var dividedResultHere = document.getElementsByClassName('counter');
-    console.log("början av dividedtodiv")
     for (let i = 0; i < nodecontent.length; i++) {
       var tobedeleted = document.getElementById('div' + i)
       if (tobedeleted !== null) {
-        console.log("här stod nåt")
         tobedeleted.parentNode.removeChild(tobedeleted)
       }
       // var elem = dividedResultHere[i].lastElementChild;
@@ -589,7 +587,6 @@ function doStuff() {
       node.setAttribute("id", "div" + i)
       var textnode;
 
-      console.log(nodecontent)
 
       if (nodecontent === 'tom') {
         textnode = document.createTextNode('Nåt blev fel, prova att skriva din lön igen.');
@@ -600,7 +597,10 @@ function doStuff() {
       node.appendChild(textnode)
 
       //append child if there dividedResultHere has content ( is true )
-      if (dividedResultHere[i]) { dividedResultHere[i].appendChild(node); }
+      if (dividedResultHere[i]) {
+        dividedResultHere[i].appendChild(node);
+        $('#div0').hide().fadeIn();
+ }
 
       //empty array before next round
       divisorAttr = [];
