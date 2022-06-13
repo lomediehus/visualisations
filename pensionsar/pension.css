@@ -29,13 +29,22 @@ select#valjar {
 width: 100%;
 font-size: 1em;
 margin-bottom: 10px;
--webkit-appearance: none;
+color: white;
+font-weight: bold;
+/* -webkit-appearance: none;
 appearance: none;
--moz-appearance: none;
+-moz-appearance: none; */
 /* background-image: url("pil.svg"); */
+background-color: rgb(218, 64, 66);
 background-size: 16px;
   background-position: calc(100% - 20px) center;
   background-repeat: no-repeat;
+}
+
+select#valjar option {
+  background-color: #f8f8f8;
+  color: black;
+  font-weight:normal;
 }
 
 .flex-container {
