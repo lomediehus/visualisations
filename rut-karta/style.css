@@ -5,8 +5,12 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #f5f7f7;
+  /* background-color: red; */
+
   /* width: 600px; */
 }
+
+
 
 #knapp {
   position: relative;
@@ -25,8 +29,54 @@ body {
 }
 
 #rubbe {
-  opacity: 0;
+  /* opacity: 0; */
   font-size: 3em;
+  font-weight: bold;
+  /* padding-bottom: 10px; */
+}
+
+#rubbediv {
+  padding-bottom: 10px;
+}
+
+#infodiv {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  z-index: 2;
+  /* padding-left: 10px; */
+  width: 30%;
+  height: 50px;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+#irutan {
+  /* position: absolute;
+  top: 30%; */
+  /* padding-left: 11%;
+  padding-top: 10px; */
+  padding-left: 10px;
+  font-size: 18px;
+  z-index: 3;
+}
+
+#rutan {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 30%;
+  height: 50px;
+  z-index: 4;
+
+}
+
+#infodiv h1 {
+  opacity:
+}
+
+#legendyellow {
+  background-color: #f5cc00;
 }
 
 path {
@@ -51,4 +101,17 @@ div.tooltip {
   background: #fff;
   border: 0px;
   pointer-events: none;
+  overflow: visible;
+}
+
+@media only screen and (max-width: 1150px) {
+  #rubbe {
+    /* font-size: 2em;
+  }
+
+  #irutan {
+    font-size: 1em;
+  } */
+
+  }
 }

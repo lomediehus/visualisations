@@ -5,8 +5,14 @@ var btn = document.getElementById("knapp");
 var btn2 = document.getElementById("knapp2");
 
 var land;
-var rubbe = document.getElementById('rubbe');
-rubbediv = document.getElementById('rubbediv');
+var rubbe = document.getElementById("rubbe");
+var rubbediv = document.getElementById("rubbediv");
+var infodiv = document.getElementById("infodiv");
+var irutan = document.getElementById("irutan");
+var fade = document.getElementsByClassName("fade")[0];
+infodiv.style.height = irutan.offsetHeight + 15 + "px";
+
+
 
 var landlista = [
   {
@@ -77,7 +83,8 @@ var landlista = [
   {
     "Country": "Chile",
     "Land": "Chile",
-    "Rut": 553
+    "Rut": 553,
+    "Asyl": ""
   },
   {
     "Country": "Eritrea",
@@ -132,14 +139,7 @@ var landlista = [
     "Land": "Sudan",
     "Rut": "",
     "Asyl": 150
-  },
-
-
-
-
-
-
-]
+  }];
 
 
 
@@ -152,9 +152,9 @@ var projection = d3.geo.mercator()
     // .scale(91.60207122365671)
     .scale(180)
     .center([0.35,35]) //projection center
-    .translate([width/2.4, height/2.9]) //translate to center the map in view
+    .translate([width/2.4, height/2.9]); //translate to center the map in view
 
-// width = '100%'
+// width = "100%"
 
 function draw() {
 
@@ -162,15 +162,21 @@ d3.select("svg").remove();
 
 btn.style.visibility = "hidden";
 
-rubbe.innerHTML = ""
+// rubbe.innerHTML = "";
+// rubbe.style.opacity = 0;
+// $(rubbe).fadeTo(500,1);
+rubbe.innerHTML = "Rutarbetare och flyktingar i Sverige";
+console.log('infodiv ' + infodiv.offsetHeight + 'irutan ' + irutan.offsetHeight)
 
-// $(rubbe).fadeOut().fadeIn();
-rubbe.style.opacity = 0;
-$(rubbe).fadeTo(500,1)
 
-// $(rubbe).fadeIn();
-rubbe.innerHTML = "De här länderna kommer flest Rut-arbetare ifrån…";
-console.log(rubbediv.offsetHeight)
+
+fade.innerHTML = "<h2 id='irutan' class='u-textMeta'>1. De här tio länderna kommer flest Rut-arbetare ifrån</h2>";
+fade.style.opacity = 0;
+$(fade).fadeTo(500,1);
+// debugger;
+console.log('infodiv ' + infodiv.offsetHeight + 'irutan ' + irutan.offsetHeight)
+
+
 
 
 //Generate paths based on projection
@@ -193,7 +199,7 @@ var features = svg.append("g")
 var tooltip = d3.select("body")
     .append("div")
       .attr("class", "tooltip u-textMeta")
-      .style("opacity", 0)
+      .style("opacity", 0);
 
 // Create zoom/pan listener
 // Change [1,Infinity] to adjust the min/max zoom scale
@@ -203,9 +209,10 @@ var zoom = d3.behavior.zoom()
 
 svg.call(zoom);
 
+d3.json("custom.geo.json",function(error,geodata) {
+// d3.json("custom.geo.json",function(error,geodata) {
 
-
-d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/custom.geo.json",function(error,geodata) {
+// d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/worldmap.geojson",function(error,geodata) {
   if (error) return console.log(error); //unknown error, check the console
 
   //Create a path for each map feature in the data
@@ -214,35 +221,17 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/custom.geo.json",f
     .enter()
     .append("path")
       .attr("d",path)
-      .attr('class', function(d) {
+      .attr("class", function(d) {
         if (d.properties.name === "Iraq" || d.properties.name === "Eritrea") {
           return "common"}
 
         else {return "uncommon"}
       })
-    .attr('fill', '#d3d3d3')
-
-    // .attr('fill', function(d) {
-    //   if(d.properties.name === "Sweden") {
-    //     return '#d3d3d3'}
-    //
-    //   else {return '#d3d3d3'}
-    //
-    // })
+    .attr("fill", "#d3d3d3")
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseout", mouseout)
-
-    // .attr("d",path)
-    //   .style("stroke", "black")
-    //   .style("stroke-width", 0.5)
-    //     .on("mouseover", mouseover)
-    //     .on("mousemove", mousemove)
-    //     .on("mouseout", mouseout)
-
-
-
-    .on("click",clicked);
+        .on("click",clicked);
 
     function mouseover(d, i) {
       land = d.properties.name;
@@ -255,22 +244,12 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/custom.geo.json",f
         }
       })
 
-
-      // tooltip.transition()
-      //   .duration(200)
-      //   .style("opacity", .9);
     }
 
     function mousemove(d, i) {
-
-        // tooltip.html("<p><span class='fet versal'>" + d.properties.landsting + "</span></br><span class='fet'>Undersköterskor:</span>	 " + data[i]["Undersköterskor*"]+ "</br><span class='fet'>Sjuksköterskor:</span> " + data[i]["Sjuksköterskor**"]+ '</p>')
-
-          // .style("left", (d3.event.pageX) + "px")
-          // .style("top", (d3.event.pageY - 50) + "px");
-
-          // tooltip.html('Land: xxxx. Antal: xxxxx.')
+            // console.log('sdkf ' + d3.event.pageX)
+            // console.log(rubbediv.offsetWidth)
           land = d.properties.name;
-          // tooltip.html(d.properties.name)
           tooltip.html(function(d) {
             var tt;
             var tt2 = "";
@@ -283,13 +262,13 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/custom.geo.json",f
                 tt2 = "";
               }
               else {
-                tt2 = '<br>Rutarbetare: ' + item.Rut;
+                tt2 = "<br>Rutarbetare: " + item.Rut;
               }
               if (item.Asyl === "") {
                 tt3 = "";
               }
               else {
-                tt3 = '<br>Fått asyl: ' + item.Asyl;
+                tt3 = "<br>Fått asyl: " + item.Asyl;
               }
               tt = item.Land + tt2 + tt3;
               }
@@ -297,9 +276,20 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/custom.geo.json",f
             return tt;
           }
         )
+          //
+          // .style("left", (d3.event.pageX) + "px")
+          // .style("top", (d3.event.pageY - 50) + "px");
+          .style("left", function() {
+            if (d3.event.pageX > rubbediv.offsetWidth/1.2) {
+              return (d3.event.pageX -50) + "px";
+            }
+            else {
+              return (d3.event.pageX) + "px";
+            }
 
-          .style("left", (d3.event.pageX) + "px")
+          })
           .style("top", (d3.event.pageY - 50) + "px");
+
     }
 
     function mouseout() {
@@ -311,134 +301,109 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/custom.geo.json",f
 
     function farg() {
       var color;
-
-
-
-
       features.selectAll("[fill='#d3d3d3']")
-
-
-
       .transition()
-        // .duration(3000)
-        .attr('fill', function(d) {
-          // land = d.properties.name;
-          //
-          // landlista.forEach(function(item) {
-          //   if (item.Country === land) {
-          //     color = 'red'
-          //   }
-          //   else {color =  '#d3d3d3'}
-          //
-          // })
-          //
-          // return color;
-          if(d.properties.name === landlista[0].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[1].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[2].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[3].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[4].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[5].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[6].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[7].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[8].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[9].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[10].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[11].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[12].Country) {return '#f5cc00'}
+        .attr("fill", function(d) {
 
+          if(d.properties.name === landlista[0].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[1].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[2].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[3].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[4].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[5].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[6].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[7].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[8].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[9].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[10].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[11].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[12].Country) {return "#f5cc00"}
 
-
-
-
-
-
-
-          else {return '#d3d3d3'}
+          else {return "#d3d3d3"}
         });
-        // debugger;
-        setTimeout(farg2, 3000)
+
+        setTimeout(farg2, 3500)
+            // debugger;
 
       }
 
     function farg2() {
-      var rubbe = document.getElementById('rubbe')
-      rubbe.innerHTML = "";
+      // var rubbe = document.getElementById("rubbe")
+      // rubbe.innerHTML = "";
+      //
+      // // $(rubbe).fadeOut(5);
+      // rubbe.style.opacity = 0;
+      // $(rubbe).fadeTo(500,1);
+      // rubbe.innerHTML = "…och de här tio länderna kommer flest flyktingar ifrån";
+      // infodiv.style.height = irutan.offsetHeight + 10 + "px";
+      fade.innerHTML = "<h2 id='irutan' class='u-textMeta'>2. …och de här tio länderna kommer flest flyktingar ifrån</h2>";
+      fade.style.opacity = 0;
+      $(fade).fadeTo(500,1);
 
-      // $(rubbe).fadeOut(5);
-      rubbe.style.opacity = 0;
-      $(rubbe).fadeTo(500,1);
-      rubbe.innerHTML = "…och de här länderna kommer flest flyktingar ifrån"
 
-
-      features.selectAll('path')
-      // .attr('class', 'common')
+      features.selectAll("path")
+      // .attr("class", "common")
       .transition()
         .duration(500)
-        .attr('fill', function(d) {
-          if(d.properties.name === landlista[0].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[1].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[2].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[3].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[4].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[5].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[6].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[7].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[8].Country) {return '#f5cc00'}
-          // else if(d.properties.name === landlista[9].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[10].Country) {return '#f5cc00'}
-          else if(d.properties.name === landlista[11].Country) {return '#f5cc00'}
-          // else if(d.properties.name === landlista[12].Country) {return '#f5cc00'}
+        .attr("fill", function(d) {
+          if(d.properties.name === landlista[0].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[1].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[2].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[3].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[4].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[5].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[6].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[7].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[8].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[10].Country) {return "#f5cc00"}
+          else if(d.properties.name === landlista[11].Country) {return "#f5cc00"}
 
 
-          else if(d.properties.name === landlista[13].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[14].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[9].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[12].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[15].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[16].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[17].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[18].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[19].Country) {return '#74b2b2'}
-          else if(d.properties.name === landlista[20].Country) {return '#74b2b2'}
+          else if(d.properties.name === landlista[13].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[14].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[9].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[12].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[15].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[16].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[17].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[18].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[19].Country) {return "#74b2b2"}
+          else if(d.properties.name === landlista[20].Country) {return "#74b2b2"}
 
-
-
-
-
-
-
-
-
-          else {return '#d3d3d3'}
+          else {return "#d3d3d3"}
         });
 
-      setTimeout(farg3, 3000)
+      setTimeout(farg3, 3500);
       }
 
 
       function farg3() {
-        console.log(document.getElementsByClassName('common'))
-        console.log(document.getElementsByClassName('uncommon'))
-        var rubbe = document.getElementById('rubbe')
-        rubbe.innerHTML = "";
+        // var rubbe = document.getElementById("rubbe")
+        // rubbe.innerHTML = "";
+        //
+        // // $(rubbe).fadeOut(5);
+        // rubbe.style.opacity = 0;
+        //
+        // $(rubbe).fadeTo(500,1);
+        // rubbe.innerHTML = "Bara Irak och Eritrea finns i båda grupperna";
 
-        // $(rubbe).fadeOut(5);
-        rubbe.style.opacity = 0;
+        // infodiv.style.height = irutan.offsetHeight + 10 + "px";
+        fade.innerHTML = "<h2 id='irutan' class='u-textMeta'>3. Bara Irak och Eritrea finns i båda grupperna</h2>";
+        fade.style.opacity = 0;
+        $(fade).fadeTo(500,1);
 
-        $(rubbe).fadeTo(500,1);
-        rubbe.innerHTML = "Bara två länder sammanfaller"
 
-        features.selectAll('path').transition()
-          .duration(3000)
-          .attr("transform", "translate(" + -900 + "," + -600 + ")scale(" +3 + ")translate(" + [30,30] + ")")
 
-        setTimeout(farg4, 3000)
+        features.selectAll("path").transition()
+          .duration(3500)
+          .attr("transform", "translate(" + -900 + "," + -600 + ")scale(" +3 + ")translate(" + [30,30] + ")");
+
+        setTimeout(farg4, 3000);
         }
 
         function farg4() {
           features.selectAll(".common")
-            .attr('fill', "#80800a")
+            .attr("fill", "#80800a")
             setTimeout(farg5, 2000)
 
 
@@ -449,48 +414,32 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/custom.geo.json",f
           btn.style.visibility = "visible";
           btn2.style.visibility = "visible";
 
-          // btn.setAttribute("id", "knapp");
-          // btn.setAttribute("class", "Button");
-          // btn.innerHTML = "Spela igen"
-          // document.body.appendChild(btn);
 
-            // knapp.style.visibility = 'visible';
-            btn.addEventListener('click', function() {
+            btn.addEventListener("click", function() {
               btn2.style.visibility = "hidden";
               btn.style.visibility = "hidden";
               draw()
             })
 
-            // btn2.setAttribute("id", "knapp2");
-            // btn2.setAttribute("class", "Button");
-            // btn2.innerHTML = "Zooma ut"
-            // document.body.appendChild(btn2);
-
-              // knapp.style.visibility = 'visible';
-              btn.addEventListener('click', function() {
+              btn.addEventListener("click", function() {
                 draw()
               })
 
-              btn2.addEventListener('click', function() {
-                features.selectAll('path').transition()
+              btn2.addEventListener("click", function() {
+                features.selectAll("path").transition()
                   .duration(2000)
-                  // .attr("transform", "translate(" + -1100 + "," + -600 + ")scale(" +3 + ")translate(" + [30,30] + ")")
                   .attr("transform", "translate(" + +0 + "," + 0 + ")scale(" + 1 + ")translate(" + [0,0] + ")")
 
               btn2.style.visibility = "hidden";
-
-
               })
-
         }
-      farg()
 
-
+      farg();
 
 
 });
 
-}
+};
 
 draw();
 
@@ -500,11 +449,8 @@ draw();
 // Add optional onClick events for features here
 // d.properties contains the attributes (e.g. d.properties.name, d.properties.population)
 function clicked(d,i) {
-  if (d.properties.name == "Sweden")
-{
 
-}
-}
+};
 
 
 
@@ -513,4 +459,4 @@ function clicked(d,i) {
 function zoomed() {
   features.attr("transform", "translate(" + zoom.translate() + ")scale(" + zoom.scale() + ")")
       .selectAll("path").style("stroke-width", 1 / zoom.scale() + "px" );
-}
+};
