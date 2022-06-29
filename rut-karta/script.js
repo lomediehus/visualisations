@@ -10,7 +10,9 @@ var rubbediv = document.getElementById("rubbediv");
 var infodiv = document.getElementById("infodiv");
 var irutan = document.getElementById("irutan");
 var fade = document.getElementsByClassName("fade")[0];
+var undertext = document.getElementById('undertext');
 infodiv.style.height = rutan.offsetHeight + 15 + "px";
+undertext.style.visiblity = "hidden";
 
 
 
@@ -171,10 +173,9 @@ console.log('infodiv ' + infodiv.offsetHeight + 'irutan ' + irutan.offsetHeight)
 
 
 fade.innerHTML = "<h2 id='irutan' class='u-textMeta'>1. De här tio länderna kommer flest Rut-arbetare ifrån</h2>";
+infodiv.style.height = rutan.offsetHeight + 15 + "px";
 fade.style.opacity = 0;
 $(fade).fadeTo(500,1);
-// debugger;
-console.log('infodiv ' + infodiv.offsetHeight + 'irutan ' + irutan.offsetHeight)
 
 
 
@@ -418,13 +419,16 @@ d3.json("custom.geo.json",function(error,geodata) {
 
           btn.style.visibility = "visible";
           btn2.style.visibility = "visible";
+          undertext.style.visibility = "visible";
 
 
             btn.addEventListener("click", function() {
               btn2.style.visibility = "hidden";
               btn.style.visibility = "hidden";
               infodiv.style.visibility = "visible";
-              rutan.style.visibility = "visible"
+              rutan.style.visibility = "visible";
+              undertext.style.visibility = "hidden";
+
               draw()
             })
 
