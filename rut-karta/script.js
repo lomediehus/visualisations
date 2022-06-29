@@ -10,7 +10,7 @@ var rubbediv = document.getElementById("rubbediv");
 var infodiv = document.getElementById("infodiv");
 var irutan = document.getElementById("irutan");
 var fade = document.getElementsByClassName("fade")[0];
-infodiv.style.height = irutan.offsetHeight + 15 + "px";
+infodiv.style.height = rutan.offsetHeight + 15 + "px";
 
 
 
@@ -337,8 +337,11 @@ d3.json("custom.geo.json",function(error,geodata) {
       // rubbe.innerHTML = "…och de här tio länderna kommer flest flyktingar ifrån";
       // infodiv.style.height = irutan.offsetHeight + 10 + "px";
       fade.innerHTML = "<h2 id='irutan' class='u-textMeta'>2. …och de här tio länderna kommer flest flyktingar ifrån</h2>";
+      infodiv.style.height = rutan.offsetHeight + 15 + "px";
+
       fade.style.opacity = 0;
       $(fade).fadeTo(500,1);
+
 
 
       features.selectAll("path")
@@ -389,6 +392,8 @@ d3.json("custom.geo.json",function(error,geodata) {
 
         // infodiv.style.height = irutan.offsetHeight + 10 + "px";
         fade.innerHTML = "<h2 id='irutan' class='u-textMeta'>3. Bara Irak och Eritrea finns i båda grupperna</h2>";
+        infodiv.style.height = rutan.offsetHeight + 15 + "px";
+
         fade.style.opacity = 0;
         $(fade).fadeTo(500,1);
 
@@ -418,6 +423,8 @@ d3.json("custom.geo.json",function(error,geodata) {
             btn.addEventListener("click", function() {
               btn2.style.visibility = "hidden";
               btn.style.visibility = "hidden";
+              infodiv.style.visibility = "visible";
+              rutan.style.visibility = "visible"
               draw()
             })
 
@@ -431,6 +438,8 @@ d3.json("custom.geo.json",function(error,geodata) {
                   .attr("transform", "translate(" + +0 + "," + 0 + ")scale(" + 1 + ")translate(" + [0,0] + ")")
 
               btn2.style.visibility = "hidden";
+              infodiv.style.visibility = "hidden";
+              rutan.style.visibility = "hidden"
               })
         }
 
