@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 body {
-  background-color: #f5f7f7;
+  background-color: #fcfaf5;
   width: 100%;
 }
 
@@ -152,7 +152,14 @@ input.yrkeInput {
 #messagediv {
   margin-bottom: 50px;
   padding-bottom: 50px;
+}
 
+#messagediv h3 {
+  font-weight: bold;
+}
+
+#allaAvtalWrapper h3 {
+  font-weight: bold;
 }
 
 
