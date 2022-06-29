@@ -1,6 +1,8 @@
 
 
-d3.json("https://assets.codepen.io/2076398/chefslon.json")
+// d3.json("https://assets.codepen.io/2076398/chefslon.json")
+d3.json("chefslon.json")
+
   .then(function (d) {
 
 
