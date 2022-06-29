@@ -1,0 +1,95 @@
+[
+{
+  "Bransch": "Barnskötare",
+  "Bild_front": "https://cdn.ka.se/app/uploads/sites/5/2020/11/17091109/chefslon-barnskotare.jpg",
+  "Bild_back": "chefslon_barnskotare.svg",
+  "Foto": "Madeleine Andersson",
+
+    "Samtliga": {
+      "Chefer": 18,
+      "Arbetare": 12
+    },
+    "Offentlig": {
+      "Chefer": 20,
+      "Arbetare": 10
+    },
+    "Privat": {
+      "Chefer": 14,
+      "Arbetare": 10
+    }
+
+},
+{
+  "Bransch": "Brandman",
+  "Bild_front": "https://cdn.ka.se/app/uploads/sites/5/2020/11/17091118/chefslon-brandman.jpg",
+  "Bild_back": "chefslon_brandman.svg",
+  "Foto": "Jens Kassnert",
+  "Samtliga": {
+      "Chefer": 20,
+      "Arbetare": 12
+      },
+    "Offentlig": {
+      "Chefer": 20,
+      "Arbetare": 10
+    },
+    "Privat": {
+      "Chefer": 14,
+      "Arbetare": 10
+    }
+  },
+  {
+    "Bransch": "Elevassistent",
+    "Bild_front": "https://cdn.ka.se/app/uploads/sites/5/2020/11/17091127/chefslon-elevassistent.jpg",
+    "Bild_back": "chefslon_elevassistent.svg",
+    "Foto": "Colourbox",
+    "Samtliga": {
+        "Chefer": 20,
+        "Arbetare": 12
+        },
+      "Offentlig": {
+        "Chefer": 20,
+        "Arbetare": 10
+      },
+      "Privat": {
+        "Chefer": 14,
+        "Arbetare": 10
+      }
+    },
+    {
+      "Bransch": "Undersköterska sjukvård",
+      "Bild_front": "https://cdn.ka.se/app/uploads/sites/5/2020/11/17091145/chefslon-uska-sjukhus.jpg",
+      "Bild_back": "chefslon_uska_sjukvard.svg",
+      "Foto": "Colourbox",
+      "Samtliga": {
+          "Chefer": 20,
+          "Arbetare": 12
+          },
+        "Offentlig": {
+          "Chefer": 20,
+          "Arbetare": 10
+        },
+        "Privat": {
+          "Chefer": 14,
+          "Arbetare": 10
+        }
+      },
+      {
+        "Bransch": "Undersköterska äldreomsorg",
+        "Bild_front": "https://cdn.ka.se/app/uploads/sites/5/2020/11/17091136/chefslon-uska-aldre.jpg",
+        "Bild_back": "chefslon_uska_aldre.svg",
+        "Foto": "Colourbox",
+        "Samtliga": {
+            "Chefer": 20,
+            "Arbetare": 12
+            },
+          "Offentlig": {
+            "Chefer": 20,
+            "Arbetare": 10
+          },
+          "Privat": {
+            "Chefer": 14,
+            "Arbetare": 10
+          }
+        }
+
+]
