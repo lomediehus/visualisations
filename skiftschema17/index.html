@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Skiftschema</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css" type="text/css">
+</head>
+
+<body>
+
+  <div id="contentwrapper">
+  <div id="content">
+
+      <div id="start">
+
+        <h2>Gör ett må-bra-schema!</h2>
+        <p>Lägg ett schema genom att dra in arbetspassen till veckans dagar.</p>
+
+      </div>
+
+      <div id="vecka" class="clearfix">
+            <div class="weekday" id="monday" name="måndag" before="720" after="720" work="no">Mån</div>
+            <div class="weekday" id="tuesday" name="tisdag" before="720" after="720" work="no">Tis</div>
+            <div class="weekday" id="wednesday" name="onsdag" before="720" after="720" work="no">Ons</div>
+            <div class="weekday"id="thursday" name="torsdag" before="720" after="720" work="no">Tor</div>
+            <div class="weekday" id="friday" name="fredag" before="720" after="720" work="no">Fre</div>
+            <div class="weekday"id="saturday" name="lördag" before="720" after="720" work="no">Lör</div>
+            <div class="weekday"id="sunday" name="söndag" before="720" after="720" work="no">Sön</div>
+
+            <div class="pleasedontfloat">
+            <h3 class="space">Arbetspass</h3>
+            <div id="dag1" class="shift" before="405" after="510" work="yes">
+              <p class="pass">DAG</p><p class="tid">06.45-15.30</p>
+              </div>
+            <div id="dag2" class="shift" before="405" after="510" work="yes">
+              <p class="pass">DAG</p><p class="tid">06.45-15.30</p>
+              </div>
+            <div id="kvall" class="shift" before="810" after="150" work="yes">
+              <p class="pass">KVÄLL</p><p class="tid">13.30-21.30</p>
+            </div>
+            <div id="natt"class="shift" before="1260" after="-420" work="yes">
+              <p class="pass">NATT</p><p class="tid">21.00-07.00</p>
+              </div>
+
+      </div>
+
+      <div class="info">
+        <button id="done" class="Button" type="button">Färdig!</button>
+      </div>
+
+    </div>
+
+    </div>
+    <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/jquery.ui-touch-punch.min.js"></script>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

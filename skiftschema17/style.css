@@ -1,0 +1,165 @@
+* {
+margin: 0;
+}
+
+p {
+  font-family: sans-serif;
+  line-height: 110%;
+  }
+
+#vecka {
+  left: 0px;
+  }
+
+#pass {
+  clear: both;
+}
+
+#contentwrapper {
+  width: 100%;
+  background-color: #d6ebf2;
+}
+
+#content {
+  width: 100%;
+  max-width: 800px;
+  height: 550px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+
+}
+
+#start {
+  width:90%;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+
+
+h2 {
+  font-family: sans-serif;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
+
+.space {
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.pleasedontfloat {
+  clear: both;
+}
+
+.shift {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    float: left;
+    background-color: #005578;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.weekday {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    float: left;
+    color: gray;
+    background-color: lightgray;
+}
+
+.info {
+  clear: both;
+}
+
+
+p.pass {
+  font-family: sans-serif;
+  position:relative;
+  top: 10%;
+  background-color: #005578;
+  color: #FFFAF0;
+}
+
+
+
+p.tid {
+  font-size: 0.7em;
+  font-family: sans-serif;
+  text-align: center;
+  position:relative;
+  top: 30%;
+  background-color: #005578;
+  color: #FFFAF0;
+}
+
+/* #done button {
+  height: 30px;
+  display: block;
+  align-self: center;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  margin: 5px;
+  padding: 3px 6px 3px 6px;
+  font-size: 1em;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+
+
+
+div#result {
+    width: 80%;
+    background-color: white;
+    opacity: 1;
+    border: 1px solid black;
+    position: absolute;
+    left: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    z-index: 50;
+    line-height: 120%;
+    max-width: 510px;
+
+}
