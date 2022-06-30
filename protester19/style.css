@@ -1,0 +1,205 @@
+body {
+  background-color: #fcfaf5;
+  height: 450px;
+}
+
+svg {
+  position: absolute;
+  right: 3px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+}
+
+
+
+.flexcontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flexcontainer-reverse {
+  display: flex;
+  /* background-size: cover;
+  background-position: center; */
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+
+
+.flexitem {
+  flex-grow: 1;
+}
+
+#bakgrund {
+  background-image: url("protestbild.png"), url("https://images.lomediehus.se/app/uploads/sites/5/2022/06/30110534/protestbild.png");
+  /* background-image: url("protestbild.png"); */
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: visible;
+
+
+}
+#animate {
+  position: absolute;
+
+}
+
+.animate-content {
+  width: 140px;
+  height: 130px;
+  background: white;
+  margin-bottom: 10px;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 2px 2px #c0c0c0;
+  word-wrap: break-word;
+}
+
+.animate-content:hover {
+  background-color: #cbd5d5;
+}
+
+#animate .fet {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #111;
+}
+
+#kartpopup .fet {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #111;
+}
+
+#animate .red {
+  color: #e00f00;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1em;
+}
+
+#kartpopup .red {
+  color: #e00f00;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+#animate .tunn {
+  text-transform: uppercase;
+  color: #7e7f7f;
+}
+
+#kartpopup {
+  display: none;
+  width: 50%;
+  min-width: 250px;
+  max-width: 450px;
+  padding: 5px;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 50%);
+  z-index: 10;
+  box-shadow: 3px 3px 3px   #707070;
+}
+
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 30px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(245,247,247,0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    /* cursor: not-allowed; */
+    /* pointer-events: none; */
+}
+
+#upprop {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  opacity: 0.8;
+  bottom: 5px;
+  left: 5px;
+  width: 160px;
+  padding: 5px;
+}
+
+.homestyled {
+  display: inline-block;
+  background-color: #e00f00;
+  padding: 10px;
+  color: white;
+}
+
+/* Stuff for the map */
+path {
+  stroke-width: 0px;
+  stroke: #4682b4;
+  fill: #87b8b8;
+  cursor: pointer;
+}
+
+path:hover, path.highlighted {
+}
+
+div.tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  padding: 4px 8px;
+  display: none;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 800px) {
+  #bakgrund {
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+
+  #upprop {
+    bottom: 30%;
+    filter: drop-shadow(0px 3px 3px black);
+    -webkit-filter: drop-shadow(0px 3px 3px black);
+}
+
+  #container {
+    height: 550px;
+  }
+
+}
