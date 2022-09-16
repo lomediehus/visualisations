@@ -144,10 +144,10 @@ $.ajax({
 
               // result.innerHTML = 'Du fick ' + points + ' rätt av ' + data.length + ' möjliga.'
               $( "#result" ).slideDown(1000, "swing", function() {
-                informHeight();
-                window.scrollBy(0,500);
+                window.scrollBy(0,3000);
                 // reloadButton.style.display = "none";
                 reloadButton.classList.remove('hidden');
+                informHeight();
 
               });
             }
