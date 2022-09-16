@@ -1,0 +1,192 @@
+body {
+  font-family: sans-serif;
+  background-color: #fcfaf5;
+}
+
+div#content {
+  margin: auto;
+  width: 400px;
+  max-width: fit-content;
+  text-align: center;
+}
+
+label {
+display: block;
+width: 80%;
+}
+
+label::after {
+  /* content: "afdsaf" */
+}
+
+span.symbol {
+visibility: hidden;
+}
+
+/* .radio {
+  visibility: hidden;
+} */
+
+input[type=radio] {
+  opacity: 0;
+  padding-left: -20px;
+}
+
+
+
+
+label {
+  height: 30px;
+  width: 400px;
+  display: block;
+  width: 100%;
+  padding-top: 8px;
+
+  background-color: #dcebe5;
+
+
+  box-shadow:   #7e7f7f 1px 1px 0,
+                #7e7f7f 2px 2px 0,
+                #7e7f7f 3px 3px 0;
+                /* #3f7171 1px 1px 0,
+                #3f7171 2px 2px 0,
+                #3f7171 3px 3px 0; */
+
+                /* #000 4px 4px 0,
+                #000 5px 5px 0,
+                #000 6px 6px 0,
+                #000 7px 7px 0,
+                #000 8px 8px 0; */
+}
+
+label:visited {
+  background-color: #000;
+}
+
+button.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  /* height: 500px; */
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #dcebe5;
+  margin-bottom: 50px;
+}
+
+/* #overlay {
+  width: 200px;
+  height: 80px;
+  display: none;
+  background-color: #ddebeb;
+  border-radius: 20px;
+  margin: auto;
+  position: fixed;
+  top: 50%; left: 50%;
+  bottom: 50%; right: 50%;
+  color: black;
+  z-index:5;
+  padding: 20px;
+} */
+
+/* #overlay {
+  width: 200px;
+  height: 80px;
+  display: none;
+  background-color: #ffef58;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: black;
+  z-index: 5;
+  padding: 20px;
+  margin-top: -40px;
+  margin-left: -140px;
+} */
+
+#overlay {
+  width: 260px;
+  height: 80px;
+  display: none;
+  background-color: #ffef58;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 60px;
+  color: black;
+  z-index: 5;
+  padding: 20px;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
+}
+
+
+
+}
+
+img.closex:hover {
+  background-color: #ffe91d;
+
+}
+
+img.closex {
+  width: 30px;
+  border-radius: 25px;
+}
+
+div.close {
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+h3.bold {
+  font-weight: bold;
+}
+
+.checkbox {
+  color: green;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+  background-color: #FFBF00;
+}
+
+.red {
+  background-color: red;
+}
+
+.semitransparent {
+  opacity: 0.2;
+}
+
+hr {
+    border: none;
+}
+
+hr::before {
+  padding-top: 10px;
+    content: '***';
+    display: block;
+    text-align: center;
+}
