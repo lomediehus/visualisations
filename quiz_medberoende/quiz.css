@@ -71,13 +71,18 @@ button.hidden {
   display: none;
 }
 
+#resultWrapper {
+  height: 480px;
+}
+
 #result {
   /* height: 500px; */
-  width: 400px;
+  /* width: 400px; */
   border-radius: 10px;
+  /* padding: 20px 20px 0px 20px; */
   padding: 20px;
   background-color: #dcebe5;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 /* #overlay {

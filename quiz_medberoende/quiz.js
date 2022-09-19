@@ -77,6 +77,7 @@ $.ajax({
 
           const resultMarkupGreen = `
           <h2 class=u-spacingBottomXS'>Resultat</h2>
+          <br>
             <p><span class='circle green'></span><span class='circle yellow semitransparent'></span><span class='circle red semitransparent'></span></p>
             <p><strong>Grönt ljus</strong></p>
             <p>Det verkar som att du kan sätta gränser så att du får en sund distans till ditt jobb. Ta hand om dig själv och se till att du får återhämtning. Mindfulness kan vara en metod att prova om du känner att du vill göra en förändring.</p>
@@ -145,7 +146,7 @@ $.ajax({
               // result.innerHTML = 'Du fick ' + points + ' rätt av ' + data.length + ' möjliga.'
               $( "#result" ).slideDown(1000, "swing", function() {
                 // reloadButton.style.display = "none";
-                window.scrollBy(0,500);
+                // window.scrollBy(0,800);
 
                 reloadButton.classList.remove('hidden');
                 informHeight();
@@ -189,16 +190,6 @@ $.ajax({
                //change color the clicked label
                 this.parentElement.style.backgroundColor = "#74b2b2";
 
-
-
-                //get the enclosing paragraphs of the labels with buttons
-                // let enclosingP = this.parentElement.parentElement;
-
-                //div needed for addAnswer function, might not use it
-                // diven = enclosingP.parentElement;
-
-                //collect the checkboxes into an HTML collection, and turn them into an array with the spread operator
-                // let boxarna = [...enclosingP.getElementsByClassName('checkbox')];
 
                 //Check if all questions are answered (number of checked boxes is the same as number of questions)
                 if ((document.querySelectorAll('input[type="radio"]:checked').length) === 1) {
