@@ -137,16 +137,16 @@ $.ajax({
                   result.innerHTML = resultMarkupRed;
               }
 
-              questions.style.display = "none";
+              // questions.style.display = "none";
               submitButton.style.display = "none";
 
 
 
               // result.innerHTML = 'Du fick ' + points + ' rätt av ' + data.length + ' möjliga.'
               $( "#result" ).slideDown(1000, "swing", function() {
-                // window.scrollBy(0,500);
-                window.scrollTo(0,0)
                 // reloadButton.style.display = "none";
+                window.scrollBy(0,500);
+
                 reloadButton.classList.remove('hidden');
                 informHeight();
 
