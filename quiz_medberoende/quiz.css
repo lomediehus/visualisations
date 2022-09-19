@@ -85,44 +85,20 @@ button.hidden {
   margin-bottom: 10px;
 }
 
-/* #overlay {
-  width: 200px;
-  height: 80px;
-  display: none;
-  background-color: #ddebeb;
-  border-radius: 20px;
-  margin: auto;
-  position: fixed;
-  top: 50%; left: 50%;
-  bottom: 50%; right: 50%;
-  color: black;
-  z-index:5;
-  padding: 20px;
-} */
 
-/* #overlay {
-  width: 200px;
-  height: 80px;
-  display: none;
-  background-color: #ffef58;
-  border-radius: 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  color: black;
-  z-index: 5;
-  padding: 20px;
-  margin-top: -40px;
-  margin-left: -140px;
-} */
+
 
 #overlay {
   width: 260px;
   height: 80px;
   display: none;
-  background-color: #ffef58;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* background-color: #ffef58; */
+  background-color: #74b2b2;
+
   border-radius: 20px;
-  position: fixed;
+  /* position: fixed; */
   bottom: 60px;
   color: black;
   z-index: 5;
@@ -146,7 +122,7 @@ img.closex {
 
 div.close {
   float: right;
-  position: absolute;
+  /* position: absolute; */
   top: 5px;
   right: 5px;
 }
