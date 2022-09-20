@@ -118,7 +118,7 @@ $.ajax({
               if (points<5){
                 result.innerHTML = resultMarkupGreen;
               }
-              else if (points>=5&&points<12) {
+              else if (points>=5&&points<=12) {
                 result.innerHTML = resultMarkupYellow;
               }
               else {
