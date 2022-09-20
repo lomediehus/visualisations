@@ -1,7 +1,7 @@
 
 console.log('skriptet körs')
 
-// save-to-text-solution from https://www.thecodehubs.com/generate-text-file-using-plain-javascript/
+// combination of two save-to-text tutorials, this: https://www.thecodehubs.com/generate-text-file-using-plain-javascript and this: https://www.learnwithjason.dev/blog/get-form-values-as-json
 
 
 
