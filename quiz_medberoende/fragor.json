@@ -36,7 +36,7 @@
   {
       "divid": "fraga3",
       "rubrik": "Fråga 3",
-      "fraga": "Du tar ansvar för andras känslor, handlingar och deras konsekvenser. Ett exempel: Du har en kollega som missbrukar eller lider av psykisk ohälsa och inte klarar av att sköta sitt jobb ordentligt. Du möjliggör att hen kan behålla sitt jobb genom att täcka upp för frånvaro, sen ankomst och så vidare.",
+      "fraga": "Du tar ansvar för andras känslor, handlingar och deras konsekvenser. <strong>Ett exempel:</strong> Du har en kollega som missbrukar eller lider av psykisk ohälsa och inte klarar av att sköta sitt jobb ordentligt. Du möjliggör att hen kan behålla sitt jobb genom att täcka upp för frånvaro, sen ankomst och så vidare.",
       "alt1": "Stämmer bra",
       "value1": "2",
       "symbol1": "&#10004;",
@@ -126,7 +126,7 @@
       {
           "divid": "fraga9",
           "rubrik": "Fråga 9",
-          "fraga": "Du känner dig vilsen och vet inte ”vem du är” om ingen behöver dig eller dina tjänster.",
+          "fraga": "Du känner dig vilsen och vet inte vem du är om ingen behöver dig eller dina tjänster.",
           "alt1": "Stämmer bra",
           "value1": "2",
           "symbol1": "&#10004;",

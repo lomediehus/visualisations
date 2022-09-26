@@ -171,3 +171,7 @@ hr::before {
     display: block;
     text-align: center;
 }
+
+.halvfet {
+  font-weight: 600;
+}

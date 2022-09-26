@@ -42,7 +42,7 @@ const resultMarkupYellow = `
   <p><strong>Gult ljus</strong></p>
   <p>Det finns risk för att jobbet slukar för mycket av dig och att du tar för stort ansvar på din arbetsplats. Var rädd om dig och hitta strategier för att ta hand om dig själv och som ger bra återhämtning. Mindfulness kan vara en metod att prova.</p>
   <p>Prata med chefen eller ditt skyddsombud om situationen och se till att få hjälp med att sätta gränser om du behöver det.
-  Böcker om medberoende kan ge dig fler insikter kring hur jobbet kan bli som ett medberoende, exempelvis ”Res dig! Läk ditt medberoende” av Madeleine Swartz och ”De tolv stegen: en utväg – en andlig väg till känslomässig läkning”.
+  Böcker om medberoende kan ge dig fler insikter kring hur jobbet kan bli som ett medberoende, exempelvis <i>Res dig! Läk ditt medberoende</i> av Madeleine Swartz och <i>De tolv stegen: en utväg – en andlig väg till känslomässig läkning</i>.
   </p>
 `;
 
@@ -51,7 +51,7 @@ const resultMarkupRed = `
   <p><span class='circle green semitransparent'></span><span class='circle yellow semitransparent'></span><span class='circle red'></span></p>
   <p><strong>Rött ljus</strong></p>
   <p>Det verkar som att jobbet slukar dig alldeles för mycket och att du tar för stort ansvar på din arbetsplats. Prata med din chef eller ditt skyddsombud om situationen och se till att få hjälp med att sätta gränser. Det är viktigt att dina egna behov tillgodoses! Träna på medkänsla med dig själv och hitta bra sätt att återhämta dig. Mindfulness kan vara en metod att prova.</p>
-  <p>Böcker om medberoende kan ge dig fler insikter kring hur jobbet har blivit som ett medberoende, exempelvis ”Res dig! Läk ditt medberoende” av Madeleine Swartz och ”De tolv stegen: en utväg – en andlig väg till känslomässig läkning”.</p>
+  <p>Böcker om medberoende kan ge dig fler insikter kring hur jobbet har blivit som ett medberoende, exempelvis <i>Res dig! Läk ditt medberoende</i> av Madeleine Swartz och <i>De tolv stegen: en utväg – en andlig väg till känslomässig läkning</i>.</p>
 `;
 
 //function to get the correct favicon for the github page
