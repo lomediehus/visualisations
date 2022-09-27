@@ -10,6 +10,7 @@ const knappEtt = document.querySelector('[name="Ett"]');
 const knappTva = document.querySelector('[name="Två"]');
 // let title = document.querySelector('meta[property="og:title"]').content;
 let title = document.querySelector('meta[property="og:title"]');
+console.log(title.content)
 
 
 
