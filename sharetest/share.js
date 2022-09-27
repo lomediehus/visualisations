@@ -8,7 +8,10 @@ if (host.includes("github")) {
 
 const knappEtt = document.querySelector('[name="Ett"]');
 const knappTva = document.querySelector('[name="Två"]');
-let title = document.querySelector('meta[property="og:title"]').content;
+// let title = document.querySelector('meta[property="og:title"]').content;
+let title = document.querySelector('meta[property="og:title"]');
+
+
 
 let value = 0;
 
@@ -18,18 +21,20 @@ function addClick(el) {
     console.log(value);
     changeTitle();
     console.log(title)
+    console.log(document.querySelector('meta[property="og:title"]').content);
+
   })
 }
 
 function changeTitle() {
   if (value == 1) {
-    title = "Jag fick en poäng"
+    title.content = "Jag fick en poäng"
   }
   else if (value == 2) {
-    title = "Jag fick två poäng";
+    title.content = "Jag fick två poäng";
   }
   else {
-    title = "Jag fick inga poäng";
+    title.content = "Jag fick inga poäng";
   }
 }
 
@@ -38,7 +43,7 @@ addClick(knappTva);
 // console.log(document.querySelector('meta[property="og:title"]').content);
 
 
-document.querySelector('meta[property="og:title"]').content = "en tredje titel"
+// document.querySelector('meta[property="og:title"]').content = "en tredje titel"
 
 // console.log(document.querySelector('meta[property="og:title"]').content);
 
