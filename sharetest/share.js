@@ -6,4 +6,45 @@ if (host.includes("github")) {
   console.log('den finns på github')
 }
 
-console.log(document.querySelector('meta[property="og:title"]').content);
+const knappEtt = document.querySelector('[name="Ett"]');
+const knappTva = document.querySelector('[name="Två"]');
+let title = document.querySelector('meta[property="og:title"]').content;
+
+let value = 0;
+
+function addClick(el) {
+      el.addEventListener("click", function() {
+    value = this.value;
+    console.log(value);
+    changeTitle();
+    console.log(title)
+  })
+}
+
+function changeTitle() {
+  if (value == 1) {
+    title = "Jag fick en poäng"
+  }
+  else if (value == 2) {
+    title = "Jag fick två poäng";
+  }
+  else {
+    title = "Jag fick inga poäng";
+  }
+}
+
+addClick(knappEtt);
+addClick(knappTva);
+// console.log(document.querySelector('meta[property="og:title"]').content);
+
+
+document.querySelector('meta[property="og:title"]').content = "en tredje titel"
+
+// console.log(document.querySelector('meta[property="og:title"]').content);
+
+// if (2 > 1) {
+//   document.querySelector('meta[property="og:title"]').content = "en fjärde titel"
+//
+// }
+
+// console.log(document.querySelector('meta[property="og:title"]').content);
