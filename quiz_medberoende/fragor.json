@@ -19,7 +19,7 @@
   {
       "divid": "fraga2",
       "rubrik": "Fråga 2",
-      "fraga": "Du skippar lunchrasten om du har en brukare/kund/patient som behöver mer hjälp än vad tiden räckte till.",
+      "fraga": "Du skippar lunchrasten om du har en brukare/kund/patient eller ett barn som behöver mer hjälp än vad tiden räckte till.",
       "alt1": "Stämmer bra",
       "value1": "2",
       "symbol1": "&#10004;",
