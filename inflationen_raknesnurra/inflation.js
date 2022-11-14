@@ -14,6 +14,8 @@ function printNumber() {
     let output_string = "Din lön på <b>" + number.value + " kr </b> har minskat med <b>" + Math.round(skillnad) + " kr</b> kronor på ett år och är i dag värd <b>" + Math.round(nylon) + " kr</b> i priserna som gällde i september 2021.";
 
     numberplace.innerHTML = output_string;
+    
+    informHeight();
 }
 
 document.getElementById("button").addEventListener("click", printNumber);
