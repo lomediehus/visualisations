@@ -19,3 +19,5 @@ function printNumber() {
 }
 
 document.getElementById("button").addEventListener("click", printNumber);
+
+informHeight();
