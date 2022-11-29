@@ -1,0 +1,131 @@
+
+.container {
+  margin: 0 auto;
+  padding: 16px;
+  padding-top: 70px;
+  max-width: 600px;
+  border-left-style: solid;
+  border-top-style: solid;
+  border-width: 0px;
+  border-color: red;
+}
+
+.buttondiv {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.questionImg {
+  width:100%;
+}
+
+.bubbledLeft{
+
+  margin-top: 20px;
+    padding: 5px 9px;
+    clear: both;
+    position: relative;
+  bottom: 0;
+  width: 65%;
+
+  left: 75px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -o-border-radius: 8px 8px 8px 8px;
+    -ms-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #e7e6e0;
+}
+.textBlock {
+  display: block;
+  position: relative;
+}
+
+.messageBox {
+  max-width: 350px;
+  min-height: 60px;
+  position: relative;
+  display: block;
+}
+
+.messageImg {
+  position: absolute;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+}
+
+.bubbledLeft:before {
+    border-bottom: 10px solid #e7e6e0;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 14px;
+    left: -8px;
+    content: "";
+}
+
+
+
+/* .Button:hover {
+  background-color: #ee492e;
+} */
+
+.Button {
+
+    width: 250px;
+    min-height: 50px;
+    background-color: #ee492e;
+}
+
+@media only screen and (max-width: 500px) {
+  .Button {
+    width: 100%;
+  }
+}
+
+.Button:hover {
+    background-color: #000;
+}
+
+.answerTrue {
+    background-color: #00805e;
+    position: relative;
+    animation-name: tiltAnim;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.answerTrue:hover {
+    background-color: #00805e;
+}
+
+.answerFalse {
+    background-color: #ee492e;
+    position: relative;
+    animation-name: shakeAnim;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.answerFalse:hover {
+    background-color: #ee492e;
+}
+
+@keyframes shakeAnim {
+    0% {top: 0}
+    7% {top: -3px}
+    14% {top: 5px}
+    21% {top: -8px}
+    28% {top: 8px}
+    35% {top: -5px}
+    42% {top: 3px}
+    49% {top: 0}
+}
+
+@keyframes tiltAnim {
+     0% {top: 0}
+     10% {top: -5px}
+     20% {top: -0px}
+ }
