@@ -7,6 +7,21 @@ var firstButtonText = "Starta spelet";
 var startaOm = "Spela en gång till";
 var fortsätt = "Fortsätt";
 
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "img/löner.png",
+    "img/skyline.png",
+)
+
 /*
 Du kan välja om du vill ha någonting i explainer och rubrik
 Du kan ha hur många frågor du vill i alternativ
@@ -14,9 +29,9 @@ Du kan ha hur många frågor du vill i alternativ
 
 var questions = [
     {
-        fraga: "Vad är ett plus ett?",
-        img: "skyline.png",
-        alternativ: ["Två", "Fem"],
+        fraga: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        img: "löner.png",
+        alternativ: ["Ja", "Nej"],
         rattSvar: "Två",
         explainer: "Det är viktigt att kunna räkna",
         rubrik: "Ett test",
@@ -24,13 +39,15 @@ var questions = [
     },
     {
         fraga: "Vad är två plus två. Bla bla bla bla bal. Hej hopp. Bla bla bla. Det här är ett test. Vad är två plus två?",
-        alternativ: ["Fyra", "Det här är ett lite längre svar", "Det här är också ett ganska långt svar. Kanske lite för långt för quizet."],
+        img: "skyline.png",
+        alternativ: ["Det här är ett lite längre svar", "Det här är också ett ganska långt svar."],
         rattSvar: "Fyra",
         explainer: "Det här är ett ganska långt chattmeddelande från roboten. Det är lite för långt",
         meddelande: false,
     },
     {
         fraga: "Det här är lite extra information om föregående fråga.",
+        img: "skyline.png",
         alternativ: [fortsätt],
         rattSvar: "",
         explainer: "Det här är ett ganska långt chattmeddelande från roboten. Det är lite för långt",
@@ -38,16 +55,10 @@ var questions = [
     },
     {
         fraga: "Vad är ett plus tre? Här finns förresten inget robotmeddelande alls",
-        alternativ: ["Fyra", "Två", "Fem"],
+        img: "skyline.png",
+        alternativ: ["Fyra", "Två"],
         rattSvar: "Fyra",
         explainer: "",
-        meddelande: false,
-    },
-    {
-        fraga: "Två minus ett är ett?",
-        alternativ: ["Sant", "Falskt"],
-        rattSvar: "Sant",
-        explainer: "Minus är också bra att kunna",
         meddelande: false,
     },
 ];
@@ -97,14 +108,19 @@ var hem = {
         informHeight();
     },
     view: function() {
-        return m("div.container", [
-
+        return m("div.container", {id:"container"}, [
             m("img.questionImg", {src: "img/skyline.png"}),
             m("p.textBlock.u-textMetaDeca.u-spacingTopM", introText),
-            messageBox(firstRobotText),
             m("button.Button.u-spacingTopM",
             {onclick: function() {
-                m.mount(root, test);
+                let conta = document.getElementById("container");
+                conta.classList.add("container-move");
+                console.log(conta)
+                setTimeout(function(){
+                    conta.classList.remove("container-move");
+                    m.mount(root, test);
+                }, 600)
+                
             }}, firstButtonText)
         ]);
     }
@@ -116,60 +132,59 @@ var test = {
     },
 
     view: function() {
-        return m("div.container", [
+        return m("div.container", {id:"container"}, [
             m("img.questionImg", {src: "img/" + questions[testIndex].img}),
             m("p.questionBox.u-spacingTopM..u-spacingBottomM.u-textMetaDeca", questions[testIndex].fraga),
-            questions[testIndex].explainer ? messageBox(questions[testIndex].explainer) : null,
-            m("div.buttondiv.u-spacingTopM", shuffle(questions[testIndex].alternativ).map(function(fraga, index) {
+            m("div.buttondiv.u-spacingTopM", questions[testIndex].alternativ.map(function(fraga, index) {
                 return m("button.Button.answerButton.u-spacingBottomS.u-spacingRightS", {
                     id: "question-" + index,
                     onclick: function(e) {
+                        e.redraw = false
                         if (questions[testIndex].meddelande) {
+                            
                             console.log("meddelande");
                             testIndex += 1;
+                            let conta = document.getElementById("container");
+                            conta.classList.add("container-move");
+                            console.log(conta);
+                            setTimeout(function(){
+                                if (testIndex == questions.length) {
+                                    m.mount(root, done);
+                                }
+                                m.redraw();
+                            }, 600);
+
                         } else {
                             questions[testIndex].userAnswer = fraga;
                             if (questions[testIndex].rattSvar == fraga) {
                                 totalPoints += 1;
+
+                                testIndex += 1;
+                                fragaNr += 1;
+                                
+                                let conta = document.getElementById("container");
+                                conta.classList.add("container-move");
+                                console.log(conta);
                                 setTimeout(function(){
-                                    testIndex += 1;
-                                    fragaNr += 1;
-                                    for (var i = 0; i < buttons.length; i++) {
-                                        buttons[i].disabled = false;
-                                        buttons[i].classList.remove("answerTrue")
-                                        buttons[i].classList.remove("answerFalse")
-                                    }
                                     if (testIndex == questions.length) {
                                         m.mount(root, done);
                                     }
                                     m.redraw();
                                 }, 600);
                             } else {
-                                e.target.classList.add("answerFalse")
-                                e.target.classList.add("shake")
+                                testIndex += 1;
+                                fragaNr += 1;
+                                let conta = document.getElementById("container");
+                                conta.classList.add("container-move");
+                                console.log(conta);
                                 setTimeout(function(){
-                                    testIndex += 1;
-                                    fragaNr += 1;
-                                    for (var i = 0; i < buttons.length; i++) {
-                                        buttons[i].disabled = false;
-                                        buttons[i].classList.remove("answerTrue")
-                                        buttons[i].classList.remove("answerFalse")
-                                    }
                                     if (testIndex == questions.length) {
                                         m.mount(root, done);
                                     }
-                                    m.redraw();
-                                }, 1000);
+                                    m.mount(root, test);
+                                }, 600);
                             }
 
-                            let buttons = document.getElementsByClassName("answerButton");
-                            for (var i = 0; i < buttons.length; i++) {
-                                buttons[i].disabled = true;
-                                if (buttons[i].textContent == questions[testIndex].rattSvar) {
-                                    buttons[i].classList.add("answerTrue")
-                                }
-                            }
-                            e.redraw = false;
                         }
                     }
                 }, fraga
