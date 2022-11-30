@@ -18,7 +18,7 @@ function preload() {
 
 //-- usage --//
 preload(
-    "img/löner.png",
+    "img/loner.png",
     "img/skyline.png",
 )
 
@@ -30,7 +30,7 @@ Du kan ha hur många frågor du vill i alternativ
 var questions = [
     {
         fraga: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        img: "löner.png",
+        img: "skyline.png",
         alternativ: ["Ja", "Nej"],
         rattSvar: "Två",
         explainer: "Det är viktigt att kunna räkna",
@@ -139,7 +139,7 @@ var test = {
                 return m("button.Button.answerButton.u-spacingBottomS.u-spacingRightS", {
                     id: "question-" + index,
                     onclick: function(e) {
-                        e.redraw = false
+                        e.redraw = false;
                         if (questions[testIndex].meddelande) {
                             
                             console.log("meddelande");
@@ -151,6 +151,7 @@ var test = {
                                 if (testIndex == questions.length) {
                                     m.mount(root, done);
                                 }
+                                conta.classList.remove("container-move");
                                 m.redraw();
                             }, 600);
 
@@ -169,6 +170,7 @@ var test = {
                                     if (testIndex == questions.length) {
                                         m.mount(root, done);
                                     }
+                                    conta.classList.remove("container-move");
                                     m.redraw();
                                 }, 600);
                             } else {
@@ -181,7 +183,8 @@ var test = {
                                     if (testIndex == questions.length) {
                                         m.mount(root, done);
                                     }
-                                    m.mount(root, test);
+                                    conta.classList.remove("container-move");
+                                    m.redraw();
                                 }, 600);
                             }
 
