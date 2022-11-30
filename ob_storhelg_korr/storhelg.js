@@ -2,6 +2,14 @@ let filearray = [];
 let filearray2 = [];
 let kombo = [];
 
+//just getting the right favicon
+let host = window.location.host;
+if (host.includes("github")) {
+  document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+  console.log('den finns på github')
+}
+
+
 //read data from files into arrays
 $.ajax({
         // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
@@ -104,7 +112,7 @@ function doStuff() {
   var helgwrapper = document.getElementsByClassName("helg-wrapper");
   var helgbild = document.getElementById('helgbild');
 
-  // NEW variables for text in document
+  // variables for text in document
   var overskrift, rubrik, text, extraxtext1, extratext2, extratext3, extratext4 = '';
   //Replaces any
   const patt = new RegExp('[0-9]+(,[0-9]+)*' + '\\s' + 'kr/tim', 'g');
@@ -127,8 +135,8 @@ function doStuff() {
   //Variable for current date
   var date = new Date();
   //variables for set dates
-  var nyarsdatum = new Date("December 27 2021");
-  var trettonhelgsdatum = new Date("January 2 2022");
+  var nyarsdatum = new Date("December 27 2022");
+  var trettonhelgsdatum = new Date("January 2 2023");
   var paskdatum = new Date("February 12 2022");
   var pingstdatum = new Date("April 22 2022");
 
@@ -138,18 +146,18 @@ function doStuff() {
   //variables for set dates
 
   //handling dates:
-  //Check if current date is after nyar;
-  if (date.getTime() > pingstdatum.getTime()) {
-    //if current date is also after trettondagen
-    if (date.getTime() > midsommardatum.getTime()) {
+  //Check if current date is after jul;
+  if (date.getTime() > nyarsdatum.getTime()) {
+    //if current date is also after nyar
+    if (date.getTime() > trettonhelgsdatum.getTime()) {
       document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/midsommar.svg';
-      goActive(helgknapp6);
-      helgnr = "6";
+      goActive(helgknapp3);
+      helgnr = "3";
     }
     else {
       document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
-      goActive(helgknapp4);
-      helgnr = "45";
+      goActive(helgknapp2);
+      helgnr = "2";
     }
   }
   else {
