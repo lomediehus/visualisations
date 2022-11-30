@@ -111,7 +111,7 @@ var hem = {
         return m("div.container", {id:"container"}, [
             m("img.questionImg", {src: "img/skyline.png"}),
             m("p.textBlock.u-textMetaDeca.u-spacingTopM", introText),
-            m("button.Button.u-spacingTopM",
+            m("div.buttondiv.u-spacingTopM", m("button.Button.u-spacingTopM",
             {onclick: function() {
                 let conta = document.getElementById("container");
                 conta.classList.add("container-move");
@@ -121,7 +121,7 @@ var hem = {
                     m.mount(root, test);
                 }, 600)
                 
-            }}, firstButtonText)
+            }}, firstButtonText))
         ]);
     }
 };
