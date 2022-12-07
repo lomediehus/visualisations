@@ -53,7 +53,7 @@
   },
   {
     "yrke": "Fordonsförare",
-    "lön": 28203
+    "lön": 28164
   },
   {
     "yrke": "Park- och trädgårdsarbetare",
