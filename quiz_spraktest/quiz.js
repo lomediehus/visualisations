@@ -37,20 +37,20 @@ $.ajax({
             <div id="${data[x].divid}" class="u-paddedBottomM">
               <h2 id="introrubrik${x+1}">${data[x].introrubrik}</h2>
               <p>${data[x].introtext}</p>
-              <h3 id="rubrik${x+1}" class="u-textMetaDeca">${data[x].rubrik}</h3>
-              <p class="u-textMeta fyrahundra">${data[x].fraga}</p>
-              <img src="bild${x+1}.jpg" class="fyrahundra">
-              <label class="fyrahundra"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value1}" class="checkbox">${data[x].alt1}<span>  ${data[x].symbol1}</span></label><br>
-              <label class="fyrahundra"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value2}" class="checkbox">${data[x].alt2}<span>  ${data[x].symbol2}</span></label><br>
-              <label class="fyrahundra"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value3}' class='checkbox'>${data[x].alt3}<span>  ${data[x].symbol3}</span></label>
+              <h3 id="rubrik${x+1}" class="u-textMetaDeca smalfraga">${data[x].rubrik}</h3>
+              <p class="u-textMeta smalfraga">${data[x].fraga}</p>
+              <img src="bild${x+1}.jpg" class="smalfraga">
+              <label class="smalfraga"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value1}" class="checkbox">${data[x].alt1}<span>  ${data[x].symbol1}</span></label><br>
+              <label class="smalfraga"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value2}" class="checkbox">${data[x].alt2}<span>  ${data[x].symbol2}</span></label><br>
+              <label class="smalfraga"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value3}' class='checkbox'>${data[x].alt3}<span>  ${data[x].symbol3}</span></label>
 
             `
 
               if (data[x].alt4) {
-                markup += `<br><label class="fyrahundra"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value4}' class='checkbox'>${data[x].alt4}<span>  ${data[x].symbol4}</span></label>`
+                markup += `<br><label class="smalfraga"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value4}' class='checkbox'>${data[x].alt4}<span>  ${data[x].symbol4}</span></label>`
               }
               if (data[x].alt5) {
-                markup += `<br><label class="fyrahundra"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value5}' class='checkbox'>${data[x].alt5}<span>  ${data[x].symbol5}</span></label>`
+                markup += `<br><label class="smalfraga"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value5}' class='checkbox'>${data[x].alt5}<span>  ${data[x].symbol5}</span></label>`
               }
 
               markup += `
@@ -66,7 +66,7 @@ $.ajax({
 
             }
           //add submit button
-          content.innerHTML += "<button id='submitButton' class='Button doNotHideOverlay'>Se ditt resultat</button>";
+          content.innerHTML += "<button id='submitButton' class='Button doNotHideOverlay smalfraga'>Se ditt resultat</button>";
           content.innerHTML += "<div id='result' class='hidden u-textMeta'></div>"
 
           informHeight();
