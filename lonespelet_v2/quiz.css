@@ -1,0 +1,265 @@
+/* blå bakgrund vit text gröna knappar*/
+:root {
+  --bg-color: #5052ea;
+  --text-color: #f9f8f2;
+  --button-color: #1bae62;
+  --button-color-hover: #1bae62;
+  --button-text-color: #333332;
+}
+
+
+
+:root {
+  --bg-color: #7a1f10;
+  --text-color: #f9f8f2;
+  --button-color: #ee492e;
+  --button-color-hover: #ee492e;
+  --button-text-color: #f9f8f2;
+}
+
+
+:root {
+  --bg-color: #eae9e2;
+  --text-color: #333332;
+  --button-color: #ee492e;
+  --button-color-hover: #ee492e;
+  --button-alternative-color: #f9f8f2;
+  --button-alternative-text-color: #333332;
+  --button-text-color: #f9f8f2;
+}
+
+
+
+
+
+
+
+body {
+  background-color: var(--bg-color);
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.strejk {
+  --bg-color: #7a1f10;
+  --text-color: #f9f8f2;
+  --button-color: #ee492e;
+  --button-color-hover: #ee492e;
+  --button-text-color: #f9f8f2;
+  -webkit-transition: all 1000ms linear;
+  -ms-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+@font-face {
+  font-family: "FoundersGrotesk-Regular";
+  src: url("fonts/FoundersGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "FoundersGrotesk-Bold";
+  src: url("fonts/FoundersGrotesk-Bold.otf") format("opentype");
+}
+
+h2 {
+  font-family: FoundersGrotesk-Bold;
+}
+
+
+div.container {
+  color: var(--text-color);
+  font-family: FoundersGrotesk-Regular;
+  margin: 0 auto;
+  padding: 16px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 600px;
+  border-left-style: solid;
+  border-top-style: solid;
+  border-width: 0px;
+  border-color: red;
+  animation: fadeIn 1s;
+}
+
+div.container-move {
+  position: relative;
+  animation: swoop 0.7s;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes swoop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+.buttondiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.questionImg {
+  width:100%;
+}
+
+.bubbledLeft{
+
+  margin-top: 20px;
+    padding: 5px 9px;
+    clear: both;
+    position: relative;
+  bottom: 0;
+  width: 65%;
+
+  left: 75px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -o-border-radius: 8px 8px 8px 8px;
+    -ms-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #e7e6e0;
+}
+.textBlock {
+  display: block;
+  position: relative;
+}
+
+.messageBox {
+  max-width: 350px;
+  min-height: 60px;
+  position: relative;
+  display: block;
+}
+
+.messageImg {
+  position: absolute;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+}
+
+.bubbledLeft:before {
+    border-bottom: 10px solid #e7e6e0;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 14px;
+    left: -8px;
+    content: "";
+}
+
+
+
+/* .Button:hover {
+  background-color: #ee492e;
+} */
+
+.Button {
+    flex-grow: 1;
+    max-width: 300px; 
+    min-height: 50px;
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+}
+
+
+
+.Button.clickedButton {
+  color: var(--button-alternative-text-color) !important;
+  background-color: var(--button-alternative-color) !important;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+  .buttondiv {
+    display: block;
+  }
+  .Button {
+    max-width: 100%;
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.Button:hover {
+  color: var(--button-alternative-text-color);
+  background-color: var(--button-alternative-color);
+}
+
+@media (hover: none) {
+  .Button:hover {
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+  }
+}
+
+
+
+
+@keyframes shakeAnim {
+    0% {top: 0}
+    7% {top: -3px}
+    14% {top: 5px}
+    21% {top: -8px}
+    28% {top: 8px}
+    35% {top: -5px}
+    42% {top: 3px}
+    49% {top: 0}
+}
+
+@keyframes tiltAnim {
+     0% {top: 0}
+     10% {top: -5px}
+     20% {top: -0px}
+ }
+
+
+.slidecontainer { 
+  margin-bottom: 75px;
+}
+
+.noUi-handle {
+  background: var(--button-color);
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.noUi-target {
+  background: rgb(199, 198, 193);;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  padding: 0 17px;
+}
+
+.noUi-pips {
+  left: 17px;
+  width: calc(100% - 34px);
+}
+
+.noUi-connects {
+    margin: 0 -17px;
+    width: calc(100% + 34px);
+}
+
+.noUi-value-horizontal {
+  padding-top: 5px;
+}
+
+.noUi-tooltip {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 5px;
+}

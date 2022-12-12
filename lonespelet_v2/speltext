@@ -1,0 +1,22 @@
+x==0
+["Du blir avsatt","<p>Arbetsgivarna tror inte sina öron, men håller god min och accepterar ditt krav utan knot.</p><p>Medlemmarna rasar däremot. Vilda strejker bryter ut runt om i landet. Fackförbunden tappar en halv miljon medlemmar. Du anklagas för att sitta i knät på kapitalet och tvingas avgå under förnedrande former.</p>"]
+
+x<=3
+["Upprörda medlemmar","<p>Arbetsgivarna mumlar om inflation och dyrtider och säger att företagen kommer få svårt att klara en sådan kostnadsökning. Medlemmarna blir upprörda över att du lägger dig så lågt och Gruvtolvan hotar med vild strejk. </p><p>Arbetsgivarnas motbud är x-0,5</p>"]
+
+x<=5
+["”Riskerar jobben”",<p>Arbetsgivarna pratar om inflation och dyrtider och hävdar att ett så högt krav kommer att driva företag i konkurs och riskera tusentals jobb. En del upprörda röster hörs från medlemmar som vill tycker att du lägger dig för lågt. Gruvtolvan hotar med vild strejk.</p><p>Arbetsgivarnas motbud är x-1,5</p>"]
+
+x<=7
+["”Oseriöst!”",<p>Ett oseriöst krav anser arbetsgivarna och får medhåll från vissa nationalekonomer som menar att svensk konkurrenskraft allvarligt skulle hotas med sådana löneökningar. Medlemmarna vill gärna se ännu högre krav, men hålller sig på mattan. </p><p>Arbetsgivarnas motbud är 2 procent.</p>"]
+
+x>=10
+["Nöjda medlemmar","<p>Ohållbart, gormar arbetsgivarna. Nationalekonomer varnar för en eskalerande inflationsspiral och Medlingsinstitutet antyder att du borde lugna ner dig. Medlemmarna är ganska nöjda förutom Gruvtolvan som vill ha 20 procent.</p> <p>Arbetsgivarnas motbud är 2 procent</p>"]
+
+x<20
+["”Från vettet!”","<p>Är ni fullkomligt från vettet, skriker arbetsgivarna och ber er återkomma med ett seriöst bud. Många medlemmar jublar medan andra tycker att det är oansvarigt att kräva så mycket.</p><p>Efter att ha andats i fyrkant för att lugna ner sig kommer arbetsgivarna med ett motbud på 2 procent.</p>"]
+
+x==20
+["”Från vettet!”","<p>Är ni fullkomligt från vettet, skriker arbetsgivarna och lämnar förhandlingsbordet i vredesmod. Även många medlemmar tycker att det är oansvarigt att kräva så mycket.</p><p>Efter ett ingripande från Medlingsinstitutet återkommer arbetsgivaren med ett bud på två procent.</p>"]
+
+    
