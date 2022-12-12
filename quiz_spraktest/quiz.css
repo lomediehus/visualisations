@@ -114,3 +114,13 @@ div.close {
   top: 5px;
   right: 5px;
 }
+
+@media only screen and (max-width: 500px) {
+  .fyrahundra {
+    max-width: 380px;
+  }
+  div#content {
+    margin: auto;
+    width: 100%;
+  }
+}
