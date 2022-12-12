@@ -54,7 +54,7 @@ $.ajax({
               }
 
               markup += `
-              <p class="u-textMeta hidden u-paddedTopXS">${data[x].svar}</p>
+              <p class="u-textMeta hidden u-paddedTopXS smalfraga">${data[x].svar}</p>
                 </div>`
             return markup;
           }
@@ -67,7 +67,7 @@ $.ajax({
             }
           //add submit button
           content.innerHTML += "<button id='submitButton' class='Button doNotHideOverlay smalfraga'>Se ditt resultat</button>";
-          content.innerHTML += "<div id='result' class='hidden u-textMeta'></div>"
+          content.innerHTML += "<div id='result' class='hidden u-textMeta smalfraga'></div>"
 
           informHeight();
 
