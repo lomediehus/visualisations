@@ -92,7 +92,7 @@ $.ajax({
               var resultMarkup = `
               <h2>Resultat</h2>
                 <p><strong>Du fick ${points} rätt av ${data.length} möjliga.</strong></p>
-                <p>Frågorna är bara ett litet utdrag ur ett större test. Ditt resultat här avgör därför inte om dina språkkunskaper är tillräckliga för att arbeta inom äldreomsorgen. Detta är bara ett exempel på hur språktest för äldreomsorgen kan vara utformade. Olika kommuner/arbetsgivare använder olika tester.</p>
+                <p>Frågorna är en liten del av ett större test. Ditt resultat här avgör därför inte om dina språkkunskaper är tillräckliga för att arbeta inom äldreomsorgen. Detta är bara ett exempel på hur språktest för äldreomsorgen kan vara utformade. Olika kommuner/arbetsgivare använder olika tester.</p>
               `;
               result.innerHTML = resultMarkup;
 

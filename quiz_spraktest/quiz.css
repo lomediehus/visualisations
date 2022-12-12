@@ -89,6 +89,8 @@ label:visited {
 #overlay {
   width: 200px;
   height: 200px;
+  padding: 10px;
+  padding-top: 30px;
   display: none;
   background-color: #ddebeb;
   border-radius: 20px;
@@ -97,8 +99,21 @@ label:visited {
   position: fixed;
   top: 50px; left: 50px;
   bottom: 50px; right: 50px;
-  color: #FFF;
+  color: #000000;
   z-index:5;
+  box-shadow:   #7e7f7f 1px 1px 0,
+                #7e7f7f 2px 2px 0,
+                #7e7f7f 3px 3px 0;
+                /* #3f7171 1px 1px 0,
+                #3f7171 2px 2px 0,
+                #3f7171 3px 3px 0; */
+
+                /* #000 4px 4px 0,
+                #000 5px 5px 0,
+                #000 6px 6px 0,
+                #000 7px 7px 0,
+                #000 8px 8px 0; */
+}
 }
 
 img.closex:hover {
