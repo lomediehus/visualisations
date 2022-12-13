@@ -63,6 +63,7 @@ $.ajax({
 
           function fillContent(item, index) {
             content.innerHTML += makeMarkup(index);
+            informHeight();
 
             }
           //add submit button
