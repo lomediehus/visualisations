@@ -1,4 +1,4 @@
-console.log("script is running")
+console.log("script is running2")
 
 let content = document.getElementById('content');
 var overlay = document.getElementById('overlay');
