@@ -7,11 +7,11 @@ function printNumber() {
     let number = document.getElementById("formvalue");
     let numberplace = document.getElementById("resultat");
 
-    let index_2021 = 227.24;
-    let index_2022 = 248.32;
+    let index_2021 = 228.33;
+    let index_2022 = 250.10;
     let nylon = parseInt(number.value) * index_2021 / index_2022;
     let skillnad = parseInt(number.value) - nylon;
-    let output_string = "Din lön på <b>" + number.value + " kr </b> har minskat med <b>" + Math.round(skillnad) + " kr</b> kronor på ett år och är i dag värd <b>" + Math.round(nylon) + " kr</b> i priserna som gällde i oktober 2021.";
+    let output_string = "Din lön på <b>" + number.value + " kr </b> har minskat med <b>" + Math.round(skillnad) + " kr</b> kronor på ett år och är i dag värd <b>" + Math.round(nylon) + " kr</b> i priserna som gällde i november 2021.";
 
     numberplace.innerHTML = output_string;
 
