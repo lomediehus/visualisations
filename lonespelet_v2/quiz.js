@@ -439,7 +439,7 @@ var questions = [
             if (paskstrajk) {
                 output = ["Arbetsgivarna ger sig","<p>Arbetsgivarna lämnar ob-ersättningen i fred och kompenseras med arbetsgrupp som ska utreda ob-ersättningarna till nästa avtalsrörelse.</p>"];
             } else {
-                ["Arbetsgivarna vinner","Arbetsgivarna säger allvarsamt att man nu har ett rättvist och hållbart ersättningssystem och skrattar de hela vägen till banken.</p><p>Handels medlemmar är rasande och de portar dig från din lokala ICA-butik för ditt svek."];
+                output = ["Arbetsgivarna vinner","Arbetsgivarna säger allvarsamt att man nu har ett rättvist och hållbart ersättningssystem och skrattar de hela vägen till banken.</p><p>Handels medlemmar är rasande och de portar dig från din lokala ICA-butik för ditt svek."];
             }
             
             return output;
