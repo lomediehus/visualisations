@@ -107,7 +107,7 @@ var questions = [
     {
         fraga: function () {
             let output
-            if (lonekrav == 0) {
+            if (lonekrav < 1.1) {
                 output = ["Risk för depression","<p>Nationalekonomerna varnar för att den annalkande lågkonjunkturen övergår i en depression eftersom köpkraften skulle minska kraftigt.</p><p>Till och med arbetsgivarna tycker att det är lite i underkant, även om de inte säger det högt. </p>"];
             } else if (lonekrav < 3) {
                 output = ["Upprörda medlemmar","<p>Nationalekonomerna är kluvna, å ena sidan ansvarsfullt och bra mot inflationen, å andra sidan risk att lågkonjunkturen blir ännu djupare med den minskade köpkraften.</p><p>Medlemmarna blir upprörda över att du lägger dig så lågt.</p>"];
@@ -191,7 +191,7 @@ var questions = [
             if (lonekrav < 1.1) {
                 return [
                     {alternativ: "Gå vidare", action: function(){
-                        testIndex = questions.length - 1;
+                        testIndex += 2;
                     }},
                 ]             
             } else {
@@ -377,34 +377,45 @@ var questions = [
             let cont = document.body;
             cont.classList.remove("strejk");
             let output;
-            if (laglonesatsning && arbetsskor) {
-                output = ["Kostar mycket","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Ska ni ha något extra drar vi det från märket, låglönesatsningen kostar 0,2 procent och arbetsskor 0,1 procent</p><p>Driver du det vidare blir alltså löneökningarna lägre. " + formatPercent.to(lonekrav - 0.3) + " i stället för " + formatPercent.to(lonekrav) + ".</p><p>Vad gör du?</p>"]
-            } else if (arbetsskor) {
-                output = ["Skor kostar!","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Vill ni ha skor drar vi det från märket och det kostar 0,1 procent.</p><p>Driver du det vidare blir alltså löneökningarna lägre, alltså " + formatPercent.to(lonekrav - 0.1) + " i stället för " + formatPercent.to(lonekrav) + ".</p><p>Vad gör du?</p>"]
+            if (market < 1.1 && arbetsskor) {
+                output = ["Okej då", "”Med tanke på de rimliga lönekravet går vi väl med på arbetsskor då”, säger Vårdföretagen lite surt”"]
             } else {
-                output = ["Klart?","Kommunal surar över skorna men slipper dra ner på lönekravet och skriver till slut på avtalet. Nu är väl avtalsrörelsen slut, eller?"]
+                if (laglonesatsning && arbetsskor) {
+                    output = ["Kostar mycket","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Ska ni ha något extra drar vi det från märket, låglönesatsningen kostar 0,2 procent och arbetsskor 0,1 procent</p><p>Driver du det vidare blir alltså löneökningarna lägre. " + formatPercent.to(lonekrav - 0.3) + " i stället för " + formatPercent.to(lonekrav) + ".</p><p>Vad gör du?</p>"]
+                } else if (arbetsskor) {
+                    output = ["Skor kostar!","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Vill ni ha skor drar vi det från märket och det kostar 0,1 procent.</p><p>Driver du det vidare blir alltså löneökningarna lägre, alltså " + formatPercent.to(lonekrav - 0.1) + " i stället för " + formatPercent.to(lonekrav) + ".</p><p>Vad gör du?</p>"]
+                } else {
+                    output = ["Klart?","Kommunal surar över skorna men slipper dra ner på lönekravet och skriver till slut på avtalet. Nu är väl avtalsrörelsen slut, eller?"]
+                }
             }
+            
             
             return output;
         },
         img: ["img/1_ny.svg", "img/2NY.svg"],
         alternativ: function(){
             if (arbetsskor) {
-                return [
-                    {alternativ: "Acceptera sänkningen", action: function(){
-                        if (laglonesatsning && arbetsskor) {
-                            lonekrav -= 0.3;
-                        } else {
-                            lonekrav -= 0.1;
-                        }
-                        
-                        arbetsskor = true;
-                    }},
-                    {alternativ: "Inte värt det", action: function(){    
-                        arbetsskor = false;           
-                        return;
-                    }}]
-
+                if (market < 1.1) {
+                    return [
+                        {alternativ: "Gå vidare", action: function(){
+                            arbetsskor = true;
+                        }}]
+                } else {
+                    return [
+                        {alternativ: "Acceptera sänkningen", action: function(){
+                            if (laglonesatsning && arbetsskor) {
+                                lonekrav -= 0.3;
+                            } else {
+                                lonekrav -= 0.1;
+                            }
+                            
+                            arbetsskor = true;
+                        }},
+                        {alternativ: "Inte värt det", action: function(){    
+                            arbetsskor = false;           
+                            return;
+                        }}]
+                }
             } else {
                 return [
                     {alternativ: "Gå vidare", action: function(){
@@ -500,20 +511,31 @@ var questions = [
             let outputString = "<p>Avtalsrörelsen är över. Löneökningen blev " + formatPercent.to(market);
 
             if (skillnad < 0) {
-                skillnadString = " vilket innebär att lönen i praktiken (reallönen) har minskat med " + formatPercent.to(skillnad) + " med en inflation på " + formatPercent.to(inflation) + ".</p>"
+                skillnadString = " vilket innebär att lönen i praktiken (reallönen) har minskat med " + formatPercent.to(skillnad * -1) + " med en inflation på " + formatPercent.to(inflation) + ".</p>"
             } else if (skillnad == 0) {
                 " vilket innebär att lönen i praktiken inte har förändrats.</p>"
             } else {
                 " vilket innebär att lönen i praktiken (reallönen) har ökat med " + formatPercent.to(skillnad) + ".</p>"
             }
 
-            if (laglonesatsning && arbetsskor) {
-                extraString += " Kommunalarna har fått fria arbetsskor och en låglönesatsning men lägre löner än alla andra på  " + formatPercent.to(lonekrav) + ".";
-            } else if (laglonesatsning) {
-                extraString += " Kommunalarna har fått en låglönesatsning men lägre löneökning än alla andra på " + formatPercent.to(lonekrav) + ".";
-            } else if (arbetsskor) {
-                extraString +=  "Kommunalarna har fått fria arbetsskor men lägre löneökning än alla andra på " + formatPercent.to(lonekrav) + ".";
+            if (market < 1.1) {
+                if (laglonesatsning && arbetsskor) {
+                    extraString += " Kommunalarna har fått fria arbetsskor och en låglönesatsning.";
+                } else if (laglonesatsning) {
+                    extraString += " Kommunalarna har fått en låglönesatsning.";
+                } else if (arbetsskor) {
+                    extraString +=  "Kommunalarna har fått fria arbetsskor.";
+                }
+            } else {
+                if (laglonesatsning && arbetsskor) {
+                    extraString += " Kommunalarna har fått fria arbetsskor och en låglönesatsning men lägre löner än alla andra på  " + formatPercent.to(lonekrav) + ".";
+                } else if (laglonesatsning) {
+                    extraString += " Kommunalarna har fått en låglönesatsning men lägre löneökning än alla andra på " + formatPercent.to(lonekrav) + ".";
+                } else if (arbetsskor) {
+                    extraString +=  "Kommunalarna har fått fria arbetsskor men lägre löneökning än alla andra på " + formatPercent.to(lonekrav) + ".";
+                }
             }
+
             if (paskstrajk) {
                 extraString += " De anställda i handeln får behålla sitt ob-tillägg på söndagar."
             }
