@@ -68,7 +68,7 @@ var questions = [
         fraga: function() {
             return [
                 "Välkommen till lönespelet", 
-                "Inflationen bränner stora hål i plåböckerna och gör många desperata efter en rejäl löneökning.</p><p> Samtidigt sänker sig lågkonjunkturern över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse är inte det lättaste att få ihop för att göra alla nöjda. Försök själv genom att spela Arbetets lönespel.</p>"
+                "Inflationen bränner stora hål i plånböckerna och gör många desperata efter en rejäl löneökning.</p><p> Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse är inte det lättaste att få ihop för att göra alla nöjda. Försök själv genom att spela Arbetets lönespel.</p>"
                 ];
             },
         alternatives: false,
@@ -90,7 +90,7 @@ var questions = [
             } else {
                 return [
                     "Industrin bestämmer sig", 
-                    "<p>Det sen höst och facken inom industrin samlats för att bestämma lönekraven i vårens avtalsförhandlingar, det så kallade märket – modellen för alla andra löneökningar.</p><p>Inflationen ligger på skyhöga 10 procent, allt under det blir i realiteten en lönesänkning.</p><p> Vad ska facken kräva för procentuell höjning?</p>"
+                    "<p>Det är sen höst och facken inom industrin har samlats för att bestämma lönekraven i vårens avtalsförhandlingar, det så kallade märket – modellen för alla andra löneökningar.</p><p>Inflationen ligger på skyhöga 10 procent, allt under det blir i realiteten en lönesänkning.</p><p> Vad ska facken kräva för procentuell höjning?</p>"
                 ];
             }
             
@@ -212,10 +212,10 @@ var questions = [
             let cont = document.body;
             if (lonekrav - arbetsgivarkrav <= 0.5) {
                 arbetsgivarkrav = lonekrav;
-                output = ["Strejkvarsel!","<p>Du har varslat om storstejk som omfattar en halv miljon arbetstagare. Oansvarigt, anser arbetsgivarna men lugnar sig så småningom och möter ditt krav.</p><p>Ni sätter er vid förhandlingsbordet igen och undertecknar avtalet som ger " + formatPercent.to(lonekrav) + " i löneökningar.</p>" ];
+                output = ["Strejkvarsel!","<p>Du har varslat om storstrejk som omfattar en halv miljon arbetstagare. Oansvarigt, anser arbetsgivarna men lugnar sig så småningom och möter ditt krav.</p><p>Ni sätter er vid förhandlingsbordet igen och undertecknar avtalet som ger " + formatPercent.to(lonekrav) + " i löneökningar.</p>" ];
             } else {
                 arbetsgivarkrav += +0.5
-                output = ["Strejkvarsel!","<p>Du har varslat om storstejk som omfattar en halv miljon arbetstagare. Oansvarigt, anser arbetsgivarna men lugnar sig så småningom och höjer sitt bud med 0,5 procentenheter till " + formatPercent.to(arbetsgivarkrav) + ".</p><p>Vad gör du?</p>"];
+                output = ["Strejkvarsel!","<p>Du har varslat om storstrejk som omfattar en halv miljon arbetstagare. Oansvarigt, anser arbetsgivarna men lugnar sig så småningom och höjer sitt bud med 0,5 procentenheter till " + formatPercent.to(arbetsgivarkrav) + ".</p><p>Vad gör du?</p>"];
             }
             return output;
         },
@@ -254,7 +254,7 @@ var questions = [
                     output = ["Storstrejk!","<p>Strejken inleds. Industrierna står still och företagen förlorar mycket pengar. Arbetsgivarna rasar över fackets nonchalans inför den svenska konkurrenskraften.</p><p>För att få ett slut på strejken går de till slut med på att sockra budet med ytterligare 0,5 procent, till " + formatPercent.to(arbetsgivarkrav) + ".</p><p>Vad gör du?</p>"];
                 } else if (strejkdagar == 1) {
                     arbetsgivarkrav += 0.5;
-                    output = ["Strejken utvidgas.","Du tar ut ytterligare 100 000 anställda i strejk. Arbetsgivaren svarar med en lockout. Nu är det inte bara företagen som förlorar pengar, även din strejkassa börjar sina.</p><p>Medlingsinstitutet griper in och kommer med ett förslag på " + formatPercent.to(arbetsgivarkrav) + " som arbetsgivaren accepterar.</p><p>Vad gör du?</p>"];
+                    output = ["Strejken utvidgas.","Du tar ut ytterligare 100 000 anställda i strejk. Arbetsgivaren svarar med en lockout. Nu är det inte bara företagen som förlorar pengar, även din strejkkassa börjar sina.</p><p>Medlingsinstitutet griper in och kommer med ett förslag på " + formatPercent.to(arbetsgivarkrav) + " som arbetsgivaren accepterar.</p><p>Vad gör du?</p>"];
                 } else if (strejkdagar == 2) {
                     tjänstepension = true;
                     output = ["Strejken fortsätter","<p>Såväl din som arbetsgivarnas strejkkassa är på väg att ta slut. Företag kommer med storvarsel om uppsägningar.</p><p>Allmänheten, som till en början sympatiserat med strejken, börjar tröttna. Nationalekonomerna varnar för stora skadeverkningar på samhällsekonomin</p><p>Medlingsinstitutet slänger in extra avsättningar till tjänstepensionen ovanpå budet på " + formatPercent.to(arbetsgivarkrav) + ".<p>Vad gör du?</p>"];
@@ -417,7 +417,7 @@ var questions = [
     },
     {
         fraga: function () {
-            let output = ["Påskfirandet i fara","Arbetsgivarna inom handeln vill slopa det höga ob-tillägget på söndagar. Handels vägrar och varslar om påskstrejk</p><p>Är det en kamp värd att ta eller borde Handels vika ner sig så att folk får ägg och sill till påsklunchen?</p>"];
+            let output = ["Påskfirandet i fara","Arbetsgivarna inom handeln vill slopa det höga ob-tillägget på söndagar. Handels vägrar och varslar om påskstrejk.</p><p>Är det en kamp värd att ta eller borde Handels vika ner sig så att folk får ägg och sill till påsklunchen?</p>"];
             
             return output;
         },
@@ -439,7 +439,7 @@ var questions = [
             if (paskstrajk) {
                 output = ["Arbetsgivarna ger sig","<p>Arbetsgivarna lämnar ob-ersättningen i fred och kompenseras med arbetsgrupp som ska utreda ob-ersättningarna till nästa avtalsrörelse.</p>"];
             } else {
-                output = ["Arbetsgivarna vinner","Arbetsgivarna säger allvarsamt att man nu har ett rättvist och hållbart ersättningssystem och skrattar de hela vägen till banken.</p><p>Handels medlemmar är rasande och de portar dig från din lokala ICA-butik för ditt svek."];
+                output = ["Arbetsgivarna vinner","Arbetsgivarna säger allvarsamt att man nu har ett rättvist och hållbart ersättningssystem och skrattar hela vägen till banken.</p><p>Handels medlemmar är rasande och de portar dig från din lokala ICA-butik för ditt svek."];
             }
             
             return output;
@@ -456,7 +456,7 @@ var questions = [
     {
         fraga: function () {
             let output;
-            output = ["Inflationstombolan","<p>Nu är avtalen klara med märket på " + formatPercent.to(market) + " som utgångspunkt. Men löneökningar i all ära. Vad som vekligen påverkar vad som blir kvar i plånboken är inflationen.</p><p>Ska Riksbankens räntehöjningar få effekt? Hur utvecklas kriget i Ukraina? Åt vilket håll går elpriserna?</p><p>Det finns många faktorer som påverkar vad den slutliga löneökningen innebär för köpkraften.</p>"]
+            output = ["Inflationstombolan","<p>Nu är avtalen klara med märket på " + formatPercent.to(market) + " som utgångspunkt. Men löneökningar i all ära. Vad som verkligen påverkar vad som blir kvar i plånboken är inflationen.</p><p>Ska Riksbankens räntehöjningar få effekt? Hur utvecklas kriget i Ukraina? Åt vilket håll går elpriserna?</p><p>Det finns många faktorer som påverkar vad den slutliga löneökningen innebär för köpkraften.</p>"]
             
             return output;
         },
@@ -515,7 +515,7 @@ var questions = [
                 extraString +=  "Kommunalarna har fått fria arbetsskor men lägre löneökning än alla andra på " + formatPercent.to(lonekrav) + ".";
             }
             if (paskstrajk) {
-                extraString += " De anställda i Handeln får behålla sitt ob-tillägg på söndagar."
+                extraString += " De anställda i handeln får behålla sitt ob-tillägg på söndagar."
             }
 
             outputString += skillnadString;
