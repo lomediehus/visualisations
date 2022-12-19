@@ -382,7 +382,7 @@ var questions = [
             } else if (arbetsskor) {
                 output = ["Skor kostar!","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Vill ni ha skor drar vi det från märket och det kostar 0,1 procent.</p><p>Driver du det vidare blir alltså löneökningarna lägre, alltså " + formatPercent.to(lonekrav - 0.1) + " i stället för " + formatPercent.to(lonekrav) + ".</p><p>Vad gör du?</p>"]
             } else {
-                ["Klart?","Kommunal surar över skorna men slipper dra ner på lönekravet och skriver till slut på avtalet. Nu är väl avtalsrörelsen slut, eller?"]
+                output = ["Klart?","Kommunal surar över skorna men slipper dra ner på lönekravet och skriver till slut på avtalet. Nu är väl avtalsrörelsen slut, eller?"]
             }
             
             return output;
