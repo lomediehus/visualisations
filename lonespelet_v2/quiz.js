@@ -355,7 +355,7 @@ var questions = [
                 cont.classList.add("strejk");
                 output = ["Sympatistrejk","<p>Nya strejker lamslår stora delar av samhället. Läget inom vården blir akut och staten skjuter till pengar för en extra lönesatsning på undersköterskorna.</p><p>Kommunal känner medvind och kräver fria arbetsskor till alla inom vården.</p><p>Ställer du dig bakom kravet?</p>"]
             } else {
-                ["Osolidariskt","<p>Utan stöd från andra förbund tvingas Kommual vika ner sig och skriva under avtalet.</p><p>Kommunal anklagar dig för att vara osolidarisk mot alla dem som kämpat hårt under pandemin.</p><p>Som kompensation vill de ha fria arbetsskor till alla inom vården.</p><p>Ställer du dig bakom kravet?</p>"]
+                output = ["Osolidariskt","<p>Utan stöd från andra förbund tvingas Kommual vika ner sig och skriva under avtalet.</p><p>Kommunal anklagar dig för att vara osolidarisk mot alla dem som kämpat hårt under pandemin.</p><p>Som kompensation vill de ha fria arbetsskor till alla inom vården.</p><p>Ställer du dig bakom kravet?</p>"]
             }
             
             return output;
