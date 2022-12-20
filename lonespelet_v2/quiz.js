@@ -25,6 +25,12 @@ var formatPercent = wNumb({
     mark: ","
 })
 
+var formatKronor = wNumb({
+    decimals: 0,
+    thousand: ' ',
+    suffix: ' kronor',
+    mark: ","
+})
 
 // game data
 
@@ -41,6 +47,8 @@ let sympatistrejk = false;
 let arbetsskor = false;
 let paskstrajk = false;
 let market = 4.4;
+let dinLon = 20000;
+
 
 function rensaSpelet() {
     inflation = 10;
@@ -55,6 +63,7 @@ function rensaSpelet() {
     arbetsskor = false;
     paskstrajk = false;
     market = 4.4;
+    dinLon = 20000;
 }
 
 function randomFromArray(arrary){
@@ -67,7 +76,7 @@ var questions = [
     {
         fraga: function() {
             return [
-                "Välkommen till lönespelet", 
+                "Lönekampen", 
                 "Inflationen bränner stora hål i plånböckerna och gör många desperata efter en rejäl löneökning.</p><p> Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse är inte det lättaste att få ihop för att göra alla nöjda. Försök själv genom att spela Arbetets lönespel.</p>"
                 ];
             },
@@ -544,7 +553,34 @@ var questions = [
             if (extraString.length > 3) {
                 outputString += extraString + "</p>";
             } 
+
+            outputString += "<p>Skriv in din lön i rutan nedan för att räkna på vad avtalet skulle betyda för dig.</p>"
             let output = [rubrik, outputString]
+            return output;
+        },
+        img: ["img/1_ny.svg", "img/2NY.svg"],
+        alternativ: function(){
+            return [
+            {alternativ: "Räkna på din lön", action: function(){
+                dinLon = document.getElementById("formvalue").value;               
+            }},
+            {alternativ: "Spela igen", action: function(){
+                rensaSpelet();
+            }},
+        ];},
+        rattSvar: "",
+        explainer: "",
+        payForm: true,
+    },
+    {
+        fraga: function () {
+            dinLon = parseInt(dinLon.replace(/[^0-9]/g, ''));
+            lonInnan = formatKronor.to(dinLon);
+            lonEfter = formatKronor.to((dinLon * (market / 100)) + dinLon);
+            skillnad = market - inflation;
+            lonInflation = formatKronor.to((dinLon * (skillnad / 100)) + dinLon);
+
+            output = ["Din lön", "<p>Din lön på " + lonInnan + " blir " + lonEfter + " efter lönehöjningen på " + formatPercent.to(market) + ".</p>Men med en inflation på " + formatPercent.to(inflation) + " blir den i praktiken värd " + lonInflation + ".</p>"  ];
             return output;
         },
         img: ["img/1_ny.svg", "img/2NY.svg"],
@@ -654,6 +690,7 @@ var test = {
             m("h2.u-spacingTopL.u-spacingBottomXS", fragaArray[0]),
             m("p.questionBox.u-spacingBottomM", m.trust(fragaArray[1])),
             questions[testIndex].slider ? m("div.slidecontainer.u-spacingTopXXL.u-spacingBottomXXXL", m("div", {id: "slider"})) : "",
+            questions[testIndex].payForm ? m("div.formcontainer.u-spacingBottomXXXL", m("input.lonInput.u-textMeta", {id: "formvalue", type:"text", value: "20 000"})) : "",
             m("div.buttondiv.u-spacingTopM", questions[testIndex].alternativ().map(function(fraga, index) {
                 return m("button.Button.answerButton.u-spacingBottomS.u-spacingRightS.u-textUppercase", {
                     id: "question-" + index,
