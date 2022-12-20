@@ -580,7 +580,7 @@ var questions = [
             skillnad = market - inflation;
             lonInflation = formatKronor.to((dinLon * (skillnad / 100)) + dinLon);
 
-            output = ["Din lön", "<p>Din lön på " + lonInnan + " blir " + lonEfter + " efter lönehöjningen på " + formatPercent.to(market) + ".</p>Men med en inflation på " + formatPercent.to(inflation) + " blir den i praktiken värd " + lonInflation + ".</p>"  ];
+            output = ["Din lön", "<p>Din lön på " + lonInnan + " blir " + lonEfter + " efter lönehöjningen på " + formatPercent.to(market) + ".</p>Men med en inflation på " + formatPercent.to(inflation) + " blir den i praktiken värd " + lonInflation + " jämfört med förra året.</p>"  ];
             return output;
         },
         img: ["img/1_ny.svg", "img/2NY.svg"],
