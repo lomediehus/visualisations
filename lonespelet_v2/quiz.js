@@ -219,13 +219,13 @@ var questions = [
                 ]             
             } else {
                 return [
-                    {alternativ: "Gå med på arbetsgivarnas krav", action: function(){
+                    {alternativ: "Varsla om strejk", action: function(){
+                        return;
+                    }},
+                    {alternativ: "Gå med på arbetsgivarnas bud", action: function(){
                         lonekrav = arbetsgivarkrav;
                         testIndex += 2
                     }},
-                    {alternativ: "Varsla om strejk", action: function(){
-                        return;
-                    }}
 
         ]};},
         explainer: "",
@@ -252,14 +252,13 @@ var questions = [
                 ]             
             } else {
                 return [
-                    {alternativ: "Gå med på arbetsgivarnas krav", action: function(){
+                    {alternativ: "Gå ut i strejk", action: function(){
+                        return;
+                    }},
+                    {alternativ: "Gå med på arbetsgivarnas bud", action: function(){
                         lonekrav = arbetsgivarkrav;
                         testIndex += 1
                     }},
-                    {alternativ: "Gå ut i strejk", action: function(){
-                        return;
-                    }}
-
         ]};},
         explainer: "",
     },
@@ -320,16 +319,15 @@ var questions = [
                     ]             
                 } else {
                     return [
-                        {alternativ: "Gå med på arbetsgivarnas krav", action: function(){
+                        {alternativ: "Fortsätt strejken", action: function(){
+                            strejkdagar += 1;
+                            testIndex -= 1;
+                        }},
+                        {alternativ: "Gå med på arbetsgivarnas bud", action: function(){
                             let cont = document.body;
                             cont.classList.remove("strejk");
                             lonekrav = arbetsgivarkrav;
                         }},
-                        {alternativ: "Fortsätt strejken", action: function(){
-                            strejkdagar += 1;
-                            testIndex -= 1;
-                        }}
-    
             ]};
             }
             },
