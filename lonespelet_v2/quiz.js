@@ -17,6 +17,10 @@ preload(
     "img/2NY.svg",
     "img/strejk1.svg",
     "img/strejk2.svg",
+    "img/ekonom1.svg",
+    "img/ekonom2.svg",
+    "img/ekonom3.svg",
+    "img/ekonom4.svg",
 )
 
 var formatPercent = wNumb({
@@ -99,7 +103,7 @@ var questions = [
             } else {
                 return [
                     "Industrin bestämmer sig", 
-                    "<p>Det är sen höst och facken inom industrin har samlats för att bestämma lönekraven i vårens avtalsförhandlingar, det så kallade märket – modellen för alla andra löneökningar.</p><p>Inflationen ligger på skyhöga 10 procent, allt under det blir i realiteten en lönesänkning.</p><p> Vad ska facken kräva för procentuell höjning?</p>"
+                    "<p>Det är sen höst och facken inom industrin har samlats för att bestämma lönekraven i vårens avtalsförhandlingar, det så kallade märket – modellen för alla andra löneökningar.</p><p>Inflationen ligger på skyhöga 10 procent, allt under det blir i realiteten en lönesänkning.</p><p>Vad ska facken kräva för procentuell höjning?</p>"
                 ];
             }
             
@@ -110,7 +114,6 @@ var questions = [
             lonekrav = slider.noUiSlider.get(true);
         } }];
         },
-        explainer: "Det här är ett ganska långt chattmeddelande från roboten. Det är lite för långt",
         slider: true
     },
     {
@@ -135,7 +138,15 @@ var questions = [
             }
             return output;
         },
-        img: ["img/1_ny.svg", "img/2NY.svg"],
+        img: function(){
+            if (lonekrav < 7) {
+                return ["img/ekonom1.svg", "img/ekonom2.svg"];
+            } else {
+                return ["img/ekonom3.svg", "img/ekonom4.svg"];
+            }
+            
+        },
+        alternateImage: true,
         alternativ: function(){
             return [
             {alternativ: "Stå fast vid lönekravet", action: function(){
@@ -340,7 +351,12 @@ var questions = [
     {
         fraga: function () {
             let rubrik = "Kärva tider";
-            let output = [rubrik, "<p>”Det är kärva tider, kommunerna har inte gett oss mer pengar och vi har skenande kostnader på grund av inflationen”, säger Vårdföretagarna och vägrar gå med på kraven från Kommunal.</p><p>Förbundet går ut i strejk och begär sympatiåtgärder från andra förbund.</p><p>Är det rimligt att de får mer än andra eller har arbetsgivaren rätt?</p>"];
+            let output;
+            if (market <1.1) {
+                output = [rubrik, "<p>”Trots det låga märket är det kärva tider, kommunerna har inte gett oss mer pengar och vi har skenande kostnader på grund av inflationen”, säger Vårdföretagarna och vägrar gå med på kraven från Kommunal.</p><p>Förbundet går ut i strejk och begär sympatiåtgärder från andra förbund.</p><p>Vad gör du?</p>"];
+            } else {
+                output = [rubrik, "<p>”Det är kärva tider, kommunerna har inte gett oss mer pengar och vi har skenande kostnader på grund av inflationen”, säger Vårdföretagarna och vägrar gå med på kraven från Kommunal.</p><p>Förbundet går ut i strejk och begär sympatiåtgärder från andra förbund.</p><p>Är det rimligt att de får mer än andra eller har arbetsgivaren rätt?</p>"];
+            }
             
             return output;
         },
@@ -349,6 +365,7 @@ var questions = [
             return [
             {alternativ: "Sympatistrejk!", action: function(){
                 sympatistrejk = true;
+                strejkdagar += 1;
             }},
             {alternativ: "Kommunal får klara sig själva", action: function(){               
                 return;
@@ -364,7 +381,7 @@ var questions = [
                 cont.classList.add("strejk");
                 output = ["Sympatistrejk","<p>Nya strejker lamslår stora delar av samhället. Läget inom vården blir akut och staten skjuter till pengar för en extra lönesatsning på undersköterskorna.</p><p>Kommunal känner medvind och kräver fria arbetsskor till alla inom vården.</p><p>Ställer du dig bakom kravet?</p>"]
             } else {
-                output = ["Osolidariskt","<p>Utan stöd från andra förbund tvingas Kommual vika ner sig och skriva under avtalet.</p><p>Kommunal anklagar dig för att vara osolidarisk mot alla dem som kämpat hårt under pandemin.</p><p>Som kompensation vill de ha fria arbetsskor till alla inom vården.</p><p>Ställer du dig bakom kravet?</p>"]
+                output = ["Osolidariskt","<p>Utan stöd från andra förbund tvingas Kommunal vika ner sig och skriva under avtalet.</p><p>Kommunal anklagar dig för att vara osolidarisk mot alla dem som kämpat hårt under pandemin.</p><p>Som kompensation vill de ha fria arbetsskor till alla inom vården.</p><p>Ställer du dig bakom kravet?</p>"]
             }
             
             return output;
@@ -387,7 +404,7 @@ var questions = [
             cont.classList.remove("strejk");
             let output;
             if (market < 1.1 && arbetsskor) {
-                output = ["Okej då", "”Med tanke på de rimliga lönekravet går vi väl med på arbetsskor då”, säger Vårdföretagen lite surt”"]
+                output = ["Okej då", "”Med tanke på de rimliga lönekravet går vi väl med på arbetsskor då”, säger Vårdföretagen lite surt"]
             } else {
                 if (laglonesatsning && arbetsskor) {
                     output = ["Kostar mycket","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Ska ni ha något extra drar vi det från märket, låglönesatsningen kostar 0,2 procent och arbetsskor 0,1 procent</p><p>Driver du det vidare blir alltså löneökningarna lägre. " + formatPercent.to(lonekrav - 0.3) + " i stället för " + formatPercent.to(lonekrav) + ".</p><p>Vad gör du?</p>"]
@@ -437,7 +454,7 @@ var questions = [
     },
     {
         fraga: function () {
-            let output = ["Påskfirandet i fara","Arbetsgivarna inom handeln vill slopa det höga ob-tillägget på söndagar. Handels vägrar och varslar om påskstrejk.</p><p>Är det en kamp värd att ta eller borde Handels vika ner sig så att folk får ägg och sill till påsklunchen?</p>"];
+            let output = ["Påskfirandet i fara","Skostriden är över och blickarna vänds mot butikspersonalen. Arbetsgivarna inom handeln vill slopa det höga ob-tillägget på söndagar. Handels vägrar och varslar om påskstrejk.</p><p>Är det en kamp värd att ta eller borde Handels vika ner sig så att folk får ägg och sill till påsklunchen?</p>"];
             
             return output;
         },
@@ -517,14 +534,37 @@ var questions = [
             let skillnadString;
             let extraString = "<p>";
 
-            let outputString = "<p>Avtalsrörelsen är över. Löneökningen blev " + formatPercent.to(market);
+            let outputString = "";
+            if (strejkdagar == 0) {
+                outputString += "En konfliktfri avtalsrörelse är över. ";
+            } else if (strejkdagar == 1) {
+                outputString += "En relativt smidig avtalsrörelse är över. ";
+            } else {
+                outputString += "En konfliktfylld avtalsrörelse är över. "
+            }
+            
+            outputString += "Löneökningen blev " + formatPercent.to(market);
 
             if (skillnad < 0) {
                 skillnadString = " vilket innebär att lönen i praktiken (reallönen) har minskat med " + formatPercent.to(skillnad * -1) + " med en inflation på " + formatPercent.to(inflation) + ".</p>"
             } else if (skillnad == 0) {
-                " vilket innebär att lönen i praktiken inte har förändrats.</p>"
+                skillnadString = " vilket innebär att lönen i praktiken inte har förändrats.</p>"
             } else {
-                " vilket innebär att lönen i praktiken (reallönen) har ökat med " + formatPercent.to(skillnad) + ".</p>"
+                skillnadString = " vilket innebär att lönen i praktiken (reallönen) har ökat med " + formatPercent.to(skillnad) + ".</p>"
+            }
+
+            outputString += skillnadString;
+
+            if (skillnad < -10) {
+                outputString += "<p>Många medlemmar är djupt missnöjda med att blivit betydligt fattigare och de fackliga medlemskapen störtdyker.</p>";
+            } else if (skillnad < -7) {
+                outputString += "<p>Många medlemmar är missnöjda med att blivit betydligt fattigare och vissa väljer att gå ur facket i protest.</p>";
+            } else if (skillnad < -5) {
+                outputString += "<p>Många medlemmar är muttrar över hålen i plånboken men förstår ändå att inflationen är svår att komma runt.</p>";
+            } else if (skillnad >= 0) {
+                outputString += "<p>Vi har inte blivit fattigare! Men den här inflationen var väl det ett rätt bra resultat ändå.</p>";
+            } else {
+                outputString += "<p>Så mycket fattigare har vi inte blivit. Men den här inflationen var väl det ett rätt bra resultat ändå.</p>";
             }
 
             if (market < 1.1) {
@@ -549,7 +589,7 @@ var questions = [
                 extraString += " De anställda i handeln får behålla sitt ob-tillägg på söndagar."
             }
 
-            outputString += skillnadString;
+            
             if (extraString.length > 3) {
                 outputString += extraString + "</p>";
             } 
@@ -580,7 +620,7 @@ var questions = [
             skillnad = market - inflation;
             lonInflation = formatKronor.to((dinLon * (skillnad / 100)) + dinLon);
 
-            output = ["Din lön", "<p>Din lön på " + lonInnan + " blir " + lonEfter + " efter lönehöjningen på " + formatPercent.to(market) + ".</p>Men med en inflation på " + formatPercent.to(inflation) + " blir den i praktiken värd " + lonInflation + " jämfört med förra året.</p>"  ];
+            output = ["Lönedomen", "<p>Din lön på " + lonInnan + " blir " + lonEfter + " efter lönehöjningen på " + formatPercent.to(market) + ".</p>Men med en inflation på " + formatPercent.to(inflation) + " blir den i praktiken värd " + lonInflation + " jämfört med förra året.</p>"  ];
             return output;
         },
         img: ["img/1_ny.svg", "img/2NY.svg"],
@@ -594,16 +634,6 @@ var questions = [
         explainer: "",
     },
 ];
-
-
-
-
-
-var bildTillPratbubbla = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/arbetet_logga.png";
-var robotBild = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/robot2.png";
-
-/* Här börjar testkoden. Ändra inget här */
-
 
 
 
@@ -624,10 +654,10 @@ function imageSwitch(imageArray) {
         let interval = true;
         timer = setInterval(function(){
             if (interval) {
-                image.src = imageArray[0];
+                image.src = imageArray[1];
                 interval = false;
             } else {
-                image.src = imageArray[1];
+                image.src = imageArray[0];
                 interval = true;
             }        
         }, 1000)
@@ -676,7 +706,7 @@ var test = {
         informHeight();
     },
     onupdate: function() {
-        imageSwitch(questions[testIndex].img);
+        questions[testIndex].alternateImage ? imageSwitch(questions[testIndex].img()) : imageSwitch(questions[testIndex].img);
         if (this.madeChoice == false) {
             createSlider();
         }
@@ -686,7 +716,7 @@ var test = {
     view: function() {
         fragaArray = questions[testIndex].fraga();
         return m("div.container", {id:"container"}, [
-            m("img.questionImg", {src: questions[testIndex].img[0], id: "image"}),
+            questions[testIndex].alternateImage ? m("img.questionImg", {src: questions[testIndex].img()[0], id: "image"}) : m("img.questionImg", {src: questions[testIndex].img[0], id: "image"}),
             m("h2.u-spacingTopL.u-spacingBottomXS", fragaArray[0]),
             m("p.questionBox.u-spacingBottomM", m.trust(fragaArray[1])),
             questions[testIndex].slider ? m("div.slidecontainer.u-spacingTopXXL.u-spacingBottomXXXL", m("div", {id: "slider"})) : "",
