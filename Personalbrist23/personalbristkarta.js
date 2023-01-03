@@ -149,6 +149,8 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 	//hide the loader when the map has been drawn
 	document.getElementById('loader').style.display = "none";
 
+  informHeight();
+
 })
 
 function mouseover() {
