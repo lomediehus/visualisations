@@ -194,8 +194,8 @@ function mouseout() {
 
 
 
-svg.call(d3.zoom().on("zoom", function () {
-       svg.attr("transform", d3.event.transform)
-		 }))
+// svg.call(d3.zoom().on("zoom", function () {
+//        svg.attr("transform", d3.event.transform)
+// 		 }))
 		 //don't zoom on scroll wheel (only touch)
-		 .on("zoom", null);
+		 // .on("wheel.zoom", null);
