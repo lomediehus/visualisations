@@ -62,7 +62,7 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 			kombogrej["Övertid2022"] = (result[0] !==undefined) ? result[0].Övertid2022 : null;
 			kombogrej["Ökat?"] = (result[0] !==undefined) ? result[0]["Ökat?"] : null;
       kombogrej["Ökning_pga_personalbrist"] = (result[0] !==undefined) ? result[0].Ökning_pga_personalbrist : null;
-      kombogrej["Personalbrist?"] = (result[0] !==undefined) ? result[0].Personalbrist : null;
+      kombogrej["Personalbrist?"] = (result[0] !==undefined) ? result[0]["Personalbrist?"] : null;
 		})
 
 
@@ -84,7 +84,7 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 
 		//color and text for the legend. (Addding an extra item to the domain and range arrays will create a new legend item)
 		var color = d3.scaleOrdinal()
-				.domain(["Här ökade övertiden", "Här ökade inte övertiden", "Vet ej/Ej svar"])
+				.domain(["Personalbrist", "Ej personalbrist", "Vet ej/Ej svar"])
 				.range(["#e00f00", "#f5cc00", "#d8d8d8"]);
 
 		var legend = d3.select("svg")
@@ -123,17 +123,19 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 		function quantify(d,i) {
 			var f;
 			// var f = d.Siffra;
+      // c(d["Personalbrist?"])
 
-      switch(d["Ökat?"]) {
-        case "ökat":
+      switch(d["Personalbrist?"]) {
+        case "Ja":
         f = 1;
         break;
-        case "ej ökat":
+        case "Nej":
         f = 2;
         break;
         default:
         f = 3;
       }
+      c(f)
 
 			// return "q" + Math.min(8, ~~((f-250) / 150)) + "-9";
 			// console.log(d.Siffra);
@@ -163,8 +165,9 @@ function mousemove(d, i) {
 
 	let markup = `
 		<p class='fet no-margin-bottom'>${d.Kommun}</p>
-		<p class='no-margin-bottom'>${typeof d.Övertid2022 === "number" ? d.Övertid2022 + " timmar" : ""}</p>
+		<p class='no-margin-bottom'> ${d["Personalbrist?"] === "Ja" ? "Personalbrist" : ""}</p>
 	`
+
 
 
 	tooltip.html(markup)
