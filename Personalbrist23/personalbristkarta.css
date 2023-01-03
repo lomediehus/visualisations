@@ -1,5 +1,6 @@
 body {
 background-color: #fcfaf5;
+/* overflow: auto; */
 }
 
 div#chart {
@@ -10,6 +11,7 @@ div#chart {
 
 .main-content {
   width: 400px;
+	min-height: 950px;
   margin: 0 auto;
 }
 .map {
