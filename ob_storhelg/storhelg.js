@@ -401,6 +401,9 @@ function doStuff() {
     if (yrke.startsWith('usk')|| yrke.startsWith('uska')) {
       yrke = 'undersköterska';
     }
+    if (yrke.startsWith('busschaufför')) {
+      yrke = "bussförare";
+    }
     if (yrke.startsWith('djursjukskötare')) {
       yrke = 'legitimerad djursjukskötare';
     }
