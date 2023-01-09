@@ -28,7 +28,7 @@ var thepath = d3.geoPath().projection(projection);
 //load the geodata file
 d3.json("SverigesKommuner.geojson").then(function(geodata){
 	//load a json data file
-	d3.json("kommundata_test.json").then(function(artikeldata){
+	d3.json("kommundata.json").then(function(artikeldata){
 		//make a new array out of the feature part of the geodata
 		let kombo =[...geodata.features];
 		//loop the new array of geodata

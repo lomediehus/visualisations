@@ -1,0 +1,2322 @@
+[
+  {
+    "Kod": "0180",
+    "Kommun": "Stockholm",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1280,
+    "Kommun": "Malmö",
+    "Övertid2022": 51534,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1480,
+    "Kommun": "Göteborg",
+    "Övertid2022": 38972,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0114",
+    "Kommun": "Upplands Väsby",
+    "Övertid2022": 606,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0115",
+    "Kommun": "Vallentuna",
+    "Övertid2022": 534,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0117",
+    "Kommun": "Österåker",
+    "Övertid2022": 91,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0120",
+    "Kommun": "Värmdö",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0123",
+    "Kommun": "Järfälla",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0125",
+    "Kommun": "Ekerö",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0126",
+    "Kommun": "Huddinge",
+    "Övertid2022": 586,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0127",
+    "Kommun": "Botkyrka",
+    "Övertid2022": 848,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0128",
+    "Kommun": "Salem",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0136",
+    "Kommun": "Haninge",
+    "Övertid2022": 8433,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0138",
+    "Kommun": "Tyresö",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0139",
+    "Kommun": "Upplands-Bro",
+    "Övertid2022": 782,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0160",
+    "Kommun": "Täby",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0162",
+    "Kommun": "Danderyd",
+    "Övertid2022": 638,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0163",
+    "Kommun": "Sollentuna",
+    "Övertid2022": 2230,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0182",
+    "Kommun": "Nacka",
+    "Övertid2022": 151,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0183",
+    "Kommun": "Sundbyberg",
+    "Övertid2022": 1578,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0184",
+    "Kommun": "Solna",
+    "Övertid2022": 806,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0186",
+    "Kommun": "Lidingö",
+    "Övertid2022": 3894,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0187",
+    "Kommun": "Vaxholm",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0191",
+    "Kommun": "Sigtuna",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0192",
+    "Kommun": "Nynäshamn",
+    "Övertid2022": 128,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0305",
+    "Kommun": "Håbo",
+    "Övertid2022": 4909,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1230,
+    "Kommun": "Staffanstorp",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1231,
+    "Kommun": "Burlöv",
+    "Övertid2022": 1526,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 1233,
+    "Kommun": "Vellinge",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1261,
+    "Kommun": "Kävlinge",
+    "Övertid2022": 3052,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1262,
+    "Kommun": "Lomma",
+    "Övertid2022": 5875,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1263,
+    "Kommun": "Svedala",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1264,
+    "Kommun": "Skurup",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1287,
+    "Kommun": "Trelleborg",
+    "Övertid2022": 4425,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1384,
+    "Kommun": "Kungsbacka",
+    "Övertid2022": 11492,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1401,
+    "Kommun": "Härryda",
+    "Övertid2022": 965,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1402,
+    "Kommun": "Partille",
+    "Övertid2022": 565,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1407,
+    "Kommun": "Öckerö",
+    "Övertid2022": 3376,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1415,
+    "Kommun": "Stenungsund",
+    "Övertid2022": 3779,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 1440,
+    "Kommun": "Ale",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1441,
+    "Kommun": "Lerum",
+    "Övertid2022": 2636,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1443,
+    "Kommun": "Bollebygd",
+    "Övertid2022": 474,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1462,
+    "Kommun": "Lilla Edet",
+    "Övertid2022": 1946,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1481,
+    "Kommun": "Mölndal",
+    "Övertid2022": 20,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1482,
+    "Kommun": "Kungälv",
+    "Övertid2022": 7162,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1489,
+    "Kommun": "Alingsås",
+    "Övertid2022": 6824,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0181",
+    "Kommun": "Södertälje",
+    "Övertid2022": 4053,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0380",
+    "Kommun": "Uppsala",
+    "Övertid2022": 6057,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0484",
+    "Kommun": "Eskilstuna",
+    "Övertid2022": 13641,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0580",
+    "Kommun": "Linköping",
+    "Övertid2022": 17598,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0581",
+    "Kommun": "Norrköping",
+    "Övertid2022": 25745,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0680",
+    "Kommun": "Jönköping",
+    "Övertid2022": 14251,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0780",
+    "Kommun": "Växjö",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0880",
+    "Kommun": "Kalmar",
+    "Övertid2022": 354100,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1281,
+    "Kommun": "Lund",
+    "Övertid2022": 24729,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1283,
+    "Kommun": "Helsingborg",
+    "Övertid2022": 8856,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1290,
+    "Kommun": "Kristianstad",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1380,
+    "Kommun": "Halmstad",
+    "Övertid2022": 12472,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1488,
+    "Kommun": "Trollhättan",
+    "Övertid2022": 6012,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1490,
+    "Kommun": "Borås",
+    "Övertid2022": 9047,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1780,
+    "Kommun": "Karlstad",
+    "Övertid2022": 5349,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1880,
+    "Kommun": "Örebro",
+    "Övertid2022": 32160,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1980,
+    "Kommun": "Västerås",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2081,
+    "Kommun": "Borlänge",
+    "Övertid2022": 8556,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2180,
+    "Kommun": "Gävle",
+    "Övertid2022": 5187,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2281,
+    "Kommun": "Sundsvall",
+    "Övertid2022": 21725,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2380,
+    "Kommun": "Östersund",
+    "Övertid2022": 15645,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 2480,
+    "Kommun": "Umeå",
+    "Övertid2022": 18750,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2580,
+    "Kommun": "Luleå",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0140",
+    "Kommun": "Nykvarn",
+    "Övertid2022": 705,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0319",
+    "Kommun": "Älvkarleby",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0330",
+    "Kommun": "Knivsta",
+    "Övertid2022": 53,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0331",
+    "Kommun": "Heby",
+    "Övertid2022": 1441,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0360",
+    "Kommun": "Tierp",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0381",
+    "Kommun": "Enköping",
+    "Övertid2022": 8625,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0461",
+    "Kommun": "Gnesta",
+    "Övertid2022": 2176,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0486",
+    "Kommun": "Strängnäs",
+    "Övertid2022": 5803,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0488",
+    "Kommun": "Trosa",
+    "Övertid2022": 2138,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0513",
+    "Kommun": "Kinda",
+    "Övertid2022": 961,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0561",
+    "Kommun": "Åtvidaberg",
+    "Övertid2022": 860,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0563",
+    "Kommun": "Valdemarsvik",
+    "Övertid2022": 2140,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": "0582",
+    "Kommun": "Söderköping",
+    "Övertid2022": 4291,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0586",
+    "Kommun": "Mjölby",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0604",
+    "Kommun": "Aneby",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0642",
+    "Kommun": "Mullsjö",
+    "Övertid2022": 1521,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0643",
+    "Kommun": "Habo",
+    "Övertid2022": 1501,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0665",
+    "Kommun": "Vaggeryd",
+    "Övertid2022": 1432,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0761",
+    "Kommun": "Lessebo",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0764",
+    "Kommun": "Alvesta",
+    "Övertid2022": 2202,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0834",
+    "Kommun": "Torsås",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0840",
+    "Kommun": "Mörbylånga",
+    "Övertid2022": 2632,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1083,
+    "Kommun": "Sölvesborg",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1214,
+    "Kommun": "Svalöv",
+    "Övertid2022": 23888,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1256,
+    "Kommun": "Östra Göinge",
+    "Övertid2022": 1880,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1257,
+    "Kommun": "Örkelljunga",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1260,
+    "Kommun": "Bjuv",
+    "Övertid2022": 1281,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1265,
+    "Kommun": "Sjöbo",
+    "Övertid2022": 6424,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1266,
+    "Kommun": "Hörby",
+    "Övertid2022": 1494,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1272,
+    "Kommun": "Bromölla",
+    "Övertid2022": 320,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1275,
+    "Kommun": "Perstorp",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1276,
+    "Kommun": "Klippan",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1277,
+    "Kommun": "Åstorp",
+    "Övertid2022": 5238,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1282,
+    "Kommun": "Landskrona",
+    "Övertid2022": 5965,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1284,
+    "Kommun": "Höganäs",
+    "Övertid2022": 2228,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1285,
+    "Kommun": "Eslöv",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1292,
+    "Kommun": "Ängelholm",
+    "Övertid2022": 5910,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 1381,
+    "Kommun": "Laholm",
+    "Övertid2022": 1537,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1444,
+    "Kommun": "Grästorp",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1463,
+    "Kommun": "Mark",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1465,
+    "Kommun": "Svenljunga",
+    "Övertid2022": 1121,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1466,
+    "Kommun": "Herrljunga",
+    "Övertid2022": 581,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1487,
+    "Kommun": "Vänersborg",
+    "Övertid2022": 3009,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1715,
+    "Kommun": "Kil",
+    "Övertid2022": 4631,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1761,
+    "Kommun": "Hammarö",
+    "Övertid2022": 1732,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1763,
+    "Kommun": "Forshaga",
+    "Övertid2022": 2217,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1764,
+    "Kommun": "Grums",
+    "Övertid2022": 1861,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1814,
+    "Kommun": "Lekeberg",
+    "Övertid2022": 1327,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1861,
+    "Kommun": "Hallsberg",
+    "Övertid2022": 2554,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1881,
+    "Kommun": "Kumla",
+    "Övertid2022": 398,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1884,
+    "Kommun": "Nora",
+    "Övertid2022": 1702,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1907,
+    "Kommun": "Surahammar",
+    "Övertid2022": 1352,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1961,
+    "Kommun": "Hallstahammar",
+    "Övertid2022": 1615,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1981,
+    "Kommun": "Sala",
+    "Övertid2022": 1280,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2026,
+    "Kommun": "Gagnef",
+    "Övertid2022": 1213,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2082,
+    "Kommun": "Säter",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2101,
+    "Kommun": "Ockelbo",
+    "Övertid2022": 1190,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2262,
+    "Kommun": "Timrå",
+    "Övertid2022": 3266,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2309,
+    "Kommun": "Krokom",
+    "Övertid2022": 2915,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2401,
+    "Kommun": "Nordmaling",
+    "Övertid2022": 1761,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2403,
+    "Kommun": "Bjurholm",
+    "Övertid2022": 564,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2409,
+    "Kommun": "Robertsfors",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2460,
+    "Kommun": "Vännäs",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0382",
+    "Kommun": "Östhammar",
+    "Övertid2022": 5410,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0562",
+    "Kommun": "Finspång",
+    "Övertid2022": 5870,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0583",
+    "Kommun": "Motala",
+    "Övertid2022": 1660,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0682",
+    "Kommun": "Nässjö",
+    "Övertid2022": 512,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0760",
+    "Kommun": "Uppvidinge",
+    "Övertid2022": 370,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0763",
+    "Kommun": "Tingsryd",
+    "Övertid2022": 1711,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0881",
+    "Kommun": "Nybro",
+    "Övertid2022": 5255,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1293,
+    "Kommun": "Hässleholm",
+    "Övertid2022": 14970,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1315,
+    "Kommun": "Hylte",
+    "Övertid2022": 3819,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1452,
+    "Kommun": "Tranemo",
+    "Övertid2022": 1280,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1485,
+    "Kommun": "Uddevalla",
+    "Övertid2022": 6633,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1491,
+    "Kommun": "Ulricehamn",
+    "Övertid2022": 4780,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1762,
+    "Kommun": "Munkfors",
+    "Övertid2022": 809,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1781,
+    "Kommun": "Kristinehamn",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1860,
+    "Kommun": "Laxå",
+    "Övertid2022": 1086,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1882,
+    "Kommun": "Askersund",
+    "Övertid2022": 885,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1885,
+    "Kommun": "Lindesberg",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1983,
+    "Kommun": "Köping",
+    "Övertid2022": 2390,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 2181,
+    "Kommun": "Sandviken",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2305,
+    "Kommun": "Bräcke",
+    "Övertid2022": 1187,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2326,
+    "Kommun": "Berg",
+    "Övertid2022": 1135,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 2404,
+    "Kommun": "Vindeln",
+    "Övertid2022": 1835,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2560,
+    "Kommun": "Älvsbyn",
+    "Övertid2022": 584,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2582,
+    "Kommun": "Boden",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0188",
+    "Kommun": "Norrtälje",
+    "Övertid2022": 6777,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0480",
+    "Kommun": "Nyköping",
+    "Övertid2022": 6953,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0483",
+    "Kommun": "Katrineholm",
+    "Övertid2022": 1263,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0683",
+    "Kommun": "Värnamo",
+    "Övertid2022": 5257,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0781",
+    "Kommun": "Ljungby",
+    "Övertid2022": 894,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0882",
+    "Kommun": "Oskarshamn",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0883",
+    "Kommun": "Västervik",
+    "Övertid2022": 1104,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0980",
+    "Kommun": "Gotland",
+    "Övertid2022": 9500,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1080,
+    "Kommun": "Karlskrona",
+    "Övertid2022": 6561,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1082,
+    "Kommun": "Karlshamn",
+    "Övertid2022": 2920,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1286,
+    "Kommun": "Ystad",
+    "Övertid2022": 5392,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1382,
+    "Kommun": "Falkenberg",
+    "Övertid2022": 5507,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1383,
+    "Kommun": "Varberg",
+    "Övertid2022": 7100,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1493,
+    "Kommun": "Mariestad",
+    "Övertid2022": 1555,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1494,
+    "Kommun": "Lidköping",
+    "Övertid2022": 4576,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1496,
+    "Kommun": "Skövde",
+    "Övertid2022": 5974,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1499,
+    "Kommun": "Falköping",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1883,
+    "Kommun": "Karlskoga",
+    "Övertid2022": 3701,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 2080,
+    "Kommun": "Falun",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2084,
+    "Kommun": "Avesta",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2085,
+    "Kommun": "Ludvika",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2184,
+    "Kommun": "Hudiksvall",
+    "Övertid2022": 13195,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2280,
+    "Kommun": "Härnösand",
+    "Övertid2022": 3412,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 2284,
+    "Kommun": "Örnsköldsvik",
+    "Övertid2022": 10740,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2482,
+    "Kommun": "Skellefteå",
+    "Övertid2022": 19896,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2581,
+    "Kommun": "Piteå",
+    "Övertid2022": 5261,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 2584,
+    "Kommun": "Kiruna",
+    "Övertid2022": 8469,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0428",
+    "Kommun": "Vingåker",
+    "Övertid2022": 585,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0481",
+    "Kommun": "Oxelösund",
+    "Övertid2022": 4630,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0482",
+    "Kommun": "Flen",
+    "Övertid2022": 1702,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0509",
+    "Kommun": "Ödeshög",
+    "Övertid2022": 495,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0512",
+    "Kommun": "Ydre",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0560",
+    "Kommun": "Boxholm",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0584",
+    "Kommun": "Vadstena",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0617",
+    "Kommun": "Gnosjö",
+    "Övertid2022": 880,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": "0684",
+    "Kommun": "Sävsjö",
+    "Övertid2022": 130,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0686",
+    "Kommun": "Eksjö",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0765",
+    "Kommun": "Älmhult",
+    "Övertid2022": 2017,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0767",
+    "Kommun": "Markaryd",
+    "Övertid2022": 3347,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0821",
+    "Kommun": "Högsby",
+    "Övertid2022": 834,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0860",
+    "Kommun": "Hultsfred",
+    "Övertid2022": 2100,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0861",
+    "Kommun": "Mönsterås",
+    "Övertid2022": 5537,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": "0862",
+    "Kommun": "Emmaboda",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1060,
+    "Kommun": "Olofström",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1081,
+    "Kommun": "Ronneby",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1267,
+    "Kommun": "Höör",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1270,
+    "Kommun": "Tomelilla",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1273,
+    "Kommun": "Osby",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1419,
+    "Kommun": "Tjörn",
+    "Övertid2022": 1317,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1421,
+    "Kommun": "Orust",
+    "Övertid2022": 2852,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1430,
+    "Kommun": "Munkedal",
+    "Övertid2022": 2768,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1438,
+    "Kommun": "Dals-Ed",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1439,
+    "Kommun": "Färgelanda",
+    "Övertid2022": 9,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1442,
+    "Kommun": "Vårgårda",
+    "Övertid2022": 2257,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1445,
+    "Kommun": "Essunga",
+    "Övertid2022": 537,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1446,
+    "Kommun": "Karlsborg",
+    "Övertid2022": 437,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1447,
+    "Kommun": "Gullspång",
+    "Övertid2022": 717,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 1461,
+    "Kommun": "Mellerud",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1470,
+    "Kommun": "Vara",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1471,
+    "Kommun": "Götene",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1472,
+    "Kommun": "Tibro",
+    "Övertid2022": 3162,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1473,
+    "Kommun": "Töreboda",
+    "Övertid2022": 523,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1492,
+    "Kommun": "Åmål",
+    "Övertid2022": 738,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 1495,
+    "Kommun": "Skara",
+    "Övertid2022": 3039,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1497,
+    "Kommun": "Hjo",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1498,
+    "Kommun": "Tidaholm",
+    "Övertid2022": 6503,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1760,
+    "Kommun": "Storfors",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1862,
+    "Kommun": "Degerfors",
+    "Övertid2022": 1930,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1864,
+    "Kommun": "Ljusnarsberg",
+    "Övertid2022": 2326,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1904,
+    "Kommun": "Skinnskatteberg",
+    "Övertid2022": 1281,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1960,
+    "Kommun": "Kungsör",
+    "Övertid2022": 363,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1962,
+    "Kommun": "Norberg",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1982,
+    "Kommun": "Fagersta",
+    "Övertid2022": 538,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1984,
+    "Kommun": "Arboga",
+    "Övertid2022": 653,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2061,
+    "Kommun": "Smedjebacken",
+    "Övertid2022": 738,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2083,
+    "Kommun": "Hedemora",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2104,
+    "Kommun": "Hofors",
+    "Övertid2022": 2243,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 2132,
+    "Kommun": "Nordanstig",
+    "Övertid2022": 5942,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": "0662",
+    "Kommun": "Gislaved",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0685",
+    "Kommun": "Vetlanda",
+    "Övertid2022": 2645,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": "0687",
+    "Kommun": "Tranås",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": "0884",
+    "Kommun": "Vimmerby",
+    "Övertid2022": 1281,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1460,
+    "Kommun": "Bengtsfors",
+    "Övertid2022": 2816,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1484,
+    "Kommun": "Lysekil",
+    "Övertid2022": 7980,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1737,
+    "Kommun": "Torsby",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1766,
+    "Kommun": "Sunne",
+    "Övertid2022": 1631,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 1782,
+    "Kommun": "Filipstad",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1783,
+    "Kommun": "Hagfors",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1784,
+    "Kommun": "Arvika",
+    "Övertid2022": 2669,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Vet ej"
+  },
+  {
+    "Kod": 1785,
+    "Kommun": "Säffle",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1863,
+    "Kommun": "Hällefors",
+    "Övertid2022": 2102,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2021,
+    "Kommun": "Vansbro",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2121,
+    "Kommun": "Ovanåker",
+    "Övertid2022": 29,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2161,
+    "Kommun": "Ljusdal",
+    "Övertid2022": 1994,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2182,
+    "Kommun": "Söderhamn",
+    "Övertid2022": 5281,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2183,
+    "Kommun": "Bollnäs",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 2260,
+    "Kommun": "Ånge",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2282,
+    "Kommun": "Kramfors",
+    "Övertid2022": 4738,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2283,
+    "Kommun": "Sollefteå",
+    "Övertid2022": 1690482,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 2303,
+    "Kommun": "Ragunda",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2313,
+    "Kommun": "Strömsund",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2417,
+    "Kommun": "Norsjö",
+    "Övertid2022": 32,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2418,
+    "Kommun": "Malå",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2425,
+    "Kommun": "Dorotea",
+    "Övertid2022": 462,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2462,
+    "Kommun": "Vilhelmina",
+    "Övertid2022": 4274,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2463,
+    "Kommun": "Åsele",
+    "Övertid2022": 2293,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2481,
+    "Kommun": "Lycksele",
+    "Övertid2022": 2728,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2505,
+    "Kommun": "Arvidsjaur",
+    "Övertid2022": 134,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2513,
+    "Kommun": "Överkalix",
+    "Övertid2022": 2294,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2514,
+    "Kommun": "Kalix",
+    "Övertid2022": 7109,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2518,
+    "Kommun": "Övertorneå",
+    "Övertid2022": 483,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2521,
+    "Kommun": "Pajala",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2583,
+    "Kommun": "Haparanda",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": "0885",
+    "Kommun": "Borgholm",
+    "Övertid2022": 2987,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1278,
+    "Kommun": "Båstad",
+    "Övertid2022": 673,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1291,
+    "Kommun": "Simrishamn",
+    "Övertid2022": 0,
+    "Ökat?": "ej ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1427,
+    "Kommun": "Sotenäs",
+    "Övertid2022": 5554,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1435,
+    "Kommun": "Tanum",
+    "Övertid2022": 2527,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1486,
+    "Kommun": "Strömstad",
+    "Övertid2022": 3262,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 1730,
+    "Kommun": "Eda",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 1765,
+    "Kommun": "Årjäng",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2023,
+    "Kommun": "Malung-Sälen",
+    "Övertid2022": 8134,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2029,
+    "Kommun": "Leksand",
+    "Övertid2022": 5292,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2031,
+    "Kommun": "Rättvik",
+    "Övertid2022": 3799,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2034,
+    "Kommun": "Orsa",
+    "Övertid2022": 538,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2039,
+    "Kommun": "Älvdalen",
+    "Övertid2022": 600,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2062,
+    "Kommun": "Mora",
+    "Övertid2022": 1610,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2321,
+    "Kommun": "Åre",
+    "Övertid2022": 1482,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2361,
+    "Kommun": "Härjedalen",
+    "Övertid2022": 2381,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2421,
+    "Kommun": "Storuman",
+    "Övertid2022": 2666,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  },
+  {
+    "Kod": 2422,
+    "Kommun": "Sorsele",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2506,
+    "Kommun": "Arjeplog",
+    "Övertid2022": 873,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Annat",
+    "Personalbrist?": "Nej"
+  },
+  {
+    "Kod": 2510,
+    "Kommun": "Jokkmokk",
+    "Övertid2022": "Ej svar",
+    "Ökat?": "Ej svar",
+    "Ökning_pga_personalbrist?": "Ej svar",
+    "Personalbrist?": "Ej svar"
+  },
+  {
+    "Kod": 2523,
+    "Kommun": "Gällivare",
+    "Övertid2022": 8534,
+    "Ökat?": "ökat",
+    "Ökning_pga_personalbrist?": "Personalbrist",
+    "Personalbrist?": "Ja"
+  }
+]

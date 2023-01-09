@@ -1,13 +1,14 @@
+//make it possible to console log with c(tobelogged)
 const c = console.log.bind(document);
 
-//just getting the right favicon
+//Get one favicon for localhost and another for github pages
 let host = window.location.host;
 if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
   console.log('den finns på github')
 }
 
-
+//Variables for map size and projection
 var w = 264,
 		h = 500,
 		legendRectSize = 18,
@@ -25,47 +26,25 @@ var projection = d3.geoConicEqualArea()
 var thepath = d3.geoPath().projection(projection);
 
 //load the geodata file
-
 d3.json("SverigesKommuner.geojson").then(function(geodata){
-	// d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/SverigesKommuner.geojson").then(function(geodata){
-
-
-
-
 	//load a json data file
-	// d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/kommundata.json").then(function(artikeldata){
-	d3.json("kommundata_test.json").then(function(artikeldata){
-
-
+	d3.json("kommundata.json").then(function(artikeldata){
 		//make a new array out of the feature part of the geodata
 		let kombo =[...geodata.features];
 		//loop the new array of geodata
 		kombo.forEach(function(kombogrej) {
-
-
 			//filter array by a common item ( do a lookup ). "Result" will be an array with one item, which will be an object containing all the text from the json file.
 			var result = artikeldata.filter(function(regiondata) {
-
 				return regiondata.Kod.toString() === kombogrej.properties.KNKOD.toString();
 			})
 
-
-			// var skott = result[0].Skott;
-			// skott = skott.toString().replace(/,/g, '.')
-			// skott = parseFloat(skott);
-
-
-
 			// Create new items in the array. Value pairs from "result" are stored with new keys in the "kombo" array, which will now contain both the geodata and the selected data from the json file.
-
 			kombogrej["Kommun"] = (result[0] !== undefined) ? result[0].Kommun : null;
 			kombogrej["Övertid2022"] = (result[0] !==undefined) ? result[0].Övertid2022 : null;
 			kombogrej["Ökat?"] = (result[0] !==undefined) ? result[0]["Ökat?"] : null;
       kombogrej["Ökning_pga_personalbrist"] = (result[0] !==undefined) ? result[0].Ökning_pga_personalbrist : null;
       kombogrej["Personalbrist?"] = (result[0] !==undefined) ? result[0]["Personalbrist?"] : null;
 		})
-
-
 
 		svg.selectAll("path")
 				//using the "kombo" array to create map
@@ -119,11 +98,9 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 					.attr("class", "tooltip u-textMeta")
 					.style("opacity", 0)
 
-		//Using the number from the "kombo" array to set the colors of the regions. The colors are defined in the css file
+			//Set up colors for the map regions using data from the "kombo" array. Returns a class name. The colors are defined in the css file
 		function quantify(d,i) {
 			var f;
-			// var f = d.Siffra;
-      // c(d["Personalbrist?"])
 
       switch(d["Personalbrist?"]) {
         case "Ja":
@@ -135,20 +112,18 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
         default:
         f = 3;
       }
-      c(f)
-
+        //left code that is not used this time, as a reminder that you can set the classes by a math calculation
 			// return "q" + Math.min(8, ~~((f-250) / 150)) + "-9";
-			// console.log(d.Siffra);
 			return "q" + f;
 
 
 			}
 	})
 
-
 	//hide the loader when the map has been drawn
 	document.getElementById('loader').style.display = "none";
 
+  //Set the iframe height, using function in external lomediehus script
   informHeight();
 
 })
@@ -159,16 +134,11 @@ function mouseover() {
 		.style("opacity", .9);
 }
 
-
-
 function mousemove(d, i) {
-
 	let markup = `
 		<p class='fet no-margin-bottom'>${d.Kommun}</p>
 		<p class='no-margin-bottom'> ${d["Personalbrist?"] === "Ja" ? "Personalbrist" : ""}</p>
 	`
-
-
 
 	tooltip.html(markup)
 			// .style("left", (d3.event.pageX) + "px")
@@ -193,9 +163,7 @@ function mouseout() {
 }
 
 
-
-
-
+//set zoom, code remains as a reminder
 // svg.call(d3.zoom().on("zoom", function () {
 //        svg.attr("transform", d3.event.transform)
 // 		 }))
