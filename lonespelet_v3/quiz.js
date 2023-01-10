@@ -36,7 +36,10 @@ preload(
     "img/kommunalstrejk2.svg",
     "img/handskak1.svg",
     "img/handskak2.svg",
+    "img/placeholder.png",
 )
+
+let placeholder = "img/placeholder.png";
 
 var formatPercent = wNumb({
     decimals: 1,
@@ -256,7 +259,7 @@ var questions = [
             }
             return output;
         },
-        img: ["img/skyline.png"],
+        img: [placeholder],
         alternativ: function(){
             if (lonekrav == arbetsgivarkrav) {
                 return [
@@ -416,11 +419,8 @@ var questions = [
         },
         alternateImage: true,
         img: function(){
-            if (sympatistrejk) {
-                return ["img/skor1.svg", "img/skor2.svg"];
-            } else {
-                return ["img/skyline.png"]
-            }},
+            return ["img/skor1.svg", "img/skor2.svg"];
+            },
         alternativ: function(){
             return [
             {alternativ: "Skor åt alla!", action: function(){
@@ -492,7 +492,7 @@ var questions = [
             
             return output;
         },
-        img: ["img/skyline.png"],
+        img: [placeholder],
         alternativ: function(){
             return [
             {alternativ: "Ta kampen!", action: function(){
@@ -515,7 +515,7 @@ var questions = [
             
             return output;
         },
-        img: ["img/skyline.png"],
+        img: [placeholder],
         alternativ: function(){
             return [
             {alternativ: "Gå vidare", action: function(){
@@ -632,7 +632,7 @@ var questions = [
             let output = [rubrik, outputString]
             return output;
         },
-        img: ["img/skyline.png"],
+        img: [placeholder],
         alternativ: function(){
             return [
             {alternativ: "Räkna på din lön", action: function(){
@@ -657,7 +657,7 @@ var questions = [
             output = ["Lönedomen", "<p>Din lön på <b>" + lonInnan + "</b> blir <b>" + lonEfter + "</b> efter lönehöjningen på <b>" + formatPercent.to(market) + "</b>.</p>Men med en inflation på <b>" + formatPercent.to(inflation) + "</b> blir den i praktiken värd <b>" + lonInflation + "</b> jämfört med förra året.</p>"  ];
             return output;
         },
-        img: ["img/skyline.png"],
+        img: [placeholder],
         alternativ: function(){
             return [
             {alternativ: "Spela igen", action: function(){
