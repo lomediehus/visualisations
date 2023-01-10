@@ -57,7 +57,7 @@ var formatKronor = wNumb({
 // game data
 
 let inflation = 10;
-let lonekrav = 4.4;
+let lonekrav = 0;
 let arbetsgivarkrav;
 let andraChansen = false;
 let konfliktniva;
@@ -75,7 +75,7 @@ let kravMott = false;
 
 function rensaSpelet() {
     inflation = 10;
-    lonekrav = 4.4;
+    lonekrav = 0;
     testIndex = 0;
     konfliktniva = 0;
     andraChansen = false;
@@ -146,7 +146,7 @@ var questions = [
             } else if (lonekrav < 5) {
                 output = ["”Balanserat krav”", "<p> Nationalekonomerna anser på det stora hela att det är ett balanserat krav, inte så högt att det driver på inflationen men inte så lågt att löntagarnas köpkraft utarmas för mycket.</p> <p>En del upprörda röster hörs från medlemmar som tycker att du lägger dig för lågt.</p>"];
             } else if (lonekrav < 7) {
-                output = ["”Hotad konkurrenskraft”", "<p>Vissa nationalekonomer anser att svensk konkurrenskraft allvarligt skulle hotas med sådana löneökningar. Andra anser att det är en rimlig nivå med tanke på att svenska företag gjort stora vinster de senaste åren.</p><p>Medlemmarna vill gärna se ännu högre krav, men hålller sig på mattan. </p>"];
+                output = ["”Hotad konkurrenskraft”", "<p>Vissa nationalekonomer anser att svensk konkurrenskraft allvarligt skulle hotas med sådana löneökningar. Andra anser att det är en rimlig nivå med tanke på att svenska företag gjort stora vinster de senaste åren.</p><p>Medlemmarna vill gärna se ännu högre krav, men protesterna är ganska milda. </p>"];
             } else if (lonekrav < 10) {
                 output = ["Nöjda medlemmar","<p>Många nationalekonomer varnar för en eskalerande inflationsspiral och företagskonkurser som riskerar jobben för tusentals.</p><p>Medlingsinstitutet antyder i en debattartikel att du borde lugna ner dig. Medlemmarna är ganska nöjda förutom Gruvtolvan som vill ha 20 procent."]
                 ;
@@ -211,7 +211,7 @@ var questions = [
     {
         fraga: function () {
             let output 
-            let startstring = "<p>Det är dags att börja förhandla med arbetsgivarna. Ditt lönekrav är <b>" + formatPercent.to(lonekrav) + "</b>" + (laglonesatsning ? " och en låglönesatsning" : "") + ".</p> ";
+            let startstring = "<p>Det är dags för industrifacken att börja förhandla med arbetsgivarna inom industrin. Ditt lönekrav är <b>" + formatPercent.to(lonekrav) + "</b>" + (laglonesatsning ? " och en låglönesatsning" : "") + ".</p> ";
             if (lonekrav < 1.1) {
                 output = ["”Klappat och klart”", startstring + "<p>Arbetsgivarna tror inte sina öron, men håller god min och accepterar ditt krav utan knot.</p>"];
             } else if (lonekrav < 3.1) {
@@ -296,13 +296,13 @@ var questions = [
                     output = ["Storstrejk!","<p>Strejken inleds. Industrierna står still och företagen förlorar mycket pengar. Arbetsgivarna rasar över fackets nonchalans inför den svenska konkurrenskraften.</p><p>För att få ett slut på strejken går de till slut med på att sockra budet med ytterligare 0,5 procentenheter, till <b>" + formatPercent.to(arbetsgivarkrav) + ".</b></p><p>Vad gör du?</p>"];
                 } else if (strejkdagar == 1) {
                     arbetsgivarkrav += 0.5;
-                    output = ["Strejken utvidgas.","Du tar ut ytterligare 100 000 anställda i strejk. Arbetsgivaren svarar med en lockout. Nu är det inte bara företagen som förlorar pengar, även din strejkkassa börjar sina.</p><p>Medlingsinstitutet griper in och kommer med ett förslag på <b>" + formatPercent.to(arbetsgivarkrav) + " som arbetsgivaren accepterar.</b></p><p>Vad gör du?</p>"];
+                    output = ["Strejken utvidgas.","Du tar ut ytterligare 100 000 anställda i strejk. Arbetsgivaren svarar med en lockout. Nu är det inte bara företagen som förlorar pengar, även din strejkkassa börjar sina.</p><p>Industriparternas opartiska medlare, Opo, griper in och kommer med ett förslag på <b>" + formatPercent.to(arbetsgivarkrav) + " som arbetsgivaren accepterar.</b></p><p>Vad gör du?</p>"];
                 } else if (strejkdagar == 2) {
                     tjänstepension = true;
-                    output = ["Strejken fortsätter","<p>Såväl din som arbetsgivarnas strejkkassa är på väg att ta slut. Företag kommer med storvarsel om uppsägningar.</p><p>Allmänheten, som till en början sympatiserat med strejken, börjar tröttna. Nationalekonomerna varnar för stora skadeverkningar på samhällsekonomin</p><p>Medlingsinstitutet slänger in extra avsättningar till tjänstepensionen ovanpå budet på <b>" + formatPercent.to(arbetsgivarkrav) + "</b>.<p>Vad gör du?</p>"];
+                    output = ["Strejken fortsätter","<p>Såväl din som arbetsgivarnas strejkkassa är på väg att ta slut. Företag kommer med storvarsel om uppsägningar.</p><p>Allmänheten, som till en början sympatiserat med strejken, börjar tröttna. Nationalekonomerna varnar för stora skadeverkningar på samhällsekonomin</p><p>Opo föreslår extra avsättningar till tjänstepensionen ovanpå budet på <b>" + formatPercent.to(arbetsgivarkrav) + "</b>.<p>Vad gör du?</p>"];
                 } else if (strejkdagar == 3) {
                     arbetsgivarkrav += 0.5;
-                    output = ["Kris","<p> Den svenska ekonomin är på väg att kollapsa och regeringen hotar med lagstiftning för att få slut på konflikten.</p><p>Medlingsinstitutet lyckas till slut få arbetsgivarna att gå med på ytterligare 0,5 procentenheter till <b>" + formatPercent.to(arbetsgivarkrav) + "</b>.</p><p>”Absolut slutbud”, dundrar arbetsgivarna.</p><p>Vad gör du?</p>"];
+                    output = ["Kris","<p> Den svenska ekonomin är på väg att kollapsa och regeringen hotar med lagstiftning för att få slut på konflikten.</p><p>Opo lyckas till slut få arbetsgivarna att gå med på ytterligare 0,5 procentenheter till <b>" + formatPercent.to(arbetsgivarkrav) + "</b>.</p><p>”Absolut slutbud”, dundrar arbetsgivarna.</p><p>Vad gör du?</p>"];
                 } else if (strejkdagar == 4) {
                     output = ["Samhällskollaps","<p>Samhällsekonomin kraschar och Sverige är på väg mot konkurs. På gatorna syns svältande människor som stapplar fram med trasor på kroppen.</p><p>Regeringen stiftar en lag som innebär strejkförbud.</p>"];
                 }
@@ -318,51 +318,61 @@ var questions = [
             }
         },
         alternativ: function(){
-            if (strejkdagar == 4) {
+            if (kravMott) {
                 return [
-                    {alternativ: "Spela igen", action: function(){
+                    {alternativ: "Gå vidare", action: function(){
                         let cont = document.body;
                         cont.classList.remove("strejk");
-                        rensaSpelet();
                     }},
                 ]   
             } else {
-                if (lonekrav == arbetsgivarkrav) {
+                if (strejkdagar == 4) {
                     return [
-                        {alternativ: "Gå vidare", action: function(){
+                        {alternativ: "Spela igen", action: function(){
                             let cont = document.body;
                             cont.classList.remove("strejk");
+                            rensaSpelet();
                         }},
-                    ]             
+                    ]   
                 } else {
-                    return [
-                        {alternativ: "Fortsätt strejken", action: function(){
-                            strejkdagar += 1;
-                            testIndex -= 1;
-                        }},
-                        {alternativ: "Gå med på arbetsgivarnas bud", action: function(){
-                            let cont = document.body;
-                            cont.classList.remove("strejk");
-                            lonekrav = arbetsgivarkrav;
-                        }},
-            ]};
+                    if (lonekrav == arbetsgivarkrav) {
+                        return [
+                            {alternativ: "Gå vidare", action: function(){
+                                let cont = document.body;
+                                cont.classList.remove("strejk");
+                            }},
+                        ]             
+                    } else {
+                        return [
+                            {alternativ: "Fortsätt strejken", action: function(){
+                                strejkdagar += 1;
+                                testIndex -= 1;
+                            }},
+                            {alternativ: "Gå med på arbetsgivarnas bud", action: function(){
+                                let cont = document.body;
+                                cont.classList.remove("strejk");
+                                lonekrav = arbetsgivarkrav;
+                            }},
+                ]};
+                }
             }
+            
             },
         explainer: "",
         explainer: "",
     },
     {
         fraga: function () {
-            let rubrik = "Märket blev " + formatPercent.to(lonekrav) + "."
+            let rubrik = "Märket blev " + formatPercent.to(lonekrav);
             market = parseFloat(lonekrav);
             let output
-            let endstring = "<p>Men nu är i alla fall märket satt, alltså den löneökning övriga förbund har att förhålla sig till i sina avtalsrörelser.</p><p>Nu är det dags för övriga förbund att förhandla.</p>";
+            let endstring = "<p>Men nu är i alla fall märket satt, alltså industrins löneökning som blir övriga förbunds riktmärke i sina förhandlingar.</p><p>Nu är det dags för övriga förbund att förhandla.</p>";
             if (lonekrav < 3) {
                 output = [rubrik, "<p>Alldeles för lite, klagar arga medlemmarna och flera förbund ser medlemssiffrorna sjunka.</p>" + endstring];
             } else if (lonekrav < 5) {
                 output = [rubrik, "<p>Alldeles för mycket, gnäller arbetsgivarna. Alldeles för lite, klagar medlemmarna.</p>" + endstring];
             } else {
-                output = [rubrik, startstring + "<p>Alldeles för mycket, klagar arbetsgivarna.</p>" + endstring];
+                output = [rubrik, "<p>Alldeles för mycket, klagar arbetsgivarna.</p>" + endstring];
             }
             return output;
         },
@@ -441,9 +451,9 @@ var questions = [
                 output = ["Okej då", "”Med tanke på de rimliga lönekravet går vi väl med på arbetsskor då”, säger Vårdföretagen lite surt"]
             } else {
                 if (laglonesatsning && arbetsskor) {
-                    output = ["Kostar mycket","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Ska ni ha något extra drar vi det från märket, låglönesatsningen kostar 0,2 procentenheter och arbetsskor 0,1 procentenheter</p><p>Driver du det vidare blir alltså löneökningarna lägre. <b>" + formatPercent.to(lonekrav - 0.3) + "</b> i stället för <b>" + formatPercent.to(lonekrav) + "</b>.</p><p>Vad gör du?</p>"]
+                    output = ["Kostar mycket","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Ska ni ha något extra drar vi det från märket, låglönesatsningen kostar 0,2 procentenheter och arbetsskor 0,1 procentenheter</p><p>Driver du det vidare blir alltså löneökningarna lägre för Kommunals medlemmar. <b>" + formatPercent.to(lonekrav - 0.3) + "</b> i stället för <b>" + formatPercent.to(lonekrav) + "</b>.</p><p>Vad gör du?</p>"]
                 } else if (arbetsskor) {
-                    output = ["Skor kostar!","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Vill ni ha skor drar vi det från märket och det kostar 0,1 procentenheter.</p><p>Driver du det vidare blir alltså löneökningarna lägre, alltså <b>" + formatPercent.to(lonekrav - 0.1) + "</b> i stället för <b>" + formatPercent.to(lonekrav) + "<b>.</p><p>Vad gör du?</p>"]
+                    output = ["Skor kostar!","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Vill ni ha skor drar vi det från märket och det kostar 0,1 procentenheter.</p><p>Driver du det vidare blir alltså löneökningarna lägre för Kommunals medlemmar, alltså <b>" + formatPercent.to(lonekrav - 0.1) + "</b> i stället för <b>" + formatPercent.to(lonekrav) + "<b>.</p><p>Vad gör du?</p>"]
                 } else {
                     output = ["Klart?","Kommunal surar över skorna men slipper dra ner på lönekravet och skriver till slut på avtalet. Nu är väl avtalsrörelsen slut, eller?"]
                 }
@@ -488,7 +498,7 @@ var questions = [
     },
     {
         fraga: function () {
-            let output = ["Påskfirandet i fara","Skostriden är över och blickarna vänds mot butikspersonalen. Arbetsgivarna inom handeln vill slopa det höga ob-tillägget på söndagar. Handels vägrar och varslar om påskstrejk.</p><p>Är det en kamp värd att ta eller borde Handels vika ner sig så att folk får ägg och sill till påsklunchen?</p>"];
+            let output = ["Påskfirandet i fara","Skostriden är över och blickarna vänds mot butikspersonalen. Arbetsgivarna inom handeln vill sänka ob-tillägget på söndagar. Handels vägrar och varslar om påskstrejk.</p><p>Är det en kamp värd att ta eller borde Handels vika ner sig så att folk får ägg och sill till påsklunchen?</p>"];
             
             return output;
         },
@@ -611,11 +621,11 @@ var questions = [
                 }
             } else {
                 if (laglonesatsning && arbetsskor) {
-                    extraString += " Kommunalarna har fått fria arbetsskor och en låglönesatsning men lägre löneökning än alla andra på  <b>" + formatPercent.to(lonekrav) + "</b>.";
+                    extraString += " Kommunalarna har fått fria arbetsskor och en låglönesatsning men fått ta av löneökningarna och landar på  <b>" + formatPercent.to(lonekrav) + "</b>.";
                 } else if (laglonesatsning) {
-                    extraString += " Kommunalarna har fått en låglönesatsning men lägre löneökning än alla andra på <b>" + formatPercent.to(lonekrav) + "</b>.";
+                    extraString += " Kommunalarna har fått en låglönesatsning men men fått ta av löneökningarna och landar på <b>" + formatPercent.to(lonekrav) + "</b>.";
                 } else if (arbetsskor) {
-                    extraString +=  "Kommunalarna har fått fria arbetsskor men lägre löneökning än alla andra på <b>" + formatPercent.to(lonekrav) + "</b>.";
+                    extraString +=  "Kommunalarna har fått fria arbetsskor men men fått ta av löneökningarna och landar på <b>" + formatPercent.to(lonekrav) + "</b>.";
                 }
             }
 
