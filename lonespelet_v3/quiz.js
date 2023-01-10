@@ -11,6 +11,8 @@ function preload() {
 }
 
 preload(
+    "img/dragkamp1.svg",
+    "img/dragkamp2.svg",
     "img/skyline.png",
     "img/krav1.svg",
     "img/krav2.svg",
@@ -32,6 +34,8 @@ preload(
     "img/tombola2.svg",
     "img/kommunalstrejk1.svg",
     "img/kommunalstrejk2.svg",
+    "img/handskak1.svg",
+    "img/handskak2.svg",
 )
 
 var formatPercent = wNumb({
@@ -94,11 +98,11 @@ var questions = [
         fraga: function() {
             return [
                 "Lönekampen", 
-                "Inflationen bränner stora hål i plånböckerna och gör många desperata efter en rejäl löneökning.</p><p> Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse är inte den lättaste att få ihop för att göra alla nöjda. Försök själv i Arbetets spel lönekampen.</p>"
+                "Inflationen liggger på skyhöga 10 procent och bränner stora hål i plånböckerna.</p><p> Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse är inte den lättaste att få ihop för att göra alla nöjda. Försök själv i Arbetets spel lönekampen.</p>"
                 ];
             },
         alternatives: false,
-        img: ["img/welcome1.svg", "img/welcome2.svg"],
+        img: ["img/dragkamp1.svg", "img/dragkamp2.svg"],
         alternativ: function(){
             return [
             {alternativ: "Starta spelet", action: function(){
@@ -116,7 +120,7 @@ var questions = [
             } else {
                 return [
                     "Industrin bestämmer sig", 
-                    "<p>Det är höst och facken inom industrin ska spika sina lönekrav i vårens avtalsförhandlingar. Industriavtalen ligger sedan till grund för alla övriga lönökningar på arbetsmarknaden det så kallade märket.</p><p>Inflationen ligger på skyhöga 10 procent, allt under det blir i realiteten en lönesänkning.</p><p>Vad ska facken kräva för höjning i procent?</p>"
+                    "<p>Facken inom industrin ska spika sina krav inför vårens avtalsförhandlingar. Avtalen ligger sedan till grund för alla övriga lönökningar på arbetsmarknaden – det så kallade märket.</p><p>Vad ska facken kräva för höjning i procent?</p>"
                 ];
             }
             
@@ -305,7 +309,7 @@ var questions = [
         alternateImage: true,
         img: function(){
             if (kravMott) {
-                return ["img/skyline.png"];
+                return ["img/handskak1.svg", "img/handskak2.svg"];
             } else {
                 return ["img/strejk1.svg", "img/strejk2.svg"];
             }
@@ -359,7 +363,7 @@ var questions = [
             }
             return output;
         },
-        img: ["img/skyline.png"],
+        img: ["img/handskak1.svg", "img/handskak2.svg"],
         alternativ: function(){
             return [
             {alternativ: "Fortsätt", action: function(){
