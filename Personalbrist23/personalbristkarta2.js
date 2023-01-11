@@ -64,7 +64,10 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 		//color and text for the legend. (Addding an extra item to the domain and range arrays will create a new legend item)
 		var color = d3.scaleOrdinal()
 				.domain(["Personalbrist", "Ej personalbrist", "Vet ej/Ej svar"])
-				.range(["#e00f00", "#f5cc00", "#d8d8d8"]);
+        // .range(["#", "#009E73", "#d8d8d8"]);
+        .range(["#009E73", "#56B4E9", "#d8d8d8"]);
+
+
 
 		var legend = d3.select("svg")
 				.append("g")
@@ -104,10 +107,10 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 
       switch(d["Personalbrist?"]) {
         case "Ja":
-        f = 1;
+        f = 4;
         break;
         case "Nej":
-        f = 2;
+        f = 5;
         break;
         default:
         f = 3;

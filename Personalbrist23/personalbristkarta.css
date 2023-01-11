@@ -4,6 +4,7 @@ background-color: #fcfaf5;
 }
 
 div#chart {
+	position: relative;
 	padding-top: 20px;
 }
 
@@ -24,6 +25,11 @@ div#chart {
 .q1{fill:#e00f00}
 .q2{fill:#f5cc00}
 .q3{fill:#d8d8d8}
+.q4{fill:#009E73}
+.q5{fill:#56B4E9}
+
+
+
 
 #searchresult {
 
@@ -66,6 +72,12 @@ div.tooltip {
 	font-weight: bold;
 }
 
+#emoji {
+	position: absolute;
+	/* text-align: right; */
+	right: 20px;
+	bottom: 20px;
+}
 .no-margin-bottom {
 	margin-bottom: 0px;
 }

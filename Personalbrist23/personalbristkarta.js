@@ -8,6 +8,7 @@ if (host.includes("github")) {
   console.log('den finns på github')
 }
 
+
 //Variables for map size and projection
 var w = 264,
 		h = 500,
@@ -43,11 +44,25 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 
 			// Create new items in the array. Value pairs from "result" are stored with new keys in the "kombo" array, which will now contain both the geodata and the selected data from the json file.
 			kombogrej["Kommun"] = (result[0] !== undefined) ? result[0].Kommun : null;
+      kombogrej["Övertid2019"] = (result[0] !==undefined) ? result[0].Övertid2019 : null;
 			kombogrej["Övertid2022"] = (result[0] !==undefined) ? result[0].Övertid2022 : null;
 			kombogrej["Ökat?"] = (result[0] !==undefined) ? result[0]["Ökat?"] : null;
       kombogrej["Ökning_pga_personalbrist"] = (result[0] !==undefined) ? result[0].Ökning_pga_personalbrist : null;
       kombogrej["Personalbrist?"] = (result[0] !==undefined) ? result[0].Personalbrist : null;
+
+
+      let o19 = (result[0].Övertid2019);
+      let o22 = (result[0].Övertid2022);
+      okning = ((typeof o22 == "number") && (o22 != 0) && (typeof o19 == "number") && (o19 != 0)) ? Math.round(((o22-o19)/o19)*100) : "";
+      // let o22 = (typeof result[0].Övertid2022 == "number") ? result[0].Övertid2022 : null;
+      // let okning = (o19 == 0) ? "" : Math.round(((o22 - o19) / o19) * 100);
+      // c(okning)
+
+      kombogrej["Ökning"] = (okning!==undefined) ? okning : null;
+      // c(kombogrej)
 		})
+
+
 
 		svg.selectAll("path")
 				//using the "kombo" array to create map
@@ -100,6 +115,8 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 					.attr("class", "tooltip u-textMeta")
 					.style("opacity", 0)
 
+
+
 		//Set up colors for the map regions using data from the "kombo" array. Returns a class name. The colors are defined in the css file
 		function quantify(d,i) {
 			var f;
@@ -120,6 +137,25 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 			}
 	})
 
+  // var tooltip2 = d3.select("#emjoi")
+	// 			.append("div")
+	// 				.attr("class", "tooltip u-textMeta")
+	// 				.style("opacity", 1)
+  //         .html("hejhej");
+
+
+  // d3.select("#emoji").html("<div><span id='infoEmoji'>&#129300;</span></div>")
+  //   .on("mouseover", mouseover)
+  //   .on("mousemove", function(){
+  //       c("mousemove")
+  //       })
+  //   .on("mouseout", mouseout)
+    // .append("div")
+      // .attr("class", "tooltip u-textMeta")
+      // .style("opacity", 0)
+      // .html('hejhej');
+
+
 	//hide the loader when the map has been drawn
 	document.getElementById('loader').style.display = "none";
   //Set the iframe height, using function in external lomediehus script
@@ -136,12 +172,28 @@ function mouseover() {
 
 function mousemove(d, i) {
 
+  let textÖkning = "";
+
+  if (d.Ökning !== "") {
+    if (d.Ökning > 0){
+      textÖkning = "+" + String(d.Ökning);
+    }
+    else {
+      textÖkning = String(d.Ökning);
+    }
+  };
+
+
+  // let textÖkning = (d.Ökning > 0) ? "+" + String(d.Ökning) : String(d.Ökning);
+
 	let markup = `
 		<p class='fet no-margin-bottom'>${d.Kommun}</p>
-    <p class='no-margin-bottom'>${typeof d.Övertid2022 === "number" ? $.number(d.Övertid2022, 0, ',', '&#8239;') + " timmar" : ""}</p>
-
-
+    <p class='no-margin-bottom'>${((typeof d.Övertid2022 === "number") && (d.Övertid2022 += 0)) ? $.number(d.Övertid2022, 0, ',', '&#8239;') + " timmar" : ""}</p>
+    <p class='no-margin-bottom'>${(textÖkning !== "") ? "Skillnad mot 2019: " + textÖkning + "%" : ""}</p>
 	`
+
+
+
 
 	tooltip.html(markup)
 			// .style("left", (d3.event.pageX) + "px")
@@ -158,6 +210,8 @@ function mousemove(d, i) {
 
 			.style("top", (d3.event.pageY - 50) + "px");
 }
+
+
 
 function mouseout() {
 		tooltip.transition()
