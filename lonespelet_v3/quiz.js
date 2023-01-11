@@ -37,6 +37,10 @@ preload(
     "img/handskak1.svg",
     "img/handskak2.svg",
     "img/placeholder.png",
+    "img/lonedomen1.svg",
+    "img/lonedomen2.svg",
+    "img/samhallskollaps1.svg",
+    "img/samhallskollaps1.svg",
 )
 
 let placeholder = "img/placeholder.png";
@@ -304,6 +308,7 @@ var questions = [
                     arbetsgivarkrav += 0.5;
                     output = ["Kris","<p> Den svenska ekonomin är på väg att kollapsa och regeringen hotar med lagstiftning för att få slut på konflikten.</p><p>Opo lyckas till slut få arbetsgivarna att gå med på ytterligare 0,5 procentenheter till <b>" + formatPercent.to(arbetsgivarkrav) + "</b>.</p><p>”Absolut slutbud”, dundrar arbetsgivarna.</p><p>Vad gör du?</p>"];
                 } else if (strejkdagar == 4) {
+                    cont.classList.remove("strejk");
                     output = ["Samhällskollaps","<p>Samhällsekonomin kraschar och Sverige är på väg mot konkurs. På gatorna syns svältande människor som stapplar fram med trasor på kroppen.</p><p>Regeringen stiftar en lag som innebär strejkförbud.</p>"];
                 }
             } 
@@ -313,6 +318,8 @@ var questions = [
         img: function(){
             if (kravMott) {
                 return ["img/handskak1.svg", "img/handskak2.svg"];
+            } else if (strejkdagar == 4) {
+                return ["img/samhallskollaps1.svg", "img/samhallskollaps2.svg"]
             } else {
                 return ["img/strejk1.svg", "img/strejk2.svg"];
             }
@@ -667,7 +674,7 @@ var questions = [
             output = ["Lönedomen", "<p>Din lön på <b>" + lonInnan + "</b> blir <b>" + lonEfter + "</b> efter lönehöjningen på <b>" + formatPercent.to(market) + "</b>.</p>Men med en inflation på <b>" + formatPercent.to(inflation) + "</b> blir den i praktiken värd <b>" + lonInflation + "</b> jämfört med förra året.</p>"  ];
             return output;
         },
-        img: [placeholder],
+        img: ["img/lonedomen1.svg", "img/lonedomen2.svg",],
         alternativ: function(){
             return [
             {alternativ: "Spela igen", action: function(){
