@@ -544,7 +544,7 @@ var questions = [
     {
         fraga: function () {
             let output;
-            output = ["Inflationstombolan","<p>Nu är avtalen klara med märket på <b>" + formatPercent.to(market) + "</b> som utgångspunkt. Men löneökningar i all ära. Vad som verkligen påverkar vad som blir kvar i plånboken är inflationen.</p><p>Ska Riksbankens räntehöjningar få effekt? Hur utvecklas kriget i Ukraina? Åt vilket håll går elpriserna?</p><p>Det finns många faktorer som påverkar vad den slutliga löneökningen innebär för köpkraften.</p>"]
+            output = ["Inflationstombolan","<p>Nu är avtalen klara med märket på <b>" + formatPercent.to(market) + "</b> som utgångspunkt. Men löneökningar i all ära. Vad som verkligen påverkar vad som blir kvar i plånboken är inflationen.</p><p>Ska Riksbankens räntehöjningar få effekt? Hur utvecklas kriget i Ukraina? Åt vilket håll går elpriserna?</p><p>Det är frågor som du inte kan påverka genom några val utan i stället får låta slumpen avgöra.</p>"]
             
             return output;
         },
