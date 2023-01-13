@@ -8,9 +8,9 @@ function printNumber() {
     let numberplace = document.getElementById("resultat");
     
 
-    let index_2021 = 228.33;
-    let index_2022 = 250.10;
-    let månad = "november";
+    let index_2021 = 231.28;
+    let index_2022 = 254.81;
+    let månad = "december";
     let år = "2021";
 
     let url = "https://www.scb.se/hitta-statistik/statistik-efter-amne/priser-och-konsumtion/konsumentprisindex/konsumentprisindex-kpi/pong/tabell-och-diagram/konsumentprisindex-med-fast-ranta-kpif-och-kpif-xe/kpif-index-1987100/"
