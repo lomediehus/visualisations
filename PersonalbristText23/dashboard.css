@@ -1,0 +1,113 @@
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: #fcfaf5;
+  box-sizing: border-box;
+}
+
+#center {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 600px;
+}
+
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  justify-content: flex-start;
+}
+
+#valjkommun {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px;
+}
+
+#inforuta {
+  width: 100%;
+  padding: 30px;
+}
+
+
+.basecontainer {
+  margin-right: 20px;
+  background-color: #dcebe5;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.fixed-height {
+  /* height: 300px; */
+}
+
+.basecontainer h2 {
+  font-weight: 900;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.semitransparent {
+  opacity: 0.3;
+}
+
+
+div.basestil {
+  text-align: center;
+}
+
+.storfet {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.stormager {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+hr.rounded {
+  border: 0;
+  border-top: 6px dotted #da4042;
+  /* border-radius: 5px; */
+}
+
+div.forklaring {
+  width: 600px;
+}
+
+@media screen and (max-width: 679px) {
+
+  #center {
+    width: 500px;
+  }
+
+  #header {
+    width: 500px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  #center {
+    width: 300px;
+  }
+
+  #header {
+    width: 300px;
+  }
+
+}
