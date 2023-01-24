@@ -767,7 +767,7 @@ function createSlider() {
             pips: {
                 mode: "positions",
                 values: [0,25,50,75,100],
-                density: 4
+                density: 5
             },
             behaviour: 'tap-drag',
             tooltips: true,
@@ -793,6 +793,7 @@ var test = {
         informHeight();
     },
     onupdate: function() {
+        document.getElementById("question-0").blur();
         questions[testIndex].alternateImage ? imageSwitch(questions[testIndex].img()) : imageSwitch(questions[testIndex].img);
         if (this.madeChoice == false) {
             createSlider();
@@ -807,7 +808,12 @@ var test = {
             m("h2.u-spacingTopS.u-spacingBottomXS", fragaArray[0]),
             m("p.questionBox.u-spacingBottomM", m.trust(fragaArray[1])),
             questions[testIndex].slider ? m("div.slidecontainer.u-spacingTopXXL.u-spacingBottomXXXL", m("div", {id: "slider"})) : "",
-            questions[testIndex].payForm ? m("div.formcontainer.u-spacingBottomXXXL", m("input.lonInput.u-textMeta", {id: "formvalue", type:"text", value: "20 000"})) : "",
+            questions[testIndex].payForm ? m("div.formcontainer.u-spacingBottomXXXL", m("input.lonInput.u-textMeta", {id: "formvalue", type:"text", value: "20 000", oncreate: function(vnode){
+                vnode.dom.addEventListener("keypress", function(event) {
+                    if (event.key === "Enter") {
+                        document.getElementById("question-0").click();
+                    }
+            }) }})) : "",
             m("div.buttondiv.u-spacingTopM", questions[testIndex].alternativ().map(function(fraga, index) {
                 return m("button.Button.answerButton.u-spacingBottomS.u-spacingRightS.u-textUppercase", {
                     id: "question-" + index,
