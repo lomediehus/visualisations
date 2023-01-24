@@ -11,8 +11,8 @@ function preload() {
 }
 
 preload(
-    "img/dragkamp1.svg",
-    "img/dragkamp2.svg",
+    "img/dragkamp_rubrik1.svg",
+    "img/dragkamp_rubrik2.svg",
     "img/krav1.svg",
     "img/krav2.svg",
     "img/strejk1.svg",
@@ -54,6 +54,8 @@ preload(
     "img/resultat2.svg",
     "img/resultat3.svg",
     "img/resultat4.svg",
+    "img/resultat5.svg",
+    "img/resultat6.svg",
 )
 
 var formatPercent = wNumb({
@@ -115,12 +117,12 @@ var questions = [
     {
         fraga: function() {
             return [
-                "Lönekampen", 
+                "Din egen avtalsrörelse", 
                 "Inflationen liggger på skyhöga 10 procent och bränner stora hål i plånböckerna. Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse är inte den lättaste att få ihop för att göra alla nöjda. Försök själv i Arbetets spel lönekampen.</p>"
                 ];
             },
         alternatives: false,
-        img: ["img/dragkamp1.svg", "img/dragkamp2.svg"],
+        img: ["img/dragkamp_rubrik1.svg", "img/dragkamp_rubrik2.svg"],
         alternativ: function(){
             return [
             {alternativ: "Starta spelet", action: function(){
