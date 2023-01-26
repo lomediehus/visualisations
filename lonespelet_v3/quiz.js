@@ -205,7 +205,7 @@ var questions = [
             } else if (lonekrav < 10) {
                 output = ["Låglönesatsning?", startstring + " och på mötet infinner sig en resignerad stämning. ”Det här innebär visserligen en reallönesänkning men å andra sidan måste alla dra sitt strå”, säger Metallordföranden.</p><p>Kommunal föreslår att man borde kräva en extra lönesatsning för de med lägst inkomst. Arbetsgivarna skulle inte gilla det.</p>"];
             } else {
-                output = ["Låglönesatsning?", startstring + " och på mötet infinner sig en nervös men stridslysten stämning. ”Nu ska lönenerna upp rejält, blir det strejk så blir det”, säger Metallordföranden.</p><p>Kommunal föreslår att man borde kräva en extra lönesatsning för de med lägst inkomst. Arbetsgivarna skulle inte gilla det.</p>"];
+                output = ["Låglönesatsning?", startstring + " och på mötet infinner sig en nervös men stridslysten stämning. ”Nu ska lönerna upp rejält, blir det strejk så blir det”, säger Metallordföranden.</p><p>Kommunal föreslår att man borde kräva en extra lönesatsning för de med lägst inkomst. Arbetsgivarna skulle inte gilla det.</p>"];
             }
             return output;
         },
@@ -310,7 +310,7 @@ var questions = [
                     output = ["Stor strejk!","<p>Strejken inleds. Industrierna står still och företagen förlorar mycket pengar. Arbetsgivarna rasar över fackets nonchalans inför den svenska konkurrenskraften.</p><p>För att få ett slut på strejken går de till slut med på att sockra budet med ytterligare 0,5 procentenheter, till <b>" + formatPercent.to(arbetsgivarkrav) + ".</b></p>"];
                 } else if (strejkdagar == 1) {
                     arbetsgivarkrav += 0.5;
-                    output = ["Strejken utvidgas.","Du tar ut ytterligare 100 000 anställda i strejk. Arbetsgivaren svarar med en lockout. Nu är det inte bara företagen som förlorar pengar, även din strejkkassa börjar sina.</p><p>Industriparternas opartiska medlare, Opo, griper in och kommer med ett förslag på <b>" + formatPercent.to(arbetsgivarkrav) + " som arbetsgivaren accepterar.</b></p>"];
+                    output = ["Strejken utvidgas","Du tar ut ytterligare 100 000 anställda i strejk. Arbetsgivaren svarar med en lockout. Nu är det inte bara företagen som förlorar pengar, även din strejkkassa börjar sina.</p><p>Industriparternas opartiska medlare, Opo, griper in och kommer med ett förslag på <b>" + formatPercent.to(arbetsgivarkrav) + " som arbetsgivaren accepterar.</b></p>"];
                 } else if (strejkdagar == 2) {
                     tjänstepension = true;
                     output = ["Strejken fortsätter","<p>Såväl din som arbetsgivarnas strejkkassa är på väg att ta slut. Företag kommer med storvarsel om uppsägningar.</p><p>Allmänheten, som till en början sympatiserat med strejken, börjar tröttna. Nationalekonomerna varnar för stora skadeverkningar på samhällsekonomin</p><p>Opo föreslår extra avsättningar till tjänstepensionen ovanpå budet på <b>" + formatPercent.to(arbetsgivarkrav) + "</b>."];
@@ -707,7 +707,7 @@ var questions = [
             skillnad = market - inflation;
             lonInflation = formatKronor.to((dinLon * (skillnad / 100)) + dinLon);
 
-            output = ["Lönedomen", "<p>Din lön på <b>" + lonInnan + "</b> blir <b>" + lonEfter + "</b> efter lönehöjningen på <b>" + formatPercent.to(market) + "</b>.</p>Men med en inflation på <b>" + formatPercent.to(inflation) + "</b> blir den i praktiken värd <b>" + lonInflation + "</b> jämfört med förra året.</p><p>Vill du läsa mer om kampen om din lön? Klicka <a href='https://arbetet.se/om/avtal-2023/' target='_top'><b>här</b></a>."];
+            output = ["Lönedomen", "<p>Din lön på <b>" + lonInnan + "</b> blir <b>" + lonEfter + "</b> efter lönehöjningen på <b>" + formatPercent.to(market) + "</b>.</p>Men med en inflation på <b>" + formatPercent.to(inflation) + "</b> blir den i praktiken värd <b>" + lonInflation + "</b> jämfört med förra året.</p><p>Vill du läsa mer om kampen om din lön? Klicka <a href='https://arbetet.se/om/avtal-2023/' target='_blank'><b>här</b></a>."];
             return output;
         },
         img: ["img/lonedomen1.svg", "img/lonedomen2.svg",],
@@ -799,6 +799,7 @@ var test = {
             createSlider();
         }
         informHeight();
+        informScrollIntoView();
     },
 
     view: function() {
