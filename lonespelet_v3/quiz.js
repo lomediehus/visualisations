@@ -809,12 +809,7 @@ var test = {
             m("h2.u-spacingTopS.u-spacingBottomXS", fragaArray[0]),
             m("p.questionBox.u-spacingBottomM", m.trust(fragaArray[1])),
             questions[testIndex].slider ? m("div.slidecontainer.u-spacingTopXXL.u-spacingBottomXXXL", m("div", {id: "slider"})) : "",
-            questions[testIndex].payForm ? m("div.formcontainer.u-spacingBottomXXXL", m("input.lonInput.u-textMeta", {id: "formvalue", type:"text", value: "20 000", oncreate: function(vnode){
-                vnode.dom.addEventListener("keypress", function(event) {
-                    if (event.key === "Enter") {
-                        document.getElementById("question-0").click();
-                    }
-            }) }})) : "",
+            questions[testIndex].payForm ? m("div.formcontainer.u-spacingBottomXXXL", m("input.lonInput.u-textMeta", {id: "formvalue", type:"text", value: "20 000"})) : "",
             m("div.buttondiv.u-spacingTopM", questions[testIndex].alternativ().map(function(fraga, index) {
                 return m("button.Button.answerButton.u-spacingBottomS.u-spacingRightS.u-textUppercase", {
                     id: "question-" + index,
