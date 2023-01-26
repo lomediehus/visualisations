@@ -793,13 +793,13 @@ var test = {
         informHeight();
     },
     onupdate: function() {
-        document.getElementById("question-0").blur();
         questions[testIndex].alternateImage ? imageSwitch(questions[testIndex].img()) : imageSwitch(questions[testIndex].img);
         if (this.madeChoice == false) {
             createSlider();
         }
         informHeight();
         informScrollIntoView();
+        console.log("Kallar på informScrollIntoView!")
     },
 
     view: function() {
