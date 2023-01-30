@@ -707,7 +707,7 @@ var questions = [
             skillnad = market - inflation;
             lonInflation = formatKronor.to((dinLon * (skillnad / 100)) + dinLon);
 
-            output = ["Lönedomen", "<p>Din lön på <b>" + lonInnan + "</b> blir <b>" + lonEfter + "</b> efter lönehöjningen på <b>" + formatPercent.to(market) + "</b>.</p>Men med en inflation på <b>" + formatPercent.to(inflation) + "</b> blir den i praktiken värd <b>" + lonInflation + "</b> jämfört med förra året.</p><p>Vill du läsa mer om kampen om din lön? Klicka <a href='https://arbetet.se/om/avtal-2023/' target='_blank'><b>här</b></a>."];
+            output = ["Lönedomen", "<p>Din lön på <b>" + lonInnan + "</b> blir <b>" + lonEfter + "</b> efter lönehöjningen på <b>" + formatPercent.to(market) + "</b>.</p>Men med en inflation på <b>" + formatPercent.to(inflation) + "</b> blir den i praktiken värd <b>" + lonInflation + "</b> jämfört med förra året.</p>"];
             return output;
         },
         img: ["img/lonedomen1.svg", "img/lonedomen2.svg",],
