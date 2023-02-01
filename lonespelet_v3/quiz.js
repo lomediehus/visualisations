@@ -118,7 +118,7 @@ var questions = [
         fraga: function() {
             return [
                 "Din egen avtalsrörelse", 
-                "Inflationen liggger på skyhöga 10 procent och bränner stora hål i plånböckerna. Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse är inte den lättaste att få ihop för att göra alla nöjda. Försök själv i Arbetets spel Lönekampen.</p>"
+                "Inflationen liggger på skyhöga 10 procent och bränner stora hål i plånböckerna. Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse kan bli svår att få ihop för att göra alla nöjda. Försök själv i Arbetets spel Lönekampen.</p>"
                 ];
             },
         alternatives: false,

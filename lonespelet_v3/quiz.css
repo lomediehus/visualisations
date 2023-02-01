@@ -227,6 +227,13 @@ div.container-move {
   }
 }
 
+a:hover {
+  color: var(--button-text-color);
+}
+
+a:visited {
+  color: var(--button-text-color);
+}
 
 .Button:hover {
   color: var(--button-alternative-text-color);
