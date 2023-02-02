@@ -118,7 +118,7 @@ var questions = [
         fraga: function() {
             return [
                 "Din egen avtalsrörelse", 
-                "Inflationen liggger på skyhöga 10 procent och bränner stora hål i plånböckerna. Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse kan bli svår att få ihop om alla ska bli nöjda. Försök själv i Arbetets spel Lönekampen.</p>"
+                "Inflationen ligger på skyhöga 10 procent och bränner stora hål i plånböckerna. Samtidigt sänker sig lågkonjunkturen över Sverige och kriget i Ukraina rasar vidare.</p><p>Årets lönerörelse kan bli svår att få ihop om alla ska bli nöjda. Försök själv i Arbetets spel Lönekampen.</p>"
                 ];
             },
         alternatives: false,
@@ -465,7 +465,7 @@ var questions = [
             cont.classList.remove("strejk");
             let output;
             if (market < 1.1 && arbetsskor) {
-                output = ["Okej då", "”Med tanke på de rimliga lönekravet går vi väl med på arbetsskor då”, säger Vårdföretagen lite surt"]
+                output = ["Okej då", "”Med tanke på de rimliga lönekravet går vi väl med på arbetsskor då”, säger Vårdföretagen lite surt."]
             } else {
                 if (laglonesatsning && arbetsskor) {
                     output = ["Kostar mycket","<p>– Allt ska rymmas inom märket, dundrar arbetsgivarna. Ska ni ha något extra drar vi det från märket, låglönesatsningen kostar 0,2 procentenheter och arbetsskor 0,1 procentenheter</p><p>Driver du det vidare blir alltså löneökningarna lägre för Kommunals medlemmar. <b>" + formatPercent.to(lonekrav - 0.3) + "</b> i stället för <b>" + formatPercent.to(lonekrav) + "</b>.</p><p>Vad gör du?</p>"]
