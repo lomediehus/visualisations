@@ -80,19 +80,50 @@ valjkommun.addEventListener("change", function(){
 
     if (item.Kommun === this.value) {
 
+      let forsta = item['Övertid2019'];
+      let andra = item['Övertid2022'];
+      let okning; 
+      if (typeof(forsta) === "number" && forsta!=0 && typeof(andra) === "number") {
+        okning = Math.round(((andra-forsta)/forsta) * 100);
+      } else {
+        okning = "ingen uppgift";
+      }
+
+      let stringOkning;
+
+      // if (okning >0) {
+      //   stringOkning = "+" + okning + "%";
+      // } else if  (okning <0) {
+      //  stringOkning = "-" + okning + "%";
+      // } else if (okning === 0 ){
+      //   stringOkning = okning + "%";
+      // } else {
+      //   stringOkning = "ingen uppgift"
+      // }
+
+      if (okning >0) {
+        stringOkning = "+" + okning + "%";
+      } else if  (okning <= 0) {
+       stringOkning = okning + "%";
+      } else {
+        stringOkning = "ingen uppgift"
+      }
+    
+     
+      c('blalba' + okning)
+
+
 
       overtid2019 = $.number(item['Övertid2019'], 0, ',', '&#8239;');
 
       overtid2022 = (item['Övertid2022'] == 0) ? "ingen uppgift" : $.number(item['Övertid2022'], 0, ',', '&#8239;') + " timmar";
       personalbrist = item['Personalbrist?'];
       okat = (item["Ökat?"] == "ökat")? "Ja" : "Nej";
-      // uppsagd_barn = item['UppsagningBarnomsorg'];
-      console.log(typeof overtid2022)
 
       inforuta_fyll = `
         <h2 class="u-textMetaDeca">${item.Kommun}</h2>
         <h3>Övertid sommaren 2022<br><span class="stormager">${overtid2022}</span></h3>
-        <h3>Har övertiden ökat jämfört med 2019?<br><span class="stormager">${okat}</span></h3>
+        <h3>Ökning/minskning av övertid jämfört med 2019<br><span class="stormager">${stringOkning}</span></h3>
         <h3>Anser kommunen själv att det är personalbrist i äldreomsorgen?<br><span class="stormager">${personalbrist}</span></h3>
       `
 
