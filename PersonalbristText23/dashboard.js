@@ -62,7 +62,7 @@ function fillBoxes() {
   inforuta_fyll = `
     <h2 class="u-textMetaDeca">Kommun</h2>
     <h3>Övertid sommaren 2022?<br><span class="stormager">XXX timmar</span></h3>
-    <h3>Har övertiden ökat jämfört med 2019?<br><span class="stormager">Ja/Nej</span></h3>
+    <h3>Ökning/minskning av övertid jämfört med 2019<br><span class="stormager">%</span></h3>
     <h3>Anser kommunen själv att det är personalbrist i äldreomsorgen?<br><span class="stormager">Ja/Nej/Vet ej</span></h3>
   `
 
