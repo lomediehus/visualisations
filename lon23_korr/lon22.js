@@ -426,8 +426,21 @@ function jamforyrke(data, valdkommun, index) {
 // make a bar chart with d3
 function makeGraph(data1) {
 
+  //make new array with filtered data
+  var nydata1 = data1.filter(taBortBort);
+
+  //function to remove unwanted items (where the value of "lön" is "bort")
+  function taBortBort(value) {
+    if (value.lön === "bort") {
+      return
+    }
+    else {
+      return value;
+    }
+  }
+
   //sort the data
-  data1.sort(function(x, y){
+  nydata1.sort(function(x, y){
      return d3.descending(x.lön, y.lön);
   })
 
@@ -442,12 +455,12 @@ function makeGraph(data1) {
       .attr("width", width);
 
 
-    x.domain([0, d3.max(data1, function(d) { return d.lön; })]);
+    x.domain([0, d3.max(nydata1, function(d) { return d.lön; })]);
 
-    chart.attr("height", barHeight * data1.length);
+    chart.attr("height", barHeight * nydata1.length);
 
     var bar = chart.selectAll("g")
-        .data(data1)
+        .data(nydata1)
       .enter().append("g")
         .attr("transform", function(d, i) { return "translate(0," + i * barHeight +  ")"; });
 
@@ -549,6 +562,14 @@ function getvalue(radiobuttons) {
 
 
 function populateKommunDropdown() {
+  kdata.sort(function(a, b){
+    var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
+    if (kommunA < kommunB) //sort string ascending
+        return -1;
+    if (kommunA > kommunB)
+        return 1;
+    return 0; //default return value (no sorting)
+    })
   kdata.forEach((item, i) => {
     if (item.Kommun != "RIKSSNITT") {
       let el = document.createElement("option");
@@ -676,10 +697,7 @@ function maketable(data, tabell) {
     }
 
     if (row[yrke] === "bort") {
-      c(row.Kommun)
       rad.remove()
-      // rad.previousSibling.remove();
-      // c(row.Kommun)
     }
 
   //When to show the yellow bubbles
