@@ -19,107 +19,115 @@
 
     //array for the bar graph
     var yrken = [
-  {
-    "yrke": "Lärarassistent",
-    "lön": 28828
-  },
-  {
-    "yrke": "Ambulanssjukvårdare",
-    "lön": 29921
-  },
-  {
-    "yrke": "Anläggningsarbetare",
-    "lön": 29882
-  },
-  {
-    "yrke": "Fotvårdsspecialist",
-    "lön": 29769
-  },
-  {
-    "yrke": "Brandman",
-    "lön": 29004
-  },
-  {
-    "yrke": "Barnsköterska",
-    "lön": 28412
-  },
-  {
-    "yrke": "Fritidsledare",
-    "lön": 28643
-  },
-  {
-    "yrke": "Fastighetsskötare",
-    "lön": 28637
-  },
-  {
-    "yrke": "Fordonsförare",
-    "lön": 28164
-  },
-  {
-    "yrke": "Park- och trädgårdsarbetare",
-    "lön": 27990
-  },
-  {
-    "yrke": "Kock/Kokerska",
-    "lön": 28134
-  },
-  {
-    "yrke": "Skötare",
-    "lön": 27733
-  },
-  {
-    "yrke": "Undersköterska",
-    "lön": 27465
-  },
-  {
-    "yrke": "Stödassistent",
-    "lön": 27452
-  },
-  {
-    "yrke": "Vaktmästare",
-    "lön": 27299
-  },
-  {
-    "yrke": "Boendestödjare",
-    "lön": 27147
-  },
-  {
-    "yrke": "Elevassistent",
-    "lön": 26593
-  },
-  {
-    "yrke": "Förrådsarbetare",
-    "lön": 26325
-  },
-  {
-    "yrke": "Barnskötare",
-    "lön": 26332
-  },
-  {
-    "yrke": "Personlig assistent",
-    "lön": 26074
-  },
-  {
-    "yrke": "Måltidspersonal",
-    "lön": 25283
-  },
-  {
-    "yrke": "Städare/Lokalvårdare",
-    "lön": 24999
-  },
-  {
-    "yrke": "Vårdbiträde funktionshinder",
-    "lön": 24765
-  },
-  {
-    "yrke": "Vårdbiträde",
-    "lön": 24138
-  },
-  {
-    "yrke": "Biträde",
-    "lön": 24017
-  }
-]
+      {
+        "yrke": "Ambulanssjukvårdare",
+        "lön": 30811
+      },
+      {
+        "yrke": "Anläggningsarbetare",
+        "lön": 30656
+      },
+      {
+        "yrke": "Barnskötare",
+        "lön": 26650
+      },
+      {
+        "yrke": "Barnsköterska",
+        "lön": 29336
+      },
+      {
+        "yrke": "Biträde, region",
+        "lön": 24389
+      },
+      {
+        "yrke": "Boendestödjare",
+        "lön": 27623
+      },
+      {
+        "yrke": "Brandman",
+        "lön": 29688
+      },
+      {
+        "yrke": "Elevassistent",
+        "lön": 26953
+      },
+      {
+        "yrke": "Fastighetsskötare",
+        "lön": 29129
+      },
+      {
+        "yrke": "Fordonsförare",
+        "lön": 28581
+      },
+      {
+        "yrke": "Fotvårdsspecialist",
+        "lön": 30406
+      },
+      {
+        "yrke": "Fritidsledare",
+        "lön": 29080
+      },
+      {
+        "yrke": "Förrådsarbetare",
+        "lön": 26934
+      },
+      {
+        "yrke": "Kock",
+        "lön": 28618
+      },
+      {
+        "yrke": "Lärarassistent",
+        "lön": 29301
+      },
+      {
+        "yrke": "Måltidspersonal",
+        "lön": 25593
+      },
+      {
+        "yrke": "Park- och trädgårdsarbetare",
+        "lön": 28347
+      },
+      {
+        "yrke": "Personlig assistent",
+        "lön": 26618
+      },
+      {
+        "yrke": "Renhållningsarbetare",
+        "lön": 28592
+      },
+      {
+        "yrke": "Skötare",
+        "lön": 28444
+      },
+      {
+        "yrke": "Städare/Lokalvårdare",
+        "lön": 25283
+      },
+      {
+        "yrke": "Stödassistent",
+        "lön": 27894
+      },
+      {
+        "yrke": "Stödpedagog",
+        "lön": 31549
+      },
+      {
+        "yrke": "Undersköterska",
+        "lön": 27944
+      },
+      {
+        "yrke": "Vaktmästare",
+        "lön": 27741
+      },
+      {
+        "yrke": "Vårdbiträde",
+        "lön": 24297
+      },
+      {
+        "yrke": "Vårdbiträde-funktionshinder",
+        "lön": 24978
+      }
+    ]
 
     //close the popup by clicking the "x"
     close.addEventListener("click", function() {
