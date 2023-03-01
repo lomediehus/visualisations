@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Löner kommunalare 2021</title>
+  <link rel="stylesheet" type="text/css" href="lon22.css">
+  <link rel="stylesheet" type="text/css" href="brandlon.css">
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script> -->
+
+
+    <div id="header">
+
+      <!-- <h1 class="u-textMetaDeca Label aboveOverlay">Medellöner i 23 olika yrken</h1> -->
+
+      <!-- <div id="selectOverlay">Välj yrke först!</div> -->
+
+      <select id="valjyrke" class="u-textMeta">
+        <option value="Väljyrke">Välj yrke</option>
+        <option value="Ambulanssjukvårdare">Ambulanssjukvårdare (region)</option>
+        <option value="Anläggningsarbetare">Anläggningsarbetare (kommun)</option>
+        <option value="Barnskötare">Barnskötare (kommun)</option>
+        <option value="Barnsköterska">Barnsköterska (region)</option>
+        <option value="Biträde">Biträde (region)</option>
+        <option value="Boendestödjare">Boendestödjare (kommun)</option>
+        <option value="Brandman">Brandman</option>
+        <option value="Elevassistent">Elevassistent (kommun)</option>
+        <option value="Fastighetsskötare">Fastighetsskötare (kommun)</option>
+        <option value="Fordonsförare">Fordonsförare (kommun/region)</option>
+        <option value="Fotvårdsspecialist">Fotvårdsspecialist (region)</option>
+        <option value="Fritidsledare">Fritidsledare (kommun)</option>
+        <option value="Förrådsarbetare">Förrådsarbetare (region)</option>
+        <option value="Kock/Kokerska">Kock/kokerska (kommun/region)</option>
+        <option value="Lärarassistent">Lärarassistent (kommun)</option>
+        <option value="Måltidspersonal">Måltidspersonal (kommun/region)</option>
+        <option value="Park-_och_trädgårdsarbetare">Park- och trädgårdsarbetare (kommun)</option>
+        <option value="Personlig_assistent">Personlig assistent (kommun)</option>
+        <option value="Renhållningsarbetare">Renhållningsarbetare (kommun)</option>
+        <option value="Skötare">Skötare (kommun/region)</option>
+        <option value="Städare/Lokalvårdare">Städare/Lokalvårdare (kommun/region)</option>
+        <option value="Stödassistent">Stödassistent (kommun)</option>
+        <option value="Undersköterska">Undersköterska (kommun/region)</option>
+        <option value="Vaktmästare">Vaktmästare (kommun/region)</option>
+        <option value="Vårdbiträde">Vårdbiträde (kommun)</option>
+        <option value="Vårdbiträde_Funktionshinder">Vårdbiträde Funktionshinder (kommun)</option>
+      </select>
+    </div>
+
+
+
+  <div id="kommun-region">
+    <p class="u-textMetaDeca" id=rikssnittp></p>
+
+
+
+    <div id="content">
+
+      <div id="blinkcontainer">
+        <div class="sign blink">
+          <h1>Välj yrke först!</h1>
+        </div>
+      </div>
+
+      <div id="overlay"></div>
+
+      <div class="basecontainer fixed-height">
+        <h1 class="u-textMetaDeca semitransparent">Karta regioner och kommuner</h1>
+        <div id="kartdiv">
+          <!-- <div class="vinjett"><span class="u-textMeta">Karta</span></div> -->
+          <div id="lansdiv">
+            <p class="u-textMetaDeca semitransparent">Klicka på ett län för att se lönerna i kommunerna och/eller regionen.</p>
+            <div id="logga"><img src="lonekoll_logga.png" alt="logotype" width="400px"></div>
+            <div id="kartpopup">
+              <div id="kartpopuprubbe" class="u-textMeta"></div>
+              <div class="close"><img id="closex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
+              <table id="karttabell" class="karttabell u-textMeta"></table>
+            </div>
+
+            <div id="highlowdiv"></div>
+
+          </div>
+        </div>
+        <p class='u-textMeta semitransparent'>Lönen visas för de kommuner/regioner som har minst fem anställda i yrket.</p>
+      </div>
+
+
+
+
+      <div id="lonlista" class="basecontainer fixed-height">
+        <h1 class="u-textMetaDeca semitransparent">Lönetabell</h1>
+        <!-- <div class="vinjett"><span class="u-textMeta">Tabell</span></div> -->
+        <p class='u-textMeta semitransparent'>Lönen visas för de kommuner/regioner som har minst fem anställda i yrket.</p>
+        <input type="radio" name="tabellknapp" value="listKommuner" class="yrkesbutton" id="listKommuner"><label class="u-textMeta semitransparent text-top">kommuner</label>
+        <input type="radio" name="tabellknapp" value="listLandsting" class="yrkesbutton" id="listLandsting"><label class="u-textMeta semitransparent text-top">regioner</label>
+        <p></p>
+
+
+        <div id="sortknapp" class="knapprad">
+          <span class="knapptext u-textMeta semitransparent">Sortera på: </span><button id="sortKommun" class="sortknapp"><p class="knapptext u-textMeta semitransparent">namn</p></button><button id="sortLonFall" class="sortknapp"><p class="knapptext u-textMeta semitransparent">lön<span class="mindre"> &#9660;</span></p></button><button id="sortLonStig" class="sortknapp"><p class="knapptext u-textMeta semitransparent">lön<span class="mindre"> &#9650;</p></span></button>
+
+        </div>
+
+        <div id="mintabelldiv" style="width:100%">
+          <table id="mintabell" class="tabellstil u-textMeta"></table>
+        </div>
+
+      </div>
+
+
+
+      <!-- <div></div> -->
+
+      <div id="jamforyrkediv" class="basecontainer fixed-height semitransparent">
+
+
+        <h1 class="u-textMetaDeca">Jämför yrken</h1>
+        <input type="radio" name="yrkesknapp" value="kommuner" class="yrkesbutton"><label id="kommuner" class="u-textMeta text-top">kommuner</label>
+        <input type="radio" name="yrkesknapp" value="landsting" class="yrkesbutton"><label id="landsting" class="u-textMeta text-top">regioner</label>
+        <p class="u-textMeta" id="yrkep">Visar <span id="yrkesspan">genomsnitt för alla kommuner. Välj en kommun i listan.</span></p>
+        <!-- <h2 class="input u-textMeta" id="sokkommun">Sök kommun</h2> -->
+
+          <!-- This list is populated by the javascript file -->
+          <select id="valjkommun" class="u-textMeta valjLandstingKommun">
+            <option value="RIKSSNITT">Välj kommun</option>
+          </select>
+
+          <!-- <input type="text" name="search" placeholder="Kommun" id="searchfield" class="u-textMeta"></p> -->
+
+          <select id="valjlandsting" class="u-textMeta valjLandstingKommun">
+            <option value="RIKSSNITT">Välj region</option>
+            <option value="Region Blekinge">Region Blekinge</option>
+            <option value="Region Dalarna">Region Dalarna</option>
+            <option value="Region Kalmar län">Region Kalmar län</option>
+            <option value="Region Värmland">Region Värmland</option>
+            <option value="Region Sörmland">Region Sörmland</option>
+            <option value="Region Västernorrland">Region Västernorrland</option>
+            <option value="Region Gotland">Region Gotland</option>
+            <option value="Region Gävleborg">Region Gävleborg</option>
+            <option value="Region Halland">Region Halland</option>
+            <option value="Region Jämtland Härjedalen">Region Jämtland Härjedalen</option>
+            <option value="Region Jönköpings län">Region Jönköpings län</option>
+            <option value="Region Kronoberg">Region Kronoberg</option>
+            <option value="Region Norrbotten">Region Norrbotten</option>
+            <option value="Region Skåne">Region Skåne</option>
+            <option value="Region Uppsala">Region Uppsala</option>
+            <option value="Region Västmanland">Region Västmanland</option>
+            <option value="Region Örebro län">Region Örebro län</option>
+            <option value="Region Östergötland">Region Östergötland</option>
+            <option value="Region Stockholm">Region Stockholm</option>
+            <option value="Region Västerbotten">Region Västerbotten</option>
+            <option value="Västra Götalandsregionen">Västra Götalandsregionen</option>
+          </select>
+
+          <div id="yrken">
+            <table id="yrkestabell" class="tabellstil"></table>
+            <svg class="chart" id="chart"></svg>
+          </div>
+            <p class="u-textMeta bottom">För att jämföra med brandmännens löner, välj "Brandman" som yrke i menyn högst upp.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+  </div>
+
+  <div id="brandlondiv">
+
+      <div id="brandcontent">
+
+
+        <div id="brandkartdiv" class="basecontainer fixed-height">
+          <h1 class="u-textMetaDeca">Karta över räddningstjänster</h1>
+          <p class="u-textMeta">Klicka för att se räddningstjänst, lön och vilka kommuner som ingår.</p>
+          <div id="brandlogga"><img src="lonekoll_logga.png" alt="logotype" width="320px"></div>
+
+
+          <div id="brandkartpopup">
+            <!-- <div id="brandkartpopuprubbe" class="u-textMeta"></div> -->
+
+            <div class="close"><img id="brandclosex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
+            <div id="popuptext"></div>
+          </div>
+
+        </div>
+
+
+        <div class='basecontainer'>
+          <div id="brandtabelldiv" style="width:100%">
+            <h1 class="u-textMetaDeca">Löner i räddningstjänsterna</h1>
+            <p class="u-textMeta">Vi visar lönen för dem som har fler än fyra anställda, övriga är markerade med *.</p>
+            <p class="input u-textMeta" id="sokkommun">Sök kommun <input type="text" name="search" placeholder="Kommun" id="searchfield" class="u-textMeta"></p>
+            <table id="brandtabell" class="brandtabellstil u-textMeta">
+            </table>
+            <p class="invisible"><button type="button" class="u-textMeta Button" id="rensaknapp">Visa hela listan igen</button></p>
+          </div>
+
+
+      </div>
+
+
+      <div id="brandjamforyrkediv" class="basecontainer">
+        <h1 class="u-textMetaDeca">Jämför med andra yrken</h1>
+        <p class="u-textMeta">Brandmännens lön jämförd med 24 andra kommunalaryrken. (Genomsnitt för hela landet.)</p>
+        <!-- <svg class="chart" id="brandchart"></svg> -->
+      </div>
+
+
+  </div>
+
+  </div>
+
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
+  <!-- <script type="text/javascript"> -->
+
+
+
+  <script src="lon22.js"></script>
+
+  <script src="brandlon.js"></script>
+
+
+  <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+
+
+
+
+  </body>
