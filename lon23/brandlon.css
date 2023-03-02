@@ -1,0 +1,297 @@
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  background-color: #fcfaf5;
+}
+
+div#header {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+div#header h1 {
+  display: block;
+}
+
+#rikssnittp {
+  height: 45px;
+  margin-left: 10px;
+}
+
+#brandlogga img {
+  position: absolute;
+  top: 150px;
+  width: 140px;
+  pointer-events: none;
+}
+
+#brandlondiv {
+  display: none;
+}
+
+/* borders of the map. Fill is set in js code */
+path {
+  stroke-width: 0.2px;
+  stroke: white;
+  cursor: pointer;
+}
+
+path:hover, path.highlighted {
+  fill: #a9aaaa;
+}
+
+div.tooltip {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  display: none;
+  padding: 4px 8px;
+  position: absolute;
+}
+
+button:active {
+  background-color: black;
+}
+
+table.brandtabellstil {
+  width: auto;
+  text-align: left;
+}
+
+label {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.4em;
+}
+
+/* .aboveOverlay {
+  position: relative;
+  z-index: 3;
+} */
+
+#brandtabell {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+#brandtabelldiv {
+  overflow: auto;
+  position: relative;
+}
+
+table.brandtabellstil thead {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+table.brandtabellstil thead td {
+  background-color: #a9aaaa;
+  color: white;
+  font-size: 1.4em;
+  line-height: 28px;
+  position: sticky;
+  -webkit-position: sticky;
+  text-transform: uppercase;
+  top: 0;
+  vertical-align: text-top;
+}
+
+table.brandtabellstil thead td:hover {
+  background-color: #878888;
+}
+
+table.brandtabellstil th {
+  vertical-align: text-top;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 26px;
+  background-color: #a9aaaa;
+  color: white;
+  overflow: auto;
+}
+
+/* table.brandtabellstil td {
+  vertical-align: text-top;
+  font-size: 18px;
+  line-height: 28px;
+  overflow: auto;
+} */
+
+table.brandtabellstil td {
+  vertical-align: text-top;
+  font-size: 1.3em;
+  padding: 0 0px 0 5px;
+  line-height: 28px;
+  overflow: auto;
+}
+
+tr:nth-child(odd) {
+  background-color: #dcebe5;
+}
+
+#brandkartdiv {
+  height: 670px;
+  position: relative;
+}
+
+#brandkartpopup {
+  display: none;
+  width: 50%;
+  width: 300px;
+  border-radius: 10px;
+  padding: 5px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  z-index: 10;
+}
+
+#brandkartpopup p {
+  padding: 0px 10px 0px 10px;
+}
+
+#popuptext h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 0 5px 0 5px;
+  font-weight: 700;
+}
+
+#tabellpopup {
+  display: none;
+  width: 50%;
+  min-width: 250px;
+  max-width: 450px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  left: 20%;
+  top: 80px;
+  z-index: 10;
+  padding-top: 10px;
+}
+
+#tabellpopuptext {
+  padding: 10px;
+}
+
+
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 30px;
+}
+
+div.close {
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.red {
+  color: #da4042;
+}
+
+.big {
+  font-size: 26px;
+}
+
+#brandcontent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.basecontainer {
+  width: 360px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.basecontainer h1 {
+  font-weight: 900;
+}
+
+#searchfield {
+font-size: 20px;
+}
+
+/* SVG stuff for the bar chart */
+.chart rect {
+  /* fill: #ffeb76; */
+  fill: #ffef58;
+  /* filter: drop-shadow(3px 0px 2px gray);
+  -webkit-filter: drop-shadow(3px 0px 2px gray); */
+}
+
+.chart text {
+  fill: black;
+  /* font: 14px sans-serif; */
+  text-anchor: end;
+}
+
+/* nya för brandmannalöner */
+span.pil {
+  color: grey;
+  text-shadow: grey;
+  font-size: 1em;
+}
+
+p.tabellkommuner {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+p.invisible {
+  display: none;
+}
+
+text.legend {
+  font-size: 0.6em;
+}
+
+#brandjamforyrkediv {
+  min-height: 600px;
+  max-height: 770px;
+  margin-right: 0px;
+}
+
+
+
+p .nomargin {
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 1120px) {
+  /* don't use "space between" on smaller screens since it doesn't look good when the third box jumps down and leaves only two boxes visible on top */
+  #brandcontent {
+    justify-content: flex-start; }
+  }
