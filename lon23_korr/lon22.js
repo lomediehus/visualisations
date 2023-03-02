@@ -70,7 +70,7 @@ var kommunsnitt;
 var brandlondiv = document.getElementById("brandlondiv");
 var content = document.getElementById("content");
 //change brandsnitt manually when numbers are updated, or find a way to find variable across files
-var brandsnitt = 29004;
+var brandsnitt = 29688;
 
 
 
