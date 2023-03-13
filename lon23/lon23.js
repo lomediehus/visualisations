@@ -23,25 +23,26 @@ var sokvagGeografi = "SverigesLan2019.geojson";
 
 var kdata = null;
 var rdata = null;
-// var html = '';
 var rad, cell1, cell2;
 var landsting;
 var yrkesarray = [];
 var bubbla = document.createElement('span');
 bubbla.className = 'bubblatext';
 var yrke = "Väljyrke";
+var regionsnitt;
+var kommunsnitt;
+//change brandsnitt manually when numbers are updated, or find a way to find variable across files
+var brandsnitt = 29688;
+var highest, place, highestKommun = 0, highestLandsting = 0, placeKommun = '', placeLandsting = '';
+var lowest, place2, lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
+
 
 //variables for elements from html document
-var lonlista = document.getElementById("lonlista");
 var tabell = document.getElementById('mintabell');
-var yrken = document.getElementById("yrken");
-var yrkestabell = document.getElementById('yrkestabell')
-var sortKommun = document.getElementById('sortKommun');
+var sortKommunFall = document.getElementById('sortKommunFall');
+var sortKommunStig = document.getElementById('sortKommunStig');
 var sortLonFall = document.getElementById('sortLonFall');
 var sortLonStig = document.getElementById('sortLonStig');
-var lonlista = document.getElementById('lonlista');
-var visaLista = document. getElementById('visaLista');
-var kartdiv = document.getElementById('kartdiv');
 var kartpopup = document.getElementById('kartpopup');
 var kartpopuprubbe = document.getElementById('kartpopuprubbe');
 var close = document.getElementById("closex");
@@ -52,30 +53,19 @@ var tabellknappar = document.getElementsByName('tabellknapp');
 var yrkesknappar = document.getElementsByName('yrkesknapp');
 var valjlandsting = document.getElementById('valjlandsting');
 var valjkommun = document.getElementById('valjkommun');
-var sokyrke = document.getElementById('sokyrke');
 var listLandstingKnapp = document.getElementById('listLandsting');
 var listKommunKnapp = document.getElementById('listKommuner');
 var selectlista = document.getElementsByTagName('OPTION');
-var selectelement = document.getElementById("valjyrke")
 var valjyrke = document.getElementById("valjyrke");
 var highlowdiv = document.getElementById('highlowdiv');
 var rikssnittp = document.getElementById('rikssnittp');
-var highest, place, highestKommun = 0, highestLandsting = 0, placeKommun = '', placeLandsting = '';
-var lowest, place2, lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
 var semitransparent = document.getElementsByClassName('semitransparent');
 var blinkcontainer= document.getElementById("blinkcontainer");
-var regioner = document.getElementsByClassName('regioner');
-var regionsnitt;
-var kommunsnitt;
 var brandlondiv = document.getElementById("brandlondiv");
 var content = document.getElementById("content");
-//change brandsnitt manually when numbers are updated, or find a way to find variable across files
-var brandsnitt = 29688;
-
 
 
 $('#highlowdiv').hide();
-
 
 //Wait for document ready
 $(document).ready(function() {
@@ -88,18 +78,13 @@ $(document).ready(function() {
       getHighLow(yrke);
       kartpopup.style.display = "none";
 
-
       //Check if yrke is present in file "kdata", if it is, make table from "kdata"
       for (var i = 0; i < kdata.length; i++) {
-
-     
 
         if (kdata[i].hasOwnProperty(yrke)) {
           listKommunKnapp.disabled = false;
           listKommunKnapp.checked = true;
           listLandstingKnapp.disabled = true;
-
-         
 
           //Sort alphabetically
           kdata.sort(function(a, b){
@@ -151,8 +136,7 @@ $(document).ready(function() {
       if (yrke === "Brandman") {
         brandlondiv.style.display = "block";
         content.style.display = "none";
-
-      }
+   }
       else {
         brandlondiv.style.display = "none";
         content.style.display = "flex";
@@ -179,9 +163,6 @@ $(document).ready(function() {
             })
         }
       }
-
-
-
 
     //get the number for rikssnitt and put them in place
     if (yrke === "Väljyrke") {
@@ -317,7 +298,7 @@ $.ajax({
 
 
 //Add click to button, sort by kommun/landsting and create the table
-sortKommun.addEventListener('click', function() {
+sortKommunFall.addEventListener('click', function() {
   //check if landsting or kommun is chosen
   if (getvalue(tabellknappar) === "listKommuner") {
     kdata.sort(function(a, b){
@@ -335,6 +316,33 @@ sortKommun.addEventListener('click', function() {
     rdata.sort(function(a, b){
       var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
       if (kommunA < kommunB) //sort string ascending
+          return -1;
+      if (kommunA > kommunB)
+          return 1;
+      return 0 ;//default return value (no sorting)
+      })
+    maketable(rdata, tabell);
+    }
+});
+
+sortKommunStig.addEventListener('click', function() {
+  //check if landsting or kommun is chosen
+  if (getvalue(tabellknappar) === "listKommuner") {
+    kdata.sort(function(a, b){
+      var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
+      if (kommunA > kommunB) //sort string descending
+          return -1;
+      if (kommunA > kommunB)
+          return 1;
+      return 0; //default return value (no sorting)
+      })
+    maketable(kdata, tabell);
+    }
+
+  else if (getvalue(tabellknappar) === "listLandsting") {
+    rdata.sort(function(a, b){
+      var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
+      if (kommunA > kommunB) //sort string descending
           return -1;
       if (kommunA > kommunB)
           return 1;
@@ -415,8 +423,6 @@ function jamforyrke(data, valdkommun, index) {
         }
       }
     });
-
-    // console.log("yrkesarray  "  + yrkesarray)
 
 
     //make a bar chart with d3
@@ -689,7 +695,6 @@ function maketable(data, tabell) {
       //@params: number to convert, decimals to keep, decimal separator, thousands separator
       //(property "yrke" contains salary)
       var yrkeform = $.number(row[yrke], 0, ',', '&#8239;')
-      // console.log(row.Kommun + yrkeform)
       if (yrkeform === '0') {
         yrkeform = '';
       }
@@ -713,7 +718,7 @@ function maketable(data, tabell) {
     row.insertCell(0).innerHTML = "Region";
   }
 
-  row.insertCell(1).innerHTML = "Lön 2021";
+  row.insertCell(1).innerHTML = "Lön 2022";
   informHeight();
 
 };

@@ -7,13 +7,9 @@
 }
 
 body {
-  /* font: 12px sans-serif; */
   padding: 0px;
   background-color: #fcfaf5;
-  /* hyphens: auto; */
 }
-
-
 
 div#header h1 {
   display: block;
@@ -32,8 +28,6 @@ h4 {
   font-size: 1.4em;
 }
 
-
-
 select#valjyrke {
   width: 740px;
   margin-top: 20px;
@@ -43,7 +37,6 @@ select#valjyrke {
   position: relative;
   letter-spacing: 0px;
 }
-
 
 
 div#header {
@@ -109,9 +102,6 @@ p.bottom {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: rgba(0,0,0,0.4); /* Black background with opacity */
-
-    /* pointer-events: none; */
 }
 
 .blacknollfyra {
@@ -146,11 +136,8 @@ p.bottom {
   top: -35px;
   width: 100px;
   height: 100px;
-  /* margin: 0 auto; */
   background-color: #ffef58;;
   position: relative;
-  /* top: 50px; */
-  /* margin: 0 auto; */
   left: 200px;
   border-radius: 50%;
   z-index: 5;
@@ -400,18 +387,36 @@ p.knapptext {
 
 #sortknapp button {
   border-radius: 5px 5px;
-  border: 2px solid white;
-  border: 2px solid #ddebeb;
+  /* border: 2px solid #ddebeb; */
 }
 
-.sortknapp {
+.knappask {
+  display: inline-block;
+  background-color: #f5f7f7;
+  border-radius: 5px 5px;
+  padding: 0px 0px 0px 3px;
+  border: 1px solid #b8d5d5;
+}
+
+button.utan {
+  background-color:#f5f7f7;
+  border: none;
+  color: #43464B;
+  padding: 0px 3px 0px 3px;
+  
+}
+
+button.utan:hover {
+  background-color: #ddebeb;
+}
+
+
+div.sortknapp {
   font-size: 1.5em;
-  height: 25px;
+  height: 100px;
   padding: 10px;
   margin: 10px;
-  background-color: #660000;
   background-color: #f5f7f7;
-  color: white;
   color: black;
   padding: 0 5px 0 5px;
   border: 0;
@@ -419,15 +424,10 @@ p.knapptext {
   text-align: left;
 }
 
-.sortknapp:hover {
-  background-color: #cc0000;
+/* .sortknapp:hover {
   background-color: #ddebeb;
+} */
 
-}
-
-#sortknapp button:first-child:hover {
-  background-color: #660000;
-}
 
 .mindre {
   font-size: 80%;
@@ -518,4 +518,3 @@ font-size: 20px;
   #content {
     justify-content: flex-start; }
   }
-}

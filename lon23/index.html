@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Löner kommunalare 2021</title>
+  <title>Löner kommunalare 2022</title>
   <link rel="stylesheet" type="text/css" href="lon23.css">
   <link rel="stylesheet" type="text/css" href="brandlon.css">
   <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
@@ -103,9 +103,35 @@
         <p></p>
 
 
-        <div id="sortknapp" class="knapprad">
-          <span class="knapptext u-textMeta semitransparent">Sortera på: </span><button id="sortKommun" class="sortknapp"><p class="knapptext u-textMeta semitransparent">namn</p></button><button id="sortLonFall" class="sortknapp"><p class="knapptext u-textMeta semitransparent">lön<span class="mindre"> &#9660;</span></p></button><button id="sortLonStig" class="sortknapp"><p class="knapptext u-textMeta semitransparent">lön<span class="mindre"> &#9650;</p></span></button>
-
+        <div id="sortknapp" class="knapprad semitransparent">
+          <span class="knapptext u-textMeta ">Sortera på: </span>
+          <div class="knappask">
+              <span class="u-textMeta">namn</span> 
+              <span>
+                  <button id="sortKommunFall" class="utan ">
+                      <span class="mindre"> &#9660;</span>
+                  </button>
+              </span>
+              <span>
+                  <button id="sortKommunStig" class="utan">
+                      <span class="mindre"> &#9650;</p>
+                  </button>
+              </span> 
+          </div>
+      
+          <div class="knappask">
+              <span class="u-textMeta">lön</span> 
+              <span>
+                  <button id="sortLonFall" class="utan">
+                      <span class="mindre"> &#9660;</span>
+                  </button>
+              </span>
+              <span>
+                  <button id="sortLonStig" class="utan">
+                      <span class="mindre"> &#9650;</p>
+                  </button>
+              </span> 
+          </div>
         </div>
 
         <div id="mintabelldiv" style="width:100%">
