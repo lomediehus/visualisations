@@ -332,7 +332,7 @@ sortKommunStig.addEventListener('click', function() {
       var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
       if (kommunA > kommunB) //sort string descending
           return -1;
-      if (kommunA > kommunB)
+      if (kommunA < kommunB)
           return 1;
       return 0; //default return value (no sorting)
       })
@@ -344,7 +344,7 @@ sortKommunStig.addEventListener('click', function() {
       var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
       if (kommunA > kommunB) //sort string descending
           return -1;
-      if (kommunA > kommunB)
+      if (kommunA < kommunB)
           return 1;
       return 0 ;//default return value (no sorting)
       })
@@ -357,8 +357,8 @@ sortKommunStig.addEventListener('click', function() {
 sortLonStig.addEventListener('click', function() {
   if (getvalue(tabellknappar) === "listKommuner") {
     kdata.sort(function(a, b){
-      if (a[yrke] === '') return 1;
-      if (b[yrke] === '') return -1;
+      if (a[yrke] === '' || a[yrke]=== "bort") return 1;
+      if (b[yrke] === '' || b[yrke]=== "bort") return -1;
       return a[yrke] < b[yrke] ? -1 : 1;
       })
     maketable(kdata, tabell);
@@ -985,6 +985,15 @@ function hideTooltip() {
   tooltip.style("display","none");
 }
 
+  //function to remove unwanted items (where the value of "lön" is "bort")
+  function taBortBort(value) {
+    if (value.lön === "bort") {
+      return
+    }
+    else {
+      return value;
+    }
+  }
 
 
 })();
