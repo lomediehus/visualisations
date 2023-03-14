@@ -9,6 +9,8 @@ if (host.includes("github")) {
   console.log('den finns på github')
 }
 
+//make it possible to console log with c(tobelogged)
+const c = console.log.bind(document);
 
 //read data from files into arrays
 $.ajax({
@@ -137,8 +139,8 @@ function doStuff() {
   //variables for set dates
   var nyarsdatum = new Date("December 27 2022");
   var trettonhelgsdatum = new Date("January 2 2023");
-  var paskdatum = new Date("February 12 2022");
-  var pingstdatum = new Date("April 22 2022");
+  var paskdatum = new Date("March 12 2023");
+  var pingstdatum = new Date("April 22 2023");
 
   var midsommardatum = new Date("June 07 2022");
 
@@ -149,15 +151,15 @@ function doStuff() {
   //Check if current date is after jul;
   if (date.getTime() > nyarsdatum.getTime()) {
     //if current date is also after nyar
-    if (date.getTime() > trettonhelgsdatum.getTime()) {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/midsommar.svg';
-      goActive(helgknapp3);
-      helgnr = "3";
+    if (date.getTime() > pingstdatum.getTime()) {
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
+      goActive(helgknapp5);
+      helgnr = "5";
     }
     else {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
-      goActive(helgknapp2);
-      helgnr = "2";
+      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+      goActive(helgknapp4);
+      helgnr = "4";
     }
   }
   else {
@@ -400,6 +402,9 @@ function doStuff() {
     hittad = false;
     if (yrke.startsWith('usk')|| yrke.startsWith('uska')) {
       yrke = 'undersköterska';
+    }
+    if (yrke.startsWith('bussch')) {
+      yrke = "bussförare";
     }
     if (yrke.startsWith('djursjukskötare')) {
       yrke = 'legitimerad djursjukskötare';
