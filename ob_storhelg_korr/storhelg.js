@@ -605,7 +605,7 @@ function doStuff() {
         textnode = document.createTextNode('Nåt blev fel, prova att skriva din lön igen.');
       }
       else {
-        textnode = document.createTextNode("Ditt ob-tillägg blir " + nodecontent[i] + " kronor i timmen.");
+        textnode = document.createTextNode("Ditt ob-tillägg blir " + nodecontent[i].replace(/\./, ",") + " kronor i timmen.");
       }
       node.appendChild(textnode)
 
