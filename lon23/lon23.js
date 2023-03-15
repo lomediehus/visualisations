@@ -6,6 +6,7 @@
 const c = console.log.bind(document);
 
 
+
 //Get one favicon for localhost and another for github pages
 let host = window.location.host;
 if (host.includes("github")) {
@@ -31,8 +32,8 @@ bubbla.className = 'bubblatext';
 var yrke = "Väljyrke";
 var regionsnitt;
 var kommunsnitt;
-//change brandsnitt manually when numbers are updated, or find a way to find variable across files
-var brandsnitt = 29688;
+//get brandmanLon from the file brandlon.js
+var brandsnitt = window.brandmanLon;
 var highest, place, highestKommun = 0, highestLandsting = 0, placeKommun = '', placeLandsting = '';
 var lowest, place2, lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
 
@@ -72,6 +73,8 @@ $(document).ready(function() {
 
     //choose yrke in list
     valjyrke.addEventListener("change", function() {
+
+
       //resetting variable
       var kommunHasYrke = false;
       yrke = this.value;
@@ -628,6 +631,8 @@ function populateKommunDropdown() {
 
 //Event for the select list of landsting
 valjlandsting.addEventListener("change", function() {
+
+
 
   landsting = this.value;
   //Build the array (and make the graph) from the chosen data

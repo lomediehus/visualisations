@@ -1,5 +1,132 @@
 ;(function() {
 
+
+  //array for the bar graph
+  const yrken = [
+    {
+      "yrke": "Ambulanssjukvårdare",
+      "lön": 30811
+    },
+    {
+      "yrke": "Anläggningsarbetare",
+      "lön": 30656
+    },
+    {
+      "yrke": "Barnskötare",
+      "lön": 26650
+    },
+    {
+      "yrke": "Barnsköterska",
+      "lön": 29336
+    },
+    {
+      "yrke": "Biträde, region",
+      "lön": 24389
+    },
+    {
+      "yrke": "Boendestödjare",
+      "lön": 27623
+    },
+    {
+      "yrke": "Brandman",
+      "lön": 29688
+    },
+    {
+      "yrke": "Elevassistent",
+      "lön": 26953
+    },
+    {
+      "yrke": "Fastighetsskötare",
+      "lön": 29129
+    },
+    {
+      "yrke": "Fordonsförare",
+      "lön": 28581
+    },
+    {
+      "yrke": "Fotvårdsspecialist",
+      "lön": 30406
+    },
+    {
+      "yrke": "Fritidsledare",
+      "lön": 29080
+    },
+    {
+      "yrke": "Förrådsarbetare",
+      "lön": 26934
+    },
+    {
+      "yrke": "Kock",
+      "lön": 28618
+    },
+    {
+      "yrke": "Lärarassistent",
+      "lön": 29301
+    },
+    {
+      "yrke": "Måltidspersonal",
+      "lön": 25593
+    },
+    {
+      "yrke": "Park- och trädgårdsarbetare",
+      "lön": 28347
+    },
+    {
+      "yrke": "Personlig assistent",
+      "lön": 26618
+    },
+    {
+      "yrke": "Renhållningsarbetare",
+      "lön": 28592
+    },
+    {
+      "yrke": "Skötare",
+      "lön": 28444
+    },
+    {
+      "yrke": "Städare/Lokalvårdare",
+      "lön": 25283
+    },
+    {
+      "yrke": "Stödassistent",
+      "lön": 27894
+    },
+    {
+      "yrke": "Stödpedagog",
+      "lön": 31549
+    },
+    {
+      "yrke": "Undersköterska",
+      "lön": 27944
+    },
+    {
+      "yrke": "Vaktmästare",
+      "lön": 27741
+    },
+    {
+      "yrke": "Vårdbiträde",
+      "lön": 24297
+    },
+    {
+      "yrke": "Vårdbiträde-funktionshinder",
+      "lön": 24978
+    }
+  ]
+
+  var hittat; 
+
+  yrken.forEach(hittaBrandman)
+
+  function hittaBrandman(row) {
+    if (row.yrke === "Brandman") {
+      return hittat = row.lön;
+    }
+    else return;
+  }
+
+  window.brandmanLon = hittat;
+
+
   window.setTimeout(setFire, 2000)
 
   function setFire(){
@@ -13,121 +140,122 @@
     var close = document.getElementById("brandclosex");
     var tabellpopup = document.getElementById('tabellpopup');
     var tabellpopuptext = document.getElementById('tabellpopuptext');
-    // var close2 = document.getElementById('closex2');
     var rikssnittp = document.getElementById("rikssnittp");
 
+    
 
-    //array for the bar graph
-    var yrken = [
-      {
-        "yrke": "Ambulanssjukvårdare",
-        "lön": 30811
-      },
-      {
-        "yrke": "Anläggningsarbetare",
-        "lön": 30656
-      },
-      {
-        "yrke": "Barnskötare",
-        "lön": 26650
-      },
-      {
-        "yrke": "Barnsköterska",
-        "lön": 29336
-      },
-      {
-        "yrke": "Biträde, region",
-        "lön": 24389
-      },
-      {
-        "yrke": "Boendestödjare",
-        "lön": 27623
-      },
-      {
-        "yrke": "Brandman",
-        "lön": 29688
-      },
-      {
-        "yrke": "Elevassistent",
-        "lön": 26953
-      },
-      {
-        "yrke": "Fastighetsskötare",
-        "lön": 29129
-      },
-      {
-        "yrke": "Fordonsförare",
-        "lön": 28581
-      },
-      {
-        "yrke": "Fotvårdsspecialist",
-        "lön": 30406
-      },
-      {
-        "yrke": "Fritidsledare",
-        "lön": 29080
-      },
-      {
-        "yrke": "Förrådsarbetare",
-        "lön": 26934
-      },
-      {
-        "yrke": "Kock",
-        "lön": 28618
-      },
-      {
-        "yrke": "Lärarassistent",
-        "lön": 29301
-      },
-      {
-        "yrke": "Måltidspersonal",
-        "lön": 25593
-      },
-      {
-        "yrke": "Park- och trädgårdsarbetare",
-        "lön": 28347
-      },
-      {
-        "yrke": "Personlig assistent",
-        "lön": 26618
-      },
-      {
-        "yrke": "Renhållningsarbetare",
-        "lön": 28592
-      },
-      {
-        "yrke": "Skötare",
-        "lön": 28444
-      },
-      {
-        "yrke": "Städare/Lokalvårdare",
-        "lön": 25283
-      },
-      {
-        "yrke": "Stödassistent",
-        "lön": 27894
-      },
-      {
-        "yrke": "Stödpedagog",
-        "lön": 31549
-      },
-      {
-        "yrke": "Undersköterska",
-        "lön": 27944
-      },
-      {
-        "yrke": "Vaktmästare",
-        "lön": 27741
-      },
-      {
-        "yrke": "Vårdbiträde",
-        "lön": 24297
-      },
-      {
-        "yrke": "Vårdbiträde-funktionshinder",
-        "lön": 24978
-      }
-    ]
+
+    // //array for the bar graph
+    // var yrken = [
+    //   {
+    //     "yrke": "Ambulanssjukvårdare",
+    //     "lön": 30811
+    //   },
+    //   {
+    //     "yrke": "Anläggningsarbetare",
+    //     "lön": 30656
+    //   },
+    //   {
+    //     "yrke": "Barnskötare",
+    //     "lön": 26650
+    //   },
+    //   {
+    //     "yrke": "Barnsköterska",
+    //     "lön": 29336
+    //   },
+    //   {
+    //     "yrke": "Biträde, region",
+    //     "lön": 24389
+    //   },
+    //   {
+    //     "yrke": "Boendestödjare",
+    //     "lön": 27623
+    //   },
+    //   {
+    //     "yrke": "Brandman",
+    //     "lön": 29688
+    //   },
+    //   {
+    //     "yrke": "Elevassistent",
+    //     "lön": 26953
+    //   },
+    //   {
+    //     "yrke": "Fastighetsskötare",
+    //     "lön": 29129
+    //   },
+    //   {
+    //     "yrke": "Fordonsförare",
+    //     "lön": 28581
+    //   },
+    //   {
+    //     "yrke": "Fotvårdsspecialist",
+    //     "lön": 30406
+    //   },
+    //   {
+    //     "yrke": "Fritidsledare",
+    //     "lön": 29080
+    //   },
+    //   {
+    //     "yrke": "Förrådsarbetare",
+    //     "lön": 26934
+    //   },
+    //   {
+    //     "yrke": "Kock",
+    //     "lön": 28618
+    //   },
+    //   {
+    //     "yrke": "Lärarassistent",
+    //     "lön": 29301
+    //   },
+    //   {
+    //     "yrke": "Måltidspersonal",
+    //     "lön": 25593
+    //   },
+    //   {
+    //     "yrke": "Park- och trädgårdsarbetare",
+    //     "lön": 28347
+    //   },
+    //   {
+    //     "yrke": "Personlig assistent",
+    //     "lön": 26618
+    //   },
+    //   {
+    //     "yrke": "Renhållningsarbetare",
+    //     "lön": 28592
+    //   },
+    //   {
+    //     "yrke": "Skötare",
+    //     "lön": 28444
+    //   },
+    //   {
+    //     "yrke": "Städare/Lokalvårdare",
+    //     "lön": 25283
+    //   },
+    //   {
+    //     "yrke": "Stödassistent",
+    //     "lön": 27894
+    //   },
+    //   {
+    //     "yrke": "Stödpedagog",
+    //     "lön": 31549
+    //   },
+    //   {
+    //     "yrke": "Undersköterska",
+    //     "lön": 27944
+    //   },
+    //   {
+    //     "yrke": "Vaktmästare",
+    //     "lön": 27741
+    //   },
+    //   {
+    //     "yrke": "Vårdbiträde",
+    //     "lön": 24297
+    //   },
+    //   {
+    //     "yrke": "Vårdbiträde-funktionshinder",
+    //     "lön": 24978
+    //   }
+    // ]
 
     //close the popup by clicking the "x"
     close.addEventListener("click", function() {
@@ -522,6 +650,6 @@
     makeGraph(yrken);
   }
 
-
+  // return yrken;
 
 })(window);
