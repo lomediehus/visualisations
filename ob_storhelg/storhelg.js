@@ -608,10 +608,16 @@ function doStuff() {
         textnode = document.createTextNode("Ditt ob-tillägg blir " + nodecontent[i].replace(/\./, ",") + " kronor i timmen.");
       }
       node.appendChild(textnode)
+      // node.insertAdjacentElement('afterbegin', textnode)
+      // c('varför')
 
       //append child if there dividedResultHere has content ( is true )
       if (dividedResultHere[i]) {
-        dividedResultHere[i].appendChild(node);
+        c(dividedResultHere[i])
+        // dividedResultHere[i].appendChild(node);
+        dividedResultHere[i].prepend(node);
+
+
         $('#div0').hide().fadeIn();
  }
 
