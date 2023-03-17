@@ -1,0 +1,128 @@
+[
+  {
+    "Arbetsgivare": "Region Stockholm",
+    "Undersköterskor": "800 kronor dag/kväll, 1100 kronor natt/helg.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Uppsala",
+    "Undersköterskor": "135 kronor/timme för vardagspass. 160 kronor/timme för natt och helgpass.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Sörmland",
+    "Undersköterskor": "800 kronor extra för dag- och kvällstur lördag, söndag och midsommarafton. 1000 kronor för natt till lördag och natt till söndag.",
+    "Sjuksköterskor": "1050 kronor extra för dag och kvällstur lördag, söndag och midsommarafton. 1300 kronor för natt till lördag och natt till söndag.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Östergötland",
+    "Undersköterskor": "290% av timlönen men endast i vissa verksamheter.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Jönköpings län",
+    "Undersköterskor": "Nej.",
+    "Sjuksköterskor": "Nej.",
+    "Siffra": 1
+  },
+  {
+    "Arbetsgivare": "Region Kronoberg",
+    "Undersköterskor": "240% av timlönen (kvalificerad övertid hela passet).",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Kalmar län",
+    "Undersköterskor": "10 000 kronor extra för 4 helger med 24-28 timmars arbete fredag-söndag på respektive helg.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Blekinge",
+    "Undersköterskor": "240% av timlönen (kvalificerad övertid).",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Skåne",
+    "Undersköterskor": "160 kronor/timme extra.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Halland",
+    "Undersköterskor": "240% av lönen vid extra dagpass, 300% av lönen vid extra kvälls-, natt- och helgpass.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Västra götalandsregionen",
+    "Undersköterskor": "160 kronor/timme plus övertid.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Värmland",
+    "Undersköterskor": "Nej.",
+    "Sjuksköterskor": "Nej.",
+    "Siffra": 1
+  },
+  {
+    "Arbetsgivare": "Region Örebro län",
+    "Undersköterskor": "240% av timlönen (kvalificerad övertid) plus 100 kronor/timme.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Västmanland",
+    "Undersköterskor": "240% av timlönen (kvalificerad övertid).",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Dalarna",
+    "Undersköterskor": "1 100 kronor dag/kväll>6 tim, 1 600 kronor för natt samt övertid.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Gävleborg",
+    "Undersköterskor": "240% av timlönen (kvalificerad övertid).",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Västernorrland",
+    "Undersköterskor": "Nej.",
+    "Sjuksköterskor": "Extra timlön per arbetad timme.",
+    "Siffra": 1
+  },
+  {
+    "Arbetsgivare": "Region Jämtland Härjedalen",
+    "Undersköterskor": "375-1125 kronor/pass beroende på när det är.",
+    "Sjuksköterskor": "500-1500 kronor/pass beroende på när det är.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Västerbotten",
+    "Undersköterskor": "280% av timlönen.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Norrbotten",
+    "Undersköterskor": "900 kronor extra per pass vardag, kväll och natt samt 1 300 kronor extra per pass midsommarafton, lördag och söndag om passet är längre än 5 timmar plus kvalificerad övertid som är 290%.",
+    "Sjuksköterskor": "Samma som undersköterskor.",
+    "Siffra": 2
+  },
+  {
+    "Arbetsgivare": "Region Gotland",
+    "Undersköterskor": "Nej.",
+    "Sjuksköterskor": "Nej.",
+    "Siffra": 1
+  }
+]
