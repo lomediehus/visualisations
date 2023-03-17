@@ -1,0 +1,170 @@
+[
+  {
+    "Arbetsgivare": "Region Stockholm",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "5 000 kronor för flytt av en vecka, 12 000 kronor för flytt av två veckor vid Södertälje sjukhus. 10 000 kronor per vecka vid Norrtälje sjukhus. 5 000 kronor för flytt av vecka vid Södersjukhuset och Karolinska sjukhuset.",
+    "Villkor": "",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "5 000 kronor för flytt av en vecka, 12 000 kronor för flytt av två veckor vid Södertälje sjukhus. 10 000 kronor per vecka vid Norrtälje sjukhus. 5 000 kronor för flytt av vecka vid Södersjukhuset och Karolinska sjukhuset."
+  },
+  {
+    "Arbetsgivare": "Region Uppsala",
+    "Undersköterskor*": "Max 9 000 kronor per flyttad vecka.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Direktörsbeslut vid respektive förvaltning krävs.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "Max 9 000 kronor per flyttad vecka."
+  },
+  {
+    "Arbetsgivare": "Region Sörmland",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "Kvalificerad övertid för den veckan som semester avstås.",
+    "Villkor": "Frivillig överenskommelse med chef krävs om arbete på en semestervecka sker 17/6-11/8.",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "Kvalificerad övertid för den veckan som semester avstås."
+  },
+  {
+    "Arbetsgivare": "Region Östergötland",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "Nej",
+    "Villkor": "",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "Nej"
+  },
+  {
+    "Arbetsgivare": "Region Jönköpings län",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "Nej",
+    "Villkor": "",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "Nej"
+  },
+  {
+    "Arbetsgivare": "Region Kronoberg",
+    "Undersköterskor*": "1,5 x en månadslön om 4 veckor flyttas, 1,5 x 75 % av en månadslön om 3 veckor flyttas, 1,5 x 50 % av en månadslön om 2 veckor flyttas, 1,5 x 25 % av en månadslön om 1 vecka flyttas. Deltidsanställd som under minst två veckor ökar sin sysselsättningsgrad får också semesterersättning motsvarande den under samma antal veckor.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Behovet avgör, berörd verksamhetsområdeschef ska godkänna.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "1,5 x en månadslön om 4 veckor flyttas, 1,5 x 75 % av en månadslön om 3 veckor flyttas, 1,5 x 50 % av en månadslön om 2 veckor flyttas, 1,5 x 25 % av en månadslön om 1 vecka flyttas. Deltidsanställd som under minst två veckor ökar sin sysselsättningsgrad får också semesterersättning motsvarande den under samma antal veckor."
+  },
+  {
+    "Arbetsgivare": "Region Kalmar län",
+    "Undersköterskor*": "1,4 x en månadslön om 4 veckor flyttas, 1,4 x 75 % av månadslönen om 3 veckor flyttas, 1,4 x 50 % av månadslönen om 2 veckor flyttas,  1,4 x 25 % av månadslönen om 1 vecka flyttas, 1,4 x 1 månadslön/28 om en dag flyttas. Den som delar upp sin semester i 2 plus 2 veckor erbjuds 4000 kronor. Vissa kriterier ska då uppfyllas.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Gäller efter förfrågan av arbetsgivaren.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "1,4 x en månadslön om 4 veckor flyttas, 1,4 x 75 % av månadslönen om 3 veckor flyttas, 1,4 x 50 % av månadslönen om 2 veckor flyttas,  1,4 x 25 % av månadslönen om 1 vecka flyttas, 1,4 x 1 månadslön/28 om en dag flyttas. Den som delar upp sin semester i 2 plus 2 veckor erbjuds 4000 kronor. Vissa kriterier ska då uppfyllas."
+  },
+  {
+    "Arbetsgivare": "Region Blekinge",
+    "Undersköterskor*": "6 000 kronor vid flytt av en vecka, 7 000 kronor vid flytt av två veckor, 8 000 kronor vid flytt av tre veckor och 9 000 kronor vid flytt av 4 veckor.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Gäller veckorna 25-34. Arbetsgivaren ska fatta beslut.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "6 000 kronor vid flytt av en vecka, 7 000 kronor vid flytt av två veckor, 8 000 kronor vid flytt av tre veckor och 9 000 kronor vid flytt av 4 veckor."
+  },
+  {
+    "Arbetsgivare": "Region Skåne",
+    "Undersköterskor*": "6 000 kronor om max 15 betalda semesterdagar tas ut. 12 000 kronor om max 10 betalda semesterdagar tas ut.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Varje verksamhetschef avgör om ersättningen ska tillämpas och för vilka grupper. Gäller 10/6-1/9.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "6 000 kronor om max 15 betalda semesterdagar tas ut. 12 000 kronor om max 10 betalda semesterdagar tas ut."
+  },
+  {
+    "Arbetsgivare": "Region Halland",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "Nej",
+    "Villkor": "",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "Nej"
+  },
+  {
+    "Arbetsgivare": "Västra götalandsregionen",
+    "Undersköterskor*": "8 000 kronor per flyttad vecka. 1 600 kronor per flyttad dag.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Beslut om ersättning tas utifrån behov på olika förvaltningar.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "8 000 kronor per flyttad vecka. 1 600 kronor per flyttad dag."
+  },
+  {
+    "Arbetsgivare": "Region Värmland",
+    "Undersköterskor*": "10 000 kronor per flyttas vecka.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Max två veckor får flyttas.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "10 000 kronor per flyttad vecka."
+  },
+  {
+    "Arbetsgivare": "Region Örebro län",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "Nej",
+    "Villkor": "",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "Nej"
+  },
+  {
+    "Arbetsgivare": "Region Västmanland",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "14 000 kronor per vecka.",
+    "Villkor": "",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "14 000 kronor per vecka."
+  },
+  {
+    "Arbetsgivare": "Region Dalarna",
+    "Undersköterskor*": "9 000 kronor per flyttad vecka.",
+    "Sjuksköterskor**": "15000 kronor per flyttad vecka.",
+    "Villkor": "",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "15000 kronor per flyttad vecka."
+  },
+  {
+    "Arbetsgivare": "Region Gävleborg",
+    "Undersköterskor*": "15 000 kronor för max 3 veckors semester 1/6-31/8. Högst en av dessa tre veckor under vecka 26-32. 30 000 för max 2 veckors semester 1/6-31/8. Ingen av dessa två under veckor under vecka 26-32.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Verksamhetens behov avgör.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "15 000 kronor för max 3 veckors semester 1/6-31/8. Högst en av dessa tre veckor under vecka 26-32. 30 000 för max 2 veckors semester 1/6-31/8. Ingen av dessa två under veckor under vecka 26-32."
+  },
+  {
+    "Arbetsgivare": "Region Västernorrland",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "15 000 kronor per vecka om mindre än 4 veckors ledighet läggs under den egna verksamhetens semesterperiod.",
+    "Villkor": "",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "15 000 kronor per vecka om mindre än 4 veckors ledighet läggs under den egna verksamhetens semesterperiod."
+  },
+  {
+    "Arbetsgivare": "Region Jämtland Härjedalen",
+    "Undersköterskor*": "8 000 kronor per flyttad vecka.",
+    "Sjuksköterskor**": "8 000 kronor per flyttad vecka för sjuksköterskor med examen 2019. 12 000 kronor för sjuksköterska med examen innan 2019.",
+    "Villkor": "Gäller efter överenskommelse med chef om någon/några veckor flyttas från juni-augusti, max 4 veckor.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "8 000 kronor per flyttad vecka för sjuksköterskor med examen 2019. 12 000 kronor för sjuksköterska med examen innan 2019."
+  },
+  {
+    "Arbetsgivare": "Region Västerbotten",
+    "Undersköterskor*": "Timlön plus 180 % av timlön i tillägg.",
+    "Sjuksköterskor**": "Samma som undersköterskor.",
+    "Villkor": "Den som flyttar semester får inte automatiskt erbjudande om extra ersättning.",
+    "Siffra": 2,
+    "Sjuksköterskor_orginal": "Timlön plus 180 % av timlön i tillägg."
+  },
+  {
+    "Arbetsgivare": "Region Norrbotten",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "9 000 kronor per flyttad vecka.",
+    "Villkor": "Gäller dem som på arbetsgivarens förfrågan flyttar semester utanför perioden 1/6 - 31/8.",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "9 000 kronor per flyttad vecka."
+  },
+  {
+    "Arbetsgivare": "Region Gotland",
+    "Undersköterskor*": "Nej",
+    "Sjuksköterskor**": "10 000 kronor per flyttad vecka.",
+    "Villkor": "Gäller veckor som flyttas från 17/6-25/8 och som inte tas ut i jul. Gäller dygnet runt verksamhet.",
+    "Siffra": 1,
+    "Sjuksköterskor_orginal": "10 000 kronor per flyttad vecka."
+  }
+]

@@ -1,0 +1,94 @@
+body {
+background-color: #fcfaf5;
+}
+
+div#chart {
+	padding-top: 20px;
+}
+	    .main-content {
+	      width: 442px;
+	      margin: 0 auto;
+	    }
+	    .map {
+	      display: inline-block;
+	      margin: 0 auto;
+	      /* overflow: auto; */
+	    }
+
+			.q1{fill:#730700}
+			.q2{fill:#74b2b2}
+			.q1{fill:#74b2b2}
+			.q2{fill:#f5cc00}
+			.q3{fill:#f5cc00}
+
+			#searchresult {
+
+			}
+
+			h3 {
+				margin: 2px 0px 2px 0px;
+			}
+
+
+
+			/*.Paired .q0-3{fill:rgb(166,206,227)} .Paired .q1-3{fill:rgb(31,120,180)} .Paired .q2-3{fill:rgb(178,223,138)}*/
+
+			.overlay {
+				fill: none;
+				pointer-events: all;
+			}
+
+		.label {
+		  font-weight: bold;
+		  text-anchor: middle;
+		  cursor: default;
+			font-size: 0.3em;
+			font-family: sans-serif;
+		}
+
+		div.tooltip {
+		  position: absolute;
+		  text-align: left;
+			/* font-family: sans-serif; */
+		  padding: 4px;
+		  background: #fff;
+		  border: 0px;
+		  pointer-events: none;
+		}
+
+		.fet {
+			font-weight: bold;
+		}
+
+		.versal {
+			text-transform: uppercase;
+		}
+
+
+		.loader {
+		    border: 16px solid #f3f3f3; /* Light grey */
+		    border-top: 16px solid #3498db; /* Blue */
+		    border-radius: 50%;
+		    width: 60px;
+		    height: 60px;
+		    animation: spin 2s linear infinite;
+		}
+
+		#loadercontainer {
+			  position: relative;
+			  top: 100px;
+			  width: 60px;
+			  left: 80px;
+		}
+
+
+		/* * Safari * */
+		@-webkit-keyframes spin {
+		  0% { -webkit-transform: rotate(0deg); }
+		  100% { -webkit-transform: rotate(360deg); }
+		}
+
+		@keyframes spin {
+		    0% { transform: rotate(0deg); }
+		    100% { transform: rotate(360deg); }
+		}
