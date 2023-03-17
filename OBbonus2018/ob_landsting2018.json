@@ -1,0 +1,92 @@
+[
+
+  {
+    "landsting": "Stockholms läns landsting",
+    "fritext": "På S:t Görans sjukhus får sjuksköterskor och undersköterskor samma bonus. På Södertälje sjukhus, Södersjukhuset, Norrtälje sjukhus, Danderyds sjukhus och Karolinska universitetssjukhuset får endast sjuksköterskor bonus. Karolinska har också andra arbets- och ersättningsmodeller och i vissa av dem ingår både sjuksköterskor och undersköterskor.",
+    "sifferniva": 1
+  },
+  {
+    "landsting": "Region Uppsala",
+    "fritext": "Endast sjuksköterskor får ob-bonus.",
+    "sifferniva": 1
+  },{
+    "landsting": "Landstinget Sörmland",
+    "fritext": "Sjuksköterskor och undersköterskor får samma ob-bonus.",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Östergötland",
+    "fritext": "Endast sjuksköterskor får ob-bonus, men bonusen tas bort vid årsskiftet.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Jönköpings län",
+    "fritext": "Sjuksköterskor och undersköterskor får samma ob-bonus.",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Kronoberg",
+    "fritext": "Tidigare gällde bonusen enbart sjuksköterskor vilket ledde till protester och namninsamlingar. Sedan några veckor tillbaka gäller bonusen alla yrkesgrupper i regionen som arbetar på obekväm tid. Från 1 september får undersköterskor, kökspersonal och vaktmästare också 60-procents höjning av ob-ersättningen.",
+    "sifferniva": 2
+  },{
+    "landsting": "Landstinget i Kalmar län",
+    "fritext": "Sjuksköterskor och undersköterskor får samma ob-bonus.",
+    "sifferniva": 2
+  },{
+    "landsting": "Landstinget Blekinge",
+    "fritext": "Ingen får extra utöver kollektivavtalad ob.",
+    "sifferniva": 3
+  },{
+    "landsting": "Region Skåne",
+    "fritext": "Ingen får extra utöver kollektivavtalad ob.",
+    "sifferniva": 3
+  },{
+    "landsting": "Region Halland",
+    "fritext": "Sjuksköterskor och barnmorskor får dubbelt natt-ob samtidigt som undersköterskor, skötare, ambulanssjukvårdare och barnskötare bara höjer sitt ob med 50 procent när de jobbar natt. Ersättningen för helger och storhelger är samma för alla yrkesgrupper med 25 procents tillägg.",
+    "sifferniva": 1
+  },{
+    "landsting": "Västra Götalandsregionen",
+    "fritext": "Sjuksköterskor och undersköterskor får samma ob-bonus.",
+    "sifferniva": 2
+  },{
+    "landsting": "Landstinget i Värmland",
+    "fritext": "Värmland har en bonusmodell som enbart gäller sjuksköterskegruppen. För sjuksköterskor och undersköterskor som endast arbetar natt utgår dock samma bonus.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Örebro län",
+    "fritext": "Endast sjuksköterskor får ob-bonus.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Västmanland",
+    "fritext": "Ingen får extra utöver kollektivavtalad ob.",
+    "sifferniva": 3
+  },{
+    "landsting": "Landstinget Dalarna",
+    "fritext": "Endast sjuksköterskor får ob-bonus.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Gävleborg",
+    "fritext": "Sjuksköterskor och undersköterskor får samma ob-bonus.",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Västernorrland",
+    "fritext": "Ingen får extra utöver kollektivavtalad ob.",
+    "sifferniva": 3
+  },{
+    "landsting": "Region Jämtland Härjedalen",
+    "fritext": "Sjuksköterskor och undersköterskor får samma ob-bonus.",
+    "sifferniva": 2
+  },{
+    "landsting": "Västerbottens läns landsting",
+    "fritext": "Sjuksköterskor och undersköterskor får samma ob-bonus.",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Norrbotten",
+    "fritext": "Från 1 oktober har Norrbotten en ”stimulansåtgärd” som ger 2500 kronor i lönetillägg per månad för sjuksköterskor och barnmorskor i dygnet runt-verksamhet.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Gotland",
+    "fritext": "Ingen får extra utöver kollektivavtalad ob.",
+    "sifferniva": 3
+  }
+
+
+
+]
