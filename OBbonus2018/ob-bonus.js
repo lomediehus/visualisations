@@ -123,6 +123,7 @@
 
 				console.log('slutet av draw-funktionen');
 				document.getElementById('loader').style.display = "none";
+				informHeight();
 
 
 			};
