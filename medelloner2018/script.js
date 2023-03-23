@@ -108,6 +108,7 @@ $(document).ready(function() {
       }
 
     });
+    informHeight();
 
 
 });
@@ -335,6 +336,7 @@ function makeGraph(data1) {
           //using regex to replace underscore with space
           d.yrke = d.yrke.replace(/_/g, ' ');
           return d.yrke; });
+
   });
 }
 
