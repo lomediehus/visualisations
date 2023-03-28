@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>ValtestV2</title>
+    <!-- <link rel="stylesheet" type="text/css" href="partikollen.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<script src="jquery-3.1.1.min.js"></script>
+
+
+<body>
+  <div id="content">
+    <div id="topplist">
+      <h1>Partikollen<span>arbetsliv</span></h1>
+    </div>
+    <div class="progress">1</div><div class="progress">2</div><div class="progress">3</div><div class="progress">4</div><div class="progress">5</div><div class="progress">6</div><div class="progress">7</div><div class="progress">8</div><div class="progress">9</div><div class="progress">10</div><div class="progress">11</div>
+
+
+    <div id="alertboxwrapper">
+      <div id="alertbox" class="alert">
+        <p>Du måste välja ett av alternativen!</p>
+        <button id="alertboxbutton">OK</button>
+        <p></p>
+      </div>
+  </div>
+
+    <div id="inledning">
+
+
+      <h2>Vilket parti tycker som du?</h2>
+      <p>Ta ställning till elva påståenden och se vilka partier som ligger närmast dina åsikter i frågor som rör arbetslivet, som a-kassa, arbetsvillkor, anställningstrygghet och välfärd.</p>
+      <p>När du gjort testet kan du också läsa mer detaljerade svar från partierna på de olika frågorna. Svaren baseras på en enkät som partierna besvarat.</p>
+      <p>Du är helt anonym när du gör testet.</p>
+
+    </div>
+    <div id="fragewrapper">
+
+        <div id="fragediv">
+          <h3 id="fragerubrik" class="uppercase">Frågerubrik</h3>
+          <p id="fragep" class="notopmargin">Själva frågan här</p>
+
+          <!-- <h3 class="input">Svarsalternativ</h3> -->
+          <!-- When one button is clicked, all other buttons with the same name become unchecked. Therefore they must have the same name -->
+          <input type="radio" name="alt" value="alt1" id="alt1"><label for="alt1" id="alt1label">alt1</label><br>
+          <input type="radio" name="alt" value="alt2"id="alt2"><label for="alt2" id="alt2label">alt2</label><br>
+          <input type="radio" name="alt" value="alt3" id="alt3"><label for="alt3" id="alt3label">alt3</label><br>
+          
+          <h3 id="bakgrund" class="uppercase">Bakgrund</h3>
+          <p id="forklaringp" class="notopmargin">Förklaringen här</p>
+
+        </div>
+        <div class="centeralign">
+        <button id="nastafraga">Starta testet</button>
+      </div>
+    </div>
+
+
+<p id="merinfo">?</p>
+
+  </div>
+
+<script src="fragor15.js"></script>
+
+
+<script src="partikollen.js"></script>
+
+<script src="script.js"></script>
+
+
+  
+
+</body>

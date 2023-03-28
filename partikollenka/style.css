@@ -1,0 +1,312 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0px;
+
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+input[type="radio"] {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+button {
+  background-color: #CAE8F5;
+  min-height: 30px;
+  border: none;
+  border-radius : 10px;
+  -moz-border-radius : 10px;
+  -webkit-border-radius : 10px;
+  font-size: 1.2em;
+  padding: 8px;
+   box-shadow: 2px 2px #888888;
+}
+
+p {
+  font-weight: 500;
+}
+
+p.notopmargin {
+  margin-top: -10px;
+}
+
+p.smalltopmargin {
+  margin-top: -5px;
+}
+
+p.collapsed {
+  height: 1em;
+  margin-bottom: 0px;
+  max-width: 400px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+p.expanded {
+  height: auto;
+  margin-bottom: 0px;
+  max-width: 400px;
+  display: block;
+  white-space: normal;
+  overflow: visible;
+}
+
+label {
+  font-weight: bold;
+}
+
+h3.uppercase {
+  text-transform: uppercase;
+}
+
+h3#fragerubrik {
+  padding-top: 20px;
+}
+
+h3#bakgrund {
+  padding-top: 0px;
+}
+
+.progress {
+  width: 9.059%;
+  height: 20px;
+  /* To put the right border inside of div instead of outside */
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  display: none;
+  background-color: #CAE8F5;
+  border-right: 1px solid #E6E7E8;
+  text-align: center;
+  float: left;
+  padding-top: 2px;
+  color: grey;
+}
+
+
+
+
+#content {
+  max-width: 100%;
+  position: relative;
+  background-color: #99C4C7;
+  color: #231F20;
+  min-height: 600px;
+  background-image: url("bakgrundspilar.png"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/bakgrundspilar.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center 260px;
+
+}
+
+#content p {
+    font-size: 1.2em;
+}
+
+
+
+#inledning {
+  padding: 10px;
+}
+
+#fragewrapper {
+  padding: 10px;
+}
+
+#fragediv {
+  display: none;
+  clear: both;
+}
+
+#fragediv * { /*selects all child elements of fragediv*/
+}
+
+#topplist {
+  font-family: sans-serif;
+  font-size: 1em;
+  position: relative;
+  padding-top: 4px;
+  padding-left: 3px;
+  padding-bottom: 5px;
+  height: 36px;
+  top: 0px;
+  background: linear-gradient(#7FAEB4, #D3E3E4)
+}
+
+#topplist h1 {
+  color: #231F20;
+}
+
+#topplist span {
+  /* color: #F1F2F2; */
+  color: #fffff0;
+  padding-left: 5px;
+}
+
+#nastafraga {
+  /* position: absolute; */
+  /* width: 100px; */
+  /* top: 480px; */
+}
+
+#fullsvarwrapper {
+  /* display: none; */
+  visibility: hidden;
+
+
+  float: right;
+  width: 85%;
+  max-width: 400px;
+  min-height: 550px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #D3E3E4;
+  color: #231F20;
+  /* opacity: 0.8; */
+  position: absolute;
+  /* margin: auto; */
+  left: 5%;
+  top: 20px;
+  z-index: 5;
+  overflow: scroll;
+    box-shadow: 3px 3px 3px grey;
+}
+
+#fullsvar {
+  position: absolute;
+  top: 20px;
+  padding-right: 3px;
+}
+
+div.kortfraga {
+  width: 23%;
+  border: 1px solid white;
+  margin: 2px;
+  color: #231F20;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 70px;
+}
+
+
+
+img.closex {
+  width: 20px;
+}
+
+img.closex:hover {
+  opacity: 0.5;
+}
+
+
+
+div.close {
+  float: right;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 2px;
+  right: 2px;
+  z-index: 10;
+}
+
+div.centeralign {
+  display: block;
+
+  width: 150px;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.parti {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+span.partinamn {
+  font-weight: bold;
+}
+
+#alertboxwrapper {
+  position: fixed;
+  float: left;
+  top: -56px;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  display: none;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#alertbox {
+  position: relative;
+  /* top: 150px; */
+  top: 30%;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #D3E3E4;
+  color: #231F20;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
+  /* opacity: 0.8; */
+}
+
+#alertbox p {
+  padding: 10px;
+  margin-bottom: 0px;
+
+}
+
+#alertbox button {
+  display: block;
+  margin: 0 auto;
+  }
+
+.alert {
+  background-color: red;
+}
+
+#merinfo {
+  color: #0000EE;
+  opacity: 0.8;
+  /* font-size: 0.8em; */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  /* padding-bottom: 0px; */
+  margin-bottom: 0px;
+}
+
+#merinfo:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+    #content {
+      background-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+  p.expanded {
+    max-width: 280px;
+  }
+  p.collapsed {
+    max-width: 280px;
+  }
+
+}
