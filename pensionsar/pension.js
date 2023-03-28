@@ -257,15 +257,6 @@ const filearray = [
 var p1 = document.getElementById('result1').firstElementChild.nextElementSibling;
 var p2 = document.getElementById('result2').firstElementChild.nextElementSibling;
 
-
-
-// fetch('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pensionstabell.json')
-//   .then(blob => blob.json())
-//   .then(data => filearray.push(...data))
-
-
-
-
 const valjar = document.getElementById('valjar');
 
 valjar.addEventListener('change', function() {
