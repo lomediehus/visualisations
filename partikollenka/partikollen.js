@@ -312,7 +312,7 @@ document.getElementById('merinfo').addEventListener('click', function() {
   var merinfotext = "<p>Partikollen baseras på en enkät från LO Mediehus till riksdagspartierna.</p>"
   + "<p>I vissa fall har partierna själva svarat ”ja” eller ”nej”, i övriga fall har vi efter analys av svaren hänfört dem till kategorierna ”ja”, ”nej” respektive ”vet ej”.</p>"
   + "<p>När användaren besvarar frågorna ges för varje svar ett poäng till det parti vars svar stämmer överens med de egna svaren. När användaren besvarat alla frågor får hen se det parti/de partier som fått flest poäng.</p>"
-  + '<a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/fragor15.js"> Hela datafilen finns att se här:</a>';
+  + '<a href="fragor15.js"> Hela datafilen finns att se här:</a>';
 
   // document.getElementById('fullsvar').innerHTML += merinfotext;
   fullsvar.innerHTML += merinfotext;
