@@ -14,7 +14,6 @@ const c = console.log.bind(document);
 
 //read data from files into arrays
 $.ajax({
-        // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal.json",
         url: "OBavtal.json",
         // url: "test2.json",
 
@@ -24,7 +23,6 @@ $.ajax({
             filearray.push(...data)
 
             $.ajax({
-                    // url: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/OBavtal_tillagg.json",
                     url: "OBavtal_tillagg.json",
                     dataType: "json",
                     mimeType: "application/json",
@@ -152,18 +150,18 @@ function doStuff() {
   if (date.getTime() > nyarsdatum.getTime()) {
     //if current date is also after nyar
     if (date.getTime() > pingstdatum.getTime()) {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
+      document.getElementById("helgbild").src = 'pingst.svg';
       goActive(helgknapp5);
       helgnr = "5";
     }
     else {
-      document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+      document.getElementById("helgbild").src = 'pask.svg';
       goActive(helgknapp4);
       helgnr = "4";
     }
   }
   else {
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/jul.svg';
+    document.getElementById("helgbild").src = 'jul.svg';
     goActive(helgknapp1);
     helgnr = "1";
   }
@@ -174,7 +172,7 @@ function doStuff() {
     // NEW change source of helgnr
     helgnr = "1";
     helgknapp(this);
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/jul.svg';
+    document.getElementById("helgbild").src = 'jul.svg';
 
   });
 
@@ -182,19 +180,19 @@ function doStuff() {
     // NEW change source of helgnr
     helgnr = "2";
     helgknapp(this);
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/nyar.svg';
+    document.getElementById("helgbild").src = 'nyar.svg';
   });
 
   helgknapp3.addEventListener('click', function(){
     helgnr = "3";
     helgknapp(this);
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/trettonhelg.svg';
+    document.getElementById("helgbild").src = 'trettonhelg.svg';
   });
 
   helgknapp4.addEventListener('click', function(){
     helgnr = "4"
     helgknapp(this);
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pask.svg';
+    document.getElementById("helgbild").src = 'pask.svg';
     // console.log("bildnamn " + helgbild.nameProp)
 
   });
@@ -202,13 +200,13 @@ function doStuff() {
   helgknapp5.addEventListener('click', function(){
     helgnr = "5";
     helgknapp(this);
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/pingst.svg';
+    document.getElementById("helgbild").src = 'pingst.svg';
   });
 
   helgknapp6.addEventListener('click', function(){
     helgnr = "6";
     helgknapp(this);
-    document.getElementById("helgbild").src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/midsommar.svg';
+    document.getElementById("helgbild").src = 'midsommar.svg';
   });
 
   //function for actions of the helgknapps
