@@ -62,7 +62,6 @@ var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta")
 
 
 //read the file of cities
-// d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/protester_orter.json", function(error, data)
 d3.json("tillbud.json", function(error, data)
 {
   jsondata = data;
@@ -104,7 +103,6 @@ d3.json("tillbud.json", function(error, data)
 
 
 // d3.json("sverige.geojson",function(error,geodata) {
-// d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/sverige.geojson",function(error,geodata) {
 d3.json("sverige.geojson",function(error,geodata) {
 
 
@@ -173,7 +171,7 @@ function clicked(d,i,data) {
   <div id="kartpopuptext" class="u-textMeta">varav ${kommunalcounter} från kommunal verksamhet och ${privatcounter} från privat.</div>
 
 
-  <div class="close"><img id="closex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
+  <div class="close"><img id="closex" class="closex" src="closex.png"></img></div>
   `
 
   kartpopup.innerHTML = markup;
