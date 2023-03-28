@@ -101,7 +101,7 @@ h3#bakgrund {
   background-color: #99C4C7;
   color: #231F20;
   min-height: 600px;
-  background-image: url("bakgrundspilar.png"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/bakgrundspilar.png");
+  background-image: url("bakgrundspilar.png");
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: center 260px;
