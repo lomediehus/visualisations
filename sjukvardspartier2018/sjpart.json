@@ -1,0 +1,106 @@
+[
+
+  {
+    "landsting": "Stockholms läns landsting",
+    "sifferniva": 2
+  },
+  {
+    "landsting": "Region Uppsala",
+    "sifferniva": 2
+  },{
+    "landsting": "Landstinget Sörmland",
+    "partinamn": "Vård för pengarna",
+    "ompartiet": "Grundades 2013 i protest mot dåligt med resurser till sjukvården. Mer pengar ska gå till vård och mindre till administration och politisk styrning.",
+    "trend": "&#8599;",
+    "mandat": "15 av 79",
+    "rolleftervalet": "Näst största parti. Styr med Centern och Socialdemokraterna.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Östergötland",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Jönköpings län",
+    "partinamn": "Bevara akutsjukhusen",
+    "ompartiet": "Grundades 2018 för att bevara tre akutsjukhus i Jönköpings län.",
+    "trend": "-",
+    "mandat": "7 av 81",
+    "rolleftervalet": "Oklart vid tiden för publicering.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Kronoberg",
+    "sifferniva": 2
+  },{
+    "landsting": "Landstinget i Kalmar län",
+    "sifferniva": 2
+  },{
+    "landsting": "Landstinget Blekinge",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Skåne",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Halland",
+    "sifferniva": 2
+  },{
+    "landsting": "Västra Götalandsregionen",
+    "sifferniva": 2
+  },{
+    "landsting": "Landstinget i Värmland",
+    "partinamn": "Sjukvårdspartiet i Värmland",
+    "ompartiet": "Grundades 2002 inför hot om sjukhusnedläggning.",
+    "trend": "&#8594;",
+    "mandat": "6 av 81",
+    "rolleftervalet": "Styr med allianspartierna och Miljöpartiet.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Örebro län",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Västmanland",
+    "sifferniva": 2
+  },{
+    "landsting": "Landstinget Dalarna",
+    "partinamn": "Dalarnas sjukvårdsparti",
+    "ompartiet": "Grundades 2006 inför nedläggning av sjukhusen i Avesta och Ludvika samt neddragningar på Mora lasarett.",
+    "trend": "&#8599;",
+    "mandat": "6 av 83",
+    "rolleftervalet": "Styr med allianspartierna och Miljöpartiet.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Gävleborg",
+    "partinamn": "Sjukvårdspartiet Gävleborg",
+    "ompartiet": "Grundades 2001 efter att sjukhuset och förlossningsvården i Bollnäs hotats.",
+    "trend": "&#8594;",
+    "mandat": "5 av 75",
+    "rolleftervalet": "Oklart vid tiden för publicering.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Västernorrland",
+    "partinamn": "Sjukvårdspartiet Västernorrland",
+    "ompartiet": "Bildades 1994 i protest mot att sjukhuset i Bollnäs skulle läggas ner.",
+    "trend": "&#8594;",
+    "mandat": "7 av 77",
+    "rolleftervalet": "Oklart vid tiden för publicering.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Jämtland Härjedalen",
+    "sifferniva": 2
+  },{
+    "landsting": "Västerbottens läns landsting",
+    "sifferniva": 2
+  },{
+    "landsting": "Region Norrbotten",
+    "partinamn": "Sjukvårdspartiet",
+    "ompartiet": "Bildades 1994 i protest mot att vården skulle centraliseras till Sunderbyns sjukhus. I opposition fram till 2018.",
+    "trend": "&#8599;",
+    "mandat": "27 av 71",
+    "rolleftervalet": "Största parti. Styr med C och M.",
+    "sifferniva": 1
+  },{
+    "landsting": "Region Gotland",
+    "sifferniva": 2
+  }
+
+
+
+]
