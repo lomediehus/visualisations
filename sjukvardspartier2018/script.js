@@ -115,9 +115,11 @@
 						// 	.style("opacity", 0);
 						tooltip.style("opacity", 0);
 				}
-
-				console.log('slutet av draw-funktionen');
+				informHeight()
+				console.log('informed');
+				
 				document.getElementById('loader').style.display = "none";
+				
 
 
 			};
