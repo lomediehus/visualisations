@@ -61,6 +61,7 @@ function makeDivs() {
     // textnode = fragor[]
     klickDivs(div, fragor, i);
   }
+  informHeight();
 
 };
 
@@ -136,7 +137,7 @@ function createFullsvarwrapper() {
     document.getElementById("fullsvarwrapper").remove();
   }
   inledning.appendChild(fullsvarwrapper);
-  fullsvarwrapper.innerHTML += '<div class="close"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png" onerror=this.src="closex.png" id="closex" class="closex"></div><div id="fullsvar"></div>';
+  fullsvarwrapper.innerHTML += '<div class="close"><img src="closex.png" onerror=this.src="closex.png" id="closex" class="closex"></div><div id="fullsvar"></div>';
 }
 
 uncheck();
