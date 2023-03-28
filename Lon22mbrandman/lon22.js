@@ -3,9 +3,7 @@
 
 
 
-// var kommunloner = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/kommunloner20.json";
 var kommunloner = "kommunloner22.json";
-// var regionloner = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/regionloner20.json";
 var regionloner = "regionloner22.json";
 var sokvagGeografi = "SverigesLan2019.geojson";
 
