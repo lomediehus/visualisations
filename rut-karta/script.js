@@ -168,7 +168,6 @@ btn.style.visibility = "hidden";
 // rubbe.style.opacity = 0;
 // $(rubbe).fadeTo(500,1);
 rubbe.innerHTML = "Rutarbetare och flyktingar i Sverige";
-console.log('infodiv ' + infodiv.offsetHeight + 'irutan ' + irutan.offsetHeight)
 
 
 
@@ -211,9 +210,7 @@ var zoom = d3.behavior.zoom()
 svg.call(zoom);
 
 d3.json("custom.geo.json",function(error,geodata) {
-// d3.json("custom.geo.json",function(error,geodata) {
 
-// d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/worldmap.geojson",function(error,geodata) {
   if (error) return console.log(error); //unknown error, check the console
 
   //Create a path for each map feature in the data
@@ -329,14 +326,7 @@ d3.json("custom.geo.json",function(error,geodata) {
       }
 
     function farg2() {
-      // var rubbe = document.getElementById("rubbe")
-      // rubbe.innerHTML = "";
-      //
-      // // $(rubbe).fadeOut(5);
-      // rubbe.style.opacity = 0;
-      // $(rubbe).fadeTo(500,1);
-      // rubbe.innerHTML = "…och de här tio länderna kommer flest flyktingar ifrån";
-      // infodiv.style.height = irutan.offsetHeight + 10 + "px";
+
       fade.innerHTML = "<h2 id='irutan' class='u-textMeta'>2. …och de här tio länderna kommer flest flyktingar ifrån</h2>";
       infodiv.style.height = rutan.offsetHeight + 15 + "px";
 
@@ -346,7 +336,6 @@ d3.json("custom.geo.json",function(error,geodata) {
 
 
       features.selectAll("path")
-      // .attr("class", "common")
       .transition()
         .duration(500)
         .attr("fill", function(d) {
@@ -382,16 +371,7 @@ d3.json("custom.geo.json",function(error,geodata) {
 
 
       function farg3() {
-        // var rubbe = document.getElementById("rubbe")
-        // rubbe.innerHTML = "";
-        //
-        // // $(rubbe).fadeOut(5);
-        // rubbe.style.opacity = 0;
-        //
-        // $(rubbe).fadeTo(500,1);
-        // rubbe.innerHTML = "Bara Irak och Eritrea finns i båda grupperna";
 
-        // infodiv.style.height = irutan.offsetHeight + 10 + "px";
         fade.innerHTML = "<h2 id='irutan' class='u-textMeta'>3. Bara Irak och Eritrea finns i båda grupperna</h2>";
         infodiv.style.height = rutan.offsetHeight + 15 + "px";
 
@@ -455,8 +435,6 @@ d3.json("custom.geo.json",function(error,geodata) {
 };
 
 draw();
-
-
 
 
 // Add optional onClick events for features here
