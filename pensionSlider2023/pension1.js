@@ -1,3 +1,15 @@
+//make it possible to console log with c(tobelogged)
+const c = console.log.bind(document);
+
+
+//Get one favicon for localhost and another for github pages
+let host = window.location.host;
+if (host.includes("github")) {
+  document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+}
+
+
+
 var slider = document.getElementById("myRange");
 var deltidslon = document.getElementById('lon');
 var minlon = 24000;
@@ -6,7 +18,9 @@ var procent = document.getElementById('procent');
 var semerknapp = document.getElementById('semer');
 var forutsattningar = document.getElementById('forutsattningar');
 // output.innerHTML = slider.value + "%"; // Display the default slider value
-let output = document.getElementsByTagName("output")[0];
+// let output = document.getElementsByTagName("output")[0];
+let output = document.getElementById("slidecontainer").querySelector("output")
+
 
 var siffror = {
   100: {
@@ -121,66 +135,53 @@ procent.value = Math.round((helpension.value/deltidslon.value)*100) + "%";
 
 
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-    helpension.value = siffror[this.value].Premiepension + siffror[this.value].Inkomstpension + siffror[this.value].Garantipension + siffror[this.value].Tjänstepension;
-    deltidslon.value = (24000 * this.value) / 100;
-    procent.value = Math.round((helpension.value/deltidslon.value)*100) + "%";
-    console.log(slider.value)
-    console.log(this.value)
-    output.innerHTML = slider.value + "%";
-
-
-}
-
-
-
-
-// Function to present slider value in bubble that follows slider
-// https://css-tricks.com/value-bubbles-for-range-inputs/ (Dave Olsens vanilla js adaptation)
-
 function modifyOffset() {
-    var el, newPoint, newPlace, offset, siblings, k;
-    width    = this.offsetWidth;
-    newPoint = (this.value - this.getAttribute("min")) / (this.getAttribute("max") - this.getAttribute("min"));
-    // was originally -1, changed to -5 to push starting point to left
-    offset   = -4;
-    if (newPoint < 0) { newPlace = 0;  }
-    else if (newPoint > 1) { newPlace = width; }
-    else { newPlace = width * newPoint + offset; offset -= newPoint;}
-    siblings = this.parentNode.childNodes;
-    for (var i = 0; i < siblings.length; i++) {
-        sibling = siblings[i];
-        if (sibling.id == this.id) { k = true; }
-        if ((k == true) && (sibling.nodeName == "OUTPUT")) {
-            outputTag = sibling;
-        }
-    }
-    outputTag.style.left       = newPlace + "px";
-    outputTag.style.marginLeft = offset + "%";
-    outputTag.innerHTML        = this.value + "%";
+  var el, newPoint, newPlace, offset, siblings, k;
+  width    = this.offsetWidth;
+  newPoint = (this.value - this.getAttribute("min")) / (this.getAttribute("max") - this.getAttribute("min"));
+  // was originally -1, changed to -5 to push starting point to left
+  offset   = -4;
+  if (newPoint < 0) { newPlace = 0;  }
+  else if (newPoint > 1) { newPlace = width; }
+  else { newPlace = width * newPoint + offset; offset -= newPoint;}
+  siblings = this.parentNode.childNodes;
+  for (var i = 0; i < siblings.length; i++) {
+      sibling = siblings[i];
+      if (sibling.id == this.id) { k = true; }
+      if ((k == true) && (sibling.nodeName == "OUTPUT")) {
+          outputTag = sibling;
+      }
+  }
+  outputTag.style.left       = newPlace + "px";
+  outputTag.style.marginLeft = offset + "%";
+  outputTag.innerHTML        = slider.value + "%";
+
+
+  helpension.value = siffror[this.value].Premiepension + siffror[this.value].Inkomstpension + siffror[this.value].Garantipension + siffror[this.value].Tjänstepension;
+  deltidslon.value = (24000 * this.value) / 100;
+  procent.value = Math.round((helpension.value/deltidslon.value)*100) + "%";
+  output.innerHTML = slider.value + "%";
 }
+
 
 function modifyInputs() {
 
-    var inputs = document.getElementsByTagName("input");
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].getAttribute("type") == "range") {
-            inputs[i].onchange = modifyOffset;
+         slider.oninput = modifyOffset;
 
-            // the following taken from http://stackoverflow.com/questions/2856513/trigger-onchange-event-manually
-            if ("fireEvent" in inputs[i]) {
-                inputs[i].fireEvent("onchange");
-            } else {
-                var evt = document.createEvent("HTMLEvents");
-                evt.initEvent("change", false, true);
-                inputs[i].dispatchEvent(evt);
-            }
-        }
-    }
+         const event = new Event("input");
+         slider.addEventListener(
+          "input",
+          (e) => {
+          },
+          false
+          );
+          slider.dispatchEvent(event);
+
 }
 
 modifyInputs();
+
+informHeight();
 
 semer.addEventListener("click", function() {
   if (forutsattningar.style.display === "block") {
@@ -191,5 +192,7 @@ semer.addEventListener("click", function() {
     forutsattningar.style.display = "block";
     semer.innerHTML = "Dölj kommentaren";
   }
+
+informHeight();
 
 } )
