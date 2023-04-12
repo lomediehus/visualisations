@@ -19,7 +19,13 @@ var semerknapp = document.getElementById('semer');
 var forutsattningar = document.getElementById('forutsattningar');
 // output.innerHTML = slider.value + "%"; // Display the default slider value
 // let output = document.getElementsByTagName("output")[0];
-let output = document.getElementById("slidecontainer").querySelector("output")
+let output = document.getElementById("slidecontainer").querySelector("output");
+var close = document.getElementById("closex");
+
+
+
+
+
 
 
 var siffror = {
@@ -202,14 +208,23 @@ function modifyInputs() {
 // informHeight();
 
 semer.addEventListener("click", function() {
-  if (forutsattningar.style.display === "block") {
-      forutsattningar.style.display = "none";
+  if (popup.style.display === "block") {
+      popup.style.display = "none";
       semer.innerHTML = "Om uträkningen";
   }
   else {
-    forutsattningar.style.display = "block";
+    popup.style.display = "block";
     semer.innerHTML = "Dölj kommentaren";
   }
+
+//Give "x" in popup closing function
+close.addEventListener("click", function() {
+  popup.style.display = "none";
+  semer.innerHTML = "Om uträkningen";
+
+  // overlay.style.display = "none";
+})
+
 
 informHeight();
 
@@ -230,6 +245,8 @@ informHeight();
 //   }
 // ]
 
+
+//setting local variables, used on y-axis
 locale = d3.formatLocale({
   decimal: ",",
   thousands: "\u00a0",
@@ -242,14 +259,14 @@ locale = d3.formatLocale({
 
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 90, left: 60},
+var margin = {top: 10, right: 30, bottom: 60, left: 60},
   // width = 460 - margin.left - margin.right,
   width = 350 - margin.left - margin.right,
 
-  height = 400 - margin.top - margin.bottom;
+  height = 350 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
+var svg = d3.select("#diagramdiv")
 .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -283,7 +300,7 @@ svg.append("g")
 
 // Add Y axis
 var y = d3.scaleLinear()
-.domain([0, 26000])
+.domain([0, 27000])
 .range([ height, 0]);
 svg.append("g")
 .call(d3.axisLeft(y)

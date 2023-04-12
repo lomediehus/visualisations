@@ -209,3 +209,43 @@ form {
   width: 200px;
   margin: 0 auto;
 } */
+
+#popup {
+  display: none;
+  width: 300px;
+  /* min-width: 250px; */
+  max-width: 450px;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  left: 5%;
+  top: 80px;
+  z-index: 10;
+}
+
+#popup h2 {
+  padding-top: 10px;;
+
+}
+
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 30px;
+  height: 30px;
+}
+
+div.close {
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: fit-content;
+  height: fit-content;
+}
