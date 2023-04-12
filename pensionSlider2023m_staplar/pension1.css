@@ -120,7 +120,7 @@ div#kommentar {
     -webkit-appearance: none;  /* Override default CSS styles*/
     margin-left: 0px;
     /*appearance: none;*/
-    width: 320px; /* Full-width */
+    width: 300px; /* Full-width */
     height: 30px; /* Specified height */
     background: #FDFDFD;
     box-shadow: 2px 2px 5px;
