@@ -17,6 +17,7 @@ h1 {
 
 #content {
   /* background-color: #C1F0F6; */
+  box-sizing: border-box;
   width: 100%;
   padding: 10px;
 }
