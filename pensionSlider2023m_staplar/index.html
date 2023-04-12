@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Heltid</title>
+    <title>Pension med staplar</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
     <link rel="stylesheet" type="text/css" href="pension1.css">
@@ -12,19 +12,23 @@
 <!-- <body> -->
 <body class="u-textMeta">
 
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <!-- <button id="animeraStaplar">blabla</button> -->
+
+
+  <!-- <script src="script.js"></script> -->
+
+
 
 
   <div id="content">
-    <h1>Så blir pensionen </h1>
+    <h1>Deltid påverkar pensionen</h1>
     <!-- <img src="/sites/default/files/body/kvinna.png" onerror=this.src="kvinna.png" alt="Sofia, 24"> -->
-    <img src="kvinna.png" alt="Sofia, 24">
+    <!-- <img src="kvinna.png" alt="Sofia, 24"> -->
 
 
-
-    <p>Sofia, 20 år.</p>
-    <p>Lön: 24&nbsp;000 kr/mån på heltid.</p>
-    <br>
-    <p>Att jobba deltid påverkar pensionen – dra i reglaget för att se vad som händer med Sofias pension vid olika deltidsprocent.</p>
+    <p>Att jobba mer ger inte alltid så mycket högre pension – dra i reglaget för att se vad som händer vid olika deltidsprocent.</p>
 
     <!-- <input type="text" name="input" placeholder="Total pension per månad" id="inputlon" autocomplete="off"> -->
 
@@ -41,11 +45,13 @@
 
     </div>
 
+      <!-- Create a div where the graph will take place -->
+  <div id="diagramdiv"></div>
+
+
     <div id="londiv" class="rutdiv"><span class="flyter"><label><input class="u-textMetaDeca" id="lon" type="text" size="5" readonly="readonly"/>Lön</label></span></div>
 
     <div id="pensiondiv" class="rutdiv"><span class="flyter"><label><input class="u-textMetaDeca" id="helpension" type="text" size="5" readonly="readonly"/>Pension</label></span></div>
-
-
 
     <div id="procentdiv" class="rutdiv"><span class="flyter"><label><input class="u-textMetaDeca" id="procent" type="text" size="4" readonly="readonly"/>Pensionens andel av lönen</label></span></div>
 
@@ -53,7 +59,9 @@
     <br>
 
     <button id="semer" class="Button">Om uträkningen</button>
-    <div id="forutsattningar">
+    <div id="popup">
+      <h2>Så räknade vi</h2>
+      <div class="close"><img id="closex" class="closex" src="closex.png"></img></div>
       <div id="kommentar">
         <p>Beräkningen utgår från att Sofia jobbar samma deltid hela livet, och är anställd i kommun eller landsting. Medellönen för undersköterskor i kommuner och landsting var 24&nbsp;720 kr/mån år 2016.</p><p>I pensionen ingår premiepension, inkomstpension, garantipension och tjänstepension. </p><p>På <a href="http://www.minpension.se" target="blank">www.minpension.se</a> kan du göra en personlig pensionsprognos.</p>
       </div>
@@ -106,6 +114,7 @@
 
 
   </div>
+
 
 
 <script src="  https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
