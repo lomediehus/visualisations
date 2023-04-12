@@ -19,13 +19,7 @@ var semerknapp = document.getElementById('semer');
 var forutsattningar = document.getElementById('forutsattningar');
 // output.innerHTML = slider.value + "%"; // Display the default slider value
 // let output = document.getElementsByTagName("output")[0];
-let output = document.getElementById("slidecontainer").querySelector("output");
-var close = document.getElementById("closex");
-
-
-
-
-
+let output = document.getElementById("slidecontainer").querySelector("output")
 
 
 var siffror = {
@@ -139,18 +133,6 @@ deltidslon.value = 24000;
 helpension.value = siffror[100].Premiepension + siffror[100].Inkomstpension + siffror[100].Garantipension + siffror[100].Tjänstepension;
 procent.value = Math.round((helpension.value/deltidslon.value)*100) + "%";
 
-var data = [
-  {
-  Inkomstslag: "Lön",
-  Value: +deltidslon.value
-  },
-  {
-  Inkomstslag: "Pension",
-  Value: +helpension.value
-  }
-]
-
-
 
 
 function modifyOffset() {
@@ -179,11 +161,7 @@ function modifyOffset() {
   deltidslon.value = (24000 * this.value) / 100;
   procent.value = Math.round((helpension.value/deltidslon.value)*100) + "%";
   output.innerHTML = slider.value + "%";
-
-
-  data[0].Value = +deltidslon.value;
-  data[1].Value = +helpension.value;
-  animate();
+  
   
 }
 
@@ -203,149 +181,20 @@ function modifyInputs() {
 
 }
 
-// modifyInputs();
-
-// informHeight();
-
-semer.addEventListener("click", function() {
-  if (popup.style.display === "block") {
-      popup.style.display = "none";
-      semer.innerHTML = "Om uträkningen";
-  }
-  else {
-    popup.style.display = "block";
-    semer.innerHTML = "Dölj kommentaren";
-  }
-
-//Give "x" in popup closing function
-close.addEventListener("click", function() {
-  popup.style.display = "none";
-  semer.innerHTML = "Om uträkningen";
-
-  // overlay.style.display = "none";
-})
-
-
-informHeight();
-
-} )
-
-//Below is all the code for the bar chartg
-
-
-
-// var data = [
-//   {
-//   Country: "India",
-//   Value: 6178
-//   },
-//   {
-//   Country: "Sweden",
-//   Value: 3178
-//   }
-// ]
-
-
-//setting local variables, used on y-axis
-locale = d3.formatLocale({
-  decimal: ",",
-  thousands: "\u00a0",
-  grouping: [3],
-  currency: ["", ""],
-  minus: "\u2212",
-  percent: "\u202f%"
-})
-
-
-
-// set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 60, left: 60},
-  // width = 460 - margin.left - margin.right,
-  width = 350 - margin.left - margin.right,
-
-  height = 350 - margin.top - margin.bottom;
-
-// append the svg object to the body of the page
-var svg = d3.select("#diagramdiv")
-.append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-.append("g")
-  .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
-
-
-
-// })
-// Parse the Data
-// d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function(data) {
-// d3.json(data, function(data) {
-
-
-
-
-// X axis
-var x = d3.scaleBand()
-.range([ 0, width ])
-.domain(data.map(function(d) { return d.Inkomstslag; }))
-.padding(0.2);
-svg.append("g")
-.attr("transform", "translate(0," + height + ")")
-.attr("class", "axisfat")
-.call(d3.axisBottom(x))
-.selectAll("text")
-  // .attr("transform", "translate(-10,0)rotate(-45)")
-  .attr("transform", "translate(-10,0)")
-  .style("text-anchor", "center");
-
-// Add Y axis
-var y = d3.scaleLinear()
-.domain([0, 27000])
-.range([ height, 0]);
-svg.append("g")
-.call(d3.axisLeft(y)
-  .ticks(4)
-  // .tickFormat(d3.format(".2s")))
-  //to make the thousands separator a space instead of a comma
-  .tickFormat(locale.format('$,.0f')))
-
-.attr("class", "axis")
-
-
-
-
-// Bars
-svg.selectAll("mybar")
-.data(data)
-.enter()
-.append("rect")
-  .attr("x", function(d) { return x(d.Inkomstslag); })
-  .attr("width", x.bandwidth())
-  .attr("fill", "#69b3a2")
-  .attr("y", function(d) { return y(d.Value); })
-  .attr("height", function(d) { return height - y(d.Value); })
-  // no bar at the beginning thus:
-  // .attr("height", function(d) { return height - y(0); }) // always equal to 0
-  // .attr("y", function(d) { return y(0); })
-
-
-function animate(d,i) {
-  // data[0].Value = data[0].Value * Math.random()
-  // Animation
-  svg.selectAll("rect")
-  .transition()
-  .duration(400)
-  .attr("y", function(d) { return y(d.Value); })
-  .attr("height", function(d) { return height - y(d.Value); })
-  .delay(function(d,i){ return(i*100)})
-}
-
-
-
 modifyInputs();
 
 informHeight();
 
-// })
+semer.addEventListener("click", function() {
+  if (forutsattningar.style.display === "block") {
+      forutsattningar.style.display = "none";
+      semer.innerHTML = "Om uträkningen";
+  }
+  else {
+    forutsattningar.style.display = "block";
+    semer.innerHTML = "Dölj kommentaren";
+  }
 
+informHeight();
 
+} )
