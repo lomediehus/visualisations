@@ -9,10 +9,9 @@ if (host.includes("github")) {
 }
 
 
-
 var slider = document.getElementById("myRange");
 var deltidslon = document.getElementById('lon');
-var minlon = 24000;
+// var minlon = 24000;
 var helpension = document.getElementById('helpension');
 var procent = document.getElementById('procent');
 var semerknapp = document.getElementById('semer');
@@ -21,9 +20,6 @@ var forutsattningar = document.getElementById('forutsattningar');
 // let output = document.getElementsByTagName("output")[0];
 let output = document.getElementById("slidecontainer").querySelector("output");
 var close = document.getElementById("closex");
-
-
-
 
 
 var siffror = {
@@ -131,117 +127,12 @@ var siffror = {
 }
 }
 
-// var siffror = {
-//   100: {
-//     Premiepension: 1930,
-//     Inkomstpension: 8470,
-//     Garantipension: 1110,
-//     Tjänstepension: 2910
-//   },
-//   95: {
-//     Premiepension: 1840,
-//     Inkomstpension: 8040,
-//     Garantipension: 1330,
-//     Tjänstepension: 2770
-//   },
-//   90: {
-//     Premiepension: 1740,
-//     Inkomstpension: 7620,
-//     Garantipension: 1560,
-//     Tjänstepension: 2630
-//   },
-//   85:  {
-//     Premiepension: 1640,
-//     Inkomstpension: 7200,
-//     Garantipension: 1780,
-//     Tjänstepension: 2490
-//   },
-//   80:  {
-//     Premiepension: 1550,
-//     Inkomstpension: 6770,
-//     Garantipension: 2010,
-//     Tjänstepension: 2350
-//   },
-//   75:  {
-//     Premiepension: 1450,
-//     Inkomstpension: 6350,
-//     Garantipension: 2230,
-//     Tjänstepension: 2200
-//   },
-//   70: {
-//    Premiepension: 1350,
-//    Inkomstpension: 5930,
-//    Garantipension: 2460,
-//    Tjänstepension: 2060
-//  },
-//  65:  {
-//     Premiepension: 1260,
-//     Inkomstpension: 5500,
-//     Garantipension: 2680,
-//     Tjänstepension: 1920
-//   },
-//   60:  {
-//     Premiepension: 1160,
-//     Inkomstpension: 5080,
-//     Garantipension: 2900,
-//     Tjänstepension: 1780
-//   },
-//   55:  {
-//     Premiepension: 1060,
-//     Inkomstpension: 4660,
-//     Garantipension: 3130,
-//     Tjänstepension: 1640
-//   },
-//   50:   {
-//     Premiepension: 970,
-//     Inkomstpension: 4230,
-//     Garantipension: 3410,
-//     Tjänstepension: 1500
-//   },
-//   45: {
-//    Premiepension: 870,
-//    Inkomstpension: 3810,
-//    Garantipension: 3880,
-//    Tjänstepension: 1360
-//  },
-//  40: {
-//     Premiepension: 770,
-//     Inkomstpension: 3390,
-//     Garantipension: 4340,
-//     Tjänstepension: 1220
-//   },
-//   35: {
-//     Premiepension: 680,
-//     Inkomstpension: 2960,
-//     Garantipension: 4810,
-//     Tjänstepension: 1080
-//   },
-//   30: {
-//    Premiepension: 580,
-//    Inkomstpension: 2540,
-//    Garantipension: 5280,
-//    Tjänstepension: 940
-//  },
-//  25:  {
-//     Premiepension: 480,
-//     Inkomstpension: 2120,
-//     Garantipension: 5750,
-//     Tjänstepension: 800
-//   },
-
-//   20:  {
-//    Premiepension: 390,
-//    Inkomstpension: 1690,
-//    Garantipension: 6220,
-//    Tjänstepension: 660
-//  }
-
-// }
 
 deltidslon.value = 26800;
 helpension.value = siffror[100].Premiepension + siffror[100].Inkomstpension + siffror[100].Garantipension + siffror[100].Tjänstepension;
 procent.value = Math.round((helpension.value/deltidslon.value)*100) + "%";
 
+//Create a data object for the chart
 var data = [
   {
   Inkomstslag: "Lön",
@@ -337,17 +228,6 @@ informHeight();
 
 
 
-// var data = [
-//   {
-//   Country: "India",
-//   Value: 6178
-//   },
-//   {
-//   Country: "Sweden",
-//   Value: 3178
-//   }
-// ]
-
 
 //setting local variables, used on y-axis
 locale = d3.formatLocale({
@@ -362,7 +242,7 @@ locale = d3.formatLocale({
 
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 60, left: 60},
+var margin = {top: 10, right: 30, bottom: 40, left: 60},
   // width = 460 - margin.left - margin.right,
   width = 350 - margin.left - margin.right,
 
@@ -385,51 +265,50 @@ var svg = d3.select("#diagramdiv")
 // d3.json(data, function(data) {
 
 
-
-
 // X axis
 var x = d3.scaleBand()
-.range([ 0, width ])
-.domain(data.map(function(d) { return d.Inkomstslag; }))
-.padding(0.2);
+  .range([ 0, width ])
+  .domain(data.map(function(d) { return d.Inkomstslag; }))
+  .padding(0.2);
 svg.append("g")
-.attr("transform", "translate(0," + height + ")")
-.attr("class", "axisfat")
-.call(d3.axisBottom(x))
-.selectAll("text")
-  // .attr("transform", "translate(-10,0)rotate(-45)")
-  .attr("transform", "translate(-10,0)")
-  .style("text-anchor", "center");
+  .attr("transform", "translate(0," + height + ")")
+  .attr("class", "axisfat")
+  .call(d3.axisBottom(x))
+  .selectAll("text")
+    // .attr("transform", "translate(-10,0)rotate(-45)")
+    .attr("transform", "translate(-10,0)")
+    .style("text-anchor", "center");
 
-// Add Y axis
-var y = d3.scaleLinear()
-.domain([0, 27000])
-.range([ height, 0]);
+  // Add Y axis
+  var y = d3.scaleLinear()
+  .domain([0, 27000])
+  .range([ height, 0]);
 svg.append("g")
-.call(d3.axisLeft(y)
-  .ticks(4)
-  // .tickFormat(d3.format(".2s")))
-  //to make the thousands separator a space instead of a comma
-  .tickFormat(locale.format('$,.0f')))
+  .call(d3.axisLeft(y)
+    .ticks(4)
+    // .tickFormat(d3.format(".2s")))
+    //to make the thousands separator a space instead of a comma
+    .tickFormat(locale.format('$,.0f')))
 
-.attr("class", "axis")
-
-
-
+  .attr("class", "axis")
 
 // Bars
-svg.selectAll("mybar")
+var bars = svg.selectAll("mybar")
 .data(data)
-.enter()
-.append("rect")
+.enter().append("g")
+
+// .append("g")
+ bars.append("rect")
   .attr("x", function(d) { return x(d.Inkomstslag); })
   .attr("width", x.bandwidth())
   .attr("fill", "#69b3a2")
   .attr("y", function(d) { return y(d.Value); })
   .attr("height", function(d) { return height - y(d.Value); })
-  // no bar at the beginning thus:
-  // .attr("height", function(d) { return height - y(0); }) // always equal to 0
-  // .attr("y", function(d) { return y(0); })
+
+ bars.append("text")
+  .text(function(d,i) {     
+  })
+
 
 
 function animate(d,i) {
@@ -441,6 +320,19 @@ function animate(d,i) {
   .attr("y", function(d) { return y(d.Value); })
   .attr("height", function(d) { return height - y(d.Value); })
   .delay(function(d,i){ return(i*100)})
+
+
+  bars.select("text")
+    .text(function(d,i) { 
+      //format with thousands separator space and return
+      return locale.format('$,.0f') (data[i].Value);
+    })
+    .attr("class", "label")
+    .style("text-anchor", "center")
+    //place horisontally
+    .attr("x", function(d) { return x(d.Inkomstslag) + 20; })
+    //place vertically
+    .attr("y", height - 15)
 }
 
 
@@ -452,3 +344,4 @@ informHeight();
 // })
 
 
+// Source code animated bar chart: https://d3-graph-gallery.com/graph/barplot_animation_start.html

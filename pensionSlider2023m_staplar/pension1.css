@@ -15,13 +15,14 @@ body {
 #content {
   /* background-color: #C1F0F6; */
   box-sizing: border-box;
-  width: 100%;
+  /* width: 100%; */
+  width: 400px;
   padding: 10px;
 }
 
-div#content p {
+/* div#content p {
   width: 70%;
-}
+} */
 
 img {
   height: 260px;
@@ -56,36 +57,55 @@ tr:nth-child(odd) {
   background-color: white;
 }
 
-div#forutsattningar p {
+/* div#forutsattningar p {
   /* font-size: 0.8em; */
-  margin-top: 5px;
-  padding-left: 3px;
+  /* margin-top: 5px;
+  padding-left: 3px; */
   /* font-style: italic; */
-}
+/* } */ 
 
 
 div.rutdiv {
-  width: 50px;
-  display: inline-block;
-  margin-right: 30px;
-  vertical-align: top;
-  margin-right: 40px;
+  /* width: 180px; */
+  /* position: absolute; */
+  /* display: block; */
+  /* margin-right: 30px; */
+  /* margin-left: 130px; */
+  /* vertical-align: top; */
+  /* margin-right: 40px; */
 }
-
-span.flyter {
-  float: left;
-  /* font-size: 0.9em; */
-  margin-right: 10px;
-}
-
-
 
 div.rutdiv input {
+  /* font-weight: 900; */
+  /* width: 50%; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.rutdiv p {
+  /* font-weight: 800; */
+  /* width: 50%; */
+  text-align: center;
+  margin: auto;
+}
+
+
+/* span.flyter {
+  float: left;
+  font-size: 0.9em;
+  margin-right: 10px;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+} */
+
+
+
+/* div.rutdiv input {
   margin-top: 5px;
   margin-bottom: 5px;
-  /* font-size: 1.2em; */
   padding: 5px;
-}
+} */
 
 
 div#kommentar p {
@@ -117,21 +137,21 @@ div#kommentar {
   appearance: none;
     -webkit-appearance: none;  /* Override default CSS styles*/
     margin-left: 0px;
-    /*appearance: none;*/
     width: 300px; /* Full-width */
     height: 30px; /* Specified height */
+    padding: 0px 3px 0px 3px;
     background: #FDFDFD;
     box-shadow: 2px 2px 5px;
     /*outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    /* opacity: 0.7; */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
 }
 
 /* Mouse-over effects */
-.slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-}
+/* .slider:hover {
+    opacity: 1;
+} */
 
 /* The slider handle (use webkit (Chrome, Opera, Safari, Edge) and moz (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
@@ -143,6 +163,8 @@ div#kommentar {
     background: #da4042; 
     cursor: pointer; /* Cursor on hover */
 }
+
+
 
 .slider::-moz-range-thumb {
     width: 25px; /* Set a specific slider handle width */
@@ -165,7 +187,7 @@ output {
   color: white;
   border-radius: 10px;
   display: inline-block;
-  padding: 4px;
+  padding: 6px;
   /* font: bold 15px/30px Arial; */
   bottom: 140%;
   left: 0;
@@ -191,6 +213,11 @@ form {
   position: relative;
   }
 
+#semer {
+  display: block;
+  margin: auto;
+}
+
 
 /* for the bar chart */
 
@@ -201,6 +228,10 @@ form {
 .axisfat {
   font-size: 16px;
   font-weight: 800;
+}
+
+.label {
+  font-size: 20px;
 }
 
 /* #diagramdiv {
@@ -248,10 +279,10 @@ div.close {
   height: fit-content;
 }
 
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
   #content {
     position: relative;
     width: 50%;
     margin: 0 auto;
   }
-}
+} */

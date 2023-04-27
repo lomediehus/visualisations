@@ -39,7 +39,7 @@
       <!-- To put output in bubble that follows slider -->
       <output for="tjanstegrad" onforminput="value = foo.valueAsNumber;" class="u-textMetaDeca"></output>
     </form>
-    <p>Deltidsprocent</p>
+    <p class="axisfat">Deltidsprocent</p>
 
 
 
@@ -48,12 +48,17 @@
       <!-- Create a div where the graph will take place -->
   <div id="diagramdiv"></div>
 
+    <!-- Div set to "display none" because I don't want it for the moment -->
+    <div id="londiv" class="rutdiv" style="display:none;"><span class="flyter"><label><input class="u-textMetaDeca" id="lon" type="text" size="5" readonly="readonly"/>Lön</label></span></div>
+    
+    <!-- Div set to "display none" because I don't want it for the moment -->
+    <div id="pensiondiv" class="rutdiv" style="display:none;"><span class="flyter"><label><input class="u-textMetaDeca" id="helpension" type="text" size="5" readonly="readonly"/>Pension</label></span></div>
 
-    <div id="londiv" class="rutdiv"><span class="flyter"><label><input class="u-textMetaDeca" id="lon" type="text" size="5" readonly="readonly"/>Lön</label></span></div>
-
-    <div id="pensiondiv" class="rutdiv"><span class="flyter"><label><input class="u-textMetaDeca" id="helpension" type="text" size="5" readonly="readonly"/>Pension</label></span></div>
-
-    <div id="procentdiv" class="rutdiv"><span class="flyter"><label><input class="u-textMetaDeca" id="procent" type="text" size="4" readonly="readonly"/>Pensionens andel av lönen</label></span></div>
+    <div id="procentdiv" class="rutdiv">
+      <!-- <span class="flyter"><label> -->
+        <p class="axisfat"><input class="u-textMetaDeca" id="procent" type="text" size="4" readonly="readonly"/><br>Pensionens andel av lönen</p></div>
+      <!-- </label></span> -->
+    </div>
 
 
     <br>
