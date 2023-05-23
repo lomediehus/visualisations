@@ -31,13 +31,14 @@ var dataset1 = d3.layout.stack()(["lonpension", "tillagg"].map(function(fruit) {
 
 
 var margin = 50;
-    var width = 300;
-        height = 300;
-    
+var width = 300;
+var height = 250;
+
+//NY    
 var svg1 = d3.select("body")
   .append("svg")
   .attr("width", width + margin + 40 )
-  .attr("height", height + margin + 20)
+  .attr("height", height + margin + 100)
   .append("g")
   .attr("transform", "translate(" + (margin) +  "," + margin/2 + ")")
   // .attr("transform", "translate(" + (margin+30)/2 +  "," + margin/2 + ")")
@@ -46,7 +47,7 @@ var svg1 = d3.select("body")
 
 var xScale = d3.scale.ordinal()
   .domain(dataset1[0].map(function(d) { return d.x; }))
-  .rangeRoundBands([0, width], 0.5);
+  .rangeRoundBands([0, width], 0.3);
 
 var yScale = d3.scale.linear()
   .domain([0, 25000])
@@ -71,10 +72,16 @@ svg1.append("g")
   .attr("class", "y axis u-textMeta")
   .call(yAxis);
 
+//NY  
 svg1.append("g")
   .attr("class", "x axis u-textMeta")
   .attr("transform", "translate(0," + height + ")")
-  .call(xAxis);
+  .call(xAxis)
+  .selectAll("text")
+  .style("text-anchor", "end")
+    .attr("dx", "-.5em")
+    .attr("dy", ".1em")
+    .attr("transform", "rotate(-45)");;
 
 // X label
 // svg1.append('text')
@@ -109,7 +116,7 @@ var groups1 = svg1.selectAll("g.bars")
   // .style("stroke", "#000");
 
 
-
+//NY
 var rect1 = groups1.selectAll("rect")
   .data(function(d) { return d; })
   .enter()
@@ -122,7 +129,7 @@ var rect1 = groups1.selectAll("rect")
     .append("svg:title")
     .text(function(d) { return d.y; });
   
-
+  //NY
   groups1.selectAll("rect")
     .filter("rect:first-of-type")
       .attr("class","fillrect")
