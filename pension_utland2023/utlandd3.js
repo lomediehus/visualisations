@@ -44,7 +44,7 @@ var svg1 = d3.select("body")
   // .attr("transform", "translate(" + (margin+30)/2 +  "," + margin/2 + ")")
 
 
-
+//NY
 var xScale = d3.scale.ordinal()
   .domain(dataset1[0].map(function(d) { return d.x; }))
   .rangeRoundBands([0, width], 0.3);
@@ -81,7 +81,7 @@ svg1.append("g")
   .style("text-anchor", "end")
     .attr("dx", "-.5em")
     .attr("dy", ".1em")
-    .attr("transform", "rotate(-45)");;
+    .attr("transform", "rotate(-45)");
 
 // X label
 // svg1.append('text')
@@ -170,48 +170,18 @@ d3.select("body")
       // return {x: d3.time.format("%Y").parse(d.year), y: +d[fruit]};
     });
   }));
-  
-  
-  
-  var margin = 50;
-      var width = 600;
-          height = 300;
-      
- 
-  
+    
 
   var svg2 = d3.select("body")
   .append("svg")
   .attr("width", width + margin + 40 )
-  .attr("height", height + margin + 20)
+  .attr("height", height + margin + 100)
   .append("g")
   .attr("transform", "translate(" + (margin) +  "," + margin/2 + ")")
-  // .attr("transform", "translate(" + (margin+30)/2 +  "," + margin/2 + ")")
 
 
 
-var xScale = d3.scale.ordinal()
-  .domain(dataset2[0].map(function(d) { return d.x; }))
-  .rangeRoundBands([0, width], 0.5);
 
-var yScale = d3.scale.linear()
-  .domain([0, 25000])
-  .range([height, 0]);
-
-
-  var yAxis = d3.svg.axis()
-  .scale(yScale)
-  .orient("left")
-  .ticks(6)
-  .tickSize(-width, 0, 0)
-  .tickFormat( function(d) { return d } );
-  // .tickFormat( function(d) { return "kr " + d } );
-
-
-var xAxis = d3.svg.axis()
-  .scale(xScale)
-  .orient("bottom")
-  // .tickFormat(d3.time.format("%Y"));
 
 svg2.append("g")
   .attr("class", "y axis u-textMeta")
@@ -219,18 +189,15 @@ svg2.append("g")
   .call(yAxis);
 
 svg2.append("g")
-  .attr("class", "x axis u-textMeta")
-  .attr("transform", "translate(0," + height + ")")
-  .call(xAxis);
+.attr("class", "x axis u-textMeta")
+.attr("transform", "translate(0," + height + ")")
+.call(xAxis)
+.selectAll("text")
+.style("text-anchor", "end")
+  .attr("dx", "-.5em")
+  .attr("dy", ".1em")
+  .attr("transform", "rotate(-45)");
 
-// X label
-// svg2.append('text')
-//   .attr('x', width/2)
-//   .attr('y', height + 30)
-//   .attr('text-anchor', 'middle')
-//   .style('font-family', 'Helvetica')
-//   .style('font-size', 12)
-//   .text('Year');
     
 // Y label
 svg2.append('text')
@@ -252,39 +219,22 @@ var groups2 = svg2.selectAll("g.bars")
   .style("fill", function(d, i) { 
       return colors[i]});
 
-//   d3.select(".bars")
-  
-// .style("fill", "orange");
-
-
- 
-  //     d3.selectAll(".bars")
-  //   .filter(":last-child")
-  //   .filter(function(d,i) {
-  //     c(d[i])
-  //     return d = (d[i].y);
-  //   })
-  // .style("fill", "orange");
-
-    
-
-  // .style("stroke", "#000");
 
 var rect2 = groups2.selectAll("rect")
-  .data(function(d) { return d; })
-  .enter()
-  .append("rect")
-  .attr("x", function(d) { return xScale(d.x); })
+.data(function(d) { return d; })
+.enter()
+.append("rect")
+  .attr("x", function(d) { 
+  return xScale(d.x); })
   .attr("y", function(d) { return yScale(d.y0 + d.y); })
   .attr("height", function(d) { return yScale(d.y0) - yScale(d.y0 + d.y); })
-  .attr("width", xScale.rangeBand())
+  .attr("width", xScale.rangeBand())   
   .append("svg:title")
   .text(function(d) { return d.y; });
 
-
-  groups2.selectAll("rect")
+groups2.selectAll("rect")
   .filter("rect:first-of-type")
-    .attr("class", "fillrect");
+    .attr("class","fillrect")
 
 
 informHeight();
