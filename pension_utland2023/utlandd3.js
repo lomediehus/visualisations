@@ -280,4 +280,4 @@ var rect2 = groups2.selectAll("rect")
     .attr("class", "fillrect");
 
 
-
+informHeight();
