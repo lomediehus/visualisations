@@ -18,8 +18,6 @@ var data1 = [
   { inkomst: "10 år i Sverige", lonpension: "4599", tillagg: "0"  }
   ];
 
-var colors = ["#c9c7c3", "#048676"];
-
 var dataset1 = d3.layout.stack()(["lonpension", "tillagg"].map(function(fruit) {
   return data1.map(function(d) {
     return {x: d.inkomst, y: +d[fruit]};
@@ -28,10 +26,32 @@ var dataset1 = d3.layout.stack()(["lonpension", "tillagg"].map(function(fruit) {
   });
 }));
 
+var data2 = [
+  { inkomst: "slutlön", lonpension: "21033", tillagg: "0" },
+  { inkomst: "46 år i Sverige", lonpension: "15792", tillagg: "797"  },
+  { inkomst: "20 år i Sverige", lonpension: "8607", tillagg: "6685"  },
+  { inkomst: "10 år i Sverige", lonpension: "4599", tillagg: "8578"  }
+  ];
+
+
+
+var dataset2 = d3.layout.stack()(["lonpension", "tillagg"].map(function(fruit) {
+  return data2.map(function(d) {
+    return {x: d.inkomst, y: +d[fruit]};
+
+    // return {x: d3.time.format("%Y").parse(d.year), y: +d[fruit]};
+  });
+}));
+
+var colors = ["#c9c7c3", "#048676"];
+
+
+function doAllStuff(){
+
 
 
 var margin = 50;
-var width = innerWidth;
+var width = innerWidth - (innerWidth/10);
 var height = 250;
 
 // var margin = 50;
@@ -39,7 +59,7 @@ var height = 250;
 // var height = 250;
 
 //NY    
-var svg1 = d3.select("body")
+var svg1 = d3.select("#graphs")
   .append("svg")
   .attr("width", width + margin + 40 )
   .attr("height", height + margin + 100)
@@ -144,11 +164,11 @@ var rect1 = groups1.selectAll("rect")
 
 
   // Här kommer en text
-d3.select("body")
+d3.select("#graphs")
   .append("h4")
   .html("Tillägg kan jämna ut skillnaden")
   
-d3.select("body")
+d3.select("#graphs")
   .append("p")
   .attr("class", "u-textMeta")
   .html("Den som har låg pension kan ansöka om bostadstillägg  och äldreförsörjningsstöd, som jämnar ut skillnaden. Den gröna delen av stapeln består av dessa tillägg. Långt ifrån alla med låg pension kan dock få tilläggen.")
@@ -158,25 +178,10 @@ d3.select("body")
 
   // Allt för svg2
 
-  var data2 = [
-    { inkomst: "slutlön", lonpension: "21033", tillagg: "0" },
-    { inkomst: "46 år i Sverige", lonpension: "15792", tillagg: "797"  },
-    { inkomst: "20 år i Sverige", lonpension: "8607", tillagg: "6685"  },
-    { inkomst: "10 år i Sverige", lonpension: "4599", tillagg: "8578"  }
-    ];
-
-
-
-  var dataset2 = d3.layout.stack()(["lonpension", "tillagg"].map(function(fruit) {
-    return data2.map(function(d) {
-      return {x: d.inkomst, y: +d[fruit]};
   
-      // return {x: d3.time.format("%Y").parse(d.year), y: +d[fruit]};
-    });
-  }));
     
 
-  var svg2 = d3.select("body")
+  var svg2 = d3.select("#graphs")
   .append("svg")
   .attr("width", width + margin + 40 )
   .attr("height", height + margin + 100)
@@ -242,3 +247,25 @@ groups2.selectAll("rect")
 
 
 informHeight();
+
+//end of doAllStuff-function
+};
+
+doAllStuff();
+
+// function to execute JavaScript code after the window resize event completes
+function executeAfterResize() {
+  document.getElementById("graphs").innerHTML = '';
+  doAllStuff();
+}
+var timeId = null;
+window.addEventListener('resize', () => {
+  clearTimeout(timeId);
+  timeId = setTimeout(executeAfterResize, 500);
+});
+
+
+// window.onresize = function() {
+//   c("risajsar")
+//   doAllStuff();
+// }
