@@ -31,8 +31,12 @@ var dataset1 = d3.layout.stack()(["lonpension", "tillagg"].map(function(fruit) {
 
 
 var margin = 50;
-var width = 300;
+var width = innerWidth;
 var height = 250;
+
+// var margin = 50;
+// var width = 300;
+// var height = 250;
 
 //NY    
 var svg1 = d3.select("body")
