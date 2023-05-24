@@ -51,7 +51,7 @@ function doAllStuff(){
 
 
 var margin = 50;
-var width = innerWidth - (innerWidth/10);
+var width = innerWidth - (innerWidth/7);
 var height = 250;
 
 // var margin = 50;
@@ -253,6 +253,9 @@ informHeight();
 
 doAllStuff();
 
+
+// Change size of charts on resizeBy, from here: https://www.tutorialspoint.com/how-to-wait-resize-end-event-and-then-perform-an-action-using-javascript
+
 // function to execute JavaScript code after the window resize event completes
 function executeAfterResize() {
   document.getElementById("graphs").innerHTML = '';
@@ -265,7 +268,3 @@ window.addEventListener('resize', () => {
 });
 
 
-// window.onresize = function() {
-//   c("risajsar")
-//   doAllStuff();
-// }
