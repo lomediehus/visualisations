@@ -51,7 +51,7 @@ function doAllStuff(){
 
 
 var margin = 50;
-var width = innerWidth - (innerWidth/7);
+var width = innerWidth - (innerWidth/5);
 var height = 250;
 
 // var margin = 50;
