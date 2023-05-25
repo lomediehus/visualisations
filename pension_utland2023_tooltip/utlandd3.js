@@ -66,12 +66,13 @@ var Tooltip = d3.select("#graphs")
   .style("position", "absolute")
   .attr("class", "tooltip")
   .style("background-color", "white")
-  .style("width", "80px")
+  .style("width", "60px")
   .style("border", "solid")
   .style("border-width", "1px")
   .style("border-radius", "3px")
   .style("padding", "2px")
   .attr("class", "u-textMeta")
+  
 
 
 // Three function that change the tooltip when user hover / move / leave a cell
@@ -98,24 +99,44 @@ var mouseover = function(d) {
 var mousemove = function(d) {
 
   
+  const mormor = this.parentElement.parentElement.parentElement;
+  const y_mormor = mormor.getBoundingClientRect().y;
 
 
-  // console.log(d3.mouse(this)[1])
-  console.log(this.getBoundingClientRect().height)
+  console.log("mouse y" + d3.mouse(this.parentElement)[1])
+
+  // const styleTop = (e) => {
+  //   return ((e.pageY)+"px")
+  // }
+
   Tooltip
     // .html(function(d,i) { 
     //   c(this)
     //   return "värde " + d.x; })
 
     .html(d.y)
+  
+
+
+    // .style("top", styleTop(Tooltip))
+    // .style("left",(event.pageX)+"px")
+    .style("left",  (this.getBoundingClientRect().x + width/100) + "px")
+
 
     // .style("top", (event.pageY)+"px")
     // .style("left",(event.pageX)+"px")
-    .style("left", (d3.mouse(this)[0]+70) + "px")
-    .style("top", (d3.mouse(this)[1]) + (this.getBoundingClientRect().y + this.getBoundingClientRect().height) -200 +  "px")
-    // .style("top", (d3.mouse(this)[1]) + this.getBoundingClientRect().y +  "px")
+    // .style("left",  (this.getBoundingClientRect().x) + "px")
+    
+    .style("top", (this.getBoundingClientRect().y) + "px")
 
-    // .style("top", this.getBoundingClientRect().y  +  "px")
+    // .style("left", (d3.mouse(this)[0]+70) + "px")
+    // .style("top", (this.getBoundingClientRect().y + (this.getBoundingClientRect().height) -200 +  "px"))
+    // .style("top", (d3.mouse(this)[1])  +  "px")
+    // .style("top", (d3.mouse(this.parentElement)[1])  +  "px")
+    // .style("top", "200px")
+
+
+    // .style("top", d3.mouse(this)[1] + (this.getBoundingClientRect().y - this.getBoundingClientRect().height/2)  +  "px")
 
 
 }
