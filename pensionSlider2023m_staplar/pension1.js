@@ -20,6 +20,9 @@ var forutsattningar = document.getElementById('forutsattningar');
 // let output = document.getElementsByTagName("output")[0];
 let output = document.getElementById("slidecontainer").querySelector("output");
 var close = document.getElementById("closex");
+var content = document.getElementById("content");
+console.log("content bredd " + content.offsetWidth)
+var diagramdiv = document.getElementById("diagramdiv");
 
 
 var siffror = {
@@ -149,10 +152,12 @@ var data = [
 
 function modifyOffset() {
   var el, newPoint, newPlace, offset, siblings, k;
-  width    = this.offsetWidth;
+  width  = this.offsetWidth;
+  console.log(this)
+
   newPoint = (this.value - this.getAttribute("min")) / (this.getAttribute("max") - this.getAttribute("min"));
   // was originally -1, changed to -5 to push starting point to left
-  offset   = -4;
+  offset   = -5;
   if (newPoint < 0) { newPlace = 0;  }
   else if (newPoint > 1) { newPlace = width; }
   else { newPlace = width * newPoint + offset; offset -= newPoint;}
@@ -174,7 +179,7 @@ function modifyOffset() {
   procent.value = Math.round((helpension.value/deltidslon.value)*100) + "%";
   output.innerHTML = slider.value + "%";
 
-
+  // Update the data objecgt
   data[0].Value = +deltidslon.value;
   data[1].Value = +helpension.value;
   animate();
@@ -197,9 +202,6 @@ function modifyInputs() {
 
 }
 
-// modifyInputs();
-
-// informHeight();
 
 semer.addEventListener("click", function() {
   if (popup.style.display === "block") {
@@ -219,14 +221,11 @@ close.addEventListener("click", function() {
   // overlay.style.display = "none";
 })
 
-
 informHeight();
 
 } )
 
-//Below is all the code for the bar chartg
-
-
+//Below is all the code for the bar chart
 
 
 //setting local variables, used on y-axis
@@ -243,8 +242,8 @@ locale = d3.formatLocale({
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 30, bottom: 40, left: 60},
-  // width = 460 - margin.left - margin.right,
-  width = 350 - margin.left - margin.right,
+  width = diagramdiv.offsetWidth - margin.left - margin.right,
+  // width = 350 - margin.left - margin.right,
 
   height = 350 - margin.top - margin.bottom;
 
@@ -292,47 +291,58 @@ svg.append("g")
 
   .attr("class", "axis")
 
-// Bars
+// Create a variable for the bars. They need to be placed inside a "g" element, because text labels cannot be placed inside "rect" elements.
 var bars = svg.selectAll("mybar")
-.data(data)
-.enter().append("g")
+  .data(data)
+  .enter().append("g");
 
-// .append("g")
- bars.append("rect")
+
+var xbandwidth = x.bandwidth();
+
+
+bars.append("rect")
   .attr("x", function(d) { return x(d.Inkomstslag); })
   .attr("width", x.bandwidth())
   .attr("fill", "#69b3a2")
   .attr("y", function(d) { return y(d.Value); })
   .attr("height", function(d) { return height - y(d.Value); })
+  //append the labels
+  bars.append("text")
 
- bars.append("text")
   .text(function(d,i) {     
   })
+  .attr("class", "label")
+  .style("text-anchor", "left")
+  //place horisontally where d.Inkomstslag is the placement of the rect and xbandwidth is a variable with av value of halt the width of the rect. Then subtract about half the width of the text element, which varies a bit. Makes the label roughly centered on different screen sizes.
+  .attr("x", function(d) { return x(d.Inkomstslag) + xbandwidth/2 -27; })
+  //place vertically
+  .attr("y", height - 15)
 
 
 
 function animate(d,i) {
   // data[0].Value = data[0].Value * Math.random()
   // Animation
-  svg.selectAll("rect")
-  .transition()
-  .duration(400)
-  .attr("y", function(d) { return y(d.Value); })
-  .attr("height", function(d) { return height - y(d.Value); })
-  .delay(function(d,i){ return(i*100)})
+  bars.selectAll("rect")
+    .transition()
+    .duration(400)
+    .attr("y", function(d) { return y(d.Value); })
+    .attr("height", function(d) { return height - y(d.Value); })
+    .delay(function(d,i){ return(i*100)})
 
 
   bars.select("text")
+    
+    //Update label text, format with thousands separator space and return
     .text(function(d,i) { 
-      //format with thousands separator space and return
       return locale.format('$,.0f') (data[i].Value);
     })
-    .attr("class", "label")
-    .style("text-anchor", "center")
-    //place horisontally
-    .attr("x", function(d) { return x(d.Inkomstslag) + 20; })
-    //place vertically
-    .attr("y", height - 15)
+    // .attr("class", "label")
+    // .style("text-anchor", "center")
+    // //place horisontally
+    // .attr("x", function(d) { return x(d.Inkomstslag) + 20; })
+    // //place vertically
+    // .attr("y", height - 15)
 }
 
 
