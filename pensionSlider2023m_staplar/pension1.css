@@ -38,7 +38,9 @@ img {
 }
 
 table {
-  margin-top: 5px;
+  margin-top: -5px;
+  border: 1px solid;
+  border-collapse: collapse;
 }
 
 th {
@@ -51,10 +53,12 @@ th {
 td {
   /* font-size: 0.8em; */
   padding: 3px 5px 3px 3px;
+  border: 1px solid;
+
 }
 
 tr:nth-child(odd) {
-  background-color: white;
+  /* background-color:#fcfaf5; */
 }
 
 /* div#forutsattningar p {
@@ -241,7 +245,9 @@ form {
 
 #popup {
   display: none;
-  width: 300px;
+  /* width: 350px; */
+  width: 90%;
+
   /* min-width: 250px; */
   max-width: 450px;
   border-radius: 10px;
