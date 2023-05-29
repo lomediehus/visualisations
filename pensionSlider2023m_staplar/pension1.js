@@ -239,13 +239,16 @@ locale = d3.formatLocale({
 })
 
 
+function makeBarChart() {
 
-// set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 40, left: 60},
+  // set the dimensions and margins of the graph
+  var margin = {top: 10, right: 30, bottom: 40, left: 60},
   width = diagramdiv.offsetWidth - margin.left - margin.right,
   // width = 350 - margin.left - margin.right,
 
   height = 350 - margin.top - margin.bottom;
+
+
 
 // append the svg object to the body of the page
 var svg = d3.select("#diagramdiv")
@@ -345,6 +348,9 @@ function animate(d,i) {
     // .attr("y", height - 15)
 }
 
+}  
+
+makeBarChart();
 
 
 modifyInputs();
@@ -352,6 +358,21 @@ modifyInputs();
 informHeight();
 
 // })
+
+
+// Change size of charts on resizeBy, from here: https://www.tutorialspoint.com/how-to-wait-resize-end-event-and-then-perform-an-action-using-javascript
+
+// function to execute JavaScript code after the window resize event completes
+function executeAfterResize() {
+  document.getElementById("diagramdiv").innerHTML = '';
+  makeBarChart();
+  modifyInputs();
+}
+var timeId = null;
+window.addEventListener('resize', () => {
+  clearTimeout(timeId);
+  timeId = setTimeout(executeAfterResize, 300);
+});
 
 
 // Source code animated bar chart: https://d3-graph-gallery.com/graph/barplot_animation_start.html
