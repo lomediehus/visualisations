@@ -107,7 +107,6 @@ var Tooltip1 = d3.select("#graph1")
   .attr("class", "u-textMeta")
   
 
-
 // Three function that change the tooltip when user hover / move / leave a cell
 var mouseover = function(d) {
   Tooltip1
@@ -115,17 +114,13 @@ var mouseover = function(d) {
   d3.select(this)
     .style("stroke", "black")
     .style("opacity", 1)
-
 }
 
 var mousemove = function(d) {
-
   Tooltip1
-    
     .html(d.y)
     .style("left", (d3.mouse(this)[0]) + "px")
     .style("top", (d3.mouse(this)[1])  +  "px")
-
 }
 var mouseleave = function(d) {
   Tooltip1
@@ -134,11 +129,6 @@ var mouseleave = function(d) {
     .style("stroke", "none")
     .style("opacity", 1)
 }
-
-
-
-
-
 
 var svg1 = d3.select("#graph1")
   .append("svg")
@@ -176,7 +166,6 @@ svg1.append("g")
   .attr("class", "y axis u-textMeta")
   .call(yAxis);
 
-//NY  
 svg1.append("g")
   .attr("class", "x axis u-textMeta")
   .attr("transform", "translate(0," + height + ")")
@@ -186,28 +175,13 @@ svg1.append("g")
     .attr("dx", "-.5em")
     .attr("dy", ".1em")
     .attr("transform", "rotate(-45)");
-
-// X label
-// svg1.append('text')
-//   .attr('x', width/2)
-//   .attr('y', height + 30)
-//   .attr('text-anchor', 'middle')
-//   .style('font-family', 'Helvetica')
-//   .style('font-size', 12)
-//   .text('Year');
     
 // Y label
 svg1.append('text')
   .attr('text-anchor', 'middle')
   .attr('transform', 'translate(25,' + -4 + ')rotate(0)')
-  // .attr('transform', 'translate(-30,' + height/2 + ')rotate(-90)')
-
-  // .style('font-family', 'Helvetica')
-  // .style('font-size', 12)
   .attr("class", "u-textMeta")
-
   .text('kronor');
-
 
 
 var groups1 = svg1.selectAll("g.bars")
@@ -215,10 +189,7 @@ var groups1 = svg1.selectAll("g.bars")
   .enter().append("g")
   .attr("class", "bars")
   .style("fill", function(d, i) { 
-    // c(d)
     return colors[i]; });
-  // .style("stroke", "#000");
-
 
 var rect1 = groups1.selectAll("rect")
   .data(function(d) {     
@@ -227,13 +198,10 @@ var rect1 = groups1.selectAll("rect")
   .append("rect")
 
     .attr("x", function(d) { 
-    return xScale(d.x); })
+       return xScale(d.x); })
     .attr("y", function(d) { return yScale(d.y0 + d.y); })
     .attr("height", function(d) { return yScale(d.y0) - yScale(d.y0 + d.y); })
     .attr("width", xScale.rangeBand())   
-    // .append("svg:title")
-    // .text(function(d) { return d.y; })
-
     .on("mouseover", mouseover)
     .on("mousemove", mousemove)
     .on("mouseleave", mouseleave)
@@ -242,11 +210,6 @@ var rect1 = groups1.selectAll("rect")
   groups1.selectAll("rect")
     .filter("rect:first-of-type")
       .attr("class","fillrect")
-
-
-
-  
-
 
 
   // Här kommer en text
@@ -260,11 +223,9 @@ d3.select("#graph1")
   .html("Den som har låg pension kan ansöka om bostadstillägg  och äldreförsörjningsstöd, som jämnar ut skillnaden. Den gröna delen av stapeln består av dessa tillägg. Långt ifrån alla med låg pension kan dock få tilläggen.")
   
 
+// Allt för svg2
 
-
-  // Allt för svg2
-
-  // create a tooltip
+// create a tooltip
 var Tooltip2 = d3.select("#graph2")
 .append("div")
 .style("opacity", 0)
@@ -278,8 +239,6 @@ var Tooltip2 = d3.select("#graph2")
 .style("padding", "2px")
 .attr("class", "u-textMeta")
 
-
-
 // Three functions that change the tooltip when user hover / move / leave a cell
 var mouseover = function(d) {
 Tooltip2
@@ -287,18 +246,15 @@ Tooltip2
 d3.select(this)
   .style("stroke", "black")
   .style("opacity", 1)
-
 }
 
 var mousemove = function(d) {
-
 Tooltip2
-
   .html(d.y)
   .style("left", (d3.mouse(this)[0]) + "px")
   .style("top", (d3.mouse(this)[1])  +  "px")
-
 }
+
 var mouseleave = function(d) {
 Tooltip2
   .style("opacity", 0)
@@ -336,14 +292,8 @@ svg2.append("g")
 svg2.append('text')
   .attr('text-anchor', 'middle')
   .attr('transform', 'translate(25,' + -4 + ')rotate(0)')
-
-  // .attr('transform', 'translate(-30,' + height/2 + ')rotate(-90)')
-  // .style('font-family', 'Helvetica')
   .attr("class", "u-textMeta")
-  // .style('font-size', 12)
   .text('kronor');
-
-
 
 var groups2 = svg2.selectAll("g.bars")
 .data(dataset2)
@@ -362,8 +312,6 @@ var rect2 = groups2.selectAll("rect")
   .attr("y", function(d) { return yScale(d.y0 + d.y); })
   .attr("height", function(d) { return yScale(d.y0) - yScale(d.y0 + d.y); })
   .attr("width", xScale.rangeBand())   
-  // .append("svg:title")
-  // .text(function(d) { return d.y; })
 .on("mouseover", mouseover)
 .on("mousemove", mousemove)
 .on("mouseleave", mouseleave)
@@ -372,7 +320,7 @@ groups2.selectAll("rect")
   .filter("rect:first-of-type")
     .attr("class","fillrect")
 
-  // Här kommer en text
+// Här kommer en text
 d3.select("#graph2")
   .append("h4")
   .html("Deltidsarbetande 75%")
@@ -381,8 +329,6 @@ d3.select("#graph2")
   .append("p")
   .attr("class", "u-textMeta")
   .html("Så här blir det för en som jobbat deltid, 75 procent. Slutlönen blir då 20100 kronor, vilket blir 16217 kronor efter skatt. ")
-
-
 
 
 // Allt för svg3
@@ -401,15 +347,13 @@ var Tooltip3 = d3.select("#graph3")
   .attr("class", "u-textMeta")
   
 
-
-// Three function that change the tooltip when user hover / move / leave a cell
+// Three functions that change the tooltip when user hover / move / leave a cell
 var mouseover = function(d) {
   Tooltip3
     .style("opacity", 1)
   d3.select(this)
     .style("stroke", "black")
     .style("opacity", 1)
-
 }
 
 var mousemove = function(d) {
@@ -436,7 +380,6 @@ var svg3 = d3.select("#graph3")
   .attr("height", height + margin + 100)
   .append("g")
   .attr("transform", "translate(" + (margin) +  "," + margin/2 + ")")
-  // .attr("transform", "translate(" + (margin+30)/2 +  "," + margin/2 + ")")
 
 
 var xScale = d3.scale.ordinal()
@@ -718,6 +661,9 @@ doAllStuff();
 function executeAfterResize() {
   document.getElementById("graph1").innerHTML = '';
   document.getElementById("graph2").innerHTML = '';
+  document.getElementById("graph3").innerHTML = '';
+  document.getElementById("graph4").innerHTML = '';
+
 
   doAllStuff();
 }
