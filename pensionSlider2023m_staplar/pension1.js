@@ -28,7 +28,6 @@ semer.addEventListener("click", function() {
   if (popup.style.display === "block") {
       popup.style.display = "none";
       semer.innerHTML = "Om uträkningen";
-      console.log("style none")
   }
   else {
       popup.style.display = "block";
@@ -38,6 +37,8 @@ semer.addEventListener("click", function() {
   //Give "x" in popup closing function
   close.addEventListener("click", function() {
     semer.innerHTML = "Om uträkningen";
+    popup.style.display = "none";
+
   })
 
   //give div "content" closing function, i.e. close when click beside.
