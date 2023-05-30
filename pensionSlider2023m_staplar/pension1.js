@@ -21,8 +21,40 @@ var forutsattningar = document.getElementById('forutsattningar');
 let output = document.getElementById("slidecontainer").querySelector("output");
 var close = document.getElementById("closex");
 var content = document.getElementById("content");
-console.log("content bredd " + content.offsetWidth)
 var diagramdiv = document.getElementById("diagramdiv");
+
+//Show popup on button click
+semer.addEventListener("click", function() {
+  if (popup.style.display === "block") {
+      popup.style.display = "none";
+      semer.innerHTML = "Om uträkningen";
+      console.log("style none")
+  }
+  else {
+      popup.style.display = "block";
+      semer.innerHTML = "Dölj kommentaren";
+    console.log("style block")
+
+  }
+
+  //Give "x" in popup closing function
+  close.addEventListener("click", function() {
+    popup.style.display = "none";
+    semer.innerHTML = "Om uträkningen";
+  })
+
+  //give div "content" closing function, i.e. close when click beside.
+  content.addEventListener("click", function(e) {
+    //make exception for the button, otherwise the popup will be hidden
+    if (!e.target.classList.contains("Button")) {
+      popup.style.display = "none";
+      semer.innerHTML = "Om uträkningen";
+    }
+      })
+
+  informHeight();
+
+  } )
 
 
 var siffror = {
@@ -153,10 +185,10 @@ var data = [
 function doAllStuff(){
 
 
-    function modifyOffset() {
+  //Function to control the range slider and thumb  
+  function modifyOffset() {
     var el, newPoint, newPlace, offset, siblings, k;
     width  = this.offsetWidth;
-    console.log(this)
 
     newPoint = (this.value - this.getAttribute("min")) / (this.getAttribute("max") - this.getAttribute("min"));
     // was originally -1, changed to -5 to push starting point to left
@@ -189,44 +221,18 @@ function doAllStuff(){
     
     }
 
-
+    //Function to control the range slider and thumb  
     function modifyInputs() {
-
-            slider.oninput = modifyOffset;
-
-            const event = new Event("input");
-            slider.addEventListener(
-            "input",
-            (e) => {
-            },
-            false
-            );
-            slider.dispatchEvent(event);
-
+      slider.oninput = modifyOffset;
+      const event = new Event("input");
+      slider.addEventListener(
+      "input",
+      (e) => {
+      },
+      false
+      );
+      slider.dispatchEvent(event);
     }
-
-
-    semer.addEventListener("click", function() {
-    if (popup.style.display === "block") {
-        popup.style.display = "none";
-        semer.innerHTML = "Om uträkningen";
-    }
-    else {
-        popup.style.display = "block";
-        semer.innerHTML = "Dölj kommentaren";
-    }
-
-    //Give "x" in popup closing function
-    close.addEventListener("click", function() {
-    popup.style.display = "none";
-    semer.innerHTML = "Om uträkningen";
-
-    // overlay.style.display = "none";
-    })
-
-    informHeight();
-
-    } )
 
     //Below is all the code for the bar chart
 
@@ -243,7 +249,7 @@ function doAllStuff(){
 
 
 
-    // set the dimensions and margins of the graph
+    // set the dimensions and margins of the graph, width calculated on parent divs width, making it responsive
     var margin = {top: 10, right: 30, bottom: 40, left: 60},
     width = diagramdiv.offsetWidth - margin.left - margin.right,
     // width = 350 - margin.left - margin.right,
@@ -261,7 +267,6 @@ function doAllStuff(){
 
 
 
-    // })
     // Parse the Data
     // d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function(data) {
     // d3.json(data, function(data) {
@@ -288,8 +293,7 @@ function doAllStuff(){
     svg.append("g")
     .call(d3.axisLeft(y)
         .ticks(4)
-        // .tickFormat(d3.format(".2s")))
-        //to make the thousands separator a space instead of a comma
+        //make the thousands separator a space instead of a comma, using the formate.locale
         .tickFormat(locale.format('$,.0f')))
 
     .attr("class", "axis")
@@ -299,9 +303,7 @@ function doAllStuff(){
     .data(data)
     .enter().append("g");
 
-
     var xbandwidth = x.bandwidth();
-
 
     bars.append("rect")
     .attr("x", function(d) { return x(d.Inkomstslag); })
@@ -309,22 +311,17 @@ function doAllStuff(){
     .attr("fill", "#69b3a2")
     .attr("y", function(d) { return y(d.Value); })
     .attr("height", function(d) { return height - y(d.Value); })
-    //append the labels
+    //append the labels, text content is added later in the animate function
     bars.append("text")
-
-    .text(function(d,i) {     
-    })
-    .attr("class", "label")
-    .style("text-anchor", "left")
-    //place horisontally where d.Inkomstslag is the placement of the rect and xbandwidth is a variable with av value of halt the width of the rect. Then subtract about half the width of the text element, which varies a bit. Makes the label roughly centered on different screen sizes.
-    .attr("x", function(d) { return x(d.Inkomstslag) + xbandwidth/2 -27; })
-    //place vertically
-    .attr("y", height - 15)
-
+      .attr("class", "label")
+      .style("text-anchor", "left")
+      //place horisontally where d.Inkomstslag is the placement of the rect and xbandwidth is a variable with av value of halt the width of the rect. Then subtract about half the width of the text element, which varies a bit. Makes the label roughly centered on different screen sizes.
+      .attr("x", function(d) { return x(d.Inkomstslag) + xbandwidth/2 -27; })
+      //place vertically
+      .attr("y", height - 15)
 
 
     function animate(d,i) {
-    // data[0].Value = data[0].Value * Math.random()
     // Animation
     bars.selectAll("rect")
         .transition()
@@ -332,28 +329,15 @@ function doAllStuff(){
         .attr("y", function(d) { return y(d.Value); })
         .attr("height", function(d) { return height - y(d.Value); })
         .delay(function(d,i){ return(i*100)})
-
-
     bars.select("text")
-        
-        //Update label text, format with thousands separator space and return
+         //Update label text, format with thousands separator space and return
         .text(function(d,i) { 
         return locale.format('$,.0f') (data[i].Value);
         })
-        // .attr("class", "label")
-        // .style("text-anchor", "center")
-        // //place horisontally
-        // .attr("x", function(d) { return x(d.Inkomstslag) + 20; })
-        // //place vertically
-        // .attr("y", height - 15)
     }
 
-
-
     modifyInputs();
-
     informHeight();
-
 
 }
 
@@ -362,7 +346,7 @@ doAllStuff();
 
 // Change size of charts on resizeBy, from here: https://www.tutorialspoint.com/how-to-wait-resize-end-event-and-then-perform-an-action-using-javascript
 
-// function to execute JavaScript code after the window resize event completes
+// function to execute JavaScript code after the window resize event completes. Without the setTimeout it would update continuously when resizing, a behaviour that makes for a poor user experience
 function executeAfterResize() {
   document.getElementById("diagramdiv").innerHTML = '';
   doAllStuff();
@@ -372,9 +356,6 @@ window.addEventListener('resize', () => {
   clearTimeout(timeId);
   timeId = setTimeout(executeAfterResize, 300);
 });
-
-
-// })
 
 
 // Source code animated bar chart: https://d3-graph-gallery.com/graph/barplot_animation_start.html
