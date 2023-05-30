@@ -33,13 +33,10 @@ semer.addEventListener("click", function() {
   else {
       popup.style.display = "block";
       semer.innerHTML = "Dölj kommentaren";
-    console.log("style block")
-
   }
 
   //Give "x" in popup closing function
   close.addEventListener("click", function() {
-    popup.style.display = "none";
     semer.innerHTML = "Om uträkningen";
   })
 
