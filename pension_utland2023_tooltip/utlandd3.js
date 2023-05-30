@@ -59,8 +59,11 @@ var height = 250;
 // var height = 250;
 
 
+
+// Allt för Svg1
+
 // create a tooltip
-var Tooltip = d3.select("#graphs")
+var Tooltip1 = d3.select("#graph1")
   .append("div")
   .style("opacity", 0)
   .style("position", "absolute")
@@ -77,7 +80,7 @@ var Tooltip = d3.select("#graphs")
 
 // Three function that change the tooltip when user hover / move / leave a cell
 var mouseover = function(d) {
-  Tooltip
+  Tooltip1
     .style("opacity", 1)
   d3.select(this)
     .style("stroke", "black")
@@ -85,63 +88,17 @@ var mouseover = function(d) {
 
 }
 
-// function offset(el) {
-//   var rect = el.getBoundingClientRect()
-//   // scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-//   // scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   // return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-// }
-// var graphs = document.querySelector("graphs")
-
-// console.log(offset(graphs))
-
-
 var mousemove = function(d) {
 
-  
-  const mormor = this.parentElement.parentElement.parentElement;
-  const y_mormor = mormor.getBoundingClientRect().y;
-
-
-  console.log("mouse y" + d3.mouse(this.parentElement)[1])
-
-  // const styleTop = (e) => {
-  //   return ((e.pageY)+"px")
-  // }
-
-  Tooltip
-    // .html(function(d,i) { 
-    //   c(this)
-    //   return "värde " + d.x; })
-
-    .html(d.y)
-  
-
-
-    // .style("top", styleTop(Tooltip))
-    // .style("left",(event.pageX)+"px")
-    .style("left",  (this.getBoundingClientRect().x + width/100) + "px")
-
-
-    // .style("top", (event.pageY)+"px")
-    // .style("left",(event.pageX)+"px")
-    // .style("left",  (this.getBoundingClientRect().x) + "px")
+  Tooltip1
     
-    .style("top", (this.getBoundingClientRect().y) + "px")
-
-    // .style("left", (d3.mouse(this)[0]+70) + "px")
-    // .style("top", (this.getBoundingClientRect().y + (this.getBoundingClientRect().height) -200 +  "px"))
-    // .style("top", (d3.mouse(this)[1])  +  "px")
-    // .style("top", (d3.mouse(this.parentElement)[1])  +  "px")
-    // .style("top", "200px")
-
-
-    // .style("top", d3.mouse(this)[1] + (this.getBoundingClientRect().y - this.getBoundingClientRect().height/2)  +  "px")
-
+    .html(d.y)
+    .style("left", (d3.mouse(this)[0]) + "px")
+    .style("top", (d3.mouse(this)[1])  +  "px")
 
 }
 var mouseleave = function(d) {
-  Tooltip
+  Tooltip1
     .style("opacity", 0)
   d3.select(this)
     .style("stroke", "none")
@@ -153,8 +110,7 @@ var mouseleave = function(d) {
 
 
 
-//NY    
-var svg1 = d3.select("#graphs")
+var svg1 = d3.select("#graph1")
   .append("svg")
   .attr("width", width + margin + 40 )
   .attr("height", height + margin + 100)
@@ -163,7 +119,6 @@ var svg1 = d3.select("#graphs")
   // .attr("transform", "translate(" + (margin+30)/2 +  "," + margin/2 + ")")
 
 
-//NY
 var xScale = d3.scale.ordinal()
   .domain(dataset1[0].map(function(d) { return d.x; }))
   .rangeRoundBands([0, width], 0.3);
@@ -235,7 +190,6 @@ var groups1 = svg1.selectAll("g.bars")
   // .style("stroke", "#000");
 
 
-//NY
 var rect1 = groups1.selectAll("rect")
   .data(function(d) {     
     return d; })
@@ -255,7 +209,6 @@ var rect1 = groups1.selectAll("rect")
     .on("mouseleave", mouseleave)
   
   
-  //NY
   groups1.selectAll("rect")
     .filter("rect:first-of-type")
       .attr("class","fillrect")
@@ -267,11 +220,11 @@ var rect1 = groups1.selectAll("rect")
 
 
   // Här kommer en text
-d3.select("#graphs")
+d3.select("#graph1")
   .append("h4")
   .html("Tillägg kan jämna ut skillnaden")
   
-d3.select("#graphs")
+d3.select("#graph1")
   .append("p")
   .attr("class", "u-textMeta")
   .html("Den som har låg pension kan ansöka om bostadstillägg  och äldreförsörjningsstöd, som jämnar ut skillnaden. Den gröna delen av stapeln består av dessa tillägg. Långt ifrån alla med låg pension kan dock få tilläggen.")
@@ -281,18 +234,56 @@ d3.select("#graphs")
 
   // Allt för svg2
 
-  
-    
+  // create a tooltip
+var Tooltip2 = d3.select("#graph2")
+.append("div")
+.style("opacity", 0)
+.style("position", "absolute")
+.attr("class", "tooltip")
+.style("background-color", "white")
+.style("width", "60px")
+.style("border", "solid")
+.style("border-width", "1px")
+.style("border-radius", "3px")
+.style("padding", "2px")
+.attr("class", "u-textMeta")
 
-  var svg2 = d3.select("#graphs")
+
+
+// Three functions that change the tooltip when user hover / move / leave a cell
+var mouseover = function(d) {
+Tooltip2
+  .style("opacity", 1)
+d3.select(this)
+  .style("stroke", "black")
+  .style("opacity", 1)
+
+}
+
+var mousemove = function(d) {
+
+Tooltip2
+
+  .html(d.y)
+  .style("left", (d3.mouse(this)[0]) + "px")
+  .style("top", (d3.mouse(this)[1])  +  "px")
+
+}
+var mouseleave = function(d) {
+Tooltip2
+  .style("opacity", 0)
+d3.select(this)
+  .style("stroke", "none")
+  .style("opacity", 1)
+}
+
+    
+var svg2 = d3.select("#graph2")
   .append("svg")
   .attr("width", width + margin + 40 )
   .attr("height", height + margin + 100)
   .append("g")
   .attr("transform", "translate(" + (margin) +  "," + margin/2 + ")")
-
-
-
 
 
 svg2.append("g")
@@ -355,16 +346,28 @@ groups2.selectAll("rect")
 informHeight();
 
 //end of doAllStuff-function
+
+//Testar jquery position
+// $(window).click(function(e){
+//   console.log(e.pageX)
+//   $('#mouse-xy').html("X: " + e.pageX + " Y: " + e.pageY);
+// });
+
+
+
 };
 
 doAllStuff();
+
 
 
 // Change size of charts on resizeBy, from here: https://www.tutorialspoint.com/how-to-wait-resize-end-event-and-then-perform-an-action-using-javascript
 
 // function to execute JavaScript code after the window resize event completes
 function executeAfterResize() {
-  document.getElementById("graphs").innerHTML = '';
+  document.getElementById("graph1").innerHTML = '';
+  document.getElementById("graph2").innerHTML = '';
+
   doAllStuff();
 }
 var timeId = null;

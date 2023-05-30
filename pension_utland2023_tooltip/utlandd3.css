@@ -45,3 +45,7 @@
   /* fill: #dd5354; */
   fill: #e16667;
 }
+
+#graph1, #graph2 {
+  position: relative;
+}
