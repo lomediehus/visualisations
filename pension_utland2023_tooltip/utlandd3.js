@@ -119,7 +119,8 @@ var mouseover = function(d) {
 var mousemove = function(d) {
   Tooltip1
     .html(d.y)
-    .style("left", (d3.mouse(this)[0]) + "px")
+    //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
+    .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
     .style("top", (d3.mouse(this)[1])  +  "px")
 }
 var mouseleave = function(d) {
@@ -220,6 +221,7 @@ d3.select("#graph1")
 d3.select("#graph1")
   .append("p")
   .attr("class", "u-textMeta")
+  .style("padding-bottom", "10px")
   .html("Den som har låg pension kan ansöka om bostadstillägg  och äldreförsörjningsstöd, som jämnar ut skillnaden. Den gröna delen av stapeln består av dessa tillägg. Långt ifrån alla med låg pension kan dock få tilläggen.")
   
 
@@ -251,7 +253,8 @@ d3.select(this)
 var mousemove = function(d) {
 Tooltip2
   .html(d.y)
-  .style("left", (d3.mouse(this)[0]) + "px")
+  //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
+  .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
   .style("top", (d3.mouse(this)[1])  +  "px")
 }
 
@@ -327,6 +330,7 @@ d3.select("#graph2")
   
 d3.select("#graph2")
   .append("p")
+  .style("padding-bottom", "10px")
   .attr("class", "u-textMeta")
   .html("Så här blir det för en som jobbat deltid, 75 procent. Slutlönen blir då 20100 kronor, vilket blir 16217 kronor efter skatt. ")
 
@@ -361,7 +365,8 @@ var mousemove = function(d) {
   Tooltip3
     
     .html(d.y)
-    .style("left", (d3.mouse(this)[0]) + "px")
+    //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
+    .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
     .style("top", (d3.mouse(this)[1])  +  "px")
 
 }
@@ -519,7 +524,8 @@ var mousemove = function(d) {
   Tooltip4
     
     .html(d.y)
-    .style("left", (d3.mouse(this)[0]) + "px")
+    //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
+    .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
     .style("top", (d3.mouse(this)[1])  +  "px")
 
 }
@@ -635,20 +641,9 @@ var rect4 = groups4.selectAll("rect")
       .attr("class","fillrect")
 
 
-
-
 informHeight();
 
 //end of doAllStuff-function
-
-//Testar jquery position
-// $(window).click(function(e){
-//   console.log(e.pageX)
-//   $('#mouse-xy').html("X: " + e.pageX + " Y: " + e.pageY);
-// });
-
-
-
 };
 
 doAllStuff();
