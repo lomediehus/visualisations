@@ -114,6 +114,7 @@ var mouseover = function(d) {
   d3.select(this)
     .style("stroke", "black")
     .style("opacity", 1)
+    console.log(this)
 }
 
 var mousemove = function(d) {
@@ -129,6 +130,8 @@ var mouseleave = function(d) {
   d3.select(this)
     .style("stroke", "none")
     .style("opacity", 1)
+  
+
 }
 
 var svg1 = d3.select("#graph1")
