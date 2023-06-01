@@ -4,10 +4,13 @@
 let host = window.location.host;
 if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
-  console.log('den finns på github')
 }
 
 const c = console.log.bind(document);
+
+var windowWidth = innerWidth;
+var barWidth = windowWidth/7.6;
+var increaseWidth = barWidth/2;
 
 
 
@@ -120,8 +123,11 @@ var mousemove = function(d) {
   Tooltip1
     .html(d.y)
     //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
-    .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+    // .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+    .style("left", (d3.mouse(this)[0]) +  "px")
+
     .style("top", (d3.mouse(this)[1])  +  "px")
+  
 }
 var mouseleave = function(d) {
   Tooltip1
@@ -131,13 +137,6 @@ var mouseleave = function(d) {
     .style("opacity", 1)
 }
 
-var click = function(d) {
-  Tooltip1
-    .html(d.y)
-    //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
-    .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
-    .style("top", (d3.mouse(this)[1])  +  "px")
-}
 
 var mouseleave = function(d) {
   Tooltip1
@@ -222,7 +221,6 @@ var rect1 = groups1.selectAll("rect")
     .on("mouseover", mouseover)
     .on("mousemove", mousemove)
     .on("mouseleave", mouseleave)
-    .on("click", click)
   
   
   groups1.selectAll("rect")
@@ -271,7 +269,9 @@ var mousemove = function(d) {
 Tooltip2
   .html(d.y)
   //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
-  .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+  // .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+  .style("left", (d3.mouse(this)[0]) +  "px")
+
   .style("top", (d3.mouse(this)[1])  +  "px")
 }
 
@@ -383,7 +383,9 @@ var mousemove = function(d) {
     
     .html(d.y)
     //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
-    .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+    // .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+    .style("left", (d3.mouse(this)[0]) +  "px")
+
     .style("top", (d3.mouse(this)[1])  +  "px")
 
 }
@@ -542,7 +544,9 @@ var mousemove = function(d) {
     
     .html(d.y)
     //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
-    .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+    // .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+    .style("left", (d3.mouse(this)[0]) +  "px")
+
     .style("top", (d3.mouse(this)[1])  +  "px")
 
 }
@@ -658,6 +662,8 @@ var rect4 = groups4.selectAll("rect")
       .attr("class","fillrect")
 
 
+
+
 informHeight();
 
 //end of doAllStuff-function
@@ -671,13 +677,22 @@ doAllStuff();
 
 // function to execute JavaScript code after the window resize event completes
 function executeAfterResize() {
+
+
   document.getElementById("graph1").innerHTML = '';
   document.getElementById("graph2").innerHTML = '';
   document.getElementById("graph3").innerHTML = '';
   document.getElementById("graph4").innerHTML = '';
 
+  windowWidth = innerWidth;
+  barWidth = windowWidth/7.6;
+  increaseWidth = barWidth/2;
+// test = [...test]
+console.log(increaseWidth)
 
   doAllStuff();
+
+  return increaseWidth;
 }
 var timeId = null;
 window.addEventListener('resize', () => {
