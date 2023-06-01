@@ -114,7 +114,6 @@ var mouseover = function(d) {
   d3.select(this)
     .style("stroke", "black")
     .style("opacity", 1)
-    console.log(this)
 }
 
 var mousemove = function(d) {
@@ -138,7 +137,6 @@ var click = function(d) {
     //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
     .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
     .style("top", (d3.mouse(this)[1])  +  "px")
-    console.log("klickade på riktigt")
 }
 
 var mouseleave = function(d) {
