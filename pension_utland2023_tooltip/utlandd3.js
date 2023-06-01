@@ -130,8 +130,22 @@ var mouseleave = function(d) {
   d3.select(this)
     .style("stroke", "none")
     .style("opacity", 1)
-  
+}
 
+var click = function(d) {
+  Tooltip1
+    .html(d.y)
+    //postion left, mouse position + xScale.rangeBand, which controls the width of the rects. Tootlip is placed at the amount of pixels left of the position of the nearest positioned ancestor, which is the container div for the charts svg.
+    .style("left", (d3.mouse(this)[0]) + (xScale.rangeBand()/3) + "px")
+    .style("top", (d3.mouse(this)[1])  +  "px")
+}
+var mouseleave = function(d) {
+  Tooltip1
+    .style("opacity", 0)
+  d3.select(this)
+    .style("stroke", "none")
+    .style("opacity", 1)
+    console.log("klickade")
 }
 
 var svg1 = d3.select("#graph1")
@@ -209,6 +223,7 @@ var rect1 = groups1.selectAll("rect")
     .on("mouseover", mouseover)
     .on("mousemove", mousemove)
     .on("mouseleave", mouseleave)
+    .on("click", click)
   
   
   groups1.selectAll("rect")
