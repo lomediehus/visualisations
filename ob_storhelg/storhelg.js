@@ -140,19 +140,20 @@ function doStuff() {
   var paskdatum = new Date("March 12 2023");
   var pingstdatum = new Date("April 22 2023");
 
-  var midsommardatum = new Date("June 07 2022");
+  var midsommardatum = new Date("June 07 2023");
 
   //Variable for current date
   //variables for set dates
 
   //handling dates:
   //Check if current date is after jul;
-  if (date.getTime() > nyarsdatum.getTime()) {
+  if (date.getTime() > midsommardatum.getTime()) {
+    c("efter midsommar")
     //if current date is also after nyar
     if (date.getTime() > pingstdatum.getTime()) {
-      document.getElementById("helgbild").src = 'pask.svg';
-      goActive(helgknapp4);
-      helgnr = "4";
+      document.getElementById("helgbild").src = 'midsommar.svg';
+      goActive(helgknapp6);
+      helgnr = "6";
     }
     else {
       document.getElementById("helgbild").src = 'pask.svg';
