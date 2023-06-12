@@ -140,19 +140,20 @@ function doStuff() {
   var paskdatum = new Date("March 12 2023");
   var pingstdatum = new Date("April 22 2023");
 
-  var midsommardatum = new Date("June 07 2022");
+  var midsommardatum = new Date("June 07 2023");
 
   //Variable for current date
   //variables for set dates
 
   //handling dates:
   //Check if current date is after jul;
-  if (date.getTime() > nyarsdatum.getTime()) {
+  if (date.getTime() > midsommardatum.getTime()) {
+    c("efter midsommar")
     //if current date is also after nyar
     if (date.getTime() > pingstdatum.getTime()) {
-      document.getElementById("helgbild").src = 'pingst.svg';
-      goActive(helgknapp5);
-      helgnr = "5";
+      document.getElementById("helgbild").src = 'midsommar.svg';
+      goActive(helgknapp6);
+      helgnr = "6";
     }
     else {
       document.getElementById("helgbild").src = 'pask.svg';
@@ -363,7 +364,7 @@ function doStuff() {
   }
 
   //complete list of yrken
-  var yrken = [ "administratör", "aktiveringsassistent", "aktiveringspedagog", "aktivitetsledare", "ambulanssjukvårdare", "anläggningsarbetare", "arbetshandledare", "arbetsledare", "assistent/församlingsarbete", "avbytare", "badmästare", "badpersonal", "banarbetare", "barnskötare", "barnsköterska", "barntimmeledare", "behandlare", "behandlingsassistent", "biträde", "boendeassistent", "boendehandledare", "boendestödjare", "brandman", "buss övriga", "bussförare", "butikspersonal", "chaufför", "diakoniassistent", "djursjukskötare", "djurskötare", "djurvårdare", "driftsledare", "ekonomibiträde", "elevassistent", "fastighetsskötare", "fordonsförare", "fotvårdare", "fritidsledare", "fältarbetare", "fönsterputsare", "förrådsarbetare", "församlingshemsvärd", "garagepersonal", "habiliteringsassistent", "habiliteringsbiträde", "habiliteringspedagog", "habiliteringspersonal", "handledare", "husmor", "hästskötare", "instruktör", "internlärare", "kock", "kokerska", "kontorsvaktmästare", "kundtjänstmedarbetare", "kyrkogårdsarbetare", "kyrkogårdsföreståndare", "kyrkvaktmästare", "köksbiträde", "kökspersonal", "laboratoriebiträde", "lagerarbetare", "lantarbetare", "ledsagare", "legitimerad djursjukskötare", "logopedassistent", "lokalvårdare", "maskinförare", "maskinskötare", "medlevare", "mekaniker", "montör", "motorfordonsmekaniker", "måltidspersonal", "obduktionstekniker", "omsorgsassistent", "park- och trädgårdsarbetare", "personlig assistent", "receptionist", "renhållningsarbetare", "reparatör", "ridlärare", "serveringsbiträde", "servicevärd", "sjukgymnastassistent", "sjukvårdsbiträde", "skötare", "socialpedagog", "specialistundersköterska", "spårvagnsförare", "städare", "stödassistent", "stödbiträde", "stödpedagog", "stödpersonal", "teamledare", "traktorförare", "tvätteribiträde", "tvätterimedarbetare", "tvättmaskinskötare", "undersköterska", "ungdomsassistent", "ungdomsledare", "vaktmästare", "verkstadspersonal", "vård- och omsorgspersonal", "vårdare", "vårdbiträde"]
+  var yrken = [ "administratör", "aktiveringsassistent", "aktiveringspedagog", "aktivitetsledare", "ambulanssjukvårdare", "anläggningsarbetare", "arbetshandledare", "arbetsledare", "assistent/församlingsarbete", "avbytare", "badmästare", "badpersonal", "banarbetare", "barnskötare", "barnsköterska", "barntimmeledare", "behandlare", "behandlingsassistent", "biträde", "boendeassistent", "boendehandledare", "boendestödjare", "brandman", "buss övriga", "bussförare", "busschaufför", "butikspersonal", "chaufför", "diakoniassistent", "djursjukskötare", "djurskötare", "djurvårdare", "driftsledare", "ekonomibiträde", "elevassistent", "fastighetsskötare", "fordonsförare", "fotvårdare", "fritidsledare", "fältarbetare", "fönsterputsare", "förrådsarbetare", "församlingshemsvärd", "garagepersonal", "habiliteringsassistent", "habiliteringsbiträde", "habiliteringspedagog", "habiliteringspersonal", "handledare", "husmor", "hästskötare", "instruktör", "internlärare", "kock", "kokerska", "kontorsvaktmästare", "kundtjänstmedarbetare", "kyrkogårdsarbetare", "kyrkogårdsföreståndare", "kyrkvaktmästare", "köksbiträde", "kökspersonal", "laboratoriebiträde", "lagerarbetare", "lantarbetare", "ledsagare", "legitimerad djursjukskötare", "logopedassistent", "lokalvårdare", "maskinförare", "maskinskötare", "medlevare", "mekaniker", "montör", "motorfordonsmekaniker", "måltidspersonal", "obduktionstekniker", "omsorgsassistent", "park- och trädgårdsarbetare", "personlig assistent", "receptionist", "renhållningsarbetare", "reparatör", "ridlärare", "serveringsbiträde", "servicevärd", "sjukgymnastassistent", "sjukvårdsbiträde", "skötare", "socialpedagog", "specialistundersköterska", "spårvagnsförare", "städare", "stödassistent", "stödbiträde", "stödpedagog", "stödpersonal", "teamledare", "traktorförare", "tvätteribiträde", "tvätterimedarbetare", "tvättmaskinskötare", "undersköterska", "ungdomsassistent", "ungdomsledare", "vaktmästare", "verkstadspersonal", "vård- och omsorgspersonal", "vårdare", "vårdbiträde"]
 
 
 
