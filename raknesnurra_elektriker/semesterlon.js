@@ -1,8 +1,6 @@
 
 
-function printNumber() {
-    console.log("hej")
-   
+function printNumber() {   
     let numberplace = document.getElementById("resultat");
     let lon = parseInt(document.getElementById("lon").value);
     let dagar = parseInt(document.getElementById("dagar").value);
@@ -16,7 +14,7 @@ function printNumber() {
 
     let rorligLon = 0;
     if (rorlig > 0) {
-        rorligLon = rorlig * 0.005 * dagar;
+        rorligLon = rorlig * 0.125;
     }
 
     console.log(rorligLon)
@@ -26,15 +24,9 @@ function printNumber() {
     totalLon = Math.round(semesterLon + rorligLon + lon)
     
 
-    // inflationen = Math.round(inflationen * 10) / 10
-
-    // let nylon = parseInt(number.value) * index_2021 / index_2022;
-    // let skillnad = parseInt(number.value) - nylon;
-
-
-    // let fiktivlon = Math.round((parseInt(number.value) * ((index_2022 - index_2021) / index_2021)));
-
     console.log(semesterLon)
+    console.log(rorligLon) 
+    console.log(semesterTillagg)
 
     let output_string = "<p>Din semesterlön blir <b>" + formatKronor.to(totalLon) + "</b> vilket består av din vanliga lön på <b>" + formatKronor.to(lon) + "</b> samt semestertillägg på <b>" + formatKronor.to(semesterTillagg) + "</b>.";
 
