@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -87,7 +88,7 @@ img.closex {
 }
 
 img.smalfraga {
-  width: 100%;
+  width: 90%;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
