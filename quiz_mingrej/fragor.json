@@ -1,0 +1,74 @@
+[
+  {
+      "divid": "fraga1",
+      "rubrik": "1. Vem använder en issåg?",
+      "alt1": "Badmästaren i Botkyrka som fixar utebad åt badgästerna året runt.",
+      "value1": "rätt",
+      "alt2": "Djurskötaren utanför Skövde som håller dricksvattenhoar öppna för djur som går ute på vintern.",
+      "value2": "fel",
+      "alt3": "Brandmannen i Jönköping som letar efter försvunna personer efter isolyckor.",
+      "value3": "fel",
+      "svar": "Badmästaren Angelica Abelsson älskar känslan när hon kommer upp från det kalla vattnet. Med issågen som verktyg kan hon bjuda badgästerna på samma upplevelse.",
+      "href": "https://kommunalarbetaren.prenly.com/p/kommunalarbetaren/2023-03-01/r/13/25/5083/970271"
+  },
+  {
+    "divid": "fraga2",
+    "rubrik": "2. Vem har nytta av en sminkspegel?",
+    "alt1": "Städaren i Norrköping som tack vare ett unikt förmånssystem fått tillgång till garderob och toalett med egen personalingång.",
+    "value1": "fel",
+    "alt2": "Undersköterskan i Roma på Gotland som sätter guldkant på pensionärernas vardag.",
+    "value2": "rätt",
+    "alt3": "Djursjukskötaren i Sundsvall som genom att studera hundars mimik fått ner användningen av smärtstillande medicin.",
+    "value3": "fel",
+    "svar": "Undersköterskan Linda Carlsson fixade en plats där boende kan bli fina inför galamiddagarna. ”Det kunde vara mer glitter i äldreomsorgen, men vi är rätt bra på det här”.",
+    "href": "https://kommunalarbetaren.prenly.com/p/kommunalarbetaren/2022-09-07/r/16/30-31/5083/780467"
+},
+{
+  "divid": "fraga3",
+  "rubrik": "3. Vem håller i nyckelknippan?",
+  "alt1": "Ambulanssjukvårdaren som genom ett nytt system fått tillgång till alla hushålls funktionsnycklar i Kiruna.",
+  "value1": "fel",
+  "alt2": "Renhållningsarbetaren som har nycklar till alla soprum i Östersund.",
+  "value2": "rätt",
+  "alt3": "Sotaren som genom ett 24-7-system kan joursota överallt på Östermalm i Stockholm.",
+  "value3": "fel",
+  "svar": "Renhållningsarbetaren Peter Lindroth har 25 nycklar på knippan. Förr kunde han ha upp till 70 nycklar, men antalet har minskat när elektroniska lås blivit vanligare.",
+  "href": "https://kommunalarbetaren.prenly.com/p/kommunalarbetaren/2022-02-24/r/16/31/5083/780459"
+},
+{
+  "divid": "fraga4",
+  "rubrik": "4. Vem använder en termos?",
+  "alt1": "Ambulanssjukvårdaren i Västerbottens inland som protesterar efter att de tvingas uträtta sina behov i särskilt designade termosar.",
+  "value1": "fel",
+  "alt2": "Städaren i Göteborg som håller maten varm på resande fot.",
+  "value2": "rätt",
+  "alt3": "Avbytaren inom lantbruket utanför Kalmar som testar ett manuellt gödselsystem.",
+  "value3": "fel",
+  "svar": "Städaren Anneli Wiklund hinner inte in till kontoret för att äta lunch, utan äter i bilen på väg mellan sina olika arbetsplatser. På morgonen fyller hon mattermosen med varm soppa eller gryta, och den håller sig varm till lunchdags. ",
+  "href": "https://kommunalarbetaren.prenly.com/p/kommunalarbetaren/2022-06-15/r/16/31/5083/780469"
+},
+{
+  "divid": "fraga5",
+  "rubrik": "5. Vem har en hopfällbar eldstad?",
+  "alt1": "Förskolekocken i Hässelby i västra Stockholm som flyttar ut sitt kök utomhus varje dag.",
+  "value1": "rätt",
+  "alt2": "Brandmannen i Majorna i Göteborg som utbildar kollegorna i så kallad minisläckning",
+  "value2": "fel",
+  "alt3": "Stödassistenten i Bunkeflo i Malmö som låter de boende laga mat i stadens parker.",
+  "value3": "fel",
+  "svar": "Förskolekocken Marina Skogwik använder en hopfällbar eldstad när hon lagar mat ute i skogen. Både hon och barnen tycker att det är mysigt att äta utomhus.",
+  "href": "https://kommunalarbetaren.prenly.com/p/kommunalarbetaren/2022-01-26/r/17/33/5083/780465"
+},
+{
+  "divid": "fraga6",
+  "rubrik": "6. Vem flyger drönare?",
+  "alt1": "Fritidsledaren i Västerås som testar ett nytt gps-baserat övervakningssystem för att stoppa gängkriminaliteten.",
+  "value1": "fel",
+  "alt2": "Undersköterskan i Visby som fick för mycket att göra och med drönarens hjälp lurat närvarosystemet och arbetar hemifrån",
+  "value2": "fel",
+  "alt3": "Brandmannen i Karlstad som använder den för att följa vindsbränder.",
+  "value3": "rätt",
+  "svar": "Brandmannen Joakim Degeryd berättar att räddningstjänsten har mycket större användning av drönaren än de trodde när de köpte in den.",
+  "href": "https://kommunalarbetaren.prenly.com/p/kommunalarbetaren/2021-11-17/r/16/31/5083/780453"
+}
+]
