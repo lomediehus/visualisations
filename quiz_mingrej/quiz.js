@@ -39,21 +39,7 @@ $.ajax({
         success: function (data) {
 
           function makeMarkup(x) {
-              var boxtype = "radio";
-              // var boxtype = data[x].type==="enval" ? "radio" : "checkbox";
-
-
-            // var markup = `
-            // <div id="${data[x].divid}" class="u-paddedBottomM">
-            //   <h3 id="rubrik${x+1}" class="u-textMetaDeca smalfraga">${data[x].rubrik}</h3>
-            //   <img src="bild${x+1}.jpg" class="smalfraga">
-            //   <label class="smalfraga"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value1}" class="checkbox">${data[x].alt1}<span>  ${data[x].symbol1}</span></label><br>
-            //   <label class="smalfraga"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value2}" class="checkbox">${data[x].alt2}<span>  ${data[x].symbol2}</span></label><br>
-            //   <label class="smalfraga"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value3}' class='checkbox'>${data[x].alt3}<span>  ${data[x].symbol3}</span></label>
-
-            // `
-
-
+            var boxtype = "radio";
             var markup = `
             <div id="${data[x].divid}" class="u-paddedBottomM">
               <h3 id="rubrik${x+1}" class="ListicleHeading smalfraga">${data[x].rubrik}</h3>
@@ -67,10 +53,7 @@ $.ajax({
               // if (data[x].alt4) {
               //   markup += `<br><label class="smalfraga"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value4}' class='checkbox'>${data[x].alt4}<span>  ${data[x].symbol4}</span></label>`
               // }
-              // if (data[x].alt5) {
-              //   markup += `<br><label class="smalfraga"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value5}' class='checkbox'>${data[x].alt5}<span>  ${data[x].symbol5}</span></label>`
-              // }
-
+       
               markup += `
               <p class="hidden u-paddedTopXS smalfraga">${data[x].svar}<br><a href="${data[x].href}" target="_blank")>Här kan du läsa mer!</a></p>
                 </div>`
@@ -83,14 +66,14 @@ $.ajax({
             content.innerHTML += makeMarkup(index);
             informHeight();
 
+
             }
           // add submit button
           content.innerHTML += "<button id='submitButton' class='Button doNotHideOverlay smalfraga'>Se ditt resultat</button>";
           content.innerHTML += "<div id='result' class='hidden u-textMeta smalfraga'></div>"
+          content.innerHTML += "<div id='workaround'></div>"
 
           informHeight();
-
-
 
 
           var submitButton = document.getElementById("submitButton");
@@ -234,3 +217,6 @@ $.ajax({
             console.log('Network error has occurred please try again!');
         }
         });
+
+
+        
