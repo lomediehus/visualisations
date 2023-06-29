@@ -1,27 +1,20 @@
 body {
   font-family: sans-serif;
-  /* box-sizing: border-box; */
-  /* background-color: #f5f7f7; */
 }
 
 div#content {
   margin: auto;
-  /* width: 400px; */
+  width: 100%;
 }
 
-/* label {
-display: block;
-width: 80%;
-} */
+
 
 .smalfraga {
-  max-width: 400px;
+  /* max-width: 625px; */
   margin: 0 auto;
 }
 
-label::after {
-  /* content: "afdsaf" */
-}
+
 
 span.symbol {
 visibility: hidden;
@@ -32,46 +25,23 @@ color: red;
 }
 
 
-
-/* .radio {
-  visibility: hidden;
-} */
-
 input[type=radio] {
   opacity: 0;
   width: 0px;
-  /* margin: 10px; */
   padding-left: -20px;
 }
 
 
-
-
 label {
-  /* display: block; */
-  /* height: 30px; */
   display: block;
-  /* width: 400px; */
   padding: 10px;
-  /* padding-left: -20px; */
   background-color: #74b2b2;
   background-color: #c4c5c5;
   background-color: #ddebeb;
-  /* box-shadow: 4px 4px #888888; */
-  /* box-shadow: 0 0.6em #c2bb11, 0 0.9em rgba(0, 0, 0, 0.4); */
 
   box-shadow:   #7e7f7f 1px 1px 0,
                 #7e7f7f 2px 2px 0,
                 #7e7f7f 3px 3px 0;
-                /* #3f7171 1px 1px 0,
-                #3f7171 2px 2px 0,
-                #3f7171 3px 3px 0; */
-
-                /* #000 4px 4px 0,
-                #000 5px 5px 0,
-                #000 6px 6px 0,
-                #000 7px 7px 0,
-                #000 8px 8px 0; */
 }
 
 label:visited {
@@ -83,8 +53,7 @@ label:visited {
 }
 
 #result {
-  /* height: 500px; */
-  width: 400px;
+  /* max-width: 625px; */
   border-radius: 10px;
   padding: 20px;
   background-color: #ddebeb;
@@ -92,35 +61,19 @@ label:visited {
 }
 
 #overlay {
-  width: 400px;
+  /* max-width: 625px; */
   height: 100px;
   padding: 10px;
   padding-top: 30px;
   display: none;
-  /* background-color: #ddebeb; */
   background-color: white;
-  /* border-radius: 20px; */
   margin: auto;
-  /* position: absolute; */
   position: fixed;
   top: 50px; left: 50px;
   bottom: 50px; right: 50px;
   color: #000000;
   border: 2px solid black;
-  /* border-width: 2px; */
   z-index:5;
-  /* box-shadow:   #7e7f7f 1px 1px 0,
-                #7e7f7f 2px 2px 0,
-                #7e7f7f 3px 3px 0; */
-                /* #3f7171 1px 1px 0,
-                #3f7171 2px 2px 0,
-                #3f7171 3px 3px 0; */
-
-                /* #000 4px 4px 0,
-                #000 5px 5px 0,
-                #000 6px 6px 0,
-                #000 7px 7px 0,
-                #000 8px 8px 0; */
 }
 
 
@@ -134,13 +87,14 @@ img.closex {
 }
 
 img.smalfraga {
+  width: auto;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 label.smalfraga {
-  width: 380px;
+  /* max-width: 600px; */
 }
 
 div.close {
@@ -154,7 +108,7 @@ div.close {
   display: block;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .smalfraga {
     max-width: 380px;
   }
@@ -169,4 +123,4 @@ div.close {
   div#content {
     margin: auto;
   }
-}
+} */
