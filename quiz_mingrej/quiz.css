@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 div#content {
@@ -108,6 +109,12 @@ div.close {
 #submitButton {
   display: block;
 }
+
+div#workaround {
+  height: 20px;
+}
+
+
 
 /* @media only screen and (max-width: 500px) {
   .smalfraga {
