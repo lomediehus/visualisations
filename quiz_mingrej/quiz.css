@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
   font-family: sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 div#content {
@@ -89,10 +89,33 @@ img.closex {
 }
 
 img.smalfraga {
-  width: 90%;
+  width: 100%;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+div#img-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: -15px;
+  right: 0px;
+  font-size: 18px;
+}
+
+.bildtext {
+  font-family: National2,Helvetica,Arial,sans-serif;
+  /* font-size: 14.22px; */
+  font-weight: 400;
+  letter-spacing: normal;
+  /* line-height: 1.32; */
+  margin-top: 5px;
 }
 
 label.smalfraga {
@@ -110,9 +133,11 @@ div.close {
   display: block;
 }
 
+/* fulfix to get rid of vertical scrollbar */
 div#workaround {
   height: 20px;
 }
+
 
 
 

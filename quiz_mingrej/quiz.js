@@ -43,7 +43,10 @@ $.ajax({
             var markup = `
             <div id="${data[x].divid}" class="u-paddedBottomM">
               <h3 id="rubrik${x+1}" class="ListicleHeading smalfraga">${data[x].rubrik}</h3>
+              <div id="img-container">
               <img src="bild${x+1}.jpg" class="smalfraga">
+						  <p class="bottomright"><span class="bildtext">Bild: Fredrik Sandin Carlsson/Shutterstock/TT</span></p>
+              </div>
               <label class="smalfraga"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value1}" class="checkbox">${data[x].alt1}<span class="symbol">  ${(data[x].value1 === "rätt") ? rättsymbol : felsymbol}</span></label><br>
               <label class="smalfraga"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value2}" class="checkbox">${data[x].alt2}<span class="symbol">  ${(data[x].value2 === "rätt") ? rättsymbol : felsymbol}</span></label><br>
               <label class="smalfraga"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value3}' class='checkbox'>${data[x].alt3}<span class="symbol">  ${(data[x].value3 === "rätt") ? rättsymbol : felsymbol}</span></label>
