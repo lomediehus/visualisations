@@ -14,11 +14,11 @@ var body = document.getElementsByTagName("body")[0];
 let host = window.location.host;
 if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
-  body.style.overflow = "hidden";
+  // body.style.overflow = "hidden";
   console.log('den finns på github')
 }
 else {
-  body.style.overflow = "auto";
+  // body.style.overflow = "auto";
 }
 
 
