@@ -9,26 +9,26 @@ var buttons;
 var points = 0;
 var rättsymbol = "&check;";
 var felsymbol = "&cross;";
+var body = document.getElementsByTagName("body")[0];
 
 let host = window.location.host;
 if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+  body.style.overflow = "hidden";
   console.log('den finns på github')
+}
+else {
+  body.style.overflow = "auto";
 }
 
 
-//ATT GÖRA: SE VAD DENNA GÖR OCH OM DET ÄR BÄTTRE ATT BYTA DEN MOT DEN BORTKOMMENTERADE HÄR UNDER
-document.addEventListener("click", function()  {
-  if (!event.target.classList.contains("doNotHideOverlay")) {
+
+//click almost anywhere in document to hide overlay ("Du måste svara på alla frågrona…") Only submit button has exception
+document.addEventListener("click", function(e)  {
+  if (!e.target.classList.contains("doNotHideOverlay")) {
     $("#overlay").hide();
   }
 })
-
-// document.addEventListener("click", function(e)  {
-//   if (!e.target.classList.contains("doNotHideOverlay")) {
-//     $("#overlay").hide();
-//   }
-// })
 
 
 //reading a json file
@@ -71,9 +71,12 @@ $.ajax({
 
 
             }
-          // add submit button
+          // add submit button, class "doNotHideOverlay" is needed because the button is there to show the overlay
           content.innerHTML += "<button id='submitButton' class='Button doNotHideOverlay smalfraga'>Se ditt resultat</button>";
+          //add div that show result
           content.innerHTML += "<div id='result' class='hidden u-textMeta smalfraga'></div>"
+        
+          //a div with a set height that seems necessary to avoid scrollbars in (some?) browsers
           content.innerHTML += "<div id='workaround'></div>"
 
           informHeight();
@@ -108,7 +111,6 @@ $.ajax({
                 window.scrollBy(0,500);
                 submitButton.style.display = "none";
               });
-              // window.alert('Du fick ' + points + ' rätt av ' + data.length + ' möjliga.')
             }
             else {
               $("#overlay").show();
@@ -149,11 +151,18 @@ $.ajax({
                 }
 
                 //get the image source and remove the .jpg extension
-                var img_source = $(this).parent().siblings("img:first-of-type").attr("src").replace(/\.jpg/, '');
+                // var img_source = $(this).parent().siblings("img:first-of-type").attr("src").replace(/\.jpg/, '');
+                console.log($(this).parent().siblings().children("img:first-of-type").attr(("src").replace(/\.jpg/, '')))
+                var img_source = $(this).parent().siblings().children("img:first-of-type");
+                // console.log(img_source)
+                var img_source_repl = img_source.attr("src").replace(/\.jpg/, '')
+
 
 
                 // change image source to an image with the same name, add letter B and .jpg extension
-                $(this).parent().siblings("img:first-of-type").attr("src", img_source + "B.jpg")
+                // $(this).parent().siblings("img:first-of-type").attr("src", img_source + "B.jpg")
+                $(this).parent().siblings().children("img:first-of-type").attr("src", img_source_repl + "B.jpg")
+
 
 
                 //Show the paragraph containing the correct answer
