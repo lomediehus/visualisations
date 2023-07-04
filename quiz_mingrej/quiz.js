@@ -96,13 +96,41 @@ $.ajax({
               }
             }
             if (klar) {
-              var resultdiv = document.getElementById('result');
-              var resultMarkup = `
+              const resultdiv = document.getElementById('result');
+              let resultMarkup1 = `
               <h2>Resultat</h2>
                 <p><strong>Du fick ${points} rätt av ${data.length} möjliga.</strong></p>
-                <p>Är du kommunalare och använder någon ovanlig eller fiffig sak i ditt arbete får du gärna skriva och berätta om det. Mejla <a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:mingrej@ka.se">mingrej@ka.se</a></p>
               `;
-              result.innerHTML = resultMarkup;
+              let resultMarkup2a = `
+              <p><strong></strong>Nja. Nyanställd? Helt enkelt chef? Börja med att gå in på <a target="_blank" href="https://ka.se/"> www.ka.se </a> då och då för lite bättre koll.</p>
+             `;
+
+             let resultMarkup2b = `
+              <p><strong></strong> Ganska bra, men börja prenumerera på <a target="_blank" href="https://ka.se/nyhetsbrev/">Kommunalarbetarens nyhetsbrev</a> så får du ännu bättre koll!</p>
+             `;
+
+             let resultMarkup2c = `
+              <p><strong></strong>Bravo! Du kan ju nästan allt. Tack för att du läser oss! Men följer du oss också på Instagram? Då blir du verklig läsarelit! <a target="_blank" href="https://instagram.com/kommunalarbetaren?igshid=MzRlODBiNWFlZA==">Gör det här!</a></p>
+             `;
+             let resultMarkup3 = `
+             <p><strong>Tipsa oss!</strong>Är du kommunalare och använder någon ovanlig eller fiffig sak i ditt arbete får du gärna skriva och berätta om det. Mejla <a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:mingrej@ka.se">mingrej@ka.se</a></p>
+             `;
+             
+              resultdiv.innerHTML = resultMarkup1;
+
+              if (points < 3) {
+                resultdiv.innerHTML += resultMarkup2a;
+              }
+              else if (points < 5) {
+                resultdiv.innerHTML += resultMarkup2b
+              }
+              else {
+                resultdiv.innerHTML += resultMarkup2c
+              }
+
+              resultdiv.innerHTML += resultMarkup3;
+
+              console.log(points, typeof points)
 
 
               // result.innerHTML = 'Du fick ' + points + ' rätt av ' + data.length + ' möjliga.'
