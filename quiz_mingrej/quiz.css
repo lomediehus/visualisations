@@ -2,6 +2,7 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   /* overflow: hidden; */
+  
 }
 
 div#content {
@@ -64,15 +65,18 @@ label:visited {
 
 #overlay {
   /* max-width: 625px; */
-  height: 100px;
+  /* height: 100px; */
+  width: 300px;
   padding: 10px;
   padding-top: 30px;
   display: none;
   background-color: white;
   margin: auto;
   position: fixed;
-  top: 50px; left: 50px;
-  bottom: 50px; right: 50px;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 60px; 
+  right: 50%;
   color: #000000;
   border: 2px solid black;
   z-index:5;
