@@ -1,8 +1,16 @@
+html {
+  scrollbar-width: none;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
   /* overflow: hidden; */
-  
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 div#content {
