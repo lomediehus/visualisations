@@ -25,9 +25,9 @@ div#content {
 
 span.symbol {
 visibility: hidden;
-font-size: x-large;
+font-size: xx-large;
 font-weight: 900;
-line-height: normal;
+line-height: 0;
 color: red;
 }
 
