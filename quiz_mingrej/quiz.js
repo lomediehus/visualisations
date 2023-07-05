@@ -103,9 +103,7 @@ $.ajax({
              let resultMarkup2c = `
               <p><strong></strong>Bravo! Du kan ju nästan allt. Tack för att du läser oss! Men följer du oss också på Instagram? Då blir du verklig läsarelit! <a target="_blank" href="https://instagram.com/kommunalarbetaren?igshid=MzRlODBiNWFlZA==">Gör det här!</a></p>
              `;
-             let resultMarkup3 = `
-             <p><strong>Tipsa oss!</strong>Är du kommunalare och använder någon ovanlig eller fiffig sak i ditt arbete får du gärna skriva och berätta om det. Mejla <a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:mingrej@ka.se">mingrej@ka.se</a></p>
-             `;
+            
              
               resultdiv.innerHTML = resultMarkup1;
               
@@ -120,7 +118,6 @@ $.ajax({
                 resultdiv.innerHTML += resultMarkup2c
               }
 
-              resultdiv.innerHTML += resultMarkup3;
 
               //make result div visible with a slide down effekt
               $( "#result" ).slideDown(300, "swing", function() {
