@@ -3,8 +3,12 @@ body {
   background-color: #fcfaf5;
   /* max-width: 948px; */
   width: 100%;
+  -ms-overflow-style: none;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
 
 
 #fixit {
