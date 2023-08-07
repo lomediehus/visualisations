@@ -449,23 +449,13 @@ div.sortknapp {
   font-size: 80%;
 }
 
-#content {
+#content, #brandcontent, #content2 {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
   align-items: flex-start;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
-
-#content2 {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-
 
 
 .basecontainer {
