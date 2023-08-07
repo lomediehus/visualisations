@@ -1,262 +1,20 @@
 ;(function() {
 
-
-  //array for the bar graph
-  const yrken = [
-    {
-      "yrke": "Ambulanssjukvårdare",
-      "lön": 30811
-    },
-    {
-      "yrke": "Anläggningsarbetare",
-      "lön": 30656
-    },
-    {
-      "yrke": "Barnskötare",
-      "lön": 26650
-    },
-    {
-      "yrke": "Barnsköterska",
-      "lön": 29336
-    },
-    {
-      "yrke": "Biträde, region",
-      "lön": 24389
-    },
-    {
-      "yrke": "Boendestödjare",
-      "lön": 27623
-    },
-    {
-      "yrke": "Brandman",
-      "lön": 29688
-    },
-    {
-      "yrke": "Elevassistent",
-      "lön": 26953
-    },
-    {
-      "yrke": "Fastighetsskötare",
-      "lön": 29129
-    },
-    {
-      "yrke": "Fordonsförare",
-      "lön": 28581
-    },
-    {
-      "yrke": "Fotvårdsspecialist",
-      "lön": 30406
-    },
-    {
-      "yrke": "Fritidsledare",
-      "lön": 29080
-    },
-    {
-      "yrke": "Förrådsarbetare",
-      "lön": 26934
-    },
-    {
-      "yrke": "Kock",
-      "lön": 28618
-    },
-    {
-      "yrke": "Lärarassistent",
-      "lön": 29301
-    },
-    {
-      "yrke": "Måltidspersonal",
-      "lön": 25593
-    },
-    {
-      "yrke": "Park- och trädgårdsarbetare",
-      "lön": 28347
-    },
-    {
-      "yrke": "Personlig assistent",
-      "lön": 26618
-    },
-    {
-      "yrke": "Renhållningsarbetare",
-      "lön": 28592
-    },
-    {
-      "yrke": "Skötare",
-      "lön": 28444
-    },
-    {
-      "yrke": "Städare/Lokalvårdare",
-      "lön": 25283
-    },
-    {
-      "yrke": "Stödassistent",
-      "lön": 27894
-    },
-    {
-      "yrke": "Stödpedagog",
-      "lön": 31549
-    },
-    {
-      "yrke": "Undersköterska",
-      "lön": 27944
-    },
-    {
-      "yrke": "Vaktmästare",
-      "lön": 27741
-    },
-    {
-      "yrke": "Vårdbiträde",
-      "lön": 24297
-    },
-    {
-      "yrke": "Vårdbiträde-funktionshinder",
-      "lön": 24978
-    }
-  ]
-
-  var hittat; 
-
-  yrken.forEach(hittaBrandman)
-
-  function hittaBrandman(row) {
-    if (row.yrke === "Brandman") {
-      return hittat = row.lön;
-    }
-    else return;
-  }
-
-  window.brandmanLon = hittat;
-
+  //make it possible to console log with c(tobelogged)
+  const c = console.log.bind(document);
 
   window.setTimeout(setFire, 2000)
 
+  //Delay all actions 2 seconds. Means everything will be loaded and drawn while user is looking att the start screen. Works well because it takes more than 2 seconds for user to choose "brandman" from the menu, and when the user does choose "brandman" everything will be ready to be shown.
   function setFire(){
     var lonefil;
     var tabell = document.getElementById('brandtabell');
-    var kommun = "Filipstad";
     var rensaknapp = document.getElementById('rensaknapp');
     var rensaElement = document.getElementsByClassName('invisible');
     var brandkartpopup = document.getElementById('brandkartpopup');
     var popuptext = document. getElementById('popuptext');
     var close = document.getElementById("brandclosex");
-    var tabellpopup = document.getElementById('tabellpopup');
-    var tabellpopuptext = document.getElementById('tabellpopuptext');
-    var rikssnittp = document.getElementById("rikssnittp");
-
-    
-
-
-    // //array for the bar graph
-    // var yrken = [
-    //   {
-    //     "yrke": "Ambulanssjukvårdare",
-    //     "lön": 30811
-    //   },
-    //   {
-    //     "yrke": "Anläggningsarbetare",
-    //     "lön": 30656
-    //   },
-    //   {
-    //     "yrke": "Barnskötare",
-    //     "lön": 26650
-    //   },
-    //   {
-    //     "yrke": "Barnsköterska",
-    //     "lön": 29336
-    //   },
-    //   {
-    //     "yrke": "Biträde, region",
-    //     "lön": 24389
-    //   },
-    //   {
-    //     "yrke": "Boendestödjare",
-    //     "lön": 27623
-    //   },
-    //   {
-    //     "yrke": "Brandman",
-    //     "lön": 29688
-    //   },
-    //   {
-    //     "yrke": "Elevassistent",
-    //     "lön": 26953
-    //   },
-    //   {
-    //     "yrke": "Fastighetsskötare",
-    //     "lön": 29129
-    //   },
-    //   {
-    //     "yrke": "Fordonsförare",
-    //     "lön": 28581
-    //   },
-    //   {
-    //     "yrke": "Fotvårdsspecialist",
-    //     "lön": 30406
-    //   },
-    //   {
-    //     "yrke": "Fritidsledare",
-    //     "lön": 29080
-    //   },
-    //   {
-    //     "yrke": "Förrådsarbetare",
-    //     "lön": 26934
-    //   },
-    //   {
-    //     "yrke": "Kock",
-    //     "lön": 28618
-    //   },
-    //   {
-    //     "yrke": "Lärarassistent",
-    //     "lön": 29301
-    //   },
-    //   {
-    //     "yrke": "Måltidspersonal",
-    //     "lön": 25593
-    //   },
-    //   {
-    //     "yrke": "Park- och trädgårdsarbetare",
-    //     "lön": 28347
-    //   },
-    //   {
-    //     "yrke": "Personlig assistent",
-    //     "lön": 26618
-    //   },
-    //   {
-    //     "yrke": "Renhållningsarbetare",
-    //     "lön": 28592
-    //   },
-    //   {
-    //     "yrke": "Skötare",
-    //     "lön": 28444
-    //   },
-    //   {
-    //     "yrke": "Städare/Lokalvårdare",
-    //     "lön": 25283
-    //   },
-    //   {
-    //     "yrke": "Stödassistent",
-    //     "lön": 27894
-    //   },
-    //   {
-    //     "yrke": "Stödpedagog",
-    //     "lön": 31549
-    //   },
-    //   {
-    //     "yrke": "Undersköterska",
-    //     "lön": 27944
-    //   },
-    //   {
-    //     "yrke": "Vaktmästare",
-    //     "lön": 27741
-    //   },
-    //   {
-    //     "yrke": "Vårdbiträde",
-    //     "lön": 24297
-    //   },
-    //   {
-    //     "yrke": "Vårdbiträde-funktionshinder",
-    //     "lön": 24978
-    //   }
-    // ]
-
+   
     //close the popup by clicking the "x"
     close.addEventListener("click", function() {
       brandkartpopup.style.display = "none";
@@ -265,8 +23,6 @@
     //Reading a file
     $.ajax({
             url: "brandlon23.json",
-            // url: "https://assets.codepen.io/2076398/brandlon.json",
-
             dataType: "json",
             mimeType: "application/json",
             success: function (data) {
@@ -281,13 +37,12 @@
     })
 
 
-
-    //Function to make a table from loaded date
+    //Function to make a table from loaded data
     function maketable(data) {
       tabell.innerHTML = '';
       data.forEach(function(row) {
         let lonform;
-        //format number and assign result to variable "lonform", if there is a number to format, otherwise lonform will be assigned the value "*"
+        //format number and assign result to variable "lonform", if there is a number to format. Otherwise lonform will be assigned the value "*"
         row.Lon === 0 ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&#8239;");
         //make a string out of array Kommunlista
         let kommunerna = row.Kommunlista.join(', ');
@@ -312,12 +67,6 @@
         //html for the second table cell
         cell2.innerHTML = lonform;
 
-        if (row.Raddningstjanst === "Rikssnitt"){
-          //scopetest
-          // window.brandsnitt = lonform;
-          // rikssnittp.innerHTML = "<strong class='big red'>" + lonform + " kr/mån</strong>";
-        }
-
 
       })
 
@@ -331,7 +80,6 @@
       let header = tabell.createTHead();
       let row = header.insertRow(0);
       let cell1 = row.insertCell(0);
-      // .innerHTML = "Räddningstjänst";
       cell1.classList.add('alfabetisk');
       cell1.innerHTML = "Räddningstjänst";
       let cell2 = row.insertCell(1);
@@ -344,6 +92,7 @@
       brandkartpopup.style.display = "none";
        //prevent propagation of event handlers to parent elements
        event.stopPropagation();
+
        var $target = $(event.target);
 
        //check if the clicked part of the table has a certain class, then sort and make table
@@ -368,11 +117,11 @@
 
        //look for the p element closest to the target and toggle a slide
        $target.closest("tr").find("p").slideToggle(100, "swing", function() {
-         //check if the p element is visible (has display: none) and if it is change the right arrow to a down arrow. Using unicode encoding because it seems to prevent conversion to special android and iphone icons
+         //check if the p element is invisible (has display: none) and if it is change the right arrow to a down arrow. Using unicode encoding because it seems to prevent conversion to special android and iphone icons
          if ($target.closest("tr").find(".tabellkommuner").css("display") === "none") {
             $target.closest("tr").find(".pil").text('\u25BA ');
          }
-         //if the p element is not visible, change the down arrow to a right arrow
+         //if the p element is visible, change the down arrow to a right arrow
          else {
            $target.closest("tr").find(".pil").text('\u25BC ');
          }
@@ -436,7 +185,7 @@
       var bana = d3.geoPath().projection(projection);
 
       //read the file, which is specific data joined with a file of sveriges kommuner
-      var map = d3.json("brandlon_karta_test.geojson");
+      var map = d3.json("brandlon_karta.geojson");
       // var map = d3.json("https://assets.codepen.io/2076398/brandlon_karta.geojson");
 
       //Create a tooltip, hidden at the start
@@ -452,7 +201,6 @@
             .data(values[0].features)
             .enter()
             .append("path")
-            // .attr("class", "continent")
             .attr("d", bana)
             //make the paths grey if they don't have a number for lön
             .style('fill', function(d){
@@ -467,7 +215,6 @@
             .on("mouseout",hideTooltip)
             .on("click", clicked)
 
-            // console.log(values)
 
 
           //color and text for the legend. (Addding an extra item to the domain and range arrays will create a new legend item)
@@ -512,7 +259,6 @@
         //Conditional to assign a value to "lon". if there is a lön, i.e. not 0 in the field, format the lön and assign it. Otherwise assign an string to explain why there is no lön.
         let lon = (d.properties.Lön != 0) ? $.number(d.properties.Lön, 0, ',', "&#8239;" ) + ' kr/mån': 'Lönen visas inte eftersom räddningstjänsten har färre än fem anställda.';
         let kommungrupp = d.properties.Kommunlista;
-        console.log(kommungrupp)
 
 
         d3.selectAll('path')
@@ -531,7 +277,7 @@
           //show the kartopup
           brandkartpopup.style.display = "block";
 
-          //using urdinary javascript to style since d3,js doesnt have the innerHTML
+          //using urdinary javascript to style since d3.js doesnt have the innerHTML
           let html = `
             <h3 class="u-textMeta">${d.properties.Räddningstjänst}</h3>
 
@@ -553,7 +299,6 @@
           let divpos = $('#brandkartdiv').offset().top
 
           //Styling only top position, left is styled in the CSS
-          // d3.select('#brandkartpopup').style("top",(d3.event.pageY+tooltipOffset.y + 50)+"px")
           //vertical position is a relation betwwen path position and containing div position, previously stored in variables
           d3.select('#brandkartpopup').style("top",(ev-divpos+30)+"px")
       }
@@ -578,78 +323,9 @@
         }
     //end of makemap function
     }
-
-
-    // make a bar chart with d3
-    function makeGraph(data) {
-
-      //sort the data
-      data.sort(function(x, y){
-         return d3.descending(x.lön, y.lön);
-      })
-
-
-      var chartWidth = 330,
-          barHeight = 25;
-
-      var x = d3.scaleLinear()
-          .range([0, chartWidth]);
-
-      var chart = d3.select('#brandjamforyrkediv').append("svg")
-          .attr("width", chartWidth)
-          .attr("class", "chart");
-
-
-        x.domain([0, d3.max(data, function(d) { return d.lön; })]);
-
-        chart.attr("height", barHeight * data.length);
-
-
-
-        var bar = chart.selectAll("g")
-            .data(data)
-          .enter().append("g")
-            .attr("transform", function(d, i) { return "translate(0," + i * barHeight +  ")"; });
-
-        bar.append("rect")
-            //set the bar width in relation to the lön
-            .attr("width", function(d) {
-              return x(d.lön);
-            })
-            .attr("height", barHeight - 1);
-
-
-        bar.append("text")
-            .attr("x", function(d) { return x(d.lön) - 3;})
-            .attr("y", barHeight / 2)
-            .attr("dy", ".35em")
-            .classed("u-textMeta", true)
-            .html(function(d) {
-              //using jqery number to put a space as thousands delimiter
-              d.lön = $.number(d.lön, 0, ',', "&#8239;");
-              return d.lön; });
-
-        bar.append("text")
-            .attr("x", 5)
-            .style("text-anchor", "start")
-            .attr("y", barHeight / 2)
-            .attr("dy", ".35em")
-            // .attr("textLength", "50%")
-            .classed("u-textMeta", true)
-            .classed("bartext", true)
-            .text(function(d) {
-              //using regex to replace underscore with space
-              d.yrke = d.yrke.replace(/_/g, ' ');
-              //shorten long strings
-              // if (d.yrke.length > 20) {
-              //   d.yrke = d.yrke.substring(0,19) + "...";
-              // }
-              return d.yrke; });
-    }
-
-    makeGraph(yrken);
+ 
+    //uses function in main script file to make the graph that compares professions
+    makeGraph(riksYrken);
   }
-
-  // return yrken;
 
 })(window);

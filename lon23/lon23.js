@@ -1,11 +1,8 @@
 (function () {
     'use strict';
 
-
 //make it possible to console log with c(tobelogged)
 const c = console.log.bind(document);
-
-
 
 //Get one favicon for localhost and another for github pages
 let host = window.location.host;
@@ -13,29 +10,133 @@ if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
 }
 
-
+ //array for the bar graph, declared in global scope to be used also from script "brandlon.js"
+ window.riksYrken = [
+  {
+    "yrke": "Ambulanssjukvårdare",
+    "lön": 30811
+  },
+  {
+    "yrke": "Anläggningsarbetare",
+    "lön": 30656
+  },
+  {
+    "yrke": "Barnskötare",
+    "lön": 26650
+  },
+  {
+    "yrke": "Barnsköterska",
+    "lön": 29336
+  },
+  {
+    "yrke": "Biträde, region",
+    "lön": 24389
+  },
+  {
+    "yrke": "Boendestödjare",
+    "lön": 27623
+  },
+  {
+    "yrke": "Brandman",
+    "lön": 29688
+  },
+  {
+    "yrke": "Elevassistent",
+    "lön": 26953
+  },
+  {
+    "yrke": "Fastighetsskötare",
+    "lön": 29129
+  },
+  {
+    "yrke": "Fordonsförare",
+    "lön": 28581
+  },
+  {
+    "yrke": "Fotvårdsspecialist",
+    "lön": 30406
+  },
+  {
+    "yrke": "Fritidsledare",
+    "lön": 29080
+  },
+  {
+    "yrke": "Förrådsarbetare",
+    "lön": 26934
+  },
+  {
+    "yrke": "Kock",
+    "lön": 28618
+  },
+  {
+    "yrke": "Lärarassistent",
+    "lön": 29301
+  },
+  {
+    "yrke": "Måltidspersonal",
+    "lön": 25593
+  },
+  {
+    "yrke": "Park- och trädgårdsarbetare",
+    "lön": 28347
+  },
+  {
+    "yrke": "Personlig assistent",
+    "lön": 26618
+  },
+  {
+    "yrke": "Renhållningsarbetare",
+    "lön": 28592
+  },
+  {
+    "yrke": "Skötare",
+    "lön": 28444
+  },
+  {
+    "yrke": "Städare/Lokalvårdare",
+    "lön": 25283
+  },
+  {
+    "yrke": "Stödassistent",
+    "lön": 27894
+  },
+  {
+    "yrke": "Stödpedagog",
+    "lön": 31549
+  },
+  {
+    "yrke": "Undersköterska",
+    "lön": 27944
+  },
+  {
+    "yrke": "Vaktmästare",
+    "lön": 27741
+  },
+  {
+    "yrke": "Vårdbiträde",
+    "lön": 24297
+  },
+  {
+    "yrke": "Vårdbiträde-funktionshinder",
+    "lön": 24978
+  }
+]
 
 var kommunloner = "kommunloner23.json";
 var regionloner = "regionloner23.json";
 var sokvagGeografi = "SverigesLan2019.geojson";
-
-
 var kdata = null;
 var rdata = null;
 var rad, cell1, cell2;
-var landsting;
 var yrkesarray = [];
 var bubbla = document.createElement('span');
 bubbla.className = 'bubblatext';
 var yrke = "Väljyrke";
 var regionsnitt;
 var kommunsnitt;
-//get brandmanLon from the file brandlon.js
-var brandsnitt = window.brandmanLon;
+var brandsnitt;
 var highest, place, highestKommun = 0, highestLandsting = 0, placeKommun = '', placeLandsting = '';
 var lowest, place2, lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
-
-
 //variables for elements from html document
 var tabell = document.getElementById('mintabell');
 var sortKommunFall = document.getElementById('sortKommunFall');
@@ -63,6 +164,13 @@ var blinkcontainer= document.getElementById("blinkcontainer");
 var brandlondiv = document.getElementById("brandlondiv");
 var content = document.getElementById("content");
 
+function hittaBrandman(row) {
+  if (row.yrke === "Brandman") {
+    brandsnitt = row.lön;
+  }
+}
+
+riksYrken.forEach(hittaBrandman)
 
 $('#highlowdiv').hide();
 
@@ -72,7 +180,9 @@ $(document).ready(function() {
     //choose yrke in list
     valjyrke.addEventListener("change", function() {
 
-
+      [...semitransparent].forEach(function(element){
+        element.style.opacity = 1;
+      })
       //resetting variable
       var kommunHasYrke = false;
       yrke = this.value;
@@ -103,8 +213,7 @@ $(document).ready(function() {
           for (var i = 0; i < rdata.length; i++) {
             if (rdata[i].hasOwnProperty(yrke)) {
               listLandstingKnapp.disabled = false;
-             
-              break;
+                  break;
               }
             }
             break;
@@ -147,10 +256,6 @@ $(document).ready(function() {
           blinkcontainer.style.display = "none";
           overlay.style.cursor = "pointer";
           fillHighlowdiv();
-          [...semitransparent].forEach(function(element){
-            element.style.opacity = 1;
-          })
-          // rikssnittp.innerHTML = '';
         }
         else if (yrke === "Väljyrke") {
           overlay.style.display = "block";
@@ -166,15 +271,17 @@ $(document).ready(function() {
       }
 
     //get the number for rikssnitt and put them in place
-    if (yrke === "Väljyrke") {
-      rikssnittp.innerHTML = '';
-    } else if (regionsnitt === undefined && kommunsnitt === undefined) {
+        if (yrke === "Väljyrke") {
+       rikssnittp.innerHTML = '';   
+    } 
+   
+    else if (regionsnitt === undefined && kommunsnitt === undefined) {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(brandsnitt, 0, ',', '&#8239;') + ' kr/mån</strong>';
     } else if (regionsnitt === undefined) {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&#8239;') + ' kr/mån</strong>';
     } else if (kommunsnitt === undefined) {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(regionsnitt, 0, ',', '&#8239;') + ' kr/mån</strong>';
-    }
+    }  
     else {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&#8239;') + " kr/mån</strong> (kommun)<br> <strong class='red big'>" + $.number(regionsnitt, 0, ',', '&#8239;') + " kr/mån</strong> (region)";
     }
@@ -184,8 +291,6 @@ $(document).ready(function() {
 
 //end of document-ready-function
 });
-
-
 
 //Comparing values to get the highest and lowest salary
 function getHighLow(yrke) {
@@ -254,7 +359,6 @@ function fillHighlowdiv() {
   }
 }
 
-
 //Always start with first item in list selected
 selectlista[0].setAttribute("selected", "selected");
 
@@ -274,9 +378,7 @@ $.ajax({
         mimeType: "application/json",
         success: function (data) {
             kdata = data;
-
-            //Make the graph that compares proffessions
-            jamforyrke(kdata, 'RIKSSNITT', 4);
+            makeGraph(riksYrken)
             populateKommunDropdown();
             },
         error: function (/* request, error */) {
@@ -300,6 +402,7 @@ $.ajax({
 
 //Add click to button, sort by kommun/landsting and create the table
 sortKommunFall.addEventListener('click', function() {
+
   //check if landsting or kommun is chosen
   if (getvalue(tabellknappar) === "listKommuner") {
     kdata.sort(function(a, b){
@@ -358,6 +461,7 @@ sortKommunStig.addEventListener('click', function() {
 sortLonStig.addEventListener('click', function() {
   if (getvalue(tabellknappar) === "listKommuner") {
     kdata.sort(function(a, b){
+      //Remove empties, otherwise they will be on top
       if (a[yrke] === '' || a[yrke]=== "bort") return 1;
       if (b[yrke] === '' || b[yrke]=== "bort") return -1;
       return a[yrke] < b[yrke] ? -1 : 1;
@@ -379,12 +483,12 @@ sortLonFall.addEventListener('click', function() {
   // tabell.getElementsByTagName("tbody")[0].innerHTML = tabell.rows[0].innerHTML;
   if (getvalue(tabellknappar) === "listKommuner") {
     kdata.sort(function(a, b){
-      return b[yrke] - a[yrke];
+      // return b[yrke] - a[yrke];
+      return b[yrke] < a[yrke] ? -1 : 1;
       })
     maketable(kdata, tabell);
   }
   else if (getvalue(tabellknappar) === "listLandsting") {
-
     rdata.sort(function(a, b){
       return b[yrke] - a[yrke];
       })
@@ -398,11 +502,6 @@ sortLonFall.addEventListener('click', function() {
 //         'valdkommun' = kommun or landsting, will be given or chosen from search field or select list
 //          index = number indicating at which index to start displaying the proffessions. Needed because the kommun- and landsting files are differently structured
 function jamforyrke(data, valdkommun, index) {
-
-
-  //start with emptying the chart element
-  $("#chart").empty();
-
   //empty array that will collect the chosen proffessions
   yrkesarray = [];
   //empty object for yrke
@@ -425,17 +524,16 @@ function jamforyrke(data, valdkommun, index) {
       }
     });
 
-
     //make a bar chart with d3
     makeGraph(yrkesarray);
 };
 
 // make a bar chart with d3
-function makeGraph(data1) {
-
-  //make new array with filtered data
+window.makeGraph = function makeGraph(data1) {
+   //start with emptying the chart element
+  $("#chart").empty();
+   //make new array with filtered data
   var nydata1 = data1.filter(taBortBort);
-
   //function to remove unwanted items (where the value of "lön" is "bort")
   function taBortBort(value) {
     if (value.lön === "bort") {
@@ -459,9 +557,8 @@ function makeGraph(data1) {
       .range([0, width]);
 
   var chart = d3.select(".chart")
-      .attr("width", width);
-
-
+    .attr("width", width);
+    
     x.domain([0, d3.max(nydata1, function(d) { return d.lön; })]);
 
     chart.attr("height", barHeight * nydata1.length);
@@ -483,9 +580,8 @@ function makeGraph(data1) {
         //.html instead of .text here to be able use the html special character '&#8239;' (thin no break space)
         .html(function(d) {
           //using jqery number to put a space as thousands delimiter
-          d.lön = $.number(d.lön, 0, ',', '&#8239;');
-
-          return d.lön; });
+          var stringlon = $.number(d.lön, 0, ',', '&#8239;');
+          return stringlon; });
 
 
     bar.append("text")
@@ -504,37 +600,38 @@ function makeGraph(data1) {
             d.yrke = d.yrke.substring(0,19) + "...";
           }
           return d.yrke; });
+
 }
 
 
 
 //handling input in search field
-$("input").on("keydown",function search(e) {
-    var data = kdata;
-    //index for kommun is 4, because that is the position of the first proffession in the array
-    var index = 4;
-    //key 13 is "enter"
-    if(e.keyCode == 13) {
-      let count = 0;
-      var sokt = $(this).val();
-      //traverse the data file
-      data.forEach(function(row) {
-        //find i match, in lowercase
-        if (row.Kommun.toLowerCase() === sokt.toLowerCase()){
-          //build the array and make the graph
-          jamforyrke(data, row.Kommun, index);
-          //Show the name of the chosen kommun
-          yrkesspan.innerHTML = 'löner för ' + row.Kommun + '.';
-          $('#yrkep').hide().fadeIn();
-        }
-        else {
-          count++;
-          if (count > data.length-1) {
-          }
-      }
-    })
-    }
-});
+// $("input").on("keydown",function search(e) {
+//     var data = kdata;
+//     //index for kommun is 4, because that is the position of the first proffession in the array
+//     var index = 4;
+//     //key 13 is "enter"
+//     if(e.keyCode == 13) {
+//       let count = 0;
+//       var sokt = $(this).val();
+//       //traverse the data file
+//       data.forEach(function(row) {
+//         //find i match, in lowercase
+//         if (row.Kommun.toLowerCase() === sokt.toLowerCase()){
+//           //build the array and make the graph
+//           jamforyrke(data, row.Kommun, index);
+//           //Show the name of the chosen kommun
+//           yrkesspan.innerHTML = 'löner för ' + row.Kommun + '.';
+//           $('#yrkep').hide().fadeIn();
+//         }
+//         else {
+//           count++;
+//           if (count > data.length-1) {
+//           }
+//       }
+//     })
+//     }
+// });
 
 //Check the third radiobutton on loading page, to make the Kommun choice default
 function checkfromstart(radiobuttons) {
@@ -542,7 +639,6 @@ function checkfromstart(radiobuttons) {
 }
 
 checkfromstart(yrkesknappar);
-
 
 //Getting the value of the checked radiobutton
 function getvalue(radiobuttons) {
@@ -594,22 +690,33 @@ function populateKommunDropdown() {
 [...yrkesknappar].forEach(function(element) {
   element.addEventListener('click', function() {
 
-    if (getvalue(yrkesknappar) === "kommuner") {
+    if (getvalue(yrkesknappar) === "riket") {
+      makeGraph(riksYrken)
+      //Show which data is chosen
+      yrkesspan.innerHTML = 'genomsnitt för hela landet.';
+      $('#yrkep').hide().fadeIn();
+        //hide the select lists for kommun and landsting
+      valjlandsting.style.display = 'none';
+      valjkommun.style.display = "none";
+      //Show the text ”Välj kommun” in top of the dropdown (associated with value "RIKSSNITT")
+      // valjkommun.value = "RIKSSNITT"
+    }
 
+    else if (getvalue(yrkesknappar) === "kommuner") {
       //index for kdata is 4 because that is the position of the first proffesion in that array
       jamforyrke(kdata, 'RIKSSNITT', 4);
       //Show which data is chosen
       yrkesspan.innerHTML = 'genomsnitt för alla kommuner.<br>Välj en kommun i listan.';
       $('#yrkep').hide().fadeIn();
-      //Show the search field for kommun
+      //Show the select list for kommun
       valjkommun.style.display = "block";
       //hide the select list for landsting
       valjlandsting.style.display = 'none';
-
+      //Show the text ”Välj kommun” in top of the dropdown (associated with value "RIKSSNITT")
+      valjkommun.value = "RIKSSNITT"
     }
+
     else if (getvalue(yrkesknappar) === "landsting") {
-
-
         //index for rdata is 2 because that is the position of the first proffesion in that array
         jamforyrke(rdata, 'RIKSSNITT', 2);
         //show which data is chosen
@@ -618,19 +725,16 @@ function populateKommunDropdown() {
         valjkommun.style.display = "none";
         //show the select list for landsting
         valjlandsting.style.display = 'block';
+        //Show the text ”Välj region” in top of the dropdown (associated with value "RIKSSNITT")
+        valjlandsting.value = "RIKSSNITT"
         $('#yrkep').hide().fadeIn();
     }
   });
 })
 
 
-
-
-
 //Event for the select list of landsting
 valjlandsting.addEventListener("change", function() {
-
-
 
   landsting = this.value;
   //Build the array (and make the graph) from the chosen data
@@ -667,7 +771,6 @@ valjkommun.addEventListener("change", function() {
 });
 
 
-
 //Add table rows of sorted data
 function maketable(data, tabell) {
   tabell.innerHTML = '';
@@ -682,9 +785,6 @@ function maketable(data, tabell) {
    
 
     if (row.Kommun !== 'RIKSSNITT' && row.Region !== 'RIKSSNITT') {
-
-
-   
         rad = tabell.insertRow();
         cell1 = rad.insertCell(0);
         cell2 = rad.insertCell(1);
@@ -754,34 +854,17 @@ function showhide(row, bubble) {
     }
   }
   })
-
 };
 
-
-
-
 function bubbelvillkor(row) {
-
   if (row[yrke] === '' ) {
     rad.classList.add('bubbla');
     var cl2 = bubbla.cloneNode(true);
     rad.appendChild(cl2);
     cl2.style.left = '50px';
     cl2.innerHTML = "Uppgift saknas då det finns få eller inga anställda i yrkes&shy;kategorin.";
-    // hide(rad);
     showhide(rad, cl2);
-    // if (row.Kommun === 'Norrtälje Tiohundra AB') {
-    //   cl2.innerHTML += " Norrtälje driver omsorg i egen regi genom bolaget Tiohundra AB som ägs av Norrtälje Kommun och Region Stockholm.";
-    //   }
-    // if (row.Kommun === 'Sollentuna AB Solom') {
-    //   cl2.innerHTML += " Sollentuna driver omsorg i egen regi genom kommunägda bolaget AB Solom.";
-    //   }
-    // if (row.Kommun === 'Höganäs Omsorg AB') {
-    //   cl2.innerHTML += " Höganäs driver omsorg i egen regi genom kommunägda bolaget Höganäs Omsorg AB.";
-    //   }
     }
-
-
   else if (row.Kommun === 'Norrtälje Tiohundra AB') {
     rad.classList.add('bubbla');
     rad.appendChild(bubbla);
@@ -810,9 +893,7 @@ function bubbelvillkor(row) {
     }
 }
 
-
 //Nedan kommer allt som har med kartan att göra
-
 var w = 264;
 var h = 450;
 var svg = d3.select('div#lansdiv').append('svg').attr("preserveAspectRatio", "xMinYMin meet").attr("viewBox", "0 0 " + w + " " + h).classed("svg-content", true);
@@ -844,21 +925,12 @@ Promise.all([map]).then(function(values) {
       .on("click", clicked);
 });
 
-
-
-
 // Click-function for kartpopup
 // d.properties contains the attributes (e.g. d.properties.name, d.properties.population)
 function clicked(d,i) {
   hideTooltip;
   karttabell.innerHTML = '';
   kartpopuprubbe.innerHTML = '';
-  // if (yrke === 'Väljyrke') {
-  //
-  //   karttabell.innerHTML = "<p class=\"u-textMeta\">Du måste välja ett yrke i listan först</p>";
-  // }
-
-
   var lan = d.properties.lan_namn;
   var landsting = d.properties.landsting;
   //Show kartpopup on click
@@ -900,14 +972,11 @@ function clicked(d,i) {
         if (row[yrke] === "bort") {
           rad.remove()
         }
-
-
       })
     }
 
     if (rdata[i].hasOwnProperty(yrke)) {
-
-      rdata.forEach(function(row) {
+       rdata.forEach(function(row) {
         if (landsting === row.Region) {
           rad = karttabell.insertRow(karttabell.rows.length);
           cell1 = rad.insertCell(0);
@@ -932,8 +1001,6 @@ function clicked(d,i) {
           }
         })
     }
-
- 
 }
 
   //Create the headline
@@ -957,7 +1024,6 @@ function clicked(d,i) {
       kartpopup.style.top = "0px"
     }
   }
-
 //end of 'clicked'-function
 }
 
@@ -973,8 +1039,7 @@ function showTooltip(d) {
   if (window.innerWidth > 768) {
     tooltip.style("display","block")
         .text(d.properties.lan_namn);
-
-  }
+    }
   }
 
 //Move the tooltip to track the mouse
@@ -987,16 +1052,5 @@ function moveTooltip() {
 function hideTooltip() {
   tooltip.style("display","none");
 }
-
-  //function to remove unwanted items (where the value of "lön" is "bort")
-  function taBortBort(value) {
-    if (value.lön === "bort") {
-      return
-    }
-    else {
-      return value;
-    }
-  }
-
 
 })();
