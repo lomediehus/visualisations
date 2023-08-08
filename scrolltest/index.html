@@ -1,33 +1,62 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 4000px; /* Add some height to enable scrolling */
-    }
-    .fade-element {
-      width: 100px;
-      height: 100px;
-      background-color: blue;
-      opacity: 0;
-      position: fixed;
-      left: 50%;
-      transform: translateX(-50%);
-      transition: opacity 0.5s ease-in-out;
-    }
-    .first-element {
-      top: 30px;
-    }
-    .second-element {
-      top: 130px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Scrolltest</title>
+  <link rel="stylesheet" type="text/css" href="scroll.css">
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <div class="fade-element first-element"></div>
-  <div class="fade-element second-element"></div>
-  <script src="six.js"></script>
-</body>
-</html>
+
+  <header class="container">
+    <h1>How to Animate on Scroll With Vanilla JavaScript</h1>
+    <h2>Scroll to see the effects
+      <p class="animate-arrow">&darr;
+      </p>
+    </h2>
+  </header>
+  <section class="scroll-container">
+    <div class="scroll-element js-scroll fade-in">
+
+    </div>
+    <div class="scroll-caption">
+      This animation fades in.
+    </div>
+  </section>
+  <section class="scroll-container">
+    <div class="scroll-element js-scroll fade-in-bottom">
+
+    </div>
+    <div class="scroll-caption">
+      This animation slides in to the top.
+    </div>
+  </section>
+  <section class="scroll-container">
+    <div class="scroll-element js-scroll slide-left">
+
+    </div>
+    <div class="scroll-caption">
+      This animation slides in from the left.
+    </div>
+  </section>
+  <section class="scroll-container">
+    <div class="scroll-element js-scroll slide-right">
+
+    </div>
+    <div class="scroll-caption">
+      This animation slides in from the right.
+    </div>
+  </section>
+
+
+
+
+    <!-- <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script> -->
+    <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+    <script src="scroll.js"></script>
+   
+
+  </body>
