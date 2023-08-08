@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 4000px; /* Add some height to enable scrolling */
+    }
+    .fade-element {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      opacity: 0;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: opacity 0.5s ease-in-out;
+    }
+    .first-element {
+      top: 30px;
+    }
+    .second-element {
+      top: 130px;
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-element first-element"></div>
+  <div class="fade-element second-element"></div>
+  <script src="six.js"></script>
+</body>
+</html>
