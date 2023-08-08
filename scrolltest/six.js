@@ -20,6 +20,7 @@ function handleScroll() {
       const opacity = Math.min(1, Math.max(0, 1 - (distanceFromTop - 30) / (windowHeight - 100)));
       element.style.opacity = opacity.toString();
     }
+    informHeight();
   });
 }
 
