@@ -414,6 +414,7 @@ p.knapptext {
   border: 1px solid #b8d5d5;
 }
 
+
 button.utan {
   background-color:#f5f7f7;
   border: none;
@@ -684,4 +685,15 @@ p .nomargin {
     } */
   }
 
-  
+  @media only screen and (max-width: 600px) {
+    button.utan {
+      background-color:#f5f7f7;
+      border: none;
+      color: #43464B;
+      padding: 0px 6px 0px 6px;
+      font-size: larger;
+      
+    }
+    }
+
+
