@@ -40,7 +40,7 @@ d3.json("chefslon.json")
       }
     })
 
-
+    informHeight();
 
   })
 
