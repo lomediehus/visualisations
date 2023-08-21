@@ -57,6 +57,8 @@ export function graphScroll(){
 
     containerStart = containerBB.top + pageYOffset
     belowStart = containerBB.bottom - graphHeight + pageYOffset
+
+    informHeight()
   }
 
   function keydown() {
@@ -146,6 +148,8 @@ export function graphScroll(){
     offset = _x
     return rv
   }
+
+  informHeight()
 
   return rv
 }
