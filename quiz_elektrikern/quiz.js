@@ -61,7 +61,7 @@ $.ajax({
           // add submit button, class "doNotHideOverlay" is needed because the button is there to show the overlay
           content.innerHTML += "<button id='submitButton' class='Button doNotHideOverlay smalfraga'>Se ditt resultat</button>";
           //add div that shows result
-          content.innerHTML += "<div id='result' class='hidden u-textMeta smalfraga'></div>"
+          content.innerHTML += "<div id='result' class='hidden u-textMetaDeca smalfraga'></div>"
           //a div with a set height that seems necessary to avoid scrollbars in (some?) browsers
           content.innerHTML += "<div id='workaround'></div>"
 
@@ -85,32 +85,39 @@ $.ajax({
               const resultdiv = document.getElementById('result');
               let resultMarkup1 = `
               <h2>Resultat</h2>
-                <p><strong>Du fick ${points} rätt av ${data.length} möjliga.</strong></p>
+                <p><strong>Du fick ${points} rätt av ${data.length} möjliga. </strong></p>
               `;
               let resultMarkup2a = `
-              <p><strong></strong>Nja. Nyanställd? Helt enkelt chef? Börja med att gå in på <a target="_blank" href="https://ka.se/"> www.ka.se </a> då och då för lite bättre koll.</p>
+              <p>Kortslutning?</p>
              `;
-
-             let resultMarkup2b = `
-              <p><strong></strong> Ganska bra, men börja prenumerera på <a target="_blank" href="https://ka.se/nyhetsbrev/">Kommunalarbetarens nyhetsbrev</a> så får du ännu bättre koll!</p>
+              let resultMarkup2b = `
+              <p>Inte världsklass, men du kanske är nyanställd? Eller kanske bara sladdade in här utan att veta vilken tidning det är…</p>
              `;
 
              let resultMarkup2c = `
-              <p><strong></strong>Bravo! Du kan ju nästan allt. Tack för att du läser oss! Men följer du oss också på Instagram? Då blir du verklig läsarelit! <a target="_blank" href="https://instagram.com/kommunalarbetaren?igshid=MzRlODBiNWFlZA==">Gör det här!</a></p>
+              <p>Väl genomfört! Du verkar ha bra kontakt med elbranschen!</p>
+             `;
+
+             let resultMarkup2d = `
+              <p>Lysande! Du är förmodligen en pensionerad lysmask som varit med om många inkilningar i futten.</a></p>
              `;
             
+             console.log(points)
              
               resultdiv.innerHTML = resultMarkup1;
               
               //add different text depending on number of points
-              if (points < 3) {
+              if (points < 1) {
                 resultdiv.innerHTML += resultMarkup2a;
               }
-              else if (points < 5) {
+              else if (points < 4) {
                 resultdiv.innerHTML += resultMarkup2b
               }
-              else {
+              else if (points < 9) {
                 resultdiv.innerHTML += resultMarkup2c
+              }
+              else {
+                resultdiv.innerHTML += resultMarkup2d
               }
 
 
@@ -139,7 +146,7 @@ $.ajax({
 
 
           //change color the clicked label
-            this.parentElement.style.backgroundColor = "#74b2b2";
+            this.parentElement.style.backgroundColor = "#00a698";
             console.log(this.nextElementSibling.textContent)
 
             //Get the text from the last paragraph of the parent of the clicked button, i.e. the hidden paragraph with the answer.
@@ -153,17 +160,6 @@ $.ajax({
             } else {
               $(this).parent().siblings("p:last-of-type").html("<span class='u-textStrong'>Ditt svar är " + value + "! </span>" + htmlContent)
             }
-
-            // //get the image source and remove the .jpg extension
-            // console.log($(this).parent().siblings().children("img:first-of-type").attr(("src").replace(/\.jpg/, '')))
-            // var img_source = $(this).parent().siblings().children("img:first-of-type");
-            // var img_source_repl = img_source.attr("src").replace(/\.jpg/, '')
-
-
-            // // change image source to an image with the same name, add letter B and .jpg extension
-            // // $(this).parent().siblings("img:first-of-type").attr("src", img_source + "B.jpg")
-            // $(this).parent().siblings().children("img:first-of-type").attr("src", img_source_repl + "B.jpg")
-
 
             //Show the paragraph containing the correct answer
             $(this).parent().siblings("p:last-of-type").slideDown(300, "swing", function() {

@@ -17,7 +17,7 @@
     "value1": "fel",
     "alt2": "B. En järnkorg med glödande koks för att torka bygget på vintern.",
     "value2": "rätt",
-    "alt3": "C. Kvävgasen som finns kvar från en sprängladdning vid till exempel tunnelbyggen",
+    "alt3": "C. Kvävgasen som finns kvar från en sprängladdning vid till exempel tunnelbyggen.",
     "value3": "fel",
     "svar": "B. En järnkorg med glödande koks."
 },
@@ -74,7 +74,7 @@
   "value2": "fel",
   "alt3": "C. Metallskål med tenn som värmdes upp med blåslampa.",
   "value3": "rätt",
-  "svar": "C. En brandskyddstätning."
+  "svar": "C. Metallskål med tenn."
 },
 {
   "divid": "fraga8",
@@ -100,7 +100,7 @@
 },
 {
   "divid": "fraga10",
-  "rubrik": "10. Wasp",
+  "rubrik": "10. Bodtomte",
   "alt1": "A. Ett trebensstativ.",
   "value1": "fel",
   "alt2": "B. Skämtsamt namn på en ”klantig” byggarbetare.",
