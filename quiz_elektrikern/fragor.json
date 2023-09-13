@@ -1,0 +1,112 @@
+[
+  {
+      "divid": "fraga1",
+      "rubrik": "1. Inkilning",
+      "alt1": "A. Ibland var det krav på att man exempelvis skulle köpa en liter brännvin för att ”komma in i gänget” när man var nykomling.",
+      "value1": "rätt",
+      "alt2": "B. När man satte in plåtrör i platsgjutna väggar.",
+      "value2": "fel",
+      "alt3": "C. När man driver in en kil.",
+      "value3": "fel",
+      "svar": "A. Att bjuda på brännvin"
+  },
+  {
+    "divid": "fraga2",
+    "rubrik": "2. Koksgalt",
+    "alt1": "A. En okastrerad hangris.",
+    "value1": "fel",
+    "alt2": "B. En järnkorg med glödande koks för att torka bygget på vintern.",
+    "value2": "rätt",
+    "alt3": "C. Kvävgasen som finns kvar från en sprängladdning vid till exempel tunnelbyggen",
+    "value3": "fel",
+    "svar": "B. En järnkorg med glödande koks."
+},
+{
+  "divid": "fraga3",
+  "rubrik": "3. Futt",
+  "alt1": "A. Liten restaurang på bygget.",
+  "value1": "rätt",
+  "alt2": "B. Ett verktyg.",
+  "value2": "fel",
+  "alt3": "C. Ord för en elektrisk anläggning.",
+  "value3": "fel",
+  "svar": "A. En liten restaurang."
+},
+{
+  "divid": "fraga4",
+  "rubrik": "4. Bockhora",
+  "alt1": "A. En skruvmejsel.",
+  "value1": "fel",
+  "alt2": "B. Verktyg som användes till att böja sp-rör med.",
+  "value2": "rätt",
+  "alt3": "En kofot.",
+  "value3": "fel",
+  "svar": "B. Verktyg för sp-rör."
+},
+{
+  "divid": "fraga5",
+  "rubrik": "5. Lysmaskar",
+  "alt1": "A. En sorts ficklampa.",
+  "value1": "fel",
+  "alt2": "B. Ett skämtsamt namn på elektriker.",
+  "value2": "rätt",
+  "alt3": "C. Extra tunna rör som användes förr.",
+  "value3": "fel",
+  "svar": "B. Ett skämtsamt namn på elektriker."
+},
+{
+  "divid": "fraga6",
+  "rubrik": "6. Brattbergare",
+  "alt1": "A. En maträtt.",
+  "value1": "fel",
+  "alt2": "B. En spänningstestare.",
+  "value2": "fel",
+  "alt3": "C. En brandskyddstätning.",
+  "value3": "rätt",
+  "svar": "C. En brandskyddstätning."
+},
+{
+  "divid": "fraga7",
+  "rubrik": "7. Lödpotta",
+  "alt1": "A. En multifunktionshink.",
+  "value1": "fel",
+  "alt2": "B. En spotpotta som satt fast i plasten, så att det inte kom så mycket luft upp i gränsskiktet.",
+  "value2": "fel",
+  "alt3": "C. Metallskål med tenn som värmdes upp med blåslampa.",
+  "value3": "rätt",
+  "svar": "C. En brandskyddstätning."
+},
+{
+  "divid": "fraga8",
+  "rubrik": "8. Ubåt",
+  "alt1": "A. Ett multiverktyg.",
+  "value1": "fel",
+  "alt2": "B. En sorts bältesväska.",
+  "value2": "fel",
+  "alt3": "C. En skarvbox.",
+  "value3": "rätt",
+  "svar": "C. En skarvbox."
+},
+{
+  "divid": "fraga9",
+  "rubrik": "9. Wasp",
+  "alt1": "A. En skruvmejsel.",
+  "value1": "fel",
+  "alt2": "B. En tryckluftshammare.",
+  "value2": "rätt",
+  "alt3": "C. En lysrörstestare.",
+  "value3": "fel",
+  "svar": "B. En tryckluftshammare."
+},
+{
+  "divid": "fraga10",
+  "rubrik": "10. Wasp",
+  "alt1": "A. Ett trebensstativ.",
+  "value1": "fel",
+  "alt2": "B. Skämtsamt namn på en ”klantig” byggarbetare.",
+  "value2": "fel",
+  "alt3": "C. En äldre byggjobbare som höll ordning på bygget och bodarna.",
+  "value3": "rätt",
+  "svar": "C. En äldre byggjobbare."
+}
+]
