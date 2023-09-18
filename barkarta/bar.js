@@ -228,3 +228,5 @@ var backe = L.circle([63.811, 16.407], {
 
 backe.bindPopup("Backe");
 
+informHeight();
+
