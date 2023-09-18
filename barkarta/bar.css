@@ -17,12 +17,14 @@ body::-webkit-scrollbar{
 
 div#content {
   margin: auto;
-  width: 100%;
+  /* width: 100%; */
+  width: 630px;
+  padding-top: 50px;
 }
 
 
 #map { 
-  height: 400px;
+  height: 800px;
  }
 
 
