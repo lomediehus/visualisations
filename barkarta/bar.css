@@ -168,6 +168,7 @@ div#workaround {
   left: -50px;
   text-align: center;
   min-height: 1.2em;
+  /* -webkit-text-stroke: 0.3px #ffffff; */
 }
 
 

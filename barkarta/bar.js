@@ -140,38 +140,7 @@ var bispgarden = L.circle([63.027, 16.624], {
 bispgarden.bindPopup("Bispgården");
 
 
-var hammarstrand = L.circle([63.112, 16.344], {
-  color: cirkel_color,
-  fillColor: cirkel_fillColor,
-  fillOpacity: cirkel_fillOpacity,
-  radius: cirkel_radius
-}).addTo(map);
 
-hammarstrand.bindPopup("Hammarstrand");
-
-var hammarstrand_ortsnamn = L.marker([63.112, 16.344],{
-  icon: L.divIcon({
-    html: "Hammarstrand",
-    className: 'text-below-marker',
-})
-});
-hammarstrand_ortsnamn.addTo(map);
-
-
-console.log(map.getZoom())
-
-map.on('zoomend' , function (e) {
-  var geo = map.getCenter();
-  console.log(map.getZoom());
-  if (map.getZoom()<9)
-  {
-    hammarstrand_ortsnamn.addTo(map);
-    console.log("la till")
-  }else {
-      hammarstrand_ortsnamn.remove();
-      console.log("tog bort")
-  }
-});
 
 var ullanger = L.circle([63.012, 18.185], {
   color: cirkel_color,
@@ -250,6 +219,58 @@ var backe = L.circle([63.811, 16.407], {
 }).addTo(map);
 
 backe.bindPopup("Backe");
+
+var hammarstrand = L.circle([63.112, 16.344], {
+  color: cirkel_color,
+  fillColor: cirkel_fillColor,
+  fillOpacity: cirkel_fillOpacity,
+  radius: cirkel_radius
+}).addTo(map);
+
+hammarstrand.bindPopup("Hammarstrand");
+
+var hammarstrand_ortsnamn = L.marker([63.112, 16.344],{
+  icon: L.divIcon({
+    html: "Hammarstrand",
+    className: 'text-below-marker',
+})
+});
+hammarstrand_ortsnamn.addTo(map);
+
+var stromsund = L.circle([63.851, 15.566], {
+  color: "black",
+  weight: 0.5,
+  fillColor: "white",
+  fillOpacity: 0.8,
+  radius: 1000
+}).addTo(map);
+
+var stromsund_ortsnamn = L.marker([63.866, 15.446],{
+  icon: L.divIcon({
+    html: "Strömsund",
+    className: "text-below-marker",
+  })
+  });
+stromsund_ortsnamn.addTo(map);
+
+
+
+console.log(map.getZoom())
+
+map.on('zoomend' , function (e) {
+  var geo = map.getCenter();
+  console.log(map.getZoom());
+  if (map.getZoom()<9)
+  {
+    hammarstrand_ortsnamn.addTo(map);
+    stromsund_ortsnamn.addTo(map);
+    console.log("la till")
+  }else {
+      hammarstrand_ortsnamn.remove();
+      stromsund_ortsnamn.remove();
+      console.log("tog bort")
+  }
+});
 
 informHeight();
 
