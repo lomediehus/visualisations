@@ -162,6 +162,13 @@ div#workaround {
   height: 20px;
 }
 
+.text-below-marker {
+  font-weight: 400;
+  min-width: 100px;
+  left: -50px;
+  text-align: center;
+  min-height: 1.2em;
+}
 
 
 

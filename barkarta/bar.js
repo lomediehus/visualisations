@@ -20,7 +20,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let cirkel_color = "red";
 let cirkel_fillColor = "red";
-let cirkel_fillOpacity = 1;
+let cirkel_fillOpacity = 0.8;
 let cirkel_radius = 1000;
 
 
@@ -149,6 +149,29 @@ var hammarstrand = L.circle([63.112, 16.344], {
 
 hammarstrand.bindPopup("Hammarstrand");
 
+var hammarstrand_ortsnamn = L.marker([63.112, 16.344],{
+  icon: L.divIcon({
+    html: "Hammarstrand",
+    className: 'text-below-marker',
+})
+});
+hammarstrand_ortsnamn.addTo(map);
+
+
+console.log(map.getZoom())
+
+map.on('zoomend' , function (e) {
+  var geo = map.getCenter();
+  console.log(map.getZoom());
+  if (map.getZoom()<9)
+  {
+    hammarstrand_ortsnamn.addTo(map);
+    console.log("la till")
+  }else {
+      hammarstrand_ortsnamn.remove();
+      console.log("tog bort")
+  }
+});
 
 var ullanger = L.circle([63.012, 18.185], {
   color: cirkel_color,
