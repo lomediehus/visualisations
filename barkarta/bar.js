@@ -220,6 +220,15 @@ var backe = L.circle([63.811, 16.407], {
 
 backe.bindPopup("Backe");
 
+var vararjag = L.circle([63.727, 15.431], {
+  color: cirkel_color,
+  fillColor: cirkel_fillColor,
+  fillOpacity: cirkel_fillOpacity,
+  radius: cirkel_radius
+}).addTo(map);
+
+vararjag.bindPopup("Var är vi nu?");
+
 var hammarstrand = L.circle([63.112, 16.344], {
   color: cirkel_color,
   fillColor: cirkel_fillColor,
