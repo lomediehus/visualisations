@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Kommuner dashboard</title>
+  <link rel="stylesheet" type="text/css" href="lagstalon.css">
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <div id="content" class="u-textMeta">
+
+
+    <div class="basecontainer">
+      <h2>Hitta din kommun</h2>
+      <p class="u-textMeta">Välj kommun i menyn för att se om kommunen har lägstalöner för olika yrken. Enbart kommuner som besvarat KA:s enkät är med.</p>
+  
+      <select id="valjkommun" class="u-textMeta">
+        <option value="valjkommun">Välj kommun</option>
+      </select>
+      <table id="kommuntabell" class="u-textMeta"></table>
+  
+    </div>
+
+    <div class="basecontainer">
+      <h2>Hitta ditt yrke</h2>
+      <p class="u-textMeta">Välj yrke i menyn nedan för att se vad lägstalönen är för yrket i kommunerna som besvarat KA:s enkät.</p>
+
+      <select id="valjyrke" class="u-textMeta">
+        <option value="Väljyrke">Välj yrke</option>
+        <option value="Barnskötare med utbildning">Barnskötare med utbildning</option>
+        <option value="Barnskötare utan utbildning">Barnskötare utan utbildning</option>
+        <option value="Fastighetsskötare">Fastighetsskötare</option>
+        <option value="Kock">Kock</option>
+        <option value="Måltidspersonal">Måltidspersonal</option>
+        <option value="Skötare">Skötare</option>
+        <option value="Städare/Lokalvårdare">Städare/Lokalvårdare</option>
+        <option value="Stödassistent">Stödassistent</option>
+        <option value="Undersköterska i hemtjänst">Undersköterska i hemtjänst</option>
+        <option value="Undersköterska på särskilt boende för äldre">Undersköterska på särskilt boende för äldre</option>
+        <option value="Vårdbiträde med utbildning">Vårdbiträde med utbildning</option>
+        <option value="Vårdbiträde utan utbildning">Vårdbiträde utan utbildning</option>
+      </select>
+    <table id="avtalstabell" class="u-textMeta"></table>
+  </div>
+
+  
+
+</div>
+
+
+    
+
+
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
+    <script src="lagstalon.js"></script>
+    <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+
+  </body>
