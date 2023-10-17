@@ -1,3 +1,7 @@
+// $.number(row[yrke], 0, ',', '&#8239;')
+
+
+
 //make it possible to console log with c(tobelogged)
 const c = console.log.bind(document);
 
@@ -27,7 +31,9 @@ valjyrke.addEventListener("change", function(){
         if (valjyrke.value === "Väljyrke") {
             a_cell2.innerHTML = '';
         } else {
-            a_cell2.innerHTML = item[valjyrke.value];
+            if (item[valjyrke.value] != '') {
+                a_cell2.innerHTML = $.number(item[valjyrke.value], 0, ',', '&#8239;');
+            }            
         }
         
     })
@@ -61,10 +67,14 @@ valjkommun.addEventListener("change", function(){
                         k_rad = kommuntabell.insertRow();
                         k_cell1 = k_rad.insertCell(0);
                         k_cell2 = k_rad.insertCell(1);
+
                         if (key != "Kommun") {
                             k_cell1.innerHTML = key;
-                            k_cell2.innerHTML = item[key];
-                           }            
+                           
+                       if (item[key] != '') {
+                            k_cell2.innerHTML = $.number(item[key], 0, ',', '&#8239;');
+                        }  
+                         }
                         }    
                     }
              })
