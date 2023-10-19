@@ -21,31 +21,38 @@ const valjkommun = document.getElementById("valjkommun");
 let a_rad, a_cell1, a_cell2, k_rad, k_cell1, k_cell2;
 
 valjyrke.addEventListener("change", function(){
-
-    avtalstabell.innerHTML = '';
-       lagstloner.forEach(item => {
-        a_rad = avtalstabell.insertRow();
-        a_cell1 = a_rad.insertCell(0);
-        a_cell2 = a_rad.insertCell(1);
-        a_cell1.innerHTML = item.Kommun;
-        if (valjyrke.value === "Väljyrke") {
-            a_cell2.innerHTML = '';
-        } else {
-            if (item[valjyrke.value] != '') {
-                a_cell2.innerHTML = $.number(item[valjyrke.value], 0, ',', '&#8239;');
-            }            
-        }
-        
-    })
-    let a_header = avtalstabell.createTHead();
-    let a_row = a_header.insertRow(0);
-      a_row.insertCell(0).innerHTML = "Kommun";
-      a_row.insertCell(1).innerHTML = "Lägstalön"
+    maketableYrke();
 })
 
+function maketableYrke(){
+    c("maketableYrke")
+    avtalstabell.innerHTML = '';
+    lagstloner.forEach(item => {
+     a_rad = avtalstabell.insertRow();
+     a_cell1 = a_rad.insertCell(0);
+     a_cell2 = a_rad.insertCell(1);
+     a_cell1.innerHTML = item.Kommun;
+     if (valjyrke.value === "Väljyrke") {
+         a_cell2.innerHTML = '';
+     } else {
+         if (item[valjyrke.value] != '') {
+             a_cell2.innerHTML = $.number(item[valjyrke.value], 0, ',', '&#8239;');
+         }            
+     }
+     
+ })
+ let a_header = avtalstabell.createTHead();
+ let a_row = a_header.insertRow(0);
+ if (valjyrke.value === "Väljyrke"){
+    a_row.insertCell(0).innerHTML = "Kommun";
+    a_row.insertCell(1).innerHTML = "Kr/mån" 
+ } else {
+    a_row.insertCell(0).innerHTML = "Kommun &#8691;";
+    a_row.insertCell(1).innerHTML = "Kr/mån &#8691;"
+ }
+   }
 
-valjkommun.addEventListener("change", function(){
-
+   function maketableKommun() {
     kommuntabell.innerHTML = '';
 
     if (valjkommun.value === "valjkommun") {
@@ -59,6 +66,12 @@ valjkommun.addEventListener("change", function(){
                 k_cell2.innerHTML = '';
             }    
          }
+    let k_header = kommuntabell.createTHead();
+    let k_row = k_header.insertRow(0);
+    k_row.insertCell(0).innerHTML = "Yrke";
+    k_row.insertCell(1).innerHTML = "Kr/mån"
+
+
     } else {
            lagstloner.forEach(item => {  
             if (item.Kommun === valjkommun.value) {
@@ -78,13 +91,19 @@ valjkommun.addEventListener("change", function(){
                         }    
                     }
              })
+            let k_header = kommuntabell.createTHead();
+            let k_row = k_header.insertRow(0);
+            k_row.insertCell(0).innerHTML = "Yrke &#8691;";
+            k_row.insertCell(1).innerHTML = "Kr/mån &#8691;"
+
     }
    
-  
-    let k_header = kommuntabell.createTHead();
-    let k_row = k_header.insertRow(0);
-      k_row.insertCell(0).innerHTML = "Yrke";
-      k_row.insertCell(1).innerHTML = "Lägstalön"
+
+   }
+
+
+valjkommun.addEventListener("change", function(){
+    maketableKommun();     
 })
 
 
@@ -101,19 +120,22 @@ fetch(jsonFileUrl)
         // console.log(data)
         lagstloner = data;
         populateKommunDropdown()
-        data.forEach(item => {
-            a_rad = avtalstabell.insertRow();
-            a_cell1 = a_rad.insertCell(0);
-            a_cell2 = a_rad.insertCell(1);
-            a_cell1.innerHTML = item.Kommun;
-            a_cell2.innerHTML = '          ';
-        });
+        maketableYrke();
+        // data.forEach(item => {
+        //     a_rad = avtalstabell.insertRow();
+        //     a_cell1 = a_rad.insertCell(0);
+        //     a_cell2 = a_rad.insertCell(1);
+        //     a_cell1.innerHTML = item.Kommun;
+        //     a_cell2.innerHTML = '          ';
+        // });
 
 
-        let a_header = avtalstabell.createTHead();
-        let a_row = a_header.insertRow(0);
-          a_row.insertCell(0).innerHTML = "Kommun";
-          a_row.insertCell(1).innerHTML = "Lägstalön"
+        // let a_header = avtalstabell.createTHead();
+        // let a_row = a_header.insertRow(0);
+        //   a_row.insertCell(0).innerHTML = "Kommun";
+        //   a_row.insertCell(1).innerHTML = "Kr/mån"
+
+        // maketableKommun();
 
         for (const key in lagstloner[0]){
           
@@ -130,7 +152,7 @@ fetch(jsonFileUrl)
     let k_header = kommuntabell.createTHead();
     let k_row = k_header.insertRow(0);
       k_row.insertCell(0).innerHTML = "Yrke";
-      k_row.insertCell(1).innerHTML = "Lägstalön"
+      k_row.insertCell(1).innerHTML = "Kr/mån"
         
     })
     .catch(error => {
