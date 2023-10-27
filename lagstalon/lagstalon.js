@@ -74,7 +74,6 @@ valjyrke.addEventListener("change", function(){
         sortpilYrke[0].classList.add("invisible")
         sortpilYrke[1].classList.add("invisible")
     }
-    c(valjyrke.value)
 })
 
 function maketableYrke(){
@@ -82,7 +81,6 @@ function maketableYrke(){
     avtalstabellBody.innerHTML = '';
 
     if (vilkenKnapp === "kommun") {
-        c(kommunFallande);
         lagstloner.sort().reverse();
     }
         
@@ -108,7 +106,6 @@ function maketableYrke(){
     if (vilkenKnapp === "kommunLon") {
         avtalstabellBody.innerHTML = '';
         sortedArray.forEach(item => {
-            c(item.lon === '')
 
             a_rad = avtalstabellBody.insertRow();
             a_cell1 = a_rad.insertCell(0);
@@ -241,7 +238,6 @@ valjkommun.addEventListener("change", function(){
         sortpilKommun[0].classList.add("invisible")
         sortpilKommun[1].classList.add("invisible")
     }
-    c(valjkommun.value)
 
 })
 
