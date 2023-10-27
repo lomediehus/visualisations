@@ -146,6 +146,7 @@ function maketableYrke(){
             }   
         })
     }
+    informHeight();
    }
 
    function maketableKommun() {
@@ -225,6 +226,7 @@ function maketableYrke(){
                 }
             })    
         }
+        informHeight();
    }
 
 
@@ -299,6 +301,7 @@ fetch(jsonFileUrl)
             }
             
         }
+        informHeight();
 
     // let k_header = kommuntabell.createTHead();
 
@@ -331,5 +334,5 @@ fetch(jsonFileUrl)
             el.textContent = item.Kommun;
             valjkommun.appendChild(el);          
         });
-       
+       informHeight();
       };
