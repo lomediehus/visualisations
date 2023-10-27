@@ -15,13 +15,21 @@
 
 
       <div class="basecontainer">
-        <h2>Hitta din kommun</h2>
-        <p class="u-textMeta">Välj kommun i menyn för att se om kommunen har lägstalöner för en eller fler av tolv olika yrkesgrupper. Enbart kommuner som svarat att de har lägstalöner är med i listan.</p>
+        <h2>Så ser det ut i din kommun</h2>
+        <p class="u-textMeta">Välj kommun i menyn för att se om kommunen har lägstalöner för en eller fler av tolv olika yrkesgrupper. Enbart de 133 kommuner som svarat att de har lägstalöner är med i listan.</p>
     
         <select id="valjkommun" class="u-textMeta">
           <option value="valjkommun">Välj kommun</option>
         </select>
-        <table id="kommuntabell" class="u-textMeta"></table>
+        <table id="kommuntabell" class="u-textMeta">
+          <thead>
+            <tr>
+              <td id="yrke">Yrke<span class='sortpilKommun invisible'>&#8691;</span></td>
+              <td id="yrkeLon">Kr/mån<span class='sortpilKommun invisible'>&#8691;</span></td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
     
       </div>
 
@@ -38,13 +46,21 @@
           <option value="Kock">Kock</option>
           <option value="Måltidspersonal">Måltidspersonal</option>
           <option value="Skötare">Skötare</option>
-          <option value="Städare/Lokalvårdare">Städare/Lokalvårdare</option>
+          <option value="Städare/ Lokalvårdare">Städare/Lokalvårdare</option>
           <option value="Stödassistent">Stödassistent</option>
           <option value="Undersköterska i äldreomsorg">Undersköterska i äldreomsorg</option>
           <option value="Vårdbiträde med utbildning">Vårdbiträde med utbildning</option>
           <option value="Vårdbiträde utan utbildning">Vårdbiträde utan utbildning</option>
         </select>
-      <table id="avtalstabell" class="u-textMeta"></table>
+      <table id="avtalstabell" class="u-textMeta">
+        <thead>
+          <tr>
+            <td id="kommun">Kommun<span class='sortpilYrke invisible'>&#8691;</span></td>
+            <td id="kommunLon">Kr/mån<span class='sortpilYrke invisible'>&#8691;</span></td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
   
 

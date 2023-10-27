@@ -66,6 +66,10 @@ table th, table td {
   width: 50%;
 }
 
+td span {
+  float: right;
+  pointer-events: none;
+}
 /* First Table */
 /* table#table1 th:first-child, table#table1 td:first-child {
   width: 70%; 
@@ -86,6 +90,10 @@ table#table2 th:last-child, table#table2 td:last-child {
 
 tr:nth-child(odd) {
   background-color: #dcebe5;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 

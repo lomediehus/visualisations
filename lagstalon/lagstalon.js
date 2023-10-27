@@ -1,7 +1,3 @@
-// $.number(row[yrke], 0, ',', '&#8239;')
-
-
-
 //make it possible to console log with c(tobelogged)
 const c = console.log.bind(document);
 
@@ -16,49 +12,154 @@ c("running script.js")
 const valjyrke = document.getElementById("valjyrke");
 var lagstloner = [];
 const avtalstabell = document.getElementById("avtalstabell");
+const avtalstabellBody = avtalstabell.querySelector("tbody");
 const kommuntabell = document.getElementById("kommuntabell");
+const kommuntabellBody = kommuntabell.querySelector("tbody")
+
 const valjkommun = document.getElementById("valjkommun");
 let a_rad, a_cell1, a_cell2, k_rad, k_cell1, k_cell2;
 
+let sortItem;
+let sortedItem;
+let firstObject = {};
+
+const yrkeKnapp = document.getElementById("yrke");
+const yrkeLonKnapp = document.getElementById("yrkeLon");
+const kommunKnapp = document.getElementById("kommun");
+const kommunLonKnapp = document.getElementById("kommunLon")
+let vilkenKnapp;
+
+let yrkeFallande = true;
+let yrkeLonFallande = true;
+let kommunFallande = true;
+let kommunLonFallande = true;
+
+const sortpilYrke = document.getElementsByClassName("sortpilYrke");
+const sortpilKommun = document.getElementsByClassName("sortpilKommun");
+
+yrkeKnapp.addEventListener("click", function(event){
+    vilkenKnapp = event.target.id;
+    yrkeFallande = !yrkeFallande;
+    maketableKommun()
+})
+
+yrkeLonKnapp.addEventListener("click", function(event) {
+
+    vilkenKnapp = event.target.id
+    yrkeLonFallande = !yrkeLonFallande;
+    maketableKommun();
+})
+
+kommunKnapp.addEventListener("click", function(event){
+    vilkenKnapp = event.target.id;
+    //toggles the value from true to false and back again
+    kommunFallande = !kommunFallande;
+    maketableYrke()
+})
+
+kommunLonKnapp.addEventListener("click", function(event){
+    vilkenKnapp = event.target.id;
+    kommunLonFallande = !kommunLonFallande;
+    maketableYrke()
+})
+
+
+
 valjyrke.addEventListener("change", function(){
     maketableYrke();
+    if (valjyrke.value !== "Väljyrke") {
+        sortpilYrke[0].classList.remove("invisible")
+        sortpilYrke[1].classList.remove("invisible")
+    } else {
+        sortpilYrke[0].classList.add("invisible")
+        sortpilYrke[1].classList.add("invisible")
+    }
+    c(valjyrke.value)
 })
 
 function maketableYrke(){
-    c("maketableYrke")
-    avtalstabell.innerHTML = '';
-    lagstloner.forEach(item => {
-     a_rad = avtalstabell.insertRow();
-     a_cell1 = a_rad.insertCell(0);
-     a_cell2 = a_rad.insertCell(1);
-     a_cell1.innerHTML = item.Kommun;
-     if (valjyrke.value === "Väljyrke") {
-         a_cell2.innerHTML = '';
-     } else {
-         if (item[valjyrke.value] != '') {
-             a_cell2.innerHTML = $.number(item[valjyrke.value], 0, ',', '&#8239;');
-         }            
-     }
-     
- })
- let a_header = avtalstabell.createTHead();
- let a_row = a_header.insertRow(0);
- if (valjyrke.value === "Väljyrke"){
-    a_row.insertCell(0).innerHTML = "Kommun";
-    a_row.insertCell(1).innerHTML = "Kr/mån" 
- } else {
-    a_row.insertCell(0).innerHTML = "Kommun &#8691;";
-    a_row.insertCell(1).innerHTML = "Kr/mån &#8691;"
- }
+
+    avtalstabellBody.innerHTML = '';
+
+    if (vilkenKnapp === "kommun") {
+        c(kommunFallande);
+        lagstloner.sort().reverse();
+    }
+        
+    const mappedArray = lagstloner.map((item) => {
+        return { kommun: item.Kommun, lon: item[valjyrke.value]}
+    });
+
+    const sortedArray = mappedArray.sort((a, b) => {
+        if (typeof a.lon === "number" && typeof b.lon === "number" && kommunLonFallande === true) {
+            return b.lon - a.lon; // Compare numeric values for a descending order. Reverse for ascending order.
+        } else if (typeof a.lon === "number" && typeof b.lon === "number" && kommunLonFallande === false) {
+            return a.lon - b.lon; // Compare numeric values for a ascending order. Reverse for descending order.
+        } 
+        else if (typeof a.lon === "number") {
+            return -1; // Numeric values come before non-numeric values
+        } else if (typeof b.lon === "number") {
+            return 1; // Non-numeric values come after numeric values
+        } else {
+            // return a[0].localeCompare(b[0]); // Compare non-numeric values alphabetically
+        }
+    });
+
+    if (vilkenKnapp === "kommunLon") {
+        avtalstabellBody.innerHTML = '';
+        sortedArray.forEach(item => {
+            c(item.lon === '')
+
+            a_rad = avtalstabellBody.insertRow();
+            a_cell1 = a_rad.insertCell(0);
+            a_cell2 = a_rad.insertCell(1);
+            a_cell1.innerHTML = item.kommun;
+            a_cell2.innerHTML = $.number(item.lon, 0, ',', '&#8239;');
+
+            if (valjyrke.value === "Väljyrke") {
+                a_cell2.innerHTML = '';
+            } else if (item.lon === '') {
+                a_cell2.innerHTML = '';
+            }
+            
+            else {
+                a_cell2.innerHTML = $.number(item.lon, 0, ',', '&#8239;');
+                    
+            }   
+
+
+        })
+
+   
+    } else {
+
+        lagstloner.forEach(item => {
+
+            a_rad = avtalstabellBody.insertRow();
+            a_cell1 = a_rad.insertCell(0);
+            a_cell2 = a_rad.insertCell(1);
+            a_cell1.innerHTML = item.Kommun;
+            if (valjyrke.value === "Väljyrke") {
+                a_cell2.innerHTML = '';
+            } else {
+                if (item[valjyrke.value] != '') {
+    
+                    a_cell2.innerHTML = $.number(item[valjyrke.value], 0, ',', '&#8239;');
+                }            
+            }   
+        })
+    }
    }
 
    function maketableKommun() {
-    kommuntabell.innerHTML = '';
+    kommuntabellBody.innerHTML = '';
 
     if (valjkommun.value === "valjkommun") {
-        for (const key in lagstloner[0]){
+        yrkeFallande = true;
+        sortObject(firstObject)
+        for (const key in sortedItem){
      
-            k_rad = kommuntabell.insertRow();
+            k_rad = kommuntabellBody.insertRow();
             k_cell1 = k_rad.insertCell(0);
             k_cell2 = k_rad.insertCell(1);
             if (key != "Kommun") {
@@ -66,45 +167,111 @@ function maketableYrke(){
                 k_cell2.innerHTML = '';
             }    
          }
-    let k_header = kommuntabell.createTHead();
-    let k_row = k_header.insertRow(0);
-    k_row.insertCell(0).innerHTML = "Yrke";
-    k_row.insertCell(1).innerHTML = "Kr/mån"
-
 
     } else {
-           lagstloner.forEach(item => {  
-            if (item.Kommun === valjkommun.value) {
+        // Iterate lagstloner to find the chosen kommun
+        lagstloner.forEach(item => {  
+ 
+        if (item.Kommun === valjkommun.value) {
 
-                    for (const key in item){
-                        k_rad = kommuntabell.insertRow();
-                        k_cell1 = k_rad.insertCell(0);
-                        k_cell2 = k_rad.insertCell(1);
+            //Make an array of the object for the chosen Kommun
+            const dataArray = Object.entries(item);
 
-                        if (key != "Kommun") {
-                            k_cell1.innerHTML = key;
-                           
-                       if (item[key] != '') {
-                            k_cell2.innerHTML = $.number(item[key], 0, ',', '&#8239;');
-                        }  
-                         }
-                        }    
+            //if user clicked on "Yrke" sort alphabetically
+            if (vilkenKnapp === "yrke") {
+                if (yrkeFallande) {
+                    dataArray.sort();
+                } else {
+                    dataArray.sort().reverse();
+                }
+            }
+            //if user clicked "Kr/mån" sort numerically
+            else {
+                dataArray.sort((a, b) => {
+                    const valueA = a[1];
+                    const valueB = b[1];
+                
+                    if (typeof valueA === "number" && typeof valueB === "number" && yrkeLonFallande === true) {
+                        return valueB - valueA; // Compare numeric values for a descending order. Reverse for ascending order.
+                    } else if (typeof valueA === "number" && typeof valueB === "number" && yrkeLonFallande === false) {
+                        return valueA - valueB; // Compare numeric values for a ascending order. Reverse for descending order.
+                    } 
+                    else if (typeof valueA === "number") {
+                        return -1; // Numeric values come before non-numeric values
+                    } else if (typeof valueB === "number") {
+                        return 1; // Non-numeric values come after numeric values
+                    } else {
+                        return a[0].localeCompare(b[0]); // Compare non-numeric values alphabetically
                     }
-             })
-            let k_header = kommuntabell.createTHead();
-            let k_row = k_header.insertRow(0);
-            k_row.insertCell(0).innerHTML = "Yrke &#8691;";
-            k_row.insertCell(1).innerHTML = "Kr/mån &#8691;"
+                });
+            }
 
-    }
-   
+            
+            const sortedArray = dataArray.map(([key, value]) => ({ key, value }));
 
+            sortedArray.forEach((item, i) => {
+
+               k_rad = kommuntabellBody.insertRow();
+               k_cell1 = k_rad.insertCell(0);
+               k_cell2 = k_rad.insertCell(1);
+
+               if (item.key != "Kommun") {
+                   k_cell1.innerHTML = item.key;
+                   
+                    if (item.value != '') {
+                        k_cell2.innerHTML = $.number(item.value, 0, ',', '&#8239;');
+                     }  
+                   } 
+                 
+                 });
+
+                }
+            })    
+        }
    }
 
 
 valjkommun.addEventListener("change", function(){
     maketableKommun();     
+    if (valjkommun.value !== "valjkommun") {
+        sortpilKommun[0].classList.remove("invisible")
+        sortpilKommun[1].classList.remove("invisible")
+    } else {
+        c("gör else-satsen")
+        sortpilKommun[0].classList.add("invisible")
+        sortpilKommun[1].classList.add("invisible")
+    }
+    c(valjkommun.value)
+
 })
+
+function sortObject(objectToSort) {
+
+    if (yrkeFallande) {
+        sortItem = (objectToSort) => {
+            return Object.keys(objectToSort).sort().reduce((acc, key) => {
+                acc[key] = objectToSort[key];
+                return acc;
+            }, {});
+        };
+
+    } else {
+        sortItem = (objectToSort) => {
+            return Object.keys(objectToSort).sort().reverse().reduce((acc, key) => {
+                acc[key] = objectToSort[key];
+                return acc;
+            }, {});
+        };
+    }
+
+    
+        
+    sortedItem = sortItem(objectToSort);
+    
+    // console.log(sortedItem);
+    return sortedItem;
+}
+
 
 
 const jsonFileUrl = "lagstalon.json";
@@ -117,29 +284,17 @@ fetch(jsonFileUrl)
         return response.json();
     })
     .then(data => {
-        // console.log(data)
         lagstloner = data;
+        firstObject = lagstloner[0];
         populateKommunDropdown()
         maketableYrke();
-        // data.forEach(item => {
-        //     a_rad = avtalstabell.insertRow();
-        //     a_cell1 = a_rad.insertCell(0);
-        //     a_cell2 = a_rad.insertCell(1);
-        //     a_cell1.innerHTML = item.Kommun;
-        //     a_cell2.innerHTML = '          ';
-        // });
+ 
 
+        sortObject(firstObject)
 
-        // let a_header = avtalstabell.createTHead();
-        // let a_row = a_header.insertRow(0);
-        //   a_row.insertCell(0).innerHTML = "Kommun";
-        //   a_row.insertCell(1).innerHTML = "Kr/mån"
-
-        // maketableKommun();
-
-        for (const key in lagstloner[0]){
+        for (const key in sortedItem){
           
-            k_rad = kommuntabell.insertRow();
+            k_rad = kommuntabellBody.insertRow();
             k_cell1 = k_rad.insertCell(0);
             k_cell2 = k_rad.insertCell(1);
             if (key != "Kommun") {
@@ -149,10 +304,8 @@ fetch(jsonFileUrl)
             
         }
 
-    let k_header = kommuntabell.createTHead();
-    let k_row = k_header.insertRow(0);
-      k_row.insertCell(0).innerHTML = "Yrke";
-      k_row.insertCell(1).innerHTML = "Kr/mån"
+    // let k_header = kommuntabell.createTHead();
+
         
     })
     .catch(error => {
