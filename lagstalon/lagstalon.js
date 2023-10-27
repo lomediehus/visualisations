@@ -172,8 +172,8 @@ function maketableYrke(){
  
         if (item.Kommun === valjkommun.value) {
 
-            //Make an array of the object for the chosen Kommun
-            const dataArray = Object.entries(item);
+            //Make an array of the object for the chosen Kommun, filtering out the key "Kommun"
+            const dataArray = Object.entries(item).filter(([key, value]) => key !== 'Kommun');
 
             //if user clicked on "Yrke" sort alphabetically
             if (vilkenKnapp === "yrke") {
@@ -213,13 +213,13 @@ function maketableYrke(){
                k_cell1 = k_rad.insertCell(0);
                k_cell2 = k_rad.insertCell(1);
 
-               if (item.key != "Kommun") {
+            //    if (item.key != "Kommun") {
                    k_cell1.innerHTML = item.key;
                    
                     if (item.value != '') {
                         k_cell2.innerHTML = $.number(item.value, 0, ',', '&#8239;');
                      }  
-                   } 
+                //    } 
                  
                  });
 
