@@ -1,0 +1,39 @@
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('winter-6890764.jpg');
+  padding: 20px;
+  background-color: #fcfaf5;
+  -ms-overflow-style: none;
+}
+
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#content {
+  background-image: url('winter-6890764.jpg');
+}
+
+.basecontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  column-gap: 100px;
+}
+
+.lucka {
+  width: 100px;
+  height: 100px;
+  /* flex-grow: 1; */
+  background-color: aqua;
+}
