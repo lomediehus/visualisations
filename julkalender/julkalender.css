@@ -8,6 +8,8 @@
 
 body {
   background-image: url('winter-6890764.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px;
   background-color: #fcfaf5;
   -ms-overflow-style: none;
@@ -20,7 +22,7 @@ body::-webkit-scrollbar {
 }
 
 #content {
-  background-image: url('winter-6890764.jpg');
+  /* background-image: url('winter-6890764.jpg'); */
 }
 
 .basecontainer {
