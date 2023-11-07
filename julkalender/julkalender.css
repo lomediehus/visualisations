@@ -38,6 +38,7 @@ body::-webkit-scrollbar {
   height: 100px;
   /* flex-grow: 1; */
   background-color: aqua;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 992px) {
