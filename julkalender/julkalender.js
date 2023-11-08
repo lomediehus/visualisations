@@ -68,6 +68,8 @@ c("datum " + currentDate + "dag " + currentDay + "månad " + currentMonth)
 
  lucka_content.style.height = containerHeight + 'px';
 
+ informHeight();
+
 
  closex.addEventListener("click", function() {
   lucka_content.style.visibility = "hidden";
