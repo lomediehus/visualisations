@@ -72,6 +72,7 @@ c("datum " + currentDate + "dag " + currentDay + "månad " + currentMonth)
 
 
  closex.addEventListener("click", function() {
+  c('försöker stänga')
   lucka_content.style.visibility = "hidden";
  })
 
