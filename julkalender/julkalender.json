@@ -1,0 +1,25 @@
+
+ {
+ 
+    "lucka1": {
+        "rubrik": "Här är rubrik 1",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång.",
+        "bokstav": "A"
+        },
+    "lucka2": {
+        "rubrik": "Här är en rubrik 2",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång.",
+        "bokstav": "B"
+        },
+    "lucka": {
+        "rubrik": "Här är rubrik 3",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång.",
+        "bokstav": "A"
+        }
+}
+
+
+
