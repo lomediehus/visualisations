@@ -13,6 +13,7 @@ body {
   padding: 10px;
   background-color: #fcfaf5;
   -ms-overflow-style: none;
+  min-height: 440px;
 }
 
 
@@ -40,17 +41,33 @@ body::-webkit-scrollbar {
   padding-bottom: 10px;
 }
 
+.luckbild {
+  width: 80%;;
+}
+
+div.dagenscontainer {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  /* flex-wrap: wrap; */
+  /* overflow: hidden; */
+  /* row-gap: 100px;
+  column-gap: 100px; */
+}
+
 .basecontainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 100px;
-  column-gap: 100px;
+  /* row-gap: 100px;
+  column-gap: 100px; */
 }
 
 div.lucka {
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
+  flex-basis: calc(25% - 15px); /* Set initial flex-basis for 4 items in a row (with a 10px margin) */
+  margin: 7.5px; /* Add margin between items */
   text-align: center;
   vertical-align: middle;
   font-weight: 900;
@@ -93,22 +110,29 @@ div.lucka {
 }
 
 @media screen and (max-width: 992px) {
-  div.lucka {
+  /* div.lucka {
     width: 50px;
     height: 50px;
     font-size: 20px;
 
-  }
+  } */
 
-  .centered-text {
+  /* .centered-text {
     height: 50px;
-  }
+  } */
 
-  .basecontainer {
+  /* .basecontainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 50px;
     column-gap: 50px;
+  } */
+}
+
+@media screen and (min-width: 600px) {
+  div.lucka {
+    /* background-color: #d42426; */
+    flex-basis: calc(16.666% - 15px); /* Adjust flex-basis for 6 items in a row (with a 10px margin) */
   }
 }
