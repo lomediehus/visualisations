@@ -4,20 +4,147 @@
     "lucka1": {
         "rubrik": "Här är rubrik 1",
         "href": "snow.png",
-        "text": "Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång.",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant.",
         "bokstav": "A"
         },
     "lucka2": {
         "rubrik": "Här är en rubrik 2",
         "href": "snow.png",
-        "text": "Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång.",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
         "bokstav": "B"
         },
-    "lucka": {
+    "lucka3": {
         "rubrik": "Här är rubrik 3",
         "href": "snow.png",
-        "text": "Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång. Här är en liten text i julkalenderluckan. Den kan vara 500 tecken lång.",
-        "bokstav": "A"
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant.",
+        "bokstav": "C"
+        },
+    
+    "lucka4": {
+        "rubrik": "Här är en rubrik 4",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "D"
+        },
+    "lucka5": {
+        "rubrik": "Här är en rubrik 5",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "E"
+        },
+    "lucka6": {
+        "rubrik": "Här är en rubrik 6",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "F"
+        },
+    "lucka7": {
+        "rubrik": "Här är en rubrik 7",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "G"
+        },
+    "lucka8": {
+        "rubrik": "Här är en rubrik 8",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "H"
+        },
+    "lucka9": {
+        "rubrik": "Här är en rubrik 9",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "I"
+        },
+    "lucka10": {
+        "rubrik": "Här är en rubrik 10",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "J"
+        },
+    "lucka11": {
+        "rubrik": "Här är en rubrik 11",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "K"
+        },
+    "lucka12": {
+        "rubrik": "Här är en rubrik 12",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "L"
+        },
+    "lucka13": {
+        "rubrik": "Här är en rubrik 12",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "M"
+        },
+    "lucka14": {
+        "rubrik": "Här är en rubrik 14",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "N"
+        },
+    "lucka15": {
+        "rubrik": "Här är en rubrik 15",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "O"
+        },
+    "lucka16": {
+        "rubrik": "Här är en rubrik 16",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "P"
+        },
+    "lucka17": {
+        "rubrik": "Här är en rubrik 17",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "Q"
+        },
+    "lucka18": {
+        "rubrik": "Här är en rubrik 18",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "R"
+        },
+    "lucka19": {
+        "rubrik": "Här är en rubrik 19",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "S"
+        },
+    "lucka20": {
+        "rubrik": "Här är en rubrik 20",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "T"
+        },
+    "lucka21": {
+        "rubrik": "Här är en rubrik 21",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "U"
+        },
+    "lucka22": {
+        "rubrik": "Här är en rubrik 22",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "V"
+        },
+    "lucka23": {
+        "rubrik": "Här är en rubrik 23",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "X"
+        },
+    "lucka24": {
+        "rubrik": "Här är en rubrik 24",
+        "href": "snow.png",
+        "text": "Här är en liten text i julkalenderluckan. Den kan vara 430 tecken lång för att funka med alla skärmstorlekar. Om man vill lägga in en länk till en artikel måste länken få plats inom dessa 430 tecken. Hej tomtegubbar slå i glasen och låt oss lustiga vara. En liten tid vi leva här med mycken möda och stort besvär. Nu är det jul igen och nu är det jul igen och julen varar än till påska. Men det var inte sant nej det var inte sant..",
+        "bokstav": "Y"
         }
 }
 

@@ -23,8 +23,8 @@ body::-webkit-scrollbar {
 }
 
 #content {
-  /* position: relative;
-  width: 100%;
+  position: relative;
+  /* width: 100%;
   height: 30px; */
   /* background-image: url('winter-6890764.jpg'); */
 }
@@ -42,17 +42,13 @@ body::-webkit-scrollbar {
 }
 
 .luckbild {
-  width: 80%;;
+  width: 60%;
 }
 
 div.dagenscontainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 20px;
-  /* flex-wrap: wrap; */
-  /* overflow: hidden; */
-  /* row-gap: 100px;
-  column-gap: 100px; */
 }
 
 .basecontainer {
@@ -90,8 +86,8 @@ div.lucka {
   width: 90%;
   height: 90%;
   position: absolute;
-  top: 5vh;
-  left: 5vh;
+  top: 2vh;
+  left: 5%;
   background-color: #faebd7;
   visibility: hidden;
   border-width: 10px;
@@ -109,7 +105,17 @@ div.lucka {
   right: 10px;
 }
 
-@media screen and (max-width: 992px) {
+span.bokstav {
+  color: red;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+}
+
+@media screen and (max-width: 450px) {
+
+  
   /* div.lucka {
     width: 50px;
     height: 50px;
@@ -134,5 +140,13 @@ div.lucka {
   div.lucka {
     /* background-color: #d42426; */
     flex-basis: calc(16.666% - 15px); /* Adjust flex-basis for 6 items in a row (with a 10px margin) */
+  }
+
+  div.dagenscontainer {
+     flex-direction: row; 
+  }
+
+  .luckbild {
+    width: 80%;
   }
 }
