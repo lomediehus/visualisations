@@ -47,9 +47,9 @@ fetch(jsonFileUrl)
         // Generate a unique ID for each div (e.g., div1, div2, div3, ...)
         div.id = 'div' + numbers[i];
 
-      // Assign a class to the div elements
-      div.classList.add('lucka', 'Teaser-Heding', 'centered-text'); // You can replace 'custom-class' with your desired class name
-      // div.classList.add("Teaser-heading")
+        // Assign a class to the div elements
+        div.classList.add('lucka', 'Teaser-Heding', 'centered-text'); // You can replace 'custom-class' with your desired class name
+        // div.classList.add("Teaser-heading")
 
         // Append the div to the container
         container.appendChild(div);
@@ -58,30 +58,45 @@ fetch(jsonFileUrl)
           lucka_content.style.visibility = "visible";
 
         c("klickade " + div.id)
-        if (currentDay >= numbers[i]) {
+        // if (currentDay >= numbers[i]) {
+        if (currentDay >= 0) {
+
           c("nu är luckan öppen")
           let lucknummer = "lucka" + numbers[i];
           c(lucknummer)
 
+        if (data[lucknummer].hasOwnProperty("iframe")) {
+        dagensgrejs = `
+        <div id="dagens-img-container" class="dagens-flex">
+          ${data[lucknummer].iframe}
+         </div>
+         <div id="dagens-text-container" class="dagens-flex">
+ 
+          <h3>${data[lucknummer].rubrik}</h3> 
+
+          <p>${data[lucknummer].text}<span class="bildtext"></span></p>
+          <h3><span class="bokstav">${data[lucknummer].bokstav}</span></h3>
+        </div>
+        `;
+        }
+
+        // Check if "href" exists before adding the image
+        if (data[lucknummer].hasOwnProperty("href")) {
           dagensgrejs = `
-
             <div id="dagens-img-container" class="dagens-flex">
-            <img src="${data[lucknummer].href}" class="luckbild">
+              <img src="${data[lucknummer].href}" class="luckbild">
             </div>
-            <div id="dagens-text-container class="dagens-flex">
-            <h3>${data[lucknummer].rubrik}</h3> 
-            <p>${data[lucknummer].text}<span class="bildtext"></span></p>
-            <h3><span class="bokstav">${data[lucknummer].bokstav}</span></h3>
+            <div id="dagens-text-container" class="dagens-flex">
 
-            </div>
-          
-          `
+              <h3>${data[lucknummer].rubrik}</h3> 
 
-          // dagenscontainer.innerHTML = dagensgrejs; 
+              <p>${data[lucknummer].text}<span class="bildtext"></span></p>
+              <h3><span class="bokstav">${data[lucknummer].bokstav}</span></h3>
+             </div>
+          `;
+        }
 
-
-
-          // lucktext.innerHTML = data[lucknummer].rubrik;
+ 
           
         } else {
           c("Nu är luckan stängd")

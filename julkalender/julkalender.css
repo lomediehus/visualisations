@@ -41,8 +41,9 @@ body::-webkit-scrollbar {
   padding-bottom: 10px;
 }
 
-.luckbild {
-  width: 60%;
+iframe.luckbild, img.luckbild {
+  /* width: 60%; */
+  padding-bottom: 10px;
 }
 
 div.dagenscontainer {
@@ -113,6 +114,10 @@ span.bokstav {
 
 }
 
+.dagens-flex {
+  flex: 1;
+}
+
 @media screen and (max-width: 450px) {
 
   
@@ -146,7 +151,6 @@ span.bokstav {
      flex-direction: row; 
   }
 
-  .luckbild {
-    width: 80%;
-  }
+  iframe.luckbild, img.luckbild {
+    padding-right: 10px;  }
 }
