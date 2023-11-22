@@ -13,7 +13,7 @@ body {
   padding: 10px;
   background-color: #fcfaf5;
   -ms-overflow-style: none;
-  min-height: 440px;
+  height: 700px;
 }
 
 
@@ -142,6 +142,11 @@ span.bokstav {
 }
 
 @media screen and (min-width: 600px) {
+
+  body {
+    height: 440px;
+  }
+
   div.lucka {
     /* background-color: #d42426; */
     flex-basis: calc(16.666% - 15px); /* Adjust flex-basis for 6 items in a row (with a 10px margin) */
