@@ -1,0 +1,88 @@
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  max-width: 90vh;
+  max-height: 90vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.scroller {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 9px;
+  border: solid 2px var(--mid);
+  position: relative;
+}
+
+.content {
+  overflow: visible;
+  width: 100%;
+  /* set a height because the contents are position: absolute, thus natively there's no height */
+  height: 3600px;
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.pinwheel {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comparison-section {
+  top: 1900px;
+  position: relative;
+  padding-bottom: 56.25%; /* to maintain aspect ratio (responsive!) */
+}
+.comparison-image {
+  width: 100%;
+  height: 100%;
+}
+.after-image {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  transform: translate(100%, 0px);
+}
+.after-image img {
+  transform: translate(-100%, 0px);
+}
+.comparison-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.top-blurb, .bottom-blurb {
+  text-align: center;
+  color: var(--light);
+  top: 45%;
+  width: 100%;
+  position: absolute;
+}
+.bottom-blurb {
+  top: 3400px;
+}
+@media (max-width: 350px) or (max-height: 350px) {
+  
+}
