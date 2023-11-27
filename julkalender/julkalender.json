@@ -3,13 +3,13 @@
  
     "lucka1": {
         "rubrik": "Hej! Vad kul att du hittade hit!",
-        "href": "https://images.lomediehus.se/app/uploads/sites/7/2023/04/06101449/iliggande-narbild-grupp.jpg",
+        "href": "lucka1.jpg",
         "text": "Här får du tips om artiklar och lite annat smått och gott från Elektrikern. Enjoy!<br> <a href='https://tidningenelektrikern.se/2023/09/25/ellingo-wasp-inkilning-och-futt-kan-du-orden-fran-elbranschen/' target='blank'>Du har väl inte missat Elektrikerns ellingo? Testa dina kunskaper om elektrikerspråket här:</a></p><p>Obs! Glöm inte att anteckna dagens bokstav!",
         "bokstav": "Å"
         },
     "lucka2": {
         "rubrik": "Vi gillar listor!",
-        "href": "snow.png",
+        "href": "avtalslista.jpg",
         "text": "Elektrikerna tecknar ett hundratal hängavtal varje år. <a href='https://tidningenelektrikern.se/2022/09/21/har-ar-foretagen-som-har-hangavtal-med-elektrikerforbundet/' target='blank'>Här kan du se</a> vilka företag som har ett gällande hängavtal med förbundet:</p><p>Obs! Glöm inte att anteckna dagens bokstav!",
         "bokstav": "L"
         },
@@ -58,7 +58,7 @@
         },
     "lucka10": {
         "rubrik": "Har du koll på ortsmultiplikatorn?",
-        "href": "snow.png",
+        "href": "rakna.jpg",
         "text": "För att räkna ut ackordet används bland annat ortsmultiplikatorn, som är olika från ort till ort. (Allt över 1.0 är mer än grundsumman av penningfaktorn.) <a href='https://www.sef.se/SysSiteAssets/medlem/ackord/ackordstidslista/ortsmultar-ackordswebben20190111.pdf' target='blank'>Se din ort här!</a></p><p>Obs! Glöm inte att anteckna dagens bokstav!",
         "bokstav": "Ä"
         },
@@ -142,7 +142,7 @@
         },
     "lucka24": {
         "rubrik": "God Jul från oss!",
-        "href": "snow.png",
+        "href": "lucka24.jpg",
         "text": "Glöm inte att leta upp alla bokstäver i luckorna, och bilda sedan fyra ord till en mening, som du skickar till <a href='mailto:elektrikern@lomediehus.se'>elektrikern@lomediehus.se</a> tillsammans med ditt namn och adress. Vi behöver ditt svar senast 14 januari 2024. Lycka till!",
         "bokstav": "!"
         }
