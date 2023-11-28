@@ -7,8 +7,6 @@ if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
 }
 
-// const body = document.getElementsByTagName("body")
-c(document.getElementsByTagName("body"))
 const container = document.getElementById('container');
 const lucka_content = document.getElementById('lucka_content');
 const closex = document.getElementById("closex");
@@ -57,13 +55,10 @@ fetch(jsonFileUrl)
         div.addEventListener("click", function(event){
           lucka_content.style.visibility = "visible";
 
-        c("klickade " + div.id)
         // if (currentDay >= numbers[i]) {
         if (currentDay >= 0) {
 
-          c("nu är luckan öppen")
           let lucknummer = "lucka" + numbers[i];
-          c(lucknummer)
 
         if (data[lucknummer].hasOwnProperty("iframe")) {
         dagensgrejs = `
@@ -95,14 +90,9 @@ fetch(jsonFileUrl)
              </div>
           `;
         }
-
- 
           
         } else {
-          c("Nu är luckan stängd")
-          // var intekika =  `
-          //   <div id="${numbers[i]}" class="u-paddedBottomM">
-          // `;
+      
           dagensgrejs =  `
 
           <div id="dagens-img-container" class="dagens-flex">
@@ -115,7 +105,6 @@ fetch(jsonFileUrl)
 
           `;
 
-``
         }
 
         dagenscontainer.innerHTML = dagensgrejs;
@@ -151,7 +140,6 @@ fetch(jsonFileUrl)
  
 
  closex.addEventListener("click", function() {
-  c('försöker stänga')
   lucka_content.style.visibility = "hidden";
  })
 
