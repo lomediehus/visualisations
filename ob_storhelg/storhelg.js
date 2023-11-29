@@ -131,12 +131,14 @@ function doStuff() {
   window.onresize = function() {
     mainContent.style.marginTop = helgwrapper[0].clientHeight + 20 + 'px';
   }
+  informHeight();
 
   //Variable for current date
   var date = new Date();
   //variables for set dates
-  var nyarsdatum = new Date("December 27 2022");
-  var trettonhelgsdatum = new Date("January 2 2023");
+  var juldatum = new Date("November 22 2023")
+  var nyarsdatum = new Date("December 27 2023");
+  var trettonhelgsdatum = new Date("January 2 2024");
   var paskdatum = new Date("March 12 2023");
   var pingstdatum = new Date("April 22 2023");
 
@@ -147,18 +149,18 @@ function doStuff() {
 
   //handling dates:
   //Check if current date is after jul;
-  if (date.getTime() > midsommardatum.getTime()) {
+  if (date.getTime() > nyarsdatum.getTime()) {
     c("efter midsommar")
     //if current date is also after nyar
-    if (date.getTime() > pingstdatum.getTime()) {
-      document.getElementById("helgbild").src = 'midsommar.svg';
-      goActive(helgknapp6);
-      helgnr = "6";
+    if (date.getTime() > trettonhelgsdatum.getTime()) {
+      document.getElementById("helgbild").src = 'trettonhelg.svg';
+      goActive(helgknapp3);
+      helgnr = "3";
     }
     else {
-      document.getElementById("helgbild").src = 'pask.svg';
-      goActive(helgknapp4);
-      helgnr = "4";
+      document.getElementById("helgbild").src = 'nyar.svg';
+      goActive(helgknapp2);
+      helgnr = "2";
     }
   }
   else {
@@ -498,17 +500,16 @@ function doStuff() {
           }
 
           messagediv.innerHTML +=  extratext1 + extratext2 + extratext3 + extratext4;
+          informHeight();
         }
       }
     }
-    // var string = message.join('');
     if (hittad === true) {
       messagediv.innerHTML += '<h3 class="u-textMetaDeca paddingTop10" style="font-weight: bold">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal">Skicka mejl</a>';
     }
 
     // messagediv.innerHTML = string;
     $('#messagediv').hide().fadeIn();
-    // informHeight();
   }
 
   // adding event listener on dynamically added html
@@ -577,10 +578,12 @@ function doStuff() {
       }
       else mathResult = siffra/divisor[i];
 
-      //OBS TILLFÄLLIG FIX FÖR AVRUNDNINGSFEL JUST DETTA ÅR
-      // if (mathResult === 108.145) mathResult = 108.15;
+      let roundedResult = Math.round(mathResult * 100) / 100
 
-      stringResult.push(mathResult.toFixed(2))
+      stringResult.push(roundedResult.toFixed(2))
+
+
+      // stringResult.push(mathResult.toFixed(2))
     }
     dividedToDiv(stringResult);
   }
@@ -672,6 +675,7 @@ function doStuff() {
           sparvarre = helgvarre;
       }
 
+      
 
       textvarre = textvarre.replace(/100 procent/g, "<strong>100 procent</strong>");
       textvarre = textvarre.replace(/\r\n/g, "<br>")
@@ -730,10 +734,10 @@ function doStuff() {
   }
 
 
-  function replaceHorses(element) {
-      element = element.replace("Hästskötare och övrig personal hos trav- och galopptränare:\r\n100 procent", "<strong>Hästskötare och övrig personal hos trav- och galopptränare:\r\n100 procent</strong>")
-      console.log('bytte hästar')
-  }
+  // function replaceHorses(element) {
+  //     element = element.replace("Hästskötare och övrig personal hos trav- och galopptränare:\r\n100 procent", "<strong>Hästskötare och övrig personal hos trav- och galopptränare:\r\n100 procent</strong>")
+  //     console.log('bytte hästar')
+  // }
 
   //Event listener for Sök avtal efter yrke
   modebuttonLeft.addEventListener('click', function() {
