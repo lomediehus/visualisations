@@ -675,6 +675,7 @@ function doStuff() {
           sparvarre = helgvarre;
       }
 
+      
 
       textvarre = textvarre.replace(/100 procent/g, "<strong>100 procent</strong>");
       textvarre = textvarre.replace(/\r\n/g, "<br>")
