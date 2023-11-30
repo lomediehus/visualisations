@@ -54,8 +54,8 @@ fetch(jsonFileUrl)
         div.addEventListener("click", function(event){
           lucka_content.style.visibility = "visible";
 
-          if ((currentDay >= numbers[i]) && (currentMonth > 11)) {
-          // if (currentDay >= 0) {
+          // if ((currentDay >= numbers[i]) && (currentMonth > 11)) {
+          if (currentDay >= 0) {
 
             let lucknummer = "lucka" + numbers[i];
 
