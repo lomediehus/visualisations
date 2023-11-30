@@ -44,6 +44,7 @@ iframe.luckbild, img.luckbild {
   width: 100%; /* Make sure images or iframes are responsive */
   height: 100%; /* Adjust as needed */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
+  object-position: center;
 }
 
 div.dagenscontainer {

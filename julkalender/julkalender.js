@@ -21,7 +21,7 @@ const currentDay = currentDate.getDate(); // Get the day of the month
 const currentMonth = currentDate.getMonth() + 1; // Get the current month (January is 1, February is 2, and so on)
 let dagensgrejs = ``;
 
-c("datum " + currentDate + "dag " + currentDay + "månad " + currentMonth)
+// c("datum " + currentDate + "dag " + currentDay + "månad " + currentMonth)
 
 const jsonFileUrl = "julkalender.json";
 
@@ -58,6 +58,8 @@ fetch(jsonFileUrl)
           // if (currentDay >= 0) {
 
             let lucknummer = "lucka" + numbers[i];
+
+
 
           //Check if the object has a property 'iframe', which means it has a movie clip, and fill accordingly
           if (data[lucknummer].hasOwnProperty("iframe")) {
@@ -99,6 +101,14 @@ fetch(jsonFileUrl)
             `;
           }
           dagenscontainer.innerHTML = dagensgrejs;
+          let imgToStyle = document.getElementById("dagens-img-container").firstElementChild;
+
+          if (numbers[i] === 24) {
+            imgToStyle.style.objectPosition = 'center bottom'
+          } else {
+            imgToStyle.style.objectPosition = 'center'
+          }
+
         })        
       }
 
