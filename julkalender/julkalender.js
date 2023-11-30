@@ -46,8 +46,7 @@ fetch(jsonFileUrl)
         div.id = 'div' + numbers[i];
 
         // Assign a class to the div elements
-        div.classList.add('lucka', 'Teaser-Heding', 'centered-text'); // You can replace 'custom-class' with your desired class name
-        // div.classList.add("Teaser-heading")
+        div.classList.add('lucka', 'Teaser-Heding', 'centered-text'); 
 
         // Append the div to the container
         container.appendChild(div);
@@ -55,73 +54,57 @@ fetch(jsonFileUrl)
         div.addEventListener("click", function(event){
           lucka_content.style.visibility = "visible";
 
-        // if (currentDay >= numbers[i]) {
-        if (currentDay >= 0) {
+          if ((currentDay >= numbers[i]) && (currentMonth > 11)) {
+          // if (currentDay >= 0) {
 
-          let lucknummer = "lucka" + numbers[i];
+            let lucknummer = "lucka" + numbers[i];
 
-        if (data[lucknummer].hasOwnProperty("iframe")) {
-        dagensgrejs = `
-        <div id="dagens-img-container" class="dagens-flex">
-          ${data[lucknummer].iframe}
-         </div>
-         <div id="dagens-text-container" class="dagens-flex">
- 
-          <h3>${data[lucknummer].rubrik}</h3> 
-
-          <p>${data[lucknummer].text}<span class="bildtext"></span></p>
-          <h3><span class="bokstav">${data[lucknummer].bokstav}</span></h3>
-        </div>
-        `;
-        }
-
-        // Check if "href" exists before adding the image
-        if (data[lucknummer].hasOwnProperty("href")) {
+          //Check if the object has a property 'iframe', which means it has a movie clip, and fill accordingly
+          if (data[lucknummer].hasOwnProperty("iframe")) {
           dagensgrejs = `
-            <div id="dagens-img-container" class="dagens-flex">
-              <img src="${data[lucknummer].href}" class="luckbild">
-            </div>
-            <div id="dagens-text-container" class="dagens-flex">
-
-              <h3>${data[lucknummer].rubrik}</h3> 
-
-              <p>${data[lucknummer].text}<span class="bildtext"></span></p>
-              <h3><span class="bokstav">${data[lucknummer].bokstav}</span></h3>
-             </div>
-          `;
-        }
-          
-        } else {
-      
-          dagensgrejs =  `
-
           <div id="dagens-img-container" class="dagens-flex">
-          <img src="peek.jpg" class="luckbild">
+            ${data[lucknummer].iframe}
           </div>
-          <div id="dagens-text-container class="dagens-flex">
-          <h3>Inte tjuvkika!</h3> 
-          <p>Luckan går inte att öppna förrän ${numbers[i]} december!<span class="bildtext"></span></p>
+          <div id="dagens-text-container" class="dagens-flex">  
+            <h3>${data[lucknummer].rubrik}</h3> 
+            <p>${data[lucknummer].text}<span class="bildtext"></span></p>
+            <h3><span class="bokstav">${data[lucknummer].bokstav}</span></h3>
           </div>
-
           `;
+          }
 
-        }
-
-        dagenscontainer.innerHTML = dagensgrejs;
-
-        })
-
-        
+          // Check if "href" exists before adding the image
+          if (data[lucknummer].hasOwnProperty("href")) {
+            dagensgrejs = `
+              <div id="dagens-img-container" class="dagens-flex">
+                <img src="${data[lucknummer].href}" class="luckbild">
+              </div>
+              <div id="dagens-text-container" class="dagens-flex">
+                <h3>${data[lucknummer].rubrik}</h3> 
+                <p>${data[lucknummer].text}<span class="bildtext"></span></p>
+                <h3><span class="bokstav">${data[lucknummer].bokstav}</span></h3>
+              </div>
+            `;
+          }
+            
+          } else {
+            dagensgrejs =  `
+            <div id="dagens-img-container" class="dagens-flex">
+            <img src="peek.jpg" class="luckbild">
+            </div>
+            <div id="dagens-text-container class="dagens-flex">
+            <h3>Inte tjuvkika!</h3> 
+            <p>Luckan går inte att öppna förrän ${numbers[i]} december!<span class="bildtext"></span></p>
+            </div>
+            `;
+          }
+          dagenscontainer.innerHTML = dagensgrejs;
+        })        
       }
 
       const containerHeight = container.offsetHeight;
-
       lucka_content.style.height = containerHeight + 'px';
-
-      informHeight();
-
-
-        
+      informHeight();       
     })
     .catch(error => {
         console.error('Fetch error:', error);
@@ -135,9 +118,7 @@ fetch(jsonFileUrl)
 //    const j = Math.floor(Math.random() * (i + 1));
 //    [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
 //  }
-//  c(numbers)
 
- 
 
  closex.addEventListener("click", function() {
   lucka_content.style.visibility = "hidden";
