@@ -211,6 +211,10 @@ var hem = {
         console.log(html.scrollHeight)
         informHeight();
     },
+    onupdate: function() {
+        informHeight();
+        informScrollIntoView();
+    },
     view: function() {
         return m("div.container", {id:"container"}, [
             m("div.Label", quizName),
@@ -250,20 +254,18 @@ function rattSvar(question) {
 }
 
 var test = {
+    oncreate: function() {
+        console.log(body.scrollHeight)
+        console.log(body.offsetHeight)
+        console.log(html.clientHeight)
+        console.log(html.scrollHeight)
+        informHeight();
+        informScrollIntoView();
+    },
     onupdate: function() {
         informHeight();
+        informScrollIntoView();
     },
-
-
-    // fragaArray = questions[testIndex].fraga();
-    // return m("div.container", {id:"container"}, [
-    //     questions[testIndex].alternateImage ? m("img.questionImg", {src: questions[testIndex].img()[0], id: "image"}) : m("img.questionImg", {src: questions[testIndex].img[0], id: "image"}),
-    //     m("h2.u-spacingTopS.u-spacingBottomXS", fragaArray[0]),
-    //     m("p.questionBox.u-spacingBottomM", m.trust(fragaArray[1])),
-    //     questions[testIndex].slider ? m("div.slidecontainer.u-spacingTopXXL.u-spacingBottomXXXL", m("div", {id: "slider"})) : "",
-    //     questions[testIndex].payForm ? m("div.formcontainer.u-spacingBottomXXXL", m("input.lonInput.u-textMeta", {id: "formvalue", type:"text", value: "20 000"})) : "",
-    //     m("div.buttondiv.u-spacingTopM", questions[testIndex].alternativ().map(function(fraga, index) {
-    //         return m("button.Button.answerButton.u-spacingBottomS.u-spacingRightS.u-textUppercase", {
 
     view: function() {
         return m("div.container", {id:"container"}, [
