@@ -10,7 +10,31 @@ var fortsätt = "Fortsätt";
 /*
 Du kan välja om du vill ha någonting i explainer och rubrik
 Du kan ha hur många frågor du vill i alternativ
+
 */
+
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+preload(
+    "bilder/dollarstore.png",
+    "bilder/elonmusk.png", 
+    "bilder/fragandegroda.png",
+    "bilder/grudrunsjoden.png",
+    "bilder/hansbergstrom.png",
+    "bilder/helenahelmersson.png",
+    "bilder/isabellalowengrip.png",
+    "bilder/leifostling.png", 
+    "bilder/matsqviberg.png",
+    "bilder/richardchristofferbergfors.png",
+    "bilder/thinkpink.png"
+)
 
 var questions = [
     {
