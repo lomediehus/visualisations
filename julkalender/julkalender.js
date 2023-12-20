@@ -17,9 +17,13 @@ const numbers = [ 16, 17, 21, 2, 8, 11, 1, 13, 18, 19, 20, 5, 15, 14, 9, 24, 12,
 
 // Get the current date
 const currentDate = new Date();
+
 const currentDay = currentDate.getDate(); // Get the day of the month
 const currentMonth = currentDate.getMonth() + 1; // Get the current month (January is 1, February is 2, and so on)
+var christmas = new Date("December 24 2023");
+
 let dagensgrejs = ``;
+
 
 // c("datum " + currentDate + "dag " + currentDay + "månad " + currentMonth)
 
@@ -54,7 +58,7 @@ fetch(jsonFileUrl)
         div.addEventListener("click", function(event){
           lucka_content.style.visibility = "visible";
 
-          if ((currentDay >= numbers[i]) && (currentMonth > 11)) {
+          if (currentDate.getTime() > christmas.getTime() || (currentDay >= numbers[i]) && (currentMonth > 11)) {
           // if (currentDay >= 0) {
 
             let lucknummer = "lucka" + numbers[i];
