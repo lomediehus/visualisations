@@ -1,6 +1,8 @@
 body {
   background-color: #fcfaf5;
   height: 2000px;
+  width: 500px;
+  
 }
 
 #radiobuttons {
@@ -24,24 +26,47 @@ input[type=radio] {
 label {
   display: block;
   padding: 5px;
-  background-color: #ddebeb;
-  box-shadow:#7e7f7f 3px 3px 0,
+  color: white;
+  font-weight: 600;
+  line-height: 90%;
+  /* background-color: #ddebeb; */
+  /* box-shadow:#7e7f7f 3px 3px 0,
               #7e7f7f 1px 1px 0,
-              #7e7f7f 2px 2px 0;
+              #7e7f7f 2px 2px 0; */
 }
 
 
-.green {
- fill: green;
+.blue {
+ fill: #3D82C4;
+ background-color: #3D82C4;
 }
 
-.yellow {
-  fill: yellow
+.pink {
+  fill: #D81B61; 
+  background-color: #D81B61; 
+
 }
 
-.red {
-  fill: red;
+.orange {
+  fill: #fec111;
+  background-color: #fec111;
 }
+
+.darkgreen {
+  fill: #014D41;
+  background-color: #014D41;
+}
+
+.turkos {
+  fill: #2CBDBD;
+  background-color: #2CBDBD;
+}
+
+.white {
+  fill: #FFFFFF;
+  background-color: #FFFFFF;
+}
+
 
 
 svg {
@@ -118,11 +143,34 @@ svg {
   color: #111;
 }
 
+#kartpopup {
+  display: none;
+  width: 200px;
+  /* min-width: 250px; */
+  max-width: 450px;
+  padding: 5px;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  /* position: fixed;
+  left: 50%;
+  transform: translate(-50%, 50%); */
+  z-index: 10;
+  box-shadow: 3px 3px 3px   #707070;
+}
 #kartpopup .fet {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.2em;
   color: #111;
+}
+
+#kartpopup .red {
+  color: #e00f00;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
 }
 
 #animate .red {
@@ -136,33 +184,14 @@ svg {
     fill: green;
 } */
 
-#kartpopup .red {
-  color: #e00f00;
-  font-weight: bold;
-  line-height: 1em;
-  text-transform: uppercase;
-}
+
 
 #animate .tunn {
   text-transform: uppercase;
   color: #7e7f7f;
 }
 
-#kartpopup {
-  display: none;
-  width: 50%;
-  min-width: 250px;
-  max-width: 450px;
-  padding: 5px;
-  background-color: white;
-  opacity: 0.9;
-  border: 1px solid gray;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  z-index: 10;
-  box-shadow: 3px 3px 3px   #707070;
-}
+
 
 img.closex:hover {
   background-color: #ddebeb;

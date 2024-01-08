@@ -49,6 +49,19 @@ function showTooltip(d) {
   
 
 function clicked(d,i) {
+   
+
+  // Testar att placera vid klicket
+
+    var x = d3.event.pageX - 50;
+    var y = d3.event.pageY - 100;
+
+    console.log(y)
+
+    kartpopup.style.left = x + "px";
+    kartpopup.style.top = y + "px";
+
+
     kartpopup.style.display = "block";
     overlay.style.display = "block";
   
@@ -148,11 +161,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
               switch (d.kategori) {
                 case "arbetskläder":
-                  return "cirkel green";
-                case "arbetsvillkor":
-                  return "cirkel yellow";
+                  return "cirkel blue";
+                case "arbetsskor":
+                  return "cirkel blue";
+                case "arbetstid":
+                  return "cirkel pink";
+                case "dygnsvila":
+                  return "cirkel pink";
+                case "schema":
+                  return "cirkel pink";
+                case "minutstyrning":
+                  return "cirkel pink";
+
+                case "utbildning":
+                  return "cirkel orange";
+                case "yrkesbevis":
+                  return "cirkel orange";
                 case "språkproblem":
-                  return "cirkel red";
+                  return "cirkel darkgreen";
+                case "arbetsvillkor":
+                  return "cirkel darkgreen";
+                case "lön":
+                  return "cirkel turkos";
               }
 
             })
@@ -170,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             d3.selectAll(".checkbox").on("click", function(){
-              // console.log(this.value)
+              console.log(this.value)
               var value = this.value;
 
               d3.selectAll(".cirkel").each(function(d,i) {
