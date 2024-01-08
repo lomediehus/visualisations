@@ -1,14 +1,35 @@
 console.log("Kör testskript")
 
+
+
 //Create a tooltip, hidden at the start
 var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
+
+
+//function for clicking the radiobuttons to answer the questions
+// (function clickButton() {
+// buttons = [...document.getElementsByClassName('checkbox')];
+
+// buttons.forEach((button, i) => {
+//   //give the button a value, starting on 1 (not =)
+//   button.value = "kat" + String(i+1);
+//   buttons[i].addEventListener("click", function(){
+//     //get the value of the clicked button
+//     value = this.value;
+//     console.log(this.value)
+//   })
+// })
+// })();
+
+// clickButton()
+
 
 //Show tooltip
 function showTooltip(d) {
     moveTooltip();
   
     tooltip.style("display","block")
-    .text(d.Stad);
+    .text(d.ort);
   }
   
   //Move the tooltip to track the mouse
@@ -32,13 +53,12 @@ function clicked(d,i) {
     overlay.style.display = "block";
   
     let markup = `
-      <div id="kartpopuprubbe" class="u-textMeta fet">${d.Stad}</div>
-      <div id="kartpopupdatum" class="u-textMeta red">${d.Datum}</div>
-      <div id="kartpopuptext" class="u-textMeta">${d.Text}</div>
+      <div id="kartpopuprubbe" class="u-textMeta fet">${d.ort}</div>
+      <div id="kartpopuptext" class="u-textMeta">${d.rubrik}</div>
       ${(() => {
-        if (d.Url != "") {
+        if (d.url != "") {
           return `
-          <a id="kartpopuplink" class="u-textMeta red" target="blank" href="${d.Url}">Läs mer här!</a>
+          <a id="kartpopuplink" class="u-textMeta red" target="blank" href="${d.url}">Läs mer här!</a>
           `
         }
         else {
@@ -96,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //       .on("click", clicked);
     
         //Nesting the circle-drawing to ensure they are drawn after the map is drawn.
-        var datafile = d3.json("protester_orter.json");
+        var datafile = d3.json("framgang.json");
         Promise.all([datafile]).then(function(values) {
             console.log(values)
 
@@ -106,10 +126,36 @@ document.addEventListener("DOMContentLoaded", function() {
             .data(values[0])
             .enter()
             .append("circle")
-            .attr("cx", function(d){ return projection([d.Long, d.Lat])[0] })
-            .attr("cy", function(d){ return projection([d.Long, d.Lat])[1] })
+            .attr("cx", function(d){ return projection([d.long, d.lat])[0] })
+            .attr("cy", function(d){ return projection([d.long, d.lat])[1] })
             .attr("r", 5)
-            .style("fill", "#e00f00")
+            // .attr("class", function(d) { return d.kategori === "arbetsvillkor" ? "cirkel greenCircle" : "cirkel yellowCircle"; })
+            // .style("fill", "#e00f00")
+            // .style("fill", function(d){
+              
+            //   switch (d.kategori) {
+            //     case "arbetskläder":
+            //       return "green";
+            //     case "arbetsvillkor":
+            //       return "yellow";
+            //     case "språkproblem":
+            //       return "red";
+            //   }
+            
+      
+            // })
+            .attr("class", function(d){
+
+              switch (d.kategori) {
+                case "arbetskläder":
+                  return "cirkel green";
+                case "arbetsvillkor":
+                  return "cirkel yellow";
+                case "språkproblem":
+                  return "cirkel red";
+              }
+
+            })
             .attr("stroke", "#ffffff")
             .attr("stroke-width", 0.5)
             // .attr("class", "cirkel")
@@ -122,7 +168,49 @@ document.addEventListener("DOMContentLoaded", function() {
             d3.select(this).attr("r", 5).style("fill", "#d00f00");
             hideTooltip()
             });
+
+            d3.selectAll(".checkbox").on("click", function(){
+              // console.log(this.value)
+              var value = this.value;
+
+              d3.selectAll(".cirkel").each(function(d,i) {
+                if (value === "alla") {
+                  d3.selectAll(".cirkel").style("visibility", "visible")
+
+                }
+                if (value === d.kategori) {
+                  this.style.visibility = "visible"
+                }
+                else {
+                  this.style.visibility = "hidden"
+                }
+              })
+
+            })
+
+            // Give radiobuttons a value dynamically and add click event
+            // d3.selectAll(".checkbox").each(function(d,i){
+            //   var value = "kat" + (i+1);
+            //   d3.select(this).on("click", function(){
+            //     console.log(value)
+            //   })              
+            // })
+
+            d3.select("#toggleButton").on("click", function() {
+              console.log(this.value)
+              // Check if the yellow circles are currently visible
+              var yellowCirclesVisible = d3.selectAll(".yellowCircle").style("visibility") === "visible";
+            
+              // Toggle visibility based on the current state
+              d3.selectAll(".yellowCircle").style("visibility", yellowCirclesVisible ? "hidden" : "visible");
+            }); 
+
       })
+     
+
+      
+             
+   
 
 
 
@@ -130,8 +218,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-       
-     
+
 
 
 

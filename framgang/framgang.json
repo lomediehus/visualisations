@@ -1,0 +1,586 @@
+[
+  {
+    "rubrik": "Blev piggare när arbetstiden kortades",
+    "kategori": "arbetstid",
+    "ort": "Olofström",
+    "lat": 56.2787,
+    "long": 14.5314,
+    "url": "https://ka.se/2023/12/08/underskoterskorna-i-olofstrom-blev-piggare-efter-bara-ett-par-manader-med-kortad-arbetstid/"
+  },
+  {
+    "rubrik": "Han fixade arbetskläder till sin skola",
+    "kategori": "arbetskläder",
+    "ort": "Stockholm",
+    "lat": 59.3293,
+    "long": 18.0686,
+    "url": "https://ka.se/2023/11/29/skyddsombudet-mohamed-fixade-arbetsklader-till-sin-skola/"
+  },
+  {
+    "rubrik": "Mindre stress när de slipper minutstyrning",
+    "kategori": "minutstyrning",
+    "ort": "Karlstad",
+    "lat": 59.3798,
+    "long": 13.5047,
+    "url": "https://ka.se/2023/11/17/mindre-stress-och-mer-ansvar-nar-hemtjanstpersonal-slipper-minutstyrning/"
+  },
+  {
+    "rubrik": "Efter protester får de bättre bilar",
+    "kategori": "arbetsvillkor",
+    "ort": "Eksjö",
+    "lat": 57.5259,
+    "long": 14.3732,
+    "url": "https://ka.se/2023/11/10/hemtjanstpersonalen-i-eksjo-vann-kampen-nu-far-de-fyrhjulsdrivna-bilar/"
+  },
+  {
+    "rubrik": "Önskeschema kvar trots nya dygnsvileregler",
+    "kategori": "dygnsvila",
+    "ort": "Arvidsjaur",
+    "lat": 65.5902,
+    "long": 19.2763,
+    "url": "https://ka.se/2023/10/12/hemtjansten-i-arvidsjaur-behaller-onskeschema-trots-skarpta-regler-om-dygnsvila/"
+  },
+  {
+    "rubrik": "Hon fixade högre löner till sig själv och kollegorna",
+    "kategori": "lön",
+    "ort": "Borås",
+    "lat": 57.721,
+    "long": 12.9393,
+    "url": "https://ka.se/2023/10/09/nadja-gjorde-egen-loneenkat-och-hojde-sin-och-andras-lon/"
+  },
+  {
+    "rubrik": "Elin startar kurs för att fixa språkproblemen",
+    "kategori": "språkproblem",
+    "ort": "Älmhult",
+    "lat": 56.5479,
+    "long": 14.1324,
+    "url": "https://ka.se/2023/10/04/underskoterskan-ellinor-trottnade-pa-sprakproblem-i-aldreomsorgen-startar-egen-utbildning/"
+  },
+  {
+    "rubrik": "Bosse jobbar 80 procent och får betalt för 90",
+    "kategori": "arbetstid",
+    "ort": "Avesta",
+    "lat": 60.1451,
+    "long": 16.1756,
+    "url": "https://ka.se/2023/10/02/i-avesta-far-personliga-assistenten-bosse-och-andra-kommunalare-kortad-arbetstid/"
+  },
+  {
+    "rubrik": "Tuffare schemakrav gav fasta jobb",
+    "kategori": "dygnsvila",
+    "ort": "Falköping",
+    "lat": 58.1733,
+    "long": 13.5526,
+    "url": "https://ka.se/2023/09/26/tuffare-krav-pa-dygnsvila-i-schemat-ger-ett-20-tal-nya-jobb-for-underskoterskor-i-falkoping/"
+  },
+  {
+    "rubrik": "Här får de bestämma hur mycket de vill jobba helg",
+    "kategori": "schema",
+    "ort": "Karlskoga",
+    "lat": 59.3306,
+    "long": 14.5238,
+    "url": "https://ka.se/2023/09/22/forsok-i-karlskoga-har-far-alla-onska-hur-ofta-de-ska-jobba-helg/"
+  },
+  {
+    "rubrik": "Barnskötaren som fick kommunen att anställa fler",
+    "kategori": "arbetsvillkor",
+    "ort": "Falun",
+    "lat": 60.6057,
+    "long": 15.643,
+    "url": "https://ka.se/2023/09/20/fler-anstalls-i-forskolor-i-falun-efter-barnskotaren-asas-patryckningar/"
+  },
+  {
+    "rubrik": "Marie såg till att alla fick arbetsskor",
+    "kategori": "arbetsskor",
+    "ort": "Västerås",
+    "lat": 59.6098,
+    "long": 16.5448,
+    "url": "https://ka.se/2023/09/18/vard-och-omsorgspersonal-i-vasteras-far-arbetsskor-tack-vare-marie/"
+  },
+  {
+    "rubrik": "Yrkesbeviset ger fler fasta jobb",
+    "kategori": "arbetsvillkor",
+    "ort": "Malmö",
+    "lat": 55.6044,
+    "long": 13.0038,
+    "url": "https://ka.se/2023/08/30/krav-pa-yrkesbevis-for-underskoterskor-har-gett-fler-fasta-jobb/"
+  },
+  {
+    "rubrik": "Yrkesbevis ger högre lön",
+    "kategori": "lön",
+    "ort": "Upplands-Bro",
+    "lat": 59.5217,
+    "long": 17.6491,
+    "url": "https://ka.se/2023/07/14/i-upplands-bro-ger-skyddad-yrkestitel-extra-betalt/"
+  },
+  {
+    "rubrik": "Här får man gratis arbetsskor",
+    "kategori": "arbetsskor",
+    "ort": "Halland",
+    "lat": 56.96343413,
+    "long": 12.81845171,
+    "url": "https://ka.se/2023/07/11/underskoterskor-i-halland-far-gratis-arbetsskor/"
+  },
+  {
+    "rubrik": "Här höjs ob:et med 100 procent",
+    "kategori": "lön",
+    "ort": "Norrbotten",
+    "lat": 65.95726971,
+    "long": 19.30122374,
+    "url": "https://ka.se/2023/07/06/dubbelt-ob-i-norrbotten-ger-barnskoterskan-annika-5-000-kronor-mer-per-manad/"
+  },
+  {
+    "rubrik": "Här läggs fem miljoner för bättre lön till uskorna",
+    "kategori": "lön",
+    "ort": "Västervik",
+    "lat": 57.7532,
+    "long": 16.6368,
+    "url": "https://ka.se/2023/06/26/underskoterskor-i-vastervik-lovas-fem-miljoner-extra-i-loneokning/"
+  },
+  {
+    "rubrik": "Här får bussförarna gratis mensskydd",
+    "kategori": "arbetsvillkor",
+    "ort": "Luleå",
+    "lat": 65.5848,
+    "long": 22.1567,
+    "url": "https://ka.se/2023/06/13/bussforare-i-lulea-far-gratis-mensskydd/"
+  },
+  {
+    "rubrik": "De pressade politikerna till högre lön",
+    "kategori": "lön",
+    "ort": "Västra Götaland",
+    "lat": 57.97662139,
+    "long": 13.23276291,
+    "url": "https://ka.se/2023/05/17/patryckning-pa-politiker-gav-hogre-lon-for-underskoterskor-i-regioner/"
+  },
+  {
+    "rubrik": "Protesterade i kjol – fick ha shorts",
+    "kategori": "arbetskläder",
+    "ort": "Jönköping",
+    "lat": 57.7826,
+    "long": 14.1616,
+    "url": "https://ka.se/2023/05/02/bussforare-i-region-jonkoping-far-jobba-i-shorts/"
+  },
+  {
+    "rubrik": "Här får de 400 för yrkesbevis",
+    "kategori": "yrkesbevis",
+    "ort": "Västmanland",
+    "lat": 59.77646629,
+    "long": 15.91143963,
+    "url": "https://ka.se/2023/04/24/skyddad-yrkestitel-ger-400-kronor-i-lonepaslag-i-region-vastmanland/"
+  },
+  {
+    "rubrik": "Önskescheman blir kvar trots skärpta viloregler",
+    "kategori": "dygnsvila",
+    "ort": "Junosuando",
+    "lat": 66.0759,
+    "long": 20.1167,
+    "url": "https://ka.se/2023/03/21/nya-regler-for-dygnsvila-paverkar-inte-junosuandos-onskescheman/"
+  },
+  {
+    "rubrik": "Fast matsedel minskade stressen",
+    "kategori": "arbetsvillkor",
+    "ort": "Jönköping",
+    "lat": 57.7826,
+    "long": 14.1616,
+    "url": "https://ka.se/2023/03/20/skolkockens-knep-for-att-hinna-med-sarskild-kost-i-skolan/"
+  },
+  {
+    "rubrik": "Simon blev hjälte när han satte stopp för våldsam arbetsmiljö",
+    "kategori": "arbetsvillkor",
+    "ort": "Malmö",
+    "lat": 55.6044,
+    "long": 13.0038,
+    "url": "https://ka.se/2023/03/15/simon-stoppade-valdsam-arbetsmiljo-hyllas-som-facklig-hjalte/"
+  },
+  {
+    "rubrik": "Nytt schema blev vändningen för Maria",
+    "kategori": "schema",
+    "ort": "Arbrå",
+    "lat": 61.7,
+    "long": 16.8333,
+    "url": "https://ka.se/2023/03/09/nytt-schema-gor-livet-enklare-for-ensamstaende-underskoterskan-maria-jacobsson/"
+  },
+  {
+    "rubrik": "Efter påtryckningar kan minutstyrningen försvinna",
+    "kategori": "minutstyrning",
+    "ort": "Malmö",
+    "lat": 55.6044,
+    "long": 13.0038,
+    "url": "https://ka.se/2023/03/03/slopad-minutstyrning-kan-bli-verklighet-i-hemtjansten-i-malmo/"
+  },
+  {
+    "rubrik": "Succé när personalen fick lägga schemat själva",
+    "kategori": "schema",
+    "ort": "Junosuando",
+    "lat": 66.0759,
+    "long": 20.1167,
+    "url": "https://ka.se/2023/02/17/i-junosuando-kan-personalen-lagga-schemat-utifran-sina-egna-behov/"
+  },
+  {
+    "rubrik": "Här minskar minutstyrningen",
+    "kategori": "minutstyrning",
+    "ort": "Falkenberg",
+    "lat": 56.9025,
+    "long": 12.4897,
+    "url": "https://ka.se/2023/02/16/minutstyrningen-i-falkenbergs-hemtjanst-ska-minska/"
+  },
+  {
+    "rubrik": "Striden vanns: nu får de kissa",
+    "kategori": "arbetsvillkor",
+    "ort": "Märsta",
+    "lat": 59.617,
+    "long": 17.8556,
+    "url": "https://ka.se/2023/02/10/kommunal-vann-strid-om-kisspauser-for-bussforare/"
+  },
+  {
+    "rubrik": "Färre brukare minskade stressen",
+    "kategori": "arbetsvillkor",
+    "ort": "Trollhättan",
+    "lat": 58.2839,
+    "long": 12.2883,
+    "url": "https://ka.se/2023/02/07/mindre-stress-nar-anstallda-i-hemtjansten-i-trollhattan-gar-till-farre-brukare/"
+  },
+  {
+    "rubrik": "De jobbar 85 procent med full lön",
+    "kategori": "arbetstid",
+    "ort": "Borgholm",
+    "lat": 56.8787,
+    "long": 16.6584,
+    "url": "https://ka.se/2023/02/07/kortare-arbetstid-med-heltidslon-for-underskoterskor-i-borgholm/"
+  },
+  {
+    "rubrik": "Bollebygd slutar med minutstyrning i hemtjänsten",
+    "kategori": "minutstyrning",
+    "ort": "Bollebygd",
+    "lat": 57.7208,
+    "long": 12.5897,
+    "url": "https://ka.se/2022/05/18/har-lamnar-man-minutstyrningen-i-hemtjansten/"
+  },
+  {
+    "rubrik": "Mindre stress när hemtjänsten i Mörbylånga lägger schema själva",
+    "kategori": "schema",
+    "ort": "Mörbylånga",
+    "lat": 56.6102,
+    "long": 16.3502,
+    "url": "https://ka.se/2022/12/19/mindre-stress-nar-hemtjansten-i-morbylanga-far-lagga-scheman-sjalva/"
+  },
+  {
+    "rubrik": "Hemtjänst i Härnösand får pauser på schemat",
+    "kategori": "schema",
+    "ort": "Härnösand",
+    "lat": 62.6323,
+    "long": 17.9377,
+    "url": "https://ka.se/2022/10/28/hemtjanst-i-harnosand-far-pauser-pa-schemat/"
+  },
+  {
+    "rubrik": "På Gellinergården i Bräcke gör personalen sitt eget schema",
+    "kategori": "schema",
+    "ort": "Bräcke",
+    "lat": 62.9667,
+    "long": 15.5833,
+    "url": "https://ka.se/2022/01/18/pa-nya-gellinergarden-gor-personalen-sitt-eget-schema/"
+  },
+  {
+    "rubrik": "Från stress till arbetsglädje – så lyckades hemtjänsten i Ludvika",
+    "kategori": "arbetsvillkor",
+    "ort": "Ludvika",
+    "lat": 60.1498,
+    "long": 15.1878,
+    "url": "https://ka.se/2022/11/10/fran-stress-till-arbetsgladje-sa-lyckades-hemtjansten-i-ludvika/"
+  },
+  {
+    "rubrik": "Hälsoscheman slopas i Region Stockholms psykiatri",
+    "kategori": "schema",
+    "ort": "Stockholm",
+    "lat": 59.3293,
+    "long": 18.0686,
+    "url": "https://ka.se/2022/11/25/halsoscheman-slopas-i-region-stockholms-psykiatri-efter-larm-fran-kommunal/"
+  },
+  {
+    "rubrik": "26 timmars jobb – undersköterskan Carin i Laholm är nöjd med sin heltid",
+    "kategori": "arbetstid",
+    "ort": "Laholm",
+    "lat": 56.5013,
+    "long": 13.0453,
+    "url": "https://ka.se/2022/11/29/26-timmars-jobb-underskoterskan-carin-i-laholm-ar-nojd-med-sin-heltid/"
+  },
+  {
+    "rubrik": "Halverad sjukfrånvaro på hemtjänst i Uppsala – så här gjorde de",
+    "kategori": "arbetsvillkor",
+    "ort": "Uppsala",
+    "lat": 59.8586,
+    "long": 17.6389,
+    "url": "https://ka.se/2022/02/16/halverad-sjukfranvaro-pa-hemtjanst-i-uppsala-sa-har-gjorde-de/"
+  },
+  {
+    "rubrik": "Här får kockar utbildning på arbetstid",
+    "kategori": "utbildning",
+    "ort": "Akalla",
+    "lat": 59.4208,
+    "long": 17.9291,
+    "url": "https://ka.se/2022/09/16/har-far-kockar-utbildning-pa-arbetstid/"
+  },
+  {
+    "rubrik": "Serviceteam i äldreomsorgen blir allt vanligare för att lösa personalkrisen",
+    "kategori": "arbetsvillkor",
+    "ort": "Grums",
+    "lat": 59.3942,
+    "long": 13.1749,
+    "url": "https://ka.se/2023/01/27/serviceteam-i-aldreomsorgen-blir-allt-vanligare-for-att-losa-personalkrisen/"
+  },
+  {
+    "rubrik": "Personal i förskola och skola i Sjöbo får arbetskläder",
+    "kategori": "arbetskläder",
+    "ort": "Sjöbo",
+    "lat": 55.5833,
+    "long": 13.7333,
+    "url": "https://ka.se/2023/01/17/personal-i-forskola-och-skola-i-sjobo-far-arbetsklader/"
+  },
+  {
+    "rubrik": "Barnskötare i Falun får arbetskläder inomhus",
+    "kategori": "arbetskläder",
+    "ort": "Falun",
+    "lat": 60.6057,
+    "long": 15.643,
+    "url": "https://ka.se/2022/12/20/barnskotare-i-falun-far-arbetsklader-inomhus/"
+  },
+  {
+    "rubrik": "Skyddsombudet löste krisen på jobbet",
+    "kategori": "arbetsvillkor",
+    "ort": "Stockholm",
+    "lat": 59.3293,
+    "long": 18.0686,
+    "url": "https://ka.se/2022/10/26/skyddsombudet-klara-himmelmark-loste-krisen-pa-jobbet/"
+  },
+  {
+    "rubrik": "Halmstad ändrar hälsoscheman men resurspass blir kvar",
+    "kategori": "schema",
+    "ort": "Halmstad",
+    "lat": 56.6745,
+    "long": 12.8568,
+    "url": "https://ka.se/2022/10/20/halmstad-andrar-halsoscheman-men-resurspass-blir-kvar/"
+  },
+  {
+    "rubrik": "Lidköping minskar barngrupper i förskolan och ökar bemanningen",
+    "kategori": "arbetsvillkor",
+    "ort": "Lidköping",
+    "lat": 58.5059,
+    "long": 13.1579,
+    "url": "https://ka.se/2022/10/10/lidkoping-minskar-barngrupper-i-forskolan-och-okar-bemanningen/"
+  },
+  {
+    "rubrik": "Lekeberg testar helgtjänster med kortare arbetstid och full lön",
+    "kategori": "arbetstid",
+    "ort": "Lekeberg",
+    "lat": 59.25,
+    "long": 14.9333,
+    "url": "https://ka.se/2022/09/28/lekeberg-testar-helgtjanster-med-kortare-arbetstid-och-full-lon/"
+  },
+  {
+    "rubrik": "Kalmar höjer grundbemanningen med 45 undersköterskor",
+    "kategori": "arbetsvillkor",
+    "ort": "Kalmar",
+    "lat": 56.6635,
+    "long": 16.3568,
+    "url": "https://ka.se/2022/06/30/kalmar-hojer-grundbemanningen-med-45-underskoterskor/"
+  },
+  {
+    "rubrik": "Ambulanssjukvårdare i region Halland får sänkt arbetstid",
+    "kategori": "arbetstid",
+    "ort": "Halland",
+    "lat": 56.86647922,
+    "long": 13.16012412,
+    "url": "https://ka.se/2022/06/29/ambulanssjukvardare-i-region-halland-far-sankt-arbetstid/"
+  },
+  {
+    "rubrik": "Så lyckades Kommunal driva igenom gratis arbetsskor i Kumla",
+    "kategori": "arbetsskor",
+    "ort": "Kumla",
+    "lat": 59.126,
+    "long": 15.1464,
+    "url": "https://ka.se/2022/06/21/sa-lyckades-kommunal-driva-igenom-gratis-arbetsskor-i-kumla/"
+  },
+  {
+    "rubrik": "Efter protesterna – bussförare i Uppsala får gratis resor",
+    "kategori": "arbetsvillkor",
+    "ort": "Uppsala",
+    "lat": 59.8586,
+    "long": 17.6389,
+    "url": "https://ka.se/2022/06/20/efter-protesterna-bussforare-i-uppsala-far-gratis-resor/"
+  },
+  {
+    "rubrik": "I Mörbylånga ska deltidsarbete för undersköterskor ge heltidslön",
+    "kategori": "arbetstid",
+    "ort": "Mörbylånga",
+    "lat": 56.6102,
+    "long": 16.3502,
+    "url": "https://ka.se/2022/06/01/i-morbylanga-ska-deltidsarbete-for-underskoterskor-ge-heltidslon/"
+  },
+  {
+    "rubrik": "Strömsund backar och tar bort nattpass",
+    "kategori": "arbetstid",
+    "ort": "Strömsund",
+    "lat": 63.8513,
+    "long": 15.5446,
+    "url": "https://ka.se/2022/05/19/stromsund-backar-och-tar-bort-nattpass/"
+  },
+  {
+    "rubrik": "Laholm inför helgtjänster och kortar heltidsmått til 26 timmar",
+    "kategori": "arbetstid",
+    "ort": "Laholm",
+    "lat": 56.5013,
+    "long": 13.0453,
+    "url": "https://ka.se/2022/05/13/laholm-infor-helgtjanster-och-kortar-heltidsmatt-till-26-timmar/"
+  },
+  {
+    "rubrik": "Stödassistenter i Alvesta får gratis badkläder",
+    "kategori": "arbetskläder",
+    "ort": "Alvesta",
+    "lat": 56.8986,
+    "long": 14.5559,
+    "url": "https://ka.se/2022/04/14/stodassistenter-i-alvesta-far-gratis-badklader/"
+  },
+  {
+    "rubrik": "Facket i Mönsterås vann kampen om nattarbetstid",
+    "kategori": "arbetstid",
+    "ort": "Mönsterås",
+    "lat": 57.0092,
+    "long": 16.4478,
+    "url": "https://ka.se/2022/03/01/facket-i-monsteras-vann-kampen-om-nattarbetstid/"
+  },
+  {
+    "rubrik": "Undersköterskor i sjukvården i Halland får sänkt nattarbetstid",
+    "kategori": "arbetstid",
+    "ort": "Halland",
+    "lat": 56.80846909,
+    "long": 12.69620493,
+    "url": "https://ka.se/2022/02/22/underskoterskor-i-sjukvarden-i-halland-far-sankt-nattarbetstid/"
+  },
+  {
+    "rubrik": "Facklig kamp gav färre nattpass i Falkenberg",
+    "kategori": "arbetstid",
+    "ort": "Falkenberg",
+    "lat": 56.9025,
+    "long": 12.4897,
+    "url": "https://ka.se/2022/02/07/facklig-kamp-gav-farre-nattpass-i-falkenerg/"
+  },
+  {
+    "rubrik": "Nattarbetare i Oskarshamn vann kampen om tiotimmarspass",
+    "kategori": "arbetstid",
+    "ort": "Oskarshamn",
+    "lat": 57.2651,
+    "long": 16.4487,
+    "url": "https://ka.se/2022/02/04/nattarbetare-i-oskarshamn-vann-kampen-om-tiotimmarspass/"
+  },
+  {
+    "rubrik": "Här testar personal i sjukvården 30 timmars arbetsvecka",
+    "kategori": "arbetstid",
+    "ort": "Värmland",
+    "lat": 60.52257313,
+    "long": 12.8339346,
+    "url": "https://ka.se/2022/01/31/har-testa-personal-i-sjukvarden-30-timmars-arbetsvecka/"
+  },
+  {
+    "rubrik": "Fler kommunalare får arbetsskor",
+    "kategori": "arbetsskor",
+    "ort": "Karlstad",
+    "lat": 59.3798,
+    "long": 13.5047,
+    "url": "https://ka.se/2023/11/15/fler-kommuner-ger-anstallda-arbetsskor/"
+  },
+  {
+    "rubrik": "Fler kommunalare får arbetsskor",
+    "kategori": "arbetsskor",
+    "ort": "Solna",
+    "lat": 59.3607,
+    "long": 18.0013,
+    "url": "https://ka.se/2023/11/15/fler-kommuner-ger-anstallda-arbetsskor/"
+  },
+  {
+    "rubrik": "Fler kommunalare får arbetsskor",
+    "kategori": "arbetsskor",
+    "ort": "Sundbyberg",
+    "lat": 59.361,
+    "long": 17.9718,
+    "url": "https://ka.se/2023/11/15/fler-kommuner-ger-anstallda-arbetsskor/"
+  },
+  {
+    "rubrik": "Fler kommunalare får arbetsskor",
+    "kategori": "arbetsskor",
+    "ort": "Ragunda",
+    "lat": 63.3182,
+    "long": 15.17,
+    "url": "https://ka.se/2023/11/15/fler-kommuner-ger-anstallda-arbetsskor/"
+  },
+  {
+    "rubrik": "Carola satte stopp för fasta semesterperioder",
+    "kategori": "arbetsvillkor",
+    "ort": "Malung",
+    "lat": 60.6843,
+    "long": 13.7029,
+    "url": "https://ka.se/2023/06/15/kommunen-ville-infora-fler-semesterperioder-da-satte-underskoterskan-carola-stopp/"
+  },
+  {
+    "rubrik": "Carola satte stopp för fasta semesterperioder",
+    "kategori": "arbetsvillkor",
+    "ort": "Sälen",
+    "lat": 61.1427,
+    "long": 13.2295,
+    "url": "https://ka.se/2023/06/15/kommunen-ville-infora-fler-semesterperioder-da-satte-underskoterskan-carola-stopp/"
+  },
+  {
+    "rubrik": "Carola satte stopp för fasta semesterperioder",
+    "kategori": "arbetsvillkor",
+    "ort": "Lessebo",
+    "lat": 56.7749,
+    "long": 15.453,
+    "url": "https://ka.se/2023/06/15/kommunen-ville-infora-fler-semesterperioder-da-satte-underskoterskan-carola-stopp/"
+  },
+  {
+    "rubrik": "Här jobbar de 27 timmar med full lön",
+    "kategori": "arbetstid",
+    "ort": "Sävsjö",
+    "lat": 57.406,
+    "long": 14.661,
+    "url": "https://ka.se/2023/06/01/fler-kommuner-infor-helgtjanst-med-full-lon/"
+  },
+  {
+    "rubrik": "Här jobbar de 27 timmar med full lön",
+    "kategori": "arbetstid",
+    "ort": "Olofström",
+    "lat": 56.2787,
+    "long": 14.5314,
+    "url": "https://ka.se/2023/06/01/fler-kommuner-infor-helgtjanst-med-full-lon/"
+  },
+  {
+    "rubrik": "Efter protester – nattpassen blir färre i Varberg och Umeå",
+    "kategori": "arbetstid",
+    "ort": "Varberg",
+    "lat": 57.1071,
+    "long": 12.2521,
+    "url": "https://ka.se/2022/04/05/efter-protester-nattpassen-bli-farre-i-varberg-och-umea/"
+  },
+  {
+    "rubrik": "Efter protester – nattpassen blir färre i Varberg och Umeå",
+    "kategori": "arbetstid",
+    "ort": "Umeå",
+    "lat": 63.8258,
+    "long": 20.263,
+    "url": "https://ka.se/2022/04/05/efter-protester-nattpassen-bli-farre-i-varberg-och-umea/"
+  },
+  {
+    "rubrik": "Fler slopar minutstyrningen",
+    "kategori": "minutstyrning",
+    "ort": "Kungsbacka",
+    "lat": 57.487,
+    "long": 12.0734,
+    "url": "https://ka.se/2023/03/30/i-kungsbacka-och-karlstad-forsvinner-minutstyrningen-i-hemtjansten/"
+  },
+  {
+    "rubrik": "Fler slopar minutstyrningen",
+    "kategori": "minutstyrning",
+    "ort": "Karlstad",
+    "lat": 59.3798,
+    "long": 13.5047,
+    "url": "https://ka.se/2023/03/30/i-kungsbacka-och-karlstad-forsvinner-minutstyrningen-i-hemtjansten/"
+  }
+]

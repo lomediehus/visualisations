@@ -3,9 +3,51 @@ body {
   height: 2000px;
 }
 
+#radiobuttons {
+  position: absolute;
+  /* float: left; */
+  top: 30px;
+  left: 30px;
+  border-radius: 10px;
+  border: 1px solid red;
+  padding: 20px;
+  z-index: 10;
+  line-height: 10%;
+}
+
+input[type=radio] {
+  opacity: 0;
+  width: 0px;
+  padding-left: -20px;
+}
+
+label {
+  display: block;
+  padding: 5px;
+  background-color: #ddebeb;
+  box-shadow:#7e7f7f 3px 3px 0,
+              #7e7f7f 1px 1px 0,
+              #7e7f7f 2px 2px 0;
+}
+
+
+.green {
+ fill: green;
+}
+
+.yellow {
+  fill: yellow
+}
+
+.red {
+  fill: red;
+}
+
+
 svg {
   position: absolute;
-  right: 3px;
+  width: 500px;
+  /* right: 3px; */
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
   -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
 }
@@ -90,9 +132,9 @@ svg {
   line-height: 1em;
 }
 
-circle .cirkel {
+/* circle.cirkel {
     fill: green;
-}
+} */
 
 #kartpopup .red {
   color: #e00f00;
