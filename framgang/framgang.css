@@ -1,6 +1,6 @@
 body {
   background-color: #fcfaf5;
-  height: 2000px;
+  height: 850px;
   width: 500px;
   
 }
@@ -8,13 +8,16 @@ body {
 #radiobuttons {
   position: absolute;
   /* float: left; */
-  top: 30px;
-  left: 30px;
+  top: 10px;
+  /* left: 30px; */
   border-radius: 10px;
-  border: 1px solid red;
-  padding: 20px;
+  border: 1px solid black;
+  /* background-color: #fcfaf5; */
+  background-color: rgba(252, 250, 245, 0.5);
+  
+  padding: 10px;
   z-index: 10;
-  line-height: 10%;
+  line-height: 5%;
 }
 
 input[type=radio] {
@@ -25,14 +28,21 @@ input[type=radio] {
 
 label {
   display: block;
-  padding: 5px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: white;
+  font-size: large;
   font-weight: 600;
   line-height: 90%;
   /* background-color: #ddebeb; */
   /* box-shadow:#7e7f7f 3px 3px 0,
               #7e7f7f 1px 1px 0,
               #7e7f7f 2px 2px 0; */
+}
+
+label:hover {
+  background-color: gray;
 }
 
 
@@ -78,7 +88,7 @@ svg {
 }
 
 
-
+/* 
 .flexcontainer {
   display: flex;
   justify-content: space-between;
@@ -87,36 +97,31 @@ svg {
 
 .flexcontainer-reverse {
   display: flex;
-  /* background-size: cover;
-  background-position: center; */
   justify-content: space-between;
   flex-direction: row-reverse;
 }
 
-
-
 .flexitem {
   flex-grow: 1;
-}
+} */
 
-#bakgrund {
-  /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/protestbild.png"), url("protestbild.png"); */
+/* #bakgrund {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/protestbild.png"), url("protestbild.png");
   background-image: url("protestbild.png");
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-#container {
+/* #container {
   width: 100%;
   height: 600px;
   position: relative;
   overflow: visible;
+} */
 
-
-}
-#animate {
+/* #animate {
   position: absolute;
 
 }
@@ -130,9 +135,9 @@ svg {
   margin: 10px;
   box-shadow: 2px 2px #c0c0c0;
   word-wrap: break-word;
-}
+} */
 
-.animate-content:hover {
+/* .animate-content:hover {
   background-color: #cbd5d5;
 }
 
@@ -141,11 +146,11 @@ svg {
   font-size: 18px;
   line-height: 1.2em;
   color: #111;
-}
+} */
 
 #kartpopup {
   display: none;
-  width: 200px;
+  width: 300px;
   /* min-width: 250px; */
   max-width: 450px;
   padding: 5px;
@@ -173,23 +178,23 @@ svg {
   text-transform: uppercase;
 }
 
-#animate .red {
+/* #animate .red {
   color: #e00f00;
   font-weight: normal;
   font-size: 12px;
-  line-height: 1em;
+  line-height: 1em; */
+/* } */
+
+circle.cirkel:hover {
+    fill: white;
 }
 
-/* circle.cirkel {
-    fill: green;
-} */
 
 
-
-#animate .tunn {
+/* #animate .tunn {
   text-transform: uppercase;
   color: #7e7f7f;
-}
+} */
 
 
 
@@ -219,7 +224,7 @@ img.closex {
     /* pointer-events: none; */
 }
 
-#upprop {
+/* #upprop {
   position: absolute;
   display: inline-block;
   background-color: white;
@@ -228,14 +233,14 @@ img.closex {
   left: 5px;
   width: 160px;
   padding: 5px;
-}
+} */
 
-.homestyled {
+/* .homestyled {
   display: inline-block;
   background-color: #e00f00;
   padding: 10px;
   color: white;
-}
+} */
 
 /* Stuff for the map */
 /* path {
@@ -259,21 +264,52 @@ div.tooltip {
   font-weight: normal;
 }
 
+#loadercontainer{
+  position: relative;
+  top: 350px;
+  left: 400px;
+  width: 80px;
+}
+.loader { 
+  box-sizing: border-box;
+
+  border: 40px solid #f3f3f3;
+  border-top: 40px solid #3D82C4;
+  border-right: 40px solid #D81B61;
+  border-bottom: 40px solid #014D41;
+  border-left: 40px solid #fec111;
+
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.spin {
+  animation: spin 4s cubic-bezier(0.4, 0, 0.2, 1) 1;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); } /* Start position */
+  50% { transform: rotate(1080deg); } /* 3 rotations at an even pace */
+  100% { transform: rotate(1080deg); } /* End position */
+}
+
 @media only screen and (max-width: 800px) {
-  #bakgrund {
+  /* #bakgrund {
     background-size: contain;
     background-position-x: center;
     background-position-y: bottom;
-  }
+  } */
 
-  #upprop {
+  /* #upprop {
     bottom: 30%;
     filter: drop-shadow(0px 3px 3px black);
     -webkit-filter: drop-shadow(0px 3px 3px black);
-}
+} */
 
-  #container {
+  /* #container {
     height: 550px;
-  }
+  } */
 
 }
