@@ -55,8 +55,10 @@ function clicked(d,i) {
 
   // Testar att placera vid klicket
 
-    var x = d3.event.pageX - 50;
+    // var x = d3.event.pageX - 50;
+    var x = 10;
     var y = d3.event.pageY;
+    var y = 150;
 
 
     kartpopup.style.left = x + "px";
@@ -68,7 +70,7 @@ function clicked(d,i) {
   
     let markup = `
       <div id="kartpopuprubbe" class="u-textMeta fet">${d.ort}</div>
-      <div id="kartpopuptext" class="u-textMeta"><img src="${d.bildurl}">${d.rubrik}</div>
+      <div id="kartpopuptext" class="u-textMetaDeca"><img src="${d.bildurl}">${d.rubrik}</div>
       ${(() => {
         if (d.url != "") {
           return `
@@ -239,14 +241,14 @@ document.addEventListener("DOMContentLoaded", function() {
     
               setTimeout(function() {
                 clickedSpinner(cirkeldata[slumpsiffra]);
-            }, 2000);
+            }, 1800);
 
 
           function clickedSpinner(d,i) {
           
             //manuell position eftersom jag inte kan få klick-position in i timer-funktionen
-            var x = 150;
-            var y = 350;
+            var x = 10;
+            var y = 150;
             kartpopup.style.left = x + "px";
             kartpopup.style.top = y + "px";
             kartpopup.style.display = "block";
@@ -254,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function() {
           
             let markup = `
               <div id="kartpopuprubbe" class="u-textMeta fet">${d.ort}</div>
-              <div id="kartpopuptext" class="u-textMeta"><img src="${d.bildurl}">${d.rubrik}</div>
+              <div id="kartpopuptext" class="u-textMetaDeca"><img src="${d.bildurl}">${d.rubrik}</div>
               ${(() => {
                 if (d.url != "") {
                   return `
