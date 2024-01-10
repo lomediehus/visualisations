@@ -87,67 +87,6 @@ svg {
   -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
 }
 
-
-/* 
-.flexcontainer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.flexcontainer-reverse {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-.flexitem {
-  flex-grow: 1;
-} */
-
-/* #bakgrund {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/protestbild.png"), url("protestbild.png");
-  background-image: url("protestbild.png");
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/* #container {
-  width: 100%;
-  height: 600px;
-  position: relative;
-  overflow: visible;
-} */
-
-/* #animate {
-  position: absolute;
-
-}
-
-.animate-content {
-  width: 140px;
-  height: 130px;
-  background: white;
-  margin-bottom: 10px;
-  padding: 5px;
-  margin: 10px;
-  box-shadow: 2px 2px #c0c0c0;
-  word-wrap: break-word;
-} */
-
-/* .animate-content:hover {
-  background-color: #cbd5d5;
-}
-
-#animate .fet {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.2em;
-  color: #111;
-} */
-
 #kartpopup {
   display: none;
   width: 300px;
@@ -178,23 +117,10 @@ svg {
   text-transform: uppercase;
 }
 
-/* #animate .red {
-  color: #e00f00;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1em; */
-/* } */
 
 circle.cirkel:hover {
     fill: white;
 }
-
-
-
-/* #animate .tunn {
-  text-transform: uppercase;
-  color: #7e7f7f;
-} */
 
 
 
@@ -224,34 +150,7 @@ img.closex {
     /* pointer-events: none; */
 }
 
-/* #upprop {
-  position: absolute;
-  display: inline-block;
-  background-color: white;
-  opacity: 0.8;
-  bottom: 5px;
-  left: 5px;
-  width: 160px;
-  padding: 5px;
-} */
 
-/* .homestyled {
-  display: inline-block;
-  background-color: #e00f00;
-  padding: 10px;
-  color: white;
-} */
-
-/* Stuff for the map */
-/* path {
-  stroke-width: 0px;
-  stroke: #4682b4;
-  fill: #87b8b8;
-  cursor: pointer;
-} */
-
-/* path:hover, path.highlighted {
-} */
 
 div.tooltip {
   position: absolute;
@@ -266,9 +165,9 @@ div.tooltip {
 
 #loadercontainer{
   position: relative;
-  top: 350px;
-  left: 400px;
-  width: 80px;
+  top: 370px;
+  left: 350px;
+  width: 120px;
 }
 .loader { 
   box-sizing: border-box;
@@ -295,21 +194,48 @@ div.tooltip {
   100% { transform: rotate(1080deg); } /* End position */
 }
 
-@media only screen and (max-width: 800px) {
-  /* #bakgrund {
-    background-size: contain;
-    background-position-x: center;
-    background-position-y: bottom;
-  } */
+@media only screen and (max-width: 500px) {
 
-  /* #upprop {
-    bottom: 30%;
-    filter: drop-shadow(0px 3px 3px black);
-    -webkit-filter: drop-shadow(0px 3px 3px black);
-} */
+  svg {
+    width: 450px;   
+  }
 
-  /* #container {
-    height: 550px;
-  } */
+  #radiobuttons {
+
+    top: 10px;
+    padding: 10px;
+    z-index: 10;
+    line-height: 5%;
+  }
+  
+  input[type=radio] {
+    /* opacity: 0;
+    width: 0px; */
+    padding-left: -20px;
+  }
+  
+  label {
+    display: block;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size:medium;
+    font-weight: 500;
+    line-height: 80%;
+    /* background-color: #ddebeb; */
+    /* box-shadow:#7e7f7f 3px 3px 0,
+                #7e7f7f 1px 1px 0,
+                #7e7f7f 2px 2px 0; */
+  }
+
+  #loadercontainer{
+    position: relative;
+    top: 430px;
+    left: 0px;
+    width: 120px;
+  }
+  
+
 
 }
