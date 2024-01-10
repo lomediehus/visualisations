@@ -1,3 +1,4 @@
+
 body {
   background-color: #fcfaf5;
   height: 850px;
@@ -21,6 +22,11 @@ body {
   /* padding: 10px; */
   z-index: 10;
   line-height: 5%;
+}
+
+form.kategori {
+  margin: -5px;
+  padding: 0px;
 }
 
 input[type=radio] {
@@ -202,7 +208,7 @@ div.tooltip {
 @media only screen and (max-width: 500px) {
 
   svg {
-    width: 400px;   
+    width: 375px;   
   }
 
   #radiobuttons {

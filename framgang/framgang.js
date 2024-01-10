@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .center([16.382656313727672,62.34103687152436]) //projection center
         .parallels([55.327583999999995,69.059967]) //parallels for conic projection
         .rotate([343.6173436862723]) //rotation for conic projection
-        .translate([w*1.42, h/2.4]) //translate to center the map in view;
+        .translate([w*1.44, h/2.4]) //translate to center the map in view;
 
     var bana = d3.geoPath().projection(projection);
     var map = d3.json("sverige.geojson");
