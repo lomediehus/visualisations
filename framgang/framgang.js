@@ -82,7 +82,7 @@ function clicked(d,i) {
           `
         }
       })()}
-      <div class="close"><img id="closex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
+      <div class="close"><img id="closex" class="closex" src="closex.png"></img></div>
       `
   
     kartpopup.innerHTML = markup;
@@ -174,9 +174,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 case "arbetsskor":
                   return "cirkel blue";
                 case "arbetstid":
-                  return "cirkel pink";
+                  return "cirkel green";
                 case "dygnsvila":
-                  return "cirkel pink";
+                  return "cirkel lila";
                 case "schema":
                   return "cirkel pink";
                 case "minutstyrning":
@@ -192,6 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   return "cirkel darkgreen";
                 case "lön":
                   return "cirkel turkos";
+
               }
 
             })
@@ -213,15 +214,17 @@ document.addEventListener("DOMContentLoaded", function() {
               var value = this.value;
 
               d3.selectAll(".cirkel").each(function(d,i) {
+                d3.select(".red").classed("inactive", false)
                 if (value === "alla") {
                   d3.selectAll(".cirkel").style("visibility", "visible")
+                  d3.select(".red").classed("inactive", true)
 
                 }
                 if (value === d.kategori) {
-                  this.style.visibility = "visible"
+                  this.style.visibility = "visible";
                 }
                 else {
-                  this.style.visibility = "hidden"
+                  this.style.visibility = "hidden";
                 }
               })
 
@@ -268,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   `
                 }
               })()}
-              <div class="close"><img id="closex" class="closex" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/closex.png"></img></div>
+              <div class="close"><img id="closex" class="closex" src="closex.png"></img></div>
               `
             
               kartpopup.innerHTML = markup;

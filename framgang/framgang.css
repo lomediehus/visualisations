@@ -87,6 +87,26 @@ label:hover {
   background-color: #FFFFFF;
 }
 
+.lila {
+  fill: #993399;
+  background-color: #993399;
+}
+
+.green {
+  fill: #00b200;
+  background-color: #00b200;
+}
+
+.red {
+  fill: red;
+  background-color: red;
+}
+
+.inactive {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 
 
 svg {
@@ -139,7 +159,7 @@ img.closex:hover {
 }
 
 img.closex {
-  width: 30px;
+  width: 20px;
   position: absolute;
   right: 2px;
   top: 2px;
@@ -232,7 +252,7 @@ div.tooltip {
     padding: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     font-size:medium;
     font-weight: 500;
     line-height: 80%;
