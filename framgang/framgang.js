@@ -74,7 +74,7 @@ function clicked(d,i) {
       ${(() => {
         if (d.url != "") {
           return `
-          <a id="kartpopuplink" class="u-textMeta red" target="blank" href="${d.url}">Läs mer här!</a>
+          <a id="kartpopuplink" class="u-textMeta link" target="blank" href="${d.url}">Läs mer här!</a>
           `
         }
         else {
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function() {
               ${(() => {
                 if (d.url != "") {
                   return `
-                  <a id="kartpopuplink" class="u-textMeta red" target="blank" href="${d.url}">Läs mer här!</a>
+                  <a id="kartpopuplink" class="u-textMeta link" target="blank" href="${d.url}">Läs mer här!</a>
                   `
                 }
                 else {
