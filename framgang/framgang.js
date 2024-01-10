@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function() {
             //get img urls to preload them
             const imageUrls = [];            
             cirkeldata.forEach(function(item, index){
-              console.log(item.bildurl)
+              // console.log(item.bildurl)
               imageUrls.push(item.bildurl)
             })
 
@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       })
      
-
+      informHeight();
 });
 
 
