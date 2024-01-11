@@ -2,7 +2,7 @@
 body {
   background-color: #fcfaf5;
   height: 850px;
-  width: 500px;
+  width: 1000px;
   -ms-overflow-style: none;
   }
 
@@ -11,7 +11,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
+/* #content {
+  max-width: 500px;
+  margin: auto;
+} */
 
 #radiobuttons {
   position: absolute;
@@ -116,7 +119,7 @@ label:hover {
 
 svg {
   position: absolute;
-  width: 500px;
+  width: 800px;
   /* right: 3px; */
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
   -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
@@ -228,6 +231,13 @@ div.tooltip {
   0% { transform: rotate(0deg); } /* Start position */
   50% { transform: rotate(1080deg); } /* 3 rotations at an even pace */
   100% { transform: rotate(1080deg); } /* End position */
+}
+
+@media only screen and (max-width: 1000px) {
+  svg {
+    width: 500px;   
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
