@@ -1,5 +1,14 @@
 console.log("Kör testskript")
 
+//make it possible to console log with c(tobelogged)
+const c = console.log.bind(document);
+
+//Get one favicon for localhost and another for github pages
+let host = window.location.host;
+if (host.includes("github")) {
+  document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+}
+
 
 
 //Create a tooltip, hidden at the start
@@ -51,9 +60,10 @@ function showTooltip(d) {
 
 function clicked(d,i) {
   console.log(d3.event)
-
-
-  // Testar att placera vid klicket
+    var clickedCirle = d3.select(this).select("cirlce");
+    console.log(clickedCirle)
+    clickedCirle.style.fill = "red";
+    // Testar att placera vid klicket
 
     // var x = d3.event.pageX - 50;
     var x = 10;
