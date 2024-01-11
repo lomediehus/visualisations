@@ -108,6 +108,8 @@ function clicked(d,i) {
         overlay.style.display = "none";
         d3.select("#loader").classed("spin", false)
 
+      
+
     })
 
   
@@ -247,13 +249,37 @@ document.addEventListener("DOMContentLoaded", function() {
               
               this.classList.add("spin")
 
-              // Capture the d3.event outside the timer
-              console.log(d3.event.pageX + '   ' + d3.event.pageY);
+
+
+
+
+
+              let selectedData = cirkeldata[slumpsiffra];
+
+              // Identify the circle with the corresponding data
+              let selectedCircle = d3.selectAll("circle")  // Assuming your circles are represented by <circle> elements
+                            .filter(function(d) {
+                                // Assuming d represents the data bound to each circle
+                                return d === selectedData;
+                            });
+
+              // Add a class to the selected circle
+              // selectedCircle.classed("red", true); // 'highlighted-circle' is the name of the class you want to add
+
+              console.log(selectedData);
+
+              
+
               console.log(cirkeldata[slumpsiffra])
 
     
               setTimeout(function() {
                 clickedSpinner(cirkeldata[slumpsiffra]);
+                selectedCircle.classed("pulse", true); // 'highlighted-circle' is the name of the class you want to add
+                // c(selectedCircle); // 'highlighted-circle' is the name of the class you want to add
+
+
+
             }, 1800);
 
 
@@ -295,12 +321,33 @@ document.addEventListener("DOMContentLoaded", function() {
               //   close();
                   kartpopup.style.display = "none";
                   overlay.style.display = "none";
-                  d3.select("#loader").classed("spin", false)          
+                  d3.select("#loader").classed("spin", false)   
+                  
+                  
+                  var cirklar = document.getElementsByClassName("cirkel");
+                  cirklar = [...cirklar];
+                  cirklar.forEach(function(item, index) {
+                    item.classList.remove("pulse")
+                  
+                  })
               })
+
+             
+
                       
             }
               
             }); 
+
+            //just a test function, not to be used
+            // var cirklar = document.getElementsByClassName("cirkel");
+            // cirklar = [...cirklar];
+            // cirklar.forEach(function(item, index) {
+            //   item.addEventListener("click", function(){
+            //     this.style.fill = "red";
+            //     c(this)
+            //   })
+            // })
 
       })
      
