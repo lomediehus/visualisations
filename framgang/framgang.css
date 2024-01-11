@@ -233,12 +233,12 @@ div.tooltip {
   100% { transform: rotate(1080deg); } /* End position */
 }
 
-/* @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 760px) {
   svg {
     width: 500px;   
   }
 
-} */
+}
 
 @media only screen and (max-width: 500px) {
 
