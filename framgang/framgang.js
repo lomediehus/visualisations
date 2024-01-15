@@ -305,6 +305,15 @@ document.addEventListener("DOMContentLoaded", function() {
               overlay.addEventListener("click", function(){
                   kartpopup.style.display = "none";
                   overlay.style.display = "none";
+                  loader.classList.remove("noclick")
+                  loader.classList.remove("spin")
+
+                  let cirklar = document.getElementsByClassName("cirkel");
+                  cirklar = [...cirklar];
+                  cirklar.forEach(function(item, index) {
+                    item.classList.remove("pulse")
+                    
+                    })
           
               })
               closex.addEventListener("click", function() {
@@ -317,7 +326,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 d3.select("#loader").classed("spin", false)   
                 
                 
-                var cirklar = document.getElementsByClassName("cirkel");
+                let cirklar = document.getElementsByClassName("cirkel");
                 cirklar = [...cirklar];
                 cirklar.forEach(function(item, index) {
                   item.classList.remove("pulse")
