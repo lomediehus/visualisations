@@ -1,5 +1,7 @@
 console.log("Kör testskript")
 
+
+
 //make it possible to console log with c(tobelogged)
 const c = console.log.bind(document);
 
@@ -14,6 +16,7 @@ const c = console.log.bind(document);
 //Create a tooltip, hidden at the start
 var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
 var cirkeldata;
+var loader = document.getElementById("loader");
 
 
 //function for clicking the radiobuttons to answer the questions
@@ -104,6 +107,7 @@ function clicked(d,i) {
     })
     closex.addEventListener("click", function() {
     //   close();
+        c("closfunk rad 109")
         kartpopup.style.display = "none";
         overlay.style.display = "none";
         d3.select("#loader").classed("spin", false)
@@ -246,40 +250,25 @@ document.addEventListener("DOMContentLoaded", function() {
               console.log("click loader")
               let slumpsiffra = Math.floor(Math.random()*cirkeldata.length)
 
-              
               this.classList.add("spin")
-
-
-
-
-
+              this.classList.add("noclick")
 
               let selectedData = cirkeldata[slumpsiffra];
 
               // Identify the circle with the corresponding data
-              let selectedCircle = d3.selectAll("circle")  // Assuming your circles are represented by <circle> elements
-                            .filter(function(d) {
-                                // Assuming d represents the data bound to each circle
-                                return d === selectedData;
-                            });
+              let selectedCircle = d3.selectAll("circle") 
+                .filter(function(d) {
+                    //d represents the data bound to each circle
+                    return d === selectedData;
+                });
 
               // Add a class to the selected circle
               // selectedCircle.classed("red", true); // 'highlighted-circle' is the name of the class you want to add
-
-              console.log(selectedData);
-
-              
-
-              console.log(cirkeldata[slumpsiffra])
 
     
               setTimeout(function() {
                 clickedSpinner(cirkeldata[slumpsiffra]);
                 selectedCircle.classed("pulse", true); // 'highlighted-circle' is the name of the class you want to add
-                // c(selectedCircle); // 'highlighted-circle' is the name of the class you want to add
-
-
-
             }, 1800);
 
 
@@ -318,7 +307,10 @@ document.addEventListener("DOMContentLoaded", function() {
           
               })
               closex.addEventListener("click", function() {
+                c("closefunk rad 308")
               //   close();
+                  loader.classList.remove("noclick")
+
                   kartpopup.style.display = "none";
                   overlay.style.display = "none";
                   d3.select("#loader").classed("spin", false)   
@@ -339,15 +331,7 @@ document.addEventListener("DOMContentLoaded", function() {
               
             }); 
 
-            //just a test function, not to be used
-            // var cirklar = document.getElementsByClassName("cirkel");
-            // cirklar = [...cirklar];
-            // cirklar.forEach(function(item, index) {
-            //   item.addEventListener("click", function(){
-            //     this.style.fill = "red";
-            //     c(this)
-            //   })
-            // })
+          
 
       })
      

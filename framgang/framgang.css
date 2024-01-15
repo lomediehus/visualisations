@@ -258,6 +258,16 @@ div.tooltip {
   width: 120px;
   z-index: 10;
 }
+
+/* #hjul {
+  width: 120px;
+  z-index: 10;
+}
+
+#hjul img {
+  width: 80px;
+} */
+
 .loader { 
   box-sizing: border-box;
 
@@ -274,6 +284,10 @@ div.tooltip {
 
 .spin {
   animation: spin 4s cubic-bezier(0.4, 0, 0.2, 1) 1;
+}
+
+.noclick {
+  pointer-events: none;
 }
 
 
