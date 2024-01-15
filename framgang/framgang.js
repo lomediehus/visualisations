@@ -107,7 +107,8 @@ function clicked(d,i) {
     })
     closex.addEventListener("click", function() {
     //   close();
-        c("closfunk rad 109")
+        loader.classList.remove("noclick")
+
         kartpopup.style.display = "none";
         overlay.style.display = "none";
         d3.select("#loader").classed("spin", false)
@@ -308,18 +309,18 @@ document.addEventListener("DOMContentLoaded", function() {
               })
               closex.addEventListener("click", function() {
                 c("closefunk rad 308")
-              //   close();
-                  loader.classList.remove("noclick")
+                //make the loader clickable again  
+                loader.classList.remove("noclick")
 
-                  kartpopup.style.display = "none";
-                  overlay.style.display = "none";
-                  d3.select("#loader").classed("spin", false)   
-                  
-                  
-                  var cirklar = document.getElementsByClassName("cirkel");
-                  cirklar = [...cirklar];
-                  cirklar.forEach(function(item, index) {
-                    item.classList.remove("pulse")
+                kartpopup.style.display = "none";
+                overlay.style.display = "none";
+                d3.select("#loader").classed("spin", false)   
+                
+                
+                var cirklar = document.getElementsByClassName("cirkel");
+                cirklar = [...cirklar];
+                cirklar.forEach(function(item, index) {
+                  item.classList.remove("pulse")
                   
                   })
               })
