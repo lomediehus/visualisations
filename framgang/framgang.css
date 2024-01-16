@@ -233,6 +233,8 @@ img.closex {
     right: 0;
     bottom: 0;
     background-color: rgba(245,247,247,0.8); /* Black background with opacity */
+    background-color: #fcfaf5;
+    opacity: 0.5;
     z-index: 20; /* Specify a stack order in case you're using a different order for other elements */
     /* cursor: not-allowed; */
     /* pointer-events: none; */
@@ -355,6 +357,7 @@ div.tooltip {
     width: 120px; */
   }
 
+  /* Changing animation name to "none" disables animation  */
   .pulse {
     /* fill: red;
     fill-opacity: 1;    
