@@ -53,15 +53,23 @@ function close(){
 
 function clicked(d,i) {
   var clickedCirle = d3.select(this).select("cirlce");
-  console.log(clickedCirle)
   clickedCirle.style.fill = "red";
   // Testar att placera vid klicket
 
-  // var x = d3.event.pageX - 50;
-  var x = 10;
-  var maxY = window.innerHeight - 100;
+  //get the height of the svg as it is rendered at the moment
+  let bbcl= document.getElementById("svgel").getBoundingClientRect();
+  let svgHeight = bbcl.height;
+  c(svgHeight)
 
-  var y = d3.event.pageY;
+
+  // var x = d3.event.pageX - 50;
+  let x = 10;
+  // let maxY = window.innerHeight - 100;
+  let maxY = svgHeight - 300;
+
+  // c(svg.offsetHeight)
+
+  let y = d3.event.pageY;
   y = Math.min(y, maxY);
   // var y = 150;
   c(maxY)
@@ -106,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var w = 264;
     var h = 450;
-    var svg = d3.select('div#kartdiv').append('svg').attr("preserveAspectRatio", "xMinYMin meet").attr("viewBox", "0 0 " + w + " " + h).classed("svg-content", true);
+    var svg = d3.select('div#kartdiv').append('svg').attr("preserveAspectRatio", "xMinYMin meet").attr("id","svgel").attr("viewBox", "0 0 " + w + " " + h).classed("svg-content", true);
     var projection = d3.geoConicEqualArea()
         .scale(1800)
         .center([16.382656313727672,62.34103687152436]) //projection center
@@ -122,6 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //circle radius should be a bit bigger on small screens (since you use small screens with your fat fingers)
     var radius = windowWidth > 500 ? 5 : 7;
 
+
     Promise.all([map]).then(function(values) {
 
         svg.selectAll("path")
@@ -131,6 +140,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // .attr("class", "semitransparent")
             .attr("fill", "#87b8b8")
             .attr("d", bana)
+
+         
     
         //Nesting the circle-drawing to ensure they are drawn after the map is drawn.
         var datafile = d3.json("framgang.json");
@@ -205,6 +216,13 @@ document.addEventListener("DOMContentLoaded", function() {
             hideTooltip()
             });
 
+            // var bbcl= document.getElementById("svgel").getBoundingClientRect();
+            // var height = bbcl.height;
+            // c(height)
+
+      
+
+
             d3.selectAll(".checkbox").on("click", function(){
               var value = this.value;
 
@@ -251,6 +269,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
           function clickedSpinner(d,i) {
+
+
           
             //manuell position eftersom jag inte kan få klick-position in i timer-funktionen
             var x = 10;
