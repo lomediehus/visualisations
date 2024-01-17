@@ -1,7 +1,10 @@
-console.log("Kör testskript")
+console.log("Kör testskript 1")
+
 
 //make it possible to console log with c(tobelogged)
 const c = console.log.bind(document);
+
+
 
 // Get one favicon for localhost and another for github pages
 let host = window.location.host;
