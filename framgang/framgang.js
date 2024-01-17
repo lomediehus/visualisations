@@ -3,7 +3,7 @@ console.log("Kör testskript")
 //make it possible to console log with c(tobelogged)
 const c = console.log.bind(document);
 
-//Get one favicon for localhost and another for github pages
+// Get one favicon for localhost and another for github pages
 let host = window.location.host;
 if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
@@ -18,8 +18,7 @@ var loader = document.getElementById("loader");
 
 //Show tooltip
 function showTooltip(d) {
-    moveTooltip();
-  
+    moveTooltip(); 
     tooltip.style("display","block")
     .text(d.ort);
   }
@@ -27,7 +26,6 @@ function showTooltip(d) {
 //Move the tooltip to track the mouse
 function moveTooltip() {
   // tooltip.style("top",(d3.event.pageY+tooltipOffset.y)+"px")
-
   tooltip.style("top",(d3.event.pageY-40)+"px")
   // .style("left",(d3.event.pageX+tooltipOffset.x)+"px");
   .style("left",(d3.event.pageX-30)+"px");
@@ -41,6 +39,7 @@ function hideTooltip() {
 function close(){
   kartpopup.style.display = "none";
   overlay.style.display = "none";
+  //take away class "spin", otherwise it won't spin again. It only does one round and that is when the class is added. Also take away class "noclick", to make it clickable agian.
   d3.select("#loader")
     .classed("spin", false)
     .classed("noclick", false);
@@ -60,8 +59,13 @@ function clicked(d,i) {
 
   // var x = d3.event.pageX - 50;
   var x = 10;
+  var maxY = window.innerHeight - 100;
+
   var y = d3.event.pageY;
-  var y = 150;
+  y = Math.min(y, maxY);
+  // var y = 150;
+  c(maxY)
+  c(y)
 
 
   kartpopup.style.left = x + "px";
@@ -223,11 +227,13 @@ document.addEventListener("DOMContentLoaded", function() {
             d3.select("#loader").on("click", function() {
               console.log("click loader")
               document.getElementById("hjulljud").play()
+              //Get a random number within the lengt of the cirkeldata array
               let slumpsiffra = Math.floor(Math.random()*cirkeldata.length)
-
+              //Wheel spins one round when the class is added
               this.classList.add("spin")
+              //Add class "noclick"  to prevent user from clicking more than once (otherwise shows popupwindow every time it's clicked). Class is removed in the "close" function, then you can click again.
               this.classList.add("noclick")
-
+              //the item in the cirkeldata that corresponds to the chosen random number
               let selectedData = cirkeldata[slumpsiffra];
 
               // Identify the circle with the corresponding data
@@ -240,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
               setTimeout(function() {
                 clickedSpinner(cirkeldata[slumpsiffra]);
-                selectedCircle.classed("pulse", true); // 'highlighted-circle' is the name of the class you want to add
+                selectedCircle.classed("pulse", true); 
             }, 1800);
 
 
