@@ -484,7 +484,13 @@ sortLonFall.addEventListener('click', function() {
   if (getvalue(tabellknappar) === "listKommuner") {
     kdata.sort(function(a, b){
       // return b[yrke] - a[yrke];
-      return b[yrke] < a[yrke] ? -1 : 1;
+      // console.log("Comparing:", a[yrke], b[yrke]);
+      // console.log(typeof a[yrke]);
+      if (a[yrke] === '' || a[yrke]=== "bort") return 1;
+      if (b[yrke] === '' || b[yrke]=== "bort") return -1;
+
+
+      return b[yrke] - a[yrke];
       })
     maketable(kdata, tabell);
   }
