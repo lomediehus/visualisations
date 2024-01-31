@@ -333,6 +333,7 @@ function getHighLow(yrke) {
   lowestKommun < lowestLandsting ? (lowest = lowestKommun, place2 = place2Kommun) : (lowest = lowestLandsting, place2 = place2Landsting);
 
 
+
   if (place2 === 'Västra Götalandsregionen') {
     place2 = 'Västra Götalands\&shy;regionen';
   }
@@ -344,6 +345,21 @@ function getHighLow(yrke) {
   }
   if (place === 'Region Östergötland'){
     place = 'Region Öster\&shy;götland';
+  }
+  if (place === 'Oskarshamn'){
+    place = 'Oskars\&shy;hamn';
+  }
+  if (place === 'Kristianstad'){
+    place = 'Kristian\&shy;stad';
+  }
+  if (place === 'Hallstahammar'){
+    place = 'Hallsta\&shy;hammar';
+  }
+  if (place === 'Ljusnarsberg'){
+    place = 'Ljusnars\&shy;berg';
+  }
+  if (place2 === "Söderköping"){
+    place2 = 'Söder\&shy;köping';
   }
 
 };
