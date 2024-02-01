@@ -43,7 +43,7 @@ function close(){
   kartpopup.style.display = "none";
   overlay.style.display = "none";
   //take away class "spin", otherwise it won't spin again. It only does one round and that is when the class is added. Also take away class "noclick", to make it clickable agian.
-  d3.select("#loader")
+  d3.select("#hjulimg")
     .classed("spin", false)
     .classed("noclick", false);
   let cirklar = document.getElementsByClassName("cirkel");
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             })
 
-            d3.select("#loader").on("click", function() {
+            d3.select("#hjulimg").on("click", function() {
               console.log("click loader")
               document.getElementById("hjulljud").play()
               //Get a random number within the lengt of the cirkeldata array

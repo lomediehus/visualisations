@@ -11,6 +11,23 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+#content {
+  position: relative;
+}
+
+#raketer {
+  position: absolute;
+  width: 300px;
+  pointer-events: none;
+  left: 20%;
+  z-index: 10;
+}
+
+#raketbild {
+  width: 300px;
+  pointer-events: none;
+}
+
 
 
 
@@ -23,7 +40,7 @@ body::-webkit-scrollbar {
   position: absolute;
   /* float: left; */
   /* width: 140px; */
-  top: 200px;
+  top: 230px;
   /* left: 30px; */
   /* border-radius: 10px;
   border: 1px solid black; */
@@ -254,21 +271,13 @@ div.tooltip {
 }
 
 #loadercontainer{
-  position: absolute;
+  position: relative;
   /* top: 370px;
   left: 350px; */
   width: 120px;
   z-index: 10;
 }
 
-/* #hjul {
-  width: 120px;
-  z-index: 10;
-}
-
-#hjul img {
-  width: 80px;
-} */
 
 .loader { 
   box-sizing: border-box;
@@ -284,14 +293,21 @@ div.tooltip {
   height: 40px;
 }
 
+.wheel {
+  position: absolute;
+  /* top: 50%;
+  left: 50%;  */
+}
+
+#hjulimg {
+  width: 100px;
+}
+
 .spin {
+  /* transform: translate(-50%, -50%); */
   animation: spin 4s cubic-bezier(0.4, 0, 0.2, 1) 1;
+  transform-origin: center;
 }
-
-.noclick {
-  pointer-events: none;
-}
-
 
 @keyframes spin {
   0% { transform: rotate(0deg); } /* Start position */
@@ -299,16 +315,41 @@ div.tooltip {
   100% { transform: rotate(1080deg); } /* End position */
 }
 
+.noclick {
+  pointer-events: none;
+}
+
 @media only screen and (max-width: 760px) {
   svg {
     width: 600px;   
   }
+  #raketer {
+    width: 230px;
+    left: 15%;
+  }
+  
+  #raketbild {
+    width: 230px;
+    pointer-events: none;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
   svg {
     width: 500px;   
   }
+
+  #raketer {
+    width: 170px;
+    left: 15%;
+  }
+  
+  #raketbild {
+    width: 170px;
+    pointer-events: none;
+  }
+
 
 }
 
@@ -318,9 +359,19 @@ div.tooltip {
     width: 375px;   
   }
 
+  #raketer {
+    width: 110px;
+    left: 12%;
+  }
+  
+  #raketbild {
+    width: 110px;
+    pointer-events: none;
+  }
+
   #radiobuttons {
 
-    top: 200px;
+    top: 230px;
     /* width: 110px; */
     /* width: 40px; */
     /* padding: 10px; */
