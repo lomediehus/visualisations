@@ -62,7 +62,7 @@ if (host.includes("github")) {
   },
   {
     "yrke": "Förrådsarbetare",
-    "lön": 27417
+    "lön": 28143
   },
   {
     "yrke": "Kock",
