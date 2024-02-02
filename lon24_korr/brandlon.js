@@ -140,7 +140,13 @@
 
         //key 13 is "enter"
         if (e.keyCode == 13) {
-          let sokt = $(this).val().toLowerCase();
+
+          let rawsearch = this.value;
+          let trimmedsearch = rawsearch.trim()
+          
+          let sokt = trimmedsearch.toLowerCase();
+          // let sokt = $(this).val().toLowerCase();
+
 
           //traverse the data file
           data.forEach(function(row) {

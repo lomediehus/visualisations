@@ -625,7 +625,7 @@ table.brandtabellstil td {
 #popuptext h3 {
   text-transform: uppercase;
   font-size: 18px;
-  padding: 0 5px 0 5px;
+  padding: 0 20px 0 5px;
   font-weight: 700;
 }
 
@@ -657,7 +657,7 @@ span.pil {
 
 p.tabellkommuner {
   font-style: italic;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 p.invisible {
