@@ -22,7 +22,7 @@
 
     //Reading a file
     $.ajax({
-            url: "brandlon23.json",
+            url: "brandlon24.json",
             dataType: "json",
             mimeType: "application/json",
             success: function (data) {
@@ -43,8 +43,11 @@
       data.forEach(function(row) {
         let lonform;
         //format number and assign result to variable "lonform", if there is a number to format. Otherwise lonform will be assigned the value "*"
-        row.Lon === 0 ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&#8239;");
+        // row.Lon === 0 ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&#8239;");
+        lonform = (row.Lon === 0 || row.Lon === '') ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&#8239;");
+
         //make a string out of array Kommunlista
+        // c(Array.isArray(row.Kommunlista))
         let kommunerna = row.Kommunlista.join(', ');
         //create the table
         let rad = tabell.insertRow();
@@ -137,7 +140,13 @@
 
         //key 13 is "enter"
         if (e.keyCode == 13) {
-          let sokt = $(this).val().toLowerCase();
+
+          let rawsearch = this.value;
+          let trimmedsearch = rawsearch.trim()
+          
+          let sokt = trimmedsearch.toLowerCase();
+          // let sokt = $(this).val().toLowerCase();
+
 
           //traverse the data file
           data.forEach(function(row) {
@@ -306,7 +315,7 @@
         function showTooltip(d,i) {
           moveTooltip();
           //showing tooltip on hover only on larger screens
-          if (window.innerWidth > 768) {
+          if (window.innerWidth > 500) {
             tooltip.style("display","block")
                 .text(d.properties.Räddningstjänst);
           }
