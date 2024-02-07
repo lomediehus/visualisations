@@ -271,7 +271,7 @@ div.tooltip {
 }
 
 #loadercontainer{
-  position: relative;
+  position: absolute;
   /* top: 370px;
   left: 350px; */
   width: 120px;
