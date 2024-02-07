@@ -1,0 +1,76 @@
+* {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+  }
+  
+  /* For hiding scrollbar in Firefox without impacting scrolling function */
+  html {
+	scrollbar-width: none;
+  }
+  
+  body {
+	padding: 0px;
+	background-color: #fcfaf5;
+	/* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+	-ms-overflow-style: none;
+  }
+  
+  /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+  body::-webkit-scrollbar {
+	display: none;
+  }
+  
+#content {
+	/* width: 300px; */
+}
+
+  select, form,label, input {
+	display: inline;
+  }
+
+
+
+  .boxwidth {
+	width: 80%;
+  }
+
+  /* #inputYear {
+	width: 4em;
+  } */
+
+  .flexcontainer {
+	display: flex;
+	justify-content: space-between;
+	align-content: stretch;
+	flex: 0 1 auto;
+	/* border-radius: 4%; */
+	padding: 7px;
+  }
+
+  .flexcontainerInner {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+  }
+
+  .center {
+	display: flex;
+	justify-content: center;
+  }
+
+  button#calculate {
+	color: red;
+	margin: 20px;
+	padding: 3px;
+  }
+
+  @media only screen and (max-width: 570px) {
+	.flexcontainer {
+		flex-direction: column;
+	}
+	.flexcontainerInner {
+		width: 100%;
+	}
+}
