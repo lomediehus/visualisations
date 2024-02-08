@@ -15,15 +15,16 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-#raketer {
+#vinjett {
   position: absolute;
+  /* float: left; */
   width: 300px;
   pointer-events: none;
   left: 19%;
   z-index: 10;
 }
 
-#raketbild {
+#vinjettbild {
   width: 300px;
   pointer-events: none;
 }
@@ -276,6 +277,7 @@ div.tooltip {
   left: 350px; */
   width: 150px;
   z-index: 10;
+  top: 20px;
 }
 
 
@@ -323,12 +325,12 @@ div.tooltip {
   svg {
     width: 600px;   
   }
-  #raketer {
+  #vinjett {
     width: 230px;
     left: 15%;
   }
   
-  #raketbild {
+  #vinjettbild {
     width: 210px;
     pointer-events: none;
   }
@@ -340,12 +342,12 @@ div.tooltip {
     width: 500px;   
   }
 
-  #raketer {
+  #vinjett {
     width: 150px;
     left: 14%;
   }
   
-  #raketbild {
+  #vinjettbild {
     width: 170px;
     pointer-events: none;
   }
@@ -359,14 +361,18 @@ div.tooltip {
     width: 375px;   
   }
 
-  #raketer {
-    width: 110px;
+  #vinjett {
+    /* width: 110px; */
     left: 14%;
   }
   
-  #raketbild {
-    width: 90px;
+  #vinjettbild {
+    /* width: 90px; */
     pointer-events: none;
+  }
+
+  img#vinjettbild {
+    content: url("vinjett_liten.png")
   }
 
   #radiobuttons {
@@ -378,6 +384,11 @@ div.tooltip {
     z-index: 10;
     line-height: 5%;
   }
+
+  #loadercontainer h3 {
+    font-size: medium;
+  }
+
   
   input[type=radio] {
     /* opacity: 0;
@@ -401,21 +412,10 @@ div.tooltip {
                 #7e7f7f 2px 2px 0; */
   }
 
-  #loadercontainer{
-    /* position: absolute;
-    top: 430px;
-    left: 0px;
-    width: 120px; */
-  }
 
   /* Changing animation name to "none" disables animation  */
   .pulse {
-    /* fill: red;
-    fill-opacity: 1;    
-    transform-origin: 50% 50%;
-    animation-duration: 2s; */
-    animation-name: none;
-    /* animation-iteration-count: infinite; */
+     animation-name: none;
   }
   
  
