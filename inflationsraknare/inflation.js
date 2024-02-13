@@ -47,3 +47,5 @@ select.addEventListener("change", function(){
   }
 })
 
+informHeight();
+
