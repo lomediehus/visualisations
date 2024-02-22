@@ -139,7 +139,7 @@ function doStuff() {
   var juldatum = new Date("November 22 2023")
   var nyarsdatum = new Date("December 27 2023");
   var trettonhelgsdatum = new Date("January 2 2024");
-  var paskdatum = new Date("March 12 2023");
+  var paskdatum = new Date("February 21 2024");
   var pingstdatum = new Date("April 22 2023");
 
   var midsommardatum = new Date("June 07 2023");
@@ -149,24 +149,24 @@ function doStuff() {
 
   //handling dates:
   //Check if current date is after jul;
-  if (date.getTime() > nyarsdatum.getTime()) {
-    c("efter midsommar")
+  if (date.getTime() > trettonhelgsdatum.getTime()) {
+    c("efter trettonhelgen")
     //if current date is also after nyar
-    if (date.getTime() > trettonhelgsdatum.getTime()) {
-      document.getElementById("helgbild").src = 'trettonhelg.svg';
-      goActive(helgknapp3);
-      helgnr = "3";
+    if (date.getTime() > paskdatum.getTime()) {
+      document.getElementById("helgbild").src = 'pask.svg';
+      goActive(helgknapp4);
+      helgnr = "4";
     }
-    else {
-      document.getElementById("helgbild").src = 'nyar.svg';
-      goActive(helgknapp2);
-      helgnr = "2";
-    }
-  }
-  else {
-    document.getElementById("helgbild").src = 'jul.svg';
-    goActive(helgknapp1);
-    helgnr = "1";
+  //   else {
+  //     document.getElementById("helgbild").src = 'nyar.svg';
+  //     goActive(helgknapp2);
+  //     helgnr = "2";
+  //   }
+  // }
+  // else {
+  //   document.getElementById("helgbild").src = 'jul.svg';
+  //   goActive(helgknapp1);
+  //   helgnr = "1";
   }
 
 
