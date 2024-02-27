@@ -111,12 +111,15 @@ function doStuff() {
   var mainContent = document.getElementById('mainContent');
   var helgwrapper = document.getElementsByClassName("helg-wrapper");
   var helgbild = document.getElementById('helgbild');
+  const popup_passed = document.getElementById("popup_passed");
+  const close_passed = document.getElementById("close_passed");
 
   // variables for text in document
   var overskrift, rubrik, text, extraxtext1, extratext2, extratext3, extratext4 = '';
   //Replaces any
   const patt = new RegExp('[0-9]+(,[0-9]+)*' + '\\s' + 'kr/tim', 'g');
   let flag;
+  let helgord = document.getElementById("word");
 
 
   var knapp = `
@@ -214,6 +217,21 @@ function doStuff() {
 
   //function for actions of the helgknapps
   function helgknapp(clicked) {
+    c(!clicked.classList.contains("updated"))
+    let width = header.offsetWidth;
+    let left = (header.offsetWidth - 300) / 2;
+    c(left)
+    c(clicked.innerHTML)
+
+    if (!clicked.classList.contains("updated")){
+      popup_passed.style.display = "block";
+      popup_passed.style.left = left + "px";
+      helgord.textContent = clicked.innerHTML + " "; 
+
+    }
+    else {
+      popup_passed.style.display = "none";
+    }
     goActive(clicked);
     if (inpValue != '') {
       valueToDiv();
@@ -224,6 +242,10 @@ function doStuff() {
       avtalstext(helgnr);
     }
   }
+
+  close_passed.addEventListener("click", function(){
+    popup_passed.style.display = "none";
+  })
 
   //style active button
   function goActive(knappen) {
@@ -625,7 +647,7 @@ function doStuff() {
 
       //empty array before next round
       divisorAttr = [];
-      //resize visualistion frame
+      //resize visualisation frame
       informHeight();
     }
   }
