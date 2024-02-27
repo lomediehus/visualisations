@@ -1,10 +1,20 @@
+/* hides scrollbars in firefox */
+html {
+  scrollbar-width: none;
+}
 
 body {
   background-color: #fcfaf5;
   /* max-width: 948px; */
   width: 100%;
+  /* hides scrollbars */
+  -ms-overflow-style: none;
 }
 
+/* hides scrollbars */
+body::-webkit-scrollbar{
+  display: none;
+}
 
 
 #fixit {
@@ -66,6 +76,37 @@ body {
 #searchButton {
   margin: 10px;
 }
+
+#popup_passed {
+    display: none;
+    float: left;
+    position: absolute;
+    width: 300px;
+    /* height: 100px; */
+    background-color: #ffffff;
+    top: 150px;
+    left: 50%;
+    padding: 5px;
+    border: 1px solid gray;
+    z-index: 30;
+    box-shadow: 3px 3px 3px   #707070;
+    text-align: center;
+}
+
+
+
+/* img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 20px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  padding: 5px;
+} */
+
 
 .fetLon {
   font-weight: bold;
@@ -255,6 +296,9 @@ h4.underline {
   text-decoration: underline;
 }
 
+#div0 {
+  margin: 10px 0px 10px 0px;
+}
 
 
 @media only screen and (max-width: 1150px) {
