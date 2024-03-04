@@ -84,10 +84,10 @@
       let row = header.insertRow(0);
       let cell1 = row.insertCell(0);
       cell1.classList.add('alfabetisk');
-      cell1.innerHTML = "Räddningstjänst";
+      cell1.innerHTML = "Räddningstjänst<span class='sortpil'>&#8691;</span>";
       let cell2 = row.insertCell(1);
       cell2.classList.add('numerisk');
-      cell2.innerHTML = "Lön";
+      cell2.innerHTML = "Lön<span class='sortpil'>&#8691;</span>";
     }
 
     //add a click function to the entire table
@@ -138,6 +138,8 @@
         let data = lonefil;
         let searchdata = [];
 
+        c(e.keyCode)
+
         //key 13 is "enter"
         if (e.keyCode == 13) {
 
@@ -160,6 +162,16 @@
             }
           })
         }
+
+      if (e.keyCode == 8) {
+        //hide the button
+        rensaElement[0].style.display = "none";
+        //make the table again, from the complete lonlist
+        maketable(lonefil);
+      }
+
+        
+
     });
 
     //click function for button
@@ -171,6 +183,7 @@
       //make the tabla again, from the complete lonlist
       maketable(lonefil);
     })
+
 
 
     function makeMap(data) {
@@ -335,6 +348,7 @@
  
     //uses function in main script file to make the graph that compares professions
     makeGraph(riksYrken);
+    informHeight()
   }
 
 })(window);
