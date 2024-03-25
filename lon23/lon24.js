@@ -38,7 +38,7 @@ if (host.includes("github")) {
   },
   {
     "yrke": "Brandman",
-    "lön": 30791
+    "lön": 30783
   },
   {
     "yrke": "Elevassistent",
@@ -78,7 +78,7 @@ if (host.includes("github")) {
   },
   {
     "yrke": "Park- och trädgårdsarbetare",
-    "lön": 29340
+    "lön": 29332
   },
   {
     "yrke": "Personlig assistent",
