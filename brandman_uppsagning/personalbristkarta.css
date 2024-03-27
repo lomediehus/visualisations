@@ -11,8 +11,10 @@ div#chart {
 
 
 .main-content {
-  width: 400px;
-	min-height: 790px;
+  /* width: 400px; */
+  width: 100%;
+  max-width: 785px;
+	min-height: 600px;
   margin: 0 auto;
 }
 .map {
