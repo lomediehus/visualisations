@@ -144,7 +144,7 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 		tooltip = d3.select("section")
 				.append("div")
 					.attr("class", "tooltip u-textMeta")
-					// .style("opacity", 0.9)
+					.style("opacity", 0)
 					
 
 
