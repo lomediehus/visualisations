@@ -202,17 +202,18 @@ function mousemove(d, i) {
 
 	tooltip.html(markup)
 			// .style("left", (d3.event.pageX) + "px")
-			.style("left", function() {
+			.style("left", "20px")
+			// .style("left", function() {
 
-				//on a small screen, place tooltip further to the left on the right side of the screen (making tooltips wider)
-				if (d3.event.pageX > window.innerWidth/2) {
-					c
-					return (d3.event.pageX - 100) + "px";
-					}
-				else {
-					return (d3.event.pageX-300) + "px";
-				}
-			})
+			// 	//on a small screen, place tooltip further to the left on the right side of the screen (making tooltips wider)
+			// 	if (d3.event.pageX > window.innerWidth/2) {
+			// 		c
+			// 		return (d3.event.pageX - 300) + "px";
+			// 		}
+			// 	else {
+			// 		return (d3.event.pageX-300) + "px";
+			// 	}
+			// })
 
 			.style("top", (d3.event.pageY - 50) + "px");
 }
