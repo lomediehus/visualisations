@@ -109,8 +109,10 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 
 		//color and text for the legend. (Addding an extra item to the domain and range arrays will create a new legend item)
 		var color = d3.scaleOrdinal()
-				.domain(["Här har brandmän sagt upp sig", "Nej/Vet ej/Ej svar"])
-				.range(["#e00f00", "#d8d8d8"]);
+				.domain(["Här har brandmän sagt upp sig"])
+				.range(["#e00f00"]);
+				// .domain(["Här har brandmän sagt upp sig", "Nej/Vet ej/Ej svar"])
+				// .range(["#e00f00", "#d8d8d8"]);
 				// .range(["#e00f00", "#f5cc00", "#d8d8d8"]);
 
 
