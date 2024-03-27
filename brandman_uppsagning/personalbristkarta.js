@@ -18,12 +18,15 @@ var w = 264,
 
 var svg = d3.select('div#chart').append('svg').attr("preserveAspectRatio", "xMinYMin meet").attr("viewBox", "0 0 " + w + " " + h).classed("svg-content", true);
 var projection = d3.geoConicEqualArea()
-    .scale(1800)
+	// .scale(1800)
+
+    .scale(2200)
     .center([16.382656313727672,62.34103687152436]) //projection center
     .parallels([55.327583999999995,69.059967]) //parallels for conic projection
     .rotate([343.6173436862723]) //rotation for conic projection
-    // .translate([w*1.3, h/2.1]) //translate to center the map in view;
-	.translate([w*1.3, h/3]) //translate to center the map in view;
+	// .translate([w*1.3, h/3]) //translate to center the map in view;
+	.translate([w*1.6, h/4.5]) //translate to center the map in view;
+
 
 
 var thepath = d3.geoPath().projection(projection);
