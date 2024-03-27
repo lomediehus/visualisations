@@ -1,22 +1,38 @@
-body {
-background-color: #fcfaf5;
-/* overflow: auto; */
-}
+
 
 div#chart {
 	position: relative;
 	padding-top: 20px;
 }
 
+/* For hiding scrollbar in Firefox without impacting scrolling function */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #fcfaf5;
+
+  padding: 0px;
+  background-color: #fcfaf5;
+  /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+  -ms-overflow-style: none;
+}
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
 
 
 .main-content {
-  /* width: 400px; */
+  position: relative;
   width: 100%;
   max-width: 785px;
 	min-height: 600px;
   margin: 0 auto;
 }
+
 .map {
   display: inline-block;
   margin: 0 auto;
@@ -75,8 +91,17 @@ font-size: 8px;
 fill: black; // Adjust the color of the labels
 }
 
+/* #forklaring {
+  position: absolute;
+  margin: auto;
+  top: 20px;
+  width: 300px;
+} */
+
 #forklaring {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   top: 20px;
   width: 300px;
 }
