@@ -45,7 +45,6 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 				return regiondata.Kod.toString() === kombogrej.properties.KNKOD.toString();
 			})
 
-			console.log(kombogrej)
 
 
 
@@ -57,7 +56,6 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 			kombogrej["Label"] = (result[0] !== null) ? result[0].Label : null;
 
 
-			console.log(kombogrej["Label"])
 
 		})
 
@@ -143,7 +141,8 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
 		tooltip = d3.select("section")
 				.append("div")
 					.attr("class", "tooltip u-textMeta")
-					.style("opacity", 0)
+					// .style("opacity", 0.9)
+					
 
 
 					
@@ -177,10 +176,18 @@ informHeight();
 
 })
 
-function mouseover() {
+function mouseover(d, i) {
 	tooltip.transition()
 		.duration(200)
-		.style("opacity", .9);
+		.style("opacity", function(){
+			c(d.Uppsagning)
+			if (d.Uppsagning === null){
+				return 0;
+			} else {
+				return 0.9
+			}
+			}
+			);
 }
 
 
@@ -196,7 +203,6 @@ function mousemove(d, i) {
 	tooltip.html(markup)
 			// .style("left", (d3.event.pageX) + "px")
 			.style("left", function() {
-				c(event.pageX)
 
 				//on a small screen, place tooltip further to the left on the right side of the screen (making tooltips wider)
 				if (d3.event.pageX > window.innerWidth/2) {
@@ -215,7 +221,7 @@ function mousemove(d, i) {
 
 function mouseout() {
 		tooltip.transition()
-			.duration(200)
+			.duration(50)
 			.style("opacity", 0);
 }
 
