@@ -5,8 +5,7 @@
     "Raddningstjanst": "Bohus Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1489,
@@ -14,8 +13,7 @@
     "Raddningstjanst": "Alingsås och Vårgårda Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0765",
@@ -23,8 +21,7 @@
     "Raddningstjanst": "Älmhults Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2039,
@@ -32,8 +29,7 @@
     "Raddningstjanst": "Brandkåren Norra Dalarna",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0764",
@@ -41,8 +37,7 @@
     "Raddningstjanst": "Värends Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0319",
@@ -50,8 +45,7 @@
     "Raddningstjanst": "Gästrike Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2560,
@@ -59,8 +53,7 @@
     "Raddningstjanst": "Räddningstjänsten Piteå-Älvsbyn",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1492,
@@ -68,8 +61,7 @@
     "Raddningstjanst": "Åmåls Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0604",
@@ -77,8 +69,7 @@
     "Raddningstjanst": "Aneby Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2260,
@@ -86,8 +77,7 @@
     "Raddningstjanst": "Medelpads Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1292,
@@ -95,8 +85,7 @@
     "Raddningstjanst": "Räddningstjänsten Skåne Nordväst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1984,
@@ -104,8 +93,7 @@
     "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2321,
@@ -113,8 +101,7 @@
     "Raddningstjanst": "Åre Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1765,
@@ -122,8 +109,7 @@
     "Raddningstjanst": "Årjängs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2506,
@@ -131,8 +117,7 @@
     "Raddningstjanst": "Arjeplogs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2505,
@@ -140,8 +125,7 @@
     "Raddningstjanst": "Arvidsjaurs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1784,
@@ -149,8 +133,7 @@
     "Raddningstjanst": "Arvika Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2463,
@@ -158,8 +141,7 @@
     "Raddningstjanst": "Åsele Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1882,
@@ -167,8 +149,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1277,
@@ -176,8 +157,7 @@
     "Raddningstjanst": "Räddningstjänsten Söderåsen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0561",
@@ -185,8 +165,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Götaland",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2084,
@@ -194,8 +173,7 @@
     "Raddningstjanst": "Södra Dalarnas Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1278,
@@ -203,8 +181,7 @@
     "Raddningstjanst": "Båstads Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1460,
@@ -212,8 +189,7 @@
     "Raddningstjanst": "Bengtsfors Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2326,
@@ -221,8 +197,7 @@
     "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2403,
@@ -230,8 +205,7 @@
     "Raddningstjanst": "Bjurholms Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1260,
@@ -239,8 +213,7 @@
     "Raddningstjanst": "Räddningstjänsten Skåne Nordväst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2582,
@@ -248,8 +221,7 @@
     "Raddningstjanst": "Bodens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1443,
@@ -257,8 +229,7 @@
     "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2183,
@@ -266,8 +237,7 @@
     "Raddningstjanst": "Kommunalförbundet södra Hälsingland",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1490,
@@ -275,8 +245,7 @@
     "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0885",
@@ -284,8 +253,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2081,
@@ -293,8 +261,7 @@
     "Raddningstjanst": "Räddningstjänsten DalaMitt",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0127",
@@ -302,8 +269,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0560",
@@ -311,8 +277,7 @@
     "Raddningstjanst": "Mjölby-Boxholm Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "Det är 3 st operativa brandmän som slutat sin anställning beroende på osäkerheten gällande de nya dygnsreglerna. \nDvs. 12% av vår operativa personalstyrka vilket bidrar starkt till minskad kompetens.",
-    "Label": ""
+    "Kommentar": "Det är 3 st operativa brandmän som slutat sin anställning beroende på osäkerheten gällande de nya dygnsreglerna. \nDvs. 12% av vår operativa personalstyrka vilket bidrar starkt till minskad kompetens."
   },
   {
     "Kod": 2305,
@@ -320,8 +285,7 @@
     "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1272,
@@ -329,8 +293,7 @@
     "Raddningstjanst": "Bromölla Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1231,
@@ -338,8 +301,7 @@
     "Raddningstjanst": "Räddningstjänsten Syd",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1438,
@@ -347,8 +309,7 @@
     "Raddningstjanst": "Dals Eds Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0162",
@@ -356,8 +317,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1862,
@@ -365,8 +325,7 @@
     "Raddningstjanst": "Bergslagens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2425,
@@ -374,8 +333,7 @@
     "Raddningstjanst": "Dorotea Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1730,
@@ -383,8 +341,7 @@
     "Raddningstjanst": "Eda Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0125",
@@ -392,8 +349,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0686",
@@ -401,8 +357,7 @@
     "Raddningstjanst": "Eksjö Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0862",
@@ -410,8 +365,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0381",
@@ -419,8 +373,7 @@
     "Raddningstjanst": "Räddningstjänsten Enköping-Håbo",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0484",
@@ -428,8 +381,7 @@
     "Raddningstjanst": "Eskilstuna Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1285,
@@ -437,8 +389,7 @@
     "Raddningstjanst": "Räddningstjänsten Syd",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1445,
@@ -446,8 +397,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1982,
@@ -455,8 +405,7 @@
     "Raddningstjanst": "Södra Dalarnas Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1382,
@@ -464,8 +413,7 @@
     "Raddningstjanst": "Räddningstjänsten Väst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1499,
@@ -473,8 +421,7 @@
     "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "5st hittills, och det är många i en liten organisation.",
-    "Label": ""
+    "Kommentar": "5 st hittills, och det är många i en liten organisation."
   },
   {
     "Kod": 2080,
@@ -482,8 +429,7 @@
     "Raddningstjanst": "Räddningstjänsten DalaMitt",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1439,
@@ -491,8 +437,7 @@
     "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit",
-    "Label": ""
+    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit."
   },
   {
     "Kod": 1782,
@@ -500,8 +445,7 @@
     "Raddningstjanst": "Bergslagens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0562",
@@ -509,8 +453,7 @@
     "Raddningstjanst": "Finspångs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0482",
@@ -518,8 +461,7 @@
     "Raddningstjanst": "Flens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1763,
@@ -527,8 +469,7 @@
     "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2026,
@@ -536,8 +477,7 @@
     "Raddningstjanst": "Räddningstjänsten DalaMitt",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2523,
@@ -545,8 +485,7 @@
     "Raddningstjanst": "Gällivare Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2180,
@@ -554,8 +493,7 @@
     "Raddningstjanst": "Gästrike Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0662",
@@ -563,8 +501,7 @@
     "Raddningstjanst": "Gislaved-Gnosjö Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0461",
@@ -572,8 +509,7 @@
     "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "1brandman har valt att säga upp sig på grund av det nya schemat.",
-    "Label": ""
+    "Kommentar": "1brandman har valt att säga upp sig på grund av det nya schemat."
   },
   {
     "Kod": "0617",
@@ -581,8 +517,7 @@
     "Raddningstjanst": "Gislaved-Gnosjö Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1480,
@@ -590,8 +525,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1471,
@@ -599,8 +533,7 @@
     "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "5st hittills, och det är många i en liten organisation.",
-    "Label": ""
+    "Kommentar": "5 st hittills, och det är många i en liten organisation."
   },
   {
     "Kod": "0980",
@@ -608,8 +541,7 @@
     "Raddningstjanst": "Gotlands Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1444,
@@ -617,8 +549,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1764,
@@ -626,8 +557,7 @@
     "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1447,
@@ -635,8 +565,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0643",
@@ -644,8 +573,7 @@
     "Raddningstjanst": "Habo Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0305",
@@ -653,8 +581,7 @@
     "Raddningstjanst": "Räddningstjänsten Enköping-Håbo",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1783,
@@ -662,8 +589,7 @@
     "Raddningstjanst": "Hagfors Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1863,
@@ -671,8 +597,7 @@
     "Raddningstjanst": "Bergslagens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1861,
@@ -680,8 +605,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1961,
@@ -689,8 +613,7 @@
     "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1380,
@@ -698,8 +621,7 @@
     "Raddningstjanst": "Halmstads Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1761,
@@ -707,8 +629,7 @@
     "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0136",
@@ -716,8 +637,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2583,
@@ -725,8 +645,7 @@
     "Raddningstjanst": "Haparanda Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2361,
@@ -734,8 +653,7 @@
     "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2280,
@@ -743,8 +661,7 @@
     "Raddningstjanst": "Räddningstjänsten Höga Kusten - Ådalen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1401,
@@ -752,8 +669,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1293,
@@ -761,8 +677,7 @@
     "Raddningstjanst": "Hässleholms Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "2 st hittills",
-    "Label": "ja"
+    "Kommentar": "2 st hittills."
   },
   {
     "Kod": "0331",
@@ -770,8 +685,7 @@
     "Raddningstjanst": "Sala-Heby Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2083,
@@ -779,8 +693,7 @@
     "Raddningstjanst": "Södra Dalarnas Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1283,
@@ -788,8 +701,7 @@
     "Raddningstjanst": "Räddningstjänsten Skåne Nordväst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1466,
@@ -797,8 +709,7 @@
     "Raddningstjanst": "Herrljunga Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1497,
@@ -806,8 +717,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2104,
@@ -815,8 +725,7 @@
     "Raddningstjanst": "Gästrike Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1284,
@@ -824,8 +733,7 @@
     "Raddningstjanst": "Höganäs Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "",
-    "Label": "ja"
+    "Kommentar": "Kommentar saknas."
   },
   {
     "Kod": "0821",
@@ -833,8 +741,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1267,
@@ -842,8 +749,7 @@
     "Raddningstjanst": "Räddningstjänsten Skånemitt",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1266,
@@ -851,8 +757,7 @@
     "Raddningstjanst": "Räddningstjänsten Skånemitt",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0126",
@@ -860,8 +765,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2184,
@@ -869,8 +773,7 @@
     "Raddningstjanst": "Norrhälsinge Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0860",
@@ -878,8 +781,7 @@
     "Raddningstjanst": "Hultsfreds Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1315,
@@ -887,8 +789,7 @@
     "Raddningstjanst": "Hylte Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0123",
@@ -896,8 +797,7 @@
     "Raddningstjanst": "Brandkåren Attunda",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2510,
@@ -905,8 +805,7 @@
     "Raddningstjanst": "Jokkmokks Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0680",
@@ -914,8 +813,7 @@
     "Raddningstjanst": "Jönköpings Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2514,
@@ -923,8 +821,7 @@
     "Raddningstjanst": "Kalix Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0880",
@@ -932,8 +829,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1446,
@@ -941,8 +837,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1082,
@@ -950,8 +845,7 @@
     "Raddningstjanst": "Räddningstjänsten Västra Blekinge",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1883,
@@ -959,8 +853,7 @@
     "Raddningstjanst": "Bergslagens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1080,
@@ -968,8 +861,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Blekinge",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1780,
@@ -977,8 +869,7 @@
     "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0483",
@@ -986,8 +877,7 @@
     "Raddningstjanst": "Västra Sörmlands Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "",
-    "Label": "ja"
+    "Kommentar": "Kommentar saknas."
   },
   {
     "Kod": 1261,
@@ -995,8 +885,7 @@
     "Raddningstjanst": "Räddningstjänsten Syd",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1715,
@@ -1004,8 +893,7 @@
     "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0513",
@@ -1013,8 +901,7 @@
     "Raddningstjanst": "Kinda Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2584,
@@ -1022,8 +909,7 @@
     "Raddningstjanst": "Kiruna Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1276,
@@ -1031,8 +917,7 @@
     "Raddningstjanst": "Räddningstjänsten Söderåsen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0330",
@@ -1040,8 +925,7 @@
     "Raddningstjanst": "Brandkåren Attunda",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1983,
@@ -1049,8 +933,7 @@
     "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2282,
@@ -1058,8 +941,7 @@
     "Raddningstjanst": "Räddningstjänsten Höga Kusten - Ådalen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1290,
@@ -1067,8 +949,7 @@
     "Raddningstjanst": "Kristianstad-Östra Göinges Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1781,
@@ -1076,8 +957,7 @@
     "Raddningstjanst": "Bergslagens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2309,
@@ -1085,8 +965,7 @@
     "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1881,
@@ -1094,8 +973,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1482,
@@ -1103,8 +981,7 @@
     "Raddningstjanst": "Bohus Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1384,
@@ -1112,8 +989,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1960,
@@ -1121,8 +997,7 @@
     "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1381,
@@ -1130,8 +1005,7 @@
     "Raddningstjanst": "Laholms Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1282,
@@ -1139,8 +1013,7 @@
     "Raddningstjanst": "Landskrona Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1860,
@@ -1148,8 +1021,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1814,
@@ -1157,8 +1029,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2029,
@@ -1166,8 +1037,7 @@
     "Raddningstjanst": "Brandkåren Norra Dalarna",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1441,
@@ -1175,8 +1045,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0761",
@@ -1184,8 +1053,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Kronoberg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0186",
@@ -1193,8 +1061,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1494,
@@ -1202,8 +1069,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1462,
@@ -1211,8 +1077,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1885,
@@ -1220,8 +1085,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0580",
@@ -1229,8 +1093,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Götaland",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0781",
@@ -1238,8 +1101,7 @@
     "Raddningstjanst": "Ljungby Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2161,
@@ -1247,8 +1109,7 @@
     "Raddningstjanst": "Ljusdals Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1864,
@@ -1256,8 +1117,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1262,
@@ -1265,8 +1125,7 @@
     "Raddningstjanst": "Lomma-Staffanstorp Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2085,
@@ -1274,8 +1133,7 @@
     "Raddningstjanst": "Räddningstjänsten DalaMitt",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2580,
@@ -1283,8 +1141,7 @@
     "Raddningstjanst": "Luleå Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1281,
@@ -1292,8 +1149,7 @@
     "Raddningstjanst": "Räddningstjänsten Syd",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2481,
@@ -1301,8 +1157,7 @@
     "Raddningstjanst": "Lycksele Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1484,
@@ -1310,8 +1165,7 @@
     "Raddningstjanst": "Räddningstjänstförbundet Mitt Bohuslän",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2418,
@@ -1319,8 +1173,7 @@
     "Raddningstjanst": "Malå-Norsjö Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1280,
@@ -1328,8 +1181,7 @@
     "Raddningstjanst": "Räddningstjänsten Syd",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2023,
@@ -1337,8 +1189,7 @@
     "Raddningstjanst": "Malung-Sälens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1493,
@@ -1346,8 +1197,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1463,
@@ -1355,8 +1205,7 @@
     "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0767",
@@ -1364,8 +1213,7 @@
     "Raddningstjanst": "Markaryds Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1461,
@@ -1373,8 +1221,7 @@
     "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit",
-    "Label": ""
+    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit."
   },
   {
     "Kod": "0586",
@@ -1382,8 +1229,7 @@
     "Raddningstjanst": "Mjölby-Boxholm Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "Det är 3 st operativa brandmän som slutat sin anställning beroende på osäkerheten gällande de nya dygnsreglerna. \nDvs. 12% av vår operativa personalstyrka vilket bidrar starkt till minskad kompetens.",
-    "Label": "ja"
+    "Kommentar": "Det är 3 st operativa brandmän som slutat sin anställning beroende på osäkerheten gällande de nya dygnsreglerna. \nDvs. 12% av vår operativa personalstyrka vilket bidrar starkt till minskad kompetens."
   },
   {
     "Kod": 1481,
@@ -1391,8 +1237,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0861",
@@ -1400,8 +1245,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2062,
@@ -1409,8 +1253,7 @@
     "Raddningstjanst": "Brandkåren Norra Dalarna",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0840",
@@ -1418,8 +1261,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0583",
@@ -1427,8 +1269,7 @@
     "Raddningstjanst": "Motala-Vadstena Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "Vi har en generell ökad oro bland personalen. Har godkänt en tjänstledighet för annat arbete 6 mån, fått en uppsägning och 2 som valt att gå i pension trots god kapacitet för ytterligare arbete.",
-    "Label": "ja"
+    "Kommentar": "Vi har en generell ökad oro bland personalen. Har godkänt en tjänstledighet för annat arbete 6 mån, fått en uppsägning och 2 som valt att gå i pension trots god kapacitet för ytterligare arbete."
   },
   {
     "Kod": "0642",
@@ -1436,8 +1277,7 @@
     "Raddningstjanst": "Mullsjö Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1430,
@@ -1445,8 +1285,7 @@
     "Raddningstjanst": "Räddningstjänstförbundet Mitt Bohuslän",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1762,
@@ -1454,8 +1293,7 @@
     "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0182",
@@ -1463,8 +1301,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0682",
@@ -1472,8 +1309,7 @@
     "Raddningstjanst": "Höglandets Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1884,
@@ -1481,8 +1317,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1962,
@@ -1490,8 +1325,7 @@
     "Raddningstjanst": "Södra Dalarnas Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2132,
@@ -1499,8 +1333,7 @@
     "Raddningstjanst": "Norrhälsinge Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2401,
@@ -1508,8 +1341,7 @@
     "Raddningstjanst": "Nordmalings Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0581",
@@ -1517,8 +1349,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Götaland",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0188",
@@ -1526,8 +1357,7 @@
     "Raddningstjanst": "Norrtälje Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2417,
@@ -1535,8 +1365,7 @@
     "Raddningstjanst": "Malå-Norsjö Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0881",
@@ -1544,8 +1373,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0480",
@@ -1553,8 +1381,7 @@
     "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "1brandman har valt att säga upp sig på grund av det nya schemat.",
-    "Label": "ja"
+    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
   },
   {
     "Kod": "0140",
@@ -1562,8 +1389,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0192",
@@ -1571,8 +1397,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2101,
@@ -1580,8 +1405,7 @@
     "Raddningstjanst": "Gästrike Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1407,
@@ -1589,8 +1413,7 @@
     "Raddningstjanst": "Öckerö Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0509",
@@ -1598,8 +1421,7 @@
     "Raddningstjanst": "Ödeshögs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1060,
@@ -1607,8 +1429,7 @@
     "Raddningstjanst": "Räddningstjänsten Västra Blekinge",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1880,
@@ -1616,8 +1437,7 @@
     "Raddningstjanst": "Nerikes Brandkår",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1257,
@@ -1625,8 +1445,7 @@
     "Raddningstjanst": "Räddningstjänsten Skåne Nordväst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2284,
@@ -1634,8 +1453,7 @@
     "Raddningstjanst": "Örnsköldsviks Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2034,
@@ -1643,8 +1461,7 @@
     "Raddningstjanst": "Brandkåren Norra Dalarna",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1421,
@@ -1652,8 +1469,7 @@
     "Raddningstjanst": "Orusts Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1273,
@@ -1661,8 +1477,7 @@
     "Raddningstjanst": "Osby Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0882",
@@ -1670,8 +1485,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0117",
@@ -1679,8 +1493,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2380,
@@ -1688,8 +1501,7 @@
     "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0382",
@@ -1697,8 +1509,7 @@
     "Raddningstjanst": "Uppsala Brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1256,
@@ -1706,8 +1517,7 @@
     "Raddningstjanst": "Kristianstad-Östra Göinges Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2121,
@@ -1715,8 +1525,7 @@
     "Raddningstjanst": "Kommunalförbundet södra Hälsingland",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2513,
@@ -1724,8 +1533,7 @@
     "Raddningstjanst": "Överkalix Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2518,
@@ -1733,8 +1541,7 @@
     "Raddningstjanst": "Övertorneå Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0481",
@@ -1742,8 +1549,7 @@
     "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat.",
-    "Label": ""
+    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
   },
   {
     "Kod": 2521,
@@ -1751,8 +1557,7 @@
     "Raddningstjanst": "Pajala Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1402,
@@ -1760,8 +1565,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1275,
@@ -1769,8 +1573,7 @@
     "Raddningstjanst": "Perstorps Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "2 st har sagt att det är främst pga nya arbetstider och fler har meddelat att det är tufft att få ihop det.",
-    "Label": "ja"
+    "Kommentar": "2 st har sagt att det är främst pga nya arbetstider och fler har meddelat att det är tufft att få ihop det."
   },
   {
     "Kod": 2581,
@@ -1778,8 +1581,7 @@
     "Raddningstjanst": "Räddningstjänsten Piteå-Älvsbyn",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2303,
@@ -1787,8 +1589,7 @@
     "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2031,
@@ -1796,8 +1597,7 @@
     "Raddningstjanst": "Rättviks Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2409,
@@ -1805,8 +1605,7 @@
     "Raddningstjanst": "Umeåregionens brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1081,
@@ -1814,8 +1613,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Blekinge",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1785,
@@ -1823,8 +1621,7 @@
     "Raddningstjanst": "Säffle Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1981,
@@ -1832,8 +1629,7 @@
     "Raddningstjanst": "Sala-Heby Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0128",
@@ -1841,8 +1637,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2181,
@@ -1850,8 +1645,7 @@
     "Raddningstjanst": "Gästrike Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2082,
@@ -1859,8 +1653,7 @@
     "Raddningstjanst": "Räddningstjänsten DalaMitt",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0684",
@@ -1868,8 +1661,7 @@
     "Raddningstjanst": "Sävsjö Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0191",
@@ -1877,8 +1669,7 @@
     "Raddningstjanst": "Brandkåren Attunda",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1291,
@@ -1886,8 +1677,7 @@
     "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1265,
@@ -1895,8 +1685,7 @@
     "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1495,
@@ -1904,8 +1693,7 @@
     "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "5 st hittills, och det är många i en liten organisation.",
-    "Label": "ja"
+    "Kommentar": "5 st hittills, och det är många i en liten organisation."
   },
   {
     "Kod": 2482,
@@ -1913,8 +1701,7 @@
     "Raddningstjanst": "Skellefteå Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1904,
@@ -1922,8 +1709,7 @@
     "Raddningstjanst": "Skinnskattebergs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1496,
@@ -1931,8 +1717,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1264,
@@ -1940,8 +1725,7 @@
     "Raddningstjanst": "Räddningstjänsten Trelleborg Vellinge Skurup",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2061,
@@ -1949,8 +1733,7 @@
     "Raddningstjanst": "Smedjebackens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2182,
@@ -1958,8 +1741,7 @@
     "Raddningstjanst": "Kommunalförbundet södra Hälsingland",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0582",
@@ -1967,8 +1749,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Götaland",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0181",
@@ -1976,8 +1757,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2283,
@@ -1985,8 +1765,7 @@
     "Raddningstjanst": "Räddningstjänsten Höga Kusten - Ådalen",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0163",
@@ -1994,8 +1773,7 @@
     "Raddningstjanst": "Brandkåren Attunda",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0184",
@@ -2003,8 +1781,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1083,
@@ -2012,8 +1789,7 @@
     "Raddningstjanst": "Räddningstjänsten Västra Blekinge",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2422,
@@ -2021,8 +1797,7 @@
     "Raddningstjanst": "Sorsele Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1427,
@@ -2030,8 +1805,7 @@
     "Raddningstjanst": "Sotenäs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1230,
@@ -2039,8 +1813,7 @@
     "Raddningstjanst": "Lomma-Staffanstorp Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1415,
@@ -2048,8 +1821,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0180",
@@ -2057,8 +1829,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1760,
@@ -2066,8 +1837,7 @@
     "Raddningstjanst": "Bergslagens Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2421,
@@ -2075,8 +1845,7 @@
     "Raddningstjanst": "Storumans Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0486",
@@ -2084,8 +1853,7 @@
     "Raddningstjanst": "Strängnäs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1486,
@@ -2093,8 +1861,7 @@
     "Raddningstjanst": "Strömstads Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2313,
@@ -2102,8 +1869,7 @@
     "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0183",
@@ -2111,8 +1877,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2281,
@@ -2120,8 +1885,7 @@
     "Raddningstjanst": "Medelpads Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1766,
@@ -2129,8 +1893,7 @@
     "Raddningstjanst": "Sunne Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1907,
@@ -2138,8 +1901,7 @@
     "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1214,
@@ -2147,8 +1909,7 @@
     "Raddningstjanst": "Svalövs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1263,
@@ -2156,8 +1917,7 @@
     "Raddningstjanst": "Svedala Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1465,
@@ -2165,8 +1925,7 @@
     "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0160",
@@ -2174,8 +1933,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1435,
@@ -2183,8 +1941,7 @@
     "Raddningstjanst": "Tanums Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1472,
@@ -2192,8 +1949,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1498,
@@ -2201,8 +1957,7 @@
     "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "5st hittills, och det är många i en liten organisation.",
-    "Label": ""
+    "Kommentar": "5 st hittills, och det är många i en liten organisation."
   },
   {
     "Kod": "0360",
@@ -2210,8 +1965,7 @@
     "Raddningstjanst": "Uppsala Brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2262,
@@ -2219,8 +1973,7 @@
     "Raddningstjanst": "Medelpads Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0763",
@@ -2228,8 +1981,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Kronoberg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1419,
@@ -2237,8 +1989,7 @@
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1270,
@@ -2246,8 +1997,7 @@
     "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1473,
@@ -2255,8 +2005,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0834",
@@ -2264,8 +2013,7 @@
     "Raddningstjanst": "Räddningstjänsten Sydost",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1737,
@@ -2273,8 +2021,7 @@
     "Raddningstjanst": "Torsby Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0687",
@@ -2282,8 +2029,7 @@
     "Raddningstjanst": "Tranås Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1452,
@@ -2291,8 +2037,7 @@
     "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1287,
@@ -2300,8 +2045,7 @@
     "Raddningstjanst": "Räddningstjänsten Trelleborg Vellinge Skurup",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1488,
@@ -2309,8 +2053,7 @@
     "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit",
-    "Label": "ja"
+    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit"
   },
   {
     "Kod": "0488",
@@ -2318,8 +2061,7 @@
     "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "1brandman har valt att säga upp sig på grund av det nya schemat.",
-    "Label": ""
+    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
   },
   {
     "Kod": "0138",
@@ -2327,8 +2069,7 @@
     "Raddningstjanst": "Södertörns brandförsvarsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1485,
@@ -2336,8 +2077,7 @@
     "Raddningstjanst": "Räddningstjänstförbundet Mitt Bohuslän",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1491,
@@ -2345,8 +2085,7 @@
     "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2480,
@@ -2354,8 +2093,7 @@
     "Raddningstjanst": "Umeåregionens brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0114",
@@ -2363,8 +2101,7 @@
     "Raddningstjanst": "Brandkåren Attunda",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0139",
@@ -2372,8 +2109,7 @@
     "Raddningstjanst": "Brandkåren Attunda",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0380",
@@ -2381,8 +2117,7 @@
     "Raddningstjanst": "Uppsala Brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0760",
@@ -2390,8 +2125,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Kronoberg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0584",
@@ -2399,8 +2133,7 @@
     "Raddningstjanst": "Motala-Vadstena Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "Vi har en generell ökad oro bland personalen. Har godkänt en tjänstledighet för annat arbete 6 mån, fått en uppsägning och 2 som valt att gå i pension trots god kapacitet för ytterligare arbete.",
-    "Label": ""
+    "Kommentar": "Vi har en generell ökad oro bland personalen. Har godkänt en tjänstledighet för annat arbete 6 mån, fått en uppsägning och 2 som valt att gå i pension trots god kapacitet för ytterligare arbete."
   },
   {
     "Kod": "0665",
@@ -2408,8 +2141,7 @@
     "Raddningstjanst": "Vaggeryds Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0563",
@@ -2417,8 +2149,7 @@
     "Raddningstjanst": "Räddningstjänsten Östra Götaland",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0115",
@@ -2426,8 +2157,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1487,
@@ -2435,8 +2165,7 @@
     "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit",
-    "Label": ""
+    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit"
   },
   {
     "Kod": 2460,
@@ -2444,8 +2173,7 @@
     "Raddningstjanst": "Vännäs Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2021,
@@ -2453,8 +2181,7 @@
     "Raddningstjanst": "Brandkåren Norra Dalarna",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1470,
@@ -2462,8 +2189,7 @@
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1383,
@@ -2471,8 +2197,7 @@
     "Raddningstjanst": "Räddningstjänsten Väst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1442,
@@ -2480,8 +2205,7 @@
     "Raddningstjanst": "Alingsås och Vårgårda Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0120",
@@ -2489,8 +2213,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0683",
@@ -2498,8 +2221,7 @@
     "Raddningstjanst": "Värnamo Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1980,
@@ -2507,8 +2229,7 @@
     "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0883",
@@ -2516,8 +2237,7 @@
     "Raddningstjanst": "Västerviks Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0187",
@@ -2525,8 +2245,7 @@
     "Raddningstjanst": "Storstockholms brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0780",
@@ -2534,8 +2253,7 @@
     "Raddningstjanst": "Värends Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1233,
@@ -2543,8 +2261,7 @@
     "Raddningstjanst": "Räddningstjänsten Trelleborg Vellinge Skurup",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0685",
@@ -2552,8 +2269,7 @@
     "Raddningstjanst": "Höglandets Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2462,
@@ -2561,8 +2277,7 @@
     "Raddningstjanst": "Vilhelmina Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0884",
@@ -2570,8 +2285,7 @@
     "Raddningstjanst": "Vimmerby Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 2404,
@@ -2579,8 +2293,7 @@
     "Raddningstjanst": "Umeåregionens brandförsvar",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": "0428",
@@ -2588,8 +2301,7 @@
     "Raddningstjanst": "Västra Sörmlands Räddningstjänst",
     "": "",
     "Uppsagning": "Ja",
-    "Kommentar": "",
-    "Label": ""
+    "Kommentar": "Kommentar saknas."
   },
   {
     "Kod": "0512",
@@ -2597,8 +2309,7 @@
     "Raddningstjanst": "Ydre Räddningstjänst",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   },
   {
     "Kod": 1286,
@@ -2606,7 +2317,6 @@
     "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
     "": "",
     "Uppsagning": null,
-    "Kommentar": null,
-    "Label": ""
+    "Kommentar": null
   }
 ]
