@@ -11,7 +11,8 @@ if (host.includes("github")) {
 }
 
  //array for the bar graph, declared in global scope to be used also from script "brandlon.js"
- window.riksYrken = [
+//array for the bar graph, declared in global scope to be used also from script "brandlon.js"
+window.riksYrken = [
   {
     "yrke": "Ambulanssjukvårdare",
     "lön": 32198
@@ -127,7 +128,7 @@ var regionloner = "regionloner24.json";
 var sokvagGeografi = "SverigesLan2019.geojson";
 var kdata = null;
 var rdata = null;
-var rad, cell1, cell2;
+var rad;
 var yrkesarray = [];
 var bubbla = document.createElement('span');
 bubbla.className = 'bubblatext';
@@ -139,12 +140,13 @@ var highest, place, highestKommun = 0, highestLandsting = 0, placeKommun = '', p
 var lowest, place2, lowestKommun = 50000, lowestLandsting = 50000, place2Kommun = '', place2Landsting = '';
 //variables for elements from html document
 var tabell = document.getElementById('mintabell');
-var sortKommunFall = document.getElementById('sortKommunFall');
-var sortKommunStig = document.getElementById('sortKommunStig');
+// var sortKommunFall = document.getElementById('sortKommunFall');
+// var sortKommunStig = document.getElementById('sortKommunStig');
 var sortLonFall = document.getElementById('sortLonFall');
 var sortLonStig = document.getElementById('sortLonStig');
 var kartpopup = document.getElementById('kartpopup');
 var kartpopuprubbe = document.getElementById('kartpopuprubbe');
+var brandkartpopup = document.getElementById("brandkartpopup")
 var close = document.getElementById("closex");
 var yrkesspan = document.getElementById('yrkesspan');
 var mintabelldiv = document.getElementById('mintabelldiv');
@@ -180,6 +182,7 @@ $(document).ready(function() {
     //choose yrke in list
     valjyrke.addEventListener("change", function() {
 
+
       [...semitransparent].forEach(function(element){
         element.style.opacity = 1;
       })
@@ -188,6 +191,16 @@ $(document).ready(function() {
       yrke = this.value;
       getHighLow(yrke);
       kartpopup.style.display = "none";
+      brandkartpopup.style = "none";
+
+      // Select all path elements in your SVG
+      let paths = d3.select("#brandkartdiv").selectAll("path");
+      paths.nodes().forEach((path) => {       
+        //find the yellow paths and turn them green
+        if (path.style.fill === "rgb(255, 239, 88)") {
+          path.style.fill = "rgb(4, 134, 118)";
+        }        
+       });
 
       //Check if yrke is present in file "kdata", if it is, make table from "kdata"
       for (var i = 0; i < kdata.length; i++) {
@@ -416,107 +429,177 @@ $.ajax({
 })
 
 
+
 //Add click to button, sort by kommun/landsting and create the table
-sortKommunFall.addEventListener('click', function() {
+// sortKommunFall.addEventListener('click', function() {
 
-  //check if landsting or kommun is chosen
-  if (getvalue(tabellknappar) === "listKommuner") {
-    kdata.sort(function(a, b){
-      var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
-      if (kommunA < kommunB) //sort string ascending
-          return -1;
-      if (kommunA > kommunB)
-          return 1;
-      return 0; //default return value (no sorting)
-      })
-    maketable(kdata, tabell);
-    }
+//   //check if landsting or kommun is chosen
+//   if (getvalue(tabellknappar) === "listKommuner") {
+//     kdata.sort(function(a, b){
+//       var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
+//       if (kommunA < kommunB) //sort string ascending
+//           return -1;
+//       if (kommunA > kommunB)
+//           return 1;
+//       return 0; //default return value (no sorting)
+//       })
+//     maketable(kdata, tabell);
+//     }
 
-  else if (getvalue(tabellknappar) === "listLandsting") {
-    rdata.sort(function(a, b){
-      var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
-      if (kommunA < kommunB) //sort string ascending
-          return -1;
-      if (kommunA > kommunB)
-          return 1;
-      return 0 ;//default return value (no sorting)
-      })
-    maketable(rdata, tabell);
-    }
-});
+//   else if (getvalue(tabellknappar) === "listLandsting") {
+//     rdata.sort(function(a, b){
+//       var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
+//       if (kommunA < kommunB) //sort string ascending
+//           return -1;
+//       if (kommunA > kommunB)
+//           return 1;
+//       return 0 ;//default return value (no sorting)
+//       })
+//     maketable(rdata, tabell);
+//     }
+// });
 
-sortKommunStig.addEventListener('click', function() {
-  //check if landsting or kommun is chosen
-  if (getvalue(tabellknappar) === "listKommuner") {
-    kdata.sort(function(a, b){
-      var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
-      if (kommunA > kommunB) //sort string descending
-          return -1;
-      if (kommunA < kommunB)
-          return 1;
-      return 0; //default return value (no sorting)
-      })
-    maketable(kdata, tabell);
-    }
+// sortKommunStig.addEventListener('click', function() {
+//   //check if landsting or kommun is chosen
+//   if (getvalue(tabellknappar) === "listKommuner") {
+//     kdata.sort(function(a, b){
+//       var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
+//       if (kommunA > kommunB) //sort string descending
+//           return -1;
+//       if (kommunA < kommunB)
+//           return 1;
+//       return 0; //default return value (no sorting)
+//       })
+//     maketable(kdata, tabell);
+//     }
 
-  else if (getvalue(tabellknappar) === "listLandsting") {
-    rdata.sort(function(a, b){
-      var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
-      if (kommunA > kommunB) //sort string descending
-          return -1;
-      if (kommunA < kommunB)
-          return 1;
-      return 0 ;//default return value (no sorting)
-      })
-    maketable(rdata, tabell);
-    }
-});
+//   else if (getvalue(tabellknappar) === "listLandsting") {
+//     rdata.sort(function(a, b){
+//       var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
+//       if (kommunA > kommunB) //sort string descending
+//           return -1;
+//       if (kommunA < kommunB)
+//           return 1;
+//       return 0 ;//default return value (no sorting)
+//       })
+//     maketable(rdata, tabell);
+//     }
+// });
 
+var fallandeNum = true;
+var fallandeAlf = true;
 
-//Add click to button, sort by salary (ascending) and create the table
-sortLonStig.addEventListener('click', function() {
-  if (getvalue(tabellknappar) === "listKommuner") {
-    kdata.sort(function(a, b){
-      //Remove empties, otherwise they will be on top
-      if (a[yrke] === '' || a[yrke]=== "bort") return 1;
-      if (b[yrke] === '' || b[yrke]=== "bort") return -1;
-      return a[yrke] < b[yrke] ? -1 : 1;
-      })
-    maketable(kdata, tabell);
-  }
-  else if (getvalue(tabellknappar) === "listLandsting") {
+function sortAlphabetical() {
+  if (fallandeAlf) {
+
+    if (getvalue(tabellknappar) === "listKommuner") {
+      kdata.sort(function(a, b){
+        var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
+        if (kommunA > kommunB) //sort string descending
+            return -1;
+        if (kommunA < kommunB)
+            return 1;
+        return 0; //default return value (no sorting)
+        })
+      maketable(kdata, tabell);
+      }
+  
+    else if (getvalue(tabellknappar) === "listLandsting") {
       rdata.sort(function(a, b){
-        if (a[yrke] === '') return 1;
-        if (b[yrke] === '') return -1;
+        var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
+        if (kommunA > kommunB) //sort string descending
+            return -1;
+        if (kommunA < kommunB)
+            return 1;
+        return 0 ;//default return value (no sorting)
+        })
+      maketable(rdata, tabell);
+      }
+
+  fallandeAlf = false;
+
+  }
+  else if (!fallandeAlf) {
+
+     //check if landsting or kommun is chosen
+  if (getvalue(tabellknappar) === "listKommuner") {
+    kdata.sort(function(a, b){
+      var kommunA=a.Kommun.toLowerCase(), kommunB=b.Kommun.toLowerCase();
+      if (kommunA < kommunB) //sort string ascending
+          return -1;
+      if (kommunA > kommunB)
+          return 1;
+      return 0; //default return value (no sorting)
+      })
+    maketable(kdata, tabell);
+    }
+
+  else if (getvalue(tabellknappar) === "listLandsting") {
+    rdata.sort(function(a, b){
+      var kommunA=a.Region.toLowerCase(), kommunB=b.Region.toLowerCase();
+      if (kommunA < kommunB) //sort string ascending
+          return -1;
+      if (kommunA > kommunB)
+          return 1;
+      return 0 ;//default return value (no sorting)
+      })
+    maketable(rdata, tabell);
+    }
+
+    fallandeAlf = true;
+  }
+
+}
+
+
+function sortNumerical() {
+  if (fallandeNum) {
+    if (getvalue(tabellknappar) === "listKommuner") {
+      kdata.sort(function(a, b){
+        //Remove empties, otherwise they will be on top
+        if (a[yrke] === '' || a[yrke]=== "bort") return 1;
+        if (b[yrke] === '' || b[yrke]=== "bort") return -1;
         return a[yrke] < b[yrke] ? -1 : 1;
         })
-    maketable(rdata, tabell);
+      maketable(kdata, tabell);
     }
-});
-
-//Add click to button, sort by salary (descending) and create the table
-sortLonFall.addEventListener('click', function() {
-  // tabell.getElementsByTagName("tbody")[0].innerHTML = tabell.rows[0].innerHTML;
-  if (getvalue(tabellknappar) === "listKommuner") {
-    kdata.sort(function(a, b){
-      // return b[yrke] - a[yrke];
-      // console.log("Comparing:", a[yrke], b[yrke]);
-      // console.log(typeof a[yrke]);
-      if (a[yrke] === '' || a[yrke]=== "bort") return 1;
-      if (b[yrke] === '' || b[yrke]=== "bort") return -1;
-
-
-      return b[yrke] - a[yrke];
-      })
-    maketable(kdata, tabell);
-  }
-  else if (getvalue(tabellknappar) === "listLandsting") {
-    rdata.sort(function(a, b){
-      return b[yrke] - a[yrke];
-      })
+    else if (getvalue(tabellknappar) === "listLandsting") {
+        rdata.sort(function(a, b){
+          if (a[yrke] === '') return 1;
+          if (b[yrke] === '') return -1;
+          return a[yrke] < b[yrke] ? -1 : 1;
+          })
       maketable(rdata, tabell);
+      }
+    fallandeNum = false;
+
+  }
+  else if (!fallandeNum) {
+    if (getvalue(tabellknappar) === "listKommuner") {
+      kdata.sort(function(a, b){
+        // return b[yrke] - a[yrke];
+        // console.log("Comparing:", a[yrke], b[yrke]);
+        // console.log(typeof a[yrke]);
+        if (a[yrke] === '' || a[yrke]=== "bort") return 1;
+        if (b[yrke] === '' || b[yrke]=== "bort") return -1;
+  
+  
+        return b[yrke] - a[yrke];
+        })
+      maketable(kdata, tabell);
     }
-});
+    else if (getvalue(tabellknappar) === "listLandsting") {
+      rdata.sort(function(a, b){
+        return b[yrke] - a[yrke];
+        })
+        maketable(rdata, tabell);
+        
+      }
+      fallandeNum = true;
+  }
+
+}
+
 
 
 // Function for comparing proffessions
@@ -626,34 +709,6 @@ window.makeGraph = function makeGraph(data1) {
 }
 
 
-
-//handling input in search field
-// $("input").on("keydown",function search(e) {
-//     var data = kdata;
-//     //index for kommun is 4, because that is the position of the first proffession in the array
-//     var index = 4;
-//     //key 13 is "enter"
-//     if(e.keyCode == 13) {
-//       let count = 0;
-//       var sokt = $(this).val();
-//       //traverse the data file
-//       data.forEach(function(row) {
-//         //find i match, in lowercase
-//         if (row.Kommun.toLowerCase() === sokt.toLowerCase()){
-//           //build the array and make the graph
-//           jamforyrke(data, row.Kommun, index);
-//           //Show the name of the chosen kommun
-//           yrkesspan.innerHTML = 'löner för ' + row.Kommun + '.';
-//           $('#yrkep').hide().fadeIn();
-//         }
-//         else {
-//           count++;
-//           if (count > data.length-1) {
-//           }
-//       }
-//     })
-//     }
-// });
 
 //Check the third radiobutton on loading page, to make the Kommun choice default
 function checkfromstart(radiobuttons) {
@@ -797,6 +852,7 @@ function maketable(data, tabell) {
   tabell.innerHTML = '';
   //variable used to check wich dataset is passed
   let kommun = false;
+  let cell1, cell2;
 
   data.forEach(function(row) {
     //checking if the passed dataset contains the property "Kommunkod", in which case the file contains kommuner, not landsting
@@ -835,14 +891,33 @@ function maketable(data, tabell) {
 
   let header = tabell.createTHead();
   let row = header.insertRow(0);
+  cell1 = row.insertCell(0);
+  cell2 = row.insertCell(1);
+
+  cell1.id = "sortKommunRegion";
+  cell2.id = "sortLon"
+
   if (kommun) {
-      row.insertCell(0).innerHTML = "Kommun";
+      cell1.innerHTML = "Kommun<span class='sortpil'>&#8691;</span>";
   }
   else {
-    row.insertCell(0).innerHTML = "Region";
+    cell1.innerHTML = "Region<span class='sortpil'>&#8691;</span>";
   }
 
-  row.insertCell(1).innerHTML = "Lön 2023";
+  cell2.innerHTML = "Lön 2023<span class='sortpil'>&#8691;</span>";
+
+  let sortKomReg = document.getElementById("sortKommunRegion")
+
+  sortKomReg.addEventListener("click", function() {
+    sortAlphabetical();
+  })
+
+  let sortLon = document.getElementById("sortLon");
+
+  sortLon.addEventListener("click", function() {
+    sortNumerical()
+  })
+
   informHeight();
 
 };
@@ -970,6 +1045,7 @@ function clicked(d,i) {
   kartpopuprubbe.innerHTML = '';
   var lan = d.properties.lan_namn;
   var landsting = d.properties.landsting;
+  let cell1, cell2;
   //Show kartpopup on click
   kartpopup.style.display = "block";
   //show semitransparent overlay under kartpopup, to make everything under kartpopup look faded
@@ -986,29 +1062,32 @@ function clicked(d,i) {
       //Add rows from file "kdata"
       kdata.forEach(function(row) {
 
-        if (d.properties.landsting === row.Region) {
+        if (row[yrke] !== "bort") {        
+          if (d.properties.landsting === row.Region) {
 
-          rad = karttabell.insertRow(0);
-          cell1 = rad.insertCell(0);
-          cell2 = rad.insertCell(1);
-          cell1.innerHTML = row.Kommun;
-          if (typeof row[yrke] === 'undefined'){
-            cell2.innerHTML = '';
-            }
-          else {
+            rad = karttabell.insertRow(0);
+            cell1 = rad.insertCell(0);
+            cell2 = rad.insertCell(1);
+            cell1.innerHTML = row.Kommun;
+            if (typeof row[yrke] === 'undefined'){
+              cell2.innerHTML = '';
+              }
+            else {
 
-            var yrkeform = $.number(row[yrke], 0, ',', '&#8239;');
-            if (yrkeform === '0') {
-              yrkeform = '';
-            }
-            cell2.innerHTML = yrkeform;
-            // cell2.innerHTML = row[yrke];
-            }
-          bubbelvillkor(row);
-        }
-        if (row[yrke] === "bort") {
-          rad.remove()
-        }
+              var yrkeform = $.number(row[yrke], 0, ',', '&#8239;');
+              if (yrkeform === '0') {
+                yrkeform = '';
+              }
+              cell2.innerHTML = yrkeform;
+              }
+            bubbelvillkor(row);
+          }
+
+        }  
+        // if (row[yrke] === "bort") {
+        //   c(rad)
+        //   rad.remove()
+        // }
       })
     }
 
@@ -1038,7 +1117,7 @@ function clicked(d,i) {
           }
         })
     }
-}
+  }
 
   //Create the headline
   var rub = document.createElement('H3');
