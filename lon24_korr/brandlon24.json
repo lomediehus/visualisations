@@ -79,7 +79,7 @@
   },
   {
     "Raddningstjanst": "Bohus räddningstjänstförbund",
-    "Lon": "29,6",
+    "Lon": "29600",
     "Kommunlista": [
       "Ale",
       "Kungälv"
@@ -928,7 +928,7 @@
   },
   {
     "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
-    "Lon": 30042,
+    "Lon": 28546,
     "Kommunlista": [
       "Simrishamn",
       "Sjöbo",
@@ -1102,7 +1102,7 @@
   },
   {
     "Raddningstjanst": "Värnamo Räddningstjänst",
-    "Lon": 32485,
+    "Lon": 30509,
     "Kommunlista": [
       "Värnamo"
     ],
@@ -1215,7 +1215,7 @@
   },
   {
     "Raddningstjanst": "Totalt/Medel",
-    "Lon": 30807,
+    "Lon": 30783,
     "Kommunlista": [
       "Rikssnitt"
     ],
