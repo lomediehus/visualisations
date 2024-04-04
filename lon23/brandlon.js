@@ -53,6 +53,7 @@
         let rad = tabell.insertRow();
         let cell1 = rad.insertCell(0);
         let cell2 = rad.insertCell(1);
+        
 
         // if there is a Fotnot or more than one kommun in Kommunlista, add an arrow and a p tag with the array Kommunlista turned into a string
         (row.Fotnot !='' || row.Kommunlista.length > 1) ? cell1.innerHTML = "<span class='pil'>\u25BA  </span>" + row.Raddningstjanst : cell1.innerHTML = row.Raddningstjanst;
@@ -84,10 +85,68 @@
       let row = header.insertRow(0);
       let cell1 = row.insertCell(0);
       cell1.classList.add('alfabetisk');
-      cell1.innerHTML = "Räddningstjänst<span class='sortpil'>&#8691;</span>";
+      cell1.innerHTML = "Räddningstjänst<span class='sortpil alfabetisk'>&#8691;</span>";
       let cell2 = row.insertCell(1);
       cell2.classList.add('numerisk');
-      cell2.innerHTML = "Lön<span class='sortpil'>&#8691;</span>";
+      cell2.innerHTML = "Lön<span class='sortpil numerisk'>&#8691;</span>";
+    }
+
+    var fallandeAlf = true;
+    var fallandeNum = true;
+
+    function sortNumerical() {    
+      if (fallandeNum) {
+
+        lonefil.sort(function(a, b){
+          //dealing with the blanks and sort them to the end
+          if (a["Lon"] === '') return 1;
+          if (b["Lon"] === '') return -1;
+          //sorting with ternary operator
+          return a["Lon"] > b["Lon"] ? -1 : 1;
+          })
+        maketable(lonefil);  
+        fallandeNum = false;
+    
+      }
+
+      else if (!fallandeNum) {
+        lonefil.sort(function(a, b){
+          //dealing with the blanks and sort them to the end
+          if (a["Lon"] === '') return 1;
+          if (b["Lon"] === '') return -1;
+          //sorting with ternary operator
+          return a["Lon"] < b["Lon"] ? -1 : 1;
+          })
+          maketable(lonefil);
+          fallandeNum = true;        
+        }
+    }
+
+    function sortAlphabetical() {    
+      if (fallandeAlf) {
+
+        lonefil.sort(function(a, b){
+          //sorting with ternary operator
+          return a["Raddningstjanst"] < b["Raddningstjanst"] ? -1 : 1;
+          })
+    
+          maketable(lonefil, tabell);
+               
+      fallandeAlf = false;
+    
+      }
+      else if (!fallandeAlf) {
+
+        lonefil.sort(function(a, b){
+          //sorting with ternary operator
+          return a["Raddningstjanst"] > b["Raddningstjanst"] ? -1 : 1;
+          })
+        maketable(lonefil, tabell);
+    
+        fallandeAlf = true;
+     
+      }
+        
     }
 
     //add a click function to the entire table
@@ -100,21 +159,14 @@
 
        //check if the clicked part of the table has a certain class, then sort and make table
        if ($(event.target).hasClass('alfabetisk')) {
-         lonefil.sort(function(a, b){
-           //sorting with ternary operator
-           return a["Raddningstjanst"] < b["Raddningstjanst"] ? -1 : 1;
-           })
+        sortAlphabetical()
+       
            maketable(lonefil);
        }
        if ($(event.target).hasClass('numerisk')) {
-         lonefil.sort(function(a, b){
-           //dealing with the blanks and sort them to the end
-           if (a["Lon"] === '') return 1;
-           if (b["Lon"] === '') return -1;
-           //sorting with ternary operator
-           return a["Lon"] > b["Lon"] ? -1 : 1;
-           })
-           maketable(lonefil);
+
+        sortNumerical()
+        maketable(lonefil);
        }
 
 
@@ -137,9 +189,6 @@
     $("input").on("keydown",function search(e) {
         let data = lonefil;
         let searchdata = [];
-
-        c(e.keyCode)
-
         //key 13 is "enter"
         if (e.keyCode == 13) {
 
@@ -350,5 +399,6 @@
     makeGraph(riksYrken);
     informHeight()
   }
+
 
 })(window);

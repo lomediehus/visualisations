@@ -230,13 +230,14 @@ table.tabellstil thead td {
   background-color: #a9aaaa;
   color: white;
   font-size: 1.4em;
-  line-height: 28px;
+  line-height: 24px;
   padding: 5px 0px 0px 5px;
   position: sticky;
   -webkit-position: sticky;
   text-transform: uppercase;
   top: 0;
   vertical-align: text-top;
+  overflow: hidden;
 }
 
 table.tabellstil th {
@@ -244,12 +245,12 @@ table.tabellstil th {
   padding: 5px 0px 0px 5px;
   font-size: 1.4em;
   text-transform: uppercase;
-  line-height: 26px;
+  line-height: 24px;
   background-color: #a9aaaa;
   color: white;
-  overflow: auto;
-  /* position: fixed; */
-  /* top: 0; */
+  /* overflow: auto; */
+  overflow: hidden;
+
 }
 
 table.tabellstil td {
@@ -281,6 +282,10 @@ table.karttabell td {
 tr:nth-child(odd) {
   background-color: #dcebe5;
 
+}
+
+table span.sortpil {
+  font-size: xx-large;
 }
 
 .bubbla:hover {
@@ -567,7 +572,7 @@ table.brandtabellstil thead td {
   background-color: #a9aaaa;
   color: white;
   font-size: 1.4em;
-  line-height: 28px;
+  line-height: 32px;
   position: sticky;
   -webkit-position: sticky;
   text-transform: uppercase;
