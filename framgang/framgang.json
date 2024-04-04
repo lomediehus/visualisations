@@ -697,8 +697,8 @@
     "kategori": "dygnsvila",
     "kategori_detaljerad": "dygnsvila",
     "ort": "Arvidsjaur",
-    "lat": 65.592,
-    "long": 19.173,
+    "lat": 65.5902,
+    "long": 19.2763,
     "url": "https://ka.se/2023/10/12/hemtjansten-i-arvidsjaur-behaller-onskeschema-trots-skarpta-regler-om-dygnsvila/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2023/10/11160743/hemtjanst.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2023/10/12"
@@ -845,5 +845,27 @@
     "url": "https://ka.se/2024/02/07/personalen-fick-sex-timmars-arbetsdag-nar-de-tog-over-boendet-hinner-ha-fritid/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/02/06130911/6timmar-sajt.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2024/02/07"
+  },
+  {
+    "rubrik": "Efter miljonboten – nu styr hemtjänstpersonalen själva över schemat",
+    "kategori": "minutstyrning",
+    "kategori_detaljerad": "minutstyrning",
+    "ort": "Göteborg",
+    "lat": 57.7049,
+    "long": 11.9699,
+    "url": "https://ka.se/2024/04/02/efter-miljonboten-nu-styr-hemtjanstpersonalen-sjalva-over-schemat/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/03/27134546/hemtjansten.jpeg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/04/02"
+  },
+  {
+    "rubrik": "Så fick de bort alla delade turer",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "schema",
+    "ort": "Sundsvall",
+    "lat": 62.3885,
+    "long": 17.3067,
+    "url": "https://ka.se/2024/02/27/sa-fick-de-bort-alla-delade-turer-i-sundsvall/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2022/11/07134433/shutterstock-482413714-2.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/02/27"
   }
 ]
