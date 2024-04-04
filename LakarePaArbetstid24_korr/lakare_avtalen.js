@@ -91,7 +91,7 @@ var avtalen = [
     bransch: 5,
     avtalsoverskrift: "",
     avtalsrubrik: "<h3 class=\"u-textMetaDeca\">Avtalet med Sobona</h3>",
-    avtalstext1: "<p>(PAN-avtalet gäller från 1 april 2024.)<br><span class='u-textStrong'>Ledighet med lön vid akut sjukdom:</span> Regler saknas i avtalet.</span></p><p><span class='u-textStrong'>Ledighet vid planerade besök:</span> Regler saknas i avtalet.</p>",
+    avtalstext1: "<p>(PAN-avtalet ersätter från 1 april 2024 Sobonas assistansavtal, fd KFS.)<br><span class='u-textStrong'>Ledighet med lön vid akut sjukdom:</span> Regler saknas i avtalet.</span></p><p><span class='u-textStrong'>Ledighet vid planerade besök:</span> Regler saknas i avtalet.</p>",
 
 
     yrke: ["personlig assistent"]
