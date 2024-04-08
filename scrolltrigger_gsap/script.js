@@ -33,3 +33,6 @@ let comparison = document.querySelector(".comparison-section"),
 	tl.fromTo(".after-image", { xPercent: 100, x: 0}, {xPercent: 0})
 	  // ...and the image the opposite way (at the same time)
 	  .fromTo(".after-image img", {xPercent: -100, x: 0}, {xPercent: 0}, 0);
+
+
+informHeight();
