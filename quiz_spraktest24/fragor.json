@@ -92,15 +92,15 @@
 },
 {
   "divid": "fraga8",
-  "rubrik": "8.Gudrun kokar pasta och _____.",
+  "rubrik": "8. Gudrun kokar pasta och _____.",
   "alt1": "river hon ost",
   "value1": "fel",
   "alt2": "sedan river hon ost",
   "value2": "rätt",
   "alt3": "sedan river ost",
   "value3": "fel",
-  "alt4": "sina",
-  "value4": "sedan hon river ost",     
+  "alt4": "sedan hon river ost",
+  "value4": "fel",     
   "svar": "Gudrun kokar pasta och <span class='betonad'>sedan river hon ost</span>."
 },
 {
