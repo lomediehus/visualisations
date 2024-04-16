@@ -6,7 +6,6 @@ gsap.to(".rect_right", {opacity:1, scrollTrigger:{
   markers:true,
   start: "top center",
   end: "+=300",
-  scrub:1,
   // pin:true
   // events: onEnter onLeave onEnterBack onLeaveBack
   // toggleActions: "restart pause reverse reset"
