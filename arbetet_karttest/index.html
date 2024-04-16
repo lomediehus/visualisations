@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     
+</head>
+<body>
+<div id="kommuner">
+
+</div>
+    <div id="map"></div>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#about">About</a>
+          <a href="#base">Base</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+          <a href="#custom">Custom</a>
+          <a href="#support">Support</a>
+          <a href="#tools">Tools</a>
+        </div>
+      </div>
+    <script src="dropdown.js"></script>
+    <script src="map.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
