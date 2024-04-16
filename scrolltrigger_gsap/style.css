@@ -22,11 +22,13 @@ html, body {
 }
 
 .scroller {
+  height: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
   /* border-radius: 9px;
   border: solid 2px var(--mid); */
   position: relative;
+  /* top: 0px; */
 }
 
 
@@ -47,6 +49,7 @@ html, body {
 }
 
 .rect_right {
+  /* left:300px; */
   background-color: #048676;
   opacity: 0.2;
 }
