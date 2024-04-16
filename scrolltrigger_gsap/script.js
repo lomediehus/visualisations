@@ -15,4 +15,3 @@ gsap.to(".rect_right", {opacity:1, scrollTrigger:{
 })
 
 
-informHeight();
