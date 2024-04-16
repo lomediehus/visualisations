@@ -4,7 +4,7 @@ gsap.to(".rect_right", {opacity:1, scrollTrigger:{
   // scroller:".container",
   trigger: ".rect_right",
   markers:true,
-  start: "0 500",
+  start: "0 400",
   end: "100 50",
   // scrub:1,
   // pin:true

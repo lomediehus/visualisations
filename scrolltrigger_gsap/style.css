@@ -4,7 +4,7 @@ html, body {
   justify-content: center;
   min-height: 100vh;
   background-color: #fcfaf5;
-  min-height: 1500px;
+  /* min-height: 1500px; */
 }
 
 .container {
@@ -12,11 +12,11 @@ html, body {
   /* width: 90vw; */
   /* height: 90vh; */
   min-height: 1000px;
-  height: 1000px;
+  height: 1500px;
   width: 100vw;
 
   max-width: 90vh;
-  max-height: 90vw;
+  /* max-height: 90vw; */
   display: flex;
   justify-content: center;
   flex-direction: column;
