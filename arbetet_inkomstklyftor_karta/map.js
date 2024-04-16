@@ -2,8 +2,11 @@ let map;
 
 function updateMap(kommunnamn) {
     if (map != undefined) { map.remove(); }
-    map = L.map('map').fitBounds(L.geoJson(kommunnamn).getBounds());
+    map = L.map('map', {zoomControl: false}).fitBounds(L.geoJson(kommunnamn).getBounds());
 
+    L.control.zoom({
+        position: 'bottomleft'
+    }).addTo(map);
 //map.zoomIn(0.5);
 let  geojson;
 let tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -84,10 +87,12 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Inkomstklyforna</h4>' +  (props ?
-        '<b>' + props.regso + '</b><br />' + props.year_2022 + " 000 i medianinkomst"
-        : 'x');
+    this._div.innerHTML = (props ? '<h4>Inkomstklyftorna i ' + props.regso +'</h4><br>' + "<b>Medianinkomst 2022: " + props.year_2022 + "<br>"
+        : '<h4>Klicka på en stadsdel</h4>');
 };
+
+
+
 
 info.addTo(map);
 

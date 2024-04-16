@@ -1,8 +1,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://arbetet.se/app/themes/lo-mediehus/assets/stylesheets/codepen/arbetet.css">
-    
+   
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
@@ -12,29 +12,21 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+     <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+    
      
 </head>
 <body>
+  <select id="select-kommun" class="form-control", placeholder="Välj en kommun..." autocomplete="off">
+    <option value="">Välj en kommun...</option>
+  </select>
 <div id="kommuner">
 
 </div>
     <div id="map"></div>
 
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-          <a href="#about">About</a>
-          <a href="#base">Base</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
-          <a href="#custom">Custom</a>
-          <a href="#support">Support</a>
-          <a href="#tools">Tools</a>
-        </div>
-      </div>
     <script src="https://arbetet.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
-    <script src="dropdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
     <script src="map.js"></script>
     <script src="app.js"></script>
 </body>
