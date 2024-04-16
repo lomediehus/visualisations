@@ -4,17 +4,19 @@ html, body {
   justify-content: center;
   min-height: 100vh;
   background-color: #fcfaf5;
+  min-height: 1500px;
 }
 
 .container {
   position: relative;
   /* width: 90vw; */
   /* height: 90vh; */
-  height: 2000px;
+  min-height: 1000px;
+  height: 1000px;
   width: 100vw;
 
-  /* max-width: 90vh;
-  max-height: 90vw; */
+  max-width: 90vh;
+  max-height: 90vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -41,7 +43,7 @@ html, body {
 .rect {
   /* display: inline; */
   width: 50%;
-  height: 300px;
+  height: 100px;
 }
 
 .rect_left {
