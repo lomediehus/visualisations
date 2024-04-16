@@ -1,5 +1,5 @@
 let alla_kommuner = ["Stockholm", "Uppsala"];
-
+informHeight();
 let kommunhtml = document.getElementById("kommuner");
 
 alla_kommuner.forEach((kommun) => {
@@ -20,6 +20,7 @@ async function fetchData(kommun) {
     let y = await x.text();
     y = JSON.parse(y);
     updateMap(y);
+    informHeight();
   }
 
 
