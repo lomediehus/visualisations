@@ -1,18 +1,39 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".rect_right", {opacity:1, scrollTrigger:{
-  // scroller:".container",
-  trigger: ".rect_right",
-  markers:true,
-  start: "0 400",
-  end: "100 50",
-  // scrub:1,
-  // pin:true
-  // events: onEnter onLeave onEnterBack onLeaveBack
-  // toggleActions: "restart pause reverse reset"
-  // options: play pause resume reset restart complete reverse none
-}
-})
+gsap.set(".pinwheel", {transformOrigin: "center center", xPercent: -50, x: 0, yPercent: -50, y: 0});
+
+gsap.to(".pinwheel", {
+  // opacity: 1,
+  rotation: 360,
+  ease: "none",
+  scrollTrigger: {
+    scroller: ".scroller",
+    trigger: ".pinwheel",
+    start: "center center",
+    end: "+=800",
+    pin: true,
+    scrub: 1
+  }
+});
+
+// gsap.set(".rect_right", {transformOrigin: "center center", xPercent: -50, x: 0, yPercent: -50, y: 0});
+
+gsap.to(".rect_right", {
+  opacity: 1,
+  // rotation: 360,
+  ease: "none",
+  scrollTrigger: {
+    scroller: ".scroller",
+    trigger: ".rect",
+    markers:true,
+    // start: "center center",
+    // end: "+=800",
+    start: 0,
+    end: 0,
+    // pin: true,
+    scrub: 1
+  }
+});
 
 
 informHeight();

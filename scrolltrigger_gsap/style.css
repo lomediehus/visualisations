@@ -4,19 +4,17 @@ html, body {
   justify-content: center;
   min-height: 100vh;
   background-color: #fcfaf5;
-  /* min-height: 1500px; */
 }
 
 .container {
   position: relative;
   /* width: 90vw; */
   /* height: 90vh; */
-  min-height: 1000px;
-  height: 1500px;
+  height: 1000px;
   width: 100vw;
 
-  max-width: 90vh;
-  /* max-height: 90vw; */
+  /* max-width: 90vh;
+  max-height: 90vw; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,16 +22,73 @@ html, body {
 }
 
 .scroller {
-  height: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
   /* border-radius: 9px;
   border: solid 2px var(--mid); */
   position: relative;
-  /* top: 0px; */
 }
 
+.content {
+  overflow: visible;
+  width: 100%;
+  /* set a height because the contents are position: absolute, thus natively there's no height */
+  height: 3600px;
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.07) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
 
+.pinwheel {
+  /* opacity: 0; */
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comparison-section {
+  top: 1900px;
+  position: relative;
+  padding-bottom: 56.25%; /* to maintain aspect ratio (responsive!) */
+}
+.comparison-image {
+  width: 100%;
+  height: 100%;
+}
+.after-image {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  transform: translate(100%, 0px);
+}
+.after-image img {
+  transform: translate(-100%, 0px);
+}
+.comparison-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.top-blurb, .bottom-blurb {
+  text-align: center;
+  /* color: var(--light); */
+  color: black;
+  top: 45%;
+  width: 100%;
+  position: absolute;
+}
+.bottom-blurb {
+  top: 3400px;
+}
 
 .rect_container {
   display: flex;
@@ -43,7 +98,7 @@ html, body {
 .rect {
   /* display: inline; */
   width: 50%;
-  height: 100px;
+  height: 300px;
 }
 
 .rect_left {
@@ -51,9 +106,8 @@ html, body {
 }
 
 .rect_right {
-  /* left:300px; */
   background-color: #048676;
-  opacity: 0.2;
+  opacity: 0;
 }
 
 
