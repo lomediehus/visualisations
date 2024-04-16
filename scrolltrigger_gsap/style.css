@@ -110,6 +110,25 @@ html, body {
   opacity: 0;
 }
 
+.rect_container2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.rect2 {
+  /* display: inline; */
+  width: 50%;
+  height: 300px;
+}
+
+.rect_left2 {
+  background-color: #dcebe5;
+}
+
+.rect_right2 {
+  background-color: #048676;
+  opacity: 0;
+}
 
 @media (max-width: 350px) or (max-height: 350px) {
   

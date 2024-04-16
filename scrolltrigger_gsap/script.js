@@ -30,7 +30,26 @@ gsap.to(".rect_right", {
     // end: "+=800",
     start: 0,
     end: 0,
-    // pin: true,
+    //pin keeps pin element in place until animation ends
+    pin: ".rect_container",
+    scrub: 1
+  }
+});
+
+gsap.to(".rect_right2", {
+  opacity: 1,
+  // rotation: 360,
+  ease: "none",
+  scrollTrigger: {
+    scroller: ".scroller",
+    trigger: ".rect2",
+    markers:true,
+    // start: "center center",
+    // end: "+=800",
+    start: 0,
+    end: 0,
+    //pin keeps pin element in place until animation ends
+    pin: ".rect_container2",
     scrub: 1
   }
 });
