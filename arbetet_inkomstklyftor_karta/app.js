@@ -12,6 +12,24 @@ alla_kommuner.forEach((kommun) => {
 )
 
 // fetchData(kommun)
+let map;
+
+function initiateMap() {
+    
+    map = L.map('map', {zoomControl: false}).setView([62.23, 16.19], 13).setZoom(5);
+
+    L.control.zoom({
+        position: 'bottomleft'
+    }).addTo(map);
+
+    let tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+
+    informHeight()
+
 
 var eventHandler = function(name) {
 
@@ -45,5 +63,10 @@ async function fetchData(kommun) {
     informHeight();
   }
 
+
+
+}
+
+initiateMap()
 
 //
