@@ -11,7 +11,7 @@ if (host.includes("github")) {
 
 //Variables for map size and projection
 var w = 264,
-		h = 400,
+		h = 540,
 		legendRectSize = 18,
 		legendSpacing = 4,
 		tooltip;
@@ -25,7 +25,7 @@ var projection = d3.geoConicEqualArea()
     .parallels([55.327583999999995,69.059967]) //parallels for conic projection
     .rotate([343.6173436862723]) //rotation for conic projection
 	// .translate([w*1.3, h/3]) //translate to center the map in view;
-	.translate([w*1.6, h/4.5]) //translate to center the map in view;
+	.translate([w*1.6, h/2.3]) //translate to center the map in view;
 
 
 
@@ -234,7 +234,9 @@ else {
 	duration = 150;
 }
 
-background.style.minHeight = container_height + 50 + "px";
+// background.style.minHeight = container_height + 80 + "px";
+background.style.minHeight = container_height + (0.06 * container_height) + "px";
+
 
 var moonwalk = gsap.to("#moon-container", { x: relX, duration: duration, ease: "linear"} );
 moonwalk.repeat(-1);
