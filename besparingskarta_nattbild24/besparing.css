@@ -84,7 +84,7 @@ div.tooltip {
   background: #fff;
   border: 0px;
   pointer-events: none;
-  width: 200px;
+  width: 250px;
 }
 
 /* .label {
@@ -165,7 +165,7 @@ fill: black;
   left: 0px;
   width: 100%;
   max-width: 785px;
-	min-height: 600px;
+	min-height: 1000px;
   /* width: 500px;
   height: 800px; */
   background: rgb(2,0,36);

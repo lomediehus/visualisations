@@ -64,8 +64,8 @@ d3.json("SverigesKommuner.geojson").then(function(geodata){
         //use the quantify function to color map areas by info in data file
 				.attr("class", quantify)
 	      .attr("d", thepath)
-					// .style("stroke", "black")
-					.style("stroke-width", 0.5)
+					.style("stroke", "black")
+					.style("stroke-width", 0.2)
 						.on("mouseover", mouseover)
 						.on("mousemove", mousemove)
 						.on("mouseout", mouseout);
@@ -234,7 +234,7 @@ else {
 	duration = 150;
 }
 
-background.style.minHeight = container_height + "px";
+background.style.minHeight = container_height + 50 + "px";
 
 var moonwalk = gsap.to("#moon-container", { x: relX, duration: duration, ease: "linear"} );
 moonwalk.repeat(-1);

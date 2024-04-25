@@ -132,8 +132,8 @@
     "Kommun": "Arvika",
     "Raddningstjanst": "Arvika Räddningstjänst",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Plan för neddragningar av nattbemanning på demensboende och äldreboende."
   },
   {
     "Kod": 2463,
@@ -260,8 +260,8 @@
     "Kommun": "Borlänge",
     "Raddningstjanst": "Räddningstjänsten DalaMitt",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "neddragningar natten, en tjänst dras in (ev länk artikel Anitha – om inte annat så länkat i artikellistan): https://ka.se/2024/03/05/anitha-tar-fajten-mot-vikariestopp-och-neddragningar-personalen-ar-trott-och-slut/)"
   },
   {
     "Kod": "0127",
@@ -276,8 +276,8 @@
     "Kommun": "Boxholm",
     "Raddningstjanst": "Mjölby-Boxholm Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "Det är 3 st operativa brandmän som slutat sin anställning beroende på osäkerheten gällande de nya dygnsreglerna. \nDvs. 12% av vår operativa personalstyrka vilket bidrar starkt till minskad kompetens."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": 2305,
@@ -372,8 +372,8 @@
     "Kommun": "Enköping",
     "Raddningstjanst": "Räddningstjänsten Enköping-Håbo",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Kommunen ska skära ner bemanningen på särskilda boenden nattetid. Konsekvenserna väntas bli längre väntetid på hjälp och mer ensamarbete och ökad risk för stress och sjukdom."
   },
   {
     "Kod": "0484",
@@ -420,8 +420,8 @@
     "Kommun": "Falköping",
     "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "5 st hittills, och det är många i en liten organisation."
+    "Besparing": null,
+    "Kommentar": null
   },
   {
     "Kod": 2080,
@@ -436,8 +436,8 @@
     "Kommun": "Färgelanda",
     "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": 1782,
@@ -508,8 +508,8 @@
     "Kommun": "Gnesta",
     "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "1brandman har valt att säga upp sig på grund av det nya schemat."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0617",
@@ -532,8 +532,8 @@
     "Kommun": "Götene",
     "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "5 st hittills, och det är många i en liten organisation."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0980",
@@ -676,8 +676,8 @@
     "Kommun": "Hässleholm",
     "Raddningstjanst": "Hässleholms Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "2 st hittills."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0331",
@@ -732,8 +732,8 @@
     "Kommun": "Höganäs",
     "Raddningstjanst": "Höganäs Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "Kommentar saknas."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0821",
@@ -868,16 +868,16 @@
     "Kommun": "Karlstad",
     "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Resurscentrum, ensamarbete, en undersköterska på natten (tidigare haft stöttning från annan avdelning), kan få vänta 1-2 timmar innan en nattpatrull kan komma för att hjälpa till. (Ivo-anmälan januari 2024 på grund av låg nattbemanning på demensavdelning.)"
   },
   {
     "Kod": "0483",
     "Kommun": "Katrineholm",
     "Raddningstjanst": "Västra Sörmlands Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "Kommentar saknas."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": 1261,
@@ -988,8 +988,8 @@
     "Kommun": "Kungsbacka",
     "Raddningstjanst": "Räddningstjänsten Storgöteborg",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Nattpatrullen drar in fyra tjänster per natt, vilket betyder mer ensamarbete. (se artikel här kan länkas i artikellistan: https://ka.se/2024/02/08/underskoterskor-i-nattpatrull-utsatta-for-attentat-nar-de-akte-pa-larm-oro-for-ensamarbete/"
   },
   {
     "Kod": 1960,
@@ -1068,8 +1068,8 @@
     "Kommun": "Lidköping",
     "Raddningstjanst": "Räddningstjänsten Skaraborg",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Plan för minskad nattbemanning från 3 till 2 tjänster (på boenden upp till 40 brukare). Förslaget går emot tidigare krav från Ivo. "
   },
   {
     "Kod": 1462,
@@ -1220,16 +1220,16 @@
     "Kommun": "Mellerud",
     "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0586",
     "Kommun": "Mjölby",
     "Raddningstjanst": "Mjölby-Boxholm Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "Det är 3 st operativa brandmän som slutat sin anställning beroende på osäkerheten gällande de nya dygnsreglerna. \nDvs. 12% av vår operativa personalstyrka vilket bidrar starkt till minskad kompetens."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": 1481,
@@ -1268,8 +1268,8 @@
     "Kommun": "Motala",
     "Raddningstjanst": "Motala-Vadstena Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "Vi har en generell ökad oro bland personalen. Har godkänt en tjänstledighet för annat arbete 6 mån, fått en uppsägning och 2 som valt att gå i pension trots god kapacitet för ytterligare arbete."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0642",
@@ -1380,8 +1380,8 @@
     "Kommun": "Nyköping",
     "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0140",
@@ -1428,8 +1428,8 @@
     "Kommun": "Olofström",
     "Raddningstjanst": "Räddningstjänsten Västra Blekinge",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Plan för nedskärningar nattpatrullen och äldreomsorg. Fyra undersköterskor på natten blir tre. Nattpatrullens undersköterskor ska köra ensamma i bilarna vilket betyder ensamarbete. "
   },
   {
     "Kod": 1880,
@@ -1548,8 +1548,8 @@
     "Kommun": "Oxelösund",
     "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": 2521,
@@ -1572,8 +1572,8 @@
     "Kommun": "Perstorp",
     "Raddningstjanst": "Perstorps Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "2 st har sagt att det är främst pga nya arbetstider och fler har meddelat att det är tufft att få ihop det."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": 2581,
@@ -1652,8 +1652,8 @@
     "Kommun": "Säter",
     "Raddningstjanst": "Räddningstjänsten DalaMitt",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Nattpatrullen skärs ner. Ensamarbete införs."
   },
   {
     "Kod": "0684",
@@ -1692,8 +1692,8 @@
     "Kommun": "Skara",
     "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "5 st hittills, och det är många i en liten organisation."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": 2482,
@@ -1724,8 +1724,8 @@
     "Kommun": "Skurup",
     "Raddningstjanst": "Räddningstjänsten Trelleborg Vellinge Skurup",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Plan för neddragning inom natten på hemtjänsten, drar ned från fem personer i tjänst till fyra (som ska sköta 60 planerade insatser plus larm)."
   },
   {
     "Kod": 2061,
@@ -1956,8 +1956,8 @@
     "Kommun": "Tidaholm",
     "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "5 st hittills, och det är många i en liten organisation."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0360",
@@ -2028,8 +2028,8 @@
     "Kommun": "Tranås",
     "Raddningstjanst": "Tranås Räddningstjänst",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "Kommunen vill införa ensamarbete för nattpatrullen och skära ner på nattbemanningen på ett särskilt boende."
   },
   {
     "Kod": 1452,
@@ -2052,16 +2052,16 @@
     "Kommun": "Trollhättan",
     "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit"
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0488",
     "Kommun": "Trosa",
     "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0138",
@@ -2132,8 +2132,8 @@
     "Kommun": "Vadstena",
     "Raddningstjanst": "Motala-Vadstena Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "Vi har en generell ökad oro bland personalen. Har godkänt en tjänstledighet för annat arbete 6 mån, fått en uppsägning och 2 som valt att gå i pension trots god kapacitet för ytterligare arbete."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0665",
@@ -2164,8 +2164,8 @@
     "Kommun": "Vänersborg",
     "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit"
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": 2460,
@@ -2196,8 +2196,8 @@
     "Kommun": "Varberg",
     "Raddningstjanst": "Räddningstjänsten Väst",
     "": "",
-    "Besparing": null,
-    "Kommentar": null
+    "Besparing": "Ja",
+    "Kommentar": "För nattpatrullen i hemtjänsten ska en bil som tidigare var dubbelbemannad nu bli enkelbemannad, vilket betyder ensamarbete."
   },
   {
     "Kod": 1442,
@@ -2300,8 +2300,8 @@
     "Kommun": "Vingåker",
     "Raddningstjanst": "Västra Sörmlands Räddningstjänst",
     "": "",
-    "Besparing": "Ja",
-    "Kommentar": "Kommentar saknas."
+    "Besparing": null,
+    "Kommentar": ""
   },
   {
     "Kod": "0512",
