@@ -1,0 +1,2322 @@
+[
+  {
+    "Kod": 1440,
+    "Kommun": "Ale",
+    "Raddningstjanst": "Bohus Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1489,
+    "Kommun": "Alingsås",
+    "Raddningstjanst": "Alingsås och Vårgårda Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0765",
+    "Kommun": "Älmhult",
+    "Raddningstjanst": "Älmhults Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2039,
+    "Kommun": "Älvdalen",
+    "Raddningstjanst": "Brandkåren Norra Dalarna",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0764",
+    "Kommun": "Alvesta",
+    "Raddningstjanst": "Värends Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0319",
+    "Kommun": "Älvkarleby",
+    "Raddningstjanst": "Gästrike Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2560,
+    "Kommun": "Älvsbyn",
+    "Raddningstjanst": "Räddningstjänsten Piteå-Älvsbyn",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1492,
+    "Kommun": "Åmål",
+    "Raddningstjanst": "Åmåls Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0604",
+    "Kommun": "Aneby",
+    "Raddningstjanst": "Aneby Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2260,
+    "Kommun": "Ånge",
+    "Raddningstjanst": "Medelpads Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1292,
+    "Kommun": "Ängelholm",
+    "Raddningstjanst": "Räddningstjänsten Skåne Nordväst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1984,
+    "Kommun": "Arboga",
+    "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2321,
+    "Kommun": "Åre",
+    "Raddningstjanst": "Åre Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1765,
+    "Kommun": "Årjäng",
+    "Raddningstjanst": "Årjängs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2506,
+    "Kommun": "Arjeplog",
+    "Raddningstjanst": "Arjeplogs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2505,
+    "Kommun": "Arvidsjaur",
+    "Raddningstjanst": "Arvidsjaurs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1784,
+    "Kommun": "Arvika",
+    "Raddningstjanst": "Arvika Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2463,
+    "Kommun": "Åsele",
+    "Raddningstjanst": "Åsele Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1882,
+    "Kommun": "Askersund",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1277,
+    "Kommun": "Åstorp",
+    "Raddningstjanst": "Räddningstjänsten Söderåsen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0561",
+    "Kommun": "Åtvidaberg",
+    "Raddningstjanst": "Räddningstjänsten Östra Götaland",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2084,
+    "Kommun": "Avesta",
+    "Raddningstjanst": "Södra Dalarnas Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1278,
+    "Kommun": "Båstad",
+    "Raddningstjanst": "Båstads Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1460,
+    "Kommun": "Bengtsfors",
+    "Raddningstjanst": "Bengtsfors Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2326,
+    "Kommun": "Berg",
+    "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2403,
+    "Kommun": "Bjurholm",
+    "Raddningstjanst": "Bjurholms Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1260,
+    "Kommun": "Bjuv",
+    "Raddningstjanst": "Räddningstjänsten Skåne Nordväst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2582,
+    "Kommun": "Boden",
+    "Raddningstjanst": "Bodens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1443,
+    "Kommun": "Bollebygd",
+    "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2183,
+    "Kommun": "Bollnäs",
+    "Raddningstjanst": "Kommunalförbundet södra Hälsingland",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1490,
+    "Kommun": "Borås",
+    "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0885",
+    "Kommun": "Borgholm",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2081,
+    "Kommun": "Borlänge",
+    "Raddningstjanst": "Räddningstjänsten DalaMitt",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0127",
+    "Kommun": "Botkyrka",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0560",
+    "Kommun": "Boxholm",
+    "Raddningstjanst": "Mjölby-Boxholm Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "Det är 3 st operativa brandmän som slutat sin anställning beroende på osäkerheten gällande de nya dygnsreglerna. \nDvs. 12% av vår operativa personalstyrka vilket bidrar starkt till minskad kompetens."
+  },
+  {
+    "Kod": 2305,
+    "Kommun": "Bräcke",
+    "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1272,
+    "Kommun": "Bromölla",
+    "Raddningstjanst": "Bromölla Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1231,
+    "Kommun": "Burlöv",
+    "Raddningstjanst": "Räddningstjänsten Syd",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1438,
+    "Kommun": "Dals-Ed",
+    "Raddningstjanst": "Dals Eds Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0162",
+    "Kommun": "Danderyd",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1862,
+    "Kommun": "Degerfors",
+    "Raddningstjanst": "Bergslagens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2425,
+    "Kommun": "Dorotea",
+    "Raddningstjanst": "Dorotea Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1730,
+    "Kommun": "Eda",
+    "Raddningstjanst": "Eda Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0125",
+    "Kommun": "Ekerö",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0686",
+    "Kommun": "Eksjö",
+    "Raddningstjanst": "Eksjö Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0862",
+    "Kommun": "Emmaboda",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0381",
+    "Kommun": "Enköping",
+    "Raddningstjanst": "Räddningstjänsten Enköping-Håbo",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0484",
+    "Kommun": "Eskilstuna",
+    "Raddningstjanst": "Eskilstuna Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1285,
+    "Kommun": "Eslöv",
+    "Raddningstjanst": "Räddningstjänsten Syd",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1445,
+    "Kommun": "Essunga",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1982,
+    "Kommun": "Fagersta",
+    "Raddningstjanst": "Södra Dalarnas Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1382,
+    "Kommun": "Falkenberg",
+    "Raddningstjanst": "Räddningstjänsten Väst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1499,
+    "Kommun": "Falköping",
+    "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "5 st hittills, och det är många i en liten organisation."
+  },
+  {
+    "Kod": 2080,
+    "Kommun": "Falun",
+    "Raddningstjanst": "Räddningstjänsten DalaMitt",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1439,
+    "Kommun": "Färgelanda",
+    "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit."
+  },
+  {
+    "Kod": 1782,
+    "Kommun": "Filipstad",
+    "Raddningstjanst": "Bergslagens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0562",
+    "Kommun": "Finspång",
+    "Raddningstjanst": "Finspångs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0482",
+    "Kommun": "Flen",
+    "Raddningstjanst": "Flens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1763,
+    "Kommun": "Forshaga",
+    "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2026,
+    "Kommun": "Gagnef",
+    "Raddningstjanst": "Räddningstjänsten DalaMitt",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2523,
+    "Kommun": "Gällivare",
+    "Raddningstjanst": "Gällivare Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2180,
+    "Kommun": "Gävle",
+    "Raddningstjanst": "Gästrike Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0662",
+    "Kommun": "Gislaved",
+    "Raddningstjanst": "Gislaved-Gnosjö Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0461",
+    "Kommun": "Gnesta",
+    "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "1brandman har valt att säga upp sig på grund av det nya schemat."
+  },
+  {
+    "Kod": "0617",
+    "Kommun": "Gnosjö",
+    "Raddningstjanst": "Gislaved-Gnosjö Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1480,
+    "Kommun": "Göteborg",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1471,
+    "Kommun": "Götene",
+    "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "5 st hittills, och det är många i en liten organisation."
+  },
+  {
+    "Kod": "0980",
+    "Kommun": "Gotland",
+    "Raddningstjanst": "Gotlands Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1444,
+    "Kommun": "Grästorp",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1764,
+    "Kommun": "Grums",
+    "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1447,
+    "Kommun": "Gullspång",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0643",
+    "Kommun": "Habo",
+    "Raddningstjanst": "Habo Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0305",
+    "Kommun": "Håbo",
+    "Raddningstjanst": "Räddningstjänsten Enköping-Håbo",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1783,
+    "Kommun": "Hagfors",
+    "Raddningstjanst": "Hagfors Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1863,
+    "Kommun": "Hällefors",
+    "Raddningstjanst": "Bergslagens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1861,
+    "Kommun": "Hallsberg",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1961,
+    "Kommun": "Hallstahammar",
+    "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1380,
+    "Kommun": "Halmstad",
+    "Raddningstjanst": "Halmstads Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1761,
+    "Kommun": "Hammarö",
+    "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0136",
+    "Kommun": "Haninge",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2583,
+    "Kommun": "Haparanda",
+    "Raddningstjanst": "Haparanda Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2361,
+    "Kommun": "Härjedalen",
+    "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2280,
+    "Kommun": "Härnösand",
+    "Raddningstjanst": "Räddningstjänsten Höga Kusten - Ådalen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1401,
+    "Kommun": "Härryda",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1293,
+    "Kommun": "Hässleholm",
+    "Raddningstjanst": "Hässleholms Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "2 st hittills."
+  },
+  {
+    "Kod": "0331",
+    "Kommun": "Heby",
+    "Raddningstjanst": "Sala-Heby Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2083,
+    "Kommun": "Hedemora",
+    "Raddningstjanst": "Södra Dalarnas Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1283,
+    "Kommun": "Helsingborg",
+    "Raddningstjanst": "Räddningstjänsten Skåne Nordväst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1466,
+    "Kommun": "Herrljunga",
+    "Raddningstjanst": "Herrljunga Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1497,
+    "Kommun": "Hjo",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2104,
+    "Kommun": "Hofors",
+    "Raddningstjanst": "Gästrike Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1284,
+    "Kommun": "Höganäs",
+    "Raddningstjanst": "Höganäs Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "Kommentar saknas."
+  },
+  {
+    "Kod": "0821",
+    "Kommun": "Högsby",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1267,
+    "Kommun": "Höör",
+    "Raddningstjanst": "Räddningstjänsten Skånemitt",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1266,
+    "Kommun": "Hörby",
+    "Raddningstjanst": "Räddningstjänsten Skånemitt",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0126",
+    "Kommun": "Huddinge",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2184,
+    "Kommun": "Hudiksvall",
+    "Raddningstjanst": "Norrhälsinge Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0860",
+    "Kommun": "Hultsfred",
+    "Raddningstjanst": "Hultsfreds Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1315,
+    "Kommun": "Hylte",
+    "Raddningstjanst": "Hylte Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0123",
+    "Kommun": "Järfälla",
+    "Raddningstjanst": "Brandkåren Attunda",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2510,
+    "Kommun": "Jokkmokk",
+    "Raddningstjanst": "Jokkmokks Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0680",
+    "Kommun": "Jönköping",
+    "Raddningstjanst": "Jönköpings Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2514,
+    "Kommun": "Kalix",
+    "Raddningstjanst": "Kalix Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0880",
+    "Kommun": "Kalmar",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1446,
+    "Kommun": "Karlsborg",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1082,
+    "Kommun": "Karlshamn",
+    "Raddningstjanst": "Räddningstjänsten Västra Blekinge",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1883,
+    "Kommun": "Karlskoga",
+    "Raddningstjanst": "Bergslagens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1080,
+    "Kommun": "Karlskrona",
+    "Raddningstjanst": "Räddningstjänsten Östra Blekinge",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1780,
+    "Kommun": "Karlstad",
+    "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0483",
+    "Kommun": "Katrineholm",
+    "Raddningstjanst": "Västra Sörmlands Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "Kommentar saknas."
+  },
+  {
+    "Kod": 1261,
+    "Kommun": "Kävlinge",
+    "Raddningstjanst": "Räddningstjänsten Syd",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1715,
+    "Kommun": "Kil",
+    "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0513",
+    "Kommun": "Kinda",
+    "Raddningstjanst": "Kinda Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2584,
+    "Kommun": "Kiruna",
+    "Raddningstjanst": "Kiruna Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1276,
+    "Kommun": "Klippan",
+    "Raddningstjanst": "Räddningstjänsten Söderåsen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0330",
+    "Kommun": "Knivsta",
+    "Raddningstjanst": "Brandkåren Attunda",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1983,
+    "Kommun": "Köping",
+    "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2282,
+    "Kommun": "Kramfors",
+    "Raddningstjanst": "Räddningstjänsten Höga Kusten - Ådalen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1290,
+    "Kommun": "Kristianstad",
+    "Raddningstjanst": "Kristianstad-Östra Göinges Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1781,
+    "Kommun": "Kristinehamn",
+    "Raddningstjanst": "Bergslagens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2309,
+    "Kommun": "Krokom",
+    "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1881,
+    "Kommun": "Kumla",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1482,
+    "Kommun": "Kungälv",
+    "Raddningstjanst": "Bohus Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1384,
+    "Kommun": "Kungsbacka",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1960,
+    "Kommun": "Kungsör",
+    "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1381,
+    "Kommun": "Laholm",
+    "Raddningstjanst": "Laholms Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1282,
+    "Kommun": "Landskrona",
+    "Raddningstjanst": "Landskrona Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1860,
+    "Kommun": "Laxå",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1814,
+    "Kommun": "Lekeberg",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2029,
+    "Kommun": "Leksand",
+    "Raddningstjanst": "Brandkåren Norra Dalarna",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1441,
+    "Kommun": "Lerum",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0761",
+    "Kommun": "Lessebo",
+    "Raddningstjanst": "Räddningstjänsten Östra Kronoberg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0186",
+    "Kommun": "Lidingö",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1494,
+    "Kommun": "Lidköping",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1462,
+    "Kommun": "Lilla Edet",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1885,
+    "Kommun": "Lindesberg",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0580",
+    "Kommun": "Linköping",
+    "Raddningstjanst": "Räddningstjänsten Östra Götaland",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0781",
+    "Kommun": "Ljungby",
+    "Raddningstjanst": "Ljungby Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2161,
+    "Kommun": "Ljusdal",
+    "Raddningstjanst": "Ljusdals Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1864,
+    "Kommun": "Ljusnarsberg",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1262,
+    "Kommun": "Lomma",
+    "Raddningstjanst": "Lomma-Staffanstorp Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2085,
+    "Kommun": "Ludvika",
+    "Raddningstjanst": "Räddningstjänsten DalaMitt",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2580,
+    "Kommun": "Luleå",
+    "Raddningstjanst": "Luleå Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1281,
+    "Kommun": "Lund",
+    "Raddningstjanst": "Räddningstjänsten Syd",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2481,
+    "Kommun": "Lycksele",
+    "Raddningstjanst": "Lycksele Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1484,
+    "Kommun": "Lysekil",
+    "Raddningstjanst": "Räddningstjänstförbundet Mitt Bohuslän",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2418,
+    "Kommun": "Malå",
+    "Raddningstjanst": "Malå-Norsjö Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1280,
+    "Kommun": "Malmö",
+    "Raddningstjanst": "Räddningstjänsten Syd",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2023,
+    "Kommun": "Malung-Sälen",
+    "Raddningstjanst": "Malung-Sälens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1493,
+    "Kommun": "Mariestad",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1463,
+    "Kommun": "Mark",
+    "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0767",
+    "Kommun": "Markaryd",
+    "Raddningstjanst": "Markaryds Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1461,
+    "Kommun": "Mellerud",
+    "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit."
+  },
+  {
+    "Kod": "0586",
+    "Kommun": "Mjölby",
+    "Raddningstjanst": "Mjölby-Boxholm Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "Det är 3 st operativa brandmän som slutat sin anställning beroende på osäkerheten gällande de nya dygnsreglerna. \nDvs. 12% av vår operativa personalstyrka vilket bidrar starkt till minskad kompetens."
+  },
+  {
+    "Kod": 1481,
+    "Kommun": "Mölndal",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0861",
+    "Kommun": "Mönsterås",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2062,
+    "Kommun": "Mora",
+    "Raddningstjanst": "Brandkåren Norra Dalarna",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0840",
+    "Kommun": "Mörbylånga",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0583",
+    "Kommun": "Motala",
+    "Raddningstjanst": "Motala-Vadstena Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "Vi har en generell ökad oro bland personalen. Har godkänt en tjänstledighet för annat arbete 6 mån, fått en uppsägning och 2 som valt att gå i pension trots god kapacitet för ytterligare arbete."
+  },
+  {
+    "Kod": "0642",
+    "Kommun": "Mullsjö",
+    "Raddningstjanst": "Mullsjö Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1430,
+    "Kommun": "Munkedal",
+    "Raddningstjanst": "Räddningstjänstförbundet Mitt Bohuslän",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1762,
+    "Kommun": "Munkfors",
+    "Raddningstjanst": "Räddningstjänsten Karlstadsregionen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0182",
+    "Kommun": "Nacka",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0682",
+    "Kommun": "Nässjö",
+    "Raddningstjanst": "Höglandets Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1884,
+    "Kommun": "Nora",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1962,
+    "Kommun": "Norberg",
+    "Raddningstjanst": "Södra Dalarnas Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2132,
+    "Kommun": "Nordanstig",
+    "Raddningstjanst": "Norrhälsinge Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2401,
+    "Kommun": "Nordmaling",
+    "Raddningstjanst": "Nordmalings Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0581",
+    "Kommun": "Norrköping",
+    "Raddningstjanst": "Räddningstjänsten Östra Götaland",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0188",
+    "Kommun": "Norrtälje",
+    "Raddningstjanst": "Norrtälje Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2417,
+    "Kommun": "Norsjö",
+    "Raddningstjanst": "Malå-Norsjö Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0881",
+    "Kommun": "Nybro",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0480",
+    "Kommun": "Nyköping",
+    "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
+  },
+  {
+    "Kod": "0140",
+    "Kommun": "Nykvarn",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0192",
+    "Kommun": "Nynäshamn",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2101,
+    "Kommun": "Ockelbo",
+    "Raddningstjanst": "Gästrike Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1407,
+    "Kommun": "Öckerö",
+    "Raddningstjanst": "Öckerö Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0509",
+    "Kommun": "Ödeshög",
+    "Raddningstjanst": "Ödeshögs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1060,
+    "Kommun": "Olofström",
+    "Raddningstjanst": "Räddningstjänsten Västra Blekinge",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1880,
+    "Kommun": "Örebro",
+    "Raddningstjanst": "Nerikes Brandkår",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1257,
+    "Kommun": "Örkelljunga",
+    "Raddningstjanst": "Räddningstjänsten Skåne Nordväst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2284,
+    "Kommun": "Örnsköldsvik",
+    "Raddningstjanst": "Örnsköldsviks Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2034,
+    "Kommun": "Orsa",
+    "Raddningstjanst": "Brandkåren Norra Dalarna",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1421,
+    "Kommun": "Orust",
+    "Raddningstjanst": "Orusts Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1273,
+    "Kommun": "Osby",
+    "Raddningstjanst": "Osby Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0882",
+    "Kommun": "Oskarshamn",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0117",
+    "Kommun": "Österåker",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2380,
+    "Kommun": "Östersund",
+    "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0382",
+    "Kommun": "Östhammar",
+    "Raddningstjanst": "Uppsala Brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1256,
+    "Kommun": "Östra Göinge",
+    "Raddningstjanst": "Kristianstad-Östra Göinges Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2121,
+    "Kommun": "Ovanåker",
+    "Raddningstjanst": "Kommunalförbundet södra Hälsingland",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2513,
+    "Kommun": "Överkalix",
+    "Raddningstjanst": "Överkalix Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2518,
+    "Kommun": "Övertorneå",
+    "Raddningstjanst": "Övertorneå Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0481",
+    "Kommun": "Oxelösund",
+    "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
+  },
+  {
+    "Kod": 2521,
+    "Kommun": "Pajala",
+    "Raddningstjanst": "Pajala Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1402,
+    "Kommun": "Partille",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1275,
+    "Kommun": "Perstorp",
+    "Raddningstjanst": "Perstorps Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "2 st har sagt att det är främst pga nya arbetstider och fler har meddelat att det är tufft att få ihop det."
+  },
+  {
+    "Kod": 2581,
+    "Kommun": "Piteå",
+    "Raddningstjanst": "Räddningstjänsten Piteå-Älvsbyn",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2303,
+    "Kommun": "Ragunda",
+    "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2031,
+    "Kommun": "Rättvik",
+    "Raddningstjanst": "Rättviks Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2409,
+    "Kommun": "Robertsfors",
+    "Raddningstjanst": "Umeåregionens brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1081,
+    "Kommun": "Ronneby",
+    "Raddningstjanst": "Räddningstjänsten Östra Blekinge",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1785,
+    "Kommun": "Säffle",
+    "Raddningstjanst": "Säffle Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1981,
+    "Kommun": "Sala",
+    "Raddningstjanst": "Sala-Heby Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0128",
+    "Kommun": "Salem",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2181,
+    "Kommun": "Sandviken",
+    "Raddningstjanst": "Gästrike Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2082,
+    "Kommun": "Säter",
+    "Raddningstjanst": "Räddningstjänsten DalaMitt",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0684",
+    "Kommun": "Sävsjö",
+    "Raddningstjanst": "Sävsjö Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0191",
+    "Kommun": "Sigtuna",
+    "Raddningstjanst": "Brandkåren Attunda",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1291,
+    "Kommun": "Simrishamn",
+    "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1265,
+    "Kommun": "Sjöbo",
+    "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1495,
+    "Kommun": "Skara",
+    "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "5 st hittills, och det är många i en liten organisation."
+  },
+  {
+    "Kod": 2482,
+    "Kommun": "Skellefteå",
+    "Raddningstjanst": "Skellefteå Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1904,
+    "Kommun": "Skinnskatteberg",
+    "Raddningstjanst": "Skinnskattebergs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1496,
+    "Kommun": "Skövde",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1264,
+    "Kommun": "Skurup",
+    "Raddningstjanst": "Räddningstjänsten Trelleborg Vellinge Skurup",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2061,
+    "Kommun": "Smedjebacken",
+    "Raddningstjanst": "Smedjebackens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2182,
+    "Kommun": "Söderhamn",
+    "Raddningstjanst": "Kommunalförbundet södra Hälsingland",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0582",
+    "Kommun": "Söderköping",
+    "Raddningstjanst": "Räddningstjänsten Östra Götaland",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0181",
+    "Kommun": "Södertälje",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2283,
+    "Kommun": "Sollefteå",
+    "Raddningstjanst": "Räddningstjänsten Höga Kusten - Ådalen",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0163",
+    "Kommun": "Sollentuna",
+    "Raddningstjanst": "Brandkåren Attunda",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0184",
+    "Kommun": "Solna",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1083,
+    "Kommun": "Sölvesborg",
+    "Raddningstjanst": "Räddningstjänsten Västra Blekinge",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2422,
+    "Kommun": "Sorsele",
+    "Raddningstjanst": "Sorsele Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1427,
+    "Kommun": "Sotenäs",
+    "Raddningstjanst": "Sotenäs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1230,
+    "Kommun": "Staffanstorp",
+    "Raddningstjanst": "Lomma-Staffanstorp Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1415,
+    "Kommun": "Stenungsund",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0180",
+    "Kommun": "Stockholm",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1760,
+    "Kommun": "Storfors",
+    "Raddningstjanst": "Bergslagens Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2421,
+    "Kommun": "Storuman",
+    "Raddningstjanst": "Storumans Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0486",
+    "Kommun": "Strängnäs",
+    "Raddningstjanst": "Strängnäs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1486,
+    "Kommun": "Strömstad",
+    "Raddningstjanst": "Strömstads Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2313,
+    "Kommun": "Strömsund",
+    "Raddningstjanst": "Jämtlands Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0183",
+    "Kommun": "Sundbyberg",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2281,
+    "Kommun": "Sundsvall",
+    "Raddningstjanst": "Medelpads Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1766,
+    "Kommun": "Sunne",
+    "Raddningstjanst": "Sunne Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1907,
+    "Kommun": "Surahammar",
+    "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1214,
+    "Kommun": "Svalöv",
+    "Raddningstjanst": "Svalövs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1263,
+    "Kommun": "Svedala",
+    "Raddningstjanst": "Svedala Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1465,
+    "Kommun": "Svenljunga",
+    "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0160",
+    "Kommun": "Täby",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1435,
+    "Kommun": "Tanum",
+    "Raddningstjanst": "Tanums Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1472,
+    "Kommun": "Tibro",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1498,
+    "Kommun": "Tidaholm",
+    "Raddningstjanst": "Samhällsskydd Mellersta Skaraborg",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "5 st hittills, och det är många i en liten organisation."
+  },
+  {
+    "Kod": "0360",
+    "Kommun": "Tierp",
+    "Raddningstjanst": "Uppsala Brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2262,
+    "Kommun": "Timrå",
+    "Raddningstjanst": "Medelpads Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0763",
+    "Kommun": "Tingsryd",
+    "Raddningstjanst": "Räddningstjänsten Östra Kronoberg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1419,
+    "Kommun": "Tjörn",
+    "Raddningstjanst": "Räddningstjänsten Storgöteborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1270,
+    "Kommun": "Tomelilla",
+    "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1473,
+    "Kommun": "Töreboda",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0834",
+    "Kommun": "Torsås",
+    "Raddningstjanst": "Räddningstjänsten Sydost",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1737,
+    "Kommun": "Torsby",
+    "Raddningstjanst": "Torsby Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0687",
+    "Kommun": "Tranås",
+    "Raddningstjanst": "Tranås Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1452,
+    "Kommun": "Tranemo",
+    "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1287,
+    "Kommun": "Trelleborg",
+    "Raddningstjanst": "Räddningstjänsten Trelleborg Vellinge Skurup",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1488,
+    "Kommun": "Trollhättan",
+    "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit"
+  },
+  {
+    "Kod": "0488",
+    "Kommun": "Trosa",
+    "Raddningstjanst": "Sörmlandskustens Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "1 brandman har valt att säga upp sig på grund av det nya schemat."
+  },
+  {
+    "Kod": "0138",
+    "Kommun": "Tyresö",
+    "Raddningstjanst": "Södertörns brandförsvarsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1485,
+    "Kommun": "Uddevalla",
+    "Raddningstjanst": "Räddningstjänstförbundet Mitt Bohuslän",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1491,
+    "Kommun": "Ulricehamn",
+    "Raddningstjanst": "Södra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2480,
+    "Kommun": "Umeå",
+    "Raddningstjanst": "Umeåregionens brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0114",
+    "Kommun": "Upplands Väsby",
+    "Raddningstjanst": "Brandkåren Attunda",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0139",
+    "Kommun": "Upplands-Bro",
+    "Raddningstjanst": "Brandkåren Attunda",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0380",
+    "Kommun": "Uppsala",
+    "Raddningstjanst": "Uppsala Brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0760",
+    "Kommun": "Uppvidinge",
+    "Raddningstjanst": "Räddningstjänsten Östra Kronoberg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0584",
+    "Kommun": "Vadstena",
+    "Raddningstjanst": "Motala-Vadstena Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "Vi har en generell ökad oro bland personalen. Har godkänt en tjänstledighet för annat arbete 6 mån, fått en uppsägning och 2 som valt att gå i pension trots god kapacitet för ytterligare arbete."
+  },
+  {
+    "Kod": "0665",
+    "Kommun": "Vaggeryd",
+    "Raddningstjanst": "Vaggeryds Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0563",
+    "Kommun": "Valdemarsvik",
+    "Raddningstjanst": "Räddningstjänsten Östra Götaland",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0115",
+    "Kommun": "Vallentuna",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1487,
+    "Kommun": "Vänersborg",
+    "Raddningstjanst": "Norra Älvsborgs Räddningstjänstförbund",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "En blandning av intresse för annat arbete och ändrade arbetstider har bidragit"
+  },
+  {
+    "Kod": 2460,
+    "Kommun": "Vännäs",
+    "Raddningstjanst": "Vännäs Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2021,
+    "Kommun": "Vansbro",
+    "Raddningstjanst": "Brandkåren Norra Dalarna",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1470,
+    "Kommun": "Vara",
+    "Raddningstjanst": "Räddningstjänsten Skaraborg",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1383,
+    "Kommun": "Varberg",
+    "Raddningstjanst": "Räddningstjänsten Väst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1442,
+    "Kommun": "Vårgårda",
+    "Raddningstjanst": "Alingsås och Vårgårda Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0120",
+    "Kommun": "Värmdö",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0683",
+    "Kommun": "Värnamo",
+    "Raddningstjanst": "Värnamo Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1980,
+    "Kommun": "Västerås",
+    "Raddningstjanst": "Mälardalens Brand- och Räddningsförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0883",
+    "Kommun": "Västervik",
+    "Raddningstjanst": "Västerviks Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0187",
+    "Kommun": "Vaxholm",
+    "Raddningstjanst": "Storstockholms brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0780",
+    "Kommun": "Växjö",
+    "Raddningstjanst": "Värends Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1233,
+    "Kommun": "Vellinge",
+    "Raddningstjanst": "Räddningstjänsten Trelleborg Vellinge Skurup",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0685",
+    "Kommun": "Vetlanda",
+    "Raddningstjanst": "Höglandets Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2462,
+    "Kommun": "Vilhelmina",
+    "Raddningstjanst": "Vilhelmina Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0884",
+    "Kommun": "Vimmerby",
+    "Raddningstjanst": "Vimmerby Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 2404,
+    "Kommun": "Vindeln",
+    "Raddningstjanst": "Umeåregionens brandförsvar",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": "0428",
+    "Kommun": "Vingåker",
+    "Raddningstjanst": "Västra Sörmlands Räddningstjänst",
+    "": "",
+    "Besparing": "Ja",
+    "Kommentar": "Kommentar saknas."
+  },
+  {
+    "Kod": "0512",
+    "Kommun": "Ydre",
+    "Raddningstjanst": "Ydre Räddningstjänst",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  },
+  {
+    "Kod": 1286,
+    "Kommun": "Ystad",
+    "Raddningstjanst": "Sydöstra Skånes Räddningstjänstförbund",
+    "": "",
+    "Besparing": null,
+    "Kommentar": null
+  }
+]

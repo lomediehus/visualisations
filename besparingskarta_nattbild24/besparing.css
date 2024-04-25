@@ -1,0 +1,218 @@
+
+
+div#chart {
+	position: relative;
+	padding-top: 20px;
+}
+
+/* For hiding scrollbar in Firefox without impacting scrolling function */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #fcfaf5;
+
+  padding: 0px;
+  background-color: #fcfaf5;
+  /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+  -ms-overflow-style: none;
+}
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.main-content {
+  position: relative;
+  width: 100%;
+  max-width: 785px;
+	min-height: 600px;
+  margin: 0 auto;
+}
+
+.map {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+/* .q1{fill:#74b2b2} */
+.q1{fill:#e00f00}
+.q2{fill:#f5cc00}
+.q3{fill:#d8d8d8}
+.q4{fill:#009E73}
+.q5{fill:#56B4E9}
+
+
+
+
+#searchresult {
+
+}
+
+h3 {
+	margin: 2px 0px 2px 0px;
+}
+
+
+
+.overlay {
+	fill: none;
+	pointer-events: all;
+}
+
+.label {
+  font-weight: bold;
+  text-anchor: middle;
+  cursor: default;
+	font-size: 0.3em;
+	font-family: sans-serif;
+}
+
+.legend {
+	font-size: 0.8em;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: left;
+	/* font-family: sans-serif; */
+  padding: 4px;
+  background: #fff;
+  border: 0px;
+  pointer-events: none;
+  width: 200px;
+}
+
+/* .label {
+font-size: 8px;
+fill: black; 
+} */
+
+/* #forklaring {
+  position: absolute;
+  margin: auto;
+  top: 20px;
+  width: 300px;
+} */
+
+#forklaring {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  width: 300px;
+  background-color: white;
+  opacity: 0.7;
+  padding: 7px;
+}
+
+.fet {
+	font-weight: bold;
+}
+
+#emoji {
+	position: absolute;
+	/* text-align: right; */
+	right: 20px;
+	bottom: 20px;
+}
+.no-margin-bottom {
+	margin-bottom: 0px;
+}
+
+.versal {
+	text-transform: uppercase;
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+#loadercontainer {
+	  position: relative;
+	  top: 100px;
+	  width: 60px;
+	  left: 80px;
+}
+
+
+/* * Safari * */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  max-width: 785px;
+	min-height: 600px;
+  /* width: 500px;
+  height: 800px; */
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  z-index: -100;
+}
+
+#moon-container {
+  position: absolute;
+  width: 70px;
+  top: 50px;
+  left: -30px;
+  /* overflow: hidden; */
+  pointer-events: none;
+}
+
+#moon {
+  /* position: absolute; */
+  width: 70px;
+  height: 70px;
+  /* border-radius: 50%; */
+  background-color: #fff;
+  background-color: #F6F1D5;
+  /* top: 50px; */
+  /* left: 50px; */
+  z-index: 100;
+}
+
+.moon-defs {
+  position: absolute;
+  /* width: 70px; */
+  /* height: 70px; */
+  border-radius: 50%;
+  background-color: #fff;
+  /* top: 50px;
+  left: 50px; */
+}
+
+#blurred-moon {
+  /* z-index: -10; */
+  width: 70px;
+  height: 70px;
+}
+
+
+
+.blurred {
+  filter: blur(10px);
+}
