@@ -234,8 +234,8 @@ else {
 	duration = 150;
 }
 
-// background.style.minHeight = container_height + 80 + "px";
-background.style.minHeight = container_height + (0.06 * container_height) + "px";
+background.style.minHeight = container_height + 50 + "px";
+// background.style.minHeight = container_height + (0.06 * container_height) + "px";
 
 
 var moonwalk = gsap.to("#moon-container", { x: relX, duration: duration, ease: "linear"} );
