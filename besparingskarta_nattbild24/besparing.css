@@ -216,3 +216,9 @@ fill: black;
 .blurred {
   filter: blur(10px);
 }
+
+#sources {
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+}

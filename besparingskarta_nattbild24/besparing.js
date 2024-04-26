@@ -196,7 +196,7 @@ function mousemove(d, i) {
 
 	tooltip.html(markup)
 			// .style("left", (d3.event.pageX) + "px")
-			.style("left", "20px")
+			.style("left", "110px")
 			// .style("left", function() {
 
 			// 	//on a small screen, place tooltip further to the left on the right side of the screen (making tooltips wider)
