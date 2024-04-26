@@ -54,7 +54,7 @@ function style(feature) {
         weight: 0.5,
         opacity: 1,
         color: 'white',
-        fillOpacity: 0.6
+        fillOpacity: 0.5
     };
 }
 
@@ -126,7 +126,7 @@ function inkomstMatte(props) {
     let skillnad = (parseInt(year_2022) - parseInt(year_2019));
     let procentSkillnad = Math.round((skillnad/parseInt(year_2022)) * 100);
 
-    let inkomstString = '<h4>' + props.kommunnamn + " (" + props.regso +')</h4><br>' + "<b>Disponibel inkomst 2022:</b> " + formatKronor.to(year_2022) + "<br><b>Skillnad sedan 2019:</b> " + formatKronor.to(skillnad) + "<br><b>Skillnad i procent:</b> " + String(procentSkillnad)
+    let inkomstString = '<h4>' + props.kommunnamn + " (" + props.regso +')</h4><br>' + "<b>Disponibel månadsinkomst 2022:</b> " + formatKronor.to(year_2022) + "<br><b>Skillnad sedan 2019:</b> " + formatKronor.to(skillnad) + "<br><b>Skillnad i procent:</b> " + String(procentSkillnad)
     
     return inkomstString
 }
