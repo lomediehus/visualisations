@@ -234,7 +234,7 @@ else {
 	duration = 150;
 }
 
-background.style.minHeight = container_height + 50 + "px";
+background.style.minHeight = container_height + 100 + "px";
 // background.style.minHeight = container_height + (0.06 * container_height) + "px";
 
 
