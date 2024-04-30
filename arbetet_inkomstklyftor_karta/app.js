@@ -35,9 +35,14 @@ var eventHandler = function(name) {
 
 	return function() {
 		let kommun = arguments[0].toLowerCase();
-        kommun = kommun.replace("ö","o")
-        kommun = kommun.replace("å", "a")
-        kommun = kommun.replace("ä", "a")
+        if (kommun == "håbo") {
+            kommun = "habo_2"
+        } else {
+            kommun = kommun.replaceAll("ö","o")
+            kommun = kommun.replaceAll("å", "a")
+            kommun = kommun.replaceAll("ä", "a")
+        }
+        
         fetchData(kommun);
 	};
 };
