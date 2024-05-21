@@ -1,0 +1,164 @@
+/* For hiding scrollbar in Firefox without impacting scrolling function */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #fcfaf5;
+
+  padding: 0px;
+  background-color: #fcfaf5;
+  /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+  -ms-overflow-style: none;
+}
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+div#chart {
+  display: flex;
+  justify-content: flex-start;
+  align-items:normal;
+  flex-direction: column-reverse;
+	position: absolute;
+	/* padding-top: 20px; */
+  height: 350px;
+  left: 100px;
+  /* background-color: white; */
+  /* left: 350px; */
+}
+
+#marker {
+  position: absolute;
+  left: 60px;
+  bottom: -25px;
+}
+
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 15px 30px 15px;
+  border-color: transparent transparent #000000 transparent;
+  transform: rotate(90deg);
+}
+
+#soundButton {
+  position: absolute;
+  bottom: 0px;
+  left: 250px;
+}
+
+.db {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+#steg1 {
+  display: flex;
+  flex-direction: row;
+}
+
+#steg2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#steg3 {
+  display: flex;
+  flex-direction: row;
+}
+
+#steg4 {
+  display: flex;
+  flex-direction: row;
+}
+#steg5 {
+  display: flex;
+  flex-direction: row;
+}
+
+.blue {
+  background-color: #0000FF;
+  /* opacity: 0.5; */
+}
+.green {
+  background-color: #00FF00;
+}
+
+.yellow {
+  background-color: #FFFF00;
+}
+
+.orange {
+  background-color: #FF7F00;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+
+
+.main-content {
+  position: relative;
+  width: 100%;
+  max-width: 785px;
+	min-height: 600px;
+  margin: 0 auto;
+}
+
+
+
+
+.fet {
+	font-weight: bold;
+}
+
+.versal {
+	text-transform: uppercase;
+}
+
+.h2 {
+  font-size: xx-large;
+}
+
+
+
+
+
+
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  max-width: 785px;
+	min-height: 600px;
+  background-color:lightgrey;
+  /* width: 500px;
+  height: 800px; */
+  /* background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+  z-index: -100;
+}
+
+
+.blurred {
+  filter: blur(10px);
+}
+
