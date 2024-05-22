@@ -31,35 +31,54 @@ if (host.includes("github")) {
 
 // Initialize Howler sound objects
 const sound1 = new Howl({
-  src: ['viskning.mp3'], // Provide the path to your first sound file
+  src: ['ljud/viskning.mp3'], // Provide the path to your first sound file
   loop: false,
   volume: 0.5
 });
 
 const sound2 = new Howl({
-    src: ['cafesamtal.mp3'], // Provide the path to your second sound file
+    src: ['ljud/faglar.mp3'], // Provide the path to your second sound file
     loop: false,
     volume: 1.5
 });
 
 const sound3 = new Howl({
-  src: ['barnskrik.mp3'], // Provide the path to your second sound file
+  src: ['ljud/cafesamtal.mp3'], // Provide the path to your second sound file
   loop: false,
   volume: 1.5
 });
 
 const sound4 = new Howl({
-  src: ['klippare.wav'], // Provide the path to your second sound file
+  src: ['ljud/skolmatsal.mp3'], // Provide the path to your second sound file
   loop: false,
   volume: 1
 });
 
 const sound5 = new Howl({
-  src: ['skott.wav'], // Provide the path to your second sound file
+  src: ['ljud/traktor.wav'], // Provide the path to your second sound file
   loop: false,
-  volume: 0.5
+  volume: 5
 });
-const soundArray = [sound1, sound2, sound3, sound4, sound5]
+
+const sound6 = new Howl({
+  src: ['ljud/barnskrik.mp3'], // Provide the path to your second sound file
+  loop: false,
+  volume: 3.5
+});
+
+const sound7 = new Howl({
+  src: ['ljud/grisar.mp3'], // Provide the path to your second sound file
+  loop: false,
+  volume: 1.5
+});
+
+const sound8 = new Howl({
+  src: ['ljud/skott.wav'], // Provide the path to your second sound file
+  loop: false,
+  volume: 2
+});
+
+const soundArray = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8]
 
 
 let duration = 2;
@@ -89,7 +108,7 @@ const tl = gsap.timeline({repeat: -1, repeatDelay: 1});
 
 
 
-for (let i = 0; i <= 4; i++) {
+for (let i = 0; i <= 7; i++) {
     tl.to("#marker", {
       y: -50 * (i + 1), // Use (i + 1) to ensure immediate movement
       duration: 0.5,
@@ -125,6 +144,9 @@ document.getElementById('soundButton').addEventListener('click', function() {
       sound3.stop();
       sound4.stop();
       sound5.stop();
+      sound6.stop();
+      sound7.stop();
+      sound8.stop();
       this.textContent = 'Ljud på';
   }
 });

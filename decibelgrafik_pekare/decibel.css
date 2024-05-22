@@ -22,8 +22,10 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 350px;
+  height: 480px;
   overflow: hidden;
+  /* background-color: white; */
+  margin: 10px 0px 10px 0px;
 }
 
 div#chart {
@@ -33,7 +35,7 @@ div#chart {
   flex-direction: column-reverse;
 	position: absolute;
 	/* padding-top: 20px; */
-  height: 350px;
+  height: 480px;
   left: 100px;
   /* background-color: white; */
   /* left: 350px; */
@@ -56,9 +58,11 @@ div#chart {
 }
 
 #soundButton {
-  position: absolute;
+  /* position: absolute;
   bottom: 0px;
-  left: 250px;
+  left: 250px; */
+  margin: 0 auto;
+  display: block;
 }
 
 .db {
@@ -67,50 +71,53 @@ div#chart {
   margin-right: 5px;
 }
 
-#steg1 {
+div .rekt {
   display: flex;
   flex-direction: row;
 }
 
-#steg2 {
-  display: flex;
-  flex-direction: row;
-}
-
-#steg3 {
-  display: flex;
-  flex-direction: row;
-}
-
-#steg4 {
-  display: flex;
-  flex-direction: row;
-}
-#steg5 {
-  display: flex;
-  flex-direction: row;
-}
 
 .blue {
   background-color: #0000FF;
   /* opacity: 0.5; */
 }
+
+.bluegreen {
+  background-color: #007f7f;
+}
 .green {
   background-color: #00FF00;
+}
+
+.greenyellow {
+  background-color: #7FFF00;
 }
 
 .yellow {
   background-color: #FFFF00;
 }
 
+.yelloworange {
+  background-color: #FFBF00;
+}
+
 .orange {
   background-color: #FF7F00;
 }
 
+.orangered {
+  background-color: #FF3F00;
+}
 .red {
   background-color: #FF0000;
 }
 
+.db p {
+  color: white;
+  text-align: center;
+  font-weight: 800;
+
+}
 
 
 .main-content {
@@ -121,7 +128,9 @@ div#chart {
   margin: 0 auto;
 }
 
-
+/* .grey p {
+  color: grey;
+} */
 
 
 .fet {
@@ -134,6 +143,10 @@ div#chart {
 
 .h2 {
   font-size: xx-large;
+}
+
+.center {
+  text-align: center;
 }
 
 
