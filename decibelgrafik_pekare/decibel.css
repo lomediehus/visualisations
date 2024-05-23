@@ -24,7 +24,6 @@ body::-webkit-scrollbar {
   position: relative;
   height: 480px;
   overflow: hidden;
-  /* background-color: white; */
   margin: 10px 0px 10px 0px;
 }
 
@@ -34,11 +33,8 @@ div#chart {
   align-items:normal;
   flex-direction: column-reverse;
 	position: absolute;
-	/* padding-top: 20px; */
   height: 480px;
   left: 47%;
-  /* background-color: white; */
-  /* left: 350px; */
 }
 
 #marker {
@@ -58,9 +54,6 @@ div#chart {
 }
 
 #soundButton {
-  /* position: absolute;
-  bottom: 0px;
-  left: 250px; */
   margin: 0 auto;
   display: block;
 }
@@ -119,7 +112,6 @@ div .rekt {
 
 }
 
-
 .main-content {
   position: relative;
   width: 100%;
@@ -127,11 +119,6 @@ div .rekt {
 	min-height: 600px;
   margin: 0 auto;
 }
-
-/* .grey p {
-  color: grey;
-} */
-
 
 .fet {
 	font-weight: bold;
@@ -150,10 +137,6 @@ div .rekt {
 }
 
 
-
-
-
-
 #background {
   position: absolute;
   top: 0px;
@@ -162,11 +145,6 @@ div .rekt {
   max-width: 785px;
 	min-height: 600px;
   background-color:lightgrey;
-  /* width: 500px;
-  height: 800px; */
-  /* background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
   z-index: -100;
 }
 

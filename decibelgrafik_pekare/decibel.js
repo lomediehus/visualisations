@@ -9,26 +9,6 @@ if (host.includes("github")) {
 }
 
 
-// var container_width = document.querySelector("#chart");
-// var container_height = document.querySelector("#chart").getBoundingClientRect().height;
-// c(container_height)
-// var relX = container_width.offsetWidth;
-// var background = document.querySelector("#background");
-// c(background)
-// c(relX);
-// var duration = 0;
-// if (relX > 800) {
-// 	duration = 300; 
-// } 
-// else {
-// 	duration = 150;
-// }
-
-// background.style.minHeight = container_height + 50 + "px";
-// // background.style.minHeight = container_height + (0.06 * container_height) + "px";
-// var moonwalk = gsap.to("#moon-container", { x: relX, duration: duration, ease: "linear"} );
-// moonwalk.repeat(-1);
-
 // Initialize Howler sound objects
 const sound1 = new Howl({
   src: ['ljud/viskning.mp3'], // Provide the path to your first sound file
@@ -84,30 +64,6 @@ const soundArray = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, soun
 let duration = 2;
 const tl = gsap.timeline({repeat: -1, repeatDelay: 1});
 
-// animate two elements, then two more
-// tl.to("#marker", {
-//   y: -50,
-//   duration: duration
-// }, 0)
-// .to("#steg1", {
-//   y: -50,
-//   duration: duration
-// }, 0);
-
-// tl.fromTo("#marker", {
-//   y: -50,
-// },
-// {
-//   y:-100,
-//   duration: duration
-// }, 0)
-// .to("#steg2", {
-//   y: -50,
-//   duration: duration
-// }, ">");
-
-
-
 for (let i = 0; i <= 7; i++) {
     tl.to("#marker", {
       y: -50 * (i + 1), // Use (i + 1) to ensure immediate movement
@@ -129,7 +85,6 @@ for (let i = 0; i <= 7; i++) {
           }
     });
 }
-
 
 // Variable to track if sound is enabled
 let soundEnabled = false;
