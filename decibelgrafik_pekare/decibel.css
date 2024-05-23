@@ -36,14 +36,14 @@ div#chart {
 	position: absolute;
 	/* padding-top: 20px; */
   height: 480px;
-  left: 100px;
+  left: 47%;
   /* background-color: white; */
   /* left: 350px; */
 }
 
 #marker {
   position: absolute;
-  left: 60px;
+  left: 42%;
   bottom: -25px;
 }
 
