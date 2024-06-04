@@ -159,7 +159,7 @@
     "kategori_detaljerad": "arbetsvillkor",
     "ort": "Uppsala",
     "lat": 59.8586,
-    "long": 17.6389,
+    "long": 18,
     "url": "https://ka.se/2022/06/20/efter-protesterna-bussforare-i-uppsala-far-gratis-resor/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2022/06/20141842/bussuppsala.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2022/06/20"
@@ -867,5 +867,38 @@
     "url": "https://ka.se/2024/02/27/sa-fick-de-bort-alla-delade-turer-i-sundsvall/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2022/11/07134433/shutterstock-482413714-2.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2024/02/27"
+  },
+  {
+    "rubrik": "När minutstyrningen försvann räckte tiden till både jobb och fritid",
+    "kategori": "minutstyrning",
+    "kategori_detaljerad": "minutstyrning",
+    "ort": "Uppsala",
+    "lat": 60,
+    "long": 17.4422,
+    "url": "https://ka.se/2024/05/06/nar-minutstyrningen-forsvann-rackte-tiden-till-bade-jobb-och-fritid-tanker-inte-pa-vad-klockan-ar/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/05/02133744/hemvarden-minutstyrning-10.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/05/06"
+  },
+  {
+    "rubrik": "Kortare ramtider för bussförare i Göteborg – hoppas locka fler till yrket",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstid",
+    "ort": "Göteborg",
+    "lat": 57.7854,
+    "long": 11.94,
+    "url": "https://ka.se/2024/05/03/kortare-ramtider-for-bussforare-i-goteborg-hoppas-locka-fler-till-yrket/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/05/02150602/buss.jpeg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/05/03"
+  },
+  {
+    "rubrik": "Personalen fick lägga egna scheman – då upphörde kritiken mot dygnsvilan",
+    "kategori": "dygnsvila",
+    "kategori_detaljerad": "dygnsvila",
+    "ort": "Kristinehamn",
+    "lat": 59.3114,
+    "long": 14.1239,
+    "url": "https://ka.se/2024/04/09/personalen-fick-lagga-egna-scheman-da-upphorde-kritiken-mot-dygnsvilan/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/04/04141439/kristinehamn5-s.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/04/09"
   }
 ]
