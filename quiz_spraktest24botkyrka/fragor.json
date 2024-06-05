@@ -1,0 +1,15 @@
+[
+  {
+      "divid": "fraga1",
+      "rubrik": "Lyssna på ljudet och svara sen på frågan",
+      "fraga": "Fråga: Vad ska du göra enligt instruktionerna?",
+      "alt1": "Jag ska ringa in vikarier.",
+      "value1": "fel",
+      "alt2": "Skicka hem barnen.",
+      "value2": "fel",
+      "alt3": "Ringa Åsa om jag tycker att det behövs vikarier.",
+      "value3": "rätt",    
+      "svar": "Du ska ringa Åsa om du tycker att det behövs vikarier."
+  }
+
+]
