@@ -90,6 +90,7 @@ $.ajax({
 
           fragetext = document.querySelectorAll(".fragetext");
 
+          let ljudknapp = document.getElementById("ljudknapp")
 
           const aftersound = function(){
             for (i=0; i<fragetext.length; i++) {
@@ -97,15 +98,17 @@ $.ajax({
               fragetext[i].classList.remove("textblur")
               console.log(fragetext)
             }
+            ljudknapp.style.opacity = "0.5";
+            ljudknapp.style.pointerEvents = "none";
+  
 
-            console.log("det var det ljudet")
           }
 
-          let ljudknapp = document.getElementById("ljudknapp")
           ljudknapp.addEventListener("click", function(){
             audio.play();
             const myTimeout = setTimeout(aftersound, 8000)
             console.log("oj vad det låter")
+            ljudknapp.disabled = true;
           })
 
           // //click event for submit button
