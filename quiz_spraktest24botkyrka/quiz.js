@@ -77,7 +77,7 @@ $.ajax({
             // console.log(boxes)
           }
 
-          
+          content.innerHTML += "<p class='smalfraga u-paddedBottomXS'>Testfrågan har KA fått från Botkyrka, som ett exempel på hur deras språktest kan se ut. Just den här frågan används inte i deras test."
           
           // // add submit button, class "doNotHideOverlay" is needed because the button is there to show the overlay
           // content.innerHTML += "<br><button id='submitButton' class='Button doNotHideOverlay  smalfraga'>Se ditt resultat</button>";
