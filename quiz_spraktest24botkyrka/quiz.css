@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
   -ms-overflow-style: none;
+  background-color: #fcfaf5;
 }
 
 /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
