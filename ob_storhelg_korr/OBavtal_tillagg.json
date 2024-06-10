@@ -55,15 +55,15 @@
 			"fall4divisor": "",
 			"tak": 21629
 			},
-		"helg6": {
-			"fall1": "Max 110,31 kr/tim från klockan 07.00 på midsommarafton till klockan 00.00 vardagen närmast efter helgen, alltså måndagen 26 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 22&#8239;062 kr/månad.)",
-			"fall2": "",
-			"fall3": "",
-			"fall4": "",
-			"fall1divisor": 200,
-			"fall2divisor": "",
-			"fall3divisor": "",
-			"fall4divisor": "",
-			"tak": 21629
-		}
+			"helg6": {
+				"fall1": "Max 114,84 kr/tim från klockan 07.00 på midsommarafton till klockan 00.00 vardagen närmast efter helgen, alltså måndagen 24 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 22&#8239;967 kr/månad.)",
+				"fall2": "",
+				"fall3": "",
+				"fall4": "",
+				"fall1divisor": 200,
+				"fall2divisor": "",
+				"fall3divisor": "",
+				"fall4divisor": "",
+				"tak": 22967
+			}
 		  }]
