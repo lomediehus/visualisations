@@ -122,9 +122,14 @@ function doStuff() {
   let helgord = document.getElementById("word");
 
 
+  // var knapp = `
+  //   <p><input class="pengar u-textMeta" type="text" name="pengar" placeholder="Månadslön"><button type="button" id="countButton" class="u-textMeta u-textStrong Button countButton lessPadding">Räkna ut</button></p>
+  //   `;
+
   var knapp = `
-    <p><input class="pengar u-textMeta" type="text" name="pengar" placeholder="Månadslön"><button type="button" id="countButton" class="u-textMeta u-textStrong Button countButton lessPadding">Räkna ut</button></p>
-    `;
+  <p><input id="manadslon" class="pengar u-textMeta" type="text" name="pengar" placeholder="Månadslön"></p>
+  `;
+
   var helgvarre;
 
   //Setting initial position of the div mainContent
@@ -547,9 +552,9 @@ function doStuff() {
         siffra = e.target.value;
 
         //if enter is pressed
-        if (e.keyCode == 13) {
+        // if (e.keyCode == 13) {
           checkInput(siffra, target);
-        }
+        // }
       }
   }, false);
 
@@ -584,6 +589,10 @@ function doStuff() {
       //if input is number, divide it. The function dividedToDiv is invoked from within the divideSalary function.
       divideSalary(divisorAttr);
     }
+    //if input is an empty string, hide the div that shows the calculated result. Happens when you erase the last numer with backspace.
+    else if (input === ''){
+      $('#div0').hide()
+    }
     else if (isNaN(input)) {
       input = 'tom';
       //if input is not a number, skip division and move directly to the function dividedToDiv. Will give error message.
@@ -613,6 +622,12 @@ function doStuff() {
   //Appending a textnode with the calculated result in a div, also checking if its a number
   function dividedToDiv(nodecontent) {
     var dividedResultHere = document.getElementsByClassName('counter');
+    c("a")
+    c(document.getElementById("manadslon").value)
+    if (document.getElementById("manadslon").value == '') {
+      // c("värdet" + document.getElementById("manadslon").value)
+      c("dostuff")
+    }
     for (let i = 0; i < nodecontent.length; i++) {
       var tobedeleted = document.getElementById('div' + i)
       if (tobedeleted !== null) {
@@ -643,8 +658,18 @@ function doStuff() {
 
 
         $('#div0').hide().fadeIn();
- }
+        // $('#div0').hide()
 
+        }
+
+        if (document.getElementById("manadslon").value == '') {
+          // c("värdet" + document.getElementById("manadslon").value)
+          c("dostuff")
+        }
+
+          // $('#div0').hide()
+        
+     
       //empty array before next round
       divisorAttr = [];
       //resize visualisation frame

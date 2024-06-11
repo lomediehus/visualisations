@@ -196,6 +196,9 @@ input.pengar {
   width: 150px;
   font-size: 16px;
   margin-left: 20px;
+  padding: 10px;
+  border: 2px solid #da4042;
+  border-radius: 10px;
 }
 
 input.yrkeInput {
@@ -288,6 +291,7 @@ input {
   padding: 8px;
   background-color: white;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 
