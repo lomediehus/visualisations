@@ -9,7 +9,7 @@ if (host.includes("github")) {
 }
 
 var cirkeldata;
-var loader = document.getElementById("loader");
+// var loader = document.getElementById("loader");
 
 //Create a tooltip, hidden at the start
 var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
@@ -42,6 +42,7 @@ function close(){
   d3.select("#hjulimg")
     .classed("spin", false)
     .classed("noclick", false);
+  //Get all cirkels, turn them into an array and remove the "pulse" class
   let cirklar = document.getElementsByClassName("cirkel");
   cirklar = [...cirklar];
   cirklar.forEach(function(item, index) {
@@ -134,33 +135,37 @@ document.addEventListener("DOMContentLoaded", function() {
         var datafile = d3.json("framgang.json");
         Promise.all([datafile]).then(function(values) {
             cirkeldata = values[0];
-            // c(values)
             
             //the datafile items that match the date criteria in function checkDates
-            const result = cirkeldata.filter(checkDates);
-            c(result.length)
-            c(' här är result' + result)
-            result.forEach((item) => c(item));
+            const result = cirkeldata.filter(checkDatesCategories);
 
             //Checks if the the date is lower the the date in 'const date'. Change the value of the constant manually to choose which items are shown in the visualization.
-            function checkDates(item){
+            function checkDatesCategories(item){
              item.datum = new Date(Date.parse(item.datum))  
-              // c(item.datum)
-              const date = new Date("2023-01-01");
-              c(item.datum > date)
-              return item.datum > date
+
+              // Set the date from which you want the items shown. 
+              // Set the date like this: 
+              // const date = new Date("2023-01-01");
+              // If you don't want to filter by dates, set the value to "null
+              const date = null;
+
+              //Set the category you want to show, like this: 
+              // const category = 'arbetstid'
+              // If you don't want to filter by category, set the value to 'null'
+              const category = null;
+
+              //Checks if there is a valid date. Returns true if date/category is 'null', meaning it will not filter out any dates/categories.
+              const dateMatches = date ? item.datum > date : true;
+              const categoryMatches = category ? item.kategori === category : true;
+
+              // return item.datum > date && item.kategori == category
+              return dateMatches && categoryMatches;
              }
             
-            // const dateString = "2022/01/31";
-            // const dateObject = new Date(Date.parse(dateString));
-
             //get img urls to preload them
             const imageUrls = [];      
-            result.forEach(function(item) {
-            // cirkeldata.forEach(function(item, index){
-              // console.log(item.bildurl)
+            result.forEach(function(item) {        
               imageUrls.push(item.bildurl)
-              // c(item.datum)
             })
 
             function preloadImages(urls) {
@@ -168,15 +173,14 @@ document.addEventListener("DOMContentLoaded", function() {
                   const img = new Image();  // Create new Image object
                   img.src = url;            // Set the src to the image URL
               });
-            }
-
-            
+            }           
           
             // Call the function to preload the images when your page loads
             window.onload = function() {
                 preloadImages(imageUrls);
             };
 
+            //Add thecircles, give them the class "cirkel" and a class for color depending on the value of d.kategori
             svg
             .selectAll("myCircles")
             .data(result)
@@ -226,13 +230,16 @@ document.addEventListener("DOMContentLoaded", function() {
             hideTooltip()
             });
 
+            //Get the elements with class "checkbox", they are defined in the html file. Assign their value to the var "value"            
             d3.selectAll(".checkbox").on("click", function(){
               var value = this.value;
-
+              //Show or hide the circles depending on the value of "value"
               d3.selectAll(".cirkel").each(function(d,i) {
+                //Get the checkbox "Se alla", by selecting the first element with the class 'red'. Remove the class 'inactive'
                 d3.select(".red").classed("inactive", false)
                 if (value === "alla") {
                   d3.selectAll(".cirkel").style("visibility", "visible")
+                  //Get the checkbox "Se alla", by selecting the first element with the class 'red'. Add the class 'inactive'  
                   d3.select(".red").classed("inactive", true)
                 }
                 if (value === d.kategori) {
