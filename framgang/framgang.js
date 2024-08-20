@@ -1,10 +1,5 @@
-console.log("Kör testskript 1")
-
-
 //make it possible to console log with c(tobelogged)
 const c = console.log.bind(document);
-
-
 
 // Get one favicon for localhost and another for github pages
 let host = window.location.host;
@@ -13,11 +8,11 @@ if (host.includes("github")) {
   c("Jag hittade den! Den var på github!")
 }
 
+var cirkeldata;
+// var loader = document.getElementById("loader");
 
 //Create a tooltip, hidden at the start
 var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
-var cirkeldata;
-var loader = document.getElementById("loader");
 
 //Show tooltip
 function showTooltip(d) {
@@ -42,10 +37,12 @@ function hideTooltip() {
 function close(){
   kartpopup.style.display = "none";
   overlay.style.display = "none";
-  //take away class "spin", otherwise it won't spin again. It only does one round and that is when the class is added. Also take away class "noclick", to make it clickable agian.
+  //Take away class "spin". The class "spin" is added when the wheel is clicked, and it spins only once when the class is added.  You must remove it on close, so it can be added again. 
+  // Also take away class "noclick". It is added in the click function so you can't click it again while the wheel spins.
   d3.select("#hjulimg")
     .classed("spin", false)
     .classed("noclick", false);
+  //Get all cirkels, turn them into an array and remove the "pulse" class
   let cirklar = document.getElementsByClassName("cirkel");
   cirklar = [...cirklar];
   cirklar.forEach(function(item, index) {
@@ -53,31 +50,24 @@ function close(){
     })
 }
   
-
 function clicked(d,i) {
-  var clickedCirle = d3.select(this).select("cirlce");
-  clickedCirle.style.fill = "red";
-  // Testar att placera vid klicket
+  // var clickedCirle = d3.select(this).select("cirlce");
+  // clickedCirle.style.fill = "red";
 
-  //get the height of the svg as it is rendered at the moment
+  //get the height and width of the svg as it is rendered at the moment
   let bbcl= document.getElementById("svgel").getBoundingClientRect();
   let svgHeight = bbcl.height;
-  c(svgHeight)
-
-
-  // var x = d3.event.pageX - 50;
-  let x = 10;
-  // let maxY = window.innerHeight - 100;
+  let svgWidth = bbcl.width;
+  
+  let x;
+  
+  //The x position is related to the width of the svg on large screens, and has a static position on small screens.
+  (svgWidth >= 500) ? x = svgWidth/5 : x=10;
+  
+  //maxY is related to the svg height. y is first declared as the vertical position of the clicked point, then changed to the lowest value of maxY and the clickpoint.
   let maxY = svgHeight - 300;
-
-  // c(svg.offsetHeight)
-
   let y = d3.event.pageY;
   y = Math.min(y, maxY);
-  // var y = 150;
-  c(maxY)
-  c(y)
-
 
   kartpopup.style.left = x + "px";
   kartpopup.style.top = y + "px";
@@ -127,12 +117,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var bana = d3.geoPath().projection(projection);
     var map = d3.json("sverige.geojson");
-
-
     var windowWidth = window.innerWidth;
     //circle radius should be a bit bigger on small screens (since you use small screens with your fat fingers)
     var radius = windowWidth > 500 ? 5 : 7;
-
 
     Promise.all([map]).then(function(values) {
 
@@ -143,18 +130,41 @@ document.addEventListener("DOMContentLoaded", function() {
             // .attr("class", "semitransparent")
             .attr("fill", "#87b8b8")
             .attr("d", bana)
-
-         
-    
+   
         //Nesting the circle-drawing to ensure they are drawn after the map is drawn.
         var datafile = d3.json("framgang.json");
         Promise.all([datafile]).then(function(values) {
             cirkeldata = values[0];
+            
+            //the datafile items that match the date criteria in function checkDates
+            const result = cirkeldata.filter(checkDatesCategories);
 
+            //Checks if the the date is lower the the date in 'const date'. Change the value of the constant manually to choose which items are shown in the visualization.
+            function checkDatesCategories(item){
+             item.datum = new Date(Date.parse(item.datum))  
+
+              // Set the date from which you want the items shown. 
+              // Set the date like this: 
+              // const date = new Date("2023-01-01");
+              // If you don't want to filter by dates, set the value to "null
+              const date = null;
+
+              //Set the category you want to show, like this: 
+              // const category = 'arbetstid'
+              // If you don't want to filter by category, set the value to 'null'
+              const category = null;
+
+              //Checks if there is a valid date. Returns true if date/category is 'null', meaning it will not filter out any dates/categories.
+              const dateMatches = date ? item.datum > date : true;
+              const categoryMatches = category ? item.kategori === category : true;
+
+              // return item.datum > date && item.kategori == category
+              return dateMatches && categoryMatches;
+             }
+            
             //get img urls to preload them
-            const imageUrls = [];            
-            cirkeldata.forEach(function(item, index){
-              // console.log(item.bildurl)
+            const imageUrls = [];      
+            result.forEach(function(item) {        
               imageUrls.push(item.bildurl)
             })
 
@@ -163,17 +173,18 @@ document.addEventListener("DOMContentLoaded", function() {
                   const img = new Image();  // Create new Image object
                   img.src = url;            // Set the src to the image URL
               });
-            }
+            }           
           
             // Call the function to preload the images when your page loads
             window.onload = function() {
                 preloadImages(imageUrls);
             };
 
-
+            //Add thecircles, give them the class "cirkel" and a class for color depending on the value of d.kategori
             svg
             .selectAll("myCircles")
-            .data(values[0])
+            .data(result)
+            // .data(values[0])
             .enter()
             .append("circle")
             .attr("cx", function(d){ return projection([d.long, d.lat])[0] })
@@ -219,20 +230,16 @@ document.addEventListener("DOMContentLoaded", function() {
             hideTooltip()
             });
 
-            // var bbcl= document.getElementById("svgel").getBoundingClientRect();
-            // var height = bbcl.height;
-            // c(height)
-
-      
-
-
+            //Get the elements with class "checkbox", they are defined in the html file. Assign their value to the var "value"            
             d3.selectAll(".checkbox").on("click", function(){
               var value = this.value;
-
+              //Show or hide the circles depending on the value of "value"
               d3.selectAll(".cirkel").each(function(d,i) {
+                //Get the checkbox "Se alla", by selecting the first element with the class 'red'. Remove the class 'inactive'
                 d3.select(".red").classed("inactive", false)
                 if (value === "alla") {
                   d3.selectAll(".cirkel").style("visibility", "visible")
+                  //Get the checkbox "Se alla", by selecting the first element with the class 'red'. Add the class 'inactive'  
                   d3.select(".red").classed("inactive", true)
                 }
                 if (value === d.kategori) {
@@ -246,7 +253,6 @@ document.addEventListener("DOMContentLoaded", function() {
             })
 
             d3.select("#hjulimg").on("click", function() {
-              console.log("click loader")
               document.getElementById("hjulljud").play()
               //Get a random number within the lengt of the cirkeldata array
               let slumpsiffra = Math.floor(Math.random()*cirkeldata.length)
@@ -272,9 +278,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
           function clickedSpinner(d,i) {
-
-
-          
+         
             //manuell position eftersom jag inte kan få klick-position in i timer-funktionen
             var x = 10;
             var y = 150;
@@ -307,7 +311,6 @@ document.addEventListener("DOMContentLoaded", function() {
           
               })
               closex.addEventListener("click", function() {
-                c("closed")
                 close()
               })
 
