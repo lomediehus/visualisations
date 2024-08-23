@@ -220,7 +220,7 @@ function doStuff() {
     document.getElementById("helgbild").src = 'midsommar.svg';
   });
 
-  //function for actions of the helgknapps
+  //function for actions of the helgknapps. The class 'updated' is added manually in the index.html file
   function helgknapp(clicked) {
     c(!clicked.classList.contains("updated"))
     let width = header.offsetWidth;
