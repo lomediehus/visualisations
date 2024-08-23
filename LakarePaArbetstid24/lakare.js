@@ -232,7 +232,7 @@ function valueToDiv() {
     //give error message
     else {
       messagediv.innerHTML ='';
-      var mailBody = 'Jag%20saknar%20yrkestiteln%20' + inpValue + '.';
+      var mailBody = 'Jag%20saknar%20yrkestiteln%20' + inpValue + '.%0A%0A(Mail från tjänsten Läkarbesök på arbetstid .)';
       node.innerHTML = '<p class="paddingTop10">Vi hittade inte yrket du sökte. Tycker du att yrket ska finnas med? Mejla oss yrkestiteln så kollar vi på det. Men Kommunal har så många yrken och avtal att vi tyvärr inte kan ha med alla.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknad%20yrkestitel&body=' + mailBody + '">Skicka mejl</a>' ;
     }
   document.getElementById('resultdiv').appendChild(node);
@@ -261,7 +261,8 @@ function matchaYrke(yrke, text) {
   }
   var string = message.join('');
   if (hittad === true) {
-    string += '<h3 class="u-textMetaDeca paddingTop10">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal">Skicka mejl</a>';
+    let mailBody = '%0A%0A(Mail från tjänsten Läkarbesök på arbetstid.)'
+    string += '<h3 class="u-textMetaDeca paddingTop10">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal&body='+mailBody+'">Skicka mejl</a>';
   }
 
   messagediv.innerHTML = string;
