@@ -158,7 +158,6 @@ function doStuff() {
   //handling dates:
   //Check if current date is after jul;
   if (date.getTime() > trettonhelgsdatum.getTime()) {
-    c("efter trettonhelgen")
     //if current date is also after nyar
     if (date.getTime() > midsommardatum.getTime()) {
       document.getElementById("helgbild").src = 'midsommar.svg';
@@ -222,11 +221,8 @@ function doStuff() {
 
   //function for actions of the helgknapps. The class 'updated' is added manually in the index.html file
   function helgknapp(clicked) {
-    c(!clicked.classList.contains("updated"))
     let width = header.offsetWidth;
     let left = (header.offsetWidth - 300) / 2;
-    c(left)
-    c(clicked.innerHTML)
 
     if (!clicked.classList.contains("updated")){
       popup_passed.style.display = "block";
