@@ -335,17 +335,29 @@ modebuttonRight.addEventListener('click', function() {
 })
 
 
-//function to blur i.e. remove focus from element
-function blur(element) {
-  element.blur();
-}
+// //function to blur i.e. remove focus from element
+// function blur(element) {
+//   element.blur();
+// }
 
-//Workaround for ios, removes focus from input field, which makes it possible to register a click outside input field. Needed to be ablev to click an alternative in the autocomplete suggestions list
-function removeFocus() {
+// //Workaround for ios, removes focus from input field, which makes it possible to register a click outside input field. Needed to be able to click an alternative in the autocomplete suggestions list
+// function removeFocus() {
+//     document.activeElement.blur();
+//   }
+// document.body.addEventListener("touchstart", removeFocus);
+
+
+// //set focus on input field
+// document.getElementById('sokYrkeKnapp').focus();
+
+function removeFocus(event) {
+  if (event.target !== sokYrkeKnapp) {
     document.activeElement.blur();
   }
-document.body.addEventListener("touchstart", removeFocus);
+}
 
+if (/iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
+  document.body.addEventListener("touchstart", removeFocus)
+}
 
-//set focus on input field
 document.getElementById('sokYrkeKnapp').focus();
