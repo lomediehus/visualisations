@@ -806,6 +806,7 @@ function doStuff() {
     allaAvtal.style.display = "block";
     modebuttonLeft.classList.add('passive');
     modebuttonRight.classList.remove('passive');
+    sokYrkeKnapp.value = '';
   })
 
   //function to blur i.e. remove focus from element
