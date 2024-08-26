@@ -331,6 +331,7 @@ modebuttonRight.addEventListener('click', function() {
   allaAvtal.style.display = "block";
   modebuttonLeft.classList.add('passive');
   modebuttonRight.classList.remove('passive');
+  sokYrkeKnapp.value = '';
 })
 
 
