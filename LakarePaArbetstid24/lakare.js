@@ -36,9 +36,14 @@ var bottom = document.getElementById('bottom');
 var header = document.getElementById('header');
 // var mc = document.getElementById('mainContent');
 // var [helgknapp1, helgknapp2, helgknapp3, helgknapp4, helgknapp5, helgknapp6] = [document.getElementById('helg1'), document.getElementById('helg2'), document.getElementById('helg3'), document.getElementById('helg4'), document.getElementById('helg5'), document.getElementById('helg6')];
-// var mainContent = document.getElementById('mainContent');
+var mainContent = document.getElementById('mainContent');
 var helgwrapper = document.getElementsByClassName("helg-wrapper");
 // var helgbild = document.getElementById('helgbild');
+
+// c(window.innerHeight)
+// var visuHeight = window.innerHeight - bottom.offsetHeight
+// mainContent.style.height = visuHeight + 'px';
+// c(mainContent.offsetHeight)
 
 
 // //function for actions of the helgknapps
@@ -159,6 +164,8 @@ function autocomplete(inp, arr) {
         inpValue = $(this).val().toLowerCase();
         valueToDiv();
         blur(inp);
+        mainContent.classList.remove('full-height')
+
       }
   });
 
@@ -218,6 +225,8 @@ autocomplete(sokYrkeKnapp, yrken);
     inpValue = sokYrkeKnapp.value.toLowerCase();
     //handle search result
     valueToDiv();
+    mainContent.classList.remove('full-height')
+
   })
 
 
@@ -322,6 +331,7 @@ modebuttonLeft.addEventListener('click', function() {
   modebuttonRight.classList.add('passive');
   modebuttonLeft.classList.remove('passive');
   window.scrollTo(0, 0);
+  mainContent.classList.remove('full-height')
 })
 
 //Event listener for Alla avtal
@@ -332,6 +342,8 @@ modebuttonRight.addEventListener('click', function() {
   modebuttonLeft.classList.add('passive');
   modebuttonRight.classList.remove('passive');
   sokYrkeKnapp.value = '';
+  mainContent.classList.remove('full-height')
+
 })
 
 

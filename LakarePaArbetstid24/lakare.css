@@ -71,9 +71,13 @@ position: fixed;
   margin-left: 16.67%;
   max-width: 948px;
   width: 100%;
-  /* min-height: 300px; */
-
+  /* min-height: 800px; */
 }
+
+.full-height {
+  height: 90vh; /* 100% of the viewport height */
+}
+
 
 #header {
   position: relative;
@@ -133,6 +137,7 @@ input.yrkeInput {
 }
 
 #bottom {
+  position: relative;
   width: inherit;
   bottom: 0px;
   margin-left: 16.67%;
@@ -244,6 +249,7 @@ input {
 
   #mainContent {
     margin: 0;
+    /* min-height: 600px; */
   }
 
   #bottom {
