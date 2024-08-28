@@ -106,7 +106,6 @@ function doStuff() {
   var allaAvtal = document.getElementById('allaAvtalWrapper');
   var bottom = document.getElementById('bottom');
   var header = document.getElementById('header');
-  var mc = document.getElementById('mainContent');
   var [helgknapp1, helgknapp2, helgknapp3, helgknapp4, helgknapp5, helgknapp6] = [document.getElementById('helg1'), document.getElementById('helg2'), document.getElementById('helg3'), document.getElementById('helg4'), document.getElementById('helg5'), document.getElementById('helg6')];
   var mainContent = document.getElementById('mainContent');
   var helgwrapper = document.getElementsByClassName("helg-wrapper");
@@ -343,6 +342,8 @@ function doStuff() {
           inpValue = $(this).val().toLowerCase();
           valueToDiv();
           blur(inp);
+          mainContent.classList.remove('full-height')
+
         }
     });
 
@@ -401,6 +402,8 @@ function doStuff() {
       inpValue = sokYrkeKnapp.value.toLowerCase();
       //handle search result
       valueToDiv();
+      mainContent.classList.remove('full-height')
+
     })
 
   //Add text to page after search
@@ -416,7 +419,7 @@ function doStuff() {
         messagediv.innerHTML ='';
         var mailBody = 'Jag%20saknar%20yrkestiteln%20' + inpValue + '.%0A%0A(Mail från tjänsten OB Storhelg.)';
 
-        node.innerHTML = '<p class="paddingTop10">Vi hittade inte yrket du sökte. Tycker du att yrket ska finnas med? Mejla oss yrkestiteln så kollar vi på det. Men Kommunal har så många yrken och avtal att vi tyvärr inte kan ha med alla.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknad%20yrkestitel&body=' + mailBody + '">Skicka mejl</a>' ;
+        node.innerHTML = '<p class="paddingTop10">Vi hittade inte yrket du sökte. Tycker du att yrket ska finnas med? Mejla oss yrkestiteln så kollar vi på det. Men Kommunal har så många yrken och avtal att vi tyvärr inte kan ha med alla.</p><a class="homestyled u-textMeta u-textStrong" target="_blank" href="mailto:elin.steen@ka.se?Subject=Saknad%20yrkestitel&body=' + mailBody + '">Skicka mejl</a>' ;
       }
     document.getElementById('resultdiv').appendChild(node);
     informHeight();
@@ -531,7 +534,7 @@ function doStuff() {
     if (hittad === true) {
 
       let mailBody = '%0A%0A(Mail från tjänsten OB Storhelg.)'
-      messagediv.innerHTML += '<h3 class="u-textMetaDeca paddingTop10" style="font-weight: bold">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal&body=' + mailBody + '">Skicka mejl</a>';
+      messagediv.innerHTML += '<h3 class="u-textMetaDeca paddingTop10" style="font-weight: bold">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_blank" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal&body=' + mailBody + '">Skicka mejl</a>';
     }
 
     // messagediv.innerHTML = string;
@@ -792,6 +795,8 @@ function doStuff() {
     modebuttonRight.classList.add('passive');
     modebuttonLeft.classList.remove('passive');
     window.scrollTo(0, 0);
+    mainContent.classList.remove('full-height')
+
   })
 
   //Event listener for Alla avtal
@@ -807,6 +812,8 @@ function doStuff() {
     modebuttonLeft.classList.add('passive');
     modebuttonRight.classList.remove('passive');
     sokYrkeKnapp.value = '';
+    mainContent.classList.remove('full-height')
+
   })
 
   //function to blur i.e. remove focus from element
@@ -815,10 +822,24 @@ function doStuff() {
   }
 
   //Workaround for ios, removes focus from input field, which makes it possible to register a click outside input field. Needed to be able to click an alternative in the autocomplete suggestions list
-  function removeFocus() {
+  function removeFocus(event) {
+    if (event.target !== sokYrkeKnapp) {
       document.activeElement.blur();
     }
-  document.body.addEventListener("touchstart", removeFocus);
+  }
+
+  if (/iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
+    document.body.addEventListener("touchstart", removeFocus)
+  }
+
+  document.getElementById('sokYrkeKnapp').focus();
+
+  
+  
+  // function removeFocus() {
+  //     document.activeElement.blur();
+  //   }
+  // document.body.addEventListener("touchstart", removeFocus);
 
   //set focus on input field. Disabled because window will scroll down to show input field, and that´s not good when two articles are shown on the same page on ka.se
   // document.getElementById('sokYrkeKnapp').focus();
