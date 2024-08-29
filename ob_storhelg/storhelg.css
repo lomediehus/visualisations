@@ -134,7 +134,7 @@ h3 .fetRubrik {
 }
 
 .full-height {
-  height: 90vh; /* 90% of the viewport height */
+  height: 60vh; /* 90% of the viewport height */
 }
 
 /* .center {
@@ -218,7 +218,6 @@ input.yrkeInput {
   max-width: 948px;
   background-color: #dcebe5;
   padding: 3px;
-  float: left;
 }
 
 
