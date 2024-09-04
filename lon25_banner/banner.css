@@ -1,8 +1,9 @@
 
 #banner {
     position: fixed;
-    top: 95vh;
+    /* top: 95vh; */
     display: none;
+    bottom: 0;
 }
 
 /* #banner {
@@ -17,7 +18,7 @@
 
 .b_rect {
     width: 100vw;
-    height: 5vh;
+    height: 25px;
     background-color: #240001;
     position: relative;
     visibility: visible;

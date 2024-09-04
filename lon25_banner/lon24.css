@@ -23,6 +23,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+#maincontent {
+  overflow-y: scroll;
+  padding-bottom: 30px;
+}
+
 div#header {
   padding-bottom: 10px;
 }
