@@ -26,6 +26,7 @@ body::-webkit-scrollbar {
 #maincontent {
   overflow-y: scroll;
   padding-bottom: 30px;
+  max-height: 600px;
 }
 
 div#header {
