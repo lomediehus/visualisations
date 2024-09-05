@@ -10,7 +10,6 @@ if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
 }
 
- //array for the bar graph, declared in global scope to be used also from script "brandlon.js"
 //array for the bar graph, declared in global scope to be used also from script "brandlon.js"
 window.riksYrken = [
   {
@@ -260,7 +259,7 @@ $(document).ready(function() {
       if (yrke === "Brandman") {
         brandlondiv.style.display = "block";
         content.style.display = "none";
-        banner.style.display = "block"
+        // banner.style.display = "block"
    }
       else {
         brandlondiv.style.display = "none";
@@ -268,8 +267,8 @@ $(document).ready(function() {
         //take away overlay when a selection is made
         if (yrke != "Väljyrke") {
           overlay.style.display = "none";
-          banner.style.display = "block";
-          c(banner)
+          // banner.style.display = "block";
+          // c(banner)
           blinkcontainer.style.display = "none";
           overlay.style.cursor = "pointer";
           fillHighlowdiv();

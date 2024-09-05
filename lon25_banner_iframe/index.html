@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
   <title>Controlled Outer iframe</title>
   <style>
     body, html {
       margin: 0;
       padding: 0;
       width: 100%;
-      height: 600px;
+      height: 800px;
       overflow: hidden;
     }
 
     #contentIframe {
       width: 100%;
-      height: calc(100vh - 60px); /* Full height minus banner height */
+      height: calc(100vh - 30px); /* Full height minus banner height */
       border: none;
     }
 
@@ -24,8 +25,8 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 60px; /* Height of the banner */
-      background-color: green;
+      height: 30px; /* Height of the banner */
+      background-color: #240001;
       color: white;
       display: flex;
       justify-content: center;
@@ -40,7 +41,7 @@
   <iframe id="contentIframe" src="inner-iframe.html"></iframe>
 
   <!-- Fixed banner at the bottom of the outer iframe -->
-  <div id="banner">Sticky Banner at the Bottom</div>
+  <div id="banner" class="u-textMetaDeca">Första rubriken</div>
 
   <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
 
