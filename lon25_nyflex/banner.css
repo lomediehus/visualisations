@@ -1,0 +1,41 @@
+
+#banner {
+    position: fixed;
+    top: 95vh;
+    display: none;
+}
+
+/* #banner {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+.b_rect {
+    width: 100vw;
+    height: 5vh;
+    background-color: #240001;
+    position: relative;
+    visibility: visible;
+    display: block;
+    /* z-index: 100; */
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p.b_text {
+   color: white;
+   /* text-align: center; */
+   position: absolute;
+   font-weight: 500;
+   vertical-align: middle;
+   margin-bottom: 0;
+}
