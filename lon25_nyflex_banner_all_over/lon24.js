@@ -293,7 +293,7 @@ $(document).ready(function() {
         else if (yrke === "Väljyrke") {
           overlay.style.display = "block";
           blinkcontainer.style.display = "block";
-          banner.style.display = "none";
+          // banner.style.display = "none";
           $('#highlowdiv').hide();
           tabell.innerHTML = '';
           rikssnittp.innerHTML = '';

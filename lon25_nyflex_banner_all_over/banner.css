@@ -34,11 +34,12 @@
     height: 40px;
     background-color: #240001;
     padding: 5px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    z-index: 100;
+    z-index: 1;
     bottom: 0;             /* Stick to the bottom of the first .basecontainer */
     transform: none;       /* Remove any unnecessary transformations */
 }
