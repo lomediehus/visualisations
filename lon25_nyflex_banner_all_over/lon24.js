@@ -192,6 +192,7 @@ $(document).ready(function() {
 
     //choose yrke in list
     valjyrke.addEventListener("change", function() {
+      
 
 
       [...semitransparent].forEach(function(element){
@@ -203,6 +204,10 @@ $(document).ready(function() {
       getHighLow(yrke);
       kartpopup.style.display = "none";
       brandkartpopup.style = "none";
+
+      gsap.to("#full-banner", {
+        width: "360px"
+      })  
 
       // Select all path elements in your SVG
       let paths = d3.select("#brandkartdiv").selectAll("path");
@@ -301,6 +306,9 @@ $(document).ready(function() {
               element.style.opacity = 0.3;
               // element.classList.add('semitransparent');
             })
+          gsap.to("#full-banner", {
+            width: "100vw"
+          })  
         }
       }
 
