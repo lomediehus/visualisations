@@ -1,0 +1,55 @@
+
+/* #banner {
+    position: fixed;
+    top: 95vh;
+    display: block;
+} */
+
+/* #banner {
+    display: block;
+    position: fixed;
+    bottom: 0;
+
+    align-self: flex-end;
+} */
+
+/* #banner {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+
+
+/* Full-width box */
+.b_rect {
+    position: absolute;
+    left: 0;               /* Start from the left of the viewport */
+    width: 100vw;          /* Cover the full viewport width */
+    height: 40px;
+    background-color: #240001;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 100;
+    bottom: 0;             /* Stick to the bottom of the first .basecontainer */
+    transform: none;       /* Remove any unnecessary transformations */
+}
+
+
+p.b_text {
+   color: white;
+   color: red;
+   /* text-align: center; */
+   position: absolute;
+   font-weight: 500;
+   vertical-align: middle;
+   margin-bottom: 0;
+}

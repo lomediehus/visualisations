@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
+  <title>Controlled Outer iframe</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 800px;
+      overflow: hidden;
+    }
+
+    #contentIframe {
+      width: 100%;
+      height: calc(100vh - 30px); /* Full height minus banner height */
+      border: none;
+      /* pointer-events: none; */
+      max-height: 800px;
+      z-index: 1;
+
+    }
+
+    #banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30px; /* Height of the banner */
+      background-color: #240001;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       /* Ensure it stays on top */
+      /* z-index: 9999; */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main content iframe (innermost iframe you control) -->
+  <iframe id="contentIframe" src="inner-iframe.html"></iframe>
+
+  <!-- Fixed banner at the bottom of the outer iframe -->
+  <div id="banner" class="u-textMetaDeca">Första rubriken</div>
+
+  <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+
+
+</body>
+</html>
