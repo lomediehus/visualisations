@@ -222,6 +222,13 @@ p.bottom {
   /* max-height: 225px; */
   overflow: auto;
   position: relative;
+  max-height: 680px;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+}
+
+#mintabelldiv::-webkit-scrollbar {
+  display: none;
 }
 
 
@@ -494,9 +501,6 @@ div.sortknapp {
 }
 
 
-
-
-
 .fixed-height {
   min-height: 830px;
 }
@@ -507,7 +511,17 @@ div.sortknapp {
 
 #lonlista {
   margin-right: 30px;
+  max-height: 830px;
+  text-overflow: ellipsis;
+  /* overflow: scroll;
+  scrollbar-width: 0;   */
 }
+
+
+
+/* #lonlista::-webkit-scrollbar {
+  display: none;
+} */
 
 .pstor {
   font-size: 1.5em;
@@ -706,15 +720,31 @@ p .nomargin {
 
 
 
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 1150px) {
   /* don't use "space between" on smaller screens since it doesn't look good when the third box jumps down and leaves only two boxes visible on top */
     #content, #brandcontent {
       justify-content: flex-start; 
+    }
+
+    #mintabelldiv {
+      /* max-height: 225px; */
+      overflow: auto;
+      position: relative;
+      max-height:fit-content;
+      /* overflow-y: scroll; */
+      scrollbar-width: 0;
+    }
+
+    #lonlista {
+      max-height: fit-content;
+
     }
     /* #brandcontent {
       justify-content: flex-start; 
     } */
   }
+
+
 
   @media only screen and (max-width: 600px) {
     button.utan {

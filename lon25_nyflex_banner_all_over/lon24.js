@@ -176,6 +176,7 @@ var blinkcontainer= document.getElementById("blinkcontainer");
 var brandlondiv = document.getElementById("brandlondiv");
 var content = document.getElementById("content");
 var banner = document.getElementById("banner");
+var lonlista = document.getElementById("lonlista")
 
 function hittaBrandman(row) {
   if (row.yrke === "Brandman") {
@@ -205,9 +206,10 @@ $(document).ready(function() {
       kartpopup.style.display = "none";
       brandkartpopup.style = "none";
 
-      gsap.to("#full-banner", {
-        width: "360px"
-      })  
+      // gsap.to("#full-banner", {
+      //   width: "360px"
+      // })  
+
 
       // Select all path elements in your SVG
       let paths = d3.select("#brandkartdiv").selectAll("path");
@@ -306,9 +308,11 @@ $(document).ready(function() {
               element.style.opacity = 0.3;
               // element.classList.add('semitransparent');
             })
-          gsap.to("#full-banner", {
-            width: "100vw"
-          })  
+          // gsap.to("#full-banner", {
+          //   width: "100vw"
+          // })  
+
+
         }
       }
 
