@@ -993,7 +993,7 @@
     "rubrik": "Gratis arbetsskor till tusentals vårdanställda i Region Sörmland",
     "kategori": "arbetskläder",
     "kategori_detaljerad": "arbetsskor",
-    "ort": "Sörmland",
+    "ort": "",
     "lat": 58.7736,
     "long": 17.05867,
     "url": "https://ka.se/2024/06/14/gratis-arbetsskor-till-tusentals-vardanstallda-i-region-sormland/",
@@ -1010,5 +1010,82 @@
     "url": "https://ka.se/2024/06/13/succe-for-helgtjanster-i-aldreomsorgen-i-laholm-utokas-till-lss/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/06/12111937/laholm-skafrilaggas.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2024/06/13"
+  },
+  {
+    "rubrik": "Undersköterskan Maria jobbar 85 procent men får full lön",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstidsförkortning",
+    "ort": "Hudiksvall",
+    "lat": 61.729,
+    "long": 17.1036,
+    "url": "https://ka.se/2024/09/03/underskoterskan-maria-jobbar-85-procent-men-far-full-lon-vi-orkar-till-pensionen/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/09/02100320/hudik-1.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/09/03"
+  },
+  {
+    "rubrik": "Titti orkar jobba heltid – tack vare kortad arbetstid",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstidsförkortning",
+    "ort": "Orust",
+    "lat": 58.1736,
+    "long": 11.629,
+    "url": "https://ka.se/2024/09/09/fotskadade-underskoterskan-titti-klarar-heltid-tack-vare-kortare-arbetstid/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/09/06123608/e4a1178.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/09/09"
+  },
+  {
+    "rubrik": "Kortaste arbetstiden i landet finns i Karlsborg – Ann-Sofi jobbar 30 timmar i veckan",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstidsförkortning",
+    "ort": "Karlsborg",
+    "lat": 58.465,
+    "long": 14.5077,
+    "url": "https://ka.se/2024/09/10/ann-sofie-bytte-ob-ersattning-mot-kortare-arbetstid-aterhamtningen-ar-viktigare-an-pengarna/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/09/09124940/ann-sofie-10.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/09/10"
+  },
+  {
+    "rubrik": "Skyddsombudet Theresia slog larm om många sjuka elever – skola drabbad av svartmögel",
+    "kategori": "arbetsvillkor",
+    "kategori_detaljerad": "arbetsmiljö",
+    "ort": "Arvika",
+    "lat": 59.6553,
+    "long": 12.5852,
+    "url": "https://ka.se/2024/09/18/skyddsombudet-theresia-slog-larm-om-manga-sjuka-elever-skola-drabbat-av-mogel/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/09/17123236/mogel-sajt.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/09/18"
+  },
+  {
+    "rubrik": "Förskolepersonalen i Eda får arbetskläder som är anpassade till vädret",
+    "kategori": "arbetskläder",
+    "kategori_detaljerad": "arbetskläder",
+    "ort": "Eda",
+    "lat": 59.9315,
+    "long": 12.2997,
+    "url": "https://ka.se/2024/09/19/forskolepersonalen-i-eda-far-arbetsklader-som-ar-anpassade-till-vadret/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2023/01/17132050/ka-forskolasjoboarbetsklader-ub.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/09/19"
+  },
+  {
+    "rubrik": "Undersköterskan Zaklina blev av med delade turer efter 11 år",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "schema",
+    "ort": "Skänninge",
+    "lat": 58.3925,
+    "long": 15.0862,
+    "url": "https://ka.se/2024/09/19/underskoterskan-zaklina-blev-av-med-delade-turer-efter-11-ar-det-ar-underbart/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/09/19153027/sajten-1.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/09/19"
+  },
+  {
+    "rubrik": "Här får undersköterskorna betalt för att vila",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstidsförkortning",
+    "ort": "Norrköping",
+    "lat": 58.5942,
+    "long": 16.1826,
+    "url": "https://ka.se/2024/09/30/har-far-underskoterskorna-betalt-for-att-vila-sjukhus-kunde-utfora-fler-operationer/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/09/27110146/vrinnevisjuhuset-5.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/09/30"
   }
 ]
