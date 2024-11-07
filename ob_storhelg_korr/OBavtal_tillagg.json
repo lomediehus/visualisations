@@ -1,7 +1,7 @@
 [{
 		"avtalnr": 10,
 		"helg1": {
-			"fall1": "Max 114,84 kr/tim från klockan 07.00 på julafton till klockan 00.00 vardagen närmast efter helgen, alltså onsdagen 27 december. (Månadslönen på heltid dividerat med 200, med ett tak på 22&#8239;967 kr/månad.)",
+			"fall1": "Max 118,86 kr/tim från klockan 07.00 på julafton till klockan 00.00 vardagen närmast efter helgen, alltså fredagen 27 december. (Månadslönen på heltid dividerat med 200, med ett tak på 23&#8239;771 kr/månad.)",
 			"fall2": "",
 			"fall3": "",
 			"fall4": "",
@@ -9,10 +9,10 @@
 			"fall2divisor": "",
 			"fall3divisor": "",
 			"fall4divisor": "",
-			"tak": 22967
+			"tak": 23771
 			},
 		"helg2": {
-			"fall1": "Max 114,84 kr/tim från klockan 07.00 på nyårsafton till klockan 00.00 vardagen närmast efter helgen, alltså tisdagen den 2 januari.(Månadslönen på heltid dividerat med 200, med ett tak på 22&#8239;967 kr/månad.)",
+			"fall1": "Max 118,86 kr/tim från klockan 07.00 på nyårsafton till klockan 00.00 vardagen närmast efter helgen, alltså torsdagen den 2 januari. (Månadslönen på heltid dividerat med 200, med ett tak på 23&#8239;771 kr/månad.)",
 			"fall2": "",
 			"fall3": "",
 			"fall4": "",
@@ -20,10 +20,10 @@
 			"fall2divisor": "",
 			"fall3divisor": "",
 			"fall4divisor": "",
-			"tak": 22967
+			"tak": 23771
 			},
 		"helg3": {
-			"fall1": "Max 114,84 kr/tim från klockan 06.00 på trettondag jul till klockan 00.00 måndagen den 8 januari. (Månadslönen på heltid dividerat med 200, med ett tak på 22&#8239;967 kr/månad.)",
+			"fall1": "118,86 kr/tim från klockan 06.00 på trettondagen till klockan 00.00 tisdagen den 7 januari. (Månadslönen på heltid dividerat med 200, med ett tak på 23&#8239;771 kr/månad.)",
 			"fall2": "",
 			"fall3": "",
 			"fall4": "",
@@ -31,7 +31,7 @@
 			"fall2divisor": "",
 			"fall3divisor": "",
 			"fall4divisor": "",
-			"tak": 22967
+			"tak": 23771
 			},
 		"helg4": {
 			"fall1": "Max 114,84 kr/tim från klockan 18.00 på skärtorsdagen till klockan 24.00 annandag påsk. OBS! Lokal eller individuell överenskommelse kan träffas. (Månadslönen på heltid dividerat med 200, med ett tak på 22&#8239;967 kr/månad.)",
@@ -55,15 +55,15 @@
 			"fall4divisor": "",
 			"tak": 21629
 			},
-			"helg6": {
-				"fall1": "Max 114,84 kr/tim från klockan 07.00 på midsommarafton till klockan 00.00 vardagen närmast efter helgen, alltså måndagen 24 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 22&#8239;967 kr/månad.)",
-				"fall2": "",
-				"fall3": "",
-				"fall4": "",
-				"fall1divisor": 200,
-				"fall2divisor": "",
-				"fall3divisor": "",
-				"fall4divisor": "",
-				"tak": 22967
-			}
+		"helg6": {
+			"fall1": "Max 114,84 kr/tim från klockan 07.00 på midsommarafton till klockan 00.00 vardagen närmast efter helgen, alltså måndagen 24 juni. (Månadslönen på heltid dividerat med 200, med ett tak på 22&#8239;967 kr/månad.)",
+			"fall2": "",
+			"fall3": "",
+			"fall4": "",
+			"fall1divisor": 200,
+			"fall2divisor": "",
+			"fall3divisor": "",
+			"fall4divisor": "",
+			"tak": 22967
+		}
 		  }]

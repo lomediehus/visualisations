@@ -106,7 +106,6 @@ function doStuff() {
   var allaAvtal = document.getElementById('allaAvtalWrapper');
   var bottom = document.getElementById('bottom');
   var header = document.getElementById('header');
-  var mc = document.getElementById('mainContent');
   var [helgknapp1, helgknapp2, helgknapp3, helgknapp4, helgknapp5, helgknapp6] = [document.getElementById('helg1'), document.getElementById('helg2'), document.getElementById('helg3'), document.getElementById('helg4'), document.getElementById('helg5'), document.getElementById('helg6')];
   var mainContent = document.getElementById('mainContent');
   var helgwrapper = document.getElementsByClassName("helg-wrapper");
@@ -122,9 +121,14 @@ function doStuff() {
   let helgord = document.getElementById("word");
 
 
+  // var knapp = `
+  //   <p><input class="pengar u-textMeta" type="text" name="pengar" placeholder="Månadslön"><button type="button" id="countButton" class="u-textMeta u-textStrong Button countButton lessPadding">Räkna ut</button></p>
+  //   `;
+
   var knapp = `
-    <p><input class="pengar u-textMeta" type="text" name="pengar" placeholder="Månadslön"><button type="button" id="countButton" class="u-textMeta u-textStrong Button countButton lessPadding">Räkna ut</button></p>
-    `;
+  <p><input id="manadslon" class="pengar u-textMeta" type="text" name="pengar" placeholder="Månadslön"></p>
+  `;
+
   var helgvarre;
 
   //Setting initial position of the div mainContent
@@ -139,9 +143,9 @@ function doStuff() {
   //Variable for current date
   var date = new Date();
   //variables for set dates
-  var juldatum = new Date("November 22 2023")
-  var nyarsdatum = new Date("December 27 2023");
-  var trettonhelgsdatum = new Date("January 2 2024");
+  var juldatum = new Date("November 07 2024")
+  var nyarsdatum = new Date("December 27 2024");
+  var trettonhelgsdatum = new Date("January 2 2025");
   var paskdatum = new Date("February 21 2024");
   var pingstdatum = new Date("April 22 2023");
 
@@ -153,7 +157,6 @@ function doStuff() {
   //handling dates:
   //Check if current date is after jul;
   if (date.getTime() > trettonhelgsdatum.getTime()) {
-    c("efter trettonhelgen")
     //if current date is also after nyar
     if (date.getTime() > midsommardatum.getTime()) {
       document.getElementById("helgbild").src = 'midsommar.svg';
@@ -215,13 +218,10 @@ function doStuff() {
     document.getElementById("helgbild").src = 'midsommar.svg';
   });
 
-  //function for actions of the helgknapps
+  //function for actions of the helgknapps. The class 'updated' is added manually in the index.html file
   function helgknapp(clicked) {
-    c(!clicked.classList.contains("updated"))
     let width = header.offsetWidth;
     let left = (header.offsetWidth - 300) / 2;
-    c(left)
-    c(clicked.innerHTML)
 
     if (!clicked.classList.contains("updated")){
       popup_passed.style.display = "block";
@@ -342,6 +342,8 @@ function doStuff() {
           inpValue = $(this).val().toLowerCase();
           valueToDiv();
           blur(inp);
+          mainContent.classList.remove('full-height')
+
         }
     });
 
@@ -400,6 +402,8 @@ function doStuff() {
       inpValue = sokYrkeKnapp.value.toLowerCase();
       //handle search result
       valueToDiv();
+      mainContent.classList.remove('full-height')
+
     })
 
   //Add text to page after search
@@ -413,8 +417,9 @@ function doStuff() {
       //give error message
       else {
         messagediv.innerHTML ='';
-        var mailBody = 'Jag%20saknar%20yrkestiteln%20' + inpValue + '.';
-        node.innerHTML = '<p class="paddingTop10">Vi hittade inte yrket du sökte. Tycker du att yrket ska finnas med? Mejla oss yrkestiteln så kollar vi på det. Men Kommunal har så många yrken och avtal att vi tyvärr inte kan ha med alla.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknad%20yrkestitel&body=' + mailBody + '">Skicka mejl</a>' ;
+        var mailBody = 'Jag%20saknar%20yrkestiteln%20' + inpValue + '.%0A%0A(Mail från tjänsten OB Storhelg.)';
+
+        node.innerHTML = '<p class="paddingTop10">Vi hittade inte yrket du sökte. Tycker du att yrket ska finnas med? Mejla oss yrkestiteln så kollar vi på det. Men Kommunal har så många yrken och avtal att vi tyvärr inte kan ha med alla.</p><a class="homestyled u-textMeta u-textStrong" target="_blank" href="mailto:elin.steen@ka.se?Subject=Saknad%20yrkestitel&body=' + mailBody + '">Skicka mejl</a>' ;
       }
     document.getElementById('resultdiv').appendChild(node);
     informHeight();
@@ -527,7 +532,9 @@ function doStuff() {
       }
     }
     if (hittad === true) {
-      messagediv.innerHTML += '<h3 class="u-textMetaDeca paddingTop10" style="font-weight: bold">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_parent" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal">Skicka mejl</a>';
+
+      let mailBody = '%0A%0A(Mail från tjänsten OB Storhelg.)'
+      messagediv.innerHTML += '<h3 class="u-textMetaDeca paddingTop10" style="font-weight: bold">Finns inte ditt avtal?</h3><p>Finns ditt yrke i listan men ditt avtal kommer inte upp? Mejla oss din yrkestitel och vilket avtal du tillhör så kollar vi på det.</p><a class="homestyled u-textMeta u-textStrong" target="_blank" href="mailto:elin.steen@ka.se?Subject=Saknat%20avtal&body=' + mailBody + '">Skicka mejl</a>';
     }
 
     // messagediv.innerHTML = string;
@@ -547,9 +554,9 @@ function doStuff() {
         siffra = e.target.value;
 
         //if enter is pressed
-        if (e.keyCode == 13) {
+        // if (e.keyCode == 13) {
           checkInput(siffra, target);
-        }
+        // }
       }
   }, false);
 
@@ -584,6 +591,10 @@ function doStuff() {
       //if input is number, divide it. The function dividedToDiv is invoked from within the divideSalary function.
       divideSalary(divisorAttr);
     }
+    //if input is an empty string, hide the div that shows the calculated result. Happens when you erase the last numer with backspace.
+    else if (input === ''){
+      $('#div0').hide()
+    }
     else if (isNaN(input)) {
       input = 'tom';
       //if input is not a number, skip division and move directly to the function dividedToDiv. Will give error message.
@@ -613,6 +624,12 @@ function doStuff() {
   //Appending a textnode with the calculated result in a div, also checking if its a number
   function dividedToDiv(nodecontent) {
     var dividedResultHere = document.getElementsByClassName('counter');
+    c("a")
+    c(document.getElementById("manadslon").value)
+    if (document.getElementById("manadslon").value == '') {
+      // c("värdet" + document.getElementById("manadslon").value)
+      c("dostuff")
+    }
     for (let i = 0; i < nodecontent.length; i++) {
       var tobedeleted = document.getElementById('div' + i)
       if (tobedeleted !== null) {
@@ -643,8 +660,18 @@ function doStuff() {
 
 
         $('#div0').hide().fadeIn();
- }
+        // $('#div0').hide()
 
+        }
+
+        if (document.getElementById("manadslon").value == '') {
+          // c("värdet" + document.getElementById("manadslon").value)
+          c("dostuff")
+        }
+
+          // $('#div0').hide()
+        
+     
       //empty array before next round
       divisorAttr = [];
       //resize visualisation frame
@@ -768,6 +795,8 @@ function doStuff() {
     modebuttonRight.classList.add('passive');
     modebuttonLeft.classList.remove('passive');
     window.scrollTo(0, 0);
+    mainContent.classList.remove('full-height')
+
   })
 
   //Event listener for Alla avtal
@@ -782,6 +811,9 @@ function doStuff() {
     allaAvtal.style.display = "block";
     modebuttonLeft.classList.add('passive');
     modebuttonRight.classList.remove('passive');
+    sokYrkeKnapp.value = '';
+    mainContent.classList.remove('full-height')
+
   })
 
   //function to blur i.e. remove focus from element
@@ -790,10 +822,24 @@ function doStuff() {
   }
 
   //Workaround for ios, removes focus from input field, which makes it possible to register a click outside input field. Needed to be able to click an alternative in the autocomplete suggestions list
-  function removeFocus() {
+  function removeFocus(event) {
+    if (event.target !== sokYrkeKnapp) {
       document.activeElement.blur();
     }
-  document.body.addEventListener("touchstart", removeFocus);
+  }
+
+  if (/iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
+    document.body.addEventListener("touchstart", removeFocus)
+  }
+
+  document.getElementById('sokYrkeKnapp').focus();
+
+  
+  
+  // function removeFocus() {
+  //     document.activeElement.blur();
+  //   }
+  // document.body.addEventListener("touchstart", removeFocus);
 
   //set focus on input field. Disabled because window will scroll down to show input field, and that´s not good when two articles are shown on the same page on ka.se
   // document.getElementById('sokYrkeKnapp').focus();
