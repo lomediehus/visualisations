@@ -32,8 +32,8 @@
             "branschnr": "2",
             "bransch": "Räddningstjänsten",
             "avtalsrubrik": "Avtalet med SKR, Sveriges Kommuner och Regioner",
-            "jul": "122,70 kr/tim från klockan 18.00 kvällen före julafton till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså fredagen den 27 december i år.\r\n147,30 kr/tim (natt-ob) mellan klockan 22.00 och 06.00 på natten mot julaftonen, juldagen och annandagen.OBS! Andra regler för deltidsbrandmän.",
-            "nyar": "122,70 kr/tim från klockan 18.00 kvällen före nyårsafton till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså torsdagen den 2 januari.\r\n147,30 kr/tim (natt-ob) mellan klockan 22.00 och 06.00 på natten mot nyårsaftonen och nyårsdagen.OBS! Andra regler för deltidsbrandmän.",
+            "jul": "122,70 kr/tim från klockan 18.00 kvällen före julafton till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså fredagen den 27 december i år.\r\n147,30 kr/tim (natt-ob) mellan klockan 22.00 och 06.00 på natten mot julaftonen, juldagen och annandagen.\r\nOBS! Andra regler för deltidsbrandmän.",
+            "nyar": "122,70 kr/tim från klockan 18.00 kvällen före nyårsafton till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså torsdagen den 2 januari.\r\n147,30 kr/tim (natt-ob) mellan klockan 22.00 och 06.00 på natten mot nyårsaftonen och nyårsdagen.\r\nOBS! Andra regler för deltidsbrandmän.",
             "trettonhelg": "Vanlig helg i avtalet. I räddningstjänsten har man ett schablon-ob-tillägg för alla helger förutom storhelgerna: 4 082 kr/mån.\r\nOBS! Andra regler för deltidsbrandmän.",
             "pask": "118,80 kr/tim från klockan 00.00 på långfredagen till klockan 24.00 annandag påsk. OBS Nytt avtal den 1 april, det betyder att beloppet för 1 april kan ändras.\r\n142,60 kr/tim (natt-ob) mellan klockan 00.00 och 06.00 på natten mot långfredagen, påskaftonen, påskdagen och annandag påsk. OBS Nytt avtal den 1 april, det betyder att beloppet för 1 april kan ändras. Efter överenskommelse mellan arbetstagaren och arbetsgivaren kan obekväm arbetstid ersättas med ledighet.",
             "pingst": "Inget särskilt storhelgstillägg under pingst. Vanligt helg-ob gäller.",
@@ -46,8 +46,8 @@
             "branschnr": "2",
             "bransch": "Räddningstjänsten",
             "avtalsrubrik": "Avtalet med Sobona",
-            "jul": "122,70 kr/tim från klockan 18.00 kvällen före julafton till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså fredagen den 27 december i år.\r\n147,30 kr/tim (natt-ob) mellan klockan 22.00 och 06.00 på natten mot julaftonen, juldagen och annandagen.OBS! Andra regler för deltidsbrandmän.",
-            "nyar": "122,70 kr/tim från klockan 18.00 kvällen före nyårsafton till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså torsdagen den 2 januari.\r\n147,30 kr/tim (natt-ob) mellan klockan 22.00 och 06.00 på natten mot nyårsaftonen och nyårsdagen.OBS! Andra regler för deltidsbrandmän.",
+            "jul": "122,70 kr/tim från klockan 18.00 kvällen före julafton till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså fredagen den 27 december i år.\r\n147,30 kr/tim (natt-ob) mellan klockan 22.00 och 06.00 på natten mot julaftonen, juldagen och annandagen.\r\nOBS! Andra regler för deltidsbrandmän.",
+            "nyar": "122,70 kr/tim från klockan 18.00 kvällen före nyårsafton till klockan 07.00 på vardagen närmast efter helgdagsafton, alltså torsdagen den 2 januari.\r\n147,30 kr/tim (natt-ob) mellan klockan 22.00 och 06.00 på natten mot nyårsaftonen och nyårsdagen.\r\nOBS! Andra regler för deltidsbrandmän.",
             "trettonhelg": "Vanlig helg i avtalet. I räddningstjänsten har man ett schablon-ob-tillägg för alla helger förutom storhelgerna: 4 082 kr/mån.\r\nOBS! Andra regler för deltidsbrandmän.",
             "pask": "118,80 kr/tim från klockan 00.00 på långfredagen till klockan 24.00 annandag påsk. OBS Nytt avtal den 1 april, det betyder att beloppet för 1 april kan ändras.\r\n142,60 kr/tim (natt-ob) mellan klockan 00.00 och 06.00 på natten mot långfredagen, påskaftonen, påskdagen och annandag påsk. OBS Nytt avtal den 1 april, det betyder att beloppet för 1 april kan ändras. Efter överenskommelse mellan arbetstagaren och arbetsgivaren kan obekväm arbetstid ersättas med ledighet.",
             "pingst": "Inget särskilt storhelgstillägg under pingst. Vanligt helg-ob gäller.",
@@ -145,7 +145,7 @@
             "bransch": "Personliga assistenter, ej kommunanställda",
             "avtalsrubrik": "Avtalet med Fremia",
             "jul": "119,85 kr/tim från klockan 18.00 kvällen före julafton till klockan 07.00 vardagen närmast efter helgdagsafton, alltså fredagen den 27 december i år. Ersättning för ob-tid kan efter en överenskommelse lokalt ingå i månadslön eller ges som ett fast tillägg per månad eller annan period. ",
-            "nyar": "119,85 kr/tim från klockan 18.00 kvällen före nyårsafton till klockan 24.00 på nyårsafton. 123,81 kr/tim från klockan 00.00 på nyårsdagen till 07.00 vardagen närmast efter helgdagsafton, alltså torsdagen den 2 januari. OBS! Ersättning för ob-tid kan efter en individuell överenskommelse bytas ut mot ett fast tillägg per månad.",
+            "nyar": "119,85 kr/tim från klockan 18.00 kvällen före nyårsafton till klockan 24.00 på nyårsafton. \r\n123,81 kr/tim från klockan 00.00 på nyårsdagen till 07.00 vardagen närmast efter helgdagsafton, alltså torsdagen den 2 januari. OBS! Ersättning för ob-tid kan efter en individuell överenskommelse bytas ut mot ett fast tillägg per månad.",
             "trettonhelg": "61,81 kr/tim (ob för helg) södagen den 5 januari till klockan 07.00 tisdagen den 7 januari. Ersättning för ob-tid kan efter en överenskommelse lokalt ingå i månadslön eller ges som ett fast tillägg per månad eller annan period.",
             "pask": "119,85 kr/tim från klockan 18.00 på skärtorsdagen till klockan 07.00 dagen efter annandag påsk, alltså tisdagen den 2 april i år. Ersättning för ob-tid kan efter en överenskommelse lokalt ingå i månadslön eller ges som ett fast tillägg per månad eller annan period. ",
             "pingst": "113,09 kr/tim från klockan 18.00 dagen före pingstafton till klockan 07.00 vardagen närmast efter helgdagsaftonen. Pingstafton är lördag 4 juni och följs i år av först av söndagen 5 juni och därefter nationaldagen 6 juni, som också är en röd dag. Tillägget gäller alltså till tisdagen 7 juni.",
@@ -223,34 +223,8 @@
             "knapp": "nej",
             "yrke": "buss övriga,bussförare,busschaufför,chaufför,garagepersonal,lokalvårdare,mekaniker,motorfordonsmekaniker,reparatör,spårvagnsförare,verkstadspersonal"
         },
-        {
-            "avtalnr": "18",
-            "branschnr": "9",
-            "bransch": "Anställda i jordbruk",
-            "avtalsrubrik": "Avtalet med Gröna Arbetsgivare (Lantbruk, djurparker och vattenbruk)",
-            "jul": "113,00 kr/tim på julafton, juldagen och annandag jul.",
-            "nyar": "113,00 kr/tim på nyårsafton och nyårsdagen.",
-            "trettonhelg": "70 kr/tim på trettondagen före klockan 06.00.\r\n57 kr/tim på trettondagen mellan klockan 06.00 och 17.30.\r\n70 kr/tim på trettondagen efter klockan 17.30.",
-            "pask": "113,00 kr/tim på långfredagen, påskafton, påskdagen och annandag påsk. ",
-            "pingst": "106,00 kr/tim på pingstafton, pingstdagen och nationaldagen.",
-            "midsommar": "113,00 kr/tim på midsommarafton och midsommardagen.",
-            "knapp": "nej",
-            "yrke": "arbetsledare,avbytare,djurskötare,lantarbetare,maskinförare,maskinskötare,reparatör,traktorförare"
-        },
-        {
-            "avtalnr": "19",
-            "branschnr": "10",
-            "bransch": "Anställda i hästbranschen",
-            "avtalsrubrik": "Avtalen med Almega Tjänsteföretagen",
-            "jul": "Hästskötare och övrig personal hos trav- och galopptränare:\r\n100 procent övertidsersättning då julafton och juldagen är fridagar.\r\n42 kr/tim på annandag jul.\r\nBanarbetare vid travbanor:\r\n100 procent övertidsersättning på julafton som är en fridag.\r\n60 kr/tim på juldagen och annandag jul.\r\nHästskötare vid travskolor:\r\n100 procent övertidsersättning på julafton och juldagen som är fridagar.\r\n43 kr/tim på annandag jul.\r\nRidinstruktörer/ridlärare, hästskötare och övrig personal hos ridhusföretag:\r\n100 procent övertidsersättning på julafton och juldagen som är fridagar.\r\n47 kr/tim på annandagen.",
-            "nyar": "Hästskötare och övrig personal hos trav- och galopptränare:\r\n100 procent övertidsersättning då nyårsafton och nyårsdagen är fridagar. \r\nBanarbetare vid travbanor:\r\n100 procent övertidsersättning på nyårsafton och nyårsdagen som är fridagar.\r\nHästskötare vid travskolor:\r\n100 procent övertidsersättning på nyårsafton och nyårsdagen som är fridagar.\r\nRidinstruktörer/ridlärare, hästskötare och övrig personal hos ridhusföretag:\r\n100 procent övertidsersättning på nyårsafton och nyårsdagen som är fridagar.",
-            "trettonhelg": "Hästskötare och övrig personal hos trav- och galopptränare:\r\n42 kr/tim på trettondag jul den 6 januari.\r\nBanarbetare vid trav- och galoppbanor:\r\n60 kr/tim på trettondag jul den 6 januari.\r\nHästskötare vid travskolor:\r\n43 kr/tim på trettondag jul den 6 januari.\r\nRidinstruktörer/ridlärare, hästskötare och övrig personal hos ridhusföretag:\r\n47 kr/tim på trettondag jul den 6 januari.",
-            "pask": "Hästskötare och övrig personal hos trav- och galopptränare: 100 procent övertidsersättning på långfredagen och påskdagen som är fridagar. 42 kr/tim på påskafton och annandag påsk.\r\nBanarbetare vid travbanor: 100 procent övertidsersättning på påskdagen som är en fridag. 60 kr/tim på långfredagen, påskafton och annandagpåsk.\r\nRidinstruktörer/ridlärare, hästskötare och övrig personal hos ridhusföretag: 47 kr/tim på långfredagen.100 procent övertidsersättning efter kl 12.00 på påskafton och hela påskdagen som då räknas som fridagar. 47 kr/tim på annandagpåsk.",
-            "pingst": "Hästskötare och övrig personal hos trav- och galopptränare:\r\n40 kr/tim på pingstafton.\r\n100 procent övertidsersättning på pingstdagen som är fridag.\r\nBanarbetare vid travbanor:\r\n58 kr/tim på pingstafton och pingstdagen.\r\nHästskötare vid travskolor:\r\n41 kr/tim på pingstafton.\r\n100 procent övertidsersättning på pingstdagen som är fridag.\r\nRidinstruktörer/ridlärare, hästskötare och övrig personal hos ridhusföretag:\r\n100 procent övertidsersättning på pingstafton som är fridag.\r\n45 kr/tim på pingstdagen.",
-            "midsommar": "Ridinstruktör/ridlärare, hästskötare och övrig personal hos ridhusföretag:\r\n100 procent extra i lön (övertidsersättning) på midsommarafton och midsommardagen.\r\nHästskötare och övrig personal hos trav- och galopptränare:\r\n100 procent extra i lön (övertidsersättning) på midsommarafton och midsommardagen.\r\nBanarbetare travbanor:\r\n100 procent extra i lön (övertidsersättning) på midsommarafton.\r\n62 kr/tim på midsommardagen.\r\nTravskolor:\r\n100 procent extra i lön (övertidsersättning) på midsommarafton och midsommardagen.",
-            "knapp": "nej",
-            "yrke": "banarbetare,hästskötare,ridlärare"
-        },
+        
+        
         {
             "avtalnr": "20",
             "branschnr": "11",
@@ -278,17 +252,5 @@
             "midsommar": "100,97 kr/tim från klockan 06.00 på midsommarafton till klockan 06.00 vardagen efter helgdagsaftonen, alltså måndagen den 24 juni.",
             "knapp": "nej",
             "yrke": "lokalvårdare,städare"
-        },
-        {
-            "branschnr": "13",
-            "bransch": "Anställda i djursjukvård",
-            "avtalsrubrik": "Avtalet med Gröna Arbetsgivare (Djursjukvård)",
-            "jul": "98,17 kr/tim från klockan 22.00 kvällen före julafton till klockan 06.30 på dagen närmast efter storhelgen, alltså onsdagen den 27 december i år.",
-            "nyar": "98,17 kr/tim från klockan 22.00 kvällen före nyårsafton till klockan 06.30 på dagen närmast efter storhelgen, alltså tisdagen den 2 januari 2024.",
-            "trettonhelg": "65,46 kr/tim från klockan 22.00 på fredagen den 5 januari till klockan 06.30 måndagen den 8 januari.",
-            "pask": "98,17 kr/tim från klockan 22.00 på skärtorsdagen till klockan 06.30 dagen efter annandag påsk, alltså tisdagen den 2 april i år. ",
-            "pingst": "Inget särskilt storhelgstillägg under pingst. Vanligt helg-ob gäller.",
-            "midsommar": "98,17 kr/tim från klockan 22.00 dagen före midsommarafton till klockan 06.30 dagen efter storhelgen, alltså söndagen den 23 juni.",
-            "yrke": "djurvårdare,legitimerad djursjukskötare"
         }
     ]
