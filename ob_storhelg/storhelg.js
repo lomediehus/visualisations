@@ -143,9 +143,9 @@ function doStuff() {
   //Variable for current date
   var date = new Date();
   //variables for set dates
-  var juldatum = new Date("November 22 2023")
-  var nyarsdatum = new Date("December 27 2023");
-  var trettonhelgsdatum = new Date("January 2 2024");
+  var juldatum = new Date("November 07 2024")
+  var nyarsdatum = new Date("December 27 2024");
+  var trettonhelgsdatum = new Date("January 2 2025");
   var paskdatum = new Date("February 21 2024");
   var pingstdatum = new Date("April 22 2023");
 
