@@ -8,6 +8,7 @@ if (host.includes("github")) {
   c("Jag hittade den! Den var på github!")
 }
 
+
 var cirkeldata;
 // var loader = document.getElementById("loader");
 
@@ -105,6 +106,9 @@ function clicked(d,i) {
 
 document.addEventListener("DOMContentLoaded", function() {
 
+  //Change to "display: none" to hide the radiobuttons
+  d3.select("#radiobuttons").style("display", "block")
+
     var w = 264;
     var h = 450;
     var svg = d3.select('div#kartdiv').append('svg').attr("preserveAspectRatio", "xMinYMin meet").attr("id","svgel").attr("viewBox", "0 0 " + w + " " + h).classed("svg-content", true);
@@ -130,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // .attr("class", "semitransparent")
             .attr("fill", "#87b8b8")
             .attr("d", bana)
+            .attr("class","shadow")
    
         //Nesting the circle-drawing to ensure they are drawn after the map is drawn.
         var datafile = d3.json("framgang.json");
@@ -157,6 +162,8 @@ document.addEventListener("DOMContentLoaded", function() {
               //Checks if there is a valid date. Returns true if date/category is 'null', meaning it will not filter out any dates/categories.
               const dateMatches = date ? item.datum > date : true;
               const categoryMatches = category ? item.kategori === category : true;
+
+
 
               // return item.datum > date && item.kategori == category
               return dateMatches && categoryMatches;
@@ -229,6 +236,26 @@ document.addEventListener("DOMContentLoaded", function() {
             // d3.select(this).attr("r", 5).style("fill", "#d00f00");
             hideTooltip()
             });
+
+            // Add text above the circle with "ort": "Sverige"
+            var specificCircle = result.filter(function(d) { return d.ort === "Sverige"; })[0];
+
+            if (specificCircle) {
+              svg
+                .append("text")
+                .attr("x", function() {
+                  return projection([specificCircle.long, specificCircle.lat])[0] + 150;
+                })
+                .attr("y", function() {
+                  return projection([specificCircle.long, specificCircle.lat])[1] - radius - 5; // Adjust the position above the circle
+                })
+                .attr("text-anchor", "start")
+                .text("Hela landet")
+                .attr("class", "sverige u-textMetaDeca"); // Add a class for styling if needed
+            }
+
+
+
 
             //Get the elements with class "checkbox", they are defined in the html file. Assign their value to the var "value"            
             d3.selectAll(".checkbox").on("click", function(){

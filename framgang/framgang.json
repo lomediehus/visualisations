@@ -574,7 +574,7 @@
   {
     "rubrik": "Här höjs ob:et med 100 procent",
     "kategori": "lön",
-    "kategori_detaljerad": "lön",
+    "kategori_detaljerad": "ob",
     "ort": "Norrbotten",
     "lat": 65.95726971,
     "long": 19.30122374,
@@ -1087,5 +1087,61 @@
     "url": "https://ka.se/2024/09/30/har-far-underskoterskorna-betalt-for-att-vila-sjukhus-kunde-utfora-fler-operationer/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/09/27110146/vrinnevisjuhuset-5.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2024/09/30"
+  },
+ 
+  {
+    "rubrik": "Efter KA:s granskning: Här ska lönerna öka för de som tjänar minst",
+    "kategori": "lön",
+    "kategori_detaljerad": "lön",
+    "ort": "Olofström",
+    "lat": 56.2718,
+    "long": 14.5289,
+    "url": "https://ka.se/2024/11/25/efter-kas-granskning-har-ska-lonerna-oka-for-de-som-tjanar-minst/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/11/22151816/hampusolofsson-sajt.jpeg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/11/25"
+  },
+  {
+    "rubrik": "Marie och kollegorna får fortsätta med kortare arbetstid: ”Roligt att gå till jobbet”",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstidsförkortning",
+    "ort": "Borgholm",
+    "lat": 56.8752,
+    "long": 16.6655,
+    "url": "https://ka.se/2024/10/09/marie-och-kollegorna-kan-fa-fortsatta-med-kortare-arbetstid-roligt-att-ga-till-jobbet/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/10/07101854/borgholm.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/10/09"
+  },
+  {
+    "rubrik": "”Vi ska inte förstöra våra kroppar” – hundratals undersköterskor får kortad arbetstid",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstidsförkortning",
+    "ort": "Region Stockholm",
+    "lat": 59.3094,
+    "long": 18.0564,
+    "url": "https://ka.se/2024/10/25/vi-ska-inte-forstora-vara-kroppar-hundratals-underskoterskor-far-kortad-arbetstid/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/10/23101058/joar.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=3++",
+    "datum": "2024/10/25"
+  },
+  {
+    "rubrik": "Pajala dubblar ob-ersättningen i äldreomsorgen",
+    "kategori": "lön",
+    "kategori_detaljerad": "ob",
+    "ort": "Pajala",
+    "lat": 67.2149,
+    "long": 23.3662,
+    "url": "https://ka.se/2024/10/29/pajala-dubblar-ob-ersattningen-i-aldreomsorgen/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/10/28095005/pajala-anna-karindrugge.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/10/29"
+  },
+  {
+    "rubrik": "Skyddsombudet Louise motarbetades av chefen – får 30 000 kronor i skadestånd",
+    "kategori": "arbetsvillkor",
+    "kategori_detaljerad": "förtroendevald",
+    "ort": "",
+    "lat": 58.359,
+    "long": 12.337,
+    "url": "https://ka.se/2024/11/18/skyddsombudet-louise-motarbetades-av-chefen-far-30-000-kronor-i-skadestand/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/11/18110348/louise-skyddsombud.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/11/18"
   }
 ]

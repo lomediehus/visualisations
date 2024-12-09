@@ -51,6 +51,7 @@ body::-webkit-scrollbar {
   /* padding: 10px; */
   z-index: 10;
   line-height: 5%;
+  display: none;
 }
 
 form.kategori {
@@ -142,8 +143,22 @@ svg {
   position: absolute;
   width: 800px;
   /* right: 3px; */
+  /* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1)); */
+}
+
+.shadow{
+
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
   -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+}
+
+svg text.sverige {
+  font-size: 12px;
+  font-weight: bold;
+  fill: black;
+  /* font-stretch: ultra-condensed; */
+  transform: scaleX(0.5);
 }
 
 #kartpopup {
@@ -177,7 +192,9 @@ svg {
 
 
 circle.cirkel:hover {
-    fill: white;
+    /* fill: white; */
+    fill: #CBC3E3;
+
 }
 
 /* .pulse {
