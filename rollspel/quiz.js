@@ -104,7 +104,7 @@ var questions = [
         fraga: "Du lanserar webbportalen 'Folkets kanon', där alla kan lämna förslag på vad som ska ingå i Sveriges kanon, men du är rejält försenad. Vad gör du?",
         alternativ: [
             ["Använder insikten från din webbportal för att presentera en bred och folklig kanon.", 10],
-            ["Prata med den komité du fortfarande inte sammankallat några möten med.", 11]
+            ["Prata med den kommitté du fortfarande inte sammankallat några möten med.", 11]
         ],
         rattSvar: "",
         explainer: "",
@@ -530,8 +530,8 @@ var done = {
 
         return m("div.container", [
             m("p.u-textMeta.u-spacingTopM", m.trust(questions[testIndex].rubrik)),
-            m("p.textBlock.u-textMetaDeca.u-spacingTopM.speech-bubble", m.trust(questions[testIndex].fraga)),
             m("img.questionImg", {src: "bilder/kanon2.webp", id: "image"}),
+            m("p.textBlock.u-textMetaDeca.u-spacingTopM.speech-bubble", m.trust(questions[testIndex].fraga)),
             m("p.u-textRight.u-textMeta.u-spacingBottomM", " "),
             m("div.buttondiv",
             m("button.Button.u-spacingTopM.u-spacingRightS", {
