@@ -1,0 +1,169 @@
+/* === Root Variables === */
+:root {
+    --bg-color: #7a1f10; /* Dark red background */
+    --text-color: #f9f8f2; /* Off-white text */
+    --button-color: #ee492e; /* Bright red buttons */
+    --button-hover-color: #d13d29; /* Slightly darker red for hover */
+    --button-text-color: #f9f8f2; /* Button text color */
+    --alternative-color: #f2f2f2; /* Alternative button background */
+    --alternative-text-color: #333332; /* Alternative button text */
+    --speech-bg: #a53d38; /* Speech bubble background */
+    --speech-shadow: rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }
+  
+  /* === Global Styles === */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "FoundersGrotesk-Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* === Headers === */
+  h2 {
+    font-family: "FoundersGrotesk-Bold", sans-serif;
+    color: var(--text-color);
+    margin: 16px 0;
+    text-align: center;
+  }
+  
+  /* === Container === */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 16px 80px;
+    border-left: 4px solid red;
+    background: rgba(255, 255, 255, 0.05); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--speech-shadow); /* Subtle depth */
+    animation: fadeIn 1s;
+  }
+  
+  .container-move {
+    position: relative;
+    animation: swoop 0.7s;
+  }
+  
+  /* === Buttons === */
+  .buttondiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .Button {
+    flex-grow: 1;
+    max-width: 300px;
+    min-height: 50px;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .Button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  .Button.clickedButton {
+    background-color: var(--alternative-color) !important;
+    color: var(--alternative-text-color) !important;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .Button {
+      width: 100%;
+    }
+  }
+  
+  /* === Speech Bubble === */
+  .speech {
+    position: relative;
+    background: var(--speech-bg);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px var(--speech-shadow);
+  }
+  
+  .speech::after {
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+  }
+  
+  .speech.up::after {
+    border-bottom-color: var(--speech-bg);
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .speech.down::after {
+    border-top-color: var(--speech-bg);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* === Animations === */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes swoop {
+    0% { top: 0; }
+    100% { top: -100%; }
+  }
+  
+  /* === Images === */
+  .questionImg {
+    width: 100%;
+    border-radius: 8px;
+    margin: 16px 0;
+  }
+  
+  /* === Utility Classes === */
+  .u-textRight {
+    text-align: right;
+  }
+  
+  .textBlock {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .messageBox {
+    max-width: 350px;
+    min-height: 60px;
+    position: relative;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--speech-bg);
+  }
+  
+  .messageImg {
+    position: absolute;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+  }
+  
+  /* === Media Queries === */
+  @media (hover: none) {
+    .Button:hover {
+      background-color: var(--button-color);
+    }
+  }
+  
