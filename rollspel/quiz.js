@@ -328,6 +328,30 @@ var questions = [
         meddelande: false,
     },
     {
+        nummer: 26,
+        fraga: "Du har klarat ditt mål, men till vilket pris?",
+        alternativ: [
+            ["Ja, inte är det du som fått än gråare hår i alla fall.", 28],
+            ["Alla stormar är bara egots vibrationer.", 30]
+        ],
+        rattSvar: "",
+        explainer: "",
+        rubrik: "Akt 3: Avgörandet",
+        meddelande: false,
+    },
+    {
+        nummer: 27,
+        fraga: "Du har klarat ditt mål, men till vilket pris?",
+        alternativ: [
+            ["Ja, inte är det du som fått än gråare hår i alla fall.", 28],
+            ["Alla stormar är bara egots vibrationer.", 30]
+        ],
+        rattSvar: "",
+        explainer: "",
+        rubrik: "Akt 3: Avgörandet",
+        meddelande: false,
+    },
+    {
         nummer: 28,
         fraga: "Samarbetsframgång: Grattis! Du har lyckats med något. Svensk kulturkanon är nu en samling kulörta post-it-lappar i en låda i ett skrivbord bredvid Anna Kinberg Batras på Elefantkyrkogården vid Karlaplan. Regeringen kan med gott samvete sänka skatten.",
         alternativ: [],
@@ -355,15 +379,7 @@ var questions = [
         meddelande: true,
     }
 ];
-var resultatSvar = {
-    allaRatt: "Alla rätt! Vilket minne! Vilken samtidsfeeling!",
-    nastanAllaRatt: "Vilket minne! Vilken samtidsfeeling! Grattis till toppoäng.",
-    overHalftenRatt: "Hyfsat resultat, men det kunde vara bättre. Kanske har du bättre koll på politikernas grodor?",
-    halftenRatt: "Helt okjej resultat, men det kunde vara bättre. Kanske har du bättre koll på politikernas grodor?",
-    mindreAnHalftenRatt: "Du har inte riktigt hängt med de senaste åren. Dags att börja hålla dig ajour.",
-    nastanAllaFel: "Du har inte riktigt hängt med de senaste åren. Dags att börja hålla dig ajour.",
-    allaFel: "Det här gick inte alls bra. Du har inte hängt med de senaste åren. Dags att börja hålla dig ajour."
-};
+
 
 var bildTillPratbubbla = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/arbetet_logga.png";
 var robotBild = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/robot2.png";
@@ -486,6 +502,7 @@ var test = {
                         e.redraw = false;
                         let conta = document.getElementById("container");
                         conta.classList.add("container-move");
+                        console.log(questions[testIndex].meddelande)
                         setTimeout(function(){
                             conta.classList.remove("container-move");
                             e.target.classList.remove("clickedButton");
