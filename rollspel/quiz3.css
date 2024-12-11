@@ -9,7 +9,7 @@
 
 */
 
-:root {
+/* :root {
     --bg-color: #7a1f10;
     --text-color: #f9f8f2;
     --button-color: #ee492e;
@@ -17,8 +17,19 @@
     --button-text-color: #f9f8f2;
     --button-alternative-color: #f9f8f2;
     --button-alternative-text-color: #333332;
-  }
+  } */
   
+
+  :root {
+    --bg-color: #6c82bc; /* New background color */
+    --text-color: #ffffff; /* White text for readability on the blue background */
+    --button-color: #f3c3a3; /* A darker shade of blue for buttons */
+    --button-color-hover: #36467a; /* A slightly darker hover color */
+    --button-text-color: #333332; /* White text on buttons for contrast */
+
+    --button-alternative-color: #ffffff; /* Alternative button background (white) */
+    --button-alternative-text-color: #333332; /* Dark text for alternative button */
+}
   /*
   :root {
     --bg-color: #eae9e2;

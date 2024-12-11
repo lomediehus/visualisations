@@ -29,9 +29,9 @@ preload(
 var questions = [
     {
         nummer: 1,
-        fraga: "Ditt uppdrag är att lyfta fram ett antal mindre verk som haft stor betydelse för Sveriges kultur- och samhällsliv. På så vis ska en Svensk Kulturkanon etableras efter danskt snitt. Hur reagerar du?",
+        fraga: "<p>Ditt uppdrag är att lyfta fram ett antal mindre verk som haft stor betydelse för Sveriges kultur- och samhällsliv.</p><p>På så vis ska en Svensk Kulturkanon etableras efter danskt snitt. Hur reagerar du?</p>",
         alternativ: [
-            ["Du är givetvis helt rätt person för detta. I åratal har du pladdrat om att integrationen misslyckats. Du accepterar omedelbart och tänker att rätt väg framåt är att gå på feeling och skjuta från höften", 2],
+            ["Du är givetvis helt rätt person för detta. I åratal har du pladdrat om att integrationen misslyckats. Du accepterar omedelbart. Rätt väg framåt är att gå på feeling och skjuta från höften", 2],
             ["Du är givetvis helt rätt person för detta och har stor respekt för den svenska djupa staten. Be om mer information innan du bestämmer dig", 3]
         ],
         rattSvar: "",
@@ -421,8 +421,9 @@ var hem = {
     },
     view: function() {
         return m("div.container", {id:"container"}, [
-            m("img.questionImg", {src: "bilder/kanon2.webp", id: "image"}),
+            m("img.questionImg", {src: "bilder/lt.png", id: "image"}),
             m("p.textBlock.u-textMetaDeca.u-spacingTopM.speech-bubble", m.trust(introText)),
+            m("div.buttondiv",
             m("button.Button.u-spacingTopM",
             {onclick: function(e) {
                 e.target.classList.add("clickedButton");
@@ -436,7 +437,7 @@ var hem = {
                     e.target.classList.add("unclickedButton");
                     m.mount(root, test);
                 }, 600);
-            }}, firstButtonText)
+            }}, firstButtonText))
         ]);
     }
 };
@@ -487,7 +488,7 @@ var test = {
     view: function() {
         return m("div.container", {id:"container"}, [
             m("p.u-textMeta.u-spacingTopM", m.trust(questions[testIndex].rubrik)),
-            m("img.questionImg", {src: "bilder/kanon2.webp", id: "image"}),
+            m("img.questionImg", {src: "bilder/lt.png", id: "image"}),
             m("p.textBlock.u-textMetaDeca.u-spacingTopM.speech-bubble", m.trust(questions[testIndex].fraga)),
             m("p.u-textRight.u-textMeta.u-spacingBottomM", " "),
             m("div.buttondiv.u-spacingTopM", shuffle(questions[testIndex].alternativ).map(function(fraga, index) {
@@ -530,7 +531,7 @@ var done = {
 
         return m("div.container", [
             m("p.u-textMeta.u-spacingTopM", m.trust(questions[testIndex].rubrik)),
-            m("img.questionImg", {src: "bilder/kanon2.webp", id: "image"}),
+            m("img.questionImg", {src: "bilder/lt.png", id: "image"}),
             m("p.textBlock.u-textMetaDeca.u-spacingTopM.speech-bubble", m.trust(questions[testIndex].fraga)),
             m("p.u-textRight.u-textMeta.u-spacingBottomM", " "),
             m("div.buttondiv",
