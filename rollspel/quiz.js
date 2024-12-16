@@ -296,7 +296,7 @@ var questions = [
         fraga: "<p>Förhandlingarna om svensk kulturkanon flyttas till SVT:s Cyklopernas Land.</p> <p>Din kanon är nu en dikt av Elis Monteverde Burrau:</p> <p><i>\"det är inte vi som väljer,</p> <p>det är tystnaden som ropar strindberg,</p> <p>en kaffekopp som fylls på utan slut eller falukorvens ljumna hymn ett hoppsan,</p> <p>mellan barnens tallrikar och demokratins sulor.\"</i></p> <p>Vad prioriterar du?</p>",
         alternativ: [
             ["Fortsatta relationer och möten med nya människor.", 23],
-            ["Din strategi.", 25]
+            ["Att köpa två ton av Kakan Hermanssons keramik.", 25]
         ],
         rattSvar: "",
         explainer: "",
@@ -348,7 +348,7 @@ var questions = [
         fraga: "Du har klarat ditt mål, men till vilket pris?",
         alternativ: [
             ["Ja, inte är det du som fått gråare hår i alla fall.", 28],
-            ["Alla känslostormar är bara egots vibrationer.", 30]
+            ["Alla känslostormar är bara egots vibrationer.", 29]
         ],
         rattSvar: "",
         explainer: "",
@@ -361,7 +361,7 @@ var questions = [
         fraga: "Du har klarat ditt mål, men till vilket pris?",
         alternativ: [
             ["Ja, inte är det du som fått gråare hår i alla fall.", 28],
-            ["Alla känslostormar är bara egots vibrationer.", 30]
+            ["Alla känslostormar är bara egots vibrationer.", 29]
         ],
         rattSvar: "",
         explainer: "",
@@ -374,7 +374,7 @@ var questions = [
         fraga: "Du har klarat ditt mål, men till vilket pris?",
         alternativ: [
             ["Ja, inte är det du som fått gråare hår i alla fall.", 28],
-            ["Alla känslostormar är bara egots vibrationer.", 30]
+            ["Alla känslostormar är bara egots vibrationer.", 29]
         ],
         rattSvar: "",
         explainer: "",
@@ -404,7 +404,7 @@ var questions = [
     },
     {
         nummer: 30,
-        fraga: "<p><b>Ensam triumf:</b></p> <p>Grattis!</p> </p>Du klarade uppdraget självständigt, du har med dig de 50% av befolkningen som spelar roll.</p> <p>Killarna!</p> <p>Men dina relationer med exakt alla andra är ansträngda eller brutna.</p> <p>Svensk kulturkanon består nu av kött, potatis och:</p> <p>1. Underkastelse</p> <p>2. Serotonin</p> <p>3. Kartan och landskapet.</p> <p>Regeringen kan med gott samvete skära ned kulturbudgeten.</p>",
+        fraga: "<p><b>Ensam triumf:</b></p> <p>Grattis!</p></p>Du klarade uppdraget självständigt, du har med dig de 50% av befolkningen som spelar roll.</p> <p>Killarna!</p> <p>Men dina relationer med exakt alla andra är ansträngda eller brutna.</p> <p>Svensk kulturkanon består nu av kött, potatis och:</p> <p>1. Underkastelse</p> <p>2. Serotonin</p> <p>3. Kartan och landskapet.</p> <p>Regeringen kan med gott samvete skära ned kulturbudgeten.</p>",
         alternativ: [],
         rattSvar: "",
         explainer: "",
