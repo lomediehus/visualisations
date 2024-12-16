@@ -203,6 +203,7 @@
       min-height: 50px;
       color: var(--button-text-color);
       background-color: var(--button-color);
+      font-weight: normal;
   }
   
   .lonInput {
