@@ -230,8 +230,8 @@ var questions = [
         nummer: 16,
         fraga: "<p>Aj aj aj. Du träffar ett gäng unga coola poeter, de presenterar hela Nordstedts och Modernistas höstkatalog för dig.</p> </p>Du…?</p>",
         alternativ: [
-            ["Känner ingenting.", 20],
-            ["<p>Det här är framtiden.</p> <p>Du ger dem en egen svit på Park hotell samt tre hela dygn med Leonidas Aretakis under Bokmässan!</p>", 21]
+            ["...känner ingenting.", 20],
+            ["<p>...ser att det här är framtiden.</p> <p>Du ger dem en egen svit på Park hotell samt tre hela dygn med Leonidas Aretakis under Bokmässan!</p>", 21]
         ],
         rattSvar: "",
         explainer: "",
