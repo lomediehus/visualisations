@@ -1,0 +1,34 @@
+/* hides scrollbars in firefox */
+html {
+    scrollbar-width: none;
+  }
+  
+body {
+    background-color: #fcfaf5;
+    /* max-width: 948px; */
+    width: 100%;
+    /* hides scrollbars */
+    -ms-overflow-style: none;
+}
+
+/* hides scrollbars */
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+#app label, #app select, #app input, #app button {
+    margin-bottom: 10px;
+}
+
+#app select {
+    width: 100px; /* Adjust the width as needed */
+}
+
+#app button {
+    width: 300px; /* Adjust the width as needed */
+}
