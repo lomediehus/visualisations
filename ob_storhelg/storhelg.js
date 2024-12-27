@@ -156,18 +156,20 @@ function doStuff() {
 
   //handling dates:
   //Check if current date is after jul;
-  if (date.getTime() > trettonhelgsdatum.getTime()) {
+  if (date.getTime() > juldatum.getTime()) {
+
+
     //if current date is also after nyar
-    if (date.getTime() > midsommardatum.getTime()) {
-      document.getElementById("helgbild").src = 'midsommar.svg';
+    if (date.getTime() > trettonhelgsdatum.getTime()) {
+      document.getElementById("helgbild").src = 'trettonhelg.svg';
       goActive(helgknapp6);
-      helgnr = "6";
+      helgnr = "3";
     }
-  //   else {
-  //     document.getElementById("helgbild").src = 'nyar.svg';
-  //     goActive(helgknapp2);
-  //     helgnr = "2";
-  //   }
+    else {
+      document.getElementById("helgbild").src = 'nyar.svg';
+      goActive(helgknapp2);
+      helgnr = "2";
+    }
   // }
   // else {
   //   document.getElementById("helgbild").src = 'jul.svg';
