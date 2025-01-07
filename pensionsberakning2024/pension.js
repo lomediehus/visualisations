@@ -130,6 +130,7 @@ function calculatePension() {
     } else {
         document.getElementById('result').textContent = 'Ingen data hittades för dina val.';
     }
+    informHeight();
 }
 
 // HTML-struktur för användarinteraktion
