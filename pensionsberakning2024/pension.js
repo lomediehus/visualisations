@@ -104,6 +104,7 @@ function calculatePension() {
             <p>Premiepension: ${result.Premiepension} kr</p>
             <p>Tjänstepension: ${result.Tjänstepension} kr</p>
             <p>Inkomst brutto: ${result["Inkomst brutto"]} kr</p>
+            <p>Tillägg: ${result["Tillägg"]} kr</p>
             <p>Disponibel inkomst: ${result["Disponibel inkomst"].toFixed(2)} kr</p>
         `;
     } else {
