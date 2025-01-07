@@ -9,6 +9,7 @@ body {
     width: 100%;
     /* hides scrollbars */
     -ms-overflow-style: none;
+    text-align: center;
 }
 
 /* hides scrollbars */
@@ -16,9 +17,18 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+
+
+.fetare {
+    font-weight: 600;
+}
+
 #app {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
 
 #app label, #app select, #app input, #app button {
@@ -26,9 +36,36 @@ body::-webkit-scrollbar{
 }
 
 #app select {
-    width: 100px; /* Adjust the width as needed */
+    width: 150px; /* Make the select box wider */
+    font-size: 18px; /* Increase font size */
+    font-family: Arial, sans-serif; /* Set a new font */
+    padding: 8px; /* Add padding for a larger clickable area */
+    height: auto; /* Allow height to adjust based on content */
+    border: 1px solid #ccc; /* Optional: Add a border for styling */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    text-align: center;
+}
+
+#app input[type="checkbox"] {
+    transform: scale(1.5); /* Make the checkbox 1.5 times larger */
+    margin: 5px; /* Add some spacing around the checkbox */
+    cursor: pointer; /* Add a pointer cursor for better UX */
 }
 
 #app button {
-    width: 300px; /* Adjust the width as needed */
+    width: 300px;
+    font-size: x-large;
+}
+
+.merluft {
+    line-height: 1.3;
+}
+
+.stor_text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
 }

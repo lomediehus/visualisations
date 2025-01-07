@@ -1,3 +1,9 @@
+//Get one favicon for localhost and another for github pages
+let host = window.location.host;
+if (host.includes("github")) {
+  document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+}
+
 // Ladda in JSON-data (här ersätter vi med en plats att läsa in JSON-data)
 
 
@@ -96,16 +102,30 @@ function calculatePension() {
         row.Deltid === partTime &&
         row.Sjukskriven === sickLeave
     );
+    
+    //format number to swedish format, narrow space as thousand separator and comma as decimal separator
+    const SweNum = new Intl.NumberFormat('sv-SE', {
+        maximumFractionDigits: 0
+    })
 
     // Visa resultatet i HTML
     if (result) {
+
+        const tillagg = result["Tillägg"];
+        const tillaggText = tillagg === 0 
+            ? "" 
+            : `I den disponibla inkomsten ingår ${SweNum.format(tillagg)} kronor i bostadstillägg, äldreförsörjningsstöd med mera. Tilläggets storlek beror på din bostadskostnad och om du är ensamstående eller sambo/gift.`;
+
         document.getElementById('result').innerHTML = `
-            <p>Inkomst och tilläggspension: ${result["Inkomst- och tilläggspension"]} kr</p>
-            <p>Premiepension: ${result.Premiepension} kr</p>
-            <p>Tjänstepension: ${result.Tjänstepension} kr</p>
-            <p>Inkomst brutto: ${result["Inkomst brutto"]} kr</p>
-            <p>Tillägg: ${result["Tillägg"]} kr</p>
-            <p>Disponibel inkomst: ${result["Disponibel inkomst"].toFixed(2)} kr</p>
+            <p class="stor_text">Disponibel inkomst:<br> ${SweNum.format(result["Disponibel inkomst"])} kr</p>
+            <p>Inkomst före skatt: ${SweNum.format(result["Inkomst brutto"])} kr</p>
+            <p class="fetare">Inkomsten består av följande delar:</p>
+            <p>Inkomst och tilläggspension: ${SweNum.format(result["Inkomst- och tilläggspension"])} kr</p>
+            <p>Premiepension: ${SweNum.format(result.Premiepension)} kr</p>
+            <p>Tjänstepension: ${SweNum.format(result.Tjänstepension)} kr</p>
+            <p>Garantipension & Pensionstillägg (ITP): ${SweNum.format(result["Garanti"])} kr</p>
+            <p>${tillaggText}</p>
+
         `;
     } else {
         document.getElementById('result').textContent = 'Ingen data hittades för dina val.';

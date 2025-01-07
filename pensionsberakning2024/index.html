@@ -15,12 +15,12 @@
 
 <body class="u-colorBgSecondary1">
     <div id="wrapper" class="u-textMetaDeca u-paddedBottomM">
-        <h2>Pension</h2>
-        <p>Här kan du se hur mycket en person med en lön på 29 035 kronor (på heltid) kan få när hen går i pension.</p>
+        <h2>Så påverkas pensionen</h2>
+        <p class ="merluft">Hur gammal du är när du går i pension påverkar hur mycket pengar du får. Exemplet visar en person med en lön på 29 035 kronor på heltid. Du kan också se hur stor skillnad det gör att jobba deltid och attt vara sjukskriven.</p>
  
     </div>
     <div id="app" class="u-textMetaDeca">  
-        <label for="ageCohort">Årskull:</label>
+        <label for="ageCohort" class="fetare">Födelseår:</label>
             <select id="ageCohort">
             <option value="1962">1962</option>
                 <option value="1963">1963</option>
@@ -29,7 +29,7 @@
 
             </select>
 
-            <label for="pensionAge">Pensionsålder:</label>
+            <label for="pensionAge" class="fetare">Pensionsålder:</label>
             <select id="pensionAge">
                 <option value="64">64</option>
                 <option value="65">65</option>
@@ -38,6 +38,7 @@
                 <option value="68">68</option>
 
             </select>
+            <br>
 
             <label>
                 <input type="checkbox" id="partTime"> Jobbat deltid 75%
@@ -49,11 +50,11 @@
             </label>
 
             <!-- <input type="number" id="sickLeave" min="0" max="10" value="0"> -->
-            <p class="u-paddedBottomM"> </p>
+            <p class="u-paddedBottomS"> </p>
 
             <button class="Button" onclick="calculatePension()">Beräkna pension</button>
             <!-- <hr></hr> -->
-            <p class="u-paddedBottomM"> </p>
+            <p class="u-paddedBottomXS"> </p>
 
             <div id="result"></div>
 
