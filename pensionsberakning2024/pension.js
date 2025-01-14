@@ -111,20 +111,20 @@ function calculatePension() {
     // Visa resultatet i HTML
     if (result) {
 
-        const tillagg = result["Tillägg"];
-        const tillaggText = tillagg === 0 
-            ? "" 
-            : `I exemplet ingår ${SweNum.format(tillagg)} kronor i bostadstillägg, äldreförsörjningsstöd med mera i den disponibla inkomsten. Tilläggets storlek beror på din bostadskostnad och om du är ensamstående eller sambo/gift.`;
+        // const tillagg = result["Tillägg"];
+        // const tillaggText = tillagg === 0 
+        //     ? "" 
+        //     : `I exemplet ingår ${SweNum.format(tillagg)} kronor i bostadstillägg, äldreförsörjningsstöd med mera i den disponibla inkomsten. Tilläggets storlek beror på din bostadskostnad och om du är ensamstående eller sambo/gift.`;
 
         document.getElementById('result').innerHTML = `
-            <p class="stor_text">Disponibel inkomst:<br> ${SweNum.format(result["Disponibel inkomst"])} kr</p>
+            <p class="stor_text">Inkomst efter skatt:<br> ${SweNum.format(result["Inkomst efter skatt"])} kr</p>
             <p>Inkomst före skatt: ${SweNum.format(result["Inkomst brutto"])} kr</p>
             <p class="fetare">Inkomsten består av följande delar:</p>
             <p>Inkomst och tilläggspension: ${SweNum.format(result["Inkomst- och tilläggspension"])} kr</p>
             <p>Premiepension: ${SweNum.format(result.Premiepension)} kr</p>
             <p>Tjänstepension: ${SweNum.format(result.Tjänstepension)} kr</p>
             <p>Garantipension & Pensionstillägg (ITP): ${SweNum.format(result["Garanti"])} kr</p>
-            <p class="u-textMeta">${tillaggText}</p>
+            
 
         `;
     } else {
