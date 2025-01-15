@@ -3,7 +3,7 @@ fetch('https://api.scb.se/OV0104/v1//doris/en/ssd/BE/BE0401/BE0401B/BefProgFodda
 
     method: 'POST',
     headers: {
-        'Content-Type': 'application/json'
+        //'Content-Type': 'application/json'
     },
     body: JSON.stringify({
         "query": [
