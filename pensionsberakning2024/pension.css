@@ -69,3 +69,8 @@ body::-webkit-scrollbar{
     text-align: center;
     margin-top: 20px;
 }
+
+.liten_text {
+    font-size: 20px;
+    font-style: italic;
+}
