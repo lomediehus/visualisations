@@ -1,0 +1,116 @@
+
+* {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* For hiding scrollbar in Firefox without impacting scrolling function */
+html {
+  scrollbar-width: none;
+  z-index: 2;
+}
+
+body {
+  padding: 0px;
+  background-color: #fcfaf5;
+  /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+  -ms-overflow-style: none;
+  z-index: 2;
+}
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content:flex-start;
+  align-items: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* height: 100vh; */
+  width: 100vw;
+  background-color: #fcfaf5;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f0f0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  /* transform: translate3d(0, 0, 0); */
+  /* overflow: visible; */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+} 
+
+.hidden {
+  display: none;
+} 
+
+h2.sized {
+  font-size: 26px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  line-height: 24px;
+  color: black;
+}
+
+#kommunreg {
+  background-image: url("pengar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#privat {
+  background-image: url("privat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#lagstalon {
+  background-image: url("ny.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textbox {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 10px;
+  z-index: 100;
+}
+
+.textbox-background {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /* justify-content: center;
+  align-items: center; */
+  background-color: white;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+p.prominent {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 22px;
+}
+  
