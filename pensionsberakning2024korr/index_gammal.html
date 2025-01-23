@@ -1,0 +1,69 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Här kan du se hur mycket en person med en lön på 29 035 kronor kan få när hen går i pension.">
+    <title>Pension</title>
+    <link rel="stylesheet" href="pension.css" type="text/css">
+    <link rel="stylesheet" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+</head>
+
+
+<body class="u-colorBgSecondary1">
+    <div id="wrapper" class="u-textMetaDeca u-paddedBottomM">
+        <h2>Så påverkas pensionen</h2>
+        <p class ="merluft">Hur gammal du är när du går i pension påverkar hur mycket pengar du får. Exemplet visar en person med en lön på 29 035 kronor på heltid. Du kan också se hur stor skillnad det gör att jobba deltid och att vara sjukskriven.<br>Summan som visas är vad personen får ut den dag den börjar ta ut pension.</p>
+ 
+    </div>
+    <div id="app" class="u-textMetaDeca">  
+        <label for="ageCohort" class="fetare">Födelseår:</label>
+            <select id="ageCohort">
+                <option value="1962">1962</option>
+                <option value="1963">1963</option>
+                <option value="1964">1964</option>
+                <option value="1965">1965</option>
+
+            </select>
+
+            <label for="pensionAge" class="fetare">Pensionsålder:</label>
+            <select id="pensionAge">
+                <option value="64">64</option>
+                <option value="65">65</option>
+                <option value="66">66</option>
+                <option value="67">67</option>
+                <option value="68">68</option>
+
+            </select>
+            <br>
+
+            <label>
+                <input type="checkbox" id="partTime"> Jobbat deltid 75%
+            </label>
+
+            <!-- <label for="sickLeave">Sjukskriven antal år:</label> -->
+            <label>
+                <input type="checkbox" id="sickLeave"> Varit sjukskriven i sammanlagt tre år
+            </label>
+
+            <!-- <input type="number" id="sickLeave" min="0" max="10" value="0"> -->
+            <p class="u-paddedBottomS"> </p>
+
+            <button class="Button" onclick="calculatePension()">Beräkna pension</button>
+            <!-- <hr></hr> -->
+            <p class="u-paddedBottomXS"> </p>
+
+            <div id="result"></div>
+
+            <p class="liten_text">På <a href="https://www.minpension.se/" target="_blank">minpension.se</a> kan du hitta din egen pension.</p>
+
+    </div>
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
+    <script src="pension.js"></script>
+
+</body>
