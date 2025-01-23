@@ -31,11 +31,30 @@ fetch('pensionsdata.json')
 
     // Add event listener to birth year selector
     ageCohortSelector.addEventListener("change", function() {
-        const selectedYear = ageCohort.value;
+        const selectedYear = ageCohortSelector.value;
         // const selectedYear = ageCohortSelector.value;
         console.log(selectedYear);
         // console.log
         
+        // if (selectedYear === "1962") {
+        //     // Add the special option if it's not already present
+        //     if (!Array.from(pensionAgeSelector.options).some(opt => opt.value === "63")) {
+        //         pensionAgeSelector.add(specialOption, pensionAgeSelector.options[0]); // Add at the top
+        //     }
+        // } else {
+        //     // Remove the special option if it exists
+        //     if (pensionAgeSelector.contains(specialOption)) {
+        //         pensionAgeSelector.removeChild(specialOption);
+        //     }
+
+        //     // If the removed option is currently selected, reset pensionAge
+        //     if (pensionAgeSelector.value === "63") {
+        //         pensionAgeSelector.value = ""; // Reset pensionAge
+        //     }
+       
+        // }
+
+
         if (selectedYear === "1962") {
             // Add the special option if it's not already present
             if (!Array.from(pensionAgeSelector.options).some(opt => opt.value === "63")) {
@@ -43,37 +62,13 @@ fetch('pensionsdata.json')
             }
         } else {
             // Remove the special option if it exists
-            if (pensionAgeSelector.contains(specialOption)) {
-                pensionAgeSelector.removeChild(specialOption);
+            const specialOptionIndex = Array.from(pensionAgeSelector.options).findIndex(opt => opt.value === "63");
+            if (specialOptionIndex !== -1) {
+                pensionAgeSelector.remove(specialOptionIndex);
             }
-
-            // If the removed option is currently selected, reset pensionAge
-            if (pensionAgeSelector.value === "63") {
-                pensionAgeSelector.value = ""; // Reset pensionAge
-            }
-
-
-        // if (selectedYear === "1962") {
-        //     // Enable the special option for 1962
-        //     specialOption.disabled = false;
-        //     specialOption.hidden = false;
-        // } else {
-        //     // Disable and deselect the special option for others
-        //     specialOption.disabled = true;
-        //     specialOption.hidden = true;
-
-
-        //     // If the disabled option is currently selected, reset the pensionAge selection
-        //     if (pensionAgeSelector.value === "62") {
-
-        //     // if (pensionAge.value === "63") {
-        //         // pensionAge.value = "";
-        //         pensionAgeSelector.value = "";
-            
-
-            //     }
-            // }
         }
+
+
     });
 
 // Initialize on page load to handle default selection
@@ -138,33 +133,3 @@ function calculatePension() {
     informHeight();
 }
 
-// HTML-struktur för användarinteraktion
-// const appHTML = `
-//     <label for="ageCohort">Årskull:</label>
-//     <select id="ageCohort">
-//         <option value="1965">1965</option>
-//         <option value="1962">1962</option>
-//         <!-- Lägg till fler årskullar baserat på data -->
-//     </select>
-
-//     <label for="pensionAge">Pensionsålder:</label>
-//     <select id="pensionAge">
-//         <option value="64">64</option>
-//         <option value="65">65</option>
-//         <option value="66">66</option>
-//         <!-- Lägg till fler pensionsåldrar -->
-//     </select>
-
-//     <label>
-//         <input type="checkbox" id="partTime"> Jobbat deltid
-//     </label>
-
-//     <label for="sickLeave">Sjukskriven antal år:</label>
-//     <input type="number" id="sickLeave" min="0" max="10" value="0">
-
-//     <button onclick="calculatePension()">Beräkna pension</button>
-//     <div id="result"></div>
-// `;
-
-// // Lägg till HTML till sidan
-// document.body.innerHTML = appHTML;
