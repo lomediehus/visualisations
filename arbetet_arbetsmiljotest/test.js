@@ -2,6 +2,12 @@
   let quizName = "Arbetsmiljötestet"
   
   var root = document.body;
+
+function getDocumentHeight() {
+    return Math.max(
+        html.offsetHeight,
+    );
+}
   
   var sliderDescriptions = [
     " Du har valt ett. Det betyder att påståendet inte alls stämmer",
