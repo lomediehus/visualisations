@@ -4,39 +4,7 @@ if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
 }
 
-// Ladda in JSON-data (här ersätter vi med en plats att läsa in JSON-data)
 
-
-// read data from files into arrays
-// $.ajax({
-//     url: "OBavtal.json",
-//     // url: "test2.json",
-
-//     dataType: "json",
-//     mimeType: "application/json",
-//     success: function (data) {
-//         filearray.push(...data)
-
-//         $.ajax({
-//                 url: "OBavtal_tillagg.json",
-//                 dataType: "json",
-//                 mimeType: "application/json",
-//                 success: function (data) {
-//                     filearray2.push(...data)
-
-//                     //when both files are read, run function that does all the rest
-//                     doStuff()
-//                     },
-//                 error: function (/* request, error */) {
-//                     console.log('Network error has occurred please try again!');
-//                 }
-//         })
-//         //Make the graph that compares proffessions
-//         },
-//     error: function (/* request, error */) {
-//         console.log('Network error has occurred please try again!');
-//     }
-// })
 
 let pensionData = []; // Global variabel för att lagra JSON-data
 
@@ -54,44 +22,75 @@ fetch('pensionsdata.json')
     })
     .catch(error => console.error('Error loading JSON data:', error));
 
-// fetch('pensionsdata.json')
-//     .then(response => response.json())
-//     .then(data => {
-//         const pensionData = data;
-//         console.log(pensionData); // Kontrollera att datan laddas korrekt
+    
+    const ageCohortSelector = document.getElementById('ageCohort');
+    const specialOption = document.getElementById("specialOption");
+    const pensionAgeSelector = document.getElementById('pensionAge');
+
+    
+
+    // Add event listener to birth year selector
+    ageCohortSelector.addEventListener("change", function() {
+        const selectedYear = ageCohortSelector.value;
+        // const selectedYear = ageCohortSelector.value;
+        console.log(selectedYear);
+        // console.log
         
-//     })
-//     .catch(error => console.error('Error loading JSON data:', error));
+        // if (selectedYear === "1962") {
+        //     // Add the special option if it's not already present
+        //     if (!Array.from(pensionAgeSelector.options).some(opt => opt.value === "63")) {
+        //         pensionAgeSelector.add(specialOption, pensionAgeSelector.options[0]); // Add at the top
+        //     }
+        // } else {
+        //     // Remove the special option if it exists
+        //     if (pensionAgeSelector.contains(specialOption)) {
+        //         pensionAgeSelector.removeChild(specialOption);
+        //     }
+
+        //     // If the removed option is currently selected, reset pensionAge
+        //     if (pensionAgeSelector.value === "63") {
+        //         pensionAgeSelector.value = ""; // Reset pensionAge
+        //     }
+       
+        // }
 
 
-// const pensionData = [
-//     // Din JSON-data från Grunddata_converted.json kommer att läsas in här
-//     // Till exempel:
-//     {
-//         "Årskull": 1965,
-//         "Pensionsålder": 65,
-//         "Deltid": 0,
-//         "Sjukskriven": 0,
-//         "Inkomst- och tilläggspension": 12415,
-//         "Premiepension": 2354,
-//         "Tjänstepension": 4340,
-//         "Inkomst brutto": 19109,
-//         "Disponibel inkomst": 13913.92
-//     }
-//     // Fler objekt från JSON-data...
-// ];
+        if (selectedYear === "1962") {
+            // Add the special option if it's not already present
+            if (!Array.from(pensionAgeSelector.options).some(opt => opt.value === "63")) {
+                pensionAgeSelector.add(specialOption, pensionAgeSelector.options[0]); // Add at the top
+            }
+        } else {
+            // Remove the special option if it exists
+            const specialOptionIndex = Array.from(pensionAgeSelector.options).findIndex(opt => opt.value === "63");
+            if (specialOptionIndex !== -1) {
+                pensionAgeSelector.remove(specialOptionIndex);
+            }
+        }
 
-// console.log(pensionData);
+
+    });
+
+// Initialize on page load to handle default selection
+ageCohortSelector.dispatchEvent(new Event("change"));
+    var pensionAge = parseInt(document.getElementById('pensionAge').value);
+
+
 
 
 // Funktion för att filtrera pensionsdata baserat på användarens val
 function calculatePension() {
     // Hämta användarens val från HTML-formuläret
+   
     const ageCohort = parseInt(document.getElementById('ageCohort').value);
     const pensionAge = parseInt(document.getElementById('pensionAge').value);
     const partTime = document.getElementById('partTime').checked ? 1 : 0;
     // const sickLeave = parseInt(document.getElementById('sickLeave').value);
     const sickLeave = document.getElementById('sickLeave').checked ? 1 : 0;
+
+
+
+  
 
     
 
@@ -124,7 +123,7 @@ function calculatePension() {
             <p>Premiepension: ${SweNum.format(result.Premiepension)} kr</p>
             <p>Tjänstepension: ${SweNum.format(result.Tjänstepension)} kr</p>
             <p>Garantipension & Pensionstillägg (ITP): ${SweNum.format(result["Garanti"])} kr</p>
-            <p class="liten_text">*Det kan finnas möjlighet att få bostadstillägg. Då kan man få lite mer pengar än inkomsten efter skatt.</p>
+            <p class="liten_text">*Det kan finnas möjlighet att få bostadstillägg. Då kan man få lite mer pengar än den angivna inkomsten efter skatt.</p>
             
 
         `;
@@ -134,33 +133,3 @@ function calculatePension() {
     informHeight();
 }
 
-// HTML-struktur för användarinteraktion
-// const appHTML = `
-//     <label for="ageCohort">Årskull:</label>
-//     <select id="ageCohort">
-//         <option value="1965">1965</option>
-//         <option value="1962">1962</option>
-//         <!-- Lägg till fler årskullar baserat på data -->
-//     </select>
-
-//     <label for="pensionAge">Pensionsålder:</label>
-//     <select id="pensionAge">
-//         <option value="64">64</option>
-//         <option value="65">65</option>
-//         <option value="66">66</option>
-//         <!-- Lägg till fler pensionsåldrar -->
-//     </select>
-
-//     <label>
-//         <input type="checkbox" id="partTime"> Jobbat deltid
-//     </label>
-
-//     <label for="sickLeave">Sjukskriven antal år:</label>
-//     <input type="number" id="sickLeave" min="0" max="10" value="0">
-
-//     <button onclick="calculatePension()">Beräkna pension</button>
-//     <div id="result"></div>
-// `;
-
-// // Lägg till HTML till sidan
-// document.body.innerHTML = appHTML;
