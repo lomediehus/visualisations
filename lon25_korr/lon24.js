@@ -31,111 +31,111 @@ const jamforbox = document.getElementsByClassName("jamforbox");
 window.riksYrken = [
   {
     "yrke": "Ambulanssjukvårdare",
-    "lön": 32198
+    "lön": 33378
   },
   {
     "yrke": "Anläggningsarbetare",
-    "lön": 31810
+    "lön": 32813
   },
   {
     "yrke": "Barnskötare",
-    "lön": 27577
+    "lön": 28503
   },
   {
     "yrke": "Barnsköterska",
-    "lön": 30326
+    "lön": 31303
   },
   {
     "yrke": "Biträde",
-    "lön": 25752
+    "lön": 26679
   },
   {
     "yrke": "Boendestödjare",
-    "lön": 28715
-  },
-  {
-    "yrke": "Brandman",
-    "lön": 30783
-  },
-  {
-    "yrke": "Elevassistent",
-    "lön": 27899
-  },
-  {
-    "yrke": "Fastighetsskötare",
-    "lön": 30263
-  },
-  {
-    "yrke": "Fordonsförare",
-    "lön": 29530
-  },
-  {
-    "yrke": "Fotvårdsspecialist",
-    "lön": 31833
-  },
-  {
-    "yrke": "Fritidsledare",
-    "lön": 30141
-  },
-  {
-    "yrke": "Förrådsarbetare",
-    "lön": 28143
-  },
-  {
-    "yrke": "Kock",
     "lön": 29780
   },
   {
+    "yrke": "Brandman",
+    "lön": 31838
+  },
+  {
+    "yrke": "Elevassistent",
+    "lön": 28867
+  },
+  {
+    "yrke": "Fastighetsskötare",
+    "lön": 31223
+  },
+  {
+    "yrke": "Fordonsförare",
+    "lön": 30407
+  },
+  {
+    "yrke": "Fotvårdsspecialist",
+    "lön": 32973
+  },
+  {
+    "yrke": "Fritidsledare",
+    "lön": 31751
+  },
+  {
+    "yrke": "Förrådsarbetare",
+    "lön": 29143
+  },
+  {
+    "yrke": "Kock",
+    "lön": 30806
+  },
+  {
     "yrke": "Lärarassistent",
-    "lön": 30222
+    "lön": 31697
   },
   {
     "yrke": "Måltidspersonal",
-    "lön": 26628
+    "lön": 27506
   },
   {
     "yrke": "Park- och trädgårdsarbetare",
-    "lön": 29332
+    "lön": 30485
   },
   {
     "yrke": "Personlig assistent",
-    "lön": 27602
+    "lön": 28461
   },
   {
     "yrke": "Renhållningsarbetare",
-    "lön": 29555
+    "lön": 30662
   },
   {
     "yrke": "Skötare",
-    "lön": 29561
+    "lön": 30502
   },
   {
     "yrke": "Städare/Lokalvårdare",
-    "lön": 26354
+    "lön": 27233
   },
   {
     "yrke": "Stödassistent",
-    "lön": 28917
+    "lön": 29888
   },
   {
     "yrke": "Stödpedagog",
-    "lön": 32800
+    "lön": 33908
   },
   {
     "yrke": "Undersköterska",
-    "lön": 29035
+    "lön": 29996
   },
   {
     "yrke": "Vaktmästare",
-    "lön": 28813
+    "lön": 29842
   },
   {
     "yrke": "Vårdbiträde",
-    "lön": 25125
+    "lön": 25961
   },
   {
     "yrke": "Vårdbiträde-funktionshinder",
-    "lön": 25958
+    "lön": 26799
   }
 ]
 
