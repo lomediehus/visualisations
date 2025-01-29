@@ -75,7 +75,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Fritidsledare",
-    "lön": 31751
+    "lön": 31229
   },
   {
     "yrke": "Förrådsarbetare",
@@ -95,7 +95,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Park- och trädgårdsarbetare",
-    "lön": 30485
+    "lön": 30570
   },
   {
     "yrke": "Personlig assistent",
@@ -913,7 +913,7 @@ function maketable(data, tabell) {
     cell1.innerHTML = "Region<span class='sortpil'>&#8691;</span>";
   }
 
-  cell2.innerHTML = "Lön 2023<span class='sortpil'>&#8691;</span>";
+  cell2.innerHTML = "Lön 2024<span class='sortpil'>&#8691;</span>";
 
   let sortKomReg = document.getElementById("sortKommunRegion")
 
@@ -1217,9 +1217,10 @@ if (yrke !== "Välj yrke") {
           const textElement = d3.select(this).select(".bartext"); // Get the .bartext element
           if (!textElement.empty()) {
               const text = textElement.text(); // Get its text content
-              // console.log("Checking text:", text); // Debug log
               // Exclude <g> with text "valjyrke"
-              return text === yrke && text !== "Välj yrke";
+              return text.replace(/_/g, ' ').substring(0, 16) === yrke.replace(/_/g, ' ').substring(0, 16) && text !== "Välj yrke";
+              // return text.substring(0, 16) === yrke.substring(0, 16) && text !== "Välj yrke";
+              // return text === yrke && text !== "Välj yrke";
           }
           return false; // Exclude <g> if no .bartext is found
       })
