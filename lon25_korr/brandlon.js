@@ -22,14 +22,14 @@
 
     //Reading a file
     $.ajax({
-            url: "brandlon25.json",
+            url: "brandlon24.json",
             dataType: "json",
             mimeType: "application/json",
             success: function (data) {
                 lonefil = data;
                 maketable(lonefil)
                 makeMap(lonefil)
-                // informHeight();
+                informHeight();
                 },
             error: function (/* request, error */) {
                 console.log('Network error has occurred please try again!');
@@ -47,7 +47,6 @@
         lonform = (row.Lon === 0 || row.Lon === '') ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&#8239;");
 
         //make a string out of array Kommunlista
-        // c(row.Kommunlista)
         // c(Array.isArray(row.Kommunlista))
         let kommunerna = row.Kommunlista.join(', ');
         //create the table
@@ -398,7 +397,7 @@
  
     //uses function in main script file to make the graph that compares professions
     makeGraph(riksYrken);
-    // informHeight()
+    informHeight()
   }
 
 
