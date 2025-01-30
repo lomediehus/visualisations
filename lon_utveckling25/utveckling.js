@@ -1,9 +1,11 @@
-// // Dummy data (ersätt med din faktiska data)
-// const data = [
-//     { job: "Lärare", values: [{ year: 2019, salary: 32000 }, { year: 2024, salary: 37000 }] },
-//     { job: "Ingenjör", values: [{ year: 2019, salary: 40000 }, { year: 2024, salary: 46000 }] },
-//     { job: "Sjuksköterska", values: [{ year: 2019, salary: 31000 }, { year: 2024, salary: 35000 }] },
-// ];
+//make it possible to console log with c(tobelogged)
+const c = console.log.bind(document);
+
+//Get one favicon for localhost and another for github pages
+let host = window.location.host;
+if (host.includes("github")) {
+  document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+}
 
 const data = [
     { job: "Undersköterska", values: [{ year: 2019, salary: 26382 }, { year: 2024, salary: 29945 }] },
