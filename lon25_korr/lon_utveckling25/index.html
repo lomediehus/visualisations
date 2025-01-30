@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Här kan du se medellönen för undersköterskor, barnskötare, bussförare, städare, brandmän och 22 andra yrken inom Kommunal.">
+  <title>Löneutveckling</title>
+  <link rel="stylesheet" type="text/css" href="utveckling.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../lon25_korr/lon24.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://github.com/lomediehus/visualisations/blob/master/iframe-helper/ka.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css">
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+
+</head>
+<body>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <div id="content"> 
+    <div id="kommuncontainer" class="basecontainer  u-colorBgSecondary-2">
+      <h4 class="u-textCenter">Så ökade kommunlönerna</h4>
+      <div class="selectcontainer" id="selectcontainerKommun"></div>
+      <div class="utvecklingscontainer" id="kommungraf"></div>
+    </div>
+
+    <div id="regioncontainer" class="basecontainer  u-colorBgSecondary-2">
+      <h4 class="u-textCenter ">Så ökade regionlönerna</h4>
+
+      <div class="selectcontainer mindre" id="selectcontainerRegion"></div>
+      <div class="utvecklingscontainer" id="regiongraf"></div>
+    </div>
+
+  </div>
+ 
+  
+
+  <!-- <script src="https://github.com/lomediehus/visualisations/blob/master/iframe-helper/iframe-helper.js"></script> -->
+  <!-- <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script> -->
+  <script src="utveckling.js"></script>
+
+
+
+
+  </body>
+</html>

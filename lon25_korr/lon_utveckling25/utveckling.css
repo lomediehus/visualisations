@@ -1,0 +1,78 @@
+
+* {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* For hiding scrollbar in Firefox without impacting scrolling function */
+  html {
+    scrollbar-width: none;
+    z-index: 2;
+  }
+  
+  body {
+    padding: 0px;
+    background-color: #fcfaf5;
+    /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+    -ms-overflow-style: none;
+    z-index: 2;
+  }
+  
+  /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+}
+  
+
+.basecontainer {
+  width: 360px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+} 
+
+.selectcontainer select {
+    /* display: block;
+    margin: 0 auto; */
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    font-size: medium;
+    text-align: center;
+}
+
+.x-axis {
+  font-size: medium;
+  font-weight: bold;
+  fill: black;
+  stroke-width: 0.1px;
+
+}
+
+/* .y-axis path, .y-axis line { */
+.y-axis {
+  font-size: small;
+  /* font-weight: bold; */
+  /* fill: black; */
+  stroke-width: 0.1px;
+  shape-rendering: crispEdges; /* Improve rendering of thin lines */
+  vector-effect: non-scaling-stroke; /* Ensure stroke width is consistent */
+
+
+
+}
