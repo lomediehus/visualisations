@@ -48,14 +48,21 @@ const data2 = [
 
 
 // Dimensioner
-const margin = { top: 50, right: 30, bottom: 30, left: 60 };
-const width = 340 - margin.left - margin.right;
-const height = 400 - margin.top - margin.bottom;
+// const margin = { top: 50, right: 30, bottom: 30, left: 60 };
+// const width = 340 - margin.left - margin.right;
+// const height = 400 - margin.top - margin.bottom;
+
+const margin = { top: 60, right: 20, bottom: 40, left: 50 }; // Add some spacing
+
+const width = 360 - margin.left - margin.right;
+const height = 450 - margin.top - margin.bottom;
 
 
 makeLineGraph(data, "#kommungraf", "#selectcontainerKommun", data);
 
 makeLineGraph(data2, "#regiongraf", "#selectcontainerRegion", data2);
+
+informHeight();
 
 function makeLineGraph(dataArray, divId, selectPlace, yrken){
 
@@ -65,8 +72,14 @@ let selectedJob = null;
 // Skapa SVG
 const svg = d3.select(divId)
     .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("class", "svg-responsive")
+    // .attr("viewBox", `0 0 ${width} ${height}`) // Makes it responsive, works but needs margins
+    .attr("viewBox", `0 0 ${360} ${450}`) // Makes it responsive
+    
+
+
+    // .attr("width", width + margin.left + margin.right)
+    // .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -109,7 +122,9 @@ svg.append("g")
 svg.append("g")
     .attr("class", "y-axis") // Add class for y-axis
     .call(d3.axisLeft(y)
-    .tickValues([23000,26000,29000,32000])
+    .tickValues([23000,25000,27000,29000,31000,33000])
+
+
     .tickFormat(swedishFormat))
     .style("stroke-width", "0.5px"); // Adjust to desired thinness;
 

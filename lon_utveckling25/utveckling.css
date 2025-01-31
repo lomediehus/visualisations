@@ -29,20 +29,27 @@
   #content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   padding: 0px;
   align-items: flex-start;
-  /* justify-content: space-between; */
+  max-width: 100%;
 }
   
 
 .basecontainer {
   width: 360px;
+  max-width: 360px; 
   margin-right: 20px;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
+  /* flex: 1 1 360px; */
+  flex: 1 1 auto;
+
+
 } 
 
 .selectcontainer select {
@@ -75,4 +82,26 @@
 
 
 
+}
+
+.svg-responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Media query for mid-sized screens */
+@media (max-width: 900px) {
+  .basecontainer {
+    flex: 1 1 300px; /* Keeps them from stretching too wide */
+    max-width: 360px; /* Prevents them from growing too much */
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 500px) {
+  .basecontainer {
+    flex: 1 1 100%; /* Makes them take full width */
+    max-width: 100%; /* Allows them to shrink */
+  }
 }
