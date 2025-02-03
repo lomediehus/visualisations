@@ -22,14 +22,14 @@
 
     //Reading a file
     $.ajax({
-            url: "brandlon24.json",
+            url: "brandlon25.json",
             dataType: "json",
             mimeType: "application/json",
             success: function (data) {
                 lonefil = data;
                 maketable(lonefil)
                 makeMap(lonefil)
-                informHeight();
+                // informHeight();
                 },
             error: function (/* request, error */) {
                 console.log('Network error has occurred please try again!');
@@ -47,6 +47,7 @@
         lonform = (row.Lon === 0 || row.Lon === '') ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&#8239;");
 
         //make a string out of array Kommunlista
+        // c(row.Kommunlista)
         // c(Array.isArray(row.Kommunlista))
         let kommunerna = row.Kommunlista.join(', ');
         //create the table
@@ -56,7 +57,8 @@
         
 
         // if there is a Fotnot or more than one kommun in Kommunlista, add an arrow and a p tag with the array Kommunlista turned into a string
-        (row.Fotnot !='' || row.Kommunlista.length > 1) ? cell1.innerHTML = "<span class='pil'>\u25BA  </span>" + row.Raddningstjanst : cell1.innerHTML = row.Raddningstjanst;
+        (row.Kommunlista.length > 1) ? cell1.innerHTML = "<span class='pil'>\u25BA  </span>" + row.Raddningstjanst : cell1.innerHTML = row.Raddningstjanst;
+        // (row.Fotnot !='' || row.Kommunlista.length > 1) ? cell1.innerHTML = "<span class='pil'>\u25BA  </span>" + row.Raddningstjanst : cell1.innerHTML = row.Raddningstjanst;
 
         //Text to add if there is more then one kommun
         if (row.Kommunlista.length > 1) {
@@ -64,9 +66,9 @@
         }
 
         //Text to add if there is a note
-        if (row.Fotnot != '') {
-          cell1.innerHTML += "<p class='tabellkommuner'>(" + row.Fotnot + ")</p>"
-        }
+        // if (row.Fotnot != '') {
+        //   cell1.innerHTML += "<p class='tabellkommuner'>(" + row.Fotnot + ")</p>"
+        // }
 
         //html for the second table cell
         cell2.innerHTML = lonform;
@@ -397,7 +399,7 @@
  
     //uses function in main script file to make the graph that compares professions
     makeGraph(riksYrken);
-    informHeight()
+    // informHeight()
   }
 
 
