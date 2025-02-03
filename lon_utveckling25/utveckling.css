@@ -48,6 +48,9 @@
   position: relative;
   /* flex: 1 1 360px; */
   flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 
 } 
@@ -89,6 +92,103 @@
   height: auto;
 }
 
+.Button {
+  display: block;
+  margin-right: 30%;
+  margin-left: auto;
+}
+
+/* #tables {
+  position: relative;
+  width: 100%;
+} */
+
+.tabeller {
+  position: absolute;
+  top: 10px;
+  left: 5%; 
+  display: none;
+  z-index: 10; /* Ensure the tables appear on top */
+  background-color: white; /* Optional: to ensure the content is readable */
+  border: 1px solid #ccc; /* Optional: for better visibility */
+  padding: 10px; /* Optional: for better spacing */
+  width: 90%;
+}
+
+
+#tableContainer {
+  position: absolute;
+  /* left: 10px; */
+}
+
+#tableContainer2 {
+  position: absolute;
+  /* left: 10px; */
+}
+
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 20;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+.close-padding {
+  padding-bottom: 1rem;
+}
+
+table {
+  width: 100%; /* Ensure the table takes full width */
+  border-collapse: collapse; /* Remove space between table cells */
+}
+
+table thead {
+  position: relative;
+}
+
+table thead td {
+  background-color: #a9aaaa;
+  color: white;
+  font-size: 1.4em;
+  line-height: 24px;
+  /* padding: 5px 0px 0px 5px;
+  position: sticky;
+  -webkit-position: sticky;
+  text-transform: uppercase;
+  top: 0;
+  vertical-align: text-top;
+  overflow: hidden; */
+}
+
+table th {
+  vertical-align: text-top;
+  padding: 5px 0px 0px 5px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  line-height: 24px;
+  background-color: #a9aaaa;
+  color: white;
+  overflow: hidden;
+  padding-right: 10px;
+  text-align: left;
+
+} 
+
+table td {
+  vertical-align: text-top;
+  font-size: 1em;
+  /* padding: 0 0px 0 5px; */
+  line-height: 20px;
+  /* overflow: auto; */
+} 
 
 /* Media query for mid-sized screens */
 @media (max-width: 900px) {
