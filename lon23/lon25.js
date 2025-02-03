@@ -928,7 +928,7 @@ function maketable(data, tabell) {
     sortNumerical()
   })
 
-  // informHeight();
+  informHeight();
 
 };
 
