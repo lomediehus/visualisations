@@ -49,11 +49,23 @@ const data2 = [
     { job: "Förrådsarbetare", values: [{ year: 2019, salary: 25378 }, { year: 2024, salary: 29143 }], raise: "14,8%" }
 ];
 
+// Sort the data by the "raise" key
+data.sort((a, b) => {
+    // Convert raise percentage strings to numbers for comparison
+    const raiseA = parseFloat(a.raise.replace('%', ''));
+    const raiseB = parseFloat(b.raise.replace('%', ''));
+    return raiseB - raiseA; // Sort in descending order
+  });
 
-// Dimensioner
-// const margin = { top: 50, right: 30, bottom: 30, left: 60 };
-// const width = 340 - margin.left - margin.right;
-// const height = 400 - margin.top - margin.bottom;
+// Sort the data by the "raise" key
+data2.sort((a, b) => {
+    // Convert raise percentage strings to numbers for comparison
+    const raiseA = parseFloat(a.raise.replace('%', ''));
+    const raiseB = parseFloat(b.raise.replace('%', ''));
+    return raiseB - raiseA; // Sort in descending order
+  });
+
+
 
 const closex = document.getElementById("closex");
 
@@ -101,11 +113,7 @@ const y = d3.scaleLinear()
     .domain([23000, 33000])
     .range([height, 0]);
 
-// Axlar
-// Custom format function for Swedish thousand separator
-// const SweNum = new Intl.NumberFormat('sv-SE', {
-//     maximumFractionDigits: 0
-// })
+
 
 const swedishLocale = d3.formatLocale({
     decimal: ",",
