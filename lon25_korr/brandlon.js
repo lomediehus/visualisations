@@ -29,7 +29,7 @@
                 lonefil = data;
                 maketable(lonefil)
                 makeMap(lonefil)
-                // informHeight();
+                informHeight();
                 },
             error: function (/* request, error */) {
                 console.log('Network error has occurred please try again!');
@@ -399,7 +399,7 @@
  
     //uses function in main script file to make the graph that compares professions
     makeGraph(riksYrken);
-    // informHeight()
+    informHeight()
   }
 
 
