@@ -123,8 +123,8 @@ window.riksYrken = [
   }
 ]
 
-var kommunloner = "kommunloner24.json";
-var regionloner = "regionloner24.json";
+var kommunloner = "kommunloner25.json";
+var regionloner = "regionloner25.json";
 var sokvagGeografi = "SverigesLan2019.geojson";
 var kdata = null;
 var rdata = null;
