@@ -13,7 +13,7 @@ var lon23 = document.getElementById("lon23");
 var inputYear = document.getElementById("inputYear");
 var shoot = document.getElementById("calculate");
 let select = document.getElementById("years")
-const i2 = 403.7;
+const i2 = 415.15;
 let i1 = Number(select.value);
 let result;
 
@@ -46,6 +46,20 @@ select.addEventListener("change", function(){
     lon23.value = result;
   }
 })
+
+const body = document.querySelector('body');
+
+//if todays date is higher than 9 march change background color   
+(function() {
+  var today = new Date();
+  var date = new Date("2025-03-09");
+  if (today > date) {
+    body.style.backgroundColor = 'rgb(249,249,247)';
+  }
+  else {
+    body.style.backgroundColor = '#fcfaf5'
+  }
+})();
 
 informHeight();
 
