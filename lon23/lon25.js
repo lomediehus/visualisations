@@ -131,7 +131,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Vårdbiträde",
-    "lön": 25961
+    "lön": 25965
   },
   {
     "yrke": "Vårdbiträde Funktionshinder",
@@ -788,7 +788,7 @@ function populateKommunDropdown() {
 
     else if (getvalue(yrkesknappar) === "kommuner") {
       //index for kdata is 2 because that is the position of the first proffesion in that array
-      jamforyrke(kdata, 'RIKSSNITT', 2);
+      jamforyrke(kdata, 'RIKSSNITT', 4);
       //Show which data is chosen
       yrkesspan.innerHTML = 'genomsnitt för alla kommuner.<br>Välj en kommun i listan.';
       $('#yrkep').hide().fadeIn();
