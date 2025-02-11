@@ -1,0 +1,102 @@
+[
+        {
+            "city": "Umeå",
+            "lat": "63.8285",
+            "lng": "20.2706",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Västerbotten",
+            "capital": "admin",
+            "text": "Kommunal protesterar mot att nattpassen på särskilda boenden kortas, kan blir fler och extra pass på andra boenden."
+        },
+        {
+            "city": "Gävle",
+            "lat": "60.667",
+            "lng": "17.1666",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Gävleborg",
+            "capital": "admin",
+            "text": "Nattpass på åtta timmar införs, det innebär fler pass. Kommunal betonar att medlemmarna ska vara delaktiga och följer utvecklingen."
+        },
+        {
+            "city": "Trollhättan",
+            "lat": "58.2671",
+            "lng": "12.3",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Västra Götaland",
+            "capital": "minor",
+            "text": "Namninsamling för att rädda nattpass på tio timmar. "
+        },
+        {
+            "city": "Kalmar",
+            "lat": "56.6694",
+            "lng": "16.3218",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Kalmar",
+            "capital": "admin",
+            "text": "När arbetstidsförkortningen införs vill Kalmar erbjuda nattarbetare att gå upp till heltid. Kommunals medlemmar kräver nattpass på tio timmar. I dag är passen nio timmar. Diskussioner pågår."
+        },
+        {
+            "city": "Region Blekinge",
+            "lat": "56.1611",
+            "lng": "15.5881",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Blekinge",
+            "capital": "admin",
+            "text": "Sedan tidigare finns ett avtal i Region Blekinge som ger en arbetstidsförkortning för varje arbetad timme på natten."
+        },
+        {
+            "city": "Tibro",
+            "lat": "58.419",
+            "lng": "14.158",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Västra Götaland",
+            "capital": "minor",
+            "text": "Här gäller redan 34,20 timmar för nattarbetare som gått upp till heltid. Från 1 april gäller det kortare heltidsmåttet för alla men passen förändras inte."
+        },
+        {
+            "city": "Lund",
+            "lat": "55.7",
+            "lng": "13.1833",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Skåne",
+            "capital": "minor",
+            "text": "Anställda vid psykiatrin och sjukhusen i Lund, Landskrona och Höör får en natt mindre per schemaperiod."
+        },
+        {
+            "city": "Landskrona",
+            "lat": "55.8667",
+            "lng": "12.8333",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Skåne",
+            "capital": "minor",
+            "text": "Anställda vid psykiatrin och sjukhusen i Lund, Landskrona och Höör får en natt mindre per schemaperiod."
+        },
+        {
+            "city": "Höör",
+            "lat": "55.9333",
+            "lng": "13.5333",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Skåne",
+            "capital": "minor",
+            "text": "Anställda vid psykiatrin och sjukhusen i Lund, Landskrona och Höör får en natt mindre per schemaperiod."
+        },
+        {
+            "city": "Region Västerbotten",
+            "lat": "63.8285",
+            "lng": "19.6",
+            "country": "Sweden",
+            "iso2": "SE",
+            "admin_name": "Västerbotten",
+            "capital": "admin",
+            "text": "Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön."
+        }
+    ]
