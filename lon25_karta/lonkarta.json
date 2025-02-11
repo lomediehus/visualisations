@@ -7,6 +7,7 @@
             "iso2": "SE",
             "admin_name": "Gävleborg",
             "capital": "admin",
+            "labelPosition": "right",
             "text": "Kommunal protesterar mot att nattpassen på särskilda boenden kortas, kan blir fler och extra pass på andra boenden."
         },
         {
@@ -17,6 +18,7 @@
             "iso2": "SE",
             "admin_name": "Östergötland",
             "capital": "admin",
+            "labelPosition": "right",
             "text": "Nattpass på åtta timmar införs, det innebär fler pass. Kommunal betonar att medlemmarna ska vara delaktiga och följer utvecklingen."
         },
         {
@@ -27,6 +29,7 @@
             "iso2": "SE",
             "admin_name": "Örebro",
             "capital": "minor",
+            "labelPosition": "left",
             "text": "Namninsamling för att rädda nattpass på tio timmar. "
         },
         {
@@ -37,6 +40,7 @@
             "iso2": "SE",
             "admin_name": "Örebro",
             "capital": "admin",
+            "labelPosition": "right",
             "text": "När arbetstidsförkortningen införs vill Kalmar erbjuda nattarbetare att gå upp till heltid. Kommunals medlemmar kräver nattpass på tio timmar. I dag är passen nio timmar. Diskussioner pågår."
         },
         {
@@ -47,7 +51,9 @@
             "iso2": "SE",
             "admin_name": "Örebro",
             "capital": "admin",
+            "labelPosition": "left",
             "text": "Sedan tidigare finns ett avtal i Region Blekinge som ger en arbetstidsförkortning för varje arbetad timme på natten."
+
         },
         {
             "city": "Olofström",
@@ -57,6 +63,7 @@
             "iso2": "SE",
             "admin_name": "Blekinge",
             "capital": "minor",
+            "labelPosition": "right",
             "text": "Här gäller redan 34,20 timmar för nattarbetare som gått upp till heltid. Från 1 april gäller det kortare heltidsmåttet för alla men passen förändras inte."
         },
         {
@@ -67,6 +74,7 @@
             "iso2": "SE",
             "admin_name": "Kronoberg",
             "capital": "minor",
+            "labelPosition": "right",
             "text": "Anställda vid psykiatrin och sjukhusen i Lund, Landskrona och Höör får en natt mindre per schemaperiod."
         },
         {
@@ -77,6 +85,7 @@
             "iso2": "SE",
             "admin_name": "Västerbotten",
             "capital": "minor",
+            "labelPosition": "right",
             "text": "Anställda vid psykiatrin och sjukhusen i Lund, Landskrona och Höör får en natt mindre per schemaperiod."
         },
         {
@@ -87,6 +96,7 @@
             "iso2": "SE",
             "admin_name": "Örebro",
             "capital": "minor",
+            "labelPosition": "right",
             "text": "Anställda vid psykiatrin och sjukhusen i Lund, Landskrona och Höör får en natt mindre per schemaperiod."
         },
         {
@@ -97,6 +107,7 @@
             "iso2": "SE",
             "admin_name": "Jämtland",
             "capital": "admin",
+            "labelPosition": "right",
             "text": "Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön. Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller "
         }
     ]

@@ -13,7 +13,7 @@ var kartpopuprubbe = document.getElementById("kartpopuprubbe");
 // Stuff for the Map
 
 //Map dimensions (in pixels)
-var width = 400,
+var width = 350,
 height = 800;
 
 //Map projection
@@ -57,29 +57,50 @@ d3.json("lonkarta.json", function(error, data)
 
   //add circles
   svg
-  .selectAll("myCircles")
-  .data(data)
-  .enter()
-  .append("circle")
-  .attr("cx", function(d){ return projection([d.lng, d.lat])[0] })
-  .attr("cy", function(d){ return projection([d.lng, d.lat])[1] })
-  .attr("r", 7)
-  .style("fill", "#e00f00")
-  .attr("stroke", "#ffffff")
-  .attr("stroke-width", 0.5)
-  // .attr("class", "cirkel")
-  // .on("click",clicked)
-  .on("mouseover", function(d) {
-    d3.select(this).attr("r", 7).style("fill", "white");
-    showTooltip(d)
-  })
-  .on("mouseout", function(d) {
-    d3.select(this).attr("r", 7).style("fill", "#d00f00");
-    hideTooltip()
-  });
-}
-);
+    .selectAll("myCircles")
+    .data(data)
+    .enter()
+    .append("circle")
+    .attr("cx", function(d){ return projection([d.lng, d.lat])[0] })
+    .attr("cy", function(d){ return projection([d.lng, d.lat])[1] })
+    .attr("r", 15)
+    .style("fill", "#e00f00")
+    .attr("stroke", "#ffffff")
+    .attr("stroke-width", 0.5)
+    // .attr("class", "cirkel")
+    // .on("click",clicked)
+    .on("mouseover", function(d) {
+      d3.select(this).attr("r", 15).style("fill", "white");
+      showTooltip(d)
+    })
+    .on("mouseout", function(d) {
+      d3.select(this).attr("r", 15).style("fill", "#d00f00");
+      hideTooltip()
+    });
 
+    // Add text labels
+    svg
+    .selectAll("myLabels")
+    .data(data)
+    .enter()
+    .append("text")
+    // .attr("x", function(d){ return projection([d.lng, d.lat])[0] + 20 })
+    .attr("x", function(d) {
+      return d.labelPosition === "left"
+        ? projection([d.lng, d.lat])[0] - 20
+        : projection([d.lng, d.lat])[0] + 20;
+    })
+    
+    // Adjust the position as needed
+    .attr("y", function(d){ return projection([d.lng, d.lat])[1] })
+    .text(function(d){ return d.city })
+    .attr("font-size", "12px")
+    .attr("fill", "black")
+    .attr("class", "u-textMeta u-textStrong")
+    .attr("text-anchor", function(d) {
+      return d.labelPosition === "left" ? "end" : "start";
+    });
+  });
 
 // d3.json("sverige.geojson",function(error,geodata) {
 d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/sverige.geojson",function(error,geodata) {
@@ -88,11 +109,11 @@ d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/sverige.geojson",f
 
   //Create a path for each map feature in the data
   features.selectAll("path")
-  .data(geodata.features)
-  .enter()
-  .append("path")
-  .attr("d",path2);
-  informHeight();
+    .data(geodata.features)
+    .enter()
+    .append("path")
+    .attr("d",path2);
+    informHeight();
 
 
 });
