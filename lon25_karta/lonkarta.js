@@ -13,16 +13,16 @@ var kartpopuprubbe = document.getElementById("kartpopuprubbe");
 // Stuff for the Map
 
 //Map dimensions (in pixels)
-var width = 200,
-height = 600;
+var width = 400,
+height = 800;
 
 //Map projection
 var projection = d3.geo.conicEqualArea()
-.scale(1800)
+.scale(3000)
 .center([14,66]) //projection center
 .parallels([55.33916500000001,69.0603]) //parallels for conic projection
 .rotate([343.73689396511037]) //rotation for conic projection
-.translate([270.51918016849845,90]); //translate to center the map in view
+.translate([480,150]); //translate to center the map in view
 
 //Generate paths based on projection
 var path2 = d3.geo.path()
