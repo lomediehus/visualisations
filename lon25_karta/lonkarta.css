@@ -65,6 +65,18 @@ div.tooltip {
   pointer-events: none; /*keeps tooltip from flickering*/
 }
 
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 30px;
+}
+
+span.right {
+  float: right;
+}
+
 @media only screen and (max-width: 800px) {
   #bakgrund {
     background-size: contain;

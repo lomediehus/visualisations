@@ -35,7 +35,7 @@
         {
             "city": "Lindesberg",
             "lat": "59.59202",
-            "lng": "15.2304",
+            "lng": "15.50",
             "country": "Sweden",
             "iso2": "SE",
             "admin_name": "Örebro",
@@ -108,6 +108,6 @@
             "admin_name": "Jämtland",
             "capital": "admin",
             "labelPosition": "right",
-            "text": "Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön. Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller "
+            "text": "<p>Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha.<br><strong> kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.</strong><br>Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön.Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller ha kvar i stort sett samma arbetstid och få ökad sysselsättningsgrad och högre lön. Anställda kan välja mellan att behålla sin sysselsättningsgrad och få kortare arbetstid eller</p> "
         }
     ]

@@ -18,11 +18,11 @@ height = 800;
 
 //Map projection
 var projection = d3.geo.conicEqualArea()
-.scale(3000)
-.center([14,66]) //projection center
-.parallels([55.33916500000001,69.0603]) //parallels for conic projection
-.rotate([343.73689396511037]) //rotation for conic projection
-.translate([480,150]); //translate to center the map in view
+  .scale(3000)
+  .center([14,66]) //projection center
+  .parallels([55.33916500000001,69.0603]) //parallels for conic projection
+  .rotate([343.73689396511037]) //rotation for conic projection
+  .translate([480,150]); //translate to center the map in view
 
 //Generate paths based on projection
 var path2 = d3.geo.path()
@@ -30,25 +30,28 @@ var path2 = d3.geo.path()
 
 //Create an SVG
 var svg = d3.select("#kartdiv").append("svg")
-.attr("width", width)
-.attr("height", height);
+  .attr("width", width)
+  .attr("height", height);
 
 //Group for the map features
 var features = svg.append("g")
-.attr("class","features");
+  .attr("class","features");
 
 //Create zoom/pan listener
 //Change [1,Infinity] to adjust the min/max zoom scale
 var zoom = d3.behavior.zoom()
-.scaleExtent([1, Infinity])
-.on("zoom",zoomed);
+  .scaleExtent([1, Infinity])
+  .on("zoom",zoomed);
 
 // svg.call(zoom);
 
 //Create a tooltip, hidden at the start
 var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
 
-
+tooltip.style("top","80px")
+  .style("left","40px")
+  .style("right","40px");
+  // .attr("margin","30px");
 
 //read the file of cities
 // d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/protester_orter.json", function(error, data)
@@ -91,8 +94,9 @@ d3.json("lonkarta.json", function(error, data)
         : projection([d.lng, d.lat])[0] + 20;
     })
     
-    // Adjust the position as needed
-    .attr("y", function(d){ return projection([d.lng, d.lat])[1] })
+    // Move the labels a bit down to avoid overlapping with the circles
+    .attr("y", function(d){ return projection([d.lng, d.lat])[1] + 5 })
+    // .attr("y", function(d){ return projection([d.lng, d.lat])[1] })
     .text(function(d){ return d.city })
     .attr("font-size", "12px")
     .attr("fill", "black")
@@ -127,29 +131,36 @@ function zoomed() {
 
 
 //Position of the tooltip relative to the cursor
-var tooltipOffset = {x: 5, y: -25};
+// var tooltipOffset = {x: 500, y: -25};
 
 //Create a tooltip, hidden at the start
 function showTooltip(d) {
-  moveTooltip();
-
-
-
+  // moveTooltip();
   tooltip.style("display","block")
-    .html("<strong>" + d.city + "</strong><br>" + d.text)
+  // function showTooltip(d) {
+  tooltip.style("display", "block")
+    .node().innerHTML = "<strong>" + d.city + "</strong><span id='spanclose' class='right'><img src='closex.png' class='closex'></span><br>" + d.text;
+  // }
+    // .html("<strong>" + d.city + "</strong><span class='right'><img src='closex.png' class='closex'></span><br>" + d.text)
 }
 
 //Move the tooltip to track the mouse
-function moveTooltip() {
-  tooltip.style("top",(d3.event.pageY-40)+"px")
-  .style("left",(d3.event.pageX-30)+"px");
+// function moveTooltip() {
+//   tooltip.style("top",(d3.event.pageY-40)+"px")
+//   .style("left",(d3.event.pageX-30)+"px");
+// }
 
-}
 
-//Create a tooltip, hidden at the start
+
+//hide tooltip
 function hideTooltip() {
   tooltip.style("display","none");
 }
+
+//close tooltip
+document.getElementById("spanclose").addEventListener("click", function() {
+  tooltip.style("display","none");
+});
 
 
 const body = document.querySelector('body');
