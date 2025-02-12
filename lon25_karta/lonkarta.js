@@ -155,9 +155,8 @@ function showTooltip(d) {
 //hide tooltip
 function hideTooltip() {
   tooltip.style("display","none");
-}
 
-//close tooltip
+  //close tooltip
 document.getElementById("spanclose").addEventListener("click", function() {
   tooltip.style("display","none");
 });
@@ -167,13 +166,17 @@ document.getElementById("spanclose").addEventListener("touchstart", function() {
   tooltip.style("display","none");
 });
 
-tooltip.addEventListener("click", function() {  
-  tooltip.style("display","none");  
-});
+}
 
-tooltip.addEventListener("touchstart", function() {  
-  tooltip.style("display","none");  
-});
+
+
+// tooltip.addEventListener("click", function() {  
+//   tooltip.style("display","none");  
+// });
+
+// tooltip.addEventListener("touchstart", function() {  
+//   tooltip.style("display","none");  
+// });
 
 
 
@@ -190,4 +193,3 @@ const body = document.querySelector('body');
     body.style.backgroundColor = '#fcfaf5'
   }
 })();
-
