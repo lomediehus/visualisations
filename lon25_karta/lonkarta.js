@@ -167,6 +167,16 @@ document.getElementById("spanclose").addEventListener("touchstart", function() {
   tooltip.style("display","none");
 });
 
+tooltip.addEventListener("click", function() {  
+  tooltip.style("display","none");  
+});
+
+tooltip.addEventListener("touchstart", function() {  
+  tooltip.style("display","none");  
+});
+
+
+
 const body = document.querySelector('body');
 
 //if todays date is higher than 9 march change background color   
