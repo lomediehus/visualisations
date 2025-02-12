@@ -50,8 +50,21 @@ var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta")
 
 tooltip.style("top","80px")
   .style("left","40px")
-  .style("right","40px");
-  // .attr("margin","30px");
+  .style("right","40px")
+  .style("pointer-events", "none"); // Initially set pointer-events to none
+
+// Add event listeners to the tooltip's parent element using event delegation
+document.body.addEventListener("click", function(event) {
+  if (event.target.id === "spanclose" || event.target.classList.contains("closex")) {
+    hideTooltip();
+  }
+});
+
+document.body.addEventListener("touchstart", function(event) {
+  if (event.target.id === "spanclose" || event.target.classList.contains("closex")) {
+    hideTooltip();
+  }
+});
 
 //read the file of cities
 // d3.json("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2076398/protester_orter.json", function(error, data)
@@ -135,13 +148,9 @@ function zoomed() {
 
 //Create a tooltip, hidden at the start
 function showTooltip(d) {
-  // moveTooltip();
-  tooltip.style("display","block")
-  // function showTooltip(d) {
   tooltip.style("display", "block")
+    .style("pointer-events", "auto") // Enable pointer-events when tooltip is visible
     .node().innerHTML = "<strong>" + d.city + "</strong><span id='spanclose' class='right'><img src='closex.png' class='closex'></span><br>" + d.text;
-  // }
-    // .html("<strong>" + d.city + "</strong><span class='right'><img src='closex.png' class='closex'></span><br>" + d.text)
 }
 
 //Move the tooltip to track the mouse
@@ -154,18 +163,8 @@ function showTooltip(d) {
 
 //hide tooltip
 function hideTooltip() {
-  tooltip.style("display","none");
-
-  //close tooltip
-document.getElementById("spanclose").addEventListener("click", function() {
-  tooltip.style("display","none");
-});
-
-// Add touch event listener for iPhone
-document.getElementById("spanclose").addEventListener("touchstart", function() {
-  tooltip.style("display","none");
-});
-
+  tooltip.style("display", "none")
+    .style("pointer-events", "none"); // Disable pointer-events when tooltip is hidden
 }
 
 
