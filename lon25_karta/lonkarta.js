@@ -162,6 +162,10 @@ document.getElementById("spanclose").addEventListener("click", function() {
   tooltip.style("display","none");
 });
 
+// Add touch event listener for iPhone
+document.getElementById("spanclose").addEventListener("touchstart", function() {
+  tooltip.style("display","none");
+});
 
 const body = document.querySelector('body');
 
