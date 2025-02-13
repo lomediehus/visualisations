@@ -1,6 +1,6 @@
 body {
   background-color: #fcfaf5;
-  height: 450px;
+  height: 800px;
 }
 
 svg {
@@ -16,7 +16,7 @@ svg {
 }
 
 #kartdiv {
-  height: 500px;
+  height: 800px;
 }
 
 #container {
@@ -40,7 +40,33 @@ svg {
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
+circle {
+  pointer-events: all !important;
+}
 
+.map-circle {
+  cursor: pointer;
+  transition: fill 0.2s ease, r 0.2s ease;
+}
+.map-circle:hover {
+  fill: white;
+}
+
+#kartdiv {
+  pointer-events: none;
+}
+
+#bakgrund {
+  pointer-events: none;
+}
+/* svg {
+  position: relative;
+  z-index: 10;
+}
+#yourDivId {
+  position: absolute;
+  z-index: 5;
+} */
 
 /* Stuff for the map */
 path {
@@ -62,7 +88,7 @@ div.tooltip {
   padding: 4px 8px;
   display: none;
   font-weight: normal;
-  pointer-events: none; /*keeps tooltip from flickering*/
+  pointer-events: none !important; keeps tooltip from flickering
 }
 
 img.closex:hover {
@@ -71,11 +97,16 @@ img.closex:hover {
 
 img.closex {
   width: 30px;
+  visibility: hidden;
 }
 
 span.right {
   float: right;
 }
+
+/* #spanclose {
+  z-index: 100;
+} */
 
 @media only screen and (max-width: 800px) {
   #bakgrund {
@@ -83,7 +114,16 @@ span.right {
     background-position-x: center;
     background-position-y: bottom;
   }
+}
 
+/* media query for cell phones */
+@media only screen and (max-width: 480px) {
+  img.closex {
+    visibility: visible;
+  }
+}
 
-
+/* media query for tablets */
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  /* Add specific styles for tablets here */
 }
