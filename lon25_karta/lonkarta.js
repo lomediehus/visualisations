@@ -105,7 +105,7 @@ d3.json("lonkarta.json", function(error, data) {
    // Mouseover: Highlight circle and show tooltip
    .on("mouseover", function(d) {
      console.log("Mouseover on:", d.city);
-     d3.select(this).attr("r", 18).style("fill", "white");
+     d3.select(this).attr("stroke-width", 1);
      showTooltip(d, "mouseover");
    })
 
@@ -117,7 +117,9 @@ d3.json("lonkarta.json", function(error, data) {
     }
     
     console.log("Mouseout on:", d.city);
-    d3.select(this).attr("r", 15).style("fill", "#e00f00");
+    // d3.select(this).attr("r", 15).style("fill", "#e00f00");
+    d3.select(this).attr("stroke-width", 0.5);
+
     hideTooltip();
    })
 
