@@ -207,7 +207,7 @@ if (d.imageSrc) {
       <em>${d.caption}</em>
     </div>
     <div class='tooltip-right'>
-      <img src='${d.imageSrc}' alt='Image for ${d.city}' style='max-width: 100%; height: auto;'>
+      <img src='${d.imageSrc}' alt='Image for ${d.city}' class='huvud'>
     </div>
   `;
 } else {

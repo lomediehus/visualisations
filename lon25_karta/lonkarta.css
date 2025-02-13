@@ -88,7 +88,32 @@ div.tooltip {
   padding: 4px 8px;
   display: none;
   font-weight: normal;
-  pointer-events: none !important; keeps tooltip from flickering
+  pointer-events: none !important;
+  max-width: 500px;
+}
+
+.tooltip-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tooltip-left {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.tooltip-right {
+  flex: 1;
+  text-align: right;
+}
+
+.huvud {
+  max-width: 50%;
+}
+
+.tooltip-text {
+  margin-top: 10px;
 }
 
 img.closex:hover {
@@ -121,6 +146,10 @@ span.right {
   img.closex {
     visibility: visible;
   }
+  .huvud {
+    max-width: 80%;
+  }
+  
 }
 
 /* media query for tablets */
