@@ -8,7 +8,8 @@
             "admin_name": "Gävleborg",
             "capital": "admin",
             "labelPosition": "right",
-            "text": "<h3>\"Det är ju detaljer i verksamheten\"</h3><br>Abdullah Cadaani (S), lön/arvode: 65 000 kronor/månad. (OBS 2023 års lön)<br><strong>Vet du vad medellönen för vårdbiträden ligger på ungefär i din kommun?</strong><br>– Det vet jag inte, det behöver jag kolla i så fall.<br><strong>Vad tror du ungefär?</strong><br>– Det vet jag inte. Det är ju detaljer i verksamheten som jag måste kolla i så fall. Det blir obegripligt om jag ska svara på det.<br><strong>Snittlönen ligger på 23 762 kronor…</strong><br>– Men vänta lite, vill du ha svar så får du skicka frågorna skriftligt annars vill jag inte svara."
+            "caption": "Abdullah Cadaani (S), lön/arvode: 65&nbsp;000 kronor/månad. (OBS 2023 års lön)",
+            "text": "<h3>\"Det är ju detaljer i verksamheten\"</h3><br><strong>Vet du vad medellönen för vårdbiträden ligger på ungefär i din kommun?</strong><br>– Det vet jag inte, det behöver jag kolla i så fall.<br><strong>Vad tror du ungefär?</strong><br>– Det vet jag inte. Det är ju detaljer i verksamheten som jag måste kolla i så fall. Det blir obegripligt om jag ska svara på det.<br><strong>Snittlönen ligger på 23&nbsp;762 kronor…</strong><br>– Men vänta lite, vill du ha svar så får du skicka frågorna skriftligt annars vill jag inte svara."
             },
         {
             "city": "Finspång",
@@ -19,7 +20,9 @@
             "admin_name": "Östergötland",
             "capital": "admin",
             "labelPosition": "right",
-           "text": "<h3>\"Inte jag som sitter i löneförhandlingarna\"</h3><br>Mats Annerfeldt (S), lön/arvode: 73 453 kronor/månad.<br>– Jag vet inte exakt, Vi jobbar på att göra en sammanställning.<br><strong>Men om du skulle gissa, mer eller mindre än 27 000 kronor?</strong><br>– Jag tror att vi ligger där ungefär, något lägre kanske.<br><strong>Din kommun ligger nära 2 000 kronor i månaden under snittet på riksplanet. Vad kan du göra åt det?</strong><br>– På något sätt tänker vi att vi vill följa den svenska modellen. Jag skulle önska att de förhandlingar som sker nationellt skulle prioritera mer.<br><strong>Men vad kan du och ni göra på det lokala planet?</strong><br>– Det är inte jag som sitter i löneförhandlingarna. Men nu har jag fått den här väckarklockan och kommer att titta lite extra på den här gruppen. Och också titta på hur vi ligger i förhållande till närliggande kommuner."
+            "imageSrc": "img/MatsAnnerfeldtFinspang.jpg",
+            "caption":"Mats Annerfeldt (S), lön/arvode: 73&nbsp;453 kronor/månad.",
+            "text": "<h3>\"Inte jag som sitter i löneförhandlingarna\"</h3>– Jag vet inte exakt, Vi jobbar på att göra en sammanställning.<br><strong>Men om du skulle gissa, mer eller mindre än 27&nbsp;000 kronor?</strong><br>– Jag tror att vi ligger där ungefär, något lägre kanske.<br><strong>Din kommun ligger nära 2&nbsp;000 kronor i månaden under snittet på riksplanet. Vad kan du göra åt det?</strong><br>– På något sätt tänker vi att vi vill följa den svenska modellen. Jag skulle önska att de förhandlingar som sker nationellt skulle prioritera mer.<br><strong>Men vad kan du och ni göra på det lokala planet?</strong><br>– Det är inte jag som sitter i löneförhandlingarna. Men nu har jag fått den här väckarklockan och kommer att titta lite extra på den här gruppen. Och också titta på hur vi ligger i förhållande till närliggande kommuner."
         },
         {
             "city": "Hällefors",
@@ -30,7 +33,10 @@
             "admin_name": "Örebro",
             "capital": "minor",
             "labelPosition": "left",
-            "text": "<h3>\"Vi måste ju höja lönerna\"</h3><br>Cecilia Albertsson (M), lön/arvode: 59 660 kronor/månad.<br>– Jag tror att vi ligger runt 24 000 kronor.<br><strong>Skulle du klara dig på den lönen?</strong><br>– Jag tänker så här, är det något jag har gjort i mitt liv så är det att prövat många olika yrkeskategorier. Jag är född och uppväxt i Hällefors. Och jag har haft alla möjliga arbeten som tidningsbud och reklamutdelare, på Arlanda och allt möjligt. Men det är inte en hög lön.<br><strong>Visste du att ni tillhör de tio kommunerna med landets lägsta vårdbiträdeslöner?</strong><br>– Nej, det visste jag inte. Vi måste ju höja lönerna. HR går på djupet och ser över hur lönerna ser ut kopplat till de olika kategorierna. Det här är bra information och generellt har vi långsiktiga planer och får se hur vi prioriterar. Vi får ha med i beaktande."
+            "imageSrc": "img/CeciliaAlbertssonHallefors.jpeg",
+
+            "caption": "Cecilia Albertsson (M), lön/arvode: 59&nbsp;660 kronor/månad.",
+            "text": "<h3>\"Vi måste ju höja lönerna\"</h3><br>Cecilia Albertsson (M), lön/arvode: 59&nbsp;660 kronor/månad.<br>– Jag tror att vi ligger runt 24&nbsp;000 kronor.<br><strong>Skulle du klara dig på den lönen?</strong><br>– Jag tänker så här, är det något jag har gjort i mitt liv så är det att prövat många olika yrkeskategorier. Jag är född och uppväxt i Hällefors. Och jag har haft alla möjliga arbeten som tidningsbud och reklamutdelare, på Arlanda och allt möjligt. Men det är inte en hög lön.<br><strong>Visste du att ni tillhör de tio kommunerna med landets lägsta vårdbiträdeslöner?</strong><br>– Nej, det visste jag inte. Vi måste ju höja lönerna. HR går på djupet och ser över hur lönerna ser ut kopplat till de olika kategorierna. Det här är bra information och generellt har vi långsiktiga planer och får se hur vi prioriterar. Vi får ha med i beaktande."
         },
         {
             "city": "Lindesberg",
@@ -41,7 +47,8 @@
             "admin_name": "Örebro",
             "capital": "admin",
             "labelPosition": "right",
-             "text": "<h3>\"Jag vill höja, men jag kan inte\"</h3><br>Tomas Klockars (M) lön/arvode: 70 650 kronor/månad.<br>– Handen på hjärtat så nej det vet jag inte. Men jag borde ha koll på det för min fru jobbar inom vården.<br><strong>Snittlönen ligger på 23 855 kronor för vårdbiträden i Lindesberg. Vad är din kommentar till det?</strong><br>– Jag vet inte vad jag ska kommentera… jag tycker att de inom vården har ganska låg lön.<br><strong>Ni ligger bland de tio kommuner i landet som har lägst snittlön för vårdbiträden.</strong><br>– Det var lite tråkigt att höra för jag diskuterar mycket lön med HR-avdelningen och har fått höra att vi alltid följt märket och ligger lite över det. Jag trodde vi låg lite högre. Bland de tio sämsta i riket säger du?<br><strong>Vad vill ni göra åt det?</strong><br>– Lindesbergs kommun har ett minusresultat på nästan 100 miljoner så det är klart jag vill, men jag kan inte."
+            "caption": "Tomas Klockars (M) lön/arvode: 70&nbsp;650 kronor/månad.",
+             "text": "<h3>\"Jag vill höja, men jag kan inte\"</h3> Handen på hjärtat så nej det vet jag inte. Men jag borde ha koll på det för min fru jobbar inom vården.<br><strong>Snittlönen ligger på 23&nbsp;855 kronor för vårdbiträden i Lindesberg. Vad är din kommentar till det?</strong><br>– Jag vet inte vad jag ska kommentera… jag tycker att de inom vården har ganska låg lön.<br><strong>Ni ligger bland de tio kommuner i landet som har lägst snittlön för vårdbiträden.</strong><br>– Det var lite tråkigt att höra för jag diskuterar mycket lön med HR-avdelningen och har fått höra att vi alltid följt märket och ligger lite över det. Jag trodde vi låg lite högre. Bland de tio sämsta i riket säger du?<br><strong>Vad vill ni göra åt det?</strong><br>– Lindesbergs kommun har ett minusresultat på nästan 100 miljoner så det är klart jag vill, men jag kan inte."
         },
         {
             "city": "Nora",
@@ -52,7 +59,8 @@
             "admin_name": "Örebro",
             "capital": "admin",
             "labelPosition": "left",
-            "text": "<h3>\"Vi gör vad vi kan för att ha råd med högre löner\"</h3><br>Dan Pierre (M), lön/arvode: ca 58 400 kronor/månad. (OBS 2023 års lön)<br>– Jag kan gissa men det tänker jag inte göra offentligt. Jag har koll på ungefär vilken nivå det är.<br><strong>Hade du klarat dig själv på medellönen för vårdbiträden i Nora, 24 211 kronor?</strong><br>– Med det liv jag har valt att leva med hus och trädgård och sådana saker så är det självklart att jag inte skulle göra det. Men det blir en väldigt teoretisk jämförelse. Man önskar att den kunde vara högre men så ser inte våra finanser ut och inte övriga region- och kommunfinanser heller. Annars hade man ju som arbetsgivare försökt få upp lönen mer.<br><strong>Vad ska ni göra för att medellönerna i Nora ska bli högre?</strong><br>– Vi vill ju vara en attraktiv arbetsgivare och det är klart att lönen är viktig som en del av visionen. Så vi gör vad vi kan för att försöka ha råd med högre löner."
+            "caption": "Dan Pierre (M), lön/arvode: ca 58&nbsp;400 kronor/månad. (OBS 2023 års lön)",
+            "text": "<h3>\"Vi gör vad vi kan för att ha råd med högre löner\"</h3><br>Dan Pierre (M), lön/arvode: ca 58&nbsp;400 kronor/månad. (OBS 2023 års lön)<br>– Jag kan gissa men det tänker jag inte göra offentligt. Jag har koll på ungefär vilken nivå det är.<br><strong>Hade du klarat dig själv på medellönen för vårdbiträden i Nora, 24&nbsp;211 kronor?</strong><br>– Med det liv jag har valt att leva med hus och trädgård och sådana saker så är det självklart att jag inte skulle göra det. Men det blir en väldigt teoretisk jämförelse. Man önskar att den kunde vara högre men så ser inte våra finanser ut och inte övriga region- och kommunfinanser heller. Annars hade man ju som arbetsgivare försökt få upp lönen mer.<br><strong>Vad ska ni göra för att medellönerna i Nora ska bli högre?</strong><br>– Vi vill ju vara en attraktiv arbetsgivare och det är klart att lönen är viktig som en del av visionen. Så vi gör vad vi kan för att försöka ha råd med högre löner."
 
         },
         {
@@ -64,7 +72,9 @@
             "admin_name": "Blekinge",
             "capital": "minor",
             "labelPosition": "right",
-             "text": "<h3>\"Vi satsar på undersköterskor\"</h3><br><strong>Vet du var medellönen 2024 ligger på för vårdbiträden i Olofström?</strong><br>– Nej det har jag ingen ny siffra på.<br><strong>Är det över eller under 27 000 tror du?</strong><br>– Det är mindre. Vi har inte har den tjänsten egentligen. Man blir vårdbiträde när man blir inlasad och inte har någon undersköterskeutbildning.<br><strong>Medellönen på 23 131 kronor är lägst i hela landet.</strong><br>– Vi vill ju satsa på undersköterskor och att man har rätt utbildning för uppdraget.<br><strong>Finns det något annat ni kan göra än att uppmana till utbildning?</strong><br>– Vi har lagt 1,6 miljoner extra på personal i vården. Det jag har fått till mig är att man vill satsa på dem med utbildning, och då är det främst undersköterskor det handlar om."
+            "imageSrc": "img/MorganBengtssonOlofstrom.jpg",
+            "caption": "Morgan Bengtson(S) lön 78&nbsp;500 kronor/månad.",
+             "text": "<h3>\"Vi satsar på undersköterskor\"</h3><br><strong>Vet du var medellönen 2024 ligger på för vårdbiträden i Olofström?</strong><br>– Nej det har jag ingen ny siffra på.<br><strong>Är det över eller under 27&nbsp;000 tror du?</strong><br>– Det är mindre. Vi har inte har den tjänsten egentligen. Man blir vårdbiträde när man blir inlasad och inte har någon undersköterskeutbildning.<br><strong>Medellönen på 23&nbsp;131 kronor är lägst i hela landet.</strong><br>– Vi vill ju satsa på undersköterskor och att man har rätt utbildning för uppdraget.<br><strong>Finns det något annat ni kan göra än att uppmana till utbildning?</strong><br>– Vi har lagt 1,6 miljoner extra på personal i vården. Det jag har fått till mig är att man vill satsa på dem med utbildning, och då är det främst undersköterskor det handlar om."
         },
         {
             "city": "Växjö",
@@ -75,7 +85,9 @@
             "admin_name": "Kronoberg",
             "capital": "minor",
             "labelPosition": "right",
-            "text": "<h3>\"Vi har prioriterat olika grupper inom Kommunal\"</h3><br>Malin Lauber (S), lön/arvode: ca 97 000 kronor/månad.<br>– Medianlönen kan jag se, men inte medellönen.<br><strong>Vad tycker du om att medellönen för vårdbiträden ligger på 24 225 kronor i din kommun?</strong><br>– Vi vet att kommunalarna har låga löner men det är något som parterna måste komma överens om, det gör inte jag som politiker.<br><strong>Men tycker du att det är en låg lön?</strong><br>– Ja.<br><strong>Vill du göra något åt det?</strong><br>– Vi har under vissa tider prioriterat olika grupper inom Kommunal. Till exempel kockar och måltidsbiträden förra året i löneförhandlingarna. Jag vet inte om det är vårdbiträdenas tur nästa gång."
+            "imageSrc": "img/MalinLauberVaxjo.jpeg",
+            "caption": "Malin Lauber (S), lön/arvode: ca 97&nbsp;000 kronor/månad.",
+            "text": "<h3>\"Vi har prioriterat olika grupper inom Kommunal\"</h3><br>Malin Lauber (S), lön/arvode: ca 97&nbsp;000 kronor/månad.<br>– Medianlönen kan jag se, men inte medellönen.<br><strong>Vad tycker du om att medellönen för vårdbiträden ligger på 24&nbsp;225 kronor i din kommun?</strong><br>– Vi vet att kommunalarna har låga löner men det är något som parterna måste komma överens om, det gör inte jag som politiker.<br><strong>Men tycker du att det är en låg lön?</strong><br>– Ja.<br><strong>Vill du göra något åt det?</strong><br>– Vi har under vissa tider prioriterat olika grupper inom Kommunal. Till exempel kockar och måltidsbiträden förra året i löneförhandlingarna. Jag vet inte om det är vårdbiträdenas tur nästa gång."
         },
         {
             "city": "Vilhelmina",
@@ -86,7 +98,9 @@
             "admin_name": "Västerbotten",
             "capital": "minor",
             "labelPosition": "right",
-            "text": "<h3>\"Det blir mer att prioritera bort saker\"</h3><br>Andreas Eliasson (S), lön/arvode: ca 50 000 kronor/månad.<br>– Jag vet att vi ligger under rikssnittet i flera yrkeskategorier. Vi har en svår ekonomi och utmanande demografi.<br><strong>Medellönen är 24 225 kronor för vårdbiträden. Vad är din kommentar till det?</strong><br>– Jag tycker det är för lågt. Men jag vet också att vi ligger i botten. Det är inga nya siffror.<br><strong>Skulle du klara dig på den lönen?</strong><br>– Jag hade det som ingångslön när jag arbetade som lärare. Då klarade jag mig. Men det är fortfarande en låg lön.<br><strong>Vad vill du göra åt det här?</strong><br>– Det är en fråga som är uppe i diskussionen och vi känner till detta. Vår kommun har gjort underskott de senaste åren, så det är jättemånga i politiken som vill satsa på saker, men tyvärr blir det mer att prioritera bort saker för att hålla våra resultatmål."
+            "imageSrc": "img/AndreasEliassonVilhelmina.jpg",
+            "caption": "Andreas Eliasson (S), lön/arvode: ca 50&nbsp;000 kronor/månad.",
+            "text": "<h3>\"Det blir mer att prioritera bort saker\"</h3><br>Andreas Eliasson (S), lön/arvode: ca 50&nbsp;000 kronor/månad.<br>– Jag vet att vi ligger under rikssnittet i flera yrkeskategorier. Vi har en svår ekonomi och utmanande demografi.<br><strong>Medellönen är 24&nbsp;225 kronor för vårdbiträden. Vad är din kommentar till det?</strong><br>– Jag tycker det är för lågt. Men jag vet också att vi ligger i botten. Det är inga nya siffror.<br><strong>Skulle du klara dig på den lönen?</strong><br>– Jag hade det som ingångslön när jag arbetade som lärare. Då klarade jag mig. Men det är fortfarande en låg lön.<br><strong>Vad vill du göra åt det här?</strong><br>– Det är en fråga som är uppe i diskussionen och vi känner till detta. Vår kommun har gjort underskott de senaste åren, så det är jättemånga i politiken som vill satsa på saker, men tyvärr blir det mer att prioritera bort saker för att hålla våra resultatmål."
         },
         {
             "city": "Örebro",
@@ -97,7 +111,9 @@
             "admin_name": "Örebro",
             "capital": "minor",
             "labelPosition": "right",
-            "text": "<h3>\"Att det var så lågt visste jag inte\"</h3><br>John Johansson (S) lön/arvode: 83 050 kronor/månad.<br><strong>Vet du vad medellönen för vårdbiträden ligger på ungefär i din kommun?</strong><br>– Aha, det är en sådan här fråga där du vill att jag ska ställas mot väggen och svara fel? Men säg en siffra runt 27 500 då. Är jag helt fel ute då?<br><strong>Den är 23 629 kronor. Vad är din kommentar till det?</strong><br>– Det är lågt. Jag vet mycket väl att det är löner som ligger kostnadsutvecklingen i samhället. Men vi har ett lågt löneläge i Kommunsverige generellt.<br><strong>Vad vill du göra åt det?</strong><br>– Vi har försökt jobba med ekonomin och vill tillsammans med Kommunal göra de här yrkena mer attraktiva.<br><strong>Visste du att ni tillhör de tio kommunerna med landets lägsta vårdbiträdeslöner?</strong><br>– Att det var så lågt för vårdbiträden det hade jag faktiskt inte haft uppe på agendan just nu."
+            "imageSrc": "img/JohnJohanssonOrebro.jpg",
+            "caption": "John Johansson (S) lön/arvode: 83&nbsp;050 kronor/månad.",
+            "text": "<h3>\"Att det var så lågt visste jag inte\"</h3><strong>Vet du vad medellönen för vårdbiträden ligger på ungefär i din kommun?</strong><br>– Aha, det är en sådan här fråga där du vill att jag ska ställas mot väggen och svara fel? Men säg en siffra runt 27&nbsp;500 då. Är jag helt fel ute då?<br><strong>Den är 23&nbsp;629 kronor. Vad är din kommentar till det?</strong><br>– Det är lågt. Jag vet mycket väl att det är löner som ligger kostnadsutvecklingen i samhället. Men vi har ett lågt löneläge i Kommunsverige generellt.<br><strong>Vad vill du göra åt det?</strong><br>– Vi har försökt jobba med ekonomin och vill tillsammans med Kommunal göra de här yrkena mer attraktiva.<br><strong>Visste du att ni tillhör de tio kommunerna med landets lägsta vårdbiträdeslöner?</strong><br>– Att det var så lågt för vårdbiträden det hade jag faktiskt inte haft uppe på agendan just nu."
         },
         {
             "city": "Östersund",
@@ -108,6 +124,8 @@
             "admin_name": "Jämtland",
             "capital": "admin",
             "labelPosition": "right",
-            "text": "<h3>\"Uppenbart att vi har ett bekymmer\"</h3><br>Niklas Daoson (S), lön/arvode: 78 500 kronor/månad.<br>– Grovt skulle jag gissa att den ligger mellan 25 000 och 30 000.<br><strong>Den är 23 603 kronor, vad är din kommentar till det?</strong><br>– Det är en låg lön, det är ingen tvekan om det.<br><strong>Vad vill du göra åt det?</strong><br>– Lönesättningen är i första hand en fråga mellan parterna. Men vi behöver ha löner som är konkurrenskraftiga för att vara en attraktiv arbetsgivare. Det är uppenbart att vi har ett bekymmer. Jag vet inte hur vi kommer att hantera de här grupperna i årets lönerörelse, men det är där man kan hantera den här skevheten i lönestrukturen.<br><strong>Vill du göra något åt saken?</strong><br>– Ja men jag kan inte ge dig ett löfte på vad. Men självfallet kan vi inte ha så dåliga löner för vårdbiträden. Jag kan inte förstå varför de har så dåliga löner."
+            "imageSrc": "img/NiklasDaosonOstersund.jpg",
+            "caption": "Niklas Daoson (S), lön/arvode: 78&nbsp;500 kronor/månad.",
+            "text": "<h3>\"Uppenbart att vi har ett bekymmer\"</h3><br>Niklas Daoson (S), lön/arvode: 78&nbsp;500 kronor/månad.<br>– Grovt skulle jag gissa att den ligger mellan 25&nbsp;000 och 30&nbsp;000.<br><strong>Den är 23&nbsp;603 kronor, vad är din kommentar till det?</strong><br>– Det är en låg lön, det är ingen tvekan om det.<br><strong>Vad vill du göra åt det?</strong><br>– Lönesättningen är i första hand en fråga mellan parterna. Men vi behöver ha löner som är konkurrenskraftiga för att vara en attraktiv arbetsgivare. Det är uppenbart att vi har ett bekymmer. Jag vet inte hur vi kommer att hantera de här grupperna i årets lönerörelse, men det är där man kan hantera den här skevheten i lönestrukturen.<br><strong>Vill du göra något åt saken?</strong><br>– Ja men jag kan inte ge dig ett löfte på vad. Men självfallet kan vi inte ha så dåliga löner för vårdbiträden. Jag kan inte förstå varför de har så dåliga löner."
         }
     ]

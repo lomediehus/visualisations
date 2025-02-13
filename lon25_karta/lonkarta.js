@@ -193,8 +193,42 @@ function zoomed() {
 function showTooltip(d, eventType) {
   console.log(`Tooltip shown by: ${eventType || "unknown"} | City: ${d.city}`);
 
+  let tooltipContent = `
+  <strong>${d.city}</strong>
+  <span id='spanclose' class='right'>
+    <img src='closex.png' class='closex'>
+  </span>
+  <div class='tooltip-content'>
+`;
+
+if (d.imageSrc) {
+  tooltipContent += `
+    <div class='tooltip-left'>
+      <em>${d.caption}</em>
+    </div>
+    <div class='tooltip-right'>
+      <img src='${d.imageSrc}' alt='Image for ${d.city}' style='max-width: 100%; height: auto;'>
+    </div>
+  `;
+} else {
+  tooltipContent += `
+    <div>
+      <em>${d.caption}</em>
+    </div>
+  `;
+}
+
+tooltipContent += `
+  </div>
+  <div class='tooltip-text'>
+    ${d.text}
+  </div>
+`;
+
+
+
   tooltip.style("display", "block")
-    .node().innerHTML = "<strong>" + d.city + "</strong><span id='spanclose' class='right'><img src='closex.png' class='closex'></span><br>" + d.text;
+    .node().innerHTML = tooltipContent;
 
   // Add event listeners after the tooltip content is set, if not already added
   if (!listenersAdded) {
@@ -203,9 +237,6 @@ function showTooltip(d, eventType) {
     listenersAdded = true;
   }
 }
-
-
-
 
 
 //hide tooltip
@@ -227,22 +258,6 @@ const body = document.querySelector('body');
   }
 })();
 
-// setTimeout(() => {
-//   d3.selectAll("circle").on("click", function(d) {
-//     console.log("Circle was clicked:", d.city);
-//     showTooltip(d);
-//   });
-// }, 3000);
-
-// svg.selectAll("circle").attr("pointer-events", "all");
-
-// svg.selectAll("circle").each(function () {
-//   this.parentNode.appendChild(this);
-// });
-
-// setTimeout(() => {
-//   console.log("Circles found:", d3.selectAll("circle").size());
-// }, 1000);
 
 setTimeout(() => {
   d3.selectAll("circle").on("click touchstart", function(d) {
