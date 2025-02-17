@@ -700,3 +700,17 @@ window.addEventListener('resize', () => {
   timeId = setTimeout(executeAfterResize, 500);
 });
 
+
+const body = document.querySelector('body');
+
+  //if todays date is higher than 9 march change background color   
+  (function() {
+    var today = new Date();
+    var date = new Date("2025-03-09");
+    if (today > date) {
+      body.style.backgroundColor = 'rgb(249,249,247)';
+    }
+    else {
+      body.style.backgroundColor = '#fcfaf5'
+    }
+  })();
