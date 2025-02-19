@@ -836,15 +836,21 @@ function doStuff() {
 
   document.getElementById('sokYrkeKnapp').focus();
 
+
+  const body = document.querySelector('body');
+
+  //if todays date is higher than 9 march change background color   
+  (function() {
+    var today = new Date();
+    var date = new Date("2025-03-23");
+    if (today > date) {
+      body.style.backgroundColor = 'rgb(249,249,247)';
+    }
+    else {
+      body.style.backgroundColor = '#fcfaf5'
+    }
+  })();
   
   
-  // function removeFocus() {
-  //     document.activeElement.blur();
-  //   }
-  // document.body.addEventListener("touchstart", removeFocus);
-
-  //set focus on input field. Disabled because window will scroll down to show input field, and that´s not good when two articles are shown on the same page on ka.se
-  // document.getElementById('sokYrkeKnapp').focus();
-
-//end of doStuff-function
+  
 }
