@@ -52,7 +52,7 @@ const body = document.querySelector('body');
 //if todays date is higher than 9 march change background color   
 (function() {
   var today = new Date();
-  var date = new Date("2025-03-09");
+  var date = new Date("2025-03-23");
   if (today > date) {
     body.style.backgroundColor = 'rgb(249,249,247)';
   }
