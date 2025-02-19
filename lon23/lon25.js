@@ -131,10 +131,10 @@ window.riksYrken = [
   },
   {
     "yrke": "Vårdbiträde",
-    "lön": 25965
+    "lön": 25961
   },
   {
-    "yrke": "Vårdbiträde Funktionshinder",
+    "yrke": "Vårdbiträde-funktionshinder",
     "lön": 26799
   }
 ]
@@ -283,6 +283,7 @@ $(document).ready(function() {
         krboxar[1].style.display = "none";
         // banner.style.display = "block"
         overlay.style.display = "none";
+        c(overlay.style.display)
         blinkcontainer.style.display = "none";
         overlay.style.cursor = "pointer";
         fillHighlowdiv();
@@ -296,6 +297,8 @@ $(document).ready(function() {
         //take away overlay when a selection is made
         if (yrke != "Väljyrke") {
           overlay.style.display = "none";
+          // banner.style.display = "block";
+          // c(banner)
           blinkcontainer.style.display = "none";
           overlay.style.cursor = "pointer";
           fillHighlowdiv();
@@ -787,7 +790,7 @@ function populateKommunDropdown() {
     }
 
     else if (getvalue(yrkesknappar) === "kommuner") {
-      //index for kdata is 2 because that is the position of the first proffesion in that array
+      //index for kdata is 4 because that is the position of the first proffesion in that array
       jamforyrke(kdata, 'RIKSSNITT', 4);
       //Show which data is chosen
       yrkesspan.innerHTML = 'genomsnitt för alla kommuner.<br>Välj en kommun i listan.';
@@ -1047,7 +1050,7 @@ Promise.all([map]).then(function(values) {
 // Click-function for kartpopup
 // d.properties contains the attributes (e.g. d.properties.name, d.properties.population)
 function clicked(d,i) {
-  // c(regionsnitt)
+  c(regionsnitt)
   hideTooltip;
   karttabell.innerHTML = '';
   kartpopuprubbe.innerHTML = '';
@@ -1070,14 +1073,11 @@ function clicked(d,i) {
 
       //Add rows from file "kdata"
       kdata.forEach(function(row) {
-        // c(row)
+        // c(riksYrken[0])
 
 
-        if (row[yrke] !== "bort") {    
+        if (row[yrke] !== "bort") {        
           if (d.properties.landsting === row.Region) {
-            c(d.properties.landsting + " " + row.Region)    
-
-           
 
             rad = karttabell.insertRow(0);
             cell1 = rad.insertCell(0);
@@ -1093,7 +1093,6 @@ function clicked(d,i) {
                 yrkeform = '';
               }
               cell2.innerHTML = yrkeform;
-              c("yrkeform" + yrkeform)
               }
             bubbelvillkor(row);
           }
@@ -1105,7 +1104,7 @@ function clicked(d,i) {
       var rikssnittKartan;
           riksYrken.forEach(function(row) {
           if (row["yrke"] == yrke) {
-            // c(row["lön"])
+            c(row["lön"])
             // rikssnittKartan = row["lön"];
             rikssnittKartan = SweNum.format(row["lön"]);                    
          }
@@ -1244,7 +1243,7 @@ const body = document.querySelector('body');
 //if date is higher than today, change background color   
 (function() {
   var today = new Date();
-  var date = new Date("2025-03-09");
+  var date = new Date("2025-03-23");
   if (today > date) {
     body.style.backgroundColor = 'rgb(249,249,247)';
   }
