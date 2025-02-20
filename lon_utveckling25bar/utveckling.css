@@ -1,0 +1,213 @@
+
+* {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* For hiding scrollbar in Firefox without impacting scrolling function */
+  html {
+    scrollbar-width: none;
+    z-index: 2;
+  }
+  
+  body {
+    padding: 0px;
+    background-color: #fcfaf5;
+    /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+    -ms-overflow-style: none;
+    z-index: 2;
+  }
+  
+  /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px;
+  align-items: flex-start;
+  max-width: 100%;
+}
+  
+
+.basecontainer {
+  width: 360px;
+  max-width: 360px; 
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  /* flex: 1 1 360px; */
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+} 
+
+.selectcontainer select {
+    /* display: block;
+    margin: 0 auto; */
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    font-size: medium;
+    text-align: center;
+}
+
+.x-axis {
+  font-size: medium;
+  font-weight: bold;
+  fill: black;
+  stroke-width: 0.1px;
+
+}
+
+/* .y-axis path, .y-axis line { */
+.y-axis {
+  font-size: small;
+  /* font-weight: bold; */
+  /* fill: black; */
+  stroke-width: 0.1px;
+  shape-rendering: crispEdges; /* Improve rendering of thin lines */
+  vector-effect: non-scaling-stroke; /* Ensure stroke width is consistent */
+
+
+
+}
+
+.svg-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.Button {
+  display: none;
+  margin-right: 30%;
+  margin-left: auto;
+}
+
+/* #tables {
+  position: relative;
+  width: 100%;
+} */
+/* selector for two button elements with class Button and id kommunbutton and regionbutton */
+#kommunbutton, #regionbutton {
+  display: none;
+  /* margin-right: 30%;
+  margin-left: auto; */
+}
+
+.tabeller {
+  position: absolute;
+  top: 10px;
+  left: 5%; 
+  display: none;
+  z-index: 10; /* Ensure the tables appear on top */
+  background-color: white; /* Optional: to ensure the content is readable */
+  border: 1px solid #ccc; /* Optional: for better visibility */
+  padding: 10px; /* Optional: for better spacing */
+  width: 90%;
+}
+
+
+#tableContainer {
+  position: absolute;
+  /* left: 10px; */
+}
+
+#tableContainer2 {
+  position: absolute;
+  /* left: 10px; */
+}
+
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 20;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+.close-padding {
+  padding-bottom: 1rem;
+}
+
+table {
+  width: 100%; /* Ensure the table takes full width */
+  border-collapse: collapse; /* Remove space between table cells */
+}
+
+table thead {
+  position: relative;
+}
+
+table thead td {
+  background-color: #a9aaaa;
+  color: white;
+  font-size: 1.4em;
+  line-height: 24px;
+  /* padding: 5px 0px 0px 5px;
+  position: sticky;
+  -webkit-position: sticky;
+  text-transform: uppercase;
+  top: 0;
+  vertical-align: text-top;
+  overflow: hidden; */
+}
+
+table th {
+  vertical-align: text-top;
+  padding: 5px 0px 0px 5px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  line-height: 24px;
+  background-color: #a9aaaa;
+  color: white;
+  overflow: hidden;
+  padding-right: 10px;
+  text-align: left;
+
+} 
+
+table td {
+  vertical-align: text-top;
+  font-size: 1em;
+  /* padding: 0 0px 0 5px; */
+  line-height: 20px;
+  /* overflow: auto; */
+} 
+
+/* Media query for mid-sized screens */
+@media (max-width: 900px) {
+  .basecontainer {
+    flex: 1 1 300px; /* Keeps them from stretching too wide */
+    max-width: 360px; /* Prevents them from growing too much */
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 500px) {
+  .basecontainer {
+    flex: 1 1 100%; /* Makes them take full width */
+    max-width: 100%; /* Allows them to shrink */
+  }
+}
