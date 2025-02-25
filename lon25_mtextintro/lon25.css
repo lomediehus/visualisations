@@ -573,11 +573,11 @@ font-size: 20px;
 }
 
 
-@media only screen and (max-width: 758px) {
+/* @media only screen and (max-width: 758px) {
   select#valjyrke {
     width: 360px;
   }
-}
+} */
 
 
 /* för brandmannalönerna */
