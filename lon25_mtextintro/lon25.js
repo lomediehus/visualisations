@@ -381,17 +381,7 @@ $(document).ready(function() {
 
     let textyrke = yrkeplural ? yrkeplural : normalizedYrke;
 
-    let html;
-
-    // //If the yrke is "Brandman", use the values from the object in riksyrken
-    // if (yrke === "Brandman") {
-    //   html = `<h3 class='presentationsrubrik u-textMetaDeca'>Så tjänar ${textyrke}</h3><p class="u-textMeta">${textyrke} tjänar i genomsnitt <strong>${SweNum.format(getLonByYrke(normalizedYrke))}</strong> kr/mån. Högsta medellönen, <strong>${SweNum.format(bhögstlön)}</strong> kr/mån finns i <strong>${bhögstplace}</strong>. Lägsta medellönen, <strong>${SweNum.format(blägstlön)} kr/mån,</strong> finns i <strong>${blägstplace}</strong>.</p><div><button class=Button id="sesiffror">Stäng och se alla siffror</button></div>`;    } 
-    // else {
-    //   html = `<h3 class='presentationsrubrik u-textMetaDeca'>Så tjänar ${textyrke}</h3><p class="u-textMeta">${textyrke} tjänar i genomsnitt <strong>${SweNum.format(getLonByYrke(normalizedYrke))}</strong> kr/mån. Högsta medellönen, <strong>${SweNum.format(highest)}</strong> kr/mån finns i <strong>${place}</strong>. Lägsta medellönen, <strong>${SweNum.format(lowest)} kr/mån,</strong> finns i <strong>${place2}</strong>.</p><div><button class=Button id="sesiffror">Stäng och se alla siffror</button></div>`;
-      
-    // }
-
-    html = `<h1 class='presrubrik u-textMetaDeca'>Så tjänar ${textyrke}</h1><p class="u-textMetaDeca prestext">${textyrke} tjänar i genomsnitt <strong>${SweNum.format(getLonByYrke(normalizedYrke))}</strong> kr/mån.<br>Högsta medellönen, <strong>${yrke === 'Brandman'? SweNum.format(bhögstlön) : SweNum.format(highest)}</strong> kr/mån, finns i <strong>${yrke === 'Brandman' ? bhögstplace : place}</strong>.<br>Lägsta medellönen, <strong>${yrke === 'Brandman' ? SweNum.format(blägstlön) : SweNum.format(lowest)} kr/mån,</strong> finns i <strong>${yrke === 'Brandman' ? blägstplace : place2}</strong>.</p><div><button class=Button id="sesiffror">Stäng och se alla siffror</button></div>`;    
+    let html = `<h1 class='presrubrik u-textMetaDeca'>Så tjänar ${textyrke}</h1><p class="u-textMetaDeca prestext">${textyrke} tjänar i genomsnitt <strong>${SweNum.format(getLonByYrke(normalizedYrke))}</strong> kr/mån.<br>Högsta medellönen, <strong>${yrke === 'Brandman'? SweNum.format(bhögstlön) : SweNum.format(highest)}</strong> kr/mån, finns i <strong>${yrke === 'Brandman' ? bhögstplace : place}</strong>.<br>Lägsta medellönen, <strong>${yrke === 'Brandman' ? SweNum.format(blägstlön) : SweNum.format(lowest)} kr/mån,</strong> finns i <strong>${yrke === 'Brandman' ? blägstplace : place2}</strong>.</p><div><button class=Button id="sesiffror">Stäng och se alla siffror</button></div>`;    
 
  
 
@@ -405,6 +395,11 @@ $(document).ready(function() {
       overlay.style.display = "none";
       // overlay.classList.add("blacknollfyra");
     })
+
+    window.addEventListener("scroll", function () {
+      // let fixedDiv = document.querySelector(".fixed-div");
+      presentation.style.top = window.scrollY + 50 + "px"; // Adjust position based on scroll
+  });
 
 
 
