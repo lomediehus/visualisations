@@ -398,6 +398,13 @@ $(document).ready(function() {
       // overlay.classList.add("blacknollfyra");
     })
 
+    //Set the above click function also to "overlay" so that the user can click outside the box to close it
+    overlay.addEventListener("click", function() {
+      presentation.style.display = "none";
+      overlay.style.display = "none";
+      // overlay.classList.add("blacknollfyra");
+    })
+
     window.addEventListener("scroll", function () {
       // let fixedDiv = document.querySelector(".fixed-div");
       presentation.style.top = window.scrollY + 50 + "px"; // Adjust position based on scroll
