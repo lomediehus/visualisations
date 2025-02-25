@@ -54,7 +54,7 @@ h4 {
 }
 
 select#valjyrke {
-  width: 740px;
+  width: 640px;
   margin-top: 20px;
   /* pointer-events: auto; */
   font-size: 1em;
@@ -739,15 +739,17 @@ p .nomargin {
     } */
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 660px) {
     button.utan {
       background-color:#f5f7f7;
       border: none;
       color: #43464B;
       padding: 0px 6px 0px 6px;
-      font-size: larger;
-      
-    }
+      font-size: larger;      
     }
 
+    select#valjyrke {
+      width: 310px;
+    }
 
+  }
