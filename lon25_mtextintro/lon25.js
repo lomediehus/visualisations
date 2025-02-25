@@ -715,7 +715,7 @@ window.makeGraph = function makeGraph(data1) {
   })
 
 
-  var width = 330,
+  var width = 290,
       barHeight = 25;
 
   var x = d3.scaleLinear()
@@ -1082,7 +1082,7 @@ var projection = d3.geoConicEqualArea()
     .rotate([343.6173436862723]) //rotation for conic projection
     // .translate([432.31469742010825,256.8639471506867]) //translate to center the map in view;
 
-    .translate([w*1.4, h/2.4]) //translate to center the map in view;
+    .translate([w*1.3, h/2.4]) //translate to center the map in view;
 
 var bana = d3.geoPath().projection(projection);
 
