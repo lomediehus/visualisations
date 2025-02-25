@@ -403,6 +403,8 @@ $(document).ready(function() {
       presentation.style.display = "none";
       overlay.style.display = "none";
       // overlay.classList.add("blacknollfyra");
+      kartpopup.style.display = "none";
+      brandkartpopup.style.display = "none";
     })
 
     window.addEventListener("scroll", function () {
