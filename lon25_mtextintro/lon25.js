@@ -6,6 +6,7 @@ const c = console.log.bind(document);
 
 //Get one favicon for localhost and another for github pages
 let host = window.location.host;
+console.log(host)
 if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "..ka_assets/favicon2.ico";
 
