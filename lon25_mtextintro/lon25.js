@@ -409,6 +409,7 @@ $(document).ready(function() {
 
     window.addEventListener("scroll", function () {
       // let fixedDiv = document.querySelector(".fixed-div");
+      c("scrolling");
       presentation.style.top = window.scrollY + 50 + "px"; // Adjust position based on scroll
   });
 
