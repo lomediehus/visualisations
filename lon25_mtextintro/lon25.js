@@ -8,7 +8,7 @@ const c = console.log.bind(document);
 let host = window.location.host;
 console.log(host)
 if (host.includes("github")) {
-  document.querySelector("link[rel='shortcut icon']").href = "..ka_assets/favicon2.ico";
+  document.querySelector("link[rel='shortcut icon']").href = "../ka_assets/favicon2.ico";
 
   
 }
