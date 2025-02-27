@@ -7,12 +7,14 @@ const c = console.log.bind(document);
 //Get one favicon for localhost and another for github pages
 let host = window.location.host;
 if (host.includes("github")) {
-  document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+  document.querySelector("link[rel='shortcut icon']").href = "../ka_assets/favicon2.ico";
+
+  
 }
 
 const krboxar = document.getElementsByClassName("krbox");
 const brandboxar = document. getElementsByClassName("brandbox")
-const jamforbox = document.getElementsByClassName("jamforbox");
+// const jamforbox = document.getElementsByClassName("jamforbox");
 
 //ny25
   //format number to swedish format, narrow space as thousand separator and comma as decimal separator
@@ -20,6 +22,7 @@ const jamforbox = document.getElementsByClassName("jamforbox");
     maximumFractionDigits: 0
 })
 
+const presentation = document.getElementById("presentation");
 
 
 
@@ -43,10 +46,12 @@ window.riksYrken = [
   },
   {
     "yrke": "Barnsköterska",
+    "yrkeplural": "Barnsköterskor",
     "lön": 31303
   },
   {
     "yrke": "Biträde",
+    "yrkeplural": "Biträden",
     "lön": 26679
   },
   {
@@ -55,10 +60,17 @@ window.riksYrken = [
   },
   {
     "yrke": "Brandman",
-    "lön": 31838
+    "yrkeplural": "Brandmän",
+    "lön": 31838,
+    "bhögstlön": 40000,
+    "blägstlön": 25000,
+    "bhögstplace": "Stockholm",
+    "blägstplace": "Haparanda"
+
   },
   {
     "yrke": "Elevassistent",
+    "yrkeplural": "Elevassistenter",
     "lön": 28867
   },
   {
@@ -71,6 +83,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Fotvårdsspecialist",
+    "yrkeplural": "Fotvårdsspecialister",
     "lön": 32973
   },
   {
@@ -83,10 +96,12 @@ window.riksYrken = [
   },
   {
     "yrke": "Kock/Kokerska",
+    "yrkeplural": "Kockar/Kokerskor",
     "lön": 30806
   },
   {
     "yrke": "Lärarassistent",
+    "yrkeplural": "Lärarassistenter",
     "lön": 31196
   },
   {
@@ -99,6 +114,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Personlig assistent",
+    "yrkeplural": "Personliga assistenter",
     "lön": 28461
   },
   {
@@ -115,14 +131,17 @@ window.riksYrken = [
   },
   {
     "yrke": "Stödassistent",
+    "yrkeplural": "Stödassistenter",
     "lön": 29888
   },
   {
     "yrke": "Stödpedagog",
+    "yrkeplural": "Stödpedagoger",
     "lön": 33908
   },
   {
     "yrke": "Undersköterska",
+    "yrkeplural": "Undersköterskor",
     "lön": 29996
   },
   {
@@ -131,10 +150,12 @@ window.riksYrken = [
   },
   {
     "yrke": "Vårdbiträde",
-    "lön": 25961
+    "yrkeplural": "Vårdbiträden",
+    "lön": 25965
   },
   {
-    "yrke": "Vårdbiträde-funktionshinder",
+    "yrke": "Vårdbiträde Funktionshinder",
+    "yrkeplural": "Vårdbiträden Funktionshinder",
     "lön": 26799
   }
 ]
@@ -181,8 +202,8 @@ var semitransparent = document.getElementsByClassName('semitransparent');
 var blinkcontainer= document.getElementById("blinkcontainer");
 var brandlondiv = document.getElementById("brandlondiv");
 var content = document.getElementById("content");
-// var banner = document.getElementById("banner");
-// 
+ 
+//Find medellön for brandman, which is not in the json files read in this script file
 function hittaBrandman(row) {
   if (row.yrke === "Brandman") {
     brandsnitt = row.lön;
@@ -198,8 +219,6 @@ $(document).ready(function() {
 
     //choose yrke in list
     valjyrke.addEventListener("change", function() {
-
-
       [...semitransparent].forEach(function(element){
         element.style.opacity = 1;
       })
@@ -283,7 +302,6 @@ $(document).ready(function() {
         krboxar[1].style.display = "none";
         // banner.style.display = "block"
         overlay.style.display = "none";
-        c(overlay.style.display)
         blinkcontainer.style.display = "none";
         overlay.style.cursor = "pointer";
         fillHighlowdiv();
@@ -297,8 +315,6 @@ $(document).ready(function() {
         //take away overlay when a selection is made
         if (yrke != "Väljyrke") {
           overlay.style.display = "none";
-          // banner.style.display = "block";
-          // c(banner)
           blinkcontainer.style.display = "none";
           overlay.style.cursor = "pointer";
           fillHighlowdiv();
@@ -333,33 +349,58 @@ $(document).ready(function() {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&#8239;') + " kr/mån</strong> (kommun)<br> <strong class='red big'>" + $.number(regionsnitt, 0, ',', '&#8239;') + " kr/mån</strong> (region)";
     }
 
+    //remove underscore from yrke and replace with space
+    const normalizedYrke = yrke.replace(/_/g, ' ');
+
+    //If there is a yrkeplural, use that, otherwise use yrke
+    const yrkeplural = riksYrken.find(item => item.yrke === normalizedYrke)?.yrkeplural;
+
+    function getLonByYrke(normalizedYrke) {
+      // Find the object in riksYrken where the yrke matches the normalized value
+      const yrkeObj = riksYrken.find(item => item.yrke === normalizedYrke);
+      // Return the lön value if the object is found, otherwise return null
+      return yrkeObj ? yrkeObj.lön : null;
+      }
+
+    //Find the value of bhögstlön and blägstlön osv
+    const bhögstlön = riksYrken.find(item => item.yrke === normalizedYrke)?.bhögstlön;    
+    const blägstlön = riksYrken.find(item => item.yrke === normalizedYrke)?.blägstlön;
+    const bhögstplace = riksYrken.find(item => item.yrke === normalizedYrke)?.bhögstplace;
+    const blägstplace = riksYrken.find(item => item.yrke === normalizedYrke)?.blägstplace;
+
+    //Use yrkeplural if it exists, otherwise use the value of yrke in riksyrken 
+    let textyrke = yrkeplural ? yrkeplural : normalizedYrke;
+
+    //Html for popup. If the yrke is "Brandman", use the values of bhögstlön and blägstlön    
+    let html = `<h1 class='presrubrik u-textMetaDeca'>Så tjänar ${textyrke}</h1><p class="u-textMetaDeca prestext">${textyrke} tjänar i genomsnitt <strong>${SweNum.format(getLonByYrke(normalizedYrke))}</strong> kr/mån.<br>Högsta medellönen, <strong>${yrke === 'Brandman'? SweNum.format(bhögstlön) : SweNum.format(highest)}</strong> kr/mån, finns i <strong>${yrke === 'Brandman' ? bhögstplace : place}</strong>.<br>Lägsta medellönen, <strong>${yrke === 'Brandman' ? SweNum.format(blägstlön) : SweNum.format(lowest)}</strong> kr/mån, finns i <strong>${yrke === 'Brandman' ? blägstplace : place2}</strong>.</p><div id="buttondiv"><button class=Button id="sesiffror">Stäng och se alla siffror</button></div>`;    
+
+    
+    presentation.innerHTML = html;
+    presentation.style.display = "block";
+    overlay.style.display = "block";
+    overlay.classList.add("blacknollfyra");
+
+    //close the popup
+    document.querySelector("#sesiffror").addEventListener("click", function() {
+      presentation.style.display = "none";
+      overlay.style.display = "none";
+    })
+
+    //Set the above click function also to "overlay" so that the user can click outside the box to close it
+    overlay.addEventListener("click", function() {
+      presentation.style.display = "none";
+      overlay.style.display = "none";
+      kartpopup.style.display = "none";
+      brandkartpopup.style.display = "none";
+    })
+
+    //scroll function to keep the popup in place when scrolling. Doesn't seem to work in iframes though.
+    window.addEventListener("scroll", function () {
+      presentation.style.top = window.scrollY + 50 + "px"; // Adjust position based on scroll
+  });
+
     changeColor();
     
-    // // Reset all rectangles to the same color (e.g., light gray) Ny25
-    // d3.selectAll("rect").style("fill", "#ffef58");
-
-
-    // // Select all <g> elements Ny25
-    // d3.selectAll("g")
-    // .filter(function () {
-    //     // Look for a .bartext element within the current <g>
-    //     const textElement = d3.select(this).select("text.bartext");
-    //     if (!textElement.empty()) {
-    //         const text = textElement.text(); // Get its text content
-    //         // console.log("Checking text:", text); // Debug log
-    //         return text === yrke; // Match the target text
-    //     }
-    //     return false; // Exclude <g> if no .bartext is found
-    // })
-    // .each(function () {
-    //     console.log("Matched <g> element:", this); // Log the matched <g>
-    // })
-    // .select("rect") // Select the <rect> within the matched <g>
-    // .each(function () {
-    //     console.log("Selected <rect>:", this); // Log the selected <rect>
-    // })
-    // .style("fill", "orange"); // Change the fill color of the selected <rect>
-
     //end of change-function
     });
 
@@ -662,7 +703,7 @@ window.makeGraph = function makeGraph(data1) {
   })
 
 
-  var width = 330,
+  var width = 290,
       barHeight = 25;
 
   var x = d3.scaleLinear()
@@ -704,15 +745,16 @@ window.makeGraph = function makeGraph(data1) {
         // .attr("textLength", "50%")
         .classed("u-textMeta", true)
         .classed("bartext", true)
-        .text(function(d) {
-          //using regex to replace underscore with space
-          d.yrke = d.yrke.replace(/_/g, ' ');
-          //shorten long strings
-          if (d.yrke.length > 20) {
-            d.yrke = d.yrke.substring(0,19) + "...";
-          }
-          return d.yrke; });
 
+        .text(function(d) {
+          // Create a new variable to hold the truncated text
+          let displayText = d.yrke.replace(/_/g, ' ');
+          // Shorten long strings
+          if (displayText.length > 20) {
+              displayText = displayText.substring(0, 19) + "...";
+          }
+          return displayText;
+           });
 
     changeColor();
 
@@ -790,7 +832,7 @@ function populateKommunDropdown() {
     }
 
     else if (getvalue(yrkesknappar) === "kommuner") {
-      //index for kdata is 4 because that is the position of the first proffesion in that array
+      //index for kdata is 2 because that is the position of the first proffesion in that array
       jamforyrke(kdata, 'RIKSSNITT', 4);
       //Show which data is chosen
       yrkesspan.innerHTML = 'genomsnitt för alla kommuner.<br>Välj en kommun i listan.';
@@ -1028,7 +1070,7 @@ var projection = d3.geoConicEqualArea()
     .rotate([343.6173436862723]) //rotation for conic projection
     // .translate([432.31469742010825,256.8639471506867]) //translate to center the map in view;
 
-    .translate([w*1.4, h/2.4]) //translate to center the map in view;
+    .translate([w*1.3, h/2.4]) //translate to center the map in view;
 
 var bana = d3.geoPath().projection(projection);
 
@@ -1050,7 +1092,7 @@ Promise.all([map]).then(function(values) {
 // Click-function for kartpopup
 // d.properties contains the attributes (e.g. d.properties.name, d.properties.population)
 function clicked(d,i) {
-  c(regionsnitt)
+  // c(regionsnitt)
   hideTooltip;
   karttabell.innerHTML = '';
   kartpopuprubbe.innerHTML = '';
@@ -1073,12 +1115,11 @@ function clicked(d,i) {
 
       //Add rows from file "kdata"
       kdata.forEach(function(row) {
-        // c(riksYrken[0])
+        // c(row)
 
 
-        if (row[yrke] !== "bort") {        
+        if (row[yrke] !== "bort") {    
           if (d.properties.landsting === row.Region) {
-
             rad = karttabell.insertRow(0);
             cell1 = rad.insertCell(0);
             cell2 = rad.insertCell(1);
@@ -1104,7 +1145,7 @@ function clicked(d,i) {
       var rikssnittKartan;
           riksYrken.forEach(function(row) {
           if (row["yrke"] == yrke) {
-            c(row["lön"])
+            // c(row["lön"])
             // rikssnittKartan = row["lön"];
             rikssnittKartan = SweNum.format(row["lön"]);                    
          }
@@ -1243,9 +1284,9 @@ const body = document.querySelector('body');
 //if date is higher than today, change background color   
 (function() {
   var today = new Date();
-  var date = new Date("2025-03-23");
+  var date = new Date("2025-03-09");
   if (today > date) {
-    body.style.backgroundColor = 'rgb(249,249,247)';
+    body.style.backgroundColor = 'rgb(250,249,247)';
   }
   else {
     body.style.backgroundColor = '#fcfaf5'
