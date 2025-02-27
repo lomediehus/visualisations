@@ -6,7 +6,6 @@ const c = console.log.bind(document);
 
 //Get one favicon for localhost and another for github pages
 let host = window.location.host;
-console.log(host)
 if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "../ka_assets/favicon2.ico";
 
@@ -161,8 +160,6 @@ window.riksYrken = [
   }
 ]
 
-c(riksYrken);
-
 var kommunloner = "kommunloner25.json";
 var regionloner = "regionloner25.json";
 var sokvagGeografi = "SverigesLan2019.geojson";
@@ -205,8 +202,8 @@ var semitransparent = document.getElementsByClassName('semitransparent');
 var blinkcontainer= document.getElementById("blinkcontainer");
 var brandlondiv = document.getElementById("brandlondiv");
 var content = document.getElementById("content");
-// var banner = document.getElementById("banner");
-// 
+ 
+//Find medellön for brandman, which is not in the json files read in this script file
 function hittaBrandman(row) {
   if (row.yrke === "Brandman") {
     brandsnitt = row.lön;
@@ -352,75 +349,58 @@ $(document).ready(function() {
       rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&#8239;') + " kr/mån</strong> (kommun)<br> <strong class='red big'>" + $.number(regionsnitt, 0, ',', '&#8239;') + " kr/mån</strong> (region)";
     }
 
-
-
+    //remove underscore from yrke and replace with space
     const normalizedYrke = yrke.replace(/_/g, ' ');
 
+    //If there is a yrkeplural, use that, otherwise use yrke
+    const yrkeplural = riksYrken.find(item => item.yrke === normalizedYrke)?.yrkeplural;
 
-      //If there is a yrkeplural, use that, otherwise use yrke
-      const yrkeplural = riksYrken.find(item => item.yrke === normalizedYrke)?.yrkeplural;
-
-      const yrkesingular = riksYrken.find(item => item.yrke === normalizedYrke)?.yrke;
-
-
-      function getLonByYrke(normalizedYrke) {
-      // Normalize the yrke value by replacing underscores with spaces
-
+    function getLonByYrke(normalizedYrke) {
       // Find the object in riksYrken where the yrke matches the normalized value
       const yrkeObj = riksYrken.find(item => item.yrke === normalizedYrke);
-      c(yrkeObj)
-
       // Return the lön value if the object is found, otherwise return null
       return yrkeObj ? yrkeObj.lön : null;
-        }
-    
-    //Find the value of bhögstlön and blägstlön
+      }
+
+    //Find the value of bhögstlön and blägstlön osv
     const bhögstlön = riksYrken.find(item => item.yrke === normalizedYrke)?.bhögstlön;    
     const blägstlön = riksYrken.find(item => item.yrke === normalizedYrke)?.blägstlön;
     const bhögstplace = riksYrken.find(item => item.yrke === normalizedYrke)?.bhögstplace;
     const blägstplace = riksYrken.find(item => item.yrke === normalizedYrke)?.blägstplace;
 
     //Use yrkeplural if it exists, otherwise use the value of yrke in riksyrken 
-
     let textyrke = yrkeplural ? yrkeplural : normalizedYrke;
 
-    let html = `<h1 class='presrubrik u-textMetaDeca'>Så tjänar ${textyrke}</h1><p class="u-textMetaDeca prestext">${textyrke} tjänar i genomsnitt <strong>${SweNum.format(getLonByYrke(normalizedYrke))}</strong> kr/mån.<br>Högsta medellönen, <strong>${yrke === 'Brandman'? SweNum.format(bhögstlön) : SweNum.format(highest)}</strong> kr/mån, finns i <strong>${yrke === 'Brandman' ? bhögstplace : place}</strong>.<br>Lägsta medellönen, <strong>${yrke === 'Brandman' ? SweNum.format(blägstlön) : SweNum.format(lowest)} kr/mån,</strong> finns i <strong>${yrke === 'Brandman' ? blägstplace : place2}</strong>.</p><div><button class=Button id="sesiffror">Stäng och se alla siffror</button></div>`;    
+    //Html for popup. If the yrke is "Brandman", use the values of bhögstlön and blägstlön    
+    let html = `<h1 class='presrubrik u-textMetaDeca'>Så tjänar ${textyrke}</h1><p class="u-textMetaDeca prestext">${textyrke} tjänar i genomsnitt <strong>${SweNum.format(getLonByYrke(normalizedYrke))}</strong> kr/mån.<br>Högsta medellönen, <strong>${yrke === 'Brandman'? SweNum.format(bhögstlön) : SweNum.format(highest)}</strong> kr/mån, finns i <strong>${yrke === 'Brandman' ? bhögstplace : place}</strong>.<br>Lägsta medellönen, <strong>${yrke === 'Brandman' ? SweNum.format(blägstlön) : SweNum.format(lowest)}</strong> kr/mån, finns i <strong>${yrke === 'Brandman' ? blägstplace : place2}</strong>.</p><div id="buttondiv"><button class=Button id="sesiffror">Stäng och se alla siffror</button></div>`;    
 
- 
-
+    
     presentation.innerHTML = html;
     presentation.style.display = "block";
-        overlay.style.display = "block";
-      overlay.classList.add("blacknollfyra");
+    overlay.style.display = "block";
+    overlay.classList.add("blacknollfyra");
 
+    //close the popup
     document.querySelector("#sesiffror").addEventListener("click", function() {
       presentation.style.display = "none";
       overlay.style.display = "none";
-      // overlay.classList.add("blacknollfyra");
     })
 
     //Set the above click function also to "overlay" so that the user can click outside the box to close it
     overlay.addEventListener("click", function() {
       presentation.style.display = "none";
       overlay.style.display = "none";
-      // overlay.classList.add("blacknollfyra");
       kartpopup.style.display = "none";
       brandkartpopup.style.display = "none";
     })
 
+    //scroll function to keep the popup in place when scrolling. Doesn't seem to work in iframes though.
     window.addEventListener("scroll", function () {
-      // let fixedDiv = document.querySelector(".fixed-div");
-      c("scrolling");
       presentation.style.top = window.scrollY + 50 + "px"; // Adjust position based on scroll
   });
 
-
-
-
-
     changeColor();
     
-   
     //end of change-function
     });
 
@@ -1306,7 +1286,7 @@ const body = document.querySelector('body');
   var today = new Date();
   var date = new Date("2025-03-09");
   if (today > date) {
-    body.style.backgroundColor = 'rgb(249,249,247)';
+    body.style.backgroundColor = 'rgb(250,249,247)';
   }
   else {
     body.style.backgroundColor = '#fcfaf5'

@@ -63,6 +63,11 @@ select#valjyrke {
   letter-spacing: 0px;
 }
 
+#buttondiv {
+  display: flex;
+  justify-content: center;
+}
+
 #presentation {
   position: absolute;
   background-color: white;
