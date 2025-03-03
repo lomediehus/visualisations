@@ -62,10 +62,10 @@ window.riksYrken = [
     "yrke": "Brandman",
     "yrkeplural": "Brandmän",
     "lön": 31838,
-    "bhögstlön": 40000,
-    "blägstlön": 25000,
-    "bhögstplace": "Stockholm",
-    "blägstplace": "Haparanda"
+    "bhögstlön": 39720,
+    "blägstlön": 29442,
+    "bhögstplace": "Perstorps Räddningstjänst",
+    "blägstplace": "Gästrike Räddningstjänst"
 
   },
   {
