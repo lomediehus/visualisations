@@ -4,7 +4,7 @@ const c = console.log.bind(document);
 // Get one favicon for localhost and another for github pages
 let host = window.location.host;
 if (host.includes("github")) {
-  document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+  document.querySelector("link[rel='shortcut icon']").href = "../ka_assets/favicon2.ico";
   c("Jag hittade den! Den var på github!")
 }
 
@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
    
         //Nesting the circle-drawing to ensure they are drawn after the map is drawn.
         var datafile = d3.json("framgang.json");
+        // var datafile = d3.json("framgang.json?t=" + new Date().getTime());
         Promise.all([datafile]).then(function(values) {
             cirkeldata = values[0];
             
@@ -152,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
               // Set the date like this: 
               // const date = new Date("2023-01-01");
               // If you don't want to filter by dates, set the value to "null
-              const date = null;
+              const date = new Date("2023-01-01");
 
               //Set the category you want to show, like this: 
               // const category = 'arbetstid'
@@ -240,19 +241,19 @@ document.addEventListener("DOMContentLoaded", function() {
             // Add text above the circle with "ort": "Sverige"
             var specificCircle = result.filter(function(d) { return d.ort === "Sverige"; })[0];
 
-            if (specificCircle) {
-              svg
-                .append("text")
-                .attr("x", function() {
-                  return projection([specificCircle.long, specificCircle.lat])[0] + 150;
-                })
-                .attr("y", function() {
-                  return projection([specificCircle.long, specificCircle.lat])[1] - radius - 5; // Adjust the position above the circle
-                })
-                .attr("text-anchor", "start")
-                .text("Hela landet")
-                .attr("class", "sverige u-textMetaDeca"); // Add a class for styling if needed
-            }
+            // if (specificCircle) {
+            //   svg
+            //     .append("text")
+            //     .attr("x", function() {
+            //       return projection([specificCircle.long, specificCircle.lat])[0] + 150;
+            //     })
+            //     .attr("y", function() {
+            //       return projection([specificCircle.long, specificCircle.lat])[1] - radius - 5; // Adjust the position above the circle
+            //     })
+            //     .attr("text-anchor", "start")
+            //     .text("Hela landet")
+            //     .attr("class", "sverige u-textMetaDeca"); // Add a class for styling if needed
+            // }
 
 
 
@@ -360,7 +361,7 @@ const body = document.querySelector('body');
   var today = new Date();
   var date = new Date("2025-03-23");
   if (today > date) {
-    body.style.backgroundColor = 'rgb(249,249,247)';
+    body.style.backgroundColor = 'rgb(250,249,247)';
   }
   else {
     body.style.backgroundColor = '#fcfaf5'

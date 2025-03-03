@@ -730,7 +730,7 @@
     "kategori": "arbetskläder",
     "kategori_detaljerad": "arbetsskor",
     "ort": "Solna",
-    "lat": 59.3607,
+    "lat": 59.5,
     "long": 18.0013,
     "url": "https://ka.se/2023/11/15/fler-kommuner-ger-anstallda-arbetsskor/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2023/11/14151141/arbetsskor1.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
@@ -742,7 +742,7 @@
     "kategori_detaljerad": "arbetsskor",
     "ort": "Sundbyberg",
     "lat": 59.361,
-    "long": 17.9718,
+    "long": 17.7,
     "url": "https://ka.se/2023/11/15/fler-kommuner-ger-anstallda-arbetsskor/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2023/11/14151141/arbetsskor1.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2023/11/15"
@@ -1088,7 +1088,7 @@
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/09/27110146/vrinnevisjuhuset-5.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2024/09/30"
   },
- 
+
   {
     "rubrik": "Efter KA:s granskning: Här ska lönerna öka för de som tjänar minst",
     "kategori": "lön",
@@ -1137,11 +1137,121 @@
     "rubrik": "Skyddsombudet Louise motarbetades av chefen – får 30 000 kronor i skadestånd",
     "kategori": "arbetsvillkor",
     "kategori_detaljerad": "förtroendevald",
-    "ort": "",
-    "lat": 58.359,
+    "ort": "Vänersborg",
+    "lat": 58.5,
     "long": 12.337,
     "url": "https://ka.se/2024/11/18/skyddsombudet-louise-motarbetades-av-chefen-far-30-000-kronor-i-skadestand/",
     "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/11/18110348/louise-skyddsombud.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
     "datum": "2024/11/18"
+  },
+  {
+    "rubrik": "De ska jobba sex timmar – och få betalt för åtta: ”Jag kommer få mer tid för mina barn”",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstidsförkortning",
+    "ort": "Västerås",
+    "lat": 59.604,
+    "long": 16.5305,
+    "url": "https://ka.se/2024/12/04/de-ska-jobba-sex-timmar-och-fa-betalt-for-atta-jag-kommer-fa-mer-tid-for-mina-barn/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/12/03164803/hamideh3.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/12/04"
+  },
+  {
+    "rubrik": "Efter personalens protester – nya scheman med fler helger slopas",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "schema",
+    "ort": "Nordmaling",
+    "lat": 63.5719,
+    "long": 19.4874,
+    "url": "https://ka.se/2024/12/10/efter-personalens-protester-nya-scheman-med-fler-helger-slopas/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/12/09133828/schema-hemtjanst.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/12/10"
+  },
+  {
+    "rubrik": "Efter kritiken – nu slipper personalen hoppa runt: ”Aldrig varit så här pressat innan”",
+    "kategori": "arbetsvillkor",
+    "kategori_detaljerad": "bemanning",
+    "ort": "Linköping",
+    "lat": 58.4255,
+    "long": 15.5919,
+    "url": "https://ka.se/2024/12/23/efter-kritiken-nu-slipper-personalen-hoppa-runt-aldrig-varit-sa-har-pressat-innan/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/12/19125001/sajt.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/12/23"
+  },
+  {
+    "rubrik": "Efter Jennies kamp – nu får fritidspersonalen varma kläder",
+    "kategori": "arbetskläder",
+    "kategori_detaljerad": "arbetskläder",
+    "ort": "Kungälv",
+    "lat": 57.8711,
+    "long": 11.9458,
+    "url": "https://ka.se/2024/12/27/efter-jennies-kamp-nu-far-fritidspersonalen-varma-klader/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/12/19134405/vinter.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2024/12/27"
+  },
+  {
+    "rubrik": "Protesterna lönade sig – nu försvinner de hatade semesterperioderna: ”Vi gav aldrig upp”",
+    "kategori": "arbetstid",
+    "kategori_detaljerad": "arbetstid",
+    "ort": "Hallstahammar",
+    "lat": 59.6184,
+    "long": 16.2261,
+    "url": "https://ka.se/2025/01/02/protesterna-lonade-sig-nu-forsvinner-de-hatade-semesterperioderna-vi-gav-aldrig-upp/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2024/12/19135120/anna-gadeborg.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2025/01/02"
+  },
+  {
+    "rubrik": "Här får barnskötarna flexa och fem timmar planeringstid: ”Ger mer frihet”",
+    "kategori": "arbetsvillkor",
+    "kategori_detaljerad": "arbetsvillkor",
+    "ort": "Skara",
+    "lat": 58.39,
+    "long": 13.4017,
+    "url": "https://ka.se/2025/01/10/har-far-barnskotarna-flexa-och-fem-timmar-planeringstid-ger-mer-frihet/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2025/01/09111011/t8a7843.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2025/01/10"
+  },
+  {
+    "rubrik": "Emelies seger: Nu har alla rätt till arbetskläder som passar – oavsett storlek",
+    "kategori": "arbetskläder",
+    "kategori_detaljerad": "arbetskläder",
+    "ort": "Mönsterås",
+    "lat": 57.0443,
+    "long": 16.4431,
+    "url": "https://ka.se/2025/01/16/emelies-seger-nu-har-alla-ratt-till-arbetsklader-som-passar-oavsett-storlek/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2025/01/15122758/em.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2025/01/16"
+  },
+  {
+    "rubrik": "Tony fixade broddar till kollegorna: ”Det är svinhalt ute”",
+    "kategori": "arbetskläder",
+    "kategori_detaljerad": "arbetsskor",
+    "ort": "Stockholm",
+    "lat": 59.2996,
+    "long": 18.3,
+    "url": "https://ka.se/2025/01/22/tony-fixade-broddar-till-kollegorna-det-ar-svinhalt-ute/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2025/01/21121853/broddarna.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2025/01/22"
+  },
+  {
+    "rubrik": "Efter 400 larm fick personalen ökad bemanning: ”Cheferna var osynliga”",
+    "kategori": "arbetsvillkor",
+    "kategori_detaljerad": "bemanning",
+    "ort": "Skara",
+    "lat": 58.3901,
+    "long": 13.2,
+    "url": "https://ka.se/2025/01/23/efter-400-larm-fick-personalen-okad-bemanning-cheferna-var-osynliga/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2025/01/22131544/usk.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2025/01/23"
+  },
+  {
+    "rubrik": "Efter KA:s lönegranskning – nu ska städarlönerna i Åre utredas: ”Vi är längst ner i näringskedjan”",
+    "kategori": "lön",
+    "kategori_detaljerad": "lön",
+    "ort": "Åre",
+    "lat": 63.4036,
+    "long": 13.0649,
+    "url": "https://ka.se/2025/02/13/efter-kas-lonegranskning-nu-ska-stadarlonerna-i-are-utredas-vi-ar-langst-ner-i-naringskedjan/",
+    "bildurl": "https://images.lomediehus.se/app/uploads/sites/5/2025/02/12112827/etta-1.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum": "2025/02/13"
   }
 ]
