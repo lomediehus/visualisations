@@ -240,7 +240,7 @@
     function makeMap(data) {
       //set the size for the map and the legened
       var w = 264;
-      var h = 550;
+      var h = 560;
       var legendRectSize = 18;
       var legendSpacing = 4;
 
@@ -249,11 +249,11 @@
       //set up projection of map
       var projection = d3.geoConicEqualArea()
           // .scale(2365.51882004263)
-          .scale(1950)
+          .scale(2300)
           .center([16.382656313727672,62.34103687152436]) //projection center
           .parallels([55.327583999999995,69.059967]) //parallels for conic projection
           .rotate([343.6173436862723]) //rotation for conic projection
-          .translate([w*1.5, h/2.6]) //translate to center the map in view;
+          .translate([w*1.6, h/2.3]) //translate to center the map in view;
 
       var bana = d3.geoPath().projection(projection);
 

@@ -704,7 +704,7 @@ window.makeGraph = function makeGraph(data1) {
 
 
   var width = 290,
-      barHeight = 25;
+      barHeight = 23;
 
   var x = d3.scaleLinear()
       .range([0, width]);
@@ -1059,18 +1059,18 @@ function bubbelvillkor(row) {
 
 //Nedan kommer allt som har med kartan att göra
 var w = 264;
-var h = 450;
+var h = 480;
 var svg = d3.select('div#lansdiv').append('svg').attr("preserveAspectRatio", "xMinYMin meet").attr("viewBox", "0 0 " + w + " " + h).classed("svg-content", true);
 var projection = d3.geoConicEqualArea()
     // .scale(2365.51882004263)
-    .scale(1800)
+    .scale(2000)
     .center([16.382656313727672,62.34103687152436]) //projection center
 
     .parallels([55.327583999999995,69.059967]) //parallels for conic projection
     .rotate([343.6173436862723]) //rotation for conic projection
     // .translate([432.31469742010825,256.8639471506867]) //translate to center the map in view;
 
-    .translate([w*1.3, h/2.4]) //translate to center the map in view;
+    .translate([w*1.4, h/2.4]) //translate to center the map in view;
 
 var bana = d3.geoPath().projection(projection);
 
