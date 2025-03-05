@@ -50,9 +50,19 @@ function doStuff() {
   function fixUpData() {
     kombo = [...filearray];
 
+
     kombo.forEach(function(kombogrej) {
       //turn value yrke from string to array
       kombogrej.yrke = kombogrej.yrke.split(",");
+
+      //turn value yrke from string to array
+      // if (kombogrej && kombogrej.yrke) {
+      //   kombogrej.yrke = kombogrej.yrke.split(",");
+      // } else {
+      //   console.warn("kombogrej.yrke is not defined.");
+      //   kombogrej.yrke = []; // set it to an empty array
+      // }
+
       //turn string digits into numbers
       kombogrej.avtalnr = parseInt(kombogrej.avtalnr);
       kombogrej.branschnr = parseInt(kombogrej.branschnr);
@@ -146,7 +156,7 @@ function doStuff() {
   var juldatum = new Date("November 07 2024")
   var nyarsdatum = new Date("December 27 2024");
   var trettonhelgsdatum = new Date("January 2 2025");
-  var paskdatum = new Date("February 21 2024");
+  var paskdatum = new Date("February 21 2025");
   var pingstdatum = new Date("April 22 2023");
 
   var midsommardatum = new Date("June 07 2024");
@@ -156,18 +166,20 @@ function doStuff() {
 
   //handling dates:
   //Check if current date is after jul;
-  if (date.getTime() > trettonhelgsdatum.getTime()) {
+  if (date.getTime() > juldatum.getTime()) {
+
+
     //if current date is also after nyar
-    if (date.getTime() > midsommardatum.getTime()) {
-      document.getElementById("helgbild").src = 'midsommar.svg';
-      goActive(helgknapp6);
-      helgnr = "6";
+    if (date.getTime() > paskdatum.getTime()) {
+      document.getElementById("helgbild").src = 'pask.svg';
+      goActive(helgknapp4);
+      helgnr = "4";
     }
-  //   else {
-  //     document.getElementById("helgbild").src = 'nyar.svg';
-  //     goActive(helgknapp2);
-  //     helgnr = "2";
-  //   }
+    else {
+      document.getElementById("helgbild").src = 'nyar.svg';
+      goActive(helgknapp2);
+      helgnr = "2";
+    }
   // }
   // else {
   //   document.getElementById("helgbild").src = 'jul.svg';
@@ -390,7 +402,7 @@ function doStuff() {
   }
 
   //complete list of yrken
-  var yrken = [ "administratör", "aktiveringsassistent", "aktiveringspedagog", "aktivitetsledare", "ambulanssjukvårdare", "anläggningsarbetare", "arbetshandledare", "arbetsledare", "assistent/församlingsarbete", "avbytare", "badmästare", "badpersonal", "banarbetare", "barnskötare", "barnsköterska", "barntimmeledare", "behandlare", "behandlingsassistent", "biträde", "boendeassistent", "boendehandledare", "boendestödjare", "brandman", "buss övriga", "bussförare", "busschaufför", "butikspersonal", "chaufför", "diakoniassistent", "djursjukskötare", "djurskötare", "djurvårdare", "driftsledare", "ekonomibiträde", "elevassistent", "fastighetsskötare", "fordonsförare", "fotvårdare", "fritidsledare", "fältarbetare", "fönsterputsare", "förrådsarbetare", "församlingshemsvärd", "garagepersonal", "habiliteringsassistent", "habiliteringsbiträde", "habiliteringspedagog", "habiliteringspersonal", "handledare", "husmor", "hästskötare", "instruktör", "internlärare", "kock", "kokerska", "kontorsvaktmästare", "kundtjänstmedarbetare", "kyrkogårdsarbetare", "kyrkogårdsföreståndare", "kyrkvaktmästare", "köksbiträde", "kökspersonal", "laboratoriebiträde", "lagerarbetare", "lantarbetare", "ledsagare", "legitimerad djursjukskötare", "logopedassistent", "lokalvårdare", "maskinförare", "maskinskötare", "medlevare", "mekaniker", "montör", "motorfordonsmekaniker", "måltidspersonal", "obduktionstekniker", "omsorgsassistent", "park- och trädgårdsarbetare", "personlig assistent", "receptionist", "renhållningsarbetare", "reparatör", "ridlärare", "serveringsbiträde", "servicevärd", "sjukgymnastassistent", "sjukvårdsbiträde", "skötare", "socialpedagog", "specialistundersköterska", "spårvagnsförare", "städare", "stödassistent", "stödbiträde", "stödpedagog", "stödpersonal", "teamledare", "traktorförare", "tvätteribiträde", "tvätterimedarbetare", "tvättmaskinskötare", "undersköterska", "ungdomsassistent", "ungdomsledare", "vaktmästare", "verkstadspersonal", "vård- och omsorgspersonal", "vårdare", "vårdbiträde"]
+  var yrken = [ "administratör", "aktiveringsassistent", "aktiveringspedagog", "aktivitetsledare", "ambulanssjukvårdare", "anläggningsarbetare", "arbetshandledare", "arbetsledare", "assistent/församlingsarbete", "avbytare", "badmästare", "badpersonal", "banarbetare", "barnskötare", "barnsköterska", "barntimmeledare", "behandlare", "behandlingsassistent", "biträde", "boendeassistent", "boendehandledare", "boendestödjare", "brandman", "buss övriga", "bussförare", "busschaufför", "butikspersonal", "chaufför", "diakoniassistent", "djursjukskötare", "djurskötare", "djurvårdare", "driftsledare", "ekonomibiträde", "elevassistent", "fastighetsskötare", "fordonsförare", "fotvårdare", "fritidsledare", "fältarbetare", "fönsterputsare", "förrådsarbetare", "församlingshemsvärd", "garagepersonal", "habiliteringsassistent", "habiliteringsbiträde", "habiliteringspedagog", "habiliteringspersonal", "handledare", "husmor", "instruktör", "internlärare", "kock", "kokerska", "kontorsvaktmästare", "kundtjänstmedarbetare", "kyrkogårdsarbetare", "kyrkogårdsföreståndare", "kyrkvaktmästare", "köksbiträde", "kökspersonal", "laboratoriebiträde", "lagerarbetare", "lantarbetare", "ledsagare", "logopedassistent", "lokalvårdare", "maskinförare", "maskinskötare", "medlevare", "mekaniker", "montör", "motorfordonsmekaniker", "måltidspersonal", "obduktionstekniker", "omsorgsassistent", "park- och trädgårdsarbetare", "personlig assistent", "receptionist", "renhållningsarbetare", "reparatör", "serveringsbiträde", "servicevärd", "sjukgymnastassistent", "sjukvårdsbiträde", "skötare", "socialpedagog", "specialistundersköterska", "spårvagnsförare", "städare", "stödassistent", "stödbiträde", "stödpedagog", "stödpersonal", "teamledare", "traktorförare", "tvätteribiträde", "tvätterimedarbetare", "tvättmaskinskötare", "undersköterska", "ungdomsassistent", "ungdomsledare", "vaktmästare", "verkstadspersonal", "vård- och omsorgspersonal", "vårdare", "vårdbiträde"]
 
 
 
@@ -834,15 +846,21 @@ function doStuff() {
 
   document.getElementById('sokYrkeKnapp').focus();
 
+
+  const body = document.querySelector('body');
+
+  //if todays date is higher than 9 march change background color   
+  (function() {
+    var today = new Date();
+    var date = new Date("2025-03-23");
+    if (today > date) {
+      body.style.backgroundColor = 'rgb(249,249,247)';
+    }
+    else {
+      body.style.backgroundColor = '#fcfaf5'
+    }
+  })();
   
   
-  // function removeFocus() {
-  //     document.activeElement.blur();
-  //   }
-  // document.body.addEventListener("touchstart", removeFocus);
-
-  //set focus on input field. Disabled because window will scroll down to show input field, and that´s not good when two articles are shown on the same page on ka.se
-  // document.getElementById('sokYrkeKnapp').focus();
-
-//end of doStuff-function
+  
 }
