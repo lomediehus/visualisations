@@ -7,6 +7,14 @@ if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "../ka_assets/favicon2.ico";  
 }
 
+//toggle display of #fotnot p when clicking on the #fotnot link, hidden from start	
+document.querySelector("#fotnot p").classList.toggle("hide");
+document.querySelector("#fotnot a").addEventListener("click", function(e) {
+	e.preventDefault();
+	document.querySelector("#fotnot p").classList.toggle("hide");
+	informHeight();
+});
+
 var w = 264,
 		h = 450,
 		legendRectSize = 15,

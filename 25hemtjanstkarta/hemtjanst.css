@@ -53,6 +53,17 @@ svg text.legend {
   font-size: 0.6em;
 }
 
+#fotnot a, #fotnot p {
+  font-size: 0.6em;
+}
+
+/* #fotnot p {
+  display: none;
+}  */
+
+.hide {
+  display: none;
+}
 
 
 div.tooltip {
