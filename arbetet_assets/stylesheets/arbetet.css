@@ -303,7 +303,7 @@ template {
 }
 @font-face {
   font-family: Founders Grotesk Text;
-  src: url(/arbetet_assets/fonts/founders-grotesk-text/FoundersGroteskTextWeb-Regular.woff2)
+  src: url(arbetet_assets/fonts/founders-grotesk-text/FoundersGroteskTextWeb-Regular.woff2)
     format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -327,7 +327,7 @@ template {
 }
 @font-face {
   font-family: Founders Grotesk Text;
-  src: url(/arbetet_assets/fonts/founders-grotesk-text/FoundersGroteskTextWeb-Bold.woff2)
+  src: url(arbetet_assets/fonts/founders-grotesk-text/FoundersGroteskTextWeb-Bold.woff2)
     format("woff2");
   font-weight: 700;
   font-style: normal;
