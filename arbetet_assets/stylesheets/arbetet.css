@@ -279,7 +279,7 @@ template {
 }
 @font-face {
   font-family: Financier Text;
-  src: url(/arbetet_assets/fonts/financier-text/FinancierTextWeb-Regular.woff2)
+  src: url(arbetet_assets/fonts/financier-text/FinancierTextWeb-Regular.woff2)
     format("woff2");
   font-weight: 400;
   font-style: normal;
