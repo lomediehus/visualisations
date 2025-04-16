@@ -7,9 +7,9 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* div#chart {
-	padding-top: 20px;
-} */
+div#chart {
+	padding-top: 5px;
+}
 
 
 
@@ -60,7 +60,7 @@ h3 {
   flex-direction: row;
   width: 170px;
   /* height: 100px; */
-  top: 80px;
+  top: 90px;
   left: 40px;
 }
 
