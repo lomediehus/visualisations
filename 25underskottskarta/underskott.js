@@ -62,7 +62,9 @@ var path2 = d3.geoPath().projection(projection);
 			// Create new items in the array. Value pairs from "result" are stored with new keys in the "kombo" array, which will now contain both the geodata and the selected data from the json file.
 			kombogrej["Kommun"] = (result[0] !== undefined) ? result[0].Kommun : null;
 			kombogrej["Underskott"] = (result[0] !== undefined) ? result[0].Underskott : null;
-			kombogrej["Kommentar"] = (result[0] !==undefined) ? result[0].Nedskarning : null;
+			kombogrej["Nedskarning"] = (result[0] !==undefined) ? result[0].Nedskarning : null;
+			kombogrej["Svarat"] = (result[0] !==undefined) ? result[0].Svarat : null;
+
 		})
 
 
@@ -122,7 +124,23 @@ var path2 = d3.geoPath().projection(projection);
 		//Using the number from the "kombo" array to set the colors of the regions. The colors are defined in the css file
 		function quantify(d,i) {
 			var f;
-			f = d.Underskott === "ja" ? 1 : 2;
+			//switch statement to set the color of the regions, based on the value of d.Underskott
+			switch (d.Underskott) {
+				case "ja":
+					f = 1;
+					break;
+				case "nej":
+					f = 2;
+					break;
+				case "Ej svar":
+					f = 3;
+					break;
+				default:
+					f = 3;
+					break;
+			}
+
+			// f = d.Underskott === "ja" ? 1 : 2;
 			// var f = d.Siffra;
 			// return "q" + Math.min(8, ~~((f-250) / 150)) + "-9";
 			// console.log(d.Siffra);
@@ -139,7 +157,6 @@ var path2 = d3.geoPath().projection(projection);
 
 function mouseover() {
 	
-		//change opacity only if the tooltip html is not empty
 	
 			tooltip.transition()
 				.duration(200)
