@@ -86,7 +86,7 @@ var path2 = d3.geoPath().projection(projection);
 
 		//color and text for the legend. (Addding an extra item to the domain and range arrays will create a new legend item)
 		var color = d3.scaleOrdinal()
-				.domain(["Underskott 2024", "Ej underskott 2024","Ej svarat"])
+				.domain(["Underskott 2024", "Nej/Vet ej","Ej svarat"])
 				.range(["#ee492e", "#f9f5ce", "#dddddd"]);
 
 		var legend = d3.select("svg")
