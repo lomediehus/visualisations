@@ -1,5 +1,6 @@
 body {
 background-color: #FAF9F7;
+max-width: fit-content;
 }
 
 html, body {
@@ -49,9 +50,31 @@ h3 {
 	font-family: sans-serif;
 }
 
-svg text.legend {
+/* svg text.legend {
   font-size: 0.6em;
+} */
+
+#legend {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 170px;
+  /* height: 100px; */
+  top: 80px;
+  left: 40px;
 }
+
+#legend_square {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background-color: #ee492e;
+}
+/*make selector more specific */
+#legend .legend_text {
+  font-size: 0.8em;
+}
+
 
 #fotnot a, #fotnot p {
   font-size: 0.6em;

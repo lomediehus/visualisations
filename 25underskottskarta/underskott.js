@@ -7,56 +7,49 @@ if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "../ka_assets/favicon2.ico";  
 }
 
-//toggle display of #fotnot p when clicking on the #fotnot link, hidden from start	
-document.querySelector("#fotnot p").classList.toggle("hide");
-document.querySelector("#fotnot a").addEventListener("click", function(e) {
-	e.preventDefault();
-	document.querySelector("#fotnot p").classList.toggle("hide");
-	informHeight();
-});
+// //toggle display of #fotnot p when clicking on the #fotnot link, hidden from start	
+// document.querySelector("#fotnot p").classList.toggle("hide");
+// document.querySelector("#fotnot a").addEventListener("click", function(e) {
+// 	e.preventDefault();
+// 	document.querySelector("#fotnot p").classList.toggle("hide");
+// 	informHeight();
+// });
 
-var w = 264,
-		h = 450,
+var w = 280,
+		h = 500,
 		legendRectSize = 15,
 		legendSpacing = 4,
 		tooltip;
 
 var svg = d3.select('div#chart').append('svg').attr("preserveAspectRatio", "xMinYMin meet").attr("viewBox", "0 0 " + w + " " + h).classed("svg-content", true);
 var projection = d3.geoConicEqualArea()
-    .scale(1800)
+    .scale(2000)
     .center([16.382656313727672,62.34103687152436]) //projection center
     .parallels([55.327583999999995,69.059967]) //parallels for conic projection
     .rotate([343.6173436862723]) //rotation for conic projection
-    .translate([w*1.3, h/2.25]) //translate to center the map in view;
+    .translate([w*1.3, h/2.4]) //translate to center the map in view;
 
 var path2 = d3.geoPath().projection(projection);
 
 //load the geodata file
 
 // d3.json("SverigesKommuner.geojson").then(function(geodata){
-	d3.json("SverigesKommuner.geojson").then(function(geodata){
-
-
-
+d3.json("SverigesKommuner.geojson").then(function(geodata){
 
 	//load a json data file
 	d3.json("underskott.json").then(function(artikeldata){
 	// d3.json("kommundata.json").then(function(artikeldata){
-
 
 		//make a new array out of the feature part of the geodata
 		let kombo =[...geodata.features];
 		//loop the new array of geodata
 		kombo.forEach(function(kombogrej) {
 
-
 			//filter array by a common item ( do a lookup ). "Result" will be an array with one item, which will be an object containing all the text from the json file.
 			var result = artikeldata.filter(function(regiondata) {
 
 				return regiondata.Kod.toString() === kombogrej.properties.KNKOD.toString();
 			})
-
-
 
 
 			// Create new items in the array. Value pairs from "result" are stored with new keys in the "kombo" array, which will now contain both the geodata and the selected data from the json file.
@@ -67,10 +60,8 @@ var path2 = d3.geoPath().projection(projection);
 
 		})
 
-
-
 		svg.selectAll("path")
-				//using the "kombo" array to create map
+			//using the "kombo" array to create map
 	      .data(kombo)
 	      .enter()
 	      .append("path")
@@ -86,35 +77,37 @@ var path2 = d3.geoPath().projection(projection);
 
 		//color and text for the legend. (Addding an extra item to the domain and range arrays will create a new legend item)
 		var color = d3.scaleOrdinal()
-				.domain(["Underskott 2024", "Nej/Vet ej","Ej svarat"])
-				.range(["#ee492e", "#f9f5ce", "#dddddd"]);
+				.domain(["Kommuner som gick med underskott 2024"])
+				.range(["#ee492e"]);
 
-		var legend = d3.select("svg")
-				.append("g")
-				.selectAll("g")
-				.data(color.domain())
-				.enter()
-				.append("g")
-					.attr("class", "legend BodyImage-caption")
-					.attr("transform", function(d,i) {
-						var height = legendRectSize;
-						var horz = 0;
-						var vert = i * height;
-						return "translate(" + horz + "," + vert + ")";
-					})
+		// var legend = d3.select("svg")
+		// 		.append("g")
+		// 		.selectAll("g")
+		// 		.data(color.domain())
+		// 		.enter()
+		// 		.append("g")
+		// 			.attr("class", "legend BodyImage-caption")
+		// 			// .style("width", "100px")
+		// 			//decrease the width of the legend
+		// 			.attr("transform", function(d,i) {
+		// 				var height = legendRectSize;
+		// 				var horz = 0;
+		// 				var vert = i * height + 20;
+		// 				return "translate(" + horz + "," + vert + ")";
+		// 			})
 
-		legend.append("rect")
-				.attr("width", legendRectSize)
-				.attr("height", legendRectSize)
-				.style("fill", color)
-				.style("stroke", color);
+		// legend.append("rect")
+		// 		.attr("width", legendRectSize)
+		// 		.attr("height", legendRectSize)
+		// 		.style("fill", color)
+		// 		.style("stroke", color);
 
 
-		legend.append("text")
-			.attr("x", legendRectSize + legendSpacing)
-			.attr("y", legendRectSize - legendSpacing)
-			.attr("class", "u-textMeta legend")
-			.text(function(d) {return d; });
+		// legend.append("text")
+		// 	.attr("x", legendRectSize + legendSpacing)
+		// 	.attr("y", legendRectSize - legendSpacing)
+		// 	.attr("class", "u-textMeta legend")
+		// 	.text(function(d) {return d; });
 
 		tooltip = d3.select("section")
 				.append("div")
@@ -124,28 +117,8 @@ var path2 = d3.geoPath().projection(projection);
 		//Using the number from the "kombo" array to set the colors of the regions. The colors are defined in the css file
 		function quantify(d,i) {
 			var f;
-			//switch statement to set the color of the regions, based on the value of d.Underskott
-			switch (d.Underskott) {
-				case "ja":
-					f = 1;
-					break;
-				case "nej":
-					f = 2;
-					break;
-				case "Ej svar":
-					f = 3;
-					break;
-				default:
-					f = 3;
-					break;
-			}
-
-			// f = d.Underskott === "ja" ? 1 : 2;
-			// var f = d.Siffra;
-			// return "q" + Math.min(8, ~~((f-250) / 150)) + "-9";
-			// console.log(d.Siffra);
+			f = d.Underskott === "ja" ? 1 : 3;
 			return "q" + f;
-
 			}
 	})
 
@@ -164,42 +137,10 @@ function mouseover() {
 		}
 		
 
-
-
-
 function mousemove(d, i) {
 
-	// let markup = `
-	// 	<p class='fet no-margin-bottom'>${d.Kommun}</p>
-	// 	${(() => {
-	// 		if (d.Skott < 0) {
-	// 			return `
-	// 			<p><span class='fet'></span>${Math.round(d.Skott)}%</p>
-	// 			`
-	// 		}
-	// 		else if (d.Skott == 0) {
-	// 			return`
-	// 			<p><span class='fet'></span>0</p>
-	// 			`
-	// 		}
-	// 		else {
-	// 			return `
-	// 			<p><span class='fet'></span>+${Math.round(d.Skott)}%</p>
-	// 			`
-	// 		}
-	// 		})()}
-	// `
-
-	// let markup = `
-	// 	<p class='fet no-margin-bottom'>${d.Kommun}</p>
-	// `
-	// c(d)
-
-	let markup = d.Underskott === "Not found" ? "" :` 
-	<p class='fet no-margin-bottom'>${d.Kommun}</p>
-	`
-
-
+	let markup = d.Underskott === "ja" ? `<p class='fet no-margin-bottom'>${d.Kommun}</p>` : "";   
+	
 
 	tooltip.html(markup)
 			// .style("left", (d3.event.pageX) + "px")
