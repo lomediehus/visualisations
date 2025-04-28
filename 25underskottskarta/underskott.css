@@ -1,11 +1,26 @@
 body {
 background-color: #FAF9F7;
 max-width: fit-content;
+padding: 0px;
+-ms-overflow-style: none;
+z-index: 2;
+}
+
+/* For hiding scrollbar in Firefox without impacting scrolling function */
+html {
+  scrollbar-width: none;
+  z-index: 2;
 }
 
 html, body {
   -webkit-font-smoothing: antialiased;
 }
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 div#chart {
 	padding-top: 5px;
