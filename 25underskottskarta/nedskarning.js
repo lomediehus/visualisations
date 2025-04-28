@@ -174,4 +174,7 @@ svg.call(d3.zoom().on("zoom", function () {
 		 //don't zoom on scroll wheel (only touch)
 		 .on("wheel.zoom", null);
 
+svg.on(".zoom", null);
+
+
 informHeight();
