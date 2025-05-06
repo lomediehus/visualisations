@@ -84,7 +84,7 @@ window.riksYrken = [
   {
     "yrke": "Fotvårdsspecialist",
     "yrkeplural": "Fotvårdsspecialister",
-    "lön": 32973
+    "lön": 32960
   },
   {
     "yrke": "Fritidsledare",
