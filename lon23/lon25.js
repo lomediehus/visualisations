@@ -225,6 +225,17 @@ $(document).ready(function() {
       //resetting variable
       var kommunHasYrke = false;
       yrke = this.value;
+
+      //ny kod
+      if (yrke === "Väljyrke") {
+        presentation.style.display = "none";
+        overlay.style.display = "block";
+        blinkcontainer.style.display = "block";
+    } else {
+        presentation.style.display = "block";
+        overlay.style.display = "none";
+        blinkcontainer.style.display = "none";
+    }
       getHighLow(yrke);
       kartpopup.style.display = "none";
       brandkartpopup.style = "none";
@@ -376,7 +387,7 @@ $(document).ready(function() {
 
     
     presentation.innerHTML = html;
-    presentation.style.display = "block";
+    // presentation.style.display = "block";
     overlay.style.display = "block";
     overlay.classList.add("blacknollfyra");
 
