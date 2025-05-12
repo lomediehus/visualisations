@@ -391,6 +391,13 @@ div.tooltip {
     content: url("vinjett_liten.png")
   }
 
+  /* select image in div id kartpopuptext */
+  #artikelbild {
+    width: 300px !important;
+    height: auto;
+    object-fit: contain;
+  }
+
   #radiobuttons {
 
     top: 250px;

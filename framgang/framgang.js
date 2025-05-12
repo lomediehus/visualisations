@@ -79,7 +79,7 @@ function clicked(d,i) {
   
   let markup = `
     <div id="kartpopuprubbe" class="u-textMeta fet">${d.ort}</div>
-    <div id="kartpopuptext" class="u-textMetaDeca"><img src="${d.bildurl}">${d.rubrik}</div>
+    <div id="kartpopuptext" class="u-textMetaDeca"><img id="artikelbild" width="300" src="${d.bildurl}">${d.rubrik}</div>
     ${(() => {
       if (d.url != "") {
         return `
