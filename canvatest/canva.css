@@ -1,0 +1,32 @@
+
+body {
+  background-color: #faf9f7;
+  height: 850px;
+  width: 1000px;
+  -ms-overflow-style: none;
+  }
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* For hiding scrollbar in Firefox */   
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+.canva-embed-container {
+    position: relative; 
+    width: 100%; 
+    height: 0; 
+    padding-top: 181.4815%;
+    padding-bottom: 0; 
+    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+    margin-top: 1.6em; 
+    margin-bottom: 0.9em; 
+    overflow: hidden;
+    border-radius: 8px; 
+    will-change: transform;
+}
+
