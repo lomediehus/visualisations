@@ -283,13 +283,13 @@ document.addEventListener("DOMContentLoaded", function() {
             d3.select("#hjulimg").on("click", function() {
               document.getElementById("hjulljud").play()
               //Get a random number within the lengt of the cirkeldata array
-              let slumpsiffra = Math.floor(Math.random()*cirkeldata.length)
+              let slumpsiffra = Math.floor(Math.random()*result.length)
               //Wheel spins one round when the class is added
               this.classList.add("spin")
               //Add class "noclick"  to prevent user from clicking more than once (otherwise shows popupwindow every time it's clicked). Class is removed in the "close" function, then you can click again.
               this.classList.add("noclick")
               //the item in the cirkeldata that corresponds to the chosen random number
-              let selectedData = cirkeldata[slumpsiffra];
+              let selectedData = result[slumpsiffra];
 
               // Identify the circle with the corresponding data
               let selectedCircle = d3.selectAll("circle") 
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
               setTimeout(function() {
-                clickedSpinner(cirkeldata[slumpsiffra]);
+                clickedSpinner(result[slumpsiffra]);
                 selectedCircle.classed("pulse", true); 
             }, 1800);
 
@@ -355,18 +355,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 const body = document.querySelector('body');
-
-//if todays date is higher than 9 march change background color   
-(function() {
-  var today = new Date();
-  var date = new Date("2025-03-23");
-  if (today > date) {
-    body.style.backgroundColor = 'rgb(250,249,247)';
-  }
-  else {
-    body.style.backgroundColor = '#fcfaf5'
-  }
-})();
 
 
 
