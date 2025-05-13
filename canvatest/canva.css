@@ -2,7 +2,8 @@
 body {
   background-color: #faf9f7;
   height: 850px;
-  width: 1000px;
+  /* width: 1000px; */
+  width: 100%;
   -ms-overflow-style: none;
   }
 
@@ -17,16 +18,18 @@ html {
 }
 
 .canva-embed-container {
-    position: relative; 
-    width: 100%; 
-    height: 0; 
-    padding-top: 181.4815%;
-    padding-bottom: 0; 
-    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
-    margin-top: 1.6em; 
-    margin-bottom: 0.9em; 
-    overflow: hidden;
-    border-radius: 8px; 
-    will-change: transform;
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* Anpassa efter Canva-grafikens faktiska förhållande */
+  height: 0;
+  overflow: hidden;
 }
 
+.canva-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
