@@ -159,7 +159,7 @@ function doStuff() {
   var paskdatum = new Date("February 21 2025");
   var pingstdatum = new Date("April 22 2023");
 
-  var midsommardatum = new Date("June 07 2024");
+  var midsommardatum = new Date("May 22 2025");
 
   //Variable for current date
   //variables for set dates
@@ -170,10 +170,10 @@ function doStuff() {
 
 
     //if current date is also after nyar
-    if (date.getTime() > paskdatum.getTime()) {
-      document.getElementById("helgbild").src = 'pask.svg';
-      goActive(helgknapp4);
-      helgnr = "4";
+    if (date.getTime() > midsommardatum.getTime()) {
+      document.getElementById("helgbild").src = 'midsommar.svg';
+      goActive(helgknapp6);
+      helgnr = "6";
     }
     else {
       document.getElementById("helgbild").src = 'nyar.svg';
