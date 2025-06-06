@@ -32,29 +32,28 @@ div#content {
   display: flex;
   width: 20%;
   justify-content: center;
-  /* height: auto; */
-  /* position: absolute; */
-  /* bottom: 100px; */
-  /* max-width: 625px; */
-  /* margin: 0 auto; */
 }
 
 span.symbol {
 position: absolute;
 bottom: 20px;
 visibility: hidden;
-font-size: xx-large;
+font-size: xxx-large;
 font-weight: 900;
 line-height: 0;
 color: red;
-text-align: center;
 }
 
+.center {
+  text-align: center;
+}
 
+.xxx-large {
+  font-size: xxx-large;
+}
 
 p.svar {
-  text-align: center;
-  font-size: xx-large;
+  font-size: xxx-large;
   padding-bottom: 20px;
 }
 
@@ -64,17 +63,9 @@ input[type=radio] {
   padding-left: -20px;
 }
 
-
 label {
   display: block;
   padding: 10px;
-  /* background-color: #74b2b2;
-  background-color: #c4c5c5;
-  background-color: #ddebeb; */
-
-  /* box-shadow:   #7e7f7f 1px 1px 0,
-                #7e7f7f 2px 2px 0,
-                #7e7f7f 3px 3px 0; */
 }
 
 label:visited {
@@ -90,17 +81,14 @@ label:hover {
 }
 
 #result {
-  /* max-width: 625px; */
   border-radius: 10px;
   padding: 20px;
   background-color: #ddebeb;
+  background-color: #f2f1ef;
   margin-bottom: 50px;
-  text-align: center;
 }
 
 #overlay {
-  /* max-width: 625px; */
-  /* height: 100px; */
   width: 300px;
   padding: 10px;
   padding-top: 30px;
@@ -134,19 +122,13 @@ img.smalfraga {
   padding-bottom: 10px;
 }
 
-/* div#img-container {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 15px;
-} */
 
 div#img-container {
   position: relative;
   width: 90%;
   aspect-ratio: 54 / 71; /* or 16 / 9, or whatever ratio you want */
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .bottomright {
@@ -156,18 +138,6 @@ div#img-container {
   font-size: 18px;
 }
 
-.bildtext {
-  font-family: National2,Helvetica,Arial,sans-serif;
-  /* font-size: 14.22px; */
-  font-weight: 400;
-  letter-spacing: normal;
-  /* line-height: 1.32; */
-  margin-top: 5px;
-}
-
-label.smalfraga {
-  /* max-width: 600px; */
-}
 
 div.close {
   float: right;
@@ -186,22 +156,8 @@ div#workaround {
   height: 20px;
 }
 
+hr.dotted {
+  border-top: 8px dotted #bbb;
+  padding-bottom: 30px;
+}
 
-
-
-/* @media only screen and (max-width: 500px) {
-  .smalfraga {
-    max-width: 380px;
-  }
-
-  img.smalfraga {
-    max-width: 360px;
-  }
-
-  label.smalfraga {
-    max-width: 360px;
-  }
-  div#content {
-    margin: auto;
-  }
-} */

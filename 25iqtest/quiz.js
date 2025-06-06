@@ -11,7 +11,7 @@ const felsymbol = "&cross;";
 let host = window.location.host;
 if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
-  console.log('den finns på github')
+  // console.log('den finns på github')
 }
 
 //click almost anywhere in document to hide overlay ("Du måste svara på alla frågrona…") Only submit button has exception
@@ -36,14 +36,14 @@ $.ajax({
             var boxtype = "radio";
             var markup = `
             <div id="${data[x].divid}" class="fragediv">
-              <h3 id="rubrik${x+1}" class="ListicleHeading">${data[x].rubrik}</h3>
+              <h1 id="rubrik${x+1}" class="center xxx-large">${data[x].rubrik}</h1>
               <div id="img-container">
               <img src="IQ-test${x+1}.png" alt="${data[x].alt}" class="smalfraga">
                <div class="flex-container">
-                <label class="rb_label"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value1}" class="checkbox">${data[x].alt1}<span class="symbol">  ${(data[x].value1 === "rätt") ? rättsymbol : felsymbol}</span></label>
-                <label class="rb_label"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value2}" class="checkbox">${data[x].alt2}<span class="symbol">  ${(data[x].value2 === "rätt") ? rättsymbol : felsymbol}</span></label>
-                <label class="rb_label"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value3}' class='checkbox'>${data[x].alt3}<span class="symbol">  ${(data[x].value3 === "rätt") ? rättsymbol : felsymbol}</span></label>
-                <label class="rb_label"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value4}' class='checkbox'>${data[x].alt4}<span class="symbol">  ${(data[x].value4 === "rätt") ? rättsymbol : felsymbol}</span></label>
+                <label class="rb_label"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value1}" class="checkbox">${data[x].alt1}<span class="symbol center">  ${(data[x].value1 === "rätt") ? rättsymbol : felsymbol}</span></label>
+                <label class="rb_label"><input type=${boxtype} name="fraga${(x+1).toString()}" value="${data[x].value2}" class="checkbox">${data[x].alt2}<span class="symbol center">  ${(data[x].value2 === "rätt") ? rättsymbol : felsymbol}</span></label>
+                <label class="rb_label"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value3}' class='checkbox'>${data[x].alt3}<span class="symbol center">  ${(data[x].value3 === "rätt") ? rättsymbol : felsymbol}</span></label>
+                <label class="rb_label"><input type=${boxtype} name='fraga${(x+1).toString()}' value='${data[x].value4}' class='checkbox'>${data[x].alt4}<span class="symbol center">  ${(data[x].value4 === "rätt") ? rättsymbol : felsymbol}</span></label>
                 
               </div>
             </div>
@@ -55,7 +55,8 @@ $.ajax({
               // }
        
               markup += `
-              <p class="hidden svar">${data[x].svar}<br><a href="${data[x].href}" target="_blank")>Här kan man ha en länk om man vill</a></p>
+              <p class="hidden svar center">${data[x].svar}<br></p>
+              <hr class="dotted">
                 </div>`
             return markup;
           }
@@ -70,7 +71,7 @@ $.ajax({
           // add submit button, class "doNotHideOverlay" is needed because the button is there to show the overlay
           content.innerHTML += "<button id='submitButton' class='Button doNotHideOverlay smalfraga'>Se ditt resultat</button>";
           //add div that shows result
-          content.innerHTML += "<div id='result' class='hidden u-textMeta smalfraga'></div>"
+          content.innerHTML += "<div id='result' class='hidden u-textMeta smalfraga center'></div>"
           //a div with a set height that seems necessary to avoid scrollbars in (some?) browsers
           content.innerHTML += "<div id='workaround'></div>"
 
@@ -112,15 +113,15 @@ $.ajax({
               resultdiv.innerHTML = resultMarkup1;
               
               //add different text depending on number of points
-              if (points < 3) {
-                resultdiv.innerHTML += resultMarkup2a;
-              }
-              else if (points < 5) {
-                resultdiv.innerHTML += resultMarkup2b
-              }
-              else {
-                resultdiv.innerHTML += resultMarkup2c
-              }
+              // if (points < 3) {
+              //   resultdiv.innerHTML += resultMarkup2a;
+              // }
+              // else if (points < 5) {
+              //   resultdiv.innerHTML += resultMarkup2b
+              // }
+              // else {
+              //   resultdiv.innerHTML += resultMarkup2c
+              // }
 
 
               //make result div visible with a slide down effekt
@@ -157,7 +158,7 @@ $.ajax({
 
             let svar = $(this).closest("div.fragediv").find("p:last-of-type");
 
-            console.log(" och svaret är " + svar.html())
+            // console.log(" och svaret är " + svar.html())
 
             //Get the text from the last paragraph of the parent of the clicked button, i.e. the hidden paragraph with the answer.
             // var htmlContent = $(this).parent().siblings("p:last-of-type").html();

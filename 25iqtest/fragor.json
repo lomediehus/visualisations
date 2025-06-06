@@ -11,7 +11,7 @@
        "alt4": "",
       "value4": "fel",
       "fotobyline": "blalbal",
-      "svar": "Här kan man skriva en förklaring om man vill.",
+      "svar": "Ledtråd: Färg.",
       "foto": "Bild: Håkan Lindgren",
       "alt": "",
       "href": ""
@@ -27,7 +27,7 @@
     "value3": "fel",
     "alt4": "",
     "value4": "fel",
-    "svar": "Här kan man skriva en förklaring om man vill.",
+    "svar": "Ledtråd: Pilarna vrids 90° medurs.",
     "foto": "Bild: Jessica Lindgren-Wu",
     "alt": "",
     "href": ""
@@ -43,7 +43,7 @@
   "value3": "fel",
   "alt4": "",
   "value4": "fel",
-  "svar": "Här kan man skriva en förklaring om man vill.",
+  "svar": "Ledtråd: Det handlar om antal, form och fyllnad.",
   "foto": "Bild: Marie Birkl",
   "alt": "",
   "href": ""
@@ -59,7 +59,7 @@
   "value3": "rätt",
   "alt4": "",
   "value4": "fel",
-  "svar": "Här kan man skriva en förklaring om man vill.",
+  "svar": "Ledtråd: 3+3=6",
   "foto": "Bild: Julia Sjöberg",
   "alt": "",
   "href": ""
@@ -75,7 +75,7 @@
   "value3": "fel",
   "alt4": "",
   "value4": "fel",
-  "svar": "Här kan man skriva en förklaring om man vill.",
+  "svar": "Ledtråd: En full cirkel är 360°. 300°+90°=30°.",
   "foto": "Bild: Anders G Warne",
   "alt": "",
   "href": ""
