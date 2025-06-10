@@ -1,0 +1,182 @@
+/* For hiding scrollbar in Firefox without impacting scrolling function */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+  -ms-overflow-style: none;
+}
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar{
+  display: none;
+}
+
+div#content {
+  margin: auto;
+  width: 100%;
+  /* width: 630px; */
+  padding-top: 50px;
+}
+
+
+#map { 
+  height: 270px;
+ }
+
+
+.smalfraga {
+  /* max-width: 625px; */
+  margin: 0 auto;
+}
+
+span.symbol {
+visibility: hidden;
+font-size: xx-large;
+font-weight: 900;
+line-height: 0;
+color: red;
+}
+
+
+input[type=radio] {
+  opacity: 0;
+  width: 0px;
+  padding-left: -20px;
+}
+
+
+label {
+  display: block;
+  padding: 10px;
+  /* background-color: #74b2b2;
+  background-color: #c4c5c5; */
+  /* background-color: #ddebeb; */
+  background-color: #00d9c7;
+  background-color: #9cd3ca; 
+  background-color: #bde2dc;
+
+  box-shadow:   #7e7f7f 1px 1px 0,
+                #7e7f7f 2px 2px 0,
+                #7e7f7f 3px 3px 0;
+}
+
+label:visited {
+  background-color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+#overlay {
+  /* max-width: 625px; */
+  /* height: 100px; */
+  width: 300px;
+  padding: 10px;
+  padding-top: 30px;
+  display: none;
+  background-color: white;
+  margin: auto;
+  position: fixed;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 60px; 
+  right: 50%;
+  color: #000000;
+  border: 2px solid black;
+  z-index:5;
+}
+
+
+img.closex:hover {
+  background-color: #c4dcdc;
+}
+
+img.closex {
+  width: 30px;
+  border-radius: 25px;
+}
+
+img.smalfraga {
+  width: 100%;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+.bottomright {
+  position: absolute;
+  bottom: -15px;
+  right: 0px;
+  font-size: 18px;
+}
+
+
+
+
+div.close {
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+
+
+/* fulfix to get rid of vertical scrollbar */
+div#workaround {
+  height: 20px;
+}
+
+.text-below-marker {
+  font-weight: 400;
+  min-width: 100px;
+  left: -50px;
+  /* text-align: center; */
+  min-height: 1.2em;
+  /*click through*/
+  /* pointer-events: none; */
+  /* -webkit-text-stroke: 0.3px #ffffff; */
+}
+
+.leaflet-marker-icon.text-below-marker {
+  pointer-events: none !important;
+  text-align: left;
+  margin-left: 12px !important;
+  margin-top: -16px !important;
+  } 
+
+path .leaflet-interactive {
+  pointer-events: none !important;
+}
+
+.highlight {
+  font-weight: bold;
+}
+/* <div class="leaflet-marker-icon text-below-marker leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="text-align: left;margin-top: -6px;width: 12px;height: 12px;transform: translate3d(560px, 317px, 0px);z-index: 317;">Måttsund</div> */
+
+
+/* @media only screen and (max-width: 500px) {
+  .smalfraga {
+    max-width: 380px;
+  }
+
+  img.smalfraga {
+    max-width: 360px;
+  }
+
+  label.smalfraga {
+    max-width: 360px;
+  }
+  div#content {
+    margin: auto;
+  }
+} */
