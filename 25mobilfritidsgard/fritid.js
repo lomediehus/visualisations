@@ -46,50 +46,103 @@ const cities = [
   { name: "Avan",       lat: 65.68214, lng: 21.80504, labelLat: 65.68214, labelLng: 21.80504 }
 ];
 
+var bussIcon = L.icon({
+    iconUrl: 'bussikon.png',
+    // shadowUrl: 'leaf-shadow.png',
+
+    iconSize:     [20, 20], // size of the icon
+    // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 function addCity(city) {
     city.name === "LULEÅ" ? cirkel_color = "black" : cirkel_color = "red";
 
-     // Add label with extra class for LULEÅ
+    // Add label with extra class for LULEÅ
     let labelClass = "text-below-marker";
     if (city.name === "LULEÅ") {
         labelClass += " highlight";
     }
 
-   
-  // Add label if labelLat/labelLng is provided, otherwise use city position
-  if (city.labelLat && city.labelLng) {
-    L.marker([city.labelLat, city.labelLng], {
-      icon: L.divIcon({
-        html: city.name,
-        className: labelClass
-      })
-    }).addTo(map);
-  }
-  // Add circle marker
-  L.circle([city.lat, city.lng], {
-    color: cirkel_color,
-    fillColor: cirkel_fillColor,
-    fillOpacity: cirkel_fillOpacity,
-    radius: cirkel_radius,
-    interactive: false
-  }).addTo(map);
-    // .bindPopup(city.name);
+    // Add label if labelLat/labelLng is provided, otherwise use city position
+    if (city.labelLat && city.labelLng) {
+        L.marker([city.labelLat, city.labelLng], {
+            icon: L.divIcon({
+                html: city.name,
+                className: labelClass
+            })
+        }).addTo(map);
+    }
+
+    // Add bus marker for the city
+    L.marker([city.lat, city.lng], {icon: bussIcon}).addTo(map);
 }
+
+// function addCity(city) {
+//     city.name === "LULEÅ" ? cirkel_color = "black" : cirkel_color = "red";
+
+//      // Add label with extra class for LULEÅ
+//     let labelClass = "text-below-marker";
+//     if (city.name === "LULEÅ") {
+//         labelClass += " highlight";
+//     }
+//   }
+
+   
+//   // Add label if labelLat/labelLng is provided, otherwise use city position
+//   if (city.labelLat && city.labelLng) {
+//     L.marker([city.labelLat, city.labelLng], {
+//       icon: L.divIcon({
+//         html: city.name,
+//         className: labelClass
+//       })
+//     }).addTo(map);
+//   }
+
+
+//   // Add circle marker
+//   L.circle([city.lat, city.lng], {
+//     color: cirkel_color,
+//     fillColor: cirkel_fillColor,
+//     fillOpacity: cirkel_fillOpacity,
+//     radius: cirkel_radius,
+//     interactive: false
+//   }).addTo(map);
+//     // .bindPopup(city.name);
+// }
+
+// L.marker([city.lat, city.lng], {icon: bussIcon}).addTo(map)
+// .bindPopup("I am a green bus.");
+
+
+
+  // // Add circle marker
+  // L.circle([city.lat, city.lng], {
+  //   color: cirkel_color,
+  //   fillColor: cirkel_fillColor,
+  //   fillOpacity: cirkel_fillOpacity,
+  //   radius: cirkel_radius,
+  //   interactive: false
+  // }).addTo(map);
+  //   // .bindPopup(city.name);
+
 
 // Add all cities
 cities.forEach(addCity);
 
 
-// var greenIcon = L.icon({
-//     iconUrl: 'buss.png',
-//     shadowUrl: 'leaf-shadow.png',
+// var bussIcon = L.icon({
+//     iconUrl: 'bussikon.png',
+//     // shadowUrl: 'leaf-shadow.png',
 
-//     iconSize:     [50, 50], // size of the icon
-//     shadowSize:   [50, 64], // size of the shadow
+//     iconSize:     [30, 30], // size of the icon
+//     // shadowSize:   [50, 64], // size of the shadow
 //     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-//     shadowAnchor: [4, 62],  // the same for the shadow
+//     // shadowAnchor: [4, 62],  // the same for the shadow
 //     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 // });
 
-// L.marker([65.584, 22.158], {icon: greenIcon}).addTo(map)
-// .bindPopup("I am a green bus.");
+// L.marker([65.584, 22.158], {icon: bussIcon}).addTo(map)
+// .bindPopup("I am a green bus.")
