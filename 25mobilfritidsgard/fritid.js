@@ -77,7 +77,18 @@ function addCity(city) {
     }
 
     // Add bus marker for the city
-    L.marker([city.lat, city.lng], {icon: bussIcon}).addTo(map);
+    L.marker([city.lat, city.lng], {icon: bussIcon, interactive: false}).addTo(map);
+
+    //   // Add circle marker
+//   L.circle([city.lat, city.lng], {
+//     color: cirkel_color,
+//     fillColor: cirkel_fillColor,
+//     fillOpacity: cirkel_fillOpacity,
+//     radius: cirkel_radius,
+//     interactive: false
+//   }).addTo(map);
+//     // .bindPopup(city.name);
+// }
 }
 
 // function addCity(city) {
@@ -113,36 +124,9 @@ function addCity(city) {
 //     // .bindPopup(city.name);
 // }
 
-// L.marker([city.lat, city.lng], {icon: bussIcon}).addTo(map)
-// .bindPopup("I am a green bus.");
-
-
-
-  // // Add circle marker
-  // L.circle([city.lat, city.lng], {
-  //   color: cirkel_color,
-  //   fillColor: cirkel_fillColor,
-  //   fillOpacity: cirkel_fillOpacity,
-  //   radius: cirkel_radius,
-  //   interactive: false
-  // }).addTo(map);
-  //   // .bindPopup(city.name);
 
 
 // Add all cities
 cities.forEach(addCity);
 
 
-// var bussIcon = L.icon({
-//     iconUrl: 'bussikon.png',
-//     // shadowUrl: 'leaf-shadow.png',
-
-//     iconSize:     [30, 30], // size of the icon
-//     // shadowSize:   [50, 64], // size of the shadow
-//     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-//     // shadowAnchor: [4, 62],  // the same for the shadow
-//     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-// });
-
-// L.marker([65.584, 22.158], {icon: bussIcon}).addTo(map)
-// .bindPopup("I am a green bus.")
