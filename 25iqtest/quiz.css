@@ -149,6 +149,9 @@ div.close {
 #submitButton {
   display: block;
   margin: 0 auto;
+  width: 40%;
+  height: 70px;
+  font-size: 2em;
 }
 
 /* fulfix to get rid of vertical scrollbar */
