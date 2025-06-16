@@ -36,7 +36,7 @@ $.ajax({
             var boxtype = "radio";
             var markup = `
             <div id="${data[x].divid}" class="fragediv">
-              <h1 id="rubrik${x+1}" class="center xxx-large">${data[x].rubrik}</h1>
+              <h1 id="rubrik${x+1}" class="center">${data[x].rubrik}</h1>
               <div id="img-container">
               <img src="IQ-test${x+1}.png" alt="${data[x].alt}" class="smalfraga">
                <div class="flex-container">
