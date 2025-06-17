@@ -423,7 +423,7 @@
     "kategori_detaljerad": "arbetsvillkor",
     "ort": "Malmö",
     "lat": 55.6044,
-    "long": 13.0038,
+    "long": 12.7,
     "url": "https://ka.se/2023/03/15/simon-stoppade-valdsam-arbetsmiljo-hyllas-som-facklig-hjalte/",
     "bildurl": "https://media.arto.se/app/uploads/sites/10/2023/03/facklighjalte.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum": "2023/03/15"
@@ -1094,7 +1094,7 @@
     "kategori_detaljerad": "arbetsvillkor",
     "ort": "Sverige",
     "lat": 61.71735,
-    "long": 17.7369,
+    "long": 18,
     "url": "https://ka.se/2024/11/26/kommunalare-slipper-anmala-papperslosa-inte-vart-jobb-att-vara-granspoliser/",
     "bildurl": "https://media.arto.se/app/uploads/sites/10/2024/11/ny.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum": "2024/11/26"
@@ -1296,5 +1296,16 @@
     "url": "https://arbetet.se/2025/04/30/har-jobbar-hemtjansten-med-minutschema-men-utan-stress/",
     "bildurl": "https://media.arto.se/app/uploads/sites/10/2025/04/29102646/u-hamn-2653.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=2000&h=1125",
     "datum": "2025/04/30"
+  },
+  {
+    "rubrik": "Simon stoppade våldsam arbetsmiljö – hyllas som facklig hjälte",
+    "kategori": "arbetsvillkor",
+    "kategori_detaljerad": "arbetsmiljö",
+    "ort": "Malmö",
+    "lat": 55.6044,
+    "long": 13.4,
+    "url": "https://arbetet.se/2025/03/20/lss-personalens-nya-satt-att-stoppa-valdet-lattare-att-saga-nej/",
+    "bildurl": "https://media.arto.se/app/uploads/sites/10/2025/03/21131622/simon.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum": "2023/03/15"
   }
 ]
