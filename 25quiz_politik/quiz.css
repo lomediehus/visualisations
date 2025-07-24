@@ -91,9 +91,13 @@ p.svar {
 
 /*select a label class rb-label in a div with class flex-container*/
 .flex-container > .rb_label {
-font-size: x-large;
+  font-size: x-large;
 }
 
+.img-container > .fraga {
+  font-size: x-large;
+  padding-bottom: 20px;
+  }
 
 input[type=radio] {
   opacity: 0;
@@ -206,5 +210,11 @@ div#workaround {
 hr.dotted {
   border-top: 8px dotted #bbb;
   padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .fraga {
+    /* font-size: 5em; */
+  }
 }
 

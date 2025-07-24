@@ -37,12 +37,12 @@ $.ajax({
             var markup = `
             <div id="${data[x].divid}" class="fragediv">
               
-              <div id="img-container">
+              <div id="img-container" class="img-container">
                 <div class="cirkel">
                   <h1 id="rubrik${x+1}" class="rubrikibild">${data[x].rubrik}</h1>
                 </div> 
               <img src="polpic${x+1}.png" alt="${data[x].alt}" class="smalfraga">
-               <div class="BodyImage-caption"> ${data[x].fraga}</div>
+               <div class="BodyImage-caption fraga"> ${data[x].fraga}</div>
             </div>
 
 
