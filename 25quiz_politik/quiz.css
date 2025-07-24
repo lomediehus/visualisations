@@ -1,0 +1,210 @@
+html {
+  scrollbar-width: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* overflow: hidden; */
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+div#content {
+  margin: auto;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  align-items: center;
+  /* bottom: 0px; */
+  /* height: 300px; */
+}
+
+.rb_label {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative
+}
+
+span.symbol {
+position: absolute;
+right: 8px; /* Negative value makes it stick out to the right */
+top: 50%;
+/* transform: translateY(-50%); */
+
+visibility: hidden;
+font-size: xx-large;
+font-weight: 900;
+line-height: 0;
+color: white;
+}
+
+/* .center {
+  text-align: center;
+} */
+
+/*a div that is a red circle with a number in the middle*/
+.cirkel {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.rubrikibild {
+ position: absolute;
+ top: -18px;
+}
+.xxx-large {
+  font-size: xxx-large;
+}
+
+.fet {
+  font-weight: bold;}
+
+p.svar {
+  font-size: x-large;
+  padding-bottom: 20px;
+}
+
+/*select a label class rb-label in a div with class flex-container*/
+.flex-container > .rb_label {
+font-size: x-large;
+}
+
+
+input[type=radio] {
+  opacity: 0;
+  width: 0px;
+  padding-left: -20px;
+}
+
+label {
+  display: block;
+  padding: 10px;
+  background-color: #D3D3D3;
+  /* background-color: #d1edf2; */
+  box-shadow: #7e7f7f 1px 1px 5px 0px;
+}
+
+label:visited {
+  background-color: #000;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ddebeb;
+  background-color: #f2f1ef;
+  margin-bottom: 50px;
+  font-size: xx-large;
+}
+
+#overlay {
+  width: 300px;
+  padding: 10px;
+  padding-top: 30px;
+  display: none;
+  background-color: white;
+  margin: auto;
+  position: fixed;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 60px; 
+  right: 50%;
+  color: #000000;
+  border: 2px solid black;
+  z-index:5;
+}
+
+
+img.closex:hover {
+  background-color: #c4dcdc;
+}
+
+img.closex {
+  width: 30px;
+  border-radius: 25px;
+}
+
+img.smalfraga {
+  width: 100%;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  aspect-ratio: 16/9; 
+}
+
+
+div#img-container {
+  position: relative;
+  width: 90%;
+  
+
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: -15px;
+  right: 0px;
+  font-size: 18px;
+}
+
+
+div.close {
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#submitButton {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: 70px;
+  font-size: 1.3em;
+}
+
+/* fulfix to get rid of vertical scrollbar */
+div#workaround {
+  height: 20px;
+}
+
+hr.dotted {
+  border-top: 8px dotted #bbb;
+  padding-bottom: 30px;
+}
+

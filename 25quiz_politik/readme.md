@@ -1,0 +1,1 @@
+https://arbetet.se/2025/06/16/testa-sjalv-sa-har-kan-ett-iq-test-se-ut/
