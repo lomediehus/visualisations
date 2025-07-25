@@ -227,7 +227,7 @@ hr.dotted {
 
 /*select a label class rb-label in a div with class flex-container*/
 .flex-container > .rb_label {
-  font-size: xx-large;
+  /* font-size: xx-large; */
 }
 }
 
