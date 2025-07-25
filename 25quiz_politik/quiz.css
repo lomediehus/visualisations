@@ -217,7 +217,39 @@ hr.dotted {
     width: 80%
     /* font-size: 5em; */
   }
+
+  .cirkel {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; */
+    top: 30px;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    /* font-weight: bold;
+    z-index: 10; */
+    padding-top: 10px;
 }
+
+  .rubrikibild {
+    top: -9px;
+    /* font-size: 1.2em; */
+    /* margin-top: 10px; */
+  }
+
+  img.smalfraga {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+}
+
 
 @media only screen and (max-width: 650px) {
  .img-container > .fraga {
