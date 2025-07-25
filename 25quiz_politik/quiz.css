@@ -219,3 +219,16 @@ hr.dotted {
   }
 }
 
+@media only screen and (max-width: 650px) {
+ .img-container > .fraga {
+    font-size: x-large;
+    padding-bottom: 20px;
+  }
+
+/*select a label class rb-label in a div with class flex-container*/
+.flex-container > .rb_label {
+  font-size: xx-large;
+}
+}
+
+
