@@ -265,7 +265,7 @@ const body = document.querySelector('body');
   var today = new Date();
   var date = new Date("2025-03-09");
   if (today > date) {
-    body.style.backgroundColor = 'rgb(249,249,247)';
+    body.style.backgroundColor = 'rgb(250,249,247)';
   }
   else {
     body.style.backgroundColor = '#fcfaf5'

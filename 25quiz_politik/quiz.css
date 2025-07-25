@@ -212,8 +212,9 @@ hr.dotted {
   padding-bottom: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-  .fraga {
+@media only screen and (max-width: 650px) {
+  .rb_label {
+    width: 80%
     /* font-size: 5em; */
   }
 }
