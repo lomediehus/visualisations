@@ -13,6 +13,7 @@
     bottom: 0;
 
     align-self: flex-end;
+    max-width: 600px;
 }
 
 /* #banner {
@@ -27,6 +28,7 @@
 
 .b_rect {
     width: 100vw;
+    max-width: 737px;
     height: 4vh;
     background-color: #240001;
     position: relative;

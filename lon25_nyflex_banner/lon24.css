@@ -15,10 +15,12 @@ html {
 
 body {
   padding: 0px;
-  background-color: #fcfaf5;
+  /* background-color: #fcfaf5; */
+  background-color: white;
   /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
   -ms-overflow-style: none;
   z-index: 2;
+  max-width: 737px;
 }
 
 /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
@@ -470,6 +472,7 @@ div.sortknapp {
   padding: 0px;
   align-items: flex-start;
   /* justify-content: space-between; */
+  background-color: #fcfaf5;
 }
 
 
