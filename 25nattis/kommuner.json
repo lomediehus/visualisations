@@ -1,0 +1,1532 @@
+[
+  {
+    "KKod": 2085,
+    "Org": "Ludvika kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": false,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0685",
+    "Org": "Vetlanda kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": false,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2583,
+    "Org": "Haparanda stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2523,
+    "Org": "Gällivare kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2514,
+    "Org": "Kalix kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2121,
+    "Org": "Ovanåkers kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2081,
+    "Org": "Borlänge kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1961,
+    "Org": "Hallstahammars kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1904,
+    "Org": "Skinnskattebergs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1860,
+    "Org": "Laxå kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1783,
+    "Org": "Hagfors kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1737,
+    "Org": "Torsby kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1493,
+    "Org": "Mariestads kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1492,
+    "Org": "Åmåls kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1473,
+    "Org": "Töreboda kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1466,
+    "Org": "Herrljunga kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1419,
+    "Org": "Tjörns kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1384,
+    "Org": "Kungsbacka kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1292,
+    "Org": "Ängelholms kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1284,
+    "Org": "Höganäs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1277,
+    "Org": "Åstorps kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1276,
+    "Org": "Klippans kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1263,
+    "Org": "Svedala kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1262,
+    "Org": "Lomma kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1261,
+    "Org": "Kävlinge kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1260,
+    "Org": "Bjuvs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0980",
+    "Org": "Region Gotland",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0885",
+    "Org": "Borgholms kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0881",
+    "Org": "Nybro kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0862",
+    "Org": "Emmaboda kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0860",
+    "Org": "Hultsfreds kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0780",
+    "Org": "Växjö kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0684",
+    "Org": "Sävsjö kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0643",
+    "Org": "Habo kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0642",
+    "Org": "Mullsjö kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0582",
+    "Org": "Söderköpings kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0428",
+    "Org": "Vingåkers kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0127",
+    "Org": "Botkyrka kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2313,
+    "Org": "Strömsunds kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": false,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2582,
+    "Org": "Bodens kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2581,
+    "Org": "Piteå kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2482,
+    "Org": "Skellefteå kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2481,
+    "Org": "Lycksele kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2480,
+    "Org": "Umeå kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2418,
+    "Org": "Malå kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2417,
+    "Org": "Norsjö kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2284,
+    "Org": "Örnsköldsviks kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2283,
+    "Org": "Sollefteå kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2282,
+    "Org": "Kramfors kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2280,
+    "Org": "Härnösands kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2262,
+    "Org": "Timrå kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2184,
+    "Org": "Hudiksvalls kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2183,
+    "Org": "Bollnäs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2182,
+    "Org": "Söderhamns kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2180,
+    "Org": "Gävle kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2161,
+    "Org": "Ljusdals kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2084,
+    "Org": "Avesta kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2080,
+    "Org": "Falu kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2061,
+    "Org": "Smedjebackens kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1983,
+    "Org": "Köpings kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1982,
+    "Org": "Fagersta kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1981,
+    "Org": "Sala kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1980,
+    "Org": "Västerås stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1885,
+    "Org": "Lindesbergs kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1883,
+    "Org": "Karlskoga kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1881,
+    "Org": "Kumla kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1880,
+    "Org": "Örebro kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1862,
+    "Org": "Degerfors kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1861,
+    "Org": "Hallsbergs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1785,
+    "Org": "Säffle kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1782,
+    "Org": "Filipstads kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1781,
+    "Org": "Kristinehamns kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1780,
+    "Org": "Karlstads kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1499,
+    "Org": "Falköpings kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1498,
+    "Org": "Tidaholms kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1496,
+    "Org": "Skövde kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1494,
+    "Org": "Lidköpings kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1490,
+    "Org": "Borås stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1489,
+    "Org": "Alingsås kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1488,
+    "Org": "Trollhättans stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1487,
+    "Org": "Vänersborgs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1485,
+    "Org": "Uddevalla kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1484,
+    "Org": "Lysekils kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1480,
+    "Org": "Göteborgs stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1463,
+    "Org": "Marks kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1444,
+    "Org": "Grästorps kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1440,
+    "Org": "Ale kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1415,
+    "Org": "Stenungsunds kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1401,
+    "Org": "Härryda kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1383,
+    "Org": "Varbergs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1382,
+    "Org": "Falkenbergs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1380,
+    "Org": "Halmstads kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1293,
+    "Org": "Hässleholms kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1290,
+    "Org": "Kristianstads kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1287,
+    "Org": "Trelleborgs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1286,
+    "Org": "Ystads kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1283,
+    "Org": "Helsingborgs stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1282,
+    "Org": "Landskrona stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1281,
+    "Org": "Lunds kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1280,
+    "Org": "Malmö stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1272,
+    "Org": "Bromölla kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1270,
+    "Org": "Tomelilla kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1267,
+    "Org": "Höörs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1257,
+    "Org": "Örkelljunga kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1214,
+    "Org": "Svalövs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1083,
+    "Org": "Sölvesborgs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1082,
+    "Org": "Karlshamns kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1081,
+    "Org": "Ronneby kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1080,
+    "Org": "Karlskrona kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1060,
+    "Org": "Olofströms kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0882",
+    "Org": "Oskarshamns kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0880",
+    "Org": "Kalmar kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0861",
+    "Org": "Mönsterås kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0840",
+    "Org": "Mörbylånga kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0686",
+    "Org": "Eksjö kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0680",
+    "Org": "Jönköpings kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0662",
+    "Org": "Gislaveds kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0586",
+    "Org": "Mjölby kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0583",
+    "Org": "Motala kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0581",
+    "Org": "Norrköpings kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0580",
+    "Org": "Linköpings kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0488",
+    "Org": "Trosa kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0486",
+    "Org": "Strängnäs kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0484",
+    "Org": "Eskilstuna kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0483",
+    "Org": "Katrineholms kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0481",
+    "Org": "Oxelösunds kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0480",
+    "Org": "Nyköpings kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0381",
+    "Org": "Enköpings kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0380",
+    "Org": "Uppsala kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0305",
+    "Org": "Håbo kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0191",
+    "Org": "Sigtuna kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0188",
+    "Org": "Norrtälje kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0186",
+    "Org": "Lidingö stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0183",
+    "Org": "Sundbybergs stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0182",
+    "Org": "Nacka kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0181",
+    "Org": "Södertälje kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0180",
+    "Org": "Stockholms stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0163",
+    "Org": "Sollentuna kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0139",
+    "Org": "Upplands-Bro kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0138",
+    "Org": "Tyresö kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0136",
+    "Org": "Haninge kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0128",
+    "Org": "Salems kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0126",
+    "Org": "Huddinge kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0125",
+    "Org": "Ekerö kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0123",
+    "Org": "Järfälla kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0120",
+    "Org": "Värmdö kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": "0117",
+    "Org": "Österåkers kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": "0114",
+    "Org": "Upplands Väsby kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1962,
+    "Org": "Norbergs kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1481,
+    "Org": "Mölndals stad",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1291,
+    "Org": "Simrishamns kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1265,
+    "Org": "Sjöbo kommun",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1421,
+    "Org": "Orust kommun",
+    "Tidigmorgon": false,
+    "Vardagkvall": false,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  }
+]
