@@ -4,6 +4,12 @@
 
   const c = console.log.bind(document);
 
+  let host = window.location.host;
+  if (host.includes("github")) {
+    document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+  // console.log('den finns på github')
+  }
+
   // Ordningen (måste matcha JSON-fälten)
   var FIELDS = ['Tidigmorgon','Vardagkvall','Vardagnatt','Helgerdagtid','Helgnatt','Storhelg'];
   var PRETTY = {
