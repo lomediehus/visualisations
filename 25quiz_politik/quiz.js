@@ -102,24 +102,24 @@ $.ajax({
               const resultdiv = document.getElementById('result');
               let resultMarkup1 = `
               <h2>Resultat</h2>
-                <p><strong>Du fick ${points} rätt av ${data.length} möjliga.</strong></p>
+                <p>Du fick <strong>${points} rätt</strong> av <strong>${data.length} möjliga.</strong></p>
               `;
-              let resultMarkup2a = `
-              <p><strong></strong>Här kan man skriva en kommentar om resultatet.</p>
-             `;
+            //   let resultMarkup2a = `
+            //   <p><strong></strong>Följ oss på arbetet.se om du vill bli en hejare på politik!</p>
+            //  `;
 
-             let resultMarkup2b = `
-              <p><strong></strong> Här kan man skriva en kommentar om resultatet</p>
-             `;
+            //  let resultMarkup2b = `
+            //   <p><strong></strong> Här kan man skriva en kommentar om resultatet</p>
+            //  `;
 
-             let resultMarkup2c = `
-              <p><strong></strong>Här kan man skriva en kommentar om resultatet</a></p>
-             `;
+            //  let resultMarkup2c = `
+            //   <p><strong></strong>Här kan man skriva en kommentar om resultatet</a></p>
+            //  `;
             
              
               resultdiv.innerHTML = resultMarkup1;
               
-              //add different text depending on number of points
+              // // add different text depending on number of points
               // if (points < 3) {
               //   resultdiv.innerHTML += resultMarkup2a;
               // }
