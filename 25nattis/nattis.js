@@ -6,7 +6,7 @@
 
   let host = window.location.host;
   if (host.includes("github")) {
-    document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
+    document.querySelector("link[rel='shortcut icon']").href = "../ka_assets/favicon2.ico";
   // console.log('den finns på github')
   }
 
