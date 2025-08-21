@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Barnomsorg på obekväm tid – kombinationer</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ</title>
+  <link rel="stylesheet" type="text/css" href="../arbetet_assets/stylesheets/arbetet.css">
+<link rel="stylesheet" href="nattis.css">
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="../arbetet_assets/img/favicon.ico">
+</head>
+<body>
+  <h2>Se vilka tider kommunerna erbjuder barnomsorg</h2>
+  <p class="BodyImage-caption">153 kommuner uppger att de erbjuder barnomsorg på obekväm tid. Men vilka tider handlar det om? Kryssa i rutorna nedan så får du veta.</p>
+
+  
+
+    <div>
+     
+      <div class="bar-wrap">
+        <svg id="bar" width="900" height="60" role="img" aria-label="Stapeldiagram för antal kommuner"></svg>
+      </div>
+       <div class="kpi hidden BodyImage-caption" id="kpi">
+        <span id="count" aria-live="polite">–</span>
+        <span class="muted">kommuner</span>
+      </div>
+    </div>
+
+    <div class="panel">
+    <fieldset>
+      <!-- <legend>Tider</legend> -->
+      <div class="checks BodyImage-caption" id="checks"></div>
+
+      <div class="toggle">
+        <!-- <label class="row">
+          <input type="radio" name="mode" value="exact" checked>
+          Exakt matchning
+        </label> -->
+        <!-- <label class="row">
+          <input type="radio" name="mode" value="inclusive">
+          Inkluderar minst dessa
+        </label> -->
+      </div>
+
+
+    </fieldset>
+
+    <svg id="pie"></svg>
+
+    <!-- <fieldset>
+      <legend>Topplista: alla kombinationer</legend>
+      <div id="sortControls" class="row">
+        <label>Sortera:
+          <select id="sortSelect">
+            <option value="antal">Antal (fallande)</option>
+            <option value="namn">Kombination (A–Ö)</option>
+          </select>
+        </label>
+      </div>
+      <div class="combos" id="comboTable"></div> -->
+    <!-- </fieldset> -->
+  </div>
+
+  <!-- D3 v5 och din app.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../iframe-helper/iframe-helper.js"></script>
+
+  <script src="nattis.js"></script>
+</body>
+</html>
