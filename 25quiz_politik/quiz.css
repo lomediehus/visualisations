@@ -32,22 +32,24 @@ div#content {
 .rb_label {
   display: flex;
   width: 50%;
-  justify-content: center;
   margin-bottom: 20px;
-  position: relative
+  position: relative;
+  flex-direction: column;
+  /* align-items: cener; */
+  text-align: center;
 }
 
 span.symbol {
-position: absolute;
-right: 8px; /* Negative value makes it stick out to the right */
-top: 50%;
-/* transform: translateY(-50%); */
+  position: absolute;
+  right: 8px; /* Negative value makes it stick out to the right */
+  top: 50%;
+  /* transform: translateY(-50%); */
 
-visibility: hidden;
-font-size: xx-large;
-font-weight: 900;
-line-height: 0;
-color: white;
+  visibility: hidden;
+  font-size: xx-large;
+  font-weight: 900;
+  line-height: 0;
+  color: white;
 }
 
 /* .center {
