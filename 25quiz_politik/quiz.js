@@ -41,7 +41,7 @@ $.ajax({
                 <div class="cirkel">
                   <h1 id="rubrik${x+1}" class="rubrikibild">${data[x].rubrik}</h1>
                 </div> 
-              <img src="polpic${x+1}.png" alt="${data[x].alt}" class="smalfraga">
+              <img src="polpic${x+1}.webp" alt="${data[x].alt}" class="smalfraga">
                <div class="BodyImage-caption fraga"> ${data[x].fraga}</div>
             </div>
 
