@@ -96,7 +96,14 @@
     };
   }
   
-  var margin = {left: 80, right: 80, top: 8, bottom: 8};
+  function getResponsiveMargin() {
+    if (window.innerWidth < 600) {
+      return {left: 40, right: 40, top: 8, bottom: 8};
+    } else {
+      return {left: 60, right: 50, top: 8, bottom: 8};
+    }
+  }
+  var margin = getResponsiveMargin();
   var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
   var pieG = pieSvg.append('g');
   
@@ -176,7 +183,7 @@
       .attr('x2', barW)
       .attr('y1', barH - 1)
       .attr('y2', barH - 1)
-      .attr('stroke', '#999')
+      // .attr('stroke', '#999')
       .attr('stroke-width', 2);
     
     var barHeight = (barH - 20) / 2; // Dela höjden för två staplar
@@ -202,8 +209,8 @@
       .attr('y', 8 + barHeight)
       .attr('width', selectedWidth)
       .attr('height', barHeight)
-      .attr('fill', '#4CAF50'); // Grön för valt antal
-      
+      .attr('fill', '#2e4874'); // Blå för valt antal
+
     // Värden till höger om staplarna
     g.append('text')
       .attr('x', totalWidth + 8)
@@ -223,7 +230,7 @@
       .attr('class', 'BodyImage-caption')
       .style('font-size', valueFontSize)
       .style('font-weight', 'bold')
-      .style('fill', '#2E7D32') // Mörkgrön för att matcha stapeln
+      .style('fill', '#2e4874') // Blå för att matcha stapeln
       .text(value.toLocaleString('sv-SE'));
       
     // Labels
@@ -445,6 +452,7 @@
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(function() {
       if (kommuner.length > 0) {
+        margin = getResponsiveMargin();
         var currentCount = parseInt(countEl.text().replace(/\s/g, '')) || 0;
         drawBar(currentCount, Math.max(totalMax, currentCount));
         drawPie(currentCount, kommuner.length);

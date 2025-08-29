@@ -184,7 +184,9 @@ legend {
     background-position: center;
     position: fixed;
     right: 20px;
-  /* Remove font-size, use image only */
+    /* top: 10px; */
+    margin-top: 20px;
+    /* Remove font-size, use image only */
   }
 
   ul {
