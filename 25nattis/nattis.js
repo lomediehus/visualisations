@@ -118,6 +118,14 @@
 
     c(kommuner.length)
 
+      // Logga kommunnamn (org) för varje val
+      FIELDS.forEach(function(field) {
+        var namnLista = kommuner
+          .filter(function(rec) { return rec[field]; })
+          .map(function(rec) { return rec.Org; }); // 'kommun' istället för 'org'
+        // console.log(field + ':', namnLista);
+      });
+
     // Bygg comboMap från alla möjliga kombinationer i data
     comboMap = new Map();
     kommuner.forEach(function(d){
@@ -327,14 +335,58 @@
     console.log('Selected fields:', Array.from(selected));
 
     var count = 0;
-    
+
+
+  // Ny kod för drawer
+  const showBtn = document.getElementById("showDrawer");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("closeDrawer");
+  const kommunListaEl = document.getElementById("kommunlista");
+
+  // Funktionen du kallar när namnLista ska fyllas
+  function uppdateraKommunlista(namnLista) {
+    kommunListaEl.innerHTML = ""; // rensa gammal lista
+    namnLista.forEach(namn => {
+      const li = document.createElement("li");
+      li.textContent = namn;
+      kommunListaEl.appendChild(li);
+    });
+  }
+
+
+
+  function openDrawer() {
+    drawer.classList.add("open");
+    overlay.style.display = "block";
+  }
+
+  function closeDrawer() {
+    drawer.classList.remove("open");
+    overlay.style.display = "none";
+  }
+
+  showBtn.addEventListener("click", openDrawer);
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+
+  // slut ny kod för drawer
+
     if (selected.size === 0) {
       count = 0; // Visa 0 när inget är valt i den nedre stapeln
       document.getElementById('kpi').classList.add('hidden');
+    // Logga tom lista om inget är valt
+    console.log('Kommuner (org) för valda fält:', []);
     } else {
-      count = kommuner.filter(function(rec){ return matchesInclusive(rec, selected); }).length;
+      var matchandeKommuner = kommuner.filter(function(rec){ return matchesInclusive(rec, selected); });
+      count = matchandeKommuner.length;
       document.getElementById('kpi').classList.remove('hidden');
-      
+      var namnLista = matchandeKommuner.map(function(rec) { return rec.Org; });
+      console.log('Kommuner (org) för valda fält:', namnLista);
+      // document.getElementById("kommunlista").innerHTML = namnLista.join(', ');
+
+      uppdateraKommunlista(namnLista);
+
       // Uppdatera KPI-texten med valda alternativ
       var selectedNames = Array.from(selected).map(function(key) {
         return PRETTY[key];
@@ -360,9 +412,9 @@
     
     console.log('Found inclusive count:', count);
 
-    countEl.text(count.toLocaleString('sv-SE'));
-    drawBar(count, Math.max(totalMax, count));
-    drawPie(count, kommuner.length);
+  countEl.text(count.toLocaleString('sv-SE'));
+  drawBar(count, kommuner.length);
+  drawPie(count, kommuner.length);
   }
 
   // Lyssna på UI
