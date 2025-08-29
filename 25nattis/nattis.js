@@ -238,6 +238,7 @@
       .attr('text-anchor','end')
       .style('font-size', '12px')
       .text('Valt');
+    informHeight();
   }
 
   function drawPie(selectedCount, totalCount) {
@@ -324,6 +325,7 @@
       .attr('y', 12)
       .style('font-size', '12px')
       .text(function(d) { return d.label; });
+    informHeight();
   }
 
   function updateCount() {
@@ -352,18 +354,21 @@
       li.textContent = namn;
       kommunListaEl.appendChild(li);
     });
+    informHeight();
   }
 
 
 
   function openDrawer() {
-    drawer.classList.add("open");
-    overlay.style.display = "block";
+  drawer.classList.add("open");
+  overlay.style.display = "block";
+  informHeight();
   }
 
   function closeDrawer() {
-    drawer.classList.remove("open");
-    overlay.style.display = "none";
+  drawer.classList.remove("open");
+  overlay.style.display = "none";
+  informHeight();
   }
 
   showBtn.addEventListener("click", openDrawer);
@@ -375,12 +380,15 @@
     if (selected.size === 0) {
       count = 0; // Visa 0 när inget är valt i den nedre stapeln
       document.getElementById('kpi').classList.add('hidden');
+      document.getElementById("showDrawer").classList.add('hidden');
     // Logga tom lista om inget är valt
     console.log('Kommuner (org) för valda fält:', []);
     } else {
       var matchandeKommuner = kommuner.filter(function(rec){ return matchesInclusive(rec, selected); });
       count = matchandeKommuner.length;
       document.getElementById('kpi').classList.remove('hidden');
+      document.getElementById("showDrawer").classList.remove('hidden');
+
       var namnLista = matchandeKommuner.map(function(rec) { return rec.Org; });
       console.log('Kommuner (org) för valda fält:', namnLista);
       // document.getElementById("kommunlista").innerHTML = namnLista.join(', ');
@@ -403,11 +411,21 @@
         }).join(', ') + ' och ' + selectedNames[selectedNames.length - 1].toLowerCase() + '.';
       }
       
-      // Uppdatera KPI-elementets text
+      var i = 0;
+      var speed = 15;
       var kpiElement = document.getElementById('kpi');
       if (kpiElement) {
-        kpiElement.innerHTML = kpiText;
+        kpiElement.innerHTML = ""; // Clear previous text
+        function typeWriter() {
+          if (i < kpiText.length) {
+            kpiElement.innerHTML += kpiText.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        typeWriter();
       }
+
     }
     
     console.log('Found inclusive count:', count);
@@ -430,6 +448,7 @@
         var currentCount = parseInt(countEl.text().replace(/\s/g, '')) || 0;
         drawBar(currentCount, Math.max(totalMax, currentCount));
         drawPie(currentCount, kommuner.length);
+        informHeight();
       }
     }, 100);
   });

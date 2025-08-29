@@ -3,7 +3,13 @@
 }
 
 body {
-    margin: 24px;
+    /* margin: 24px; */
+}
+
+h3.denser {
+    font-weight: 600;
+    /* font-size: 1.5rem; */
+    line-height: 2cap;
 }
 
 .panel {
@@ -39,8 +45,12 @@ legend {
 .kpi {
     /* font-size: clamp(28px, 5vw, 44px); */
     /* font-weight: 800; */
-    font-size: 30px;
+    /* position: absolute; */
+    /* top: -30px; */
+    /* height: 20px; */
+    font-size: 25px;
     line-height: 1.1;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 .hidden {
@@ -51,8 +61,15 @@ legend {
     color: #666;
 }
 
+.primary-content {
+    position: relative;
+    /* margin-bottom: 70px; */
+}
+
 .bar-wrap {
+    /* position: relative; */
     max-width: 900px;
+    /* margin-bottom: 40px; */
 }
 
 .clear-row {
@@ -95,13 +112,23 @@ legend {
 }
 
 /* Ny kod för drawer */
- button {
+ /* button {
     padding: 0.5rem 1rem;
     border: none;
-    background: #0066cc;
-    color: white;
     border-radius: 4px;
     cursor: pointer;
+    width: 30px;
+  } */
+
+  #showDrawerContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  #showDrawer {
+    width: 40%;
+    margin: 0 auto;
+    /* display: none; */
   }
 
   /* Overlay */
@@ -148,9 +175,16 @@ legend {
   .close-btn {
     background: none;
     border: none;
-    font-size: 1.5rem;
     cursor: pointer;
-    background-color: red;
+    width: 40px;
+    height: 40px;
+    background-image: url(../arbetet_assets/img/closex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    right: 20px;
+  /* Remove font-size, use image only */
   }
 
   ul {
@@ -163,3 +197,9 @@ legend {
     padding: 0.3rem 0;
     border-bottom: 1px solid #eee;
   }
+
+li {
+    display: block;
+    width: 50%;
+    float: left;
+}

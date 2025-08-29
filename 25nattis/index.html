@@ -14,43 +14,45 @@
   <link rel="shortcut icon" type="image/x-icon" href="../arbetet_assets/img/favicon.ico">
 </head>
 <body>
-  <h2>Se vilka tider kommunerna erbjuder barnomsorg</h2>
+  <h3 class="denser">Se vilka tider du kan få barnomsorg</h3>
   <p class="BodyImage-caption">153 kommuner uppger att de erbjuder barnomsorg på obekväm tid. Men vilka tider handlar det om? Kryssa i rutorna nedan så får du veta.</p>
 
   
 
-    <div>
+    <div class="primary-content">
      
       <div class="bar-wrap">
         <svg id="bar" width="900" height="60" role="img" aria-label="Stapeldiagram för antal kommuner"></svg>
       </div>
-       <div class="kpi hidden BodyImage-caption" id="kpi">
-        <span id="count" aria-live="polite">–</span>
-        <span class="muted">kommuner</span>
+        
       </div>
     </div>
 
     <div class="panel">
-    <fieldset>
-      <!-- <legend>Tider</legend> -->
-      <div class="checks BodyImage-caption" id="checks"></div>
+      <fieldset>
+        <!-- <legend>Tider</legend> -->
+        <div class="checks BodyImage-caption" id="checks"></div>
 
-      <div class="toggle">
-        <!-- <label class="row">
-          <input type="radio" name="mode" value="exact" checked>
-          Exakt matchning
-        </label> -->
-        <!-- <label class="row">
-          <input type="radio" name="mode" value="inclusive">
-          Inkluderar minst dessa
-        </label> -->
-      </div>
-
-
-    </fieldset>
+        <div class="toggle">
+          <!-- <label class="row">
+            <input type="radio" name="mode" value="exact" checked>
+            Exakt matchning
+          </label> -->
+          <!-- <label class="row">
+            <input type="radio" name="mode" value="inclusive">
+            Inkluderar minst dessa
+          </label> -->
+        </div>
+        <!-- <span id="count" aria-live="polite">–</span>
+        <span class="muted">kommuner</span> -->
+        <div class="kpi hidden BodyImage-caption" id="kpi">
+      </fieldset>
+    </div>
 
     <!-- Knappen som öppnar drawer -->
-    <button id="showDrawer">Visa kommuner</button>
+     <div id="showDrawerContainer"> 
+      <button id="showDrawer" class="Button hidden">Visa kommuner</button>
+     </div>
 
     <!-- Overlay -->
     <div class="overlay" id="overlay"></div>
@@ -59,9 +61,11 @@
     <div class="drawer" id="drawer">
       <div class="drawer-header">
         <h2>Kommuner som erbjuder tjänsten</h2>
-        <button class="close-btn" id="closeDrawer">&times;</button>
+        <!-- <button class="close-btn" id="closeDrawer">&times;</button> -->
+        <button class="close-btn" id="closeDrawer"></button>
+
       </div>
-      <ul id="kommunlista"></ul>
+      <ul id="kommunlista" class="BodyImage-caption"></ul>
     </div>
 
 
