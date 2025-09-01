@@ -23,6 +23,7 @@
 
   // UI: skapa kryssrutor
   var checks = d3.select('#checks');
+  var rowElements = [];
   FIELDS.forEach(function(key){
     var row = checks.append('label').attr('class','row');
     row.append('input')
@@ -33,6 +34,64 @@
       .style('height', '18px')
       .style('margin-right', '4px');
     row.append('span').text(PRETTY[key]);
+    rowElements.push(row.node());
+  });
+
+  // Animate rows one by one on load
+  function animateRows(rows, delay) {
+    // Detect columns from CSS grid
+    var checksEl = document.getElementById('checks');
+    var computed = window.getComputedStyle(checksEl);
+    var gridTemplate = computed.getPropertyValue('grid-template-columns');
+    var columns = gridTemplate.split(' ').length;
+    if (window.innerWidth < 600 || columns < 2) {
+      // Animate row by row (default)
+      rows.forEach(function(row, i) {
+        setTimeout(function() {
+          row.classList.add('animate-highlight');
+          setTimeout(function() {
+            row.classList.remove('animate-highlight');
+          }, 800);
+        }, i * delay);
+      });
+    } else {
+      // Animate column by column
+      // Build columns: each column is an array of row nodes
+      var gridColumns = Array.from({length: columns}, () => []);
+      rows.forEach(function(row, i) {
+        var col = i % columns;
+        gridColumns[col].push(row);
+      });
+      // Animate column by column, top to bottom
+      var idx = 0;
+      gridColumns.forEach(function(colRows) {
+        colRows.forEach(function(row) {
+          setTimeout(function() {
+            row.classList.add('animate-highlight');
+            setTimeout(function() {
+              row.classList.remove('animate-highlight');
+            }, 800);
+          }, idx * delay);
+          idx++;
+        });
+      });
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    animateRows(rowElements, 200);
+    var animationInterval = setInterval(function() {
+      animateRows(rowElements, 200);
+    }, 5000);
+
+    // Stop animation when any box is checked
+    document.getElementById('checks').addEventListener('change', function(e) {
+      var anyChecked = Array.from(document.querySelectorAll('#checks input[type=checkbox][data-key]')).some(function(cb) { return cb.checked; });
+      if (anyChecked && animationInterval) {
+        clearInterval(animationInterval);
+        animationInterval = null;
+      }
+    });
   });
 
   var clearDiv = checks.append('div')
@@ -202,7 +261,7 @@
     // Undre stapel: Valt antal
     var selectedWidth = x(value);
     console.log('Bar width calculated:', selectedWidth);
-    var valueFontSize = '20px';
+    // var valueFontSize = '20px';
     
     g.append('rect')
       .attr('x', 0)
@@ -213,38 +272,42 @@
 
     // Värden till höger om staplarna
     g.append('text')
-      .attr('x', totalWidth + 8)
+      .attr('x', totalWidth + 4)
       .attr('y', 4 + barHeight/2)
       .attr('dy','0.35em')
-      .attr('class', 'BodyImage-caption')
+      .attr('class', 'BodyImage-caption value')
       .attr('text-anchor','start')
-      .style('font-size', valueFontSize)
+      //Setting size with css instead
+      // .style('font-size', valueFontSize)
       .style('font-weight', 'bold')
       .text(totalKommuner.toLocaleString('sv-SE'));
       
     g.append('text')
-      .attr('x', selectedWidth + 8)
+      .attr('x', selectedWidth + 4)
       .attr('y', 8 + barHeight + barHeight/2)
       .attr('dy','0.35em')
       .attr('text-anchor','start')
-      .attr('class', 'BodyImage-caption')
-      .style('font-size', valueFontSize)
+      .attr('class', 'BodyImage-caption value')
+       //Setting size with css instead
+      // .style('font-size', valueFontSize)
       .style('font-weight', 'bold')
       .style('fill', '#2e4874') // Blå för att matcha stapeln
       .text(value.toLocaleString('sv-SE'));
       
     // Labels
     g.append('text')
-      .attr('x', -12).attr('y', 4 + barHeight/2).attr('dy','0.35em')
+      .attr('x', -6).attr('y', 4 + barHeight/2).attr('dy','0.35em')
       .attr('text-anchor','end')
-      .style('font-size', '12px')
+      .attr('class', 'BodyImage-caption totalt-valda')
+      // .style('font-size', '12px')
       .text('Totalt');
       
     g.append('text')
-      .attr('x', -12).attr('y', 8 + barHeight + barHeight/2).attr('dy','0.35em')
+      .attr('x', -6).attr('y', 8 + barHeight + barHeight/2).attr('dy','0.35em')
       .attr('text-anchor','end')
-      .style('font-size', '12px')
-      .text('Valt');
+      .attr('class', 'BodyImage-caption totalt-valda')
+      // .style('font-size', '12px')
+      .text('Valda');
     informHeight();
   }
 
