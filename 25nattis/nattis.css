@@ -33,6 +33,11 @@ h2.denser {
     max-width: 900px;
 }
 
+p.ingress {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
 fieldset {
     /* border: 1px solid #ddd;
     border-radius: 12px; */
@@ -55,6 +60,7 @@ legend {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 20px;
 }
 
 .kpi {
@@ -220,5 +226,17 @@ li {
     line-height: 1.1;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  p.ingress {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
   }
 }
