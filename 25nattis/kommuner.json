@@ -20,36 +20,6 @@
     "Storhelg": false
   },
   {
-    "KKod": 1492,
-    "Org": "Åmål",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
-    "KKod": 1292,
-    "Org": "Ängelholm",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": true,
-    "Helgnatt": false,
-    "Storhelg": true
-  },
-  {
-    "KKod": 1277,
-    "Org": "Åstorp",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
     "KKod": 2084,
     "Org": "Avesta",
     "Tidigmorgon": true,
@@ -90,17 +60,7 @@
     "Storhelg": true
   },
   {
-    "KKod": 1490,
-    "Org": "Borås",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": "0885",
+    "KKod": 885,
     "Org": "Borgholm",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -120,7 +80,17 @@
     "Storhelg": false
   },
   {
-    "KKod": "0127",
+    "KKod": 1490,
+    "Org": "Borås",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 127,
     "Org": "Botkyrka",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -150,7 +120,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0125",
+    "KKod": 125,
     "Org": "Ekerö",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -160,7 +130,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0686",
+    "KKod": 686,
     "Org": "Eksjö",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -170,7 +140,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0862",
+    "KKod": 862,
     "Org": "Emmaboda",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -180,7 +150,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0381",
+    "KKod": 381,
     "Org": "Enköping",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -190,7 +160,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0484",
+    "KKod": 484,
     "Org": "Eskilstuna",
     "Tidigmorgon": false,
     "Vardagkvall": true,
@@ -250,6 +220,36 @@
     "Storhelg": true
   },
   {
+    "KKod": 662,
+    "Org": "Gislaved",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 980,
+    "Org": "Gotland",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1444,
+    "Org": "Grästorp",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
     "KKod": 2523,
     "Org": "Gällivare",
     "Tidigmorgon": true,
@@ -270,16 +270,6 @@
     "Storhelg": true
   },
   {
-    "KKod": "0662",
-    "Org": "Gislaved",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
     "KKod": 1480,
     "Org": "Göteborg",
     "Tidigmorgon": true,
@@ -290,43 +280,13 @@
     "Storhelg": true
   },
   {
-    "KKod": "0980",
-    "Org": "Gotland",
-    "Tidigmorgon": false,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": true,
-    "Helgnatt": false,
-    "Storhelg": true
-  },
-  {
-    "KKod": 1444,
-    "Org": "Grästorp",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
-    "KKod": "0643",
+    "KKod": 643,
     "Org": "Habo",
     "Tidigmorgon": false,
     "Vardagkvall": true,
     "Vardagnatt": false,
     "Helgerdagtid": true,
     "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
-    "KKod": "0305",
-    "Org": "Håbo",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
     "Storhelg": false
   },
   {
@@ -370,7 +330,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0136",
+    "KKod": 136,
     "Org": "Haninge",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -388,6 +348,66 @@
     "Helgerdagtid": true,
     "Helgnatt": false,
     "Storhelg": true
+  },
+  {
+    "KKod": 1283,
+    "Org": "Helsingborg",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1466,
+    "Org": "Herrljunga",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 126,
+    "Org": "Huddinge",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 2184,
+    "Org": "Hudiksvall",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 860,
+    "Org": "Hultsfred",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 305,
+    "Org": "Håbo",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
   },
   {
     "KKod": 2280,
@@ -420,26 +440,6 @@
     "Storhelg": false
   },
   {
-    "KKod": 1283,
-    "Org": "Helsingborg",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": 1466,
-    "Org": "Herrljunga",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
     "KKod": 1284,
     "Org": "Höganäs",
     "Tidigmorgon": true,
@@ -460,37 +460,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0126",
-    "Org": "Huddinge",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": 2184,
-    "Org": "Hudiksvall",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": "0860",
-    "Org": "Hultsfred",
-    "Tidigmorgon": false,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": true,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
-    "KKod": "0123",
+    "KKod": 123,
     "Org": "Järfälla",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -500,7 +470,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0680",
+    "KKod": 680,
     "Org": "Jönköping",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -520,7 +490,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0880",
+    "KKod": 880,
     "Org": "Kalmar",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -570,7 +540,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0483",
+    "KKod": 483,
     "Org": "Katrineholm",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -578,16 +548,6 @@
     "Helgerdagtid": true,
     "Helgnatt": true,
     "Storhelg": true
-  },
-  {
-    "KKod": 1261,
-    "Org": "Kävlinge",
-    "Tidigmorgon": false,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
   },
   {
     "KKod": 1276,
@@ -598,16 +558,6 @@
     "Helgerdagtid": true,
     "Helgnatt": false,
     "Storhelg": false
-  },
-  {
-    "KKod": 1983,
-    "Org": "Köping",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
   },
   {
     "KKod": 2282,
@@ -660,6 +610,26 @@
     "Storhelg": false
   },
   {
+    "KKod": 1261,
+    "Org": "Kävlinge",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1983,
+    "Org": "Köping",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
     "KKod": 1282,
     "Org": "Landskrona",
     "Tidigmorgon": true,
@@ -680,7 +650,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0186",
+    "KKod": 186,
     "Org": "Lidingö",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -710,7 +680,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0580",
+    "KKod": 580,
     "Org": "Linköping",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -780,16 +750,6 @@
     "Storhelg": false
   },
   {
-    "KKod": 2418,
-    "Org": "Malå",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": false
-  },
-  {
     "KKod": 1280,
     "Org": "Malmö",
     "Tidigmorgon": true,
@@ -798,6 +758,16 @@
     "Helgerdagtid": true,
     "Helgnatt": true,
     "Storhelg": true
+  },
+  {
+    "KKod": 2418,
+    "Org": "Malå",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
   },
   {
     "KKod": 1493,
@@ -820,13 +790,33 @@
     "Storhelg": false
   },
   {
-    "KKod": "0586",
+    "KKod": 586,
     "Org": "Mjölby",
     "Tidigmorgon": true,
     "Vardagkvall": true,
     "Vardagnatt": true,
     "Helgerdagtid": true,
     "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 583,
+    "Org": "Motala",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 642,
+    "Org": "Mullsjö",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
     "Storhelg": false
   },
   {
@@ -840,7 +830,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0861",
+    "KKod": 861,
     "Org": "Mönsterås",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -850,7 +840,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0840",
+    "KKod": 840,
     "Org": "Mörbylånga",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -860,27 +850,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0583",
-    "Org": "Motala",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": "0642",
-    "Org": "Mullsjö",
-    "Tidigmorgon": false,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
-    "KKod": "0182",
+    "KKod": 182,
     "Org": "Nacka",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -900,7 +870,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0581",
+    "KKod": 581,
     "Org": "Norrköping",
     "Tidigmorgon": false,
     "Vardagkvall": true,
@@ -910,7 +880,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0188",
+    "KKod": 188,
     "Org": "Norrtälje",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -930,7 +900,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0881",
+    "KKod": 881,
     "Org": "Nybro",
     "Tidigmorgon": false,
     "Vardagkvall": true,
@@ -940,7 +910,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0480",
+    "KKod": 480,
     "Org": "Nyköping",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -960,36 +930,6 @@
     "Storhelg": false
   },
   {
-    "KKod": 1880,
-    "Org": "Örebro",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": 1257,
-    "Org": "Örkelljunga",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": false
-  },
-  {
-    "KKod": 2284,
-    "Org": "Örnsköldsvik",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
     "KKod": 1421,
     "Org": "Orust",
     "Tidigmorgon": false,
@@ -1000,18 +940,8 @@
     "Storhelg": false
   },
   {
-    "KKod": "0882",
+    "KKod": 882,
     "Org": "Oskarshamn",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": "0117",
-    "Org": "Österåker",
     "Tidigmorgon": true,
     "Vardagkvall": true,
     "Vardagnatt": true,
@@ -1030,7 +960,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0481",
+    "KKod": 481,
     "Org": "Oxelösund",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1060,16 +990,6 @@
     "Storhelg": true
   },
   {
-    "KKod": 1785,
-    "Org": "Säffle",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": false
-  },
-  {
     "KKod": 1981,
     "Org": "Sala",
     "Tidigmorgon": false,
@@ -1080,7 +1000,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0128",
+    "KKod": 128,
     "Org": "Salem",
     "Tidigmorgon": false,
     "Vardagkvall": true,
@@ -1090,17 +1010,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0684",
-    "Org": "Sävsjö",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
-    "KKod": "0191",
+    "KKod": 191,
     "Org": "Sigtuna",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1170,36 +1080,6 @@
     "Storhelg": true
   },
   {
-    "KKod": 2182,
-    "Org": "Söderhamn",
-    "Tidigmorgon": false,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": false
-  },
-  {
-    "KKod": "0582",
-    "Org": "Söderköping",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
-    "KKod": "0181",
-    "Org": "Södertälje",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
     "KKod": 2283,
     "Org": "Sollefteå",
     "Tidigmorgon": true,
@@ -1210,18 +1090,8 @@
     "Storhelg": false
   },
   {
-    "KKod": "0163",
+    "KKod": 163,
     "Org": "Sollentuna",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": 1083,
-    "Org": "Sölvesborg",
     "Tidigmorgon": true,
     "Vardagkvall": true,
     "Vardagnatt": true,
@@ -1240,7 +1110,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0180",
+    "KKod": 180,
     "Org": "Stockholm",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1250,7 +1120,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0486",
+    "KKod": 486,
     "Org": "Strängnäs",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1270,7 +1140,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0183",
+    "KKod": 183,
     "Org": "Sundbyberg",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1297,6 +1167,66 @@
     "Vardagnatt": false,
     "Helgerdagtid": true,
     "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1785,
+    "Org": "Säffle",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 684,
+    "Org": "Sävsjö",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2182,
+    "Org": "Söderhamn",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 582,
+    "Org": "Söderköping",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 181,
+    "Org": "Södertälje",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1083,
+    "Org": "Sölvesborg",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
     "Storhelg": true
   },
   {
@@ -1340,16 +1270,6 @@
     "Storhelg": true
   },
   {
-    "KKod": 1473,
-    "Org": "Töreboda",
-    "Tidigmorgon": false,
-    "Vardagkvall": true,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
-  },
-  {
     "KKod": 1737,
     "Org": "Torsby",
     "Tidigmorgon": false,
@@ -1380,7 +1300,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0488",
+    "KKod": 488,
     "Org": "Trosa",
     "Tidigmorgon": false,
     "Vardagkvall": true,
@@ -1390,7 +1310,7 @@
     "Storhelg": false
   },
   {
-    "KKod": "0138",
+    "KKod": 138,
     "Org": "Tyresö",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1398,6 +1318,16 @@
     "Helgerdagtid": true,
     "Helgnatt": true,
     "Storhelg": true
+  },
+  {
+    "KKod": 1473,
+    "Org": "Töreboda",
+    "Tidigmorgon": false,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
   },
   {
     "KKod": 1485,
@@ -1420,7 +1350,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0114",
+    "KKod": 114,
     "Org": "Upplands Väsby",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1430,7 +1360,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0139",
+    "KKod": 139,
     "Org": "Upplands-Bro",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1440,18 +1370,8 @@
     "Storhelg": true
   },
   {
-    "KKod": "0380",
+    "KKod": 380,
     "Org": "Uppsala",
-    "Tidigmorgon": true,
-    "Vardagkvall": true,
-    "Vardagnatt": true,
-    "Helgerdagtid": true,
-    "Helgnatt": true,
-    "Storhelg": true
-  },
-  {
-    "KKod": 1487,
-    "Org": "Vänersborg",
     "Tidigmorgon": true,
     "Vardagkvall": true,
     "Vardagnatt": true,
@@ -1470,7 +1390,37 @@
     "Storhelg": true
   },
   {
-    "KKod": "0120",
+    "KKod": 685,
+    "Org": "Vetlanda",
+    "Tidigmorgon": true,
+    "Vardagkvall": false,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 428,
+    "Org": "Vingåker",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1487,
+    "Org": "Vänersborg",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 120,
     "Org": "Värmdö",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1490,7 +1440,7 @@
     "Storhelg": true
   },
   {
-    "KKod": "0780",
+    "KKod": 780,
     "Org": "Växjö",
     "Tidigmorgon": true,
     "Vardagkvall": true,
@@ -1500,18 +1450,18 @@
     "Storhelg": true
   },
   {
-    "KKod": "0685",
-    "Org": "Vetlanda",
+    "KKod": 1286,
+    "Org": "Ystad",
     "Tidigmorgon": true,
-    "Vardagkvall": false,
-    "Vardagnatt": false,
-    "Helgerdagtid": false,
-    "Helgnatt": false,
-    "Storhelg": false
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
   },
   {
-    "KKod": "0428",
-    "Org": "Vingåker",
+    "KKod": 1492,
+    "Org": "Åmål",
     "Tidigmorgon": true,
     "Vardagkvall": true,
     "Vardagnatt": false,
@@ -1520,8 +1470,58 @@
     "Storhelg": false
   },
   {
-    "KKod": 1286,
-    "Org": "Ystad",
+    "KKod": 1277,
+    "Org": "Åstorp",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": false,
+    "Helgnatt": false,
+    "Storhelg": false
+  },
+  {
+    "KKod": 1292,
+    "Org": "Ängelholm",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": false,
+    "Helgerdagtid": true,
+    "Helgnatt": false,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1880,
+    "Org": "Örebro",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 1257,
+    "Org": "Örkelljunga",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": false
+  },
+  {
+    "KKod": 2284,
+    "Org": "Örnsköldsvik",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
+  {
+    "KKod": 117,
+    "Org": "Österåker",
     "Tidigmorgon": true,
     "Vardagkvall": true,
     "Vardagnatt": true,

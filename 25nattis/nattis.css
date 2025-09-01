@@ -74,7 +74,11 @@ legend {
 
 .clear-row {
     /* background-color: green; */
-    display: block;
+  font-family: Founders Grotesk Text;
+  /* src: url(../fonts/founders-grotesk-text/FoundersGroteskTextWeb-Semibold.woff2)
+    format("woff2"); */
+  font-weight: 600;
+  display: block;
 }
 /* .combos {
     margin-top: 16px;

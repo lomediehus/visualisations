@@ -196,7 +196,7 @@
       .attr('width', totalWidth)
       .attr('height', barHeight)
       .attr('fill', '#E0E0E0') // Ljusgrå för total
-      .attr('stroke', '#999')
+      // .attr('stroke', '#999')
       .attr('stroke-width', 1);
       
     // Undre stapel: Valt antal
