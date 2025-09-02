@@ -284,11 +284,8 @@ li {
   #bottom-bar img:nth-child(5) {
     display: block;
   }
-
-  body {
-    min-height: 800px;
-  }
 }
+
 
 /* Större skärmar: visa 6 ikoner */
 @media (min-width: 900px) {
@@ -301,5 +298,20 @@ li {
 @media (min-width: 1200px) {
   #bottom-bar img {
     display: block;
+  }
+}
+
+/* Inställningar för body med max-width */
+@media (max-width: 450px) {
+
+  body {
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  body {
+    min-height: 600px;
   }
 }
