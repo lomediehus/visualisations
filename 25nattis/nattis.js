@@ -470,7 +470,7 @@
         return PRETTY[key];
       });
       
-      var kpiText = count.toLocaleString('sv-SE') + ' kommuner har barnomsorg ';
+      var kpiText = count.toLocaleString('sv-SE') + ' kommuner har barnomsorg på ';
       if (selectedNames.length === 1) {
         kpiText += selectedNames[0].toLowerCase() + '.';
       } else if (selectedNames.length === 2) {
