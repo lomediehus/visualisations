@@ -88,7 +88,7 @@ legend {
 } 
 
 .bottom-bar img {
-  height: 40px; /* skalas med höjden på baren */
+  height: 30px; /* skalas med höjden på baren */
   flex-shrink: 0;
 }
 .muted {
