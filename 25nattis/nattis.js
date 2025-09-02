@@ -18,7 +18,7 @@
     Vardagnatt: 'Vardagsnätter',
     Helgerdagtid: 'Helger dagtid',
     Helgnatt: 'Helgnätter',
-    Storhelg: 'Storhelg'
+    Storhelg: 'Storhelger'
   };
 
   // UI: skapa kryssrutor

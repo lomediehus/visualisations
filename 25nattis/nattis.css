@@ -34,7 +34,7 @@ h2.denser {
 }
 
 p.ingress {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.2;
 }
 
@@ -60,7 +60,7 @@ legend {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .kpi {
@@ -222,14 +222,14 @@ li {
   }
 
   .kpi {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.1;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
   p.ingress {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.2;
 }
 
