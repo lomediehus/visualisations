@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
   /* overflow: hidden; */
   -ms-overflow-style: none;
-  min-height: 1000px;
+  min-height: 700px;
 }
 
 body::-webkit-scrollbar{
