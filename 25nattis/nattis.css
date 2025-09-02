@@ -87,7 +87,7 @@ legend {
   background: linear-gradient(0deg, rgba(46, 72, 116, 1) 0%, rgba(250, 249, 247, 1) 84%);
 } 
 
-.bottom-bar img {
+#bottom-bar img {
   height: 30px; /* skalas med höjden på baren */
   flex-shrink: 0;
 }
@@ -259,15 +259,6 @@ li {
   }
 }
 
-#bottom-bar img {
-  height: 60px; /* skalas med höjden på baren */
-  flex-shrink: 0;
-}
-
-/* Visa 4 ikoner på små skärmar */
-#bottom-bar img:nth-child(n+5) {
-  display: none;
-}
 
 /* Mellan-stora skärmar: visa 5 ikoner */
 @media (min-width: 600px) {
@@ -280,7 +271,13 @@ li {
   }
 }
 
-/* Mellan-stora skärmar: visa 5 ikoner */
+@media (max-width: 450px) {
+  #bottom-bar img:nth-child(n+5) {
+    display: none;
+  }
+}
+
+/* Visa 4 ikoner på små skärmar */
 @media (min-width: 450px) {
   #bottom-bar img:nth-child(5) {
     display: block;
