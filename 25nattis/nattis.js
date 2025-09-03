@@ -484,13 +484,28 @@
       var i = 0;
       var speed = 15;
       var kpiElement = document.getElementById('kpi');
+      var showDrawerBtn = document.getElementById('showDrawer');
+      // Make typewriter cancellable
+      if (!window.typeWriterTimeout) window.typeWriterTimeout = null;
       if (kpiElement) {
         kpiElement.innerHTML = ""; // Clear previous text
+        if (showDrawerBtn) {
+          showDrawerBtn.classList.add('hidden'); // Hide button before animation
+        }
+        if (window.typeWriterTimeout) {
+          clearTimeout(window.typeWriterTimeout);
+          window.typeWriterTimeout = null;
+        }
         function typeWriter() {
           if (i < kpiText.length) {
             kpiElement.innerHTML += kpiText.charAt(i);
             i++;
-            setTimeout(typeWriter, speed);
+            window.typeWriterTimeout = setTimeout(typeWriter, speed);
+          } else {
+            window.typeWriterTimeout = null;
+            if (showDrawerBtn) {
+              showDrawerBtn.classList.remove('hidden'); // Show button after animation
+            }
           }
         }
         typeWriter();
