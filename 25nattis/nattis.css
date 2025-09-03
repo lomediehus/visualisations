@@ -308,23 +308,23 @@ li {
 }
 
 /* Inställningar för body med max-width */
-@media (max-width: 370px) {
+@media (min-width: 200px) {
 
   body {
-    min-height: 850px;
+    min-height: 900px;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 450px) {
 
   body {
-    min-height: 700px;
+    min-height: 800px;
   }
 }
 
 @media screen and (min-width: 600px) {
   body {
-    min-height: 600px;
+    min-height: 700px;
   }
 
 }
