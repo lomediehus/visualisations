@@ -311,20 +311,29 @@ li {
 @media (min-width: 200px) {
 
   body {
-    min-height: 900px;
+    min-height: 850px;
   }
 }
 
-@media (min-width: 450px) {
+/* Inställningar för body med min-width */
+
+@media (min-width: 375px) {
 
   body {
     min-height: 800px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 450px) {
+
   body {
     min-height: 700px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    min-height: 600px;
   }
 
 }
