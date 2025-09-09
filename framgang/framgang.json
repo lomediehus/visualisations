@@ -1373,5 +1373,38 @@
     "url": "https://arbetet.se/2025/07/16/efter-inas-larm-nu-satts-kommunens-chefer-i-skolbanken/",
     "bildurl": "https://media.arto.se/app/uploads/sites/10/2025/06/09100550/ina.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum": "2025/07/16"
+  },
+  {
+    "rubrik": "Efter lång kamp får stödassistenter arbetsskor",
+    "kategori": "arbetskläder",
+    "kategori_detaljerad": "arbetsskor",
+    "ort": "Göteborg",
+    "lat": 57.70143,
+    "long": 12.103,
+    "url": "https://arbetet.se/2025/09/04/efter-lang-kamp-far-stodassistenter-arbetsskor/",
+    "bildurl": "https://media.arto.se/app/uploads/sites/10/2025/09/04091311/1000007014.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum": "2025/09/04"
+  },
+  {
+    "rubrik": "Högsby lönesatsar på undersköterskor – och chefer",
+    "kategori": "lön",
+    "kategori_detaljerad": "lön",
+    "ort": "Högsby",
+    "lat": 57.1676,
+    "long": 16.0194,
+    "url": "https://arbetet.se/2025/08/28/hogsby-lonesatsar-pa-underskoterskor-och-chefer/",
+    "bildurl": "https://media.arto.se/app/uploads/sites/10/2025/08/27141733/kaiza-beskuren.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum": "2025/08/28"
+  },
+  {
+    "rubrik": "Här får barnskötarna vaccin på jobbet",
+    "kategori": "arbetsvillkor",
+    "kategori_detaljerad": "arbetsvillkor",
+    "ort": "Göteborg",
+    "lat": 57.6351,
+    "long": 11.9238,
+    "url": "https://arbetet.se/2025/08/25/har-far-barnskotarna-vaccin-pa-jobbet/",
+    "bildurl": "https://media.arto.se/app/uploads/sites/10/2025/08/21135115/vaccinwinnie.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum": "2025/08/25"
   }
 ]
