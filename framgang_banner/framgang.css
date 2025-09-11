@@ -1,0 +1,447 @@
+
+body {
+  background-color: #faf9f7;
+  height: 850px;
+  width: 1000px;
+  -ms-overflow-style: none;
+  }
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#content {
+  position: relative;
+}
+
+#vinjett {
+  position: absolute;
+  /* float: left; */
+  width: 300px;
+  pointer-events: none;
+  left: 19%;
+  z-index: 10;
+}
+
+#vinjettbild {
+  width: 300px;
+  pointer-events: none;
+}
+
+
+
+
+/* #content {
+  max-width: 500px;
+  margin: auto;
+} */
+
+#radiobuttons {
+  position: absolute;
+  /* float: left; */
+  /* width: 140px; */
+  top: 250px;
+  /* left: 30px; */
+  /* border-radius: 10px;
+  border: 1px solid black; */
+  /* background-color: #fcfaf5; */
+  /* background-color: rgba(252, 250, 245, 0.5); */
+  
+  /* padding: 10px; */
+  z-index: 10;
+  line-height: 5%;
+  display: none;
+}
+
+form.kategori {
+  margin: -5px;
+  padding: 0px;
+}
+
+input[type=radio] {
+  opacity: 0;
+  width: 0px;
+  padding-left: -20px;
+}
+
+label {
+  display: inline-block;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 3px;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  line-height: 90%;
+  /* background-color: #ddebeb; */
+  /* box-shadow:#7e7f7f 3px 3px 0,
+              #7e7f7f 1px 1px 0,
+              #7e7f7f 2px 2px 0; */
+}
+
+label:hover {
+  background-color: gray;
+}
+
+
+.blue {
+ fill: #3D82C4;
+ background-color: #3D82C4;
+}
+
+.pink {
+  fill: #D81B61; 
+  background-color: #D81B61; 
+
+}
+
+.orange {
+  fill: #fec111;
+  background-color: #fec111;
+}
+
+.darkgreen {
+  fill: #014D41;
+  background-color: #014D41;
+}
+
+.turkos {
+  fill: #2CBDBD;
+  background-color: #2CBDBD;
+}
+
+.white {
+  fill: #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.lila {
+  fill: #993399;
+  background-color: #993399;
+}
+
+.green {
+  fill: #00b200;
+  background-color: #00b200;
+}
+
+.red {
+  fill: red;
+  background-color: red;
+}
+
+.inactive {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+
+
+svg {
+  position: absolute;
+  width: 800px;
+  /* right: 3px; */
+  /* filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1)); */
+}
+
+.shadow{
+
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+  -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+}
+
+svg text.sverige {
+  font-size: 12px;
+  font-weight: bold;
+  fill: black;
+  /* font-stretch: ultra-condensed; */
+  transform: scaleX(0.5);
+}
+
+#kartpopup {
+  display: none;
+  width: 300px;
+  /* min-width: 250px; */
+  max-width: 350px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  position: absolute;
+  /* position: fixed;
+  left: 50%;
+  transform: translate(-50%, 50%); */
+  z-index: 30;
+  box-shadow: 3px 3px 3px   #707070;
+}
+#kartpopup .fet {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #111;
+}
+
+#kartpopup .link {
+  color: #e00f00;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+
+circle.cirkel:hover {
+    /* fill: white; */
+    fill: #CBC3E3;
+
+}
+
+/* .pulse {
+  fill: white;
+  fill-opacity: 1;
+  transform-origin: 50% 50%;
+  animation-duration: 2s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {
+    stroke-width: 3px;
+    stroke-opacity: 1;
+    transform: scale(0.3);
+  }
+  to {
+    stroke-width: 0;
+    stroke-opacity: 0;
+    transform: scale(2);
+  }
+} */
+
+
+
+.pulse {
+  fill: red;          /* Fill color when the circle pulses */
+  fill-opacity: 1;    /* Adjust the opacity if needed */
+  transform-origin: 50% 50%;
+  animation-duration: 2s;
+  animation-name: pulseAnimation;   /* Changed from 'pulse' to 'pulseAnimation' */
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseAnimation {   /* Changed from 'pulse' to 'pulseAnimation' */
+  0% {
+    r: 5;                      /* Starting radius of the circle */
+    fill-opacity: 1;
+  }
+  50% {
+    r: 10;                      /* Slightly increased radius to give the pulse effect */
+    fill-opacity: 0.7;         /* Adjust the opacity if needed */
+  }
+  100% {
+    r: 5;                      /* Back to the original radius */
+    fill-opacity: 1;
+  }
+}
+
+
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 20px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(245,247,247,0.8); /* Black background with opacity */
+    background-color: #fcfaf5;
+    opacity: 0.5;
+    z-index: 20; /* Specify a stack order in case you're using a different order for other elements */
+    /* cursor: not-allowed; */
+    /* pointer-events: none; */
+}
+
+
+
+div.tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  padding: 4px 8px;
+  display: none;
+  font-weight: normal;
+}
+
+#loadercontainer{
+  position: absolute;
+  /* top: 370px;
+  left: 350px; */
+  width: 150px;
+  z-index: 10;
+  top: 20px;
+}
+
+
+.loader { 
+  box-sizing: border-box;
+
+  border: 40px solid #f3f3f3;
+  border-top: 40px solid #3D82C4;
+  border-right: 40px solid #D81B61;
+  border-bottom: 40px solid #014D41;
+  border-left: 40px solid #fec111;
+
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.wheel {
+  position: absolute;
+  /* top: 50%;
+  left: 50%;  */
+}
+
+#hjulimg {
+  width: 120px;
+}
+
+.spin {
+  /* transform: translate(-50%, -50%); */
+  animation: spin 4s cubic-bezier(0.4, 0, 0.2, 1) 1;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); } /* Start position */
+  50% { transform: rotate(1080deg); } /* 3 rotations at an even pace */
+  100% { transform: rotate(1080deg); } /* End position */
+}
+
+.noclick {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 760px) {
+  svg {
+    width: 600px;   
+  }
+  #vinjett {
+    width: 230px;
+    left: 15%;
+  }
+  
+  #vinjettbild {
+    width: 210px;
+    pointer-events: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  svg {
+    width: 500px;   
+  }
+
+  #vinjett {
+    width: 150px;
+    left: 14%;
+  }
+  
+  #vinjettbild {
+    width: 170px;
+    pointer-events: none;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  svg {
+    width: 375px;   
+  }
+
+  #vinjett {
+    /* width: 110px; */
+    left: 14%;
+  }
+  
+  #vinjettbild {
+    /* width: 90px; */
+    pointer-events: none;
+  }
+
+  img#vinjettbild {
+    content: url("vinjett_liten.png")
+  }
+
+  /* select image in div id kartpopuptext */
+  #artikelbild {
+    width: 300px !important;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #radiobuttons {
+
+    top: 250px;
+    /* width: 110px; */
+    /* width: 40px; */
+    /* padding: 10px; */
+    z-index: 10;
+    line-height: 5%;
+  }
+
+  #loadercontainer h3 {
+    font-size: medium;
+  }
+
+  
+  input[type=radio] {
+    /* opacity: 0;
+    width: 0px; */
+    padding-left: -20px;
+  }
+  
+  label {
+    display: inline-block;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    font-size:medium;
+    font-weight: 500;
+    line-height: 80%;
+    /* color: white;
+    background-color: #ddebeb;
+    box-shadow:#7e7f7f 3px 3px 0,
+                #7e7f7f 1px 1px 0,
+                #7e7f7f 2px 2px 0; */
+  }
+
+
+  /* Changing animation name to "none" disables animation  */
+  .pulse {
+     animation-name: none;
+  }
+  
+ 
+
+
+}
