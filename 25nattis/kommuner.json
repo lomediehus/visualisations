@@ -719,6 +719,16 @@
     "Helgnatt": true,
     "Storhelg": true
   },
+   {
+    "KKod": 2580,
+    "Org": "Luleå",
+    "Tidigmorgon": true,
+    "Vardagkvall": true,
+    "Vardagnatt": true,
+    "Helgerdagtid": true,
+    "Helgnatt": true,
+    "Storhelg": true
+  },
   {
     "KKod": 1281,
     "Org": "Lund",
@@ -1529,4 +1539,5 @@
     "Helgnatt": true,
     "Storhelg": true
   }
+ 
 ]
