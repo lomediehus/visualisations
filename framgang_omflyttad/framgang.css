@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
 form.kategori {
   display: flex;
   flex-wrap: wrap;
-  margin: -5px;
+  /* margin: -5px; */
   padding: 0px;
 }
 
