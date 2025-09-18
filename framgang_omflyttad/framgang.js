@@ -373,7 +373,7 @@ const body = document.querySelector('body');
     const svg = kartdiv ? kartdiv.querySelector('svg') : null;
     if (kartdiv && svg) {
       const svgRect = svg.getBoundingClientRect();
-      kartdiv.style.height = svgRect.height + 'px';
+      kartdiv.style.height = svgRect.height-5 + 'px';
     }
   }
 
