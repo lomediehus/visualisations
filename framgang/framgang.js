@@ -106,8 +106,6 @@ function clicked(d,i) {
 
 document.addEventListener("DOMContentLoaded", function() {
 
-  //Change to "display: none" to hide the radiobuttons
-  d3.select("#radiobuttons").style("display", "block")
 
     var w = 264;
     var h = 450;
@@ -117,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .center([16.382656313727672,62.34103687152436]) //projection center
         .parallels([55.327583999999995,69.059967]) //parallels for conic projection
         .rotate([343.6173436862723]) //rotation for conic projection
-        .translate([w*1.44, h/2.4]) //translate to center the map in view;
+        .translate([w*1.24, h/2.4]) //translate to center the map in view;
 
     var bana = d3.geoPath().projection(projection);
     var map = d3.json("sverige.geojson");
@@ -349,12 +347,41 @@ document.addEventListener("DOMContentLoaded", function() {
       })
      
       informHeight();
+      // Show and position the radiobuttons only after kartdiv has a non-zero height
+      // Only show the radiobuttons after SVG/layout is ready
+      const radiobuttons = document.getElementById('radiobuttons');
+      if (radiobuttons) {
+        setTimeout(function() {
+          radiobuttons.style.display = 'block';
+          radiobuttons.style.position = 'static'; // Ensure normal flow
+          radiobuttons.style.left = '';
+          radiobuttons.style.right = '';
+          radiobuttons.style.bottom = '';
+          radiobuttons.style.width = '';
+          radiobuttons.style.zIndex = '';
+        }, 500); // Delay in milliseconds
+      }
 });
 
     
 });
 
 const body = document.querySelector('body');
+  // Ensure #kartdiv always matches the SVG's height, even if SVG is absolutely positioned
+  function setKartdivHeightToSVG() {
+    const kartdiv = document.getElementById('kartdiv');
+    const svg = kartdiv ? kartdiv.querySelector('svg') : null;
+    if (kartdiv && svg) {
+      const svgRect = svg.getBoundingClientRect();
+      kartdiv.style.height = svgRect.height-5 + 'px';
+    }
+  }
+
+  // Run after SVG is created and on window resize
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(setKartdivHeightToSVG, 10); // Delay to ensure SVG is rendered
+    window.addEventListener('resize', setKartdivHeightToSVG);
+  });
 
 
 

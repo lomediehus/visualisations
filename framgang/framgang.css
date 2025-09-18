@@ -1,8 +1,12 @@
+/* Ensure kartdiv is a positioned ancestor for absolute children */
+#kartdiv {
+  position: relative;
+}
 
 body {
   background-color: #faf9f7;
   height: 850px;
-  width: 1000px;
+  /* width: 1000px; */
   -ms-overflow-style: none;
   }
 
@@ -13,19 +17,23 @@ body::-webkit-scrollbar {
 
 #content {
   position: relative;
+  height: 600px;
 }
 
 #vinjett {
   position: absolute;
+  top: 20%;
+  left: 10%;
+
   /* float: left; */
-  width: 300px;
+  width: 200px;
   pointer-events: none;
-  left: 19%;
+  left: 10%;
   z-index: 10;
 }
 
 #vinjettbild {
-  width: 300px;
+  width: 200px;
   pointer-events: none;
 }
 
@@ -38,10 +46,13 @@ body::-webkit-scrollbar {
 } */
 
 #radiobuttons {
-  position: absolute;
+
+  position: static;
+  bottom: -200px;
+  /* display: none; */
   /* float: left; */
   /* width: 140px; */
-  top: 250px;
+  /* top: 250px; */
   /* left: 30px; */
   /* border-radius: 10px;
   border: 1px solid black; */
@@ -55,25 +66,29 @@ body::-webkit-scrollbar {
 }
 
 form.kategori {
-  margin: -5px;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -5px; */
   padding: 0px;
 }
 
 input[type=radio] {
-  opacity: 0;
+  /* opacity: 0; */
   width: 0px;
   padding-left: -20px;
 }
 
 label {
   display: inline-block;
+  border-radius: 5px;
   padding: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+  margin-right: 2px;
   margin-bottom: 3px;
   color: white;
-  font-size: large;
-  font-weight: 600;
+  font-size: medium;
+  font-weight: 500;
   line-height: 90%;
   /* background-color: #ddebeb; */
   /* box-shadow:#7e7f7f 3px 3px 0,
@@ -293,7 +308,8 @@ div.tooltip {
   left: 350px; */
   width: 150px;
   z-index: 10;
-  top: 20px;
+  top: 270px;
+  right: -30px;
 }
 
 
@@ -312,13 +328,19 @@ div.tooltip {
 }
 
 .wheel {
-  position: absolute;
+  /* position: absolute; */
   /* top: 50%;
   left: 50%;  */
 }
 
 #hjulimg {
   width: 120px;
+}
+
+#hjultext {
+  width: 110px;
+  text-align: center;
+  padding-left: 5px;
 }
 
 .spin {
@@ -342,12 +364,12 @@ div.tooltip {
     width: 600px;   
   }
   #vinjett {
-    width: 230px;
-    left: 15%;
+    width: 150px;
+    /* left: 10%; */
   }
   
   #vinjettbild {
-    width: 210px;
+    width: 150px;
     pointer-events: none;
   }
 
@@ -359,12 +381,12 @@ div.tooltip {
   }
 
   #vinjett {
-    width: 150px;
-    left: 14%;
+    width: 120px;
+    /* left: 10%; */
   }
   
   #vinjettbild {
-    width: 170px;
+    width: 120px;
     pointer-events: none;
   }
 
@@ -376,16 +398,14 @@ div.tooltip {
   svg {
     width: 375px;   
   }
-
+/* 
   #vinjett {
-    /* width: 110px; */
-    left: 14%;
-  }
+    left: 10%;
+  } */
   
-  #vinjettbild {
-    /* width: 90px; */
+  /* #vinjettbild {
     pointer-events: none;
-  }
+  } */
 
   img#vinjettbild {
     content: url("vinjett_liten.png")
@@ -414,8 +434,8 @@ div.tooltip {
 
   
   input[type=radio] {
-    /* opacity: 0;
-    width: 0px; */
+    opacity: 0;
+    width: 0px;
     padding-left: -20px;
   }
   
