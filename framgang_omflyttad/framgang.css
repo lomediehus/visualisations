@@ -49,6 +49,7 @@ body::-webkit-scrollbar {
 
   position: static;
   bottom: -200px;
+  margin-left: 10px;
   /* display: none; */
   /* float: left; */
   /* width: 140px; */
@@ -75,7 +76,7 @@ form.kategori {
 input[type=radio] {
   /* opacity: 0; */
   width: 0px;
-  padding-left: -20px;
+  /* margin-left: 20px; */
 }
 
 label {
@@ -436,7 +437,7 @@ div.tooltip {
   input[type=radio] {
     opacity: 0;
     width: 0px;
-    padding-left: -20px;
+    /* margin-left: -20px; */
   }
   
   label {
