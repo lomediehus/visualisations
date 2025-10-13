@@ -21,28 +21,28 @@ if (host.includes("github")) {
   // Ny kod för drawer
   const showBtn = document.getElementById("showDrawer");
   const drawer = document.getElementById("drawer");
-  const kartdiv = document.getElementById("kartdiv");
-  // const overlay = document.getElementById("overlay");
+  // const kartdiv = document.getElementById("kartdiv");
+  const overlay = document.getElementById("overlay");
   // const closeBtn = document.getElementById("closeDrawer");
   // const kommunListaEl = document.getElementById("kommunlista");
 
   function openDrawer() {
     drawer.classList.add("open");
-    // overlay.style.display = "block";
+    overlay.style.display = "block";
     c("openDrawer called");
     informHeight();
   }
 
   function closeDrawer() {
     drawer.classList.remove("open");
-    // overlay.style.display = "none";
+    overlay.style.display = "none";
     informHeight();
   }
 
 
   showBtn.addEventListener("click", openDrawer);
-  kartdiv.addEventListener("click", closeDrawer);
-  // overlay.addEventListener("click", closeDrawer);
+  // kartdiv.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
 
 
 var cirkeldata;
