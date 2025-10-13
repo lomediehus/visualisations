@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>Framgångskartan</title>
   <link rel="stylesheet" href="framgang.css" type="text/css">
-  <link rel="stylesheet" href="banner.css" type="text/css">
-
   <link rel="stylesheet" type="text/css" href="../iframe-helper/ka.css">
   <link rel="shortcut icon" type="image/x-icon" href="../ka_assets/favicon.ico">
 
@@ -46,65 +44,39 @@
   <div id="kartpopup"></div>
 
   <div id="overlay"></div>
-  <div>
-    <button class="Button" id="showDrawer"> 
-      Välj ämne här:
-    </button>
-  </div>  
-
 
 
 
   <div id="kartdiv"></div>
 
-  <div id="drawer" class="drawer">
+  <div id="radiobuttons" class="u-textMeta" style="display:none;">
+    <p class="u-textMeta" >Välj ämne här:</p>
+    <form class="kategori">
+      <input type="radio" id="kat7"class="checkbox" name="kategorier" value="minutstyrning">
+      <label for="kat7" class="pink">Minutstyrning</label><br>
 
-    <div id="radiobuttons" class="u-textMeta" >
-    <!-- <div id="radiobuttons" class="u-textMeta" style="display:none;"> -->
+      <input type="radio" id="kat4"class="checkbox" name="kategorier" value="arbetsvillkor">
+      <label for="kat4" class="darkgreen">Arbetsvillkor</label><br>  
 
-      <!-- <div id="drawer" class="u-textMeta" style="display:none;"> -->
+      <input type="radio" id="kat1"class="checkbox" name="kategorier" value="arbetskläder">
+      <label for="kat1" class="blue">Arbetskläder</label><br>
 
-  
-      <!-- <p class="u-textMeta" >Välj ämne här:</p> -->
-      <form class="kategori">
-        <input type="radio" id="kat7"class="checkbox" name="kategorier" value="minutstyrning">
-        <label for="kat7" class="pink">Minutstyrning</label><br>
+      <input type="radio" id="kat10"class="checkbox" name="kategorier" value="utbildning">
+      <label for="kat10" class="orange">Utbildning</label><br>
 
-        <input type="radio" id="kat4"class="checkbox" name="kategorier" value="arbetsvillkor">
-        <label for="kat4" class="darkgreen">Arbetsvillkor</label><br>  
+      <input type="radio" id="kat5"class="checkbox" name="kategorier" value="dygnsvila">
+      <label for="kat5" class="lila">Dygnsvila</label><br>  
+      
+      <input type="radio" id="kat3"class="checkbox" name="kategorier" value="arbetstid">
+      <label for="kat3" class="green">Arbetstid</label><br>
+      
+      <input type="radio" id="kat6"class="checkbox" name="kategorier" value="lön">
+      <label for="kat6" class="turkos">Lön</label><br>  
 
-        <input type="radio" id="kat1"class="checkbox" name="kategorier" value="arbetskläder">
-        <label for="kat1" class="blue">Arbetskläder</label><br>
+      <input type="radio" id="allaKategorier"class="checkbox" name="kategorier" value="alla">
+      <label for="allaKategorier" class="red inactive">Se alla</label><br><br>
 
-        <input type="radio" id="kat10"class="checkbox" name="kategorier" value="utbildning">
-        <label for="kat10" class="orange">Utbildning</label><br>
-
-        <input type="radio" id="kat5"class="checkbox" name="kategorier" value="dygnsvila">
-        <label for="kat5" class="lila">Dygnsvila</label><br>  
-        
-        <input type="radio" id="kat3"class="checkbox" name="kategorier" value="arbetstid">
-        <label for="kat3" class="green">Arbetstid</label><br>
-        
-        <input type="radio" id="kat6"class="checkbox" name="kategorier" value="lön">
-        <label for="kat6" class="turkos">Lön</label><br>  
-
-        <input type="radio" id="allaKategorier"class="checkbox" name="kategorier" value="alla">
-        <label for="allaKategorier" class="red inactive">Se alla</label><br><br>
-
-      </form>
-    </div>
-  </div>
-
-  <div id="banner">
-    <div class="b_rect">
-      <p class="b_text u-textMetaDeca" id="b_text1">Första rubriken</p>
-      <p class="b_text u-textMetaDeca" id="b_text2">Andra rubriken</p>
-      <p class="b_text u-textMetaDeca" id="b_text3">Tredje rubriken</p>
-      <!-- <p class="b_text u-textMetaDeca" id="b_text4">Fjärde rubriken</p> -->
-
-
-
-    </div>
+    </form>
   </div>
 
 </div>
@@ -113,10 +85,11 @@
 
 
 
-  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+
 
   <script src="../iframe-helper/iframe-helper.js"></script>
-  <script type="text/javascript" src="banner.js"></script>
+
+
   <script type="text/javascript" src="framgang.js"></script>
 
 

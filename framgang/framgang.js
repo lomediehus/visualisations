@@ -8,42 +8,6 @@ if (host.includes("github")) {
   c("Jag hittade den! Den var på github!")
 }
 
-// const ValjAmneButton = document.getElementById('valjamne');
-// ValjAmneButton.addEventListener('click', function() {
-//   const radiobuttons = document.getElementById('radiobuttons');
-//   if (radiobuttons.style.display === 'none' || radiobuttons.style.display === '') {
-//     radiobuttons.style.display = 'block';
-//   } else {
-//     radiobuttons.style.display = 'none';
-//   }
-// });
-
-  // Ny kod för drawer
-  const showBtn = document.getElementById("showDrawer");
-  const drawer = document.getElementById("drawer");
-  const kartdiv = document.getElementById("kartdiv");
-  // const overlay = document.getElementById("overlay");
-  // const closeBtn = document.getElementById("closeDrawer");
-  // const kommunListaEl = document.getElementById("kommunlista");
-
-  function openDrawer() {
-    drawer.classList.add("open");
-    // overlay.style.display = "block";
-    c("openDrawer called");
-    informHeight();
-  }
-
-  function closeDrawer() {
-    drawer.classList.remove("open");
-    // overlay.style.display = "none";
-    informHeight();
-  }
-
-
-  showBtn.addEventListener("click", openDrawer);
-  kartdiv.addEventListener("click", closeDrawer);
-  // overlay.addEventListener("click", closeDrawer);
-
 
 var cirkeldata;
 // var loader = document.getElementById("loader");
@@ -127,7 +91,7 @@ function clicked(d,i) {
         `
       }
     })()}
-    <div class="close"><img id="closex" class="closex" src="closex.png"></img></div>
+    <div class="close"><img id="closex" class="closex" src="../arbetet_assets/img/closex_svart.png"></img></div>
     `
   
   kartpopup.innerHTML = markup;
@@ -363,7 +327,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   `
                 }
               })()}
-              <div class="close"><img id="closex" class="closex" src="closex.png"></img></div>
+              <div class="close"><img id="closex" class="closex" src="../arbetet_assets/img/closex_svart.png"></img></div>
               `
             
               kartpopup.innerHTML = markup;
@@ -385,18 +349,18 @@ document.addEventListener("DOMContentLoaded", function() {
       informHeight();
       // Show and position the radiobuttons only after kartdiv has a non-zero height
       // Only show the radiobuttons after SVG/layout is ready
-      // const radiobuttons = document.getElementById('radiobuttons');
-      // if (radiobuttons) {
-      //   setTimeout(function() {
-      //     radiobuttons.style.display = 'block';
-      //     radiobuttons.style.position = 'static'; // Ensure normal flow
-      //     radiobuttons.style.left = '';
-      //     radiobuttons.style.right = '';
-      //     radiobuttons.style.bottom = '';
-      //     radiobuttons.style.width = '';
-      //     radiobuttons.style.zIndex = '';
-      //   }, 500); // Delay in milliseconds
-      // }
+      const radiobuttons = document.getElementById('radiobuttons');
+      if (radiobuttons) {
+        setTimeout(function() {
+          radiobuttons.style.display = 'block';
+          radiobuttons.style.position = 'static'; // Ensure normal flow
+          radiobuttons.style.left = '';
+          radiobuttons.style.right = '';
+          radiobuttons.style.bottom = '';
+          radiobuttons.style.width = '';
+          radiobuttons.style.zIndex = '';
+        }, 500); // Delay in milliseconds
+      }
 });
 
     
@@ -412,18 +376,6 @@ const body = document.querySelector('body');
       kartdiv.style.height = svgRect.height-5 + 'px';
     }
   }
-
-
-
-
-
- 
-
-
-
-
-
-
 
   // Run after SVG is created and on window resize
   document.addEventListener('DOMContentLoaded', function() {
