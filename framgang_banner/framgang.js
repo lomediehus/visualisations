@@ -29,6 +29,7 @@ if (host.includes("github")) {
   function openDrawer() {
     drawer.classList.add("open");
     overlay.style.display = "block";
+    showBtn.innerHTML = "Stäng meny";
     c("openDrawer called");
     informHeight();
   }
@@ -36,11 +37,18 @@ if (host.includes("github")) {
   function closeDrawer() {
     drawer.classList.remove("open");
     overlay.style.display = "none";
+    showBtn.innerHTML = "Välj ämne";
     informHeight();
   }
 
 
-  showBtn.addEventListener("click", openDrawer);
+  showBtn.addEventListener("click", function() {
+    if (drawer.classList.contains("open")) {
+      closeDrawer();
+    } else {
+      openDrawer();
+    }
+  });
   // kartdiv.addEventListener("click", closeDrawer);
   overlay.addEventListener("click", closeDrawer);
 
