@@ -351,8 +351,8 @@ div.tooltip {
 
 #showDrawer {
     position: absolute;
-    top: 75vh;
-    left: 75vw;
+    top: 85vh;
+    left: 60vw;
     z-index: 102;
     
 }
@@ -406,7 +406,7 @@ div.tooltip {
 }
 
 .drawer.open {
-  bottom: 0;
+  bottom: 60px;
 }
 
 .drawer-header {
