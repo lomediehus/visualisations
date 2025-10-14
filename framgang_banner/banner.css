@@ -30,7 +30,7 @@
     width: 100vw;
     max-width: 737px;
     height: 4vh;
-    background-color: #240001;
+    background-color: #2e4874;
     position: relative;
     visibility: visible;
     display: block;
@@ -40,7 +40,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.b_rect_senaste {
 
+    width: 50vw;
+    max-width: 737px;
+    height: 4vh;
+    background-color: #d1edf2;
+    position: absolute;
+    visibility: visible;
+    display: block;
+    /* z-index: 100; */
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
 }
 
 p.b_text {
