@@ -13,7 +13,8 @@
     bottom: 0;
 
     align-self: flex-end;
-    max-width: 600px;
+    width: 100%;
+    /* max-width: 600px; */
 }
 
 /* #banner {
@@ -27,8 +28,8 @@
   } */
 
 .b_rect {
-    width: 100vw;
-    max-width: 737px;
+    width: 100%;
+    /* max-width: 737px; */
     height: 4vh;
     background-color: #2e4874;
     position: relative;
@@ -41,9 +42,10 @@
     justify-content: center;
     align-items: center;
 }
+
 .b_rect_senaste {
 
-    width: 50vw;
+    width: 25vw;
     max-width: 737px;
     height: 4vh;
     background-color: #d1edf2;

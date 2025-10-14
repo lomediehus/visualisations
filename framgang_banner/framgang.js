@@ -23,34 +23,32 @@ if (host.includes("github")) {
   const drawer = document.getElementById("drawer");
   // const kartdiv = document.getElementById("kartdiv");
   const overlay = document.getElementById("overlay");
-  // const closeBtn = document.getElementById("closeDrawer");
+  const closeBtn = document.getElementById("closeDrawer");
   // const kommunListaEl = document.getElementById("kommunlista");
+  const showDrawer = document.getElementById("showDrawer");
 
   function openDrawer() {
     drawer.classList.add("open");
-    overlay.style.display = "block";
-    showBtn.innerHTML = "Stäng meny";
+    showDrawer.classList.add("opacity50");
+
+    // overlay.style.display = "block";
+    // showBtn.innerHTML = "Se alla";
     c("openDrawer called");
     informHeight();
   }
 
   function closeDrawer() {
     drawer.classList.remove("open");
-    overlay.style.display = "none";
-    showBtn.innerHTML = "Välj ämne";
+    showDrawer.classList.remove("opacity50");
+    // overlay.style.display = "none";
+    // showBtn.innerHTML = "Välj ämne";
     informHeight();
   }
 
 
-  showBtn.addEventListener("click", function() {
-    if (drawer.classList.contains("open")) {
-      closeDrawer();
-    } else {
-      openDrawer();
-    }
-  });
+  showBtn.addEventListener("click", openDrawer);
   // kartdiv.addEventListener("click", closeDrawer);
-  overlay.addEventListener("click", closeDrawer);
+  closeBtn.addEventListener("click", closeDrawer);
 
 
 var cirkeldata;
@@ -94,6 +92,8 @@ function close(){
     item.classList.remove("pulse")
     })
 }
+
+
   
 function clicked(d,i) {
   // var clickedCirle = d3.select(this).select("cirlce");
@@ -142,6 +142,7 @@ function clicked(d,i) {
 
   overlay.addEventListener("click", function(){
     close()
+    // closeDrawer()
     })
   closex.addEventListener("click", function() {
       close();
