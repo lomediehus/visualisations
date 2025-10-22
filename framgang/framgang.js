@@ -359,6 +359,7 @@ document.addEventListener("DOMContentLoaded", function() {
           radiobuttons.style.bottom = '';
           radiobuttons.style.width = '';
           radiobuttons.style.zIndex = '';
+          informHeight();
         }, 500); // Delay in milliseconds
       }
 });
