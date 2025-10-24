@@ -1,0 +1,246 @@
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  background-color: #fcfaf5;
+  -ms-overflow-style: none;
+}
+
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#intro {
+  max-width: 680px;
+  padding-bottom: 20px;
+}
+
+#intro p {
+ line-height: 120%;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  /* margin: 0 auto; */
+
+  z-index: 100;
+}
+
+img#close{
+  width: 30px;
+  height: 30px;
+  /* display: block; */
+  position: absolute;
+  right: 10px;
+}
+
+
+table {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+
+table thead td {
+  background-color: #a9aaaa;
+  color: white;
+  font-size: 1.4em;
+  line-height: 28px;
+  padding: 5px 5px 0px 5px;
+  position: sticky;
+  -webkit-position: sticky;
+  text-transform: uppercase;
+  top: 0;
+  vertical-align: text-top;
+}
+
+table th {
+  vertical-align: text-top;
+  padding: 5px 5px 0px 5px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 26px;
+  background-color: #a9aaaa;
+  color: white;
+  overflow: auto;
+  /* position: fixed; */
+  /* top: 0; */
+}
+
+table td {
+  vertical-align: text-top;
+  font-size: 1.3em;
+  padding: 0 0px 0 5px;
+  line-height: 28px;
+  overflow: auto;
+}
+
+table th, table td {
+  width: 50%;
+}
+
+td span {
+  float: right;
+  pointer-events: none;
+}
+/* First Table */
+/* table#table1 th:first-child, table#table1 td:first-child {
+  width: 70%; 
+}
+
+table#table1 th:last-child, table#table1 td:last-child {
+  width: 30%; 
+}
+
+table#table2 th:first-child, table#table2 td:first-child {
+  width: 70%; 
+}
+
+table#table2 th:last-child, table#table2 td:last-child {
+  width: 30%;
+} */
+
+
+tr:nth-child(odd) {
+  background-color: #dcebe5;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+
+#content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+div.basecontainer {
+  align-self: flex-start;
+  flex: 0 0 360px; /* Set a fixed flex-basis of 360px for larger screens */
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+@media screen and (max-width: 800px) {
+
+  #content {
+  flex-wrap: wrap;  }
+
+  div.basecontainer {
+    flex: 0 0 300px; /* Set a flexible width for smaller screens (50% - 20px for margins) */
+  }
+
+} 
+
+
+
+
+
+/* #item1 {
+  align-self: flex-start;
+}
+
+#item2 {
+  align-self: flex-start;
+} */
+
+/* #header {
+  width: 640px;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+#valjkommun {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px;
+}
+
+.basecontainer {
+  width: 300px;
+  margin-right: 20px;
+  background-color: #dcebe5;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.fixed-height {
+  height: 300px;
+}
+
+.basecontainer h2 {
+  font-weight: 900;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.semitransparent {
+  opacity: 0.3;
+}
+
+div.basestil {
+  text-align: center;
+}
+
+.storfet {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+hr.rounded {
+  border: 0;
+  border-top: 6px dotted #da4042;
+}
+
+div.forklaring {
+  width: 600px;
+}
+
+div.buttonparent {
+  width: 600px;
+  text-align: center;
+  margin: 30px;
+}
+
+@media screen and (max-width: 679px) {
+
+  #header {
+    width: 300px;
+  }
+
+  div.forklaring {
+    width: 300px;
+  }
+} */
