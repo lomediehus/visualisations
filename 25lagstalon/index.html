@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
+  <title>Kommuner dashboard</title>
+  <link rel="stylesheet" type="text/css" href="lagstalon.css">
+  <link rel="stylesheet" type="text/css" href="../iframe-helper/ka.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- <div id="content" class="u-textMeta"> -->
+
+      <div id="intro"><p class="u-textMetaDeca">I tabellerna nedan kan du se vad lägstalönerna är i din kommun, och lägstalönen för just ditt yrke i landets kommuner. De 70 kommuner som svarat att de har lokala lägstalöner finns med. (Rättvik har svarat ja, men inte angett några löner.)</p></div>
+      <div id="popup" class="u-colorBgComplementary-2 u-paddedGutter">
+        <img id="close" src="closex.png">
+
+        <ul class="u-textMeta">
+          <li><span class="u-textStrong">Heby:</span> måltidspersonal med utbildning 22&nbsp;500 kr/mån.</li>
+          <li><span class="u-textStrong">Arjeplog:</span> Fastighetsskötare med utbildning 24&nbsp;361 kr/mån.</li>
+          <li><span class="u-textStrong">Berg:</span> Undersköterska anställd i pool 26&nbsp;000 kr/mån.</li>
+          <li><span class="u-textStrong">Kävlinge:</span> Lägstalön på 22&nbsp;700 för dem som påbörjat yrkesförberedande utbildning.</li>
+          <li><span class="u-textStrong">Mjölby:</span> Svarar att de har ca 1&nbsp;000 kr/mån över det centrala avtalet.</li>
+          <li><span class="u-textStrong">Växjö:</span> Måltidspersonal med utbildning 23&nbsp;300 kr/mån.</li>
+          <li><span class="u-textStrong">Åmål:</span> Alla lägstalöner gäller från 20 år.</li>
+          <li><span class="u-textStrong">Värmdö:</span> Har svarat att man har egna lägstalöner men inte angett några belopp.</li>
+        </ul>
+      </div>
+
+      <div id="content" class="u-textMeta">
+
+
+
+
+
+      <div class="basecontainer">
+        <h2>Så ser det ut i <span class="u-colorFgPrimary">din kommun</span></h2>
+        <p class="u-textMeta">Välj kommun i menyn för att se om kommunen har lägstalöner för en eller fler av tolv olika yrkesgrupper.</p>
+    
+        <select id="valjkommun" class="u-textMeta">
+          <option value="valjkommun">Välj kommun</option>
+        </select>
+        <table id="kommuntabell" class="u-textMeta">
+          <thead>
+            <tr>
+              <td id="yrke">Yrke<span class='sortpilKommun invisible'>&#8691;</span></td>
+              <td id="yrkeLon">Kr/mån<span class='sortpilKommun invisible'>&#8691;</span></td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+    
+      </div>
+
+
+      <div class="basecontainer">
+        <h2>Så ser det ut i <span class="u-colorFgPrimary">ditt yrke</span></h2>
+        <p class="u-textMeta">Välj yrke i menyn nedan för att se vad lägstalönen är för yrket i olika kommuner. Om det inte står någon lön har kommunen inte uppgett någon lägstalön för yrket, men kan ha siffror för andra yrken.</p>
+
+        <select id="valjyrke" class="u-textMeta">
+          <option value="Väljyrke">Välj yrke</option>
+          <option value="Barnskötare med utbildning">Barnskötare med utbildning</option>
+          <option value="Barnskötare utan utbildning">Barnskötare utan utbildning</option>
+          <option value="Fastighetsskötare med utbildning">Fastighetsskötare med utbildning</option>
+          <option value="Fastighetsskötare utan utbildning">Fastighetsskötare utan utbildning</option>
+          <option value="Kock">Kock</option>
+          <option value="Måltidspersonal">Måltidspersonal</option>
+          <option value="Skötare">Skötare</option>
+          <option value="Städare/Lokalvårdare med utbildning">Städare/Lokalvårdare med utbildning</option>
+          <option value="Städare/Lokalvårdare utan utbildning">Städare/Lokalvårdare utan utbildning</option>
+          <option value="Stödassistent med utbildning">Stödassistent med utbildning</option>
+          <option value="Stödassistent utan utbildning">Stödassistent utan utbildning</option>
+          <option value="Undersköterska på boende eller hemtjänst">Undersköterska på boende eller hemtjänst</option>
+          <option value="Vårdbiträde med utbildning">Vårdbiträde med utbildning</option>
+          <option value="Vårdbiträde utan utbildning">Vårdbiträde utan utbildning</option>
+        </select>
+        <table id="avtalstabell" class="u-textMeta">
+          <thead>
+            <tr>
+              <td id="kommun">Kommun<span class='sortpilYrke invisible'>&#8691;</span></td>
+              <td id="kommunLon">Kr/mån<span class='sortpilYrke invisible'>&#8691;</span></td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  
+ 
+
+
+    
+
+
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
+    <script src="lagstalon.js"></script>
+    <script src="../iframe-helper/iframe-helper.js"></script>
+
+
+  </body>
