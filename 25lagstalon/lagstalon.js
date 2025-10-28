@@ -122,22 +122,19 @@ function maketableYrke(){
     if (vilkenKnapp === "kommunLon") {
         avtalstabellBody.innerHTML = '';
         sortedArray.forEach(item => {
-
-            a_rad = avtalstabellBody.insertRow();
-            a_cell1 = a_rad.insertCell(0);
-            a_cell2 = a_rad.insertCell(1);
-            a_cell1.innerHTML = item.kommun;
-            a_cell2.innerHTML = $.number(item.lon, 0, ',', '&#8239;');
-
-            if (valjyrke.value === "Väljyrke") {
-                a_cell2.innerHTML = '';
-            } else if (item.lon === '') {
-                a_cell2.innerHTML = '';
-            }           
-            else {
-                a_cell2.innerHTML = $.number(item.lon, 0, ',', '&#8239;');
-                    
-            }   
+            // Only create row if there's a salary value to display
+            if (valjyrke.value === "Väljyrke" || (item.lon !== '' && item.lon != null)) {
+                a_rad = avtalstabellBody.insertRow();
+                a_cell1 = a_rad.insertCell(0);
+                a_cell2 = a_rad.insertCell(1);
+                a_cell1.innerHTML = item.kommun;
+                
+                if (valjyrke.value === "Väljyrke") {
+                    a_cell2.innerHTML = '';
+                } else {
+                    a_cell2.innerHTML = $.number(item.lon, 0, ',', '&#8239;');
+                }
+            }
         })
 
    
@@ -145,18 +142,17 @@ function maketableYrke(){
         let counter = 0;
 
         lagstloner.forEach(item => {
-
-            a_rad = avtalstabellBody.insertRow();
-            a_cell1 = a_rad.insertCell(0);
-            a_cell2 = a_rad.insertCell(1);
-            a_cell1.innerHTML = item.Kommun;
-            if (valjyrke.value === "Väljyrke") {
-                a_cell2.innerHTML = '';
-            } else {
-                if (item[valjyrke.value] != '') {
-    
+            // Only create row if there's content to display
+            if (valjyrke.value === "Väljyrke" || item[valjyrke.value] != '') {
+                a_rad = avtalstabellBody.insertRow();
+                a_cell1 = a_rad.insertCell(0);
+                a_cell2 = a_rad.insertCell(1);
+                a_cell1.innerHTML = item.Kommun;
+                if (valjyrke.value === "Väljyrke") {
+                    a_cell2.innerHTML = '';
+                } else {
                     a_cell2.innerHTML = $.number(item[valjyrke.value], 0, ',', '&#8239;');
-                }            
+                }
             }   
         })
     }
@@ -171,11 +167,10 @@ function maketableYrke(){
         sortObject(firstObject)
 
         for (const key in sortedItem){
-     
-            k_rad = kommuntabellBody.insertRow();
-            k_cell1 = k_rad.insertCell(0);
-            k_cell2 = k_rad.insertCell(1);
             if (key != "Kommun") {
+                k_rad = kommuntabellBody.insertRow();
+                k_cell1 = k_rad.insertCell(0);
+                k_cell2 = k_rad.insertCell(1);
                 k_cell1.innerHTML = key;
                 k_cell2.innerHTML = '';
             }    
@@ -224,19 +219,18 @@ function maketableYrke(){
             const sortedArray = dataArray.map(([key, value]) => ({ key, value }));
 
             sortedArray.forEach((item, i) => {
+                // Only create row if there's a value to display
+                if (item.value != '') {
+                    k_rad = kommuntabellBody.insertRow();
+                    k_cell1 = k_rad.insertCell(0);
+                    k_cell2 = k_rad.insertCell(1);
 
-               k_rad = kommuntabellBody.insertRow();
-               k_cell1 = k_rad.insertCell(0);
-               k_cell2 = k_rad.insertCell(1);
-
-                   k_cell1.innerHTML = item.key;
-                   c(item.value)
-                   
-                    if (item.value != '') {
-                        k_cell2.innerHTML = $.number(item.value, 0, ',', '&#8239;');
-                     }  
-                 
-                 });
+                    k_cell1.innerHTML = item.key;
+                    c(item.value)
+                    
+                    k_cell2.innerHTML = $.number(item.value, 0, ',', '&#8239;');
+                }
+            });
 
                 }
             })    
@@ -304,15 +298,13 @@ fetch(jsonFileUrl)
         sortObject(firstObject)
 
         for (const key in sortedItem){
-          
-            k_rad = kommuntabellBody.insertRow();
-            k_cell1 = k_rad.insertCell(0);
-            k_cell2 = k_rad.insertCell(1);
             if (key != "Kommun") {
+                k_rad = kommuntabellBody.insertRow();
+                k_cell1 = k_rad.insertCell(0);
+                k_cell2 = k_rad.insertCell(1);
                 k_cell1.innerHTML = key;
                 k_cell2.innerHTML = '';
             }
-          
         }
         informHeight();
 
