@@ -142,7 +142,7 @@ tr:nth-child(odd) {
 
 div.basecontainer {
   align-self: flex-start;
-  flex: 0 0 325px; /* Set a fixed flex-basis of 360px for larger screens */
+  flex: 0 0 280px; /* Set a fixed flex-basis of 360px for larger screens */
   margin-right: 20px;
   background-color: white;
   padding: 10px;
@@ -153,7 +153,7 @@ div.basecontainer {
   text-overflow: ellipsis; */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 640px) {
 
   #content {
   flex-wrap: wrap;  }
@@ -164,89 +164,3 @@ div.basecontainer {
 
 } 
 
-
-
-
-
-/* #item1 {
-  align-self: flex-start;
-}
-
-#item2 {
-  align-self: flex-start;
-} */
-
-/* #header {
-  width: 640px;
-}
-
-.flexcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-}
-
-#valjkommun {
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 5px;
-}
-
-.basecontainer {
-  width: 300px;
-  margin-right: 20px;
-  background-color: #dcebe5;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
-.fixed-height {
-  height: 300px;
-}
-
-.basecontainer h2 {
-  font-weight: 900;
-  padding-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.semitransparent {
-  opacity: 0.3;
-}
-
-div.basestil {
-  text-align: center;
-}
-
-.storfet {
-  font-size: 2em;
-  font-weight: 600;
-}
-
-hr.rounded {
-  border: 0;
-  border-top: 6px dotted #da4042;
-}
-
-div.forklaring {
-  width: 600px;
-}
-
-div.buttonparent {
-  width: 600px;
-  text-align: center;
-  margin: 30px;
-}
-
-@media screen and (max-width: 679px) {
-
-  #header {
-    width: 300px;
-  }
-
-  div.forklaring {
-    width: 300px;
-  }
-} */
