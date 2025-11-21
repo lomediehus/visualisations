@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: #fcfaf5;
+  background-color: #faf9f7;
   /* max-width: 948px; */
   width: 100%;
   /* hides scrollbars */
@@ -130,7 +130,11 @@ h3 .fetRubrik {
   margin-left: 16.67%;
   max-width: 948px;
   width: 100%;
-  min-height: 800px;
+  /* min-height: 800px; */
+}
+
+.full-height {
+  height: 60vh; /* 90% of the viewport height */
 }
 
 /* .center {
@@ -196,6 +200,9 @@ input.pengar {
   width: 150px;
   font-size: 16px;
   margin-left: 20px;
+  padding: 10px;
+  border: 2px solid #da4042;
+  border-radius: 10px;
 }
 
 input.yrkeInput {
@@ -211,7 +218,6 @@ input.yrkeInput {
   max-width: 948px;
   background-color: #dcebe5;
   padding: 3px;
-  float: left;
 }
 
 
@@ -288,6 +294,7 @@ input {
   padding: 8px;
   background-color: white;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -316,4 +323,39 @@ h4.underline {
   #bottom {
     margin: 0;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 auto;
+  }
+  #fixit {
+    margin: 0 auto;
+    left: 0px;
+    height: 70px;
+  }
+
+  #mainContent {
+    margin: 0;
+    /* min-height: 600px; */
+  }
+
+  #bottom {
+    margin: 0;
+  }
+  .full-height {
+    height: 70vh; /* 80% of the viewport height */
+  }
+
+
+
+  @media only screen and (max-width: 380px){
+
+    #helgbild {
+      top: 0px;
+      z-index: 10;
+    }
+
+  }
+
 }
