@@ -153,9 +153,9 @@ function doStuff() {
   //Variable for current date
   var date = new Date();
   //variables for set dates
-  var juldatum = new Date("November 07 2024")
-  var nyarsdatum = new Date("December 27 2024");
-  var trettonhelgsdatum = new Date("January 2 2025");
+  var juldatum = new Date("November 26 2025")
+  var nyarsdatum = new Date("December 27 2025");
+  var trettonhelgsdatum = new Date("January 2 2026");
   var paskdatum = new Date("February 21 2025");
   var pingstdatum = new Date("April 22 2023");
 
@@ -170,21 +170,22 @@ function doStuff() {
 
 
     //if current date is also after nyar
-    if (date.getTime() > midsommardatum.getTime()) {
-      document.getElementById("helgbild").src = 'midsommar.svg';
-      goActive(helgknapp6);
-      helgnr = "6";
+    if (date.getTime() > nyarsdatum.getTime()) {
+      document.getElementById("helgbild").src = 'trettonhelg.svg';
+      goActive(helgknapp3);
+      helgnr = "3";
     }
     else {
       document.getElementById("helgbild").src = 'nyar.svg';
       goActive(helgknapp2);
       helgnr = "2";
     }
-  // }
-  // else {
-  //   document.getElementById("helgbild").src = 'jul.svg';
-  //   goActive(helgknapp1);
-  //   helgnr = "1";
+  }
+  else {
+    document.getElementById("helgbild").src = 'jul.svg';
+    c("hej")
+    goActive(helgknapp1);
+    helgnr = "1";
   }
 
 
@@ -592,6 +593,8 @@ function doStuff() {
     var counter = document.getElementsByClassName('counter');
     divisorAttr.push(sparvarre.fall1divisor, sparvarre.fall2divisor, sparvarre.fall3divisor, sparvarre.fall4divisor);
     tak = sparvarre.tak;
+    c("tak är " + tak)
+    c(sparvarre)
 
     //if input is a number and also not null (which would be handled as zero)
     if (!isNaN(input) && input != null && input !='' && input != undefined) {
@@ -848,19 +851,9 @@ function doStuff() {
 
 
   const body = document.querySelector('body');
-
-  //if todays date is higher than 9 march change background color   
-  (function() {
-    var today = new Date();
-    var date = new Date("2025-03-23");
-    if (today > date) {
-      body.style.backgroundColor = 'rgb(249,249,247)';
-    }
-    else {
-      body.style.backgroundColor = '#fcfaf5'
-    }
-  })();
-  
-  
-  
 }
+
+  
+  
+  
+

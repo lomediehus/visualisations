@@ -1,7 +1,7 @@
 [{
 		"avtalnr": 10,
 		"helg1": {
-			"fall1": "Max 118,86 kr/tim från klockan 07.00 på julafton till klockan 00.00 vardagen närmast efter helgen, alltså fredagen 27 december. (Månadslönen på heltid dividerat med 200, med ett tak på 23&#8239;771 kr/månad.)",
+			"fall1": "Max 122,90 kr/tim från klockan 07.00 på julafton till klockan 00.00 första vardagen efter helgen, alltså måndagen den 29 december. (Månadslönen på heltid dividerat med 200, med ett tak på 24&#8239;579 kr/månad.)",
 			"fall2": "",
 			"fall3": "",
 			"fall4": "",
@@ -9,10 +9,10 @@
 			"fall2divisor": "",
 			"fall3divisor": "",
 			"fall4divisor": "",
-			"tak": 23771
+			"tak": 24579
 			},
 		"helg2": {
-			"fall1": "Max 118,86 kr/tim från klockan 07.00 på nyårsafton till klockan 00.00 vardagen närmast efter helgen, alltså torsdagen den 2 januari. (Månadslönen på heltid dividerat med 200, med ett tak på 23&#8239;771 kr/månad.)",
+			"fall1": "Max 122,90 kr/tim från klockan 07.00 på nyårsafton till klockan 00.00 vardagen närmast efter helgen, alltså fredagen den 2 januari.(Månadslönen på heltid dividerat med 200, med ett tak på 24&#8239;579 kr/månad.) ",
 			"fall2": "",
 			"fall3": "",
 			"fall4": "",
@@ -20,10 +20,10 @@
 			"fall2divisor": "",
 			"fall3divisor": "",
 			"fall4divisor": "",
-			"tak": 23771
+			"tak": 24579
 			},
 		"helg3": {
-			"fall1": "118,86 kr/tim från klockan 06.00 på trettondagen till klockan 00.00 tisdagen den 7 januari. (Månadslönen på heltid dividerat med 200, med ett tak på 23&#8239;771 kr/månad.)",
+			"fall1": "Max 122,90 kr/tim från klockan 06.00 på trettondagen till klockan 00.00 vardagen närmast efter helgen, alltså onsdagen den 7 januari. (Månadslönen på heltid dividerat med 200, med ett tak på 24&#8239;579 kr/månad.) ",
 			"fall2": "",
 			"fall3": "",
 			"fall4": "",
@@ -31,7 +31,7 @@
 			"fall2divisor": "",
 			"fall3divisor": "",
 			"fall4divisor": "",
-			"tak": 23771
+			"tak": 24579
 			},
 		"helg4": {
 			"fall1": "Max 118,86 kr/tim från klockan 18.00 på skärtorsdagen till klockan 24.00 annandag påsk. OBS! Lokal eller individuell överenskommelse kan träffas. (Månadslönen på heltid dividerat med 200, med ett tak på 23&#8239;771 kr/månad.)",
