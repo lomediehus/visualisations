@@ -135,17 +135,26 @@ document.addEventListener("DOMContentLoaded", function() {
             .attr("class","shadow")
    
         //Nesting the circle-drawing to ensure they are drawn after the map is drawn.
-        var datafile = d3.json("framgang.json");
+        var datafile = d3.dsv(";", "framgang.csv");
+
         // var datafile = d3.json("framgang.json?t=" + new Date().getTime());
         Promise.all([datafile]).then(function(values) {
             cirkeldata = values[0];
-            
+
+          
+             cirkeldata.forEach(function(d) {
+                d.long = +d.long;
+                d.lat = +d.lat;
+                d.datum = new Date(d.datum);
+                d.kategori = d.kategori.trim();
+            });
+
             //the datafile items that match the date criteria in function checkDates
             const result = cirkeldata.filter(checkDatesCategories);
 
             //Checks if the the date is lower the the date in 'const date'. Change the value of the constant manually to choose which items are shown in the visualization.
             function checkDatesCategories(item){
-             item.datum = new Date(Date.parse(item.datum))  
+            //  item.datum = new Date(Date.parse(item.datum))  
 
               // Set the date from which you want the items shown. 
               // Set the date like this: 
@@ -198,6 +207,13 @@ document.addEventListener("DOMContentLoaded", function() {
             .attr("r", radius)
             .attr("class", function(d){
 
+              // Debug: log the kategori value
+            if (d.ort === "Kristinehamn") {
+              c("Kristinehamn kategori:", d.kategori);
+              c("Kristinehamn kategori length:", d.kategori.length);
+              c("Kristinehamn kategori charCodes:", Array.from(d.kategori).map(c => c.charCodeAt(0)));
+            }
+
               switch (d.kategori) {
                 case "arbetskläder":
                   return "cirkel blue";
@@ -221,6 +237,8 @@ document.addEventListener("DOMContentLoaded", function() {
                   return "cirkel darkgreen";
                 case "lön":
                   return "cirkel turkos";
+                default:
+                  return "cirkel";
               }
 
             })
