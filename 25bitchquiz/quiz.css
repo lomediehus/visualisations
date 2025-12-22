@@ -141,6 +141,7 @@ label:hover {
 }
 
 #result {
+  text-align: center;
   border-radius: 10px;
   padding: 20px;
   background-color: #ddebeb;
