@@ -1,0 +1,32 @@
+[
+  {
+    "rubrik":"Resurspassen blev fler",
+    "citat":"”De har inte pratat med oss som gör jobbet”",
+    "lat":57.0481,
+    "long":16.4412,
+    "url":"https:\/\/ka.se\/2022\/01\/18\/pa-nya-gellinergarden-gor-personalen-sitt-eget-schema\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2022\/01\/dragare4.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=2000&h=1125",
+    "datum":1642464000000,
+    "ort":"Mönsterås"
+  },
+  {
+    "rubrik":"Bara tid till det mest basala",
+    "citat":"”Det blir jättekonstigt”",
+    "lat":56.1985,
+    "long":12.5564,
+    "url":"https:\/\/ka.se\/2022\/01\/31\/har-testa-personal-i-sjukvarden-30-timmars-arbetsvecka\/",
+    "bildurl":"https:\/\/images.lomediehus.se\/app\/uploads\/sites\/5\/2022\/01\/30211802\/karlstad-psyk.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum":1643587200000,
+    "ort":"Höganäs"
+  },
+  {
+    "rubrik":"Drog ner på personalen",
+    "citat":"”Aktiviteter har vi inte längre tid med”",
+    "lat":58.885,
+    "long":14.906,
+    "url":"https:\/\/ka.se\/2022\/02\/04\/nattarbetare-i-oskarshamn-vann-kampen-om-tiotimmarspass\/",
+    "bildurl":"https:\/\/images.lomediehus.se\/app\/uploads\/sites\/5\/2022\/02\/04114538\/firaoskarsahamn.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=300",
+    "datum":1643932800000,
+    "ort":"Askersund"
+  }
+]

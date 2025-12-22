@@ -1,83 +1,94 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Storhelg</title>
-    <link rel="stylesheet" href="storhelg.css" type="text/css">
-    <link rel="stylesheet" href="https://ka.se/app/themes/lo-mediehus/assets/stylesheets/codepen/kommunalarbetaren.css" type="text/css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Framgångskartan</title>
+  <link rel="stylesheet" href="framgang.css" type="text/css">
+  <link rel="stylesheet" href="../arbetet_assets/stylesheets/arbetet.css" type="text/css">
+
+  <!-- <link rel="stylesheet" type="text/css" href="../iframe-helper/ka.css"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="../ka_assets/favicon.ico">
+
+<script src="d3.v5.min.js"></script>
+<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
 
 
 </head>
 
-
 <body>
 
-  <div id="fixit">
+  <div id="content">
 
-    <div class="helg-wrapper">
-      <div class="modefield helgknappar u-colorBgSecondary-2" id="jul"><span class="u-textMetaDeca modebutton hscrollbutton" id="helg1">JUL22</span></div>
-      <div class="modefield helgknappar u-colorBgSecondary-2" id="nyar"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg2">NYÅR22-23</span></div>
-      <div class="modefield helgknappar u-colorBgSecondary-2" id="trettonhelg"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg3">TRETTONHELG23</span></div>
-      <div class="modefield helgknappar u-colorBgSecondary-2" id="pask"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg4">PÅSK23</span></div>
-      <div class="modefield helgknappar u-colorBgSecondary-2" id="pingst" style="display:none"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg5">PINGST22</span></style></div>
-      <div class="modefield helgknappar u-colorBgSecondary-2" id="midsommar"><span class="u-textMetaDeca modebutton hscrollbutton passive" id="helg6">MIDSOMMAR22</span></div>
-    </div>
+  <div id="loadercontainer">
+    
+    <!-- <audio id="hjulljud" src="hjulljud.mp3" preload="auto">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <div id="hjul" class="wheel"><img id="hjulimg" src="lyckohjul.png"></div>
+    <div id="hjultext">    <h3>Snurra hjulet!</h3>
+    <p class="u-textMeta">Klicka för att slumpa fram en framgång!</p></div> -->
 
-
-
-
-    <div class="bluer" id="header">
-      <div class="modefield" id="modefieldLeft"><span class="u-textMetaDeca u-textStrong modebutton" id="modebuttonLeft">Sök avtal efter yrke</span></div>
-
-      <div class="modefield" id="modefieldRight"><span class="u-textMetaDeca u-textStrong modebutton passive" id="modebuttonRight">Alla avtal</span></div>
-    </div>
   </div>
 
+  <!-- <div id="vinjett">
+    <img id="vinjettbild" src="vinjett.png">
+  </div> -->
 
-  <img id="helgbild"></img>
-
-  <div id="mainContent" class="paddingTop10">
-
-    <!-- <div class="center"></div> -->
-
-
-    <div id=sokYrkeWrapper>
-
-      <p>Skriv ditt yrke i rutan för att hitta ditt avtal:</p>
-
-      <form autocomplete="off">
-
-        <div class="autocomplete" style="width:300px;">
-
-          <input id="sokYrkeKnapp" type="text" name="mittYrke" placeholder="Yrke" class="u-textMeta yrkeInput">
-        </div>
-        <button type="button" id="searchButton" class="u-textMeta u-textStrong Button lessPadding">Sök</button>
-      </form>
+  
 
 
-      <div id="resultdiv"></div>
+  <div id="kartpopup"></div>
 
-      <!-- Här presenteras resultaten -->
-      <div id="messagediv">
-      </div>
-    </div>
-
-    <div id="allaAvtalWrapper">Alla avtal</div>
-  </div>
-
-  <div id="bottom" class="u-textMeta">Kommunal har cirka 70 avtal. Om ditt avtal inte är med här, eller om du inte vet vilket avtal du tillhör, kan du kontakta ditt lokala fack eller <a href="https://www.kommunal.se/kommunal-direkt" target="blank">Kommunal direkt</a>.</div>
-
-
-  <script src="jquery-3.1.1.min.js"></script>
-
-  <script src="https://ka.se/app/themes/lo-mediehus/assets/javascripts/extra/codepen-helper.js"></script>
-
-  <script src="storhelg.js"></script>
+  <div id="overlay"></div>
 
 
 
+  <div id="kartdiv"></div>
+
+  <!-- <div id="radiobuttons" class="u-textMeta" style="display:none;">
+    <p class="u-textMeta" >Välj ämne här:</p>
+    <form class="kategori">
+      <input type="radio" id="kat7"class="checkbox" name="kategorier" value="minutstyrning">
+      <label for="kat7" class="pink">Minutstyrning</label><br>
+
+      <input type="radio" id="kat4"class="checkbox" name="kategorier" value="arbetsvillkor">
+      <label for="kat4" class="darkgreen">Arbetsvillkor</label><br>  
+
+      <input type="radio" id="kat1"class="checkbox" name="kategorier" value="arbetskläder">
+      <label for="kat1" class="blue">Arbetskläder</label><br>
+
+      <input type="radio" id="kat10"class="checkbox" name="kategorier" value="utbildning">
+      <label for="kat10" class="orange">Utbildning</label><br>
+
+      <input type="radio" id="kat5"class="checkbox" name="kategorier" value="dygnsvila">
+      <label for="kat5" class="lila">Dygnsvila</label><br>  
+      
+      <input type="radio" id="kat3"class="checkbox" name="kategorier" value="arbetstid">
+      <label for="kat3" class="green">Arbetstid</label><br>
+      
+      <input type="radio" id="kat6"class="checkbox" name="kategorier" value="lön">
+      <label for="kat6" class="turkos">Lön</label><br>  
+
+      <input type="radio" id="allaKategorier"class="checkbox" name="kategorier" value="alla">
+      <label for="allaKategorier" class="red inactive">Se alla</label><br><br>
+
+    </form>
+  </div> -->
+
+</div>
+
+
+
+
+
+
+
+  <script src="../iframe-helper/iframe-helper.js"></script>
+
+
+  <script type="text/javascript" src="framgang.js"></script>
 
 
 </body>
+
