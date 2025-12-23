@@ -5,6 +5,8 @@ const overlay = document.getElementById('overlay');
 var value;
 var buttons;
 var points = 0;
+const omquizet = document.getElementById('omquizet');
+const fotnot = document.getElementById('fotnot');
 // const rättsymbol = "&check;";
 // const felsymbol = "&cross;";
 
@@ -214,9 +216,20 @@ $.ajax({
         }
         });
         
+omquizet.addEventListener("click", function() {
+  fotnot.style.display = fotnot.style.display === "block" ? "none" : "block";
+});
 
+//inform parent iframe about height changes
+function informHeight() {
+  if (window.parentIFrame) {
+    window.parentIFrame.sendHeight();
+  }
+}
 
-const body = document.querySelector('body');
+informHeight();
+
+// const body = document.querySelector('body');
 
 //if todays date is higher than 9 march change background color   
 // (function() {
