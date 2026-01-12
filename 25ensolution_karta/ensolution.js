@@ -144,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         Promise.all([datafile]).then(function(values) {
             cirkeldata = values[0];
-            c(cirkeldata)
 
           
              cirkeldata.forEach(function(d) {
