@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 
 #content {
   position: relative;
-  height: 600px;
+  /* height: 600px; */
 }
 
 #vinjett {
