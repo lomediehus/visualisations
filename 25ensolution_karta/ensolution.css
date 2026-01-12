@@ -459,6 +459,12 @@ div.tooltip {
     fill: red;
   }
 
+@media only screen and (max-width: 400px) {
+
+  svg {
+    width: 300px;   
+  }
+
 
   /* Changing animation name to "none" disables animation  */
   .pulse {
