@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     var w = 264;
-    var h = 450;
+    var h = 230;
     var svg = d3.select('div#kartdiv').append('svg').attr("preserveAspectRatio", "xMinYMin meet").attr("id","svgel").attr("viewBox", "0 0 " + w + " " + h).classed("svg-content", true);
     var projection = d3.geoConicEqualArea()
         .scale(3000)
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         .parallels([55.327583999999995,69.059967]) //parallels for conic projection
         .rotate([343.6173436862723]) //rotation for conic projection
-        .translate([w*1.15, h/2.2]) //translate to center the map in view;
+        .translate([w*1.15, h/1.8]) //translate to center the map in view;
 
     var bana = d3.geoPath().projection(projection);
     var map = d3.json("sverige.geojson");
