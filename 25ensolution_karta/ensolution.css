@@ -464,7 +464,21 @@ div.tooltip {
   svg {
     width: 300px;   
   }
+}
 
+@media only screen and (max-width: 320px) {
+
+  svg {
+    width: 280px;   
+  }
+}
+
+@media only screen and (max-width: 280px) {
+
+  svg {
+    width: 240px;   
+  }
+}
 
   /* Changing animation name to "none" disables animation  */
   .pulse {
