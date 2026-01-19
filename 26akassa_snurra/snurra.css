@@ -1,0 +1,139 @@
+* {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+  }
+  
+  /* For hiding scrollbar in Firefox without impacting scrolling function */
+  html {
+	scrollbar-width: none;
+  }
+  
+  body {
+	padding: 0px;
+	background-color: #fcfaf5;
+	/* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+	-ms-overflow-style: none;
+  }
+  
+  /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+  body::-webkit-scrollbar {
+	display: none;
+  }
+  
+#content {
+	/* width: 300px; */
+}
+
+  select, form,label, input {
+	display: inline;
+  }
+
+  input[type="range"] {
+	display: block;
+	cursor: pointer;
+  }
+
+  .boxwidth {
+	width: 80%;
+  }
+
+  input[type="checkbox"] {
+	transform: scale(2);
+    margin: 10px;
+	cursor: pointer;
+  }
+
+  #daysSlider {
+	height: 25px;
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+  }
+
+  #daysSlider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 30px;
+	height: 30px;
+	background: #4CAF50;
+	cursor: pointer;
+	border-radius: 50%;
+  }
+
+  #daysSlider::-moz-range-thumb {
+	width: 30px;
+	height: 30px;
+	background: #4CAF50;
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+  }
+
+  #daysSlider::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 30px;
+	background: #ddd;
+	border-radius: 5px;
+  }
+
+  #daysSlider::-moz-range-track {
+	width: 100%;
+	height: 30px;
+	background: #ddd;
+	border-radius: 5px;
+  }
+
+
+  .rubrik {padding-top: 20px;}
+
+  /* #inputYear {
+	width: 4em;
+  } */
+
+  .flexcontainer {
+	display: flex;
+	justify-content: space-between;
+	align-content: stretch;
+	flex: 0 1 auto;
+	/* border-radius: 4%; */
+	padding: 7px;
+  }
+
+  /* .flexcontainerInner {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+  } */
+
+  .center {
+	display: flex;
+	justify-content: center;
+  }
+
+  .stunning {
+	background-color: #fdf06f;
+	padding: 10px;
+	width: 80%;
+	margin: 20px 0px 20px 0px;
+  }
+
+  .stunningText {
+	font-size: 2em;
+  }
+
+  /* button#calculate {
+	color: red;
+	margin: 20px;
+	padding: 3px;
+  } */
+
+  @media only screen and (max-width: 570px) {
+	.flexcontainer {
+		flex-direction: column;
+	}
+	.flexcontainerInner {
+		width: 100%;
+	}
+}

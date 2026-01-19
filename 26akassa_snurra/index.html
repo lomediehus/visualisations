@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Räknesnurra a-kassa</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="snurra.css"> 
+  <link rel="stylesheet" type="text/css" href="../arbetet_assets/stylesheets/arbetet.css">
+
+</head>
+  <body>
+
+    <div id="content" class="u-textMetaDeca">
+      
+
+      <p>Skriv din månadslön för att se hur mycket pengar du kan få i a-kassa och inkomstförsäkring.</p>
+
+      <!-- <div class="flexcontainer"> -->
+
+        <!-- <div class="flexcontainerInner"> -->
+
+          <div class="" id="inputbox">
+            <h3 class="rubrik">Skriv din månadslön</h3>
+    
+            <label for="inputLon">kronor</label><br>
+            <form>
+            <input type="text" name="inputLon" value="170000" id="inputLon" class="boxwidth">
+    
+            </form>
+          </div>
+          <div class="" id="selectbox">
+            <h3 class="rubrik">Välj ditt fackförbund</h3>
+          
+            <label for="fack">Välj ditt fackförbund</label><br>
+
+            <select name="fack" id="fack" class="boxwidth">
+              <!-- Options will be populated from data.json -->
+            </select>
+         </div>
+         <div id="kryssruta">
+          <h3 class="rubrik">Sätt kryss om du har en tilläggsförsäkring</h3>
+          <input type="checkbox" id="tillagg" name="tillagg">
+          <label for="tillagg"> Med tillägg högre inkomstförsäkring</label><br>
+        <!-- </div> -->
+        
+
+         
+
+          <div class="flexitem" id="sliderbox">
+            <h3 class="rubrik">Dra i reglaget för antal dagar arbetslös</h3>
+            <label for="daysSlider"><span id="daysValue">1</span> dagar</label><br>
+            <input type="range" id="daysSlider" min="1" max="300" value="1" class="boxwidth">
+          </div>
+
+        </div>
+
+        <!-- <div class="flexcontainerInner"> -->
+
+           <div class="flexitem stunning" id="resultbox">
+            <h3 class="rubrik">Så stor ersättning får du</h3>
+            <p class="stunningText"id="akassa"></p>
+      
+    
+          </div>
+
+          <div id="testresultat">Här kommer resultat för tester. </div>
+
+          <div class="" id="resultbox2" style="visibility: hidden;">
+            <h3 class="rubrik">Info om beräkning</h3>
+            <p id="calculationInfo" class="u-textMeta"></p>
+            <p class="">Någon info om räknesnurran.</p>
+
+          </div>
+          </div>
+      <!-- </div> -->
+
+      
+     
+    </div>
+    <script src="snurra.js"></script>
+  
+    <script src="../iframe-helper/iframe-helper.js"></script>
+
+
+
+  </body>
+</html>
