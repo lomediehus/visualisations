@@ -1,0 +1,32 @@
+[
+  {
+    "ort":"Kalix",
+    "lat":65.86892123690878,
+    "long":23.13333333333333,
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2022\/01\/dragare4.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=2000&h=1125"
+    },
+  { "ort":"Gällivare",
+    "lat":67.13333333333333,
+    "long":20.68333333333333,
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2022\/01\/dragare3.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=2000&h=1125"
+    },
+  {
+    "ort":"Kiruna",
+    "lat":67.855560,
+    "long":20.225000,
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2022\/01\/dragare2.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=2000&h=1125"
+    },
+    {
+    "ort": "Piteå",
+    "lat":65.317222,
+    "long":21.481111,
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10}"
+    },
+    {
+    "ort": "Sunderbyn",
+    "lat":65.584722,
+    "long":22.156389,
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2022\/01\/dragare1.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=2000&h=1125"
+    }
+  
+]
