@@ -302,6 +302,7 @@ function setKartdivHeightToSVG() {
     const svgRect = svg.getBoundingClientRect();
     kartdiv.style.height = svgRect.height-5 + 'px';
   }
+  informHeight();
 }
 
 // Run after SVG is created and on window resize
