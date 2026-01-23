@@ -109,9 +109,9 @@ function calculateBenefit() {
 
   
 
-  if (days >= 200) {
+  if (days > 200) {
     percentage = aKassa_300; // 65%
-  } else if (days >= 100) {
+  } else if (days > 100) {
     percentage = aKassa_200; // 70 %
   } else {
     percentage = aKassa_100; // 80%
@@ -154,8 +154,15 @@ function calculateBenefit() {
   // }
   
   // Calculate benefit with ceiling
+  c(percentage, ceiling);
   const calculatedBenefit = salary * percentage;
-  const finalBenefit = ceiling && calculatedBenefit > ceiling ? ceiling * percentage: calculatedBenefit;
+  // const finalBenefit = ceiling && calculatedBenefit > ceiling ? ceiling * percentage: calculatedBenefit;
+
+  // const finalBenefit = calculatedBenefit > ceiling ? ceiling : calculatedBenefit;
+
+  // const finalBenefit = ceiling && calculatedBenefit > ceiling ? ceiling : calculatedBenefit;
+
+  const finalBenefit = salary > ceiling ? ceiling * percentage : calculatedBenefit;
   
   akassa.innerHTML = formatSwedishNumber(finalBenefit) + " kr/månad";
   if (calculationInfo) {
@@ -168,7 +175,7 @@ function calculateBenefit() {
 
   let kryssad = tillagg ? "Tillägg är ikryssat.<br>" : "";
   
-  testresultat.innerHTML = `Förutsättningar för beräkningen:<br>Valt fackförbund är ${selectedUnion.Fack}.<br>Uppgiven lön är ${formatSwedishNumber(salary)} kr.<br>${kryssad}Vid ${days} dagars arbetslöshet är taket ${formatSwedishNumber(ceiling)} kr.<br>Ersättningen blir ${Math.round(percentage * 100)}% av lönen upp till taket.<br>Ersättningen blir alltså → ${formatSwedishNumber(finalBenefit)} kr`;
+  testresultat.innerHTML = `Förutsättningar för beräkningen:<br>Valt fackförbund är ${selectedUnion.Fack}.<br>Uppgiven lön är ${formatSwedishNumber(salary)} kr.<br>${kryssad}Vid ${days} dagars arbetslöshet är taket ${formatSwedishNumber(ceiling)} kr.<br>Ersättningen blir ${Math.round(percentage * 100)}% av lönen upp till taket.<br>Ersättningen blir alltså → ${formatSwedishNumber(finalBenefit)} kr/månad.`;
 }
 
 inputLon.addEventListener("keyup", calculateBenefit);
