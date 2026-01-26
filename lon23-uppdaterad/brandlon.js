@@ -22,7 +22,7 @@
 
     //Reading a file
     $.ajax({
-            url: "brandlon25.json",
+            url: "brandlon26.json",
             dataType: "json",
             mimeType: "application/json",
             success: function (data) {
@@ -42,9 +42,8 @@
       tabell.innerHTML = '';
       data.forEach(function(row) {
         let lonform;
-        //format number and assign result to variable "lonform", if there is a number to format. Otherwise lonform will be assigned the value "*"
-        // row.Lon === 0 ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&#8239;");
-        lonform = (row.Lon === 0 || row.Lon === '') ? lonform = '*' : lonform = $.number(row.Lon, 0, ',', "&#8239;");
+        //format number and assign result to variable "lonform", if there is a number to format. Otherwise lonform will be assigned the value "*". catches all falsy values (null, undefined, empty string, false, 0) plus the string "0" through type coercion.
+        lonform = (!row.Lon || row.Lon == 0) ? '*' : $.number(row.Lon, 0, ',', "&#8239;");
 
         //make a string out of array Kommunlista
         // c(row.Kommunlista)
@@ -104,8 +103,8 @@
 
         lonefil.sort(function(a, b){
           //dealing with the blanks and sort them to the end
-          if (a["Lon"] === '') return 1;
-          if (b["Lon"] === '') return -1;
+          if (!a["Lon"] || a["Lon"] === 0 || a["Lon"] === null || a["Lon"] === '') return 1;
+          if (!b["Lon"] || b["Lon"] === 0 || b["Lon"] === null || b["Lon"] === '') return -1;
           //sorting with ternary operator
           return a["Lon"] > b["Lon"] ? -1 : 1;
           })
@@ -117,8 +116,8 @@
       else if (!fallandeNum) {
         lonefil.sort(function(a, b){
           //dealing with the blanks and sort them to the end
-          if (a["Lon"] === '') return 1;
-          if (b["Lon"] === '') return -1;
+          if (!a["Lon"] || a["Lon"] === 0 || a["Lon"] === null || a["Lon"] === '') return 1;
+          if (!b["Lon"] || b["Lon"] === 0 || b["Lon"] === null || b["Lon"] === '') return -1;
           //sorting with ternary operator
           return a["Lon"] < b["Lon"] ? -1 : 1;
           })
@@ -286,7 +285,7 @@
             .attr("d", bana)
             //make the paths grey if they don't have a number for lön
             .style('fill', function(d){
-              if (d.properties.Lön === 0) {
+              if (d.properties.Lön === 0 || d.properties.Lön === null ) {
                 return "#9a9a9a"
               }
               //otherwise make them bluegreen
@@ -349,10 +348,11 @@
             .style('fill', function(d) {
               //check all the paths to see if they have the same value for Räddningstjänst as the clicked path. If they do, color them yellow
               if (d.properties.Räddningstjänst === grupp){
-                return '#fdf06f';
+                // return '#fdf06f';
+                return '#FFFAA0'; 
                 }
               //otherwise just give them the same colors they had from start
-              else if (d.properties.Lön === 0) {
+              else if (d.properties.Lön === 0 || d.properties.Lön === null ) {
                 return "#9a9a9a"
               }
               else return '#048676';

@@ -1,0 +1,894 @@
+
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Founders Grotesk Text, sans-serif;
+  /* Färgtest */
+}
+
+/* For hiding scrollbar in Firefox without impacting scrolling function */
+html {
+  scrollbar-width: none;
+  z-index: 2;
+}
+
+body {
+  padding: 0px;
+  background-color: #faf9f7;
+  /* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+  -ms-overflow-style: none;
+  z-index: 2;
+  /* färgtest */
+}
+
+/* .color-white {
+  color: white;
+} */
+
+/* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* #maincontent {
+  overflow-y: scroll;rt
+  padding-bottom: 30px;
+  max-height: 600px;
+} */
+
+div#header {
+  padding-bottom: 10px;
+}
+
+div#header h1 {
+  display: block;
+}
+
+
+h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 0 5px 0 5px;
+}
+
+h4 {
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  font-size: 1.4em;
+}
+
+select#valjyrke {
+  width: 640px;
+  margin-top: 20px;
+  /* pointer-events: auto; */
+  font-size: 1em;
+  z-index: 4;
+  position: relative;
+  letter-spacing: 0px;
+}
+
+div#yrken {
+  margin-top: 5px;
+}
+
+#buttondiv {
+  display: flex;
+  justify-content: center;
+}
+
+#presentation {
+  position: absolute;
+  background-color: white;
+  stroke: black;
+  stroke-width: 3px;
+  z-index: 10;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 3px solid #048676;
+  display: none;
+  /* top: 100px; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+h1.presrubrik {
+  font-weight: 700;
+}
+
+p.prestext {
+  /* font-size: 1.2em; */
+  line-height: 1.2em;
+}
+
+
+
+path {
+  stroke-width: 0.6px;
+  stroke: white;
+  /* fill: steelblue; */
+  /* fill: #048676; */
+  fill: #64988b;
+  cursor: pointer;
+}
+
+/* path:hover, path.highlighted {
+  fill: #a9aaaa;
+} */
+
+div.tooltip {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  display: none;
+  padding: 4px 8px;
+  position: absolute;
+}
+
+button:active {
+  background-color: black;
+}
+
+table.tabellstil {
+  width: auto;
+  text-align: left;
+  
+}
+
+table.tabellstil td:nth-child(2) {
+  text-align: end;
+  vertical-align: top !important; /* Force alignment to the top */
+}
+
+label {
+  margin-left: 5px;
+  margin-right: 5px;
+  /* font-size: 1.4em; */
+}
+
+input:checked + label {
+  font-weight: 700;
+}
+
+option:checked {
+  font-weight: 700;
+}
+
+.aboveOverlay {
+  position: relative;
+  z-index: 3;
+}
+
+p.bottom {
+  position: relative;
+  bottom: 0px;
+}
+
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default*/
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: not-allowed;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.blacknollfyra {
+  background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+
+#blinkcontainer h1 {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  font-size: 24px;
+  margin-top: -4px;line-height: 80%;
+}
+
+#blinkcontainer {
+  position: absolute; /* Sit on top of the page content */
+  display: block; /* Hidden by default
+  width: 100%; /* Full width (cover the whole page) */
+  height: 1000px; /* Full height (cover the whole page) */
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+
+}
+
+.sign {
+  position: fixed;
+  position: absolute;
+  top: -35px;
+  width: 100px;
+  height: 100px;
+  /* background-color: #fdf06f; */
+  background-color: #FFFAA0;
+  position: relative;
+  left: 200px;
+  border-radius: 50%;
+  z-index: 5;
+  padding: 10px;
+}
+
+.blink {
+        animation: blink-animation 1.2s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1.2s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+/* HTML: <div class="arrow"></div> */
+.arrow {
+  --t: 45%; /* control the tail part */
+  --h: 40%; /* control the head part */
+  
+  aspect-ratio: 2/3;
+  height: 30px;
+  background: #033649;
+  clip-path: polygon(calc(50% - var(--t)/2) 100%,calc(50% - var(--t)/2) var(--h),0 var(--h),50% 0,100% var(--h),calc(50% + var(--t)/2) var(--h),calc(50% + var(--t)/2) 100%);
+
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0 auto; /* Ensure centering within a parent container */
+}
+
+
+#logga img {
+  position: absolute;
+  width: 250px;
+  pointer-events: none;
+}
+
+#kartdiv {
+  pointer-events: auto;
+}
+/* 
+#jamforyrkediv {
+  min-height: 600px;
+  max-height: 770px;
+  margin-right: 0px;
+} */
+
+
+#valjlandsting {
+  display: none;
+  font-size: large;
+}
+
+#valjkommun {
+  display: none;
+  font-size: large;
+}
+
+.valjLandstingKommun {
+  margin-bottom: 10px;
+}
+
+#mintabell {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+#mintabelldiv {
+  /* max-height: 225px; */
+  overflow: auto;
+  position: relative;
+}
+
+
+input {
+  display: inline-block;
+}
+
+table.tabellstil thead {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+table.tabellstil thead td {
+  background-color: #a9aaaa;
+  color: white;
+  font-size: 1em;
+  line-height: 24px;
+  padding: 5px 0px 0px 5px;
+  position: sticky;
+  -webkit-position: sticky;
+  text-transform: uppercase;
+  top: 0;
+  vertical-align: text-top;
+  overflow: hidden;
+}
+
+table.tabellstil th {
+  vertical-align: text-top;
+  padding: 5px 0px 0px 5px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 24px;
+  background-color: #a9aaaa;
+  color: white;
+  /* overflow: auto; */
+  overflow: hidden;
+
+}
+
+table.tabellstil td {
+  vertical-align: text-top;
+  font-size: 1em;
+  padding: 0px 5px 0px 5px;
+  line-height: 28px;
+  overflow: auto;
+}
+
+table.karttabell {
+  width: 100%;
+  text-align: left;
+  line-height: 25px;
+}
+
+table.karttabell td {
+  font-size: 1.3em;
+}
+
+
+
+.karttabell td {
+  white-space: normal;
+  font-size:0.8em;
+  padding: 0 5px 0 5px;
+  line-height: 25px;
+  color: black;
+}
+
+tr:nth-child(odd) {
+  /* background-color: #dcebe5; */
+  /* färgtest */
+  background-color: #ffffff;
+
+}
+
+tr:nth-child(even) {
+  /* background-color: #dcebe5; */
+  /* färgtest */
+  /* background-color: #FFFFC5; */
+  /* background-color: #FBEC5D; */
+  background-color: #FFFAA0;
+
+}
+
+table span.sortpil {
+  font-size: xx-large;
+}
+
+.bubbla:hover {
+  background-color: grey;
+}
+
+.bubblatext {
+    line-height: 22px;
+    font-weight: normal;
+    width: 130px;
+    background-color: #ffef58;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    text-align: left;
+    position: absolute;
+    display: none;
+    left: 30px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.semitransparent {
+  opacity: 0.3;
+}
+
+#lansdiv {
+  position: relative;
+}
+
+#lansdiv p, #brandkartdiv p {
+  margin-bottom: 0px;
+}
+
+
+#kartpopup {
+  display: none;
+  width: 50%;
+  min-width: 250px;
+  max-width: 450px;
+  border-radius: 10px;
+  padding: 5px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  left: 20%;
+  top: 80px;
+  z-index: 10;
+}
+
+#kartpopuprubbe {
+  width: 90%;
+}
+
+#kartpopuprubbe h3 {
+  line-height: 1.5em;
+}
+
+#kartpopup p {
+  padding: 0px 10px 0px 10px;
+}
+
+img.closex:hover {
+  background-color: #ddebeb;
+}
+
+img.closex {
+  width: 30px;
+}
+
+div.close {
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#highlowdiv {
+  width: 100px;
+  /* height: 160px; */
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px gray;
+  padding: 5px;
+  /* background-color: #fdf06f; */
+  background-color: #FFFAA0;
+  position: absolute;
+  top: 370px;
+  right: 5px;
+  word-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+
+.bold {
+  font-weight: 700;
+  /* font-family: Founders Grotesk Text, sans-serif; */
+}
+
+.red {
+  color: #da4042;
+}
+
+.big {
+  font-size: 26px;
+}
+
+
+
+.knapprad {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-left: 1px;
+  padding-top: 10px;
+  left: 3px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+p.knapptext {
+  padding: 0px 3px 0px 3px;
+  margin: 0px;
+}
+
+#sortknapp button {
+  border-radius: 5px 5px;
+  /* border: 2px solid #ddebeb; */
+}
+
+.knappask {
+  display: inline-block;
+  background-color: #f5f7f7;
+  border-radius: 5px 5px;
+  padding: 0px 0px 0px 3px;
+  border: 1px solid #b8d5d5;
+}
+
+
+button.utan {
+  background-color:#f5f7f7;
+  border: none;
+  color: #43464B;
+  padding: 0px 3px 0px 3px;
+  
+}
+
+button.utan:hover {
+  background-color: #ddebeb;
+}
+
+
+div.sortknapp {
+  font-size: 1.5em;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f5f7f7;
+  color: black;
+  padding: 0 5px 0 5px;
+  border: 0;
+  margin: 5px 5px 0px 5px;
+  text-align: left;
+}
+
+/* .sortknapp:hover {
+  background-color: #ddebeb;
+} */
+
+
+.mindre {
+  font-size: 80%;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  /* align-items: flex-start; */
+  justify-content: flex-start;
+}
+
+
+.basecontainer {
+  max-width: 310px;
+  min-width: 298px;
+  margin-right: 20px;
+  /* background-color: white; */
+  background-color: #ffffff;
+  padding: 10px 4px 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: black;
+  border: #807f7d 1px solid;
+} 
+
+  /*selector for p inside basecontainer   */
+.basecontainer p {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+
+.brandbox {
+  display: none;
+}
+
+.jamforbox, .krbox {
+  display: block;
+}
+
+
+.fixed-height {
+  min-height: 760px;
+  max-height: 830px;
+  /* flex: 0 0 auto;  */
+  overflow: auto;
+  align-items: stretch;
+  flex:1;
+}
+
+
+h1 {
+  font-family: 'Financier', serif;
+}
+
+/* .basecontainer h2 {
+  font-family: 'Financier', serif;
+}
+
+div.basecontainer.brandbox h2 {
+  font-family: 'Financier', serif;
+} */
+
+/* .presrubrik {
+  font-family: 'Financier', serif;
+} */
+
+
+
+#lonlista {
+}
+
+.pstor {
+  font-size: 1.5em;
+}
+
+table {
+    width: 360px;
+    border-spacing: 0;
+}
+
+#searchfield {
+font-size: 20px;
+}
+
+#rikssnittp {
+  height: 45px;
+  margin-left: 10px;
+}
+
+.yrkesbutton {
+  width: 20px;
+  height: 20px;
+}
+
+.text-top {
+  vertical-align: text-top;
+}
+
+/* SVG stuff for the bar chart */
+.chart rect {
+  fill: #fdf06f;
+  /* filter: drop-shadow(3px 0px 2px gray);
+  -webkit-filter: drop-shadow(3px 0px 2px gray); */
+}
+
+.chart text {
+  fill: black;
+  text-anchor: end;
+
+}
+
+
+/* @media only screen and (max-width: 758px) {
+  select#valjyrke {
+    width: 360px;
+  }
+} */
+
+
+/* för brandmannalönerna */
+
+#brandlogga img {
+  position: absolute;
+  top: 150px;
+  width: 140px;
+  pointer-events: none;
+}
+
+/* #brandlondiv {
+  display: none;
+} */
+
+
+
+table.brandtabellstil {
+  table-layout: fixed;
+  width: auto;
+  text-align: left;
+}
+
+#brandtabell {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  vertical-align: text-top;
+}
+
+#brandtabell td {
+  vertical-align: text-top;
+  /* font-size: 1.3em;
+  padding: 0 0px 0 5px;
+  line-height: 28px;
+  overflow: auto; */
+}
+
+#brandtabell td:nth-child(2) {
+  text-align: end;
+  /* vertical-align: top !important; Force alignment to the top */
+}
+
+#brandtabelldiv {
+  overflow: auto;
+  position: relative;
+  padding: 0px 3px 0px 3px;
+}
+
+/* table.brandtabellstil thead {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+table.brandtabellstil thead td {
+  background-color: #a9aaaa;
+  color: white;
+  font-size: 1.4em;
+  line-height: 32px;
+  position: sticky;
+  -webkit-position: sticky;
+  text-transform: uppercase;
+  top: 0;
+  vertical-align: text-top;
+}
+
+table.brandtabellstil thead td:hover {
+  background-color: #878888;
+}
+
+table.brandtabellstil th {
+  vertical-align: text-top;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  line-height: 26px;
+  background-color: #a9aaaa;
+  color: white;
+  overflow: auto;
+}
+
+table.brandtabellstil td {
+  vertical-align: text-top;
+  font-size: 1.3em;
+  padding: 0 0px 0 5px;
+  line-height: 28px;
+  overflow: auto;
+  vertical-align: top !important;
+} */
+
+
+
+.fixed-width {
+  /* width: 100px; */
+  max-width: 150px;
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Break long words if necessary */
+  padding-right: 5px;
+}
+
+#brandkartdiv {
+  /* height: 670px; */
+  position: relative;
+  overflow: visible;
+}
+
+/* Ensure parent containers allow overflow */
+#brandkartdiv, #brandkartdiv * {
+  overflow: visible !important;
+}
+
+#brandkartpopup {
+  display: none;
+  width: 50%;
+  width: 300px;
+  border-radius: 10px;
+  padding: 5px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  z-index: 10;
+}
+
+#brandkartpopup p {
+  padding: 0px 10px 0px 10px;
+}
+
+#popuptext h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 0 20px 0 5px;
+  font-weight: 700;
+}
+
+#tabellpopup {
+  display: none;
+  width: 50%;
+  min-width: 250px;
+  max-width: 450px;
+  float: right;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid gray;
+  position: absolute;
+  left: 20%;
+  top: 80px;
+  z-index: 10;
+  padding-top: 10px;
+}
+
+#tabellpopuptext {
+  padding: 10px;
+}
+
+span.pil {
+  color: grey;
+  text-shadow: grey;
+  font-size: 1em;
+}
+
+p.tabellkommuner {
+  font-style: italic;
+  font-size: 1em;
+}
+
+p.invisible {
+  display: none;
+}
+
+text.legend {
+  font-size: 0.6em;
+}
+
+p .nomargin {
+  margin: 0;
+}
+
+
+
+
+@media only screen and (max-width: 1130px) {
+  /* don't use "space between" on smaller screens since it doesn't look good when the third box jumps down and leaves only two boxes visible on top */
+    #content, #brandcontent {
+      justify-content: flex-start; 
+    }
+    /* #brandcontent {
+      justify-content: flex-start; 
+    } */
+  }
+
+  @media only screen and (max-width: 660px) {
+    button.utan {
+      background-color:#f5f7f7;
+      border: none;
+      color: #43464B;
+      padding: 0px 6px 0px 6px;
+      font-size: larger;      
+    }
+
+    select#valjyrke {
+      width: 310px;
+    }
+
+  }
+
+
+  @font-face {
+    font-family: Founders Grotesk Text;
+    src: url(../arbetet_assets/fonts/founders-grotesk-text/FoundersGroteskTextWeb-Regular.woff2)
+      format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+  }
