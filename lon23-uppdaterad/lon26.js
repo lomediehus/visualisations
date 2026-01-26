@@ -35,34 +35,34 @@ const presentation = document.getElementById("presentation");
 window.riksYrken = [
   {
     "yrke": "Ambulanssjukvårdare",
-    "lön": 33378
+    "lön": 34387
   },
   {
     "yrke": "Anläggningsarbetare",
-    "lön": 32813
+    "lön": 34179
   },
   {
     "yrke": "Barnskötare",
-    "lön": 28503
+    "lön": 29472
   },
   {
     "yrke": "Barnsköterska",
     "yrkeplural": "Barnsköterskor",
-    "lön": 31303
+    "lön": 32260
   },
   {
     "yrke": "Biträde",
     "yrkeplural": "Biträden",
-    "lön": 26679
+    "lön": 27434
   },
   {
     "yrke": "Boendestödjare",
-    "lön": 29780
+    "lön": 30894
   },
   {
     "yrke": "Brandman",
     "yrkeplural": "Brandmän",
-    "lön": 31838,
+    "lön": 32582,
     "bhögstlön": 41752,
     "blägstlön": 27820,
     "bhögstplace": "Perstorps Räddningstjänst",
@@ -72,11 +72,11 @@ window.riksYrken = [
   {
     "yrke": "Elevassistent",
     "yrkeplural": "Elevassistenter",
-    "lön": 28867
+    "lön": 29768
   },
   {
     "yrke": "Fastighetsskötare",
-    "lön": 31223
+    "lön": 32308
   },
   {
     "yrke": "Fordonsförare",
@@ -85,15 +85,15 @@ window.riksYrken = [
   {
     "yrke": "Fotvårdsspecialist",
     "yrkeplural": "Fotvårdsspecialister",
-    "lön": 32973
+    "lön": 33856
   },
   {
     "yrke": "Fritidsledare",
-    "lön": 31229
+    "lön": 32105
   },
   {
     "yrke": "Förrådsarbetare",
-    "lön": 29143
+    "lön": 30061
   },
   {
     "yrke": "Kock/Kokerska",
@@ -103,7 +103,7 @@ window.riksYrken = [
   {
     "yrke": "Lärarassistent",
     "yrkeplural": "Lärarassistenter",
-    "lön": 31196
+    "lön": 32202
   },
   {
     "yrke": "Måltidspersonal",
@@ -111,16 +111,16 @@ window.riksYrken = [
   },
   {
     "yrke": "Park- och trädgårdsarbetare",
-    "lön": 30570
+    "lön": 31668
   },
   {
     "yrke": "Personlig assistent",
     "yrkeplural": "Personliga assistenter",
-    "lön": 28461
+    "lön": 29456
   },
   {
     "yrke": "Renhållningsarbetare",
-    "lön": 30662
+    "lön": 31534
   },
   {
     "yrke": "Skötare",
@@ -133,12 +133,12 @@ window.riksYrken = [
   {
     "yrke": "Stödassistent",
     "yrkeplural": "Stödassistenter",
-    "lön": 29888
+    "lön": 30869
   },
   {
     "yrke": "Stödpedagog",
     "yrkeplural": "Stödpedagoger",
-    "lön": 33933
+    "lön": 34959
   },
   {
     "yrke": "Undersköterska",
@@ -157,12 +157,12 @@ window.riksYrken = [
   {
     "yrke": "Vårdbiträde Funktionshinder",
     "yrkeplural": "Vårdbiträden Funktionshinder",
-    "lön": 26799
+    "lön": 27635
   }
 ]
 
-var kommunloner = "kommunloner25.json";
-var regionloner = "regionloner25.json";
+var kommunloner = "kommunloner26.json";
+var regionloner = "regionloner26.json";
 var sokvagGeografi = "SverigesLan2019.geojson";
 var kdata = null;
 var rdata = null;
