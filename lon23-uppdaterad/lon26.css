@@ -217,7 +217,7 @@ p.bottom {
   width: 100px;
   height: 100px;
   /* background-color: #fdf06f; */
-  background-color: #FFFAA0;
+  /* background-color: #FFFAA0; */
   position: relative;
   left: 200px;
   border-radius: 50%;
@@ -225,18 +225,26 @@ p.bottom {
   padding: 10px;
 }
 
-.blink {
-        animation: blink-animation 1.2s steps(5, start) infinite;
-        -webkit-animation: blink-animation 1.2s steps(5, start) infinite;
+      .blink {
+        /* Gentle vertical bob instead of blinking */
+        animation: bob-animation 2s ease-in-out infinite;
+        -webkit-animation: bob-animation 2s ease-in-out infinite;
+        will-change: transform;
       }
-      @keyframes blink-animation {
-        to {
-          visibility: hidden;
+      @keyframes bob-animation {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
         }
       }
-      @-webkit-keyframes blink-animation {
-        to {
-          visibility: hidden;
+      @-webkit-keyframes bob-animation {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
         }
       }
 /* HTML: <div class="arrow"></div> */

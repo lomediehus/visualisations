@@ -76,7 +76,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Fastighetsskötare",
-    "lön": 32308
+    "lön": 32318
   },
   {
     "yrke": "Fordonsförare",
@@ -152,7 +152,7 @@ window.riksYrken = [
   {
     "yrke": "Vårdbiträde",
     "yrkeplural": "Vårdbiträden",
-    "lön": 26764
+    "lön": 26694
   },
   {
     "yrke": "Vårdbiträde Funktionshinder",
