@@ -11,7 +11,7 @@
 </head>
   <body>
 
-    <div id="content" class="u-textMetaDeca">
+    <div id="content" class="BodyImage-caption">
       
 
       <p>Skriv din månadslön för att se hur mycket pengar du kan få i a-kassa och inkomstförsäkring.</p>
@@ -49,8 +49,11 @@
 
           <div class="flexitem" id="sliderbox">
             <h3 class="rubrik">Dra i reglaget för antal dagar arbetslös</h3>
-            <label for="daysSlider"><span id="daysValue">1</span> dagar</label><br>
-            <input type="range" id="daysSlider" min="1" max="300" value="1" class="boxwidth">
+            <div class="slider">
+              <label for="daysSlider"><span id="daysValue">1</span> dagar</label><br>
+              <input type="range" id="daysSlider" min="1" max="300" value="1" class="boxwidth">
+              <div class="ticks" id="ticks" aria-hidden="true"></div>
+            </div>
           </div>
 
         </div>

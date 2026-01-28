@@ -28,6 +28,8 @@ let i1 = 0;
 // let result2;
 let testresultat = document.getElementById("testresultat");
 
+
+
 // Put the text "nonsense" in the a-kassa input field
 if (akassa) akassa.value = "nonsense";
 
@@ -57,11 +59,14 @@ fetch('data.json')
       if (index === 0) {
         selectedUnion = item;
         i1 = Number(item.Tak);
+        fors1 = Number(item.Dagar) || 0;
+        fors2 = Number(item.Dagar) + Number(item.DagarFler) || 0;
       }
     });
     
     // Calculate initial values
     calculateBenefit();
+    renderTicks();
   })
   .catch(error => {
     console.error('Error loading data:', error);
@@ -184,6 +189,9 @@ select.addEventListener("change", function(){
   const index = Number(this.value);
   selectedUnion = fackData[index];
   c("Selected union:", selectedUnion);
+  fors1 = Number(selectedUnion.Dagar) || 0;
+  fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) || 0;
+  renderTicks();
   calculateBenefit();
 });
 
@@ -197,20 +205,100 @@ if (tillaggCheckbox) {
   });
 }
 
+// Function to update label position based on slider value
+function updateLabelPosition() {
+  const value = daysSlider.value;
+  const min = daysSlider.min || 0;
+  const max = daysSlider.max || 100;
+  
+  // Calculate percentage position
+  const percentage = ((value - min) / (max - min)) * 100;
+  
+  // Update label position
+  const label = document.querySelector('label[for="daysSlider"]');
+  if (label) {
+    label.style.left = `calc(${percentage}% + ${(8 - percentage * 0.15)}px)`;
+    label.style.transform = 'translateX(-50%)';
+  }
+}
+
 daysSlider.addEventListener("input", function(){
   daysValue.textContent = this.value;
+  updateLabelPosition();
   calculateBenefit();
 });
 
 // Also listen for "change" to ensure final slider value (e.g. max) is handled
 daysSlider.addEventListener("change", function(){
   daysValue.textContent = this.value;
+  updateLabelPosition();
   calculateBenefit();
 });
 
 const body = document.querySelector('body');
 
 
+// Här är allt för slidern och ticksen
+
+const range = document.getElementById("daysSlider");
+const ticksEl = document.getElementById("ticks");
+
+let fors1;
+let fors2;
+
+// Bygg ticks
+function renderTicks() {
+  ticksEl.innerHTML = "";
+
+  const min = Number(range.min);
+  const max = Number(range.max);
+  
+  // Bara vissa markers (måste ligga inom min..max)
+  const markerValues = [0, 100, fors1, 200, fors2, 300].filter(v => v !== undefined && v !== null && !isNaN(v));
+
+  for (const v of markerValues) {
+    if (v < min || v > max) continue;
+
+    const pct = ((v - min) / (max - min)) * 100;
+
+    const tick = document.createElement("div");
+    tick.className = "tick";
+    tick.style.left = `${pct}%`;
+    tick.dataset.value = String(v);
+
+    const label = document.createElement("div");
+    label.className = "tick__label";
+    label.textContent = v;
+
+    tick.appendChild(label);
+    ticksEl.appendChild(tick);
+  }
+}
+
+// Snap till steg (om marker inte är exakt på ett steg)
+function snapToStep(v) {
+  const min = Number(range.min);
+  const step = Number(range.step) || 1;
+  const n = Math.round((v - min) / step);
+  return min + n * step;
+}
+// Initialize label position
+updateLabelPosition();
+ticksEl.addEventListener("click", (e) => {
+  const tick = e.target.closest(".tick");
+  if (!tick) return;
+
+  const v = Number(tick.dataset.value);
+  range.value = String(snapToStep(v));
+
+  // trigga som om användaren dragit
+  range.dispatchEvent(new Event("input", { bubbles: true }));
+});
+
+range.addEventListener("input", () => {
+  // här gör du vad du vill med värdet
+  // console.log(Number(range.value));
+});
 
 informHeight();
 

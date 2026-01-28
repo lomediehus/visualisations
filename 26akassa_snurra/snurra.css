@@ -11,8 +11,9 @@
   }
   
   body {
+	background-color: #7a1f10;
+	color: #f9f8f2;
 	padding: 0px;
-	background-color: #fcfaf5;
 	/* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
 	-ms-overflow-style: none;
   }
@@ -23,7 +24,15 @@
   }
   
 #content {
-	/* width: 300px; */
+	max-width: 80%;
+	margin: 0 auto;
+	
+	
+}
+
+#content.BodyImage-caption {
+	font-size: 1em;	
+	color: white;
 }
 
   select, form,label, input {
@@ -33,6 +42,7 @@
   input[type="range"] {
 	display: block;
 	cursor: pointer;
+	margin-top: 30px;
   }
 
   .boxwidth {
@@ -45,35 +55,44 @@
 	cursor: pointer;
   }
 
+  .slider {
+	position: relative;
+	width: 80%;
+  }
+
   #daysSlider {
-	height: 25px;
+	height: 20px;
 	-webkit-appearance: none;
 	appearance: none;
 	background: transparent;
+	width: 100%;
+	position: relative;
   }
 
   #daysSlider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	width: 30px;
-	height: 30px;
-	background: #4CAF50;
+	width: 35px;
+	height: 35px;
+	background: #ee492e;
 	cursor: pointer;
-	border-radius: 50%;
+	border-radius: 3%;
+	margin-top: -3px;
   }
 
   #daysSlider::-moz-range-thumb {
-	width: 30px;
-	height: 30px;
-	background: #4CAF50;
+	width: 35px;
+	height: 25px;
+	background: #ee492e;
 	cursor: pointer;
-	border-radius: 50%;
+	border-radius: 3%;
 	border: none;
+	margin-top: -3px;
   }
 
   #daysSlider::-webkit-slider-runnable-track {
 	width: 100%;
-	height: 30px;
+	height: 25px;
 	background: #ddd;
 	border-radius: 5px;
   }
@@ -84,6 +103,42 @@
 	background: #ddd;
 	border-radius: 5px;
   }
+
+  /* select label for daysSlider */
+  label[for="daysSlider"] {
+	font-size: 1.2em;
+	position: absolute;
+	white-space: nowrap;
+	transition: left 0.15s ease;
+	/* top: -2px; */
+  }
+	
+
+  .ticks{
+  position: relative;
+  /* left: 0; right: 0; */
+  top: 10px;            
+  height: 28px;
+}
+
+.tick{
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: white;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.tick__label{
+  position: absolute;
+  top: 15px;
+  /* left: 50%; */
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: white;
+  white-space: nowrap;
+}
 
 
   .rubrik {padding-top: 20px;}
@@ -113,7 +168,7 @@
   }
 
   .stunning {
-	background-color: #fdf06f;
+	background-color: #ee492e;
 	padding: 10px;
 	width: 80%;
 	margin: 20px 0px 20px 0px;
