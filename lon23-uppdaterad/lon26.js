@@ -779,7 +779,8 @@ window.makeGraph = function makeGraph(data1) {
 
     bar.append("rect")
         .attr("width", function(d) { return x(d.lön); })
-        .attr("height", barHeight - 1);
+        .attr("height", barHeight - 1)
+        .style("fill", "#FFFAA0");
 
     bar.append("text")
         .attr("x", function(d) { return x(d.lön) - 3; })
