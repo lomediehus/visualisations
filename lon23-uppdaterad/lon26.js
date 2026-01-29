@@ -124,7 +124,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Skötare",
-    "lön": 31380
+    "lön": 31385
   },
   {
     "yrke": "Städare/Lokalvårdare",
@@ -147,7 +147,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Vaktmästare",
-    "lön": 30800
+    "lön": 30797
   },
   {
     "yrke": "Vårdbiträde",
@@ -197,7 +197,9 @@ var listLandstingKnapp = document.getElementById('listLandsting');
 var listKommunKnapp = document.getElementById('listKommuner');
 var selectlista = document.getElementsByTagName('OPTION');
 var valjyrke = document.getElementById("valjyrke");
-var highlowdiv = document.getElementById('highlowdiv');
+// var highlowdiv = document.getElementById('highlowdiv');
+var highdiv = document.getElementById('highdiv');
+var lowdiv = document.getElementById('lowdiv');
 var rikssnittp = document.getElementById('rikssnittp');
 var semitransparent = document.getElementsByClassName('semitransparent');
 var blinkcontainer= document.getElementById("blinkcontainer");
@@ -213,10 +215,11 @@ function hittaBrandman(row) {
 
 riksYrken.forEach(hittaBrandman)
 
-$('#highlowdiv').hide();
-
 //Wait for document ready
 $(document).ready(function() {
+
+  $('#highdiv').hide();
+  $('#lowdiv').hide();
 
   function handleChange(event) {
 
@@ -315,7 +318,9 @@ $(document).ready(function() {
       overlay.style.display = "none";
       blinkcontainer.style.display = "none";
       overlay.style.cursor = "pointer";
-      fillHighlowdiv();
+      // fillHighlowdiv();
+      fillDiv(highdiv, 'Högst', highest, place);
+      fillDiv(lowdiv, 'Lägst', lowest, place2);
  }
     else {
       brandboxar[0].style.display = "none";
@@ -328,13 +333,16 @@ $(document).ready(function() {
         overlay.style.display = "none";
         blinkcontainer.style.display = "none";
         overlay.style.cursor = "pointer";
-        fillHighlowdiv();
+        // fillHighlowdiv();
+        fillDiv(highdiv, 'Högst', highest, place);
+        fillDiv(lowdiv, 'Lägst', lowest, place2);
       }
       else if (yrke === "Väljyrke") {
         overlay.style.display = "block";
         blinkcontainer.style.display = "block";
         // banner.style.display = "none";
-        $('#highlowdiv').hide();
+        $('#highdiv').hide();
+        $('#lowdiv').hide();
         tabell.innerHTML = '';
         rikssnittp.innerHTML = '';
         [...semitransparent].forEach(function(element){
@@ -495,16 +503,48 @@ function getHighLow(yrke) {
 
 };
 
-//Putting the result in place
-function fillHighlowdiv() {
+// //Putting the result in place
+// function fillHighlowdiv() {
+//   if (window.innerWidth > 360) {
+//     highlowdiv.innerHTML = '<p><span class="bold">Högst: </span>' + $.number(highest, 0, ',', '&#8239;') + ' kr/mån,  ' + place + '.</p><p><span class="bold">Lägst: </span> ' + $.number(lowest, 0, ',', '&#8239;') + ' kr/mån, ' + place2 + '.';
+//     $('#highlowdiv').hide().fadeIn();
+//   }
+//   else {
+//     $('#highlowdiv').hide();
+//   }
+// }
+
+// //Putting the result in place
+// function fillHighOrLowDiv(type, targetDiv) {
+//   if (window.innerWidth > 360) {
+//     let html;
+//     if (type === 'high') {
+//       html = '<p><span class="bold">Högst: </span>' + $.number(highest, 0, ',', '&#8239;') + ' kr/mån, ' + place + '.</p>';
+//     } else if (type === 'low') {
+//       html = '<p><span class="bold">Lägst: </span>' + $.number(lowest, 0, ',', '&#8239;') + ' kr/mån, ' + place2 + '.</p>';
+//     }
+//     targetDiv.innerHTML = html;
+//     $(targetDiv).hide().fadeIn();
+//   }
+//   else {
+//     $(targetDiv).hide();
+//   }
+// }
+
+function fillDiv(targetDiv, label, value, placeName) {
   if (window.innerWidth > 360) {
-    highlowdiv.innerHTML = '<p><span class="bold">Högst: </span>' + $.number(highest, 0, ',', '&#8239;') + ' kr/mån,  ' + place + '.</p><p><span class="bold">Lägst: </span> ' + $.number(lowest, 0, ',', '&#8239;') + ' kr/mån, ' + place2 + '.';
-    $('#highlowdiv').hide().fadeIn();
-  }
-  else {
-    $('#highlowdiv').hide();
+    targetDiv.innerHTML = '<p><span class="bold">' + label + ': </span>' + 
+                          $.number(value, 0, ',', '&#8239;') + 
+                          ' kr/mån, ' + placeName + '.</p>';
+    $(targetDiv).hide().fadeIn();
+  } else {
+    $(targetDiv).hide();
   }
 }
+
+// Usage:
+// fillDiv(highdiv, 'Högst', highest, place);
+// fillDiv(lowdiv, 'Lägst', lowest, place2);
 
 //Always start with first item in list selected
 selectlista[0].setAttribute("selected", "selected");
@@ -973,7 +1013,7 @@ function maketable(data, tabell) {
     cell1.innerHTML = "Region<span class='sortpil'>&#8691;</span>";
   }
 
-  cell2.innerHTML = "Lön 2024<span class='sortpil'>&#8691;</span>";
+  cell2.innerHTML = "Lön 2025<span class='sortpil'>&#8691;</span>";
 
   let sortKomReg = document.getElementById("sortKommunRegion")
 
@@ -1081,7 +1121,7 @@ var svg = d3.select('div#lansdiv').append('svg').attr("preserveAspectRatio", "xM
 var projection = d3.geoConicEqualArea()
     // .scale(2365.51882004263)
     .scale(2000)
-    .center([16.382656313727672,62.34103687152436]) //projection center
+    .center([17.2,62.34103687152436]) //projection center
 
     .parallels([55.327583999999995,69.059967]) //parallels for conic projection
     .rotate([343.6173436862723]) //rotation for conic projection
@@ -1271,6 +1311,7 @@ function changeColor() {
 
    // Select all <g> elements
 if (yrke !== "Välj yrke") {
+  c(yrke)
 
   d3.selectAll("g")
       .filter(function () {
@@ -1278,7 +1319,7 @@ if (yrke !== "Välj yrke") {
           if (!textElement.empty()) {
               const text = textElement.text(); // Get its text content
               // Exclude <g> with text "valjyrke"
-              return text.replace(/_/g, ' ').substring(0, 16) === yrke.replace(/_/g, ' ').substring(0, 16) && text !== "Välj yrke";
+              return text.replace(/_/g, ' ').substring(0, 15) === yrke.replace(/_/g, ' ').substring(0, 15) && text !== "Välj yrke";
               // return text.substring(0, 16) === yrke.substring(0, 16) && text !== "Välj yrke";
               // return text === yrke && text !== "Välj yrke";
           }

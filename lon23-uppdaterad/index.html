@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Här kan du se medellönen för undersköterskor, barnskötare, bussförare, städare, brandmän och 22 andra yrken inom Kommunal.">
-  <title>Löner kommunalare 2022</title>
+  <title>Löner kommunalare 2026</title>
   <link rel="stylesheet" type="text/css" href="lon26.css">
   <!-- <link rel="stylesheet" type="text/css" href="banner.css"> -->
   <link rel="stylesheet" type="text/css" href="../arbetet_assets/stylesheets/arbetet.css">
@@ -90,11 +90,14 @@
               <table id="karttabell" class="BodyTable-content"></table>
             </div>
 
-            <div id="highlowdiv" class="BodyImage-caption"></div>
+            <div id="highdiv" class="BodyImage-caption highlowdiv"></div>
+            <!-- <div id="highlowdiv" class="BodyImage-caption highlowdiv"></div> -->
+            <div id="lowdiv" class="BodyImage-caption highlowdiv"></div>
 
           </div>
         </div>
-        <p class='semitransparent u-spacingTopS'>Lönen visas för de kommuner/regioner som har minst fem anställda i yrket.</p>
+        <br>
+        <p class='semitransparent'>Lönen visas för de kommuner/regioner som har minst fem anställda i yrket.</p>
       </div>
 
       <div id="brandkartdiv" class="basecontainer fixed-height brandbox">
@@ -113,10 +116,9 @@
 
 
         <h2 class="semitransparent Teaser-heading">Jämför yrken</h2>
-        <input type="radio" name="yrkesknapp" value="riket" class="yrkesbutton semitransparent"><label id="riket" class="text-top semitransparent">hela landet</label>
-        <input type="radio" name="yrkesknapp" value="kommuner" class="yrkesbutton semitransparent"><label id="kommuner" class="text-top semitransparent">kommuner</label>
+        <input type="radio" name="yrkesknapp" value="riket" class="yrkesbutton semitransparent"><label id="riket" class="text-top semitransparent">hela landet</label><br>
+        <input type="radio" name="yrkesknapp" value="kommuner" class="yrkesbutton semitransparent"><label id="kommuner" class="text-top semitransparent">kommuner</label><br>
         <input type="radio" name="yrkesknapp" value="landsting" class="yrkesbutton semitransparent"><label id="landsting" class="text-top semitransparent">regioner</label>
-        <p class="semitransparent" id="yrkep"></p>
         <p class="semitransparent" id="yrkep"> <span id="yrkesspan">Genomsnitt för hela landet.</span></p>
   
           <select id="valjkommun" class="BodyImage-caption bold semitransparent">

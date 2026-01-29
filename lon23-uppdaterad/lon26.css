@@ -472,13 +472,12 @@ div.close {
   right: 5px;
 }
 
-#highlowdiv {
-  width: 100px;
-  /* height: 160px; */
+/* #highlowdiv {
+  
   border-radius: 6px;
   box-shadow: 3px 3px 3px gray;
   padding: 5px;
-  /* background-color: #fdf06f; */
+  
   background-color: #FFFAA0;
   position: absolute;
   top: 370px;
@@ -486,6 +485,30 @@ div.close {
   word-wrap: break-word;
   hyphens: auto;
   -webkit-hyphens: auto;
+} */
+
+.highlowdiv {
+  width: 120px;
+  /* height: 160px; */
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px gray;
+  padding: 5px;
+  /* background-color: #fdf06f; */
+  background-color: #FFFAA0;
+  position: absolute;
+  right: 5px;
+  word-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+#highdiv {
+  right: 5px;
+  top: 320px;
+}
+#lowdiv {
+  right: 5px;
+  top: 500px;
 }
 
 
@@ -653,6 +676,10 @@ font-size: 20px;
 #rikssnittp {
   height: 45px;
   margin-left: 10px;
+}
+
+#yrkep {
+  margin-top: 2px;
 }
 
 .yrkesbutton {
