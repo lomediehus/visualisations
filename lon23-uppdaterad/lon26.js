@@ -48,12 +48,12 @@ window.riksYrken = [
   {
     "yrke": "Barnsköterska",
     "yrkeplural": "Barnsköterskor",
-    "lön": 32260
+    "lön": 32264
   },
   {
     "yrke": "Biträde",
     "yrkeplural": "Biträden",
-    "lön": 27434
+    "lön": 27438
   },
   {
     "yrke": "Boendestödjare",
@@ -85,7 +85,7 @@ window.riksYrken = [
   {
     "yrke": "Fotvårdsspecialist",
     "yrkeplural": "Fotvårdsspecialister",
-    "lön": 33856
+    "lön": 33874
   },
   {
     "yrke": "Fritidsledare",
@@ -878,7 +878,7 @@ function populateKommunDropdown() {
     if (getvalue(yrkesknappar) === "riket") {
       makeGraph(riksYrken)
       //Show which data is chosen
-      yrkesspan.innerHTML = 'Genomsnitt för hela landet.';
+      yrkesspan.innerHTML = 'Genomsnitt Sverige.';
       $('#yrkep').hide().fadeIn();
         //hide the select lists for kommun and landsting
       valjlandsting.style.display = 'none';
