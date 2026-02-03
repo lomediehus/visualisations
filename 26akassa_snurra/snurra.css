@@ -24,7 +24,7 @@
   }
   
 #content {
-	max-width: 80%;
+	max-width: 90%;
 	margin: 0 auto;
 	padding-bottom: 20px;
 }
@@ -34,8 +34,17 @@
 	color: white;
 }
 
+input[name="inputLon"], select[name="fack"] {
+	/* line-height: 1em; */
+	font-size: 1.3em;
+}
+
   select, form,label, input {
 	display: inline;
+  }
+
+  select {
+	line-height: 2;
   }
 
   input[type="range"] {
@@ -45,7 +54,7 @@
   }
 
   .boxwidth {
-	width: 80%;
+	width: 100%;
   }
 
   input[type="checkbox"] {
@@ -56,7 +65,7 @@
 
   .slider {
 	position: relative;
-	width: 80%;
+	width: 100%;
   }
 
   #daysSlider {
@@ -191,7 +200,7 @@ p#dagarinfo {
   .stunning {
 	background-color: #ee492e;
 	padding: 10px;
-	width: 80%;
+	width: 100%;
 	margin: 20px 0px 20px 0px;
   }
 
