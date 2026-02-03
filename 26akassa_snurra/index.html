@@ -12,48 +12,45 @@
   <body>
 
     <div id="content" class="BodyImage-caption">
-      
 
-      <p>Skriv din månadslön för att se hur mycket pengar du kan få i a-kassa och inkomstförsäkring.</p>
-
-      <!-- <div class="flexcontainer"> -->
-
-        <!-- <div class="flexcontainerInner"> -->
 
           <div class="" id="inputbox">
-            <h3 class="rubrik">Skriv din månadslön</h3>
+            <h3 class="rubrik">Vad tjänar du per månad?</h3>
     
             <label for="inputLon">kronor</label><br>
             <form>
-            <input type="text" name="inputLon" value="170000" id="inputLon" class="boxwidth">
+            <input type="text" name="inputLon" value="170000" id="inputLon" class="boxwidth BodyImage-caption">
     
             </form>
           </div>
           <div class="" id="selectbox">
-            <h3 class="rubrik">Välj ditt fackförbund</h3>
+            <h3 class="rubrik">Vilket fackförbund är du med i?</h3>
           
-            <label for="fack">Välj ditt fackförbund</label><br>
+            <label for="fack">Välj i listan!</label><br>
 
-            <select name="fack" id="fack" class="boxwidth">
+            <select name="fack" id="fack" class="boxwidth BodyImage-caption">
               <!-- Options will be populated from data.json -->
             </select>
-         </div>
+          </div>
+          <label for="ejmedlem"> Jag är inte med i något fack.</label>
+          <input type="checkbox" id="ejmedlem" name="ejmedlem">
          <div id="kryssruta">
-          <h3 class="rubrik">Sätt kryss om du har en tilläggsförsäkring</h3>
+          <h3 class="rubrik">Har du en tilläggsförsäkring i facket?</h3>
+          <label for="tillagg"> Ja.</label>
           <input type="checkbox" id="tillagg" name="tillagg">
-          <label for="tillagg"> Med tillägg högre inkomstförsäkring</label><br>
         <!-- </div> -->
         
 
          
 
           <div class="flexitem" id="sliderbox">
-            <h3 class="rubrik">Dra i reglaget för antal dagar arbetslös</h3>
+            <h3 class="rubrik">Hur många dagar har du varit arbetslös?</h3>
             <div class="slider">
-              <label for="daysSlider"><span id="daysValue">1</span> dagar</label><br>
+              <label for="daysSlider"><span id="daysValue">1</span> <span id="daysText">dag</span></label><br>
               <input type="range" id="daysSlider" min="1" max="300" value="1" class="boxwidth">
               <div class="ticks" id="ticks" aria-hidden="true"></div>
             </div>
+            <p id="dagarinfo">Dagar som hör till inkomstförsäkringen står i fet stil.</p>
           </div>
 
         </div>
@@ -61,20 +58,23 @@
         <!-- <div class="flexcontainerInner"> -->
 
            <div class="flexitem stunning" id="resultbox">
-            <h3 class="rubrik">Så stor ersättning får du</h3>
+            <h3 class="rubrik">Så mycket får du</h3>
             <p class="stunningText"id="akassa"></p>
       
     
           </div>
 
-          <div id="testresultat">Här kommer resultat för tester. </div>
+          <div id="forklaringRubrik"><span>Om beräkningen:</span>
+            <div id="forklaring"> </div>  
+          </div>
 
-          <div class="" id="resultbox2" style="visibility: hidden;">
+
+          <!-- <div class="" id="resultbox2" style="visibility: hidden;">
             <h3 class="rubrik">Info om beräkning</h3>
             <p id="calculationInfo" class="u-textMeta"></p>
             <p class="">Någon info om räknesnurran.</p>
 
-          </div>
+          </div> -->
           </div>
       <!-- </div> -->
 

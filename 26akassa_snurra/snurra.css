@@ -26,8 +26,7 @@
 #content {
 	max-width: 80%;
 	margin: 0 auto;
-	
-	
+	padding-bottom: 20px;
 }
 
 #content.BodyImage-caption {
@@ -67,6 +66,7 @@
 	background: transparent;
 	width: 100%;
 	position: relative;
+
   }
 
   #daysSlider::-webkit-slider-thumb {
@@ -77,17 +77,17 @@
 	background: #ee492e;
 	cursor: pointer;
 	border-radius: 3%;
-	margin-top: -3px;
+	margin-top: -4px;
   }
 
   #daysSlider::-moz-range-thumb {
 	width: 35px;
-	height: 25px;
+	height: 35px;
 	background: #ee492e;
 	cursor: pointer;
 	border-radius: 3%;
 	border: none;
-	margin-top: -3px;
+	margin-top: -4px;
   }
 
   #daysSlider::-webkit-slider-runnable-track {
@@ -111,6 +111,10 @@
 	white-space: nowrap;
 	transition: left 0.15s ease;
 	/* top: -2px; */
+	/* background-color: white; */
+	/* color: black;
+	padding: 2px 5px; */
+
   }
 	
 
@@ -135,11 +139,28 @@
   top: 15px;
   /* left: 50%; */
   transform: translateX(-50%);
-  font-size: 12px;
+  font-size: 16px;
   color: white;
   white-space: nowrap;
+  font-weight: normal;
 }
 
+.tick__label--insurance {
+  /* Your custom styles for insurance period markers */
+  /* color: blue; */
+  font-weight: bold;
+}
+
+.tick__label--insurance::before {
+  /* background-color: blue; */
+  font-weight: bold;
+}
+
+p#dagarinfo {
+	font-size: 0.7em;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
 
   .rubrik {padding-top: 20px;}
 
@@ -183,6 +204,40 @@
 	margin: 20px;
 	padding: 3px;
   } */
+
+  #forklaringRubrik {
+	font-size: 0.9em;
+  }
+
+  #forklaring {
+	position: fixed;
+	bottom: -100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	max-width: 600px;
+	background-color: #f9f8f2;
+	color: black;
+	opacity: 0.95;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+	transition: bottom 0.4s ease-out;
+	z-index: 1000;
+  }
+
+  #forklaring.show {
+	bottom: 40px;
+  }
+
+  @keyframes slideUp {
+	from {
+	  bottom: -100%;
+	}
+	to {
+	  bottom: 40px;
+	}
+  }
 
   @media only screen and (max-width: 570px) {
 	.flexcontainer {
