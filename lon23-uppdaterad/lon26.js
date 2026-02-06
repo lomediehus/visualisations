@@ -240,6 +240,12 @@ $(document).ready(function() {
       blinkcontainer.style.display = "none";
   }
     getHighLow(yrke);
+    
+    // Hardcoded fix for professions with tied lowest values
+    if (yrke === "Fotvårdsspecialist") {
+      place2 = 'Region Jönköpings län och Region Sörmland';
+    }
+    
     kartpopup.style.display = "none";
     brandkartpopup.style = "none";
 
@@ -367,6 +373,8 @@ $(document).ready(function() {
   else {
     rikssnittp.innerHTML = "<strong class='red big'>" + $.number(kommunsnitt, 0, ',', '&#8239;') + " kr/mån</strong> (kommun)<br> <strong class='red big'>" + $.number(regionsnitt, 0, ',', '&#8239;') + " kr/mån</strong> (region)";
   }
+    c(kommunsnitt + "kommunsnitt");
+
 
   //remove underscore from yrke and replace with space
   const normalizedYrke = yrke.replace(/_/g, ' ');
@@ -1201,8 +1209,9 @@ function clicked(d,i) {
       })
       // Ny25
       var rikssnittKartan;
+      var normalizedYrkeKartan = yrke.replace(/_/g, ' ');
           riksYrken.forEach(function(row) {
-          if (row["yrke"] == yrke) {
+          if (row["yrke"] == normalizedYrkeKartan) {
             // c(row["lön"])
             // rikssnittKartan = row["lön"];
             rikssnittKartan = SweNum.format(row["lön"]);                    
