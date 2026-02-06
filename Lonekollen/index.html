@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Här kan du se medellönen för undersköterskor, barnskötare, bussförare, städare, brandmän och 22 andra yrken inom Kommunal.">
+  <title>Löner kommunalare 2026</title>
+  <link rel="stylesheet" type="text/css" href="lon26.css">
+  <!-- <link rel="stylesheet" type="text/css" href="banner.css"> -->
+  <link rel="stylesheet" type="text/css" href="../arbetet_assets/stylesheets/arbetet.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="../arbetet_assets/img/favicon.ico">
+</head>
+<body class="Body">
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script> -->
+  <!-- <div id="maincontent"> -->
+
+    <div id="header">
+
+      <!-- <h1 class="u-textMetaDeca Label aboveOverlay">Medellöner i 23 olika yrken</h1> -->
+
+      <!-- <div id="selectOverlay">Välj yrke först!</div> -->
+
+      <select id="valjyrke" class="BodyImage-caption">
+        <option value="Väljyrke">Välj yrke</option>
+        <option value="Ambulanssjukvårdare">Ambulanssjukvårdare (region)</option>
+        <option value="Anläggningsarbetare">Anläggningsarbetare (kommun)</option>
+        <option value="Barnskötare">Barnskötare (kommun)</option>
+        <option value="Barnsköterska">Barnsköterska (region)</option>
+        <option value="Biträde">Biträde (region)</option>
+        <option value="Boendestödjare">Boendestödjare (kommun)</option>
+        <option value="Brandman">Brandman</option>
+        <option value="Elevassistent">Elevassistent (kommun)</option>
+        <option value="Fastighetsskötare">Fastighetsskötare (kommun)</option>
+        <option value="Fordonsförare">Fordonsförare (kommun/region)</option>
+        <option value="Fotvårdsspecialist">Fotvårdsspecialist (region)</option>
+        <option value="Fritidsledare">Fritidsledare (kommun)</option>
+        <option value="Förrådsarbetare">Förrådsarbetare (region)</option>
+        <option value="Kock/Kokerska">Kock/Kokerska (kommun/region)</option>
+        <option value="Lärarassistent">Lärarassistent (kommun)</option>
+        <option value="Måltidspersonal">Måltidspersonal (kommun/region)</option>
+        <option value="Park-_och_trädgårdsarbetare">Park- och trädgårdsarbetare (kommun)</option>
+        <option value="Personlig_assistent">Personlig assistent (kommun)</option>
+        <option value="Renhållningsarbetare">Renhållningsarbetare (kommun)</option>
+        <option value="Skötare">Skötare (kommun/region)</option>
+        <option value="Städare/Lokalvårdare">Städare/Lokalvårdare (kommun/region)</option>
+        <option value="Stödassistent">Stödassistent (kommun)</option>
+        <option value="Stödpedagog">Stödpedagog (kommun)</option>
+        <option value="Undersköterska">Undersköterska (kommun/region)</option>
+        <option value="Vaktmästare">Vaktmästare (kommun/region)</option>
+        <option value="Vårdbiträde">Vårdbiträde (kommun)</option>
+        <option value="Vårdbiträde_Funktionshinder">Vårdbiträde Funktionshinder (kommun)</option>
+      </select>
+    </div>
+
+
+
+  <div id="kommun-region">
+    <p id=rikssnittp></p>
+
+   
+
+    <div id="content">
+
+      <div id="blinkcontainer">
+ 
+        <div class="sign blink">
+          <div class="arrow"></div>
+          <h1>Välj yrke först!</h1>
+        </div>
+      </div>
+
+      <div id="overlay"></div>
+
+      <div id="presentation"></div>
+
+
+      <div class="basecontainer fixed-height krbox">
+        <h2 class="semitransparent Teaser-heading">Jämför med andra orter</h2>
+        <div id="kartdiv">
+          <div id="lansdiv">
+            <p class="semitransparent">Klicka på ett län för att se lönerna i kommunerna och/eller regionen.</p>
+            <!-- <div id="logga"><img src="lonekoll_logga.png" alt="logotype" width="400"></div> -->
+            <div id="kartpopup">
+              <div id="kartpopuprubbe"></div>
+              <div class="close"><img id="closex" class="closex" src="../ka_assets/closex.png" alt="kryssruta för stängning"></div>
+              <table id="karttabell" class="BodyTable-content"></table>
+            </div>
+
+            <div id="highdiv" class="BodyImage-caption highlowdiv"></div>
+            <!-- <div id="highlowdiv" class="BodyImage-caption highlowdiv"></div> -->
+            <div id="lowdiv" class="BodyImage-caption highlowdiv"></div>
+
+          </div>
+        </div>
+        <br>
+        <p class='semitransparent'>Lönen visas för de kommuner/regioner som har minst fem anställda i yrket.</p>
+      </div>
+
+      <div id="brandkartdiv" class="basecontainer fixed-height brandbox">
+        <h2 class="Teaser-heading">Jämför räddningstjänster</h2>
+        <p>Klicka för att se räddningstjänst, lön och vilka kommuner som ingår.</p>
+        <!-- <div id="brandlogga"><img src="lonekoll_logga.png" alt="logotype" width="320"></div> -->
+
+        <div id="brandkartpopup">
+          <div class="close"><img id="brandclosex" class="closex" src="../ka_assets/closex.png" alt="kryssruta för stängning"></div>
+          <div id="popuptext"></div>
+        </div>
+
+      </div>
+
+      <div id="jamforyrkediv" class="basecontainer fixed-height jamforbox">
+
+
+        <h2 class="semitransparent Teaser-heading">Jämför yrken</h2>
+        <input type="radio" name="yrkesknapp" value="riket" class="yrkesbutton semitransparent"><label id="riket" class="text-top semitransparent">Sverige</label><br>
+        <input type="radio" name="yrkesknapp" value="kommuner" class="yrkesbutton semitransparent"><label id="kommuner" class="text-top semitransparent">kommuner</label><br>
+        <input type="radio" name="yrkesknapp" value="landsting" class="yrkesbutton semitransparent"><label id="landsting" class="text-top semitransparent">regioner</label>
+        <p class="semitransparent" id="yrkep"> <span id="yrkesspan">Genomsnitt för Sverige.</span></p>
+  
+          <select id="valjkommun" class="BodyImage-caption bold semitransparent">
+            <option value="RIKSSNITT">Välj kommun</option>
+          </select>
+  
+       
+  
+          <select id="valjlandsting" class="BodyImage-caption bold semitransparent">
+            <option value="RIKSSNITT">Välj region</option>
+            <option value="Region Blekinge">Region Blekinge</option>
+            <option value="Region Dalarna">Region Dalarna</option>
+            <option value="Region Kalmar län">Region Kalmar län</option>
+            <option value="Region Värmland">Region Värmland</option>
+            <option value="Region Sörmland">Region Sörmland</option>
+            <option value="Region Västernorrland">Region Västernorrland</option>
+            <option value="Region Gotland">Region Gotland</option>
+            <option value="Region Gävleborg">Region Gävleborg</option>
+            <option value="Region Halland">Region Halland</option>
+            <option value="Region Jämtland Härjedalen">Region Jämtland Härjedalen</option>
+            <option value="Region Jönköpings län">Region Jönköpings län</option>
+            <option value="Region Kronoberg">Region Kronoberg</option>
+            <option value="Region Norrbotten">Region Norrbotten</option>
+            <option value="Region Skåne">Region Skåne</option>
+            <option value="Region Uppsala">Region Uppsala</option>
+            <option value="Region Västmanland">Region Västmanland</option>
+            <option value="Region Örebro län">Region Örebro län</option>
+            <option value="Region Östergötland">Region Östergötland</option>
+            <option value="Region Stockholm">Region Stockholm</option>
+            <option value="Region Västerbotten">Region Västerbotten</option>
+            <option value="Västra Götalandsregionen">Västra Götalandsregionen</option>
+          </select>
+  
+          <div id="yrken" class="semitransparent">
+            <table id="yrkestabell" class="tabellstil"></table>
+            <svg class="chart semitransparent" id="chart"></svg>
+          </div>
+            <p class="bottom"></p>
+        </div>
+
+        <div class='basecontainer brandbox'>
+          <div id="brandtabelldiv" style="width:100%">
+            <h2 class="Teaser-heading">Löner i räddningstjänsterna</h2>
+            <p class="BodyImage-caption">Vi visar lönen för dem som har minst fem anställda, övriga är markerade med *.</p>
+            <p class="input" id="sokkommun">Sök kommun <input type="search" name="search" placeholder="Kommun" id="searchfield"></p>
+            <table id="brandtabell" class="tabellstil BodyTable-header">
+            </table>
+            <p class="invisible"><button type="button" class="Button" id="rensaknapp">Visa hela listan igen</button></p>
+          </div>
+        </div>
+  
+  
+        <div id="lonlista" class="basecontainer krbox">
+          <h2 class="semitransparent Teaser-heading ">Lönetabell</h2>
+          <p class='semitransparent'>Lönen visas för de kommuner/regioner som har minst fem anställda i yrket.</p>
+          <input type="radio" name="tabellknapp" value="listKommuner" class="yrkesbutton semitransparent" id="listKommuner"><label class="semitransparent text-top">kommuner</label>
+          <input type="radio" name="tabellknapp" value="listLandsting" class="yrkesbutton semitransparent" id="listLandsting"><label class="semitransparent text-top">regioner</label>
+          <p></p>
+  
+          <div id="mintabelldiv" style="width:100%">
+            <table id="mintabell" class="tabellstil BodyTable-header"></table>
+          </div>
+  
+    </div>  
+    
+  </div>
+
+
+
+
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.js"></script>
+  <!-- <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script> -->
+
+  <script src="lon26.js"></script>
+  <script src="brandlon.js"></script>
+  <!-- <script src="banner.js"></script> -->
+
+
+
+  <script src="../iframe-helper/iframe-helper.js"></script>
+
+
+  </body>
+</html>

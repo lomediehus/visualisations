@@ -1,0 +1,642 @@
+[
+  {
+    "Raddningstjanst":"Bohus Räddningstjänstförbund",
+    "Lon":32592.0,
+    "Kommunlista":["Ale", "Kungälv"]
+  },
+  {
+    "Raddningstjanst":"Alingsås och Vårgårda Räddningstjänstförbund",
+    "Lon":33023.0,
+    "Kommunlista":["Alingsås", "Vårgårda"]
+  },
+  {
+    "Raddningstjanst":"Älmhults Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Älmhult"]
+  },
+  {
+    "Raddningstjanst":"Brandkåren Norra Dalarna",
+    "Lon":31722.0,
+    "Kommunlista":["Leksand", "Mora", "Orsa", "Vansbro", "Älvdalen"]
+  },
+  {
+    "Raddningstjanst":"Värends Räddningstjänst",
+    "Lon":33660,
+    "Kommunlista":["Alvesta", "Växjö"]
+  },
+  {
+    "Raddningstjanst":"Gästrike Räddningstjänst",
+    "Lon":30367.0,
+    "Kommunlista":["Gävle", "Hofors", "Ockelbo", "Sandviken", "Älvkarleby"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Piteå-Älvsbyn",
+    "Lon":32188.0,
+    "Kommunlista":["Piteå", "Älvsbyn"]
+  },
+  {
+    "Raddningstjanst":"Åmåls Räddningstjänst",
+    "Lon":0,
+    "Kommunlista":["Åmål"]
+  },
+  {
+    "Raddningstjanst":"Aneby Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Aneby"]
+  },
+  {
+    "Raddningstjanst":"Medelpads Räddningstjänst",
+    "Lon":31905.0,
+    "Kommunlista":["Sundsvall", "Timrå", "Ånge"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Skåne Nordväst",
+    "Lon":31634.0,
+    "Kommunlista":["Bjuv", "Helsingborg", "Ängelholm", "Örkelljunga", "Båstad"]
+  },
+  {
+    "Raddningstjanst":"Mälardalens Brand- och Räddningsförbund",
+    "Lon":32362.0,
+    "Kommunlista":["Hallstahammar", "Surahammar", "Västerås", "Arboga","Kungsör","Köping"]
+  },
+  {
+    "Raddningstjanst":"Åre Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Åre"]
+  },
+  {
+    "Raddningstjanst":"Årjängs Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Årjäng"]
+  },
+  {
+    "Raddningstjanst":"Arjeplogs Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Arjeplog"]
+  },
+  {
+    "Raddningstjanst":"Arvidsjaurs Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Arvidsjaur"]
+  },
+  {
+    "Raddningstjanst":"Arvika Räddningstjänst",
+    "Lon":31727.0,
+    "Kommunlista":["Arvika","Säffle","Eda"]
+  },
+  {
+    "Raddningstjanst":"Åsele Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Åsele"]
+  },
+  {
+    "Raddningstjanst":"Nerikes Brandkår",
+    "Lon":33394.0,
+    "Kommunlista":["Askersund", "Hallsberg", "Kumla", "Laxå", "Lekeberg", "Lindesberg", "Ljusnarsberg", "Nora", "Örebro"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Söderåsen",
+    "Lon":31450,
+    "Kommunlista":["Klippan", "Åstorp"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Östra Götaland",
+    "Lon":31017.0,
+    "Kommunlista":["Linköping", "Norrköping", "Söderköping", "Valdemarsvik", "Åtvidaberg"]
+  },
+  {
+    "Raddningstjanst":"Södra Dalarnas Räddningstjänstförbund",
+    "Lon":31430,
+    "Kommunlista":["Avesta", "Fagersta", "Hedemora", "Norberg"]
+  },
+  {
+    "Raddningstjanst":"Bengtsfors Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Bengtsfors"]
+  },
+  {
+    "Raddningstjanst":"Jämtlands Räddningstjänstförbund",
+    "Lon":31571.0,
+    "Kommunlista":["Härnösand", "Kramfors", "Sollefteå"]
+  },
+  {
+    "Raddningstjanst":"Bjurholms Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Bjurholm"]
+  },
+  {
+    "Raddningstjanst":"Bodens Räddningstjänst",
+    "Lon":33470,
+    "Kommunlista":["Boden"]
+  },
+  {
+    "Raddningstjanst":"Södra Älvsborgs Räddningstjänstförbund",
+    "Lon":34390,
+    "Kommunlista":["Bollebygd", "Borås", "Mark", "Svenljunga", "Tranemo", "Ulricehamn"]
+  },
+  {
+    "Raddningstjanst":"Kommunalförbundet södra Hälsingland",
+    "Lon":32455.0,
+    "Kommunlista":["Bollnäs", "Ovanåker", "Söderhamn"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Sydost",
+    "Lon":31612.0,
+    "Kommunlista":["Borgholm", "Emmaboda", "Högsby", "Kalmar", "Mönsterås", "Mörbylånga", "Nybro",  "Oskarshamn", "Torsås"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten DalaMitt",
+    "Lon":31871.0,
+    "Kommunlista":["Borlänge", "Falun", "Gagnef", "Ludvika", "Säter"]
+  },
+  {
+    "Raddningstjanst":"Södertörns brandförsvarsförbund",
+    "Lon":33468.0,
+    "Kommunlista":["Botkyrka", "Ekerö", "Haninge", "Huddinge", "Nacka", "Nykvarn", "Nynäshamn", "Salem", "Södertälje", "Tyresö"]
+  },
+  {
+    "Raddningstjanst":"Mjölby-Boxholm Räddningstjänst",
+    "Lon":32668.0,
+    "Kommunlista":["Boxholm", "Mjölby"]
+  },
+  {
+    "Raddningstjanst":"Bromölla Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Bromölla"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Syd",
+    "Lon":33750,
+    "Kommunlista":["Burlöv", "Eslöv", "Kävlinge", "Lund", "Malmö"]
+  },
+  {
+    "Raddningstjanst":"Dals-Eds Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Dals-Ed"]
+  },
+  {
+    "Raddningstjanst":"Storstockholms brandförsvar",
+    "Lon":34252.0,
+    "Kommunlista":["Danderyd", "Lidingö", "Stockholm", "Sundbyberg", "Täby", "Vallentuna", "Vaxholm", "Värmdö", "Österåker"]
+  },
+  {
+    "Raddningstjanst":"Bergslagens Räddningstjänst",
+    "Lon":32441.0,
+    "Kommunlista":["Degerfors", "Filipstad", "Hällefors", "Karlskoga", "Kristinehamn", "Storfors"]
+  },
+  {
+    "Raddningstjanst":"Dorotea Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Dorotea"]
+  },
+  {
+    "Raddningstjanst":"Eksjö Räddningstjänst",
+    "Lon":0,
+    "Kommunlista":["Eksjö"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Enköping-Håbo",
+    "Lon":31591.0,
+    "Kommunlista":["Enköping", "Håbo"]
+  },
+  {
+    "Raddningstjanst":"Eskilstuna Räddningstjänst",
+    "Lon":31106.0,
+    "Kommunlista":["Eskilstuna"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Skaraborg",
+    "Lon":31625.0,
+    "Kommunlista":["Essunga", "Grästorp", "Gullspång", "Hjo", "Karlsborg", "Lidköping","Mariestad", "Skövde", "Tibro", "Töreboda", "Vara"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Väst",
+    "Lon":32469.0,
+    "Kommunlista":["Falkenberg", "Varberg"]
+  },
+  {
+    "Raddningstjanst":"Samhällsskydd Mellersta Skaraborg",
+    "Lon":30941.0,
+    "Kommunlista":["Falköping", "Götene", "Skara", "Tidaholm"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Fyrbodal",
+    "Lon":32314.0,
+    "Kommunlista":["Färgelanda","Lysekil","Mellerud","Munkedal","Trollhättan","Uddevalla","Vänersborg"]
+  },
+  {
+    "Raddningstjanst":"Finspångs Räddningstjänst",
+    "Lon":31258.0,
+    "Kommunlista":["Finspång"]
+  },
+  {
+    "Raddningstjanst":"Flens Räddningstjänst",
+    "Lon":30347.0,
+    "Kommunlista":["Flen"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Karlstadsregionen",
+    "Lon":34920,
+    "Kommunlista":["Forshaga", "Grums", "Hammarö", "Karlstad", "Kil", "Munkfors"]
+  },
+  {
+    "Raddningstjanst":"Gällivare Räddningstjänst",
+    "Lon":33119.0,
+    "Kommunlista":["Gällivare"]
+  },
+  {
+    "Raddningstjanst":"Gislaved-Gnosjö Räddningstjänst",
+    "Lon":32460,
+    "Kommunlista":["Gislaved", "Gnosjö"]
+  },
+  {
+    "Raddningstjanst":"Sörmlandskustens Räddningstjänst",
+    "Lon":31890,
+    "Kommunlista":["Gnesta", "Nyköping", "Oxelösund", "Trosa"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Storgöteborg",
+    "Lon":32617.0,
+    "Kommunlista":["Göteborg", "Härryda", "Kungsbacka", "Lerum", "Lilla Edet", "Mölndal", "Partille",  "Stenungsund", "Tjörn"]
+  },
+  {
+    "Raddningstjanst":"Gotlands Räddningstjänst",
+    "Lon":34497.0,
+    "Kommunlista":["Gotland"]
+  },
+  {
+    "Raddningstjanst":"Habo Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Habo"]
+  },
+  {
+    "Raddningstjanst":"Hagfors Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Hagfors"]
+  },
+  {
+    "Raddningstjanst":"Halmstads Räddningstjänst",
+    "Lon":31744.0,
+    "Kommunlista":["Halmstad"]
+  },
+  {
+    "Raddningstjanst":"Haparanda Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Haparanda"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Höga Kusten - Ådalen",
+    "Lon":31571.0,
+    "Kommunlista":["Härnösand", "Kramfors", "Sollefteå"]
+  },
+  {
+    "Raddningstjanst":"Hässleholms Räddningstjänst",
+    "Lon":31392.0,
+    "Kommunlista":["Hässleholm"]
+  },
+  {
+    "Raddningstjanst":"Sala-Heby Räddningstjänst",
+    "Lon":29754.0,
+    "Kommunlista":["Sala", "Heby"]
+  },
+  {
+    "Raddningstjanst":"Herrljunga Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Herrljunga"]
+  },
+  {
+    "Raddningstjanst":"Höganäs Räddningstjänst",
+    "Lon":33164.0,
+    "Kommunlista":["Höganäs"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Skånemitt",
+    "Lon":null,
+    "Kommunlista":["Hörby", "Höör"]
+  },
+  {
+    "Raddningstjanst":"Norrhälsinge Räddningstjänst",
+    "Lon":31850,
+    "Kommunlista":["Hudiksvall", "Nordanstig"]
+  },
+  {
+    "Raddningstjanst":"Hultsfreds Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Hultsfred"]
+  },
+  {
+    "Raddningstjanst":"Hylte Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Hylte"]
+  },
+  {
+    "Raddningstjanst":"Brandkåren Attunda",
+    "Lon":32441.0,
+    "Kommunlista":["Järfälla", "Sigtuna", "Knivsta", "Sollentuna", "Upplands Väsby", "Upplands-Bro"]
+  },
+  {
+    "Raddningstjanst":"Jokkmokks Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Jokkmokk"]
+  },
+  {
+    "Raddningstjanst":"Jönköpings Räddningstjänst",
+    "Lon":32532.0,
+    "Kommunlista":["Jönköping"]
+  },
+  {
+    "Raddningstjanst":"Kalix Räddningstjänst",
+    "Lon":0,
+    "Kommunlista":["Kalix"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Västra Blekinge",
+    "Lon":32469.0,
+    "Kommunlista":["Falkenberg", "Varberg"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Östra Blekinge",
+    "Lon":32231.0,
+    "Kommunlista":["Karlskrona", "Ronneby"]
+  },
+  {
+    "Raddningstjanst":"Västra Sörmlands Räddningstjänst",
+    "Lon":31497.0,
+    "Kommunlista":["Katrineholm", "Vingåker"]
+  },
+  {
+    "Raddningstjanst":"Kinda Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Kinda"]
+  },
+  {
+    "Raddningstjanst":"Kiruna Räddningstjänst",
+    "Lon":31344.0,
+    "Kommunlista":["Kiruna"]
+  },
+  {
+    "Raddningstjanst":"Kristianstad-Östra Göinges Räddningstjänst",
+    "Lon":27820,
+    "Kommunlista":["Kristianstad","Östra Göinge"]
+  },
+  {
+    "Raddningstjanst":"Laholms Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Laholm"]
+  },
+  {
+    "Raddningstjanst":"Landskrona Räddningstjänst",
+    "Lon":32884.0,
+    "Kommunlista":["Landskrona"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Östra Kronoberg",
+    "Lon":null,
+    "Kommunlista":["Lessebo", "Tingsryd", "Uppvidinge"]
+  },
+  {
+    "Raddningstjanst":"Ljungby Räddningstjänst",
+    "Lon":33042.0,
+    "Kommunlista":["Ljungby"]
+  },
+  {
+    "Raddningstjanst":"Ljusdals Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Ljusdal"]
+  },
+  {
+    "Raddningstjanst":"Lomma-Staffanstorp Räddningstjänst",
+    "Lon":0,
+    "Kommunlista":["Lomma", "Staffanstorp"]
+  },
+  {
+    "Raddningstjanst":"Luleå Räddningstjänst",
+    "Lon":33958.0,
+    "Kommunlista":["Luleå"]
+  },
+  {
+    "Raddningstjanst":"Lycksele Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Lycksele"]
+  },
+  {
+    "Raddningstjanst":"Malå-Norsjö Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Malå", "Norsjö"]
+  },
+  {
+    "Raddningstjanst":"Malung-Sälens Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Malung-Sälen"]
+  },
+  {
+    "Raddningstjanst":"Markaryds Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Markaryd"]
+  },
+  {
+    "Raddningstjanst":"Motala-Vadstena Räddningstjänst",
+    "Lon":31098.0,
+    "Kommunlista":["Motala", "Vadstena"]
+  },
+  {
+    "Raddningstjanst":"Mullsjö Räddningstjänst",
+    "Lon":33394.0,
+    "Kommunlista":["Askersund", "Hallsberg", "Kumla", "Laxå", "Lekeberg", "Lindesberg", "Ljusnarsberg", "Nora", "Örebro"]
+  },
+  {
+    "Raddningstjanst":"Höglandets Räddningstjänstförbund",
+    "Lon":31942.0,
+    "Kommunlista":["Nässjö", "Vetlanda"]
+  },
+  {
+    "Raddningstjanst":"Nordmalings Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Nordmaling"]
+  },
+  {
+    "Raddningstjanst":"Norrtälje Räddningstjänst",
+    "Lon":31738.0,
+    "Kommunlista":["Norrtälje"]
+  },
+  {
+    "Raddningstjanst":"Öckerö Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Öckerö"]
+  },
+  {
+    "Raddningstjanst":"Ödeshögs Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Ödeshög"]
+  },
+  {
+    "Raddningstjanst":"Örnsköldsviks Räddningstjänst",
+    "Lon":31697.0,
+    "Kommunlista":["Örnsköldsvik"]
+  },
+  {
+    "Raddningstjanst":"Orusts Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Orust"]
+  },
+  {
+    "Raddningstjanst":"Osby Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Osby"]
+  },
+  {
+    "Raddningstjanst":"Uppsala Brandförsvar",
+    "Lon":30916.0,
+    "Kommunlista":["Tierp", "Uppsala", "Östhammar"]
+  },
+  {
+    "Raddningstjanst":"Överkalix Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Överkalix"]
+  },
+  {
+    "Raddningstjanst":"Övertorneå Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Övertorneå"]
+  },
+  {
+    "Raddningstjanst":"Pajala Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Pajala"]
+  },
+  {
+    "Raddningstjanst":"Perstorps Räddningstjänst",
+    "Lon":41752.0,
+    "Kommunlista":["Perstorp"]
+  },
+  {
+    "Raddningstjanst":"Rättviks Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Rättvik"]
+  },
+  {
+    "Raddningstjanst":"Umeåregionens brandförsvar",
+    "Lon":33100,
+    "Kommunlista":["Robertsfors", "Umeå", "Vindeln"]
+  },
+  {
+    "Raddningstjanst":"Sävsjö Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Sävsjö"]
+  },
+  {
+    "Raddningstjanst":"Sydöstra Skånes Räddningstjänstförbund",
+    "Lon":30793.0,
+    "Kommunlista":["Simrishamn", "Sjöbo", "Tomelilla", "Ystad"]
+  },
+  {
+    "Raddningstjanst":"Skellefteå Räddningstjänst",
+    "Lon":32744.0,
+    "Kommunlista":["Skellefteå"]
+  },
+  {
+    "Raddningstjanst":"Skinnskattebergs Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Skinnskatteberg"]
+  },
+  {
+    "Raddningstjanst":"Räddningstjänsten Trelleborg Vellinge Skurup",
+    "Lon":31673.0,
+    "Kommunlista":["Trelleborg", "Vellinge", "Skurup"]
+  },
+  {
+    "Raddningstjanst":"Smedjebackens Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Smedjebacken"]
+  },
+  {
+    "Raddningstjanst":"Sorsele Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Sorsele"]
+  },
+  {
+    "Raddningstjanst":"Sotenäs Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Sotenäs"]
+  },
+  {
+    "Raddningstjanst":"Storumans Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Storuman"]
+  },
+  {
+    "Raddningstjanst":"Strängnäs Räddningstjänst",
+    "Lon":31700,
+    "Kommunlista":["Strängnäs"]
+  },
+  {
+    "Raddningstjanst":"Strömstads Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Strömstad"]
+  },
+  {
+    "Raddningstjanst":"Sunne Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Sunne"]
+  },
+  {
+    "Raddningstjanst":"Svalövs Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Svalöv"]
+  },
+  {
+    "Raddningstjanst":"Svedala Räddningstjänst",
+    "Lon":0,
+    "Kommunlista":["Svedala"]
+  },
+  {
+    "Raddningstjanst":"Tanums Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Tanum"]
+  },
+  {
+    "Raddningstjanst":"Torsby Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Torsby"]
+  },
+  {
+    "Raddningstjanst":"Tranås Räddningstjänst",
+    "Lon":31663.0,
+    "Kommunlista":["Tranås"]
+  },
+  {
+    "Raddningstjanst":"Vaggeryds Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Vaggeryd"]
+  },
+  {
+    "Raddningstjanst":"Vännäs Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Vännäs"]
+  },
+  {
+    "Raddningstjanst":"Värnamo Räddningstjänst",
+    "Lon":33175.0,
+    "Kommunlista":["Värnamo"]
+  },
+  {
+    "Raddningstjanst":"Västerviks Räddningstjänst",
+    "Lon":35807.0,
+    "Kommunlista":["Västervik"]
+  },
+  {
+    "Raddningstjanst":"Vilhelmina Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Vilhelmina"]
+  },
+  {
+    "Raddningstjanst":"Vimmerby Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Vimmerby"]
+  },
+  {
+    "Raddningstjanst":"Ydre Räddningstjänst",
+    "Lon":null,
+    "Kommunlista":["Ydre"]
+  }
+]
