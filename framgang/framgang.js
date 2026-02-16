@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .attr("class","shadow")
    
         //Nesting the circle-drawing to ensure they are drawn after the map is drawn.
-        var datafile = d3.dsv(";", "framgang.csv");
+        var datafile = d3.json("framgang.json");
 
         // var datafile = d3.json("framgang.json?t=" + new Date().getTime());
         Promise.all([datafile]).then(function(values) {
@@ -160,7 +160,9 @@ document.addEventListener("DOMContentLoaded", function() {
               // Set the date like this: 
               // const date = new Date("2023-01-01");
               // If you don't want to filter by dates, set the value to "null
-              const date = new Date("2023-01-01");
+              const date = new Date("2023-06-30");
+              // const date = new Date("2026-01-01");
+
 
               //Set the category you want to show, like this: 
               // const category = 'arbetstid'

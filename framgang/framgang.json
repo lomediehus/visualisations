@@ -1630,5 +1630,77 @@
     "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2025\/11\/11134548\/sofie-och-marie.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum":"2025\/11\/12",
     "ort":"Borlänge"
+  },
+  {
+    "rubrik":"”Kylan var fruktansvärd” – kollegorna fick stopp på svinkalla bilar i hemtjänsten",
+    "kortrubrik":"De fick stopp på svinkalla bilar i hemtjänsten",
+    "kategori":"arbetsvillkor",
+    "kategori_detaljerad":"arbetsmiljö",
+    "lat":58.88,
+    "long":14.902,
+    "url":"https:\/\/arbetet.se\/2026\/01\/08\/kylan-var-fruktansvard-kollegorna-fick-stopp-pa-svinkalla-bilar-i-hemtjansten\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/01\/07130428\/ask.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/01\/08",
+    "ort":"Askersund"
+  },
+  {
+    "rubrik":"Efter hundratals fallolyckor – nu får personalen gratis arbetsskor ",
+    "kortrubrik":"Gratis arbetsskor efter fallolycker",
+    "kategori":"arbetskläder",
+    "kategori_detaljerad":"arbetsskor",
+    "lat":59.379,
+    "long":13.503,
+    "url":"https:\/\/arbetet.se\/2026\/01\/12\/efter-hundratals-fallolyckor-nu-far-personalen-gratis-arbetsskor\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/01\/09144250\/ina-kling-arbetsskor-karlstad.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/01\/12",
+    "ort":"Karlstad"
+  },
+  {
+    "rubrik":"Hälften av barnen hölls hemma – så vände Svanens förskola på de oroande siffrorna",
+    "kortrubrik":"Så fick de barnen till förskolan",
+    "kategori":"arbetsvillkor",
+    "kategori_detaljerad":"arbetsvillkor",
+    "lat":58.587,
+    "long":16.192,
+    "url":"https:\/\/arbetet.se\/2026\/01\/30\/halften-av-barnen-holls-hemma-sa-vande-svanens-forskola-pa-de-oroande-siffrorna\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/01\/28131732\/svanen-1.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/01\/30",
+    "ort":"Norrköping"
+  },
+  {
+    "rubrik":"Sent schema gav fetare lönekuvert: ”Största lönen jag plockat ut”",
+    "kortrubrik":"Sent schema gav fetare lönekuvert",
+    "kategori":"lön",
+    "kategori_detaljerad":"lön",
+    "lat":59.238,
+    "long":14.432,
+    "url":"https:\/\/arbetet.se\/2026\/02\/09\/sent-schema-gav-fetare-lonekuvert-storsta-lonen-jag-plockat-ut\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/02\/06122655\/dbTuv8tIH0g-hemtjanstdegerfors_ang_1.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/02\/09",
+    "ort":"Degerfors"
+  },
+  {
+    "rubrik":"Tanja bröt ihop av stress – vägrade gå med på kommunens neddragningar",
+    "kortrubrik":"Tanja  vägrade gå med på neddragningar",
+    "kategori":"arbetsvillkor",
+    "kategori_detaljerad":"arbetsvillkor",
+    "lat":58.505,
+    "long":13.157,
+    "url":"https:\/\/arbetet.se\/2026\/02\/13\/tanja-vann-striden-om-samre-nattbemanning-kommunen-backade\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/02\/12104909\/tanja.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/02\/13",
+    "ort":"Lidköping"
+  },
+  {
+    "rubrik":"Miriami krävde att chefen skulle ta ett pass i hemtjänsten – nu är lönen bättre",
+    "kortrubrik":"Tog med chefen – fick bättre lön",
+    "kategori":"lön",
+    "kategori_detaljerad":"lön",
+    "lat":59.515,
+    "long":15.992,
+    "url":"https:\/\/arbetet.se\/2026\/02\/16\/miriami-kravde-att-chefen-skulle-ta-ett-pass-i-hemtjansten-nu-ar-lonen-battre\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/02\/13102044\/miriami.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/02\/16",
+    "ort":"Köping"
   }
 ]
