@@ -4,6 +4,15 @@
 	padding: 0px;
 	box-sizing: border-box;
   }
+
+  /*
+Reduce all text except h3.rubrik.
+- :not(h3.rubrik) excludes the heading itself.
+- :not(h3.rubrik *) excludes anything inside that heading.
+*/
+body *:not(h3.rubrik):not(h3.rubrik *) {
+	font-size: 0.9em;
+}
   
   /* For hiding scrollbar in Firefox without impacting scrolling function */
   html {
@@ -27,16 +36,24 @@
 	max-width: 90%;
 	margin: 0 auto;
 	padding-bottom: 20px;
+	/* font-size: 1em; */
 }
 
 #content.BodyImage-caption {
-	font-size: 1em;	
+	/* font-size: 1em;	 */
 	color: white;
+}
+
+img.headerImage {
+	width: 85%;
+	height: auto;
+	margin: 20px auto;
+	padding-top: 30px;
 }
 
 input[name="inputLon"], select[name="fack"] {
 	/* line-height: 1em; */
-	font-size: 1.3em;
+	/* font-size: 1em; */
 }
 
   select, form,label, input {
@@ -115,7 +132,7 @@ input[name="inputLon"], select[name="fack"] {
 
   /* select label for daysSlider */
   label[for="daysSlider"] {
-	font-size: 1.2em;
+	font-size: 1.5em !important;
 	position: absolute;
 	white-space: nowrap;
 	transition: left 0.15s ease;
@@ -148,7 +165,7 @@ input[name="inputLon"], select[name="fack"] {
   top: 15px;
   /* left: 50%; */
   transform: translateX(-50%);
-  font-size: 16px;
+  font-size: 16px !important;
   color: white;
   white-space: nowrap;
   font-weight: normal;
@@ -171,7 +188,10 @@ p#dagarinfo {
 	margin-bottom: 15px;
 }
 
-  .rubrik {padding-top: 20px;}
+  .rubrik {
+	padding-top: 20px;
+	font-size: 0.9em;	
+	}
 
   /* #inputYear {
 	width: 4em;
@@ -205,7 +225,7 @@ p#dagarinfo {
   }
 
   .stunningText {
-	font-size: 2em;
+	font-size: 1.8em !important;
   }
 
   /* button#calculate {
@@ -216,6 +236,8 @@ p#dagarinfo {
 
   #forklaringRubrik {
 	font-size: 0.9em;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
   }
 
   #forklaring {
@@ -256,3 +278,4 @@ p#dagarinfo {
 		width: 100%;
 	}
 }
+

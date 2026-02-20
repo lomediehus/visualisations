@@ -21,6 +21,19 @@ let select = document.getElementById("fack");
 let daysSlider = document.getElementById("daysSlider");
 let daysValue = document.getElementById("daysValue");
 let calculationInfo = document.getElementById("calculationInfo");
+if (!calculationInfo) {
+  // Safe fallback: create a hidden `calculationInfo` element so
+  // later code can write to it without causing warnings.
+  calculationInfo = document.createElement('div');
+  calculationInfo.id = 'calculationInfo';
+  calculationInfo.style.display = 'none';
+  if (akassa && akassa.parentNode) {
+    akassa.parentNode.insertBefore(calculationInfo, akassa.nextSibling);
+  } else {
+    document.body.appendChild(calculationInfo);
+  }
+  c('note: created calculationInfo fallback');
+}
 let fackData = [];
 let selectedUnion = null;
 // const i2 = 415.15;
@@ -75,8 +88,8 @@ fetch('data.json')
       if (index === 0) {
         selectedUnion = item;
         i1 = Number(item.Tak);
-        fors1 = Number(item.Dagar) || 0;
-        fors2 = Number(item.Dagar) + Number(item.DagarFler) || 0;
+        fors1 = Number(item.Dagar) + 1 || 0;
+        fors2 = Number(item.Dagar) + Number(item.DagarFler) + 1 || 0;
       }
     });
     
@@ -213,12 +226,12 @@ select.addEventListener("change", function(){
     selectedUnion.TakHogt = null;
     selectedUnion.DagarFler = null;
     
-    fors1 = 0;
-    fors2 = 0;
+    // fors1 = 0;
+    // fors2 = 0;
   } else {
     // Otherwise use the union's values
-    fors1 = Number(selectedUnion.Dagar) || 0;
-    fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) || 0;
+    fors1 = Number(selectedUnion.Dagar) + 1 || 0;
+    fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) + 1 || 0;
   }
   
   renderTicks();
@@ -257,8 +270,8 @@ if (ejmedlemCheckbox) {
 
      
       
-      fors1 = 0;
-      fors2 = 0;
+      // fors1 = 0;
+      // fors2 = 0;
     } else if (selectedUnion) {
       // Res ore original values
       selectedUnion.Tak = selectedUnion._originalTak;
@@ -266,8 +279,9 @@ if (ejmedlemCheckbox) {
       selectedUnion.TakHogt = selectedUnion._originalTakHogt;
       selectedUnion.DagarFler = selectedUnion._originalDagarFler;
       
-      fors1 = Number(selectedUnion.Dagar) || 0;
-      fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) || 0;
+      fors1 = Number(selectedUnion.Dagar) + 1 || 0;
+      fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) + 1 || 0;
+      c(fors1 + ' ' + fors2);
 
       select.disabled = false; // Enable select when member
       tillaggCheckbox.disabled = false; // Enable tillagg checkbox when member
@@ -322,7 +336,7 @@ function renderTicks() {
   const max = Number(range.max);
   
   // Bara vissa markers (måste ligga inom min..max)
-  const markerValues = [0, 100, fors1, 200, fors2, 300].filter(v => v !== undefined && v !== null && !isNaN(v));
+  const markerValues = [0, 101, fors1, 201, fors2, 301].filter(v => v !== undefined && v !== null && !isNaN(v));
 
   for (const v of markerValues) {
     if (v < min || v > max) continue;
