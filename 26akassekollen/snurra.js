@@ -279,6 +279,7 @@ if (ejmedlemCheckbox) {
       selectedUnion.DagarFler = null;
 
       select.disabled = true; // Disable select when not a member
+      select.value = ""; // Clear select when not a member
       tillaggCheckbox.disabled = true; // Disable tillagg checkbox when not a member
       tillaggCheckbox.checked = false; // Uncheck tillagg when not a member
       
