@@ -280,8 +280,7 @@ if (ejmedlemCheckbox) {
 
       select.disabled = true; // Disable select when not a member
       tillaggCheckbox.disabled = true; // Disable tillagg checkbox when not a member
-
-     
+      tillaggCheckbox.checked = false; // Uncheck tillagg when not a member
       
       // fors1 = 0;
       // fors2 = 0;
