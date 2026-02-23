@@ -52,6 +52,9 @@ img.headerImage {
 }
 
 input[name="inputLon"], select[name="fack"] {
+	border-radius: 4px;
+	stroke-width: 2px;
+	margin-top: 5px;
 	/* line-height: 1em; */
 	/* font-size: 1em; */
 }
@@ -64,10 +67,14 @@ input[name="inputLon"], select[name="fack"] {
 	line-height: 2;
   }
 
+  /* .padding-bottom {
+	margin-bottom: 30px;
+  } */
+
   input[type="range"] {
 	display: block;
 	cursor: pointer;
-	margin-top: 30px;
+	margin-top: 20px;
   }
 
   .boxwidth {
@@ -114,6 +121,7 @@ input[name="inputLon"], select[name="fack"] {
 	border-radius: 3%;
 	border: none;
 	margin-top: -4px;
+
   }
 
   #daysSlider::-webkit-slider-runnable-track {
@@ -136,13 +144,23 @@ input[name="inputLon"], select[name="fack"] {
 	position: absolute;
 	white-space: nowrap;
 	transition: left 0.15s ease;
+	margin-right: 30px;
+	/* padding-left: 30px; */
 	/* top: -2px; */
 	/* background-color: white; */
 	/* color: black;
 	padding: 2px 5px; */
 
   }
-	
+
+  /* #daysText {
+	padding-right: 30px;
+  }
+
+  #daysValue {
+	padding-left: 30px;
+  }
+	 */
 
   .ticks{
   position: relative;
@@ -222,6 +240,7 @@ p#dagarinfo, p#aktivitetstodInfo {
 	padding: 10px;
 	width: 100%;
 	margin: 20px 0px 20px 0px;
+	min-height: 70px;
   }
 
   .stunningText {

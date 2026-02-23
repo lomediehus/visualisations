@@ -1,6 +1,6 @@
 [
   {
-    "Fack":"Akademikerförbundet SSR",
+    "Fack":" ",
     "Tak":100000.0,
     "Dagar":"140 ",
     "TakHogt":160000.0,
@@ -35,7 +35,7 @@
     "DagarFler":"200 "
   },
   {
-    "Fack":"Fastighets förbund",
+    "Fack":"Fastighets",
     "Tak":null,
     "Dagar":null,
     "TakHogt":null,
@@ -70,7 +70,7 @@
     "DagarFler":"150 "
   },
   {
-    "Fack":"Handelsanställdas förbund",
+    "Fack":"Handels",
     "Tak":100000.0,
     "Dagar":"100 ",
     "TakHogt":160000.0,
@@ -98,7 +98,7 @@
     "DagarFler":120
   },
   {
-    "Fack":"Kommunalarbetareförbundet",
+    "Fack":"Kommunal",
     "Tak":45000.0,
     "Dagar":"150 ",
     "TakHogt":160000.0,
@@ -126,7 +126,7 @@
     "DagarFler":"100 "
   },
   {
-    "Fack":"Livsmedelsarbetareförbundet",
+    "Fack":"Livs",
     "Tak":200000.0,
     "Dagar":"200 ",
     "TakHogt":160000.0,
@@ -196,7 +196,7 @@
     "DagarFler":"125 "
   },
   {
-    "Fack":"Sveriges Arbetsterapeuter",
+    "Fack":"Arbetsterapeuterna",
     "Tak":50000.0,
     "Dagar":"120 ",
     "TakHogt":160000.0,
@@ -231,7 +231,7 @@
     "DagarFler":null
   },
   {
-    "Fack":"Sveriges psykologförbund",
+    "Fack":"Psykologförbundet",
     "Tak":80000.0,
     "Dagar":"120 ",
     "TakHogt":140000.0,
@@ -252,7 +252,7 @@
     "DagarFler":"200 "
   },
   {
-    "Fack":"Transportarbetarförbundet",
+    "Fack":"Transport",
     "Tak":80000.0,
     "Dagar":"100 ",
     "TakHogt":160000.0,
