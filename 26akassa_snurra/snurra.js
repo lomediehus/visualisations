@@ -109,12 +109,16 @@ function formatSwedishNumber(num) {
 }
 
 // Calculate benefit based on salary, days, and union
-function calculateBenefit() {
+function calculateBenefit(event) {
   const salary = Number(inputLon.value);
   const days = Number(daysSlider.value);
   
   if (!selectedUnion || isNaN(salary) || salary <= 0) {
-    akassa.value = salary && isNaN(salary) ? "Skriv bara siffror" : "";
+    inputLon.value = isNaN(salary) && inputLon.value !== "" ? "Skriv bara siffror!" : inputLon.value;
+    //if inputLon value is "Skriv bara siffror!" and user presses backspace or deletes the text, clear the input
+    if (inputLon.value === "Skriv bara siffror!" && (event.key === "Backspace" || event.key === "Delete")) {
+      inputLon.value = "";
+    }
     if (calculationInfo) {
       calculationInfo.textContent = "";
     } else {
@@ -276,8 +280,7 @@ if (ejmedlemCheckbox) {
 
       select.disabled = true; // Disable select when not a member
       tillaggCheckbox.disabled = true; // Disable tillagg checkbox when not a member
-
-     
+      tillaggCheckbox.checked = false; // Uncheck tillagg when not a member
       
       // fors1 = 0;
       // fors2 = 0;
@@ -313,10 +316,17 @@ function updateLabelPosition() {
   // Update label position
   const label = document.querySelector('label[for="daysSlider"]');
   if (label) {
-    label.style.left = `calc(${percentage}% + ${(8 - percentage * 0.15)}px)`;
+    const sliderWidth = daysSlider.offsetWidth || 0;
+    const labelWidth = label.offsetWidth || 0;
+    const halfLabel = labelWidth / 2;
+    const rawLeft = (percentage / 100) * sliderWidth;
+    const clampedLeft = Math.min(sliderWidth - halfLabel, Math.max(halfLabel, rawLeft));
+    label.style.left = `${clampedLeft}px`;
     label.style.transform = 'translateX(-50%)';
   }
 }
+
+window.addEventListener("resize", updateLabelPosition);
 
 daysSlider.addEventListener("input", function(){
   const value = Number(this.value);
