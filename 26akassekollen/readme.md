@@ -1,0 +1,1 @@
+https://arbetet.se/2024/02/22/se-hur-mycket-du-borde-tjana-om-lonen-foljt-inflationen/
