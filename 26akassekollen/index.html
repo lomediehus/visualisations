@@ -34,13 +34,17 @@
               <!-- Options will be populated from data.json -->
             </select>
           </div>
-          <label for="ejmedlem"> Jag är inte med i något fack.</label>
-          <input type="checkbox" id="ejmedlem" name="ejmedlem">
+         
+          <label for="ejmedlem" class="chk"> Jag är inte med i något fack.
+          <input type="checkbox" id="ejmedlem" class="chk__input" name="ejmedlem">
+           <span class="chk__box" aria-hidden="true"></span></label>
+        <!-- <span class="chk__label">Jag är inte med i något fack</span></label> -->
          <div id="kryssruta">
           <h3 class="rubrik">Har du en tilläggsförsäkring i facket?</h3>
-          <label for="tillagg"> Ja.</label>
-          <input type="checkbox" id="tillagg" name="tillagg">
-        <!-- </div> -->
+          <label for="tillagg" class="chk"> Ja.
+          <input type="checkbox" id="tillagg" class="chk__input" name="tillagg">
+           <span class="chk__box" aria-hidden="true"></span></label>
+        </div>
         
 
          
@@ -55,7 +59,7 @@
             <p id="dagarinfo">Dagar som hör till inkomstförsäkringen står i fet stil.</p>
           </div>
 
-        </div>
+        <!-- </div> -->
 
         <!-- <div class="flexcontainerInner"> -->
 
@@ -78,8 +82,9 @@
 
           </div> -->
           </div>
+        </div>
       <!-- </div> -->
-
+     
       
      
     </div>
