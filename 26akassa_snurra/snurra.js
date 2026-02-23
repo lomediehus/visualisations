@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // var lon = document.getElementById("lon");
 var akassa = document.getElementById("akassa");
-var aKassa2 = document.getElementById("akassa2");
+// var aKassa2 = document.getElementById("akassa2");
 var inputLon = document.getElementById("inputLon");
 // var shoot = document.getElementById("calculate");
 let select = document.getElementById("fack");
@@ -67,6 +67,8 @@ if (akassa) akassa.value = "nonsense";
 const aKassa_100 = 0.80; //80 procent av lönen
 const aKassa_200 = 0.70; //70 procent av lönen
 const aKassa_300 = 0.65; //65 procent av lönen
+const aKassa_400 = 0.60; //65 procent av lönen
+
 
 // Load JSON data and populate select options
 fetch('data.json')
@@ -135,7 +137,9 @@ function calculateBenefit() {
   const forsakringDagarDefault = dagar;
   const forsakringDagarTillagg = dagar + dagarFler;
 
-  if (days >= 201) {
+  if (days >= 301) {
+    percentage = aKassa_400; // 60%
+  } else if (days >= 201) {
     percentage = aKassa_300; // 65%
   } else if (days >= 101) {
     percentage = aKassa_200; // 70 %
@@ -181,6 +185,11 @@ function calculateBenefit() {
     calculationInfo = document.getElementById("calculationInfo");
     if (calculationInfo) calculationInfo.textContent = info + (finalBenefit < calculatedBenefit ? `, tak: ${formatSwedishNumber(ceiling)} kr` : "");
     else c('warning: calculationInfo element not found');
+  }
+
+  if (percentage === aKassa_400) {
+    akassa.innerHTML += "<br><span class='aktivitetstod-info'>Efter 300 dagar är a-kassan slut och man kan istället få aktivitetsstöd. Det är först 60% av inkomsten upp till taket, och trappas sedan ner var hundrade dag.</span>";
+    c("nu blir det aktivitetsstöd efter 300 dagar");
   }
 
   let kryssad = tillagg ? "Tillägg är ikryssat.<br>" : "";

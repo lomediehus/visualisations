@@ -47,7 +47,7 @@ body *:not(h3.rubrik):not(h3.rubrik *) {
 img.headerImage {
 	width: 85%;
 	height: auto;
-	margin: 20px auto;
+	margin: auto;
 	padding-top: 30px;
 }
 
@@ -182,7 +182,7 @@ input[name="inputLon"], select[name="fack"] {
   font-weight: bold;
 }
 
-p#dagarinfo {
+p#dagarinfo, p#aktivitetstodInfo {
 	font-size: 0.7em;
 	margin-top: 25px;
 	margin-bottom: 15px;
@@ -226,7 +226,15 @@ p#dagarinfo {
 
   .stunningText {
 	font-size: 1.8em !important;
+	margin-bottom: 0px;
   }
+
+	.aktivitetstod-info {
+		display: inline-block;
+		margin-top: 6px;
+		font-size: 0.7rem !important;
+		line-height: 1.25;
+	}
 
   /* button#calculate {
 	color: red;
