@@ -156,7 +156,7 @@ function doStuff() {
   var juldatum = new Date("November 26 2025")
   var nyarsdatum = new Date("December 27 2025");
   var trettonhelgsdatum = new Date("January 2 2026");
-  var paskdatum = new Date("February 21 2026");
+  var paskdatum = new Date("February 21 2025");
   var pingstdatum = new Date("April 22 2023");
 
   var midsommardatum = new Date("May 22 2025");
@@ -170,10 +170,10 @@ function doStuff() {
 
 
     //if current date is also after nyar
-    if (date.getTime() > paskdatum.getTime()) {
-      document.getElementById("helgbild").src = 'pask.svg';
-      goActive(helgknapp4);
-      helgnr = "4";
+    if (date.getTime() > nyarsdatum.getTime()) {
+      document.getElementById("helgbild").src = 'trettonhelg.svg';
+      goActive(helgknapp3);
+      helgnr = "3";
     }
     else {
       document.getElementById("helgbild").src = 'nyar.svg';
