@@ -339,8 +339,11 @@
       function clicked(d,i) {
         //store the property Räddningstjänst of the clicked element
         let grupp = d.properties.Räddningstjänst;
-        //Conditional to assign a value to "lon". if there is a lön, i.e. not 0 in the field, format the lön and assign it. Otherwise assign an string to explain why there is no lön.
-        let lon = (d.properties.Lön != 0) ? $.number(d.properties.Lön, 0, ',', "&#8239;" ) + ' kr/mån': 'Lönen visas inte eftersom räddningstjänsten har färre än fem anställda.';
+        //Conditional to assign a value to "lon". if there is a lön, format and show it, otherwise show a fallback message.
+        const lonValue = Number(String(d.properties.Lön).replace(/\s/g, ''));
+        let lon = (Number.isFinite(lonValue) && lonValue > 0)
+          ? $.number(lonValue, 0, ',', "&#8239;") + ' kr/mån'
+          : 'Lönen visas inte eftersom räddningstjänsten har färre än fem anställda.';
         let kommungrupp = d.properties.Kommunlista;
 
 
