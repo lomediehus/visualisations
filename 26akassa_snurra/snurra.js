@@ -115,10 +115,14 @@ function calculateBenefit(event) {
   const days = Number(daysSlider.value);
   
   if (!selectedUnion || isNaN(salary) || salary <= 0) {
+    const hadNonNumericInput = isNaN(salary) && inputLon.value !== "";
     inputLon.value = isNaN(salary) && inputLon.value !== "" ? "Skriv bara siffror!" : inputLon.value;
     //if inputLon value is "Skriv bara siffror!" and user presses backspace or deletes the text, clear the input
-    if (inputLon.value === "Skriv bara siffror!" && (event.key === "Backspace" || event.key === "Delete")) {
+    if (inputLon.value === "Skriv bara siffror!" && event && (event.key === "Backspace" || event.key === "Delete")) {
       inputLon.value = "";
+    }
+    if (hadNonNumericInput && forklaring) {
+      forklaring.innerHTML = "Nåt blev fel. Kolla att du skrivit en riktig siffra för lönen.";
     }
     if (calculationInfo) {
       calculationInfo.textContent = "";
@@ -213,8 +217,6 @@ function calculateBenefit(event) {
     // forklaring.innerHTML = '';
     forklaring.innerHTML = infoText1 + infoText3;
   }
-  
-
 }
 
 
