@@ -36,6 +36,7 @@ if (!calculationInfo) {
 }
 let fackData = [];
 let selectedUnion = null;
+let lastSelectedUnionIndex = 0;
 // const i2 = 415.15;
 let i1 = 0;
 // let result;
@@ -196,12 +197,12 @@ function calculateBenefit(event) {
     c("nu blir det aktivitetsstöd efter 300 dagar");
   }
 
-  let kryssad = tillagg ? "Tillägg är ikryssat.<br>" : "";
+  let kryssad = tillagg ? "Du har kryssat i tilläggsförsäkring.<br>" : "";
 
-  let infoText1 = `Valt fackförbund är ${selectedUnion.Fack}`
+  let infoText1 = `Valt fackförbund är ${selectedUnion.Fack}.`
   let infoText2 = `Inget fackförbund är valt.`
   let infoText3 = `
-  <br>Du har uppgett en lön på ${formatSwedishNumber(salary)} kr.<br>${kryssad}Vid ${days} dagars arbetslöshet är taket ${formatSwedishNumber(ceiling)} kr.<br>Du får ${Math.round(percentage * 100)}% av lönen upp till taket, alltså ${formatSwedishNumber(finalBenefit)} kr/månad.
+  <br>Din lön är ${formatSwedishNumber(salary)} kr.<br>${kryssad}Du får ${Math.round(percentage * 100)}% av din lön (upp till taket) alltså ${formatSwedishNumber(finalBenefit)} kr/månad. Vid ${days} dagars arbetslöshet är taket ${formatSwedishNumber(ceiling)} kr.<br>
   `
 
   if (select.disabled) {
@@ -223,6 +224,9 @@ inputLon.addEventListener("keyup", calculateBenefit);
 select.addEventListener("change", function(){
   const index = Number(this.value);
   selectedUnion = fackData[index];
+  if (!isNaN(index) && index >= 0 && index < fackData.length) {
+    lastSelectedUnionIndex = index;
+  }
   c("Selected union:", selectedUnion);
   
   // Check if "ejmedlem" is checked
@@ -257,6 +261,7 @@ if (tillaggCheckbox) {
   tillaggCheckbox.addEventListener("change", function() {
     c("Tillägg är nu:", this.checked);
     c(this.checked);
+    renderTicks();
     calculateBenefit();
   });
 }
@@ -266,6 +271,11 @@ const ejmedlemCheckbox = document.getElementById("ejmedlem");
 if (ejmedlemCheckbox) {
   ejmedlemCheckbox.addEventListener("change", function() {
     if (this.checked && selectedUnion) {
+      const currentIndex = Number(select.value);
+      if (!isNaN(currentIndex) && currentIndex >= 0 && currentIndex < fackData.length) {
+        lastSelectedUnionIndex = currentIndex;
+      }
+
       // Store original values
       selectedUnion._originalTak = selectedUnion.Tak;
       selectedUnion._originalDagar = selectedUnion.Dagar;
@@ -279,23 +289,34 @@ if (ejmedlemCheckbox) {
       selectedUnion.DagarFler = null;
 
       select.disabled = true; // Disable select when not a member
+      select.value = ""; // Clear select when not a member
       tillaggCheckbox.disabled = true; // Disable tillagg checkbox when not a member
       tillaggCheckbox.checked = false; // Uncheck tillagg when not a member
       
       // fors1 = 0;
       // fors2 = 0;
     } else if (selectedUnion) {
-      // Res ore original values
-      selectedUnion.Tak = selectedUnion._originalTak;
-      selectedUnion.Dagar = selectedUnion._originalDagar;
-      selectedUnion.TakHogt = selectedUnion._originalTakHogt;
-      selectedUnion.DagarFler = selectedUnion._originalDagarFler;
-      
-      fors1 = Number(selectedUnion.Dagar) + 1 || 0;
-      fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) + 1 || 0;
-      c(fors1 + ' ' + fors2);
-
       select.disabled = false; // Enable select when member
+      if (fackData.length > 0) {
+        const restoreIndex = (lastSelectedUnionIndex >= 0 && lastSelectedUnionIndex < fackData.length)
+          ? lastSelectedUnionIndex
+          : 0;
+        select.value = String(restoreIndex);
+        selectedUnion = fackData[restoreIndex];
+      }
+
+      // Restore original values for the newly selected union if needed
+      if (selectedUnion) {
+        if (selectedUnion._originalTak !== undefined) selectedUnion.Tak = selectedUnion._originalTak;
+        if (selectedUnion._originalDagar !== undefined) selectedUnion.Dagar = selectedUnion._originalDagar;
+        if (selectedUnion._originalTakHogt !== undefined) selectedUnion.TakHogt = selectedUnion._originalTakHogt;
+        if (selectedUnion._originalDagarFler !== undefined) selectedUnion.DagarFler = selectedUnion._originalDagarFler;
+
+        fors1 = Number(selectedUnion.Dagar) + 1 || 0;
+        fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) + 1 || 0;
+        c(fors1 + ' ' + fors2);
+      }
+
       tillaggCheckbox.disabled = false; // Enable tillagg checkbox when member
       c(tillagg.disabled);
     }
@@ -353,11 +374,35 @@ function renderTicks() {
 
   const min = Number(range.min);
   const max = Number(range.max);
+  const tillaggCheckbox = document.getElementById("tillagg");
+  const ejmedlemCheckbox = document.getElementById("ejmedlem");
+  const isNotMember = !!(ejmedlemCheckbox && ejmedlemCheckbox.checked);
+  const showFors2 = !isNotMember && !!(tillaggCheckbox && tillaggCheckbox.checked);
+  const showFors1 = !isNotMember && !showFors2;
   
   // Bara vissa markers (måste ligga inom min..max)
-  const markerValues = [0, 101, fors1, 201, fors2, 301].filter(v => v !== undefined && v !== null && !isNaN(v));
+  // Visa fors1 från start (om värde finns), visa fors2 endast om tillägg är ikryssad.
+  // När fors2 visas döljs fors1.
+  const markers = [
+    { value: 0, insurance: false },
+    { value: 101, insurance: false },
+    { value: 201, insurance: false },
+    { value: 301, insurance: false },
+    { value: showFors1 ? fors1 : null, insurance: true },
+    { value: showFors2 ? fors2 : null, insurance: true }
+  ].filter(m => m.value !== undefined && m.value !== null && !isNaN(m.value));
 
-  for (const v of markerValues) {
+  // Slå ihop eventuella dubbletter på samma dag.
+  // Om en försäkringsmarkör finns på samma värde prioriteras insurance=true.
+  const markerByValue = new Map();
+  for (const marker of markers) {
+    const existing = markerByValue.get(marker.value);
+    if (!existing || marker.insurance) {
+      markerByValue.set(marker.value, marker);
+    }
+  }
+
+  for (const { value: v, insurance } of markerByValue.values()) {
     if (v < min || v > max) continue;
 
     const pct = ((v - min) / (max - min)) * 100;
@@ -372,7 +417,7 @@ function renderTicks() {
     label.className = "tick__label";
     
     // Add special class for insurance period markers
-    if (v === fors1 || v === fors2) {
+    if (insurance) {
       label.classList.add("tick__label--insurance");
     }
     
