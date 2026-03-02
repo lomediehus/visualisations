@@ -14,6 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // var lon = document.getElementById("lon");
 var akassa = document.getElementById("akassa");
+const stunningText = document.querySelector("p.stunningText");
+const resultEl = stunningText || akassa;
+
+function clearResultText() {
+  if (stunningText) stunningText.innerHTML = "";
+  if (akassa && akassa !== stunningText) akassa.innerHTML = "";
+}
+
+function setResultText(html) {
+  if (resultEl) resultEl.innerHTML = html;
+}
+
 // var aKassa2 = document.getElementById("akassa2");
 var inputLon = document.getElementById("inputLon");
 // var shoot = document.getElementById("calculate");
@@ -111,24 +123,35 @@ function formatSwedishNumber(num) {
 
 // Calculate benefit based on salary, days, and union
 function calculateBenefit(event) {
-  const salary = Number(inputLon.value);
-  const days = Number(daysSlider.value);
-  
+  const rawSalaryInput = (inputLon.value || "").trim();
+  const hadNonNumericInput = rawSalaryInput !== "" && !/^\d+$/.test(rawSalaryInput);
+  const salary = Number(rawSalaryInput.replace(/\s+/g, ""));
+  const days = Number(daysSlider.value) || 0;
+  let tillagg = false;
+
+  const isDeleteAction =
+    event &&
+    event.type === "input" &&
+    (event.inputType === "deleteContentBackward" ||
+     event.inputType === "deleteContentForward" ||
+     event.inputType === "deleteByCut");
+
   if (!selectedUnion || isNaN(salary) || salary <= 0) {
-    inputLon.value = isNaN(salary) && inputLon.value !== "" ? "Skriv bara siffror!" : inputLon.value;
-    //if inputLon value is "Skriv bara siffror!" and user presses backspace or deletes the text, clear the input
-    if (inputLon.value === "Skriv bara siffror!" && (event.key === "Backspace" || event.key === "Delete")) {
-      inputLon.value = "";
+    clearResultText();
+
+    // Undantag: skriv INTE tillbaka feltext när användaren raderar
+    if (hadNonNumericInput && !isDeleteAction) {
+      inputLon.value = "Skriv bara siffror!";
     }
-    if (calculationInfo) {
-      calculationInfo.textContent = "";
-    } else {
-      calculationInfo = document.getElementById("calculationInfo");
-      if (calculationInfo) calculationInfo.textContent = "";
-      else c('warning: calculationInfo element not found');
+
+    if (hadNonNumericInput && forklaring) {
+      forklaring.textContent = "Nåt blev fel. Kolla att du skrivit en riktig siffra för lönen.";
     }
+
+    if (calculationInfo) calculationInfo.textContent = "";
     return;
   }
+  
   
   let percentage = aKassa_100; // 80%
   let defaultCeiling = 34000; // Default ceiling
@@ -183,7 +206,14 @@ function calculateBenefit(event) {
 
   const finalBenefit = salary > ceiling ? ceiling * percentage : calculatedBenefit;
   
-  akassa.innerHTML = formatSwedishNumber(finalBenefit) + " kr/månad";
+   if (!hadNonNumericInput) {
+    setResultText(formatSwedishNumber(finalBenefit) + " kr/månad");
+  }
+
+  if (percentage === aKassa_400 && resultEl) {
+    resultEl.innerHTML += "<br><span class='aktivitetstod-info'>Efter 300 dagar är a-kassan slut och man kan istället få aktivitetsstöd. Det är först 60% av inkomsten upp till taket, och trappas sedan ner var hundrade dag.</span>";
+    c("nu blir det aktivitetsstöd efter 300 dagar");
+  }
   if (calculationInfo) {
     calculationInfo.textContent = info + (finalBenefit < calculatedBenefit ? `, tak: ${formatSwedishNumber(ceiling)} kr` : "");
   } else {
@@ -213,13 +243,13 @@ function calculateBenefit(event) {
     // forklaring.innerHTML = '';
     forklaring.innerHTML = infoText1 + infoText3;
   }
-  
-
 }
 
 
 
-inputLon.addEventListener("keyup", calculateBenefit);
+// inputLon.addEventListener("keyup", calculateBenefit);
+inputLon.addEventListener("input", calculateBenefit);
+
 
 select.addEventListener("change", function(){
   const index = Number(this.value);
