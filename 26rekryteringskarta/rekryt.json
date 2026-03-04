@@ -1,0 +1,51 @@
+[
+  {
+    "ort":"Sjöbo",
+    "lat":55.53333333333333,
+    "long":13.13333333333333,
+    "bildurl":"",
+    "info":"Tolvåringar får lära sig i skolan om olika verksamheter inom vård och omsorg, via projektet “Hälsoagenterna."
+    },
+  { "ort":"Bromölla",
+    "lat":56.28333333333333,
+    "long":14.43333333333333,
+    "bildurl":"",
+    "info":"Högstadieelever blir anställda via företaget Ung Omsorg för att besöka äldreboenden och umgås med de äldre på helgerna."
+    },
+  {
+    "ort":"Skellefteå",
+    "lat":64.750000,
+    "long":20.950000,
+    "bildurl":"",
+    "info":"Under höstlovet fick niondeklassare prova på att jobba inom olika vård- och omsorgsverksamheter."
+    },
+    {
+    "ort": "Helsingborg",
+    "lat":56.046467,
+    "long":12.694512,
+    "bildurl":"",
+    "info":"Spelat in en spelfilm om unga som jobbar inom vård och omsorg."
+    },
+    {
+    "ort": "Strängnäs",
+    "lat":59.377222,
+    "long":17.020833,
+    "bildurl":"https://www.youtube.com/embed/keDvXdcWbjM?si=i_p7HTQR49ppXrVs",
+    "info":"Köpt in en reklamfilm med Youtubeprofilen Emil Hansius."
+    },
+    {
+    "ort": "Västervik",
+    "lat":57.757500,
+    "long":16.647778,
+    "bildurl":"",
+    "info":"Anställt sommarjobbande ungdomar som influencers för att visa upp vård- och omsorgsyrkena."
+    },
+    {
+    "ort": "Luleå",
+    "lat":65.584819,
+    "long":22.154568,
+    "bildurl":"",
+    "info":"Infört jobb inom omsorgen under skolloven för unga som fyllt 18."
+    }
+  
+]
