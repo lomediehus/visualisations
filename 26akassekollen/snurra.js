@@ -81,6 +81,7 @@ const aKassa_100 = 0.80; //80 procent av lönen
 const aKassa_200 = 0.70; //70 procent av lönen
 const aKassa_300 = 0.65; //65 procent av lönen
 const aKassa_400 = 0.60; //65 procent av lönen
+const MIN_SALARY = 11000;
 
 
 // Load JSON data and populate select options
@@ -121,6 +122,17 @@ function formatSwedishNumber(num) {
   return Math.round(num).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '\u00A0');
 }
 
+const minSalaryText = formatSwedishNumber(MIN_SALARY);
+const minSalaryMessage = `Ange minst ${minSalaryText} kr i lön för att få ett resultat.`;
+
+if (inputLon) {
+  inputLon.placeholder = ` Minst ${minSalaryText} kr`;
+  inputLon.title = minSalaryMessage;
+  if (inputLon.type === "number") {
+    inputLon.min = String(MIN_SALARY);
+  }
+}
+
 // Calculate benefit based on salary, days, and union
 function calculateBenefit(event) {
   const rawSalaryInput = (inputLon.value || "").trim();
@@ -149,6 +161,13 @@ function calculateBenefit(event) {
     }
 
     if (calculationInfo) calculationInfo.textContent = "";
+    return;
+  }
+
+  if (salary < MIN_SALARY) {
+    clearResultText();
+    if (calculationInfo) calculationInfo.textContent = minSalaryMessage;
+    if (forklaring) forklaring.innerHTML = minSalaryMessage;
     return;
   }
   
@@ -220,11 +239,6 @@ function calculateBenefit(event) {
     calculationInfo = document.getElementById("calculationInfo");
     if (calculationInfo) calculationInfo.textContent = info + (finalBenefit < calculatedBenefit ? `, tak: ${formatSwedishNumber(ceiling)} kr` : "");
     else c('warning: calculationInfo element not found');
-  }
-
-  if (percentage === aKassa_400) {
-    akassa.innerHTML += "<br><span class='aktivitetstod-info'>Efter 300 dagar är a-kassan slut och man kan istället få aktivitetsstöd. Det är först 60% av inkomsten upp till taket, och trappas sedan ner var hundrade dag.</span>";
-    c("nu blir det aktivitetsstöd efter 300 dagar");
   }
 
   let kryssad = tillagg ? "Du har kryssat i tilläggsförsäkring.<br>" : "";
@@ -356,28 +370,47 @@ if (ejmedlemCheckbox) {
 }
 
 // Function to update label position based on slider value
+function getSliderThumbSizePx() {
+  const thumbSizeRaw = getComputedStyle(document.documentElement)
+    .getPropertyValue("--slider-thumb-size")
+    .trim();
+  const thumbSize = Number.parseFloat(thumbSizeRaw);
+  return Number.isFinite(thumbSize) ? thumbSize : 35;
+}
+
+function sliderValueToPx(value) {
+  const min = Number(daysSlider.min) || 0;
+  const max = Number(daysSlider.max) || 100;
+  const sliderWidth = daysSlider.offsetWidth || 0;
+
+  if (max <= min) return 0;
+
+  const ratio = Math.min(1, Math.max(0, (value - min) / (max - min)));
+  const thumbSize = getSliderThumbSizePx();
+  const usableWidth = Math.max(0, sliderWidth - thumbSize);
+  return thumbSize / 2 + ratio * usableWidth;
+}
+
 function updateLabelPosition() {
-  const value = daysSlider.value;
-  const min = daysSlider.min || 0;
-  const max = daysSlider.max || 100;
-  
-  // Calculate percentage position
-  const percentage = ((value - min) / (max - min)) * 100;
-  
+  const value = Number(daysSlider.value);
+
   // Update label position
   const label = document.querySelector('label[for="daysSlider"]');
   if (label) {
     const sliderWidth = daysSlider.offsetWidth || 0;
     const labelWidth = label.offsetWidth || 0;
     const halfLabel = labelWidth / 2;
-    const rawLeft = (percentage / 100) * sliderWidth;
+    const rawLeft = sliderValueToPx(value);
     const clampedLeft = Math.min(sliderWidth - halfLabel, Math.max(halfLabel, rawLeft));
     label.style.left = `${clampedLeft}px`;
     label.style.transform = 'translateX(-50%)';
   }
 }
 
-window.addEventListener("resize", updateLabelPosition);
+window.addEventListener("resize", function() {
+  updateLabelPosition();
+  renderTicks();
+});
 
 daysSlider.addEventListener("input", function(){
   const value = Number(this.value);
@@ -435,12 +468,10 @@ function renderTicks() {
   for (const { value: v, insurance } of markerByValue.values()) {
     if (v < min || v > max) continue;
 
-    const pct = ((v - min) / (max - min)) * 100;
-
     const tick = document.createElement("div");
     tick.className = "tick";
     
-    tick.style.left = `${pct}%`;
+    tick.style.left = `${sliderValueToPx(v)}px`;
     tick.dataset.value = String(v);
 
     const label = document.createElement("div");

@@ -7,6 +7,7 @@
 
 :root {
   --control-stroke-color: #767676;
+	--slider-thumb-size: 35px;
 }
 
   /*
@@ -78,7 +79,7 @@ input[name="inputLon"], select[name="fack"] {
   input[type="range"] {
 	display: block;
 	cursor: pointer;
-	margin-top: 20px;
+	margin: 20px 0 0;
   }
 
   .boxwidth {
@@ -145,14 +146,16 @@ input[name="inputLon"], select[name="fack"] {
 	background: transparent;
 	width: 100%;
 	position: relative;
+	padding: 0;
+	border: 0;
 
   }
 
   #daysSlider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	width: 35px;
-	height: 35px;
+	width: var(--slider-thumb-size);
+	height: var(--slider-thumb-size);
 	background: #ee492e;
 	cursor: pointer;
 	border-radius: 3%;
@@ -160,8 +163,8 @@ input[name="inputLon"], select[name="fack"] {
   }
 
   #daysSlider::-moz-range-thumb {
-	width: 35px;
-	height: 35px;
+	width: var(--slider-thumb-size);
+	height: var(--slider-thumb-size);
 	background: #ee492e;
 	cursor: pointer;
 	border-radius: 3%;
