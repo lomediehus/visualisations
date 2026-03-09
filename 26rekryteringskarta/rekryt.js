@@ -13,7 +13,9 @@ var cirkeldata;
 // var loader = document.getElementById("loader");
 
 //Create a tooltip, hidden at the start
-var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
+var tooltip = d3.select("body").append("div")
+// var tooltip = d3.select("body").append("div").attr("class","tooltip u-textMeta");
+
 
 //Show tooltip
 function showTooltip(d) {
@@ -79,7 +81,7 @@ function clicked(d,i) {
   
   let markup = `
     <div id="kartpopuprubbe" class="u-textMeta fet">${d.ort}</div>
-    <div id="kartpopuptext"> ${d.info}"</div>
+    <div id="kartpopuptext"> ${d.info}</div>
     ${(() => {
       if (d.bildurl != "") {
         return `
@@ -171,35 +173,35 @@ document.addEventListener("DOMContentLoaded", function() {
             c("Result data:", result);
 
             //Checks if the the date is lower the the date in 'const date'. Change the value of the constant manually to choose which items are shown in the visualization.
-            function checkDatesCategories(item){
-            //  item.datum = new Date(Date.parse(item.datum))  
+            // function checkDatesCategories(item){
+            // //  item.datum = new Date(Date.parse(item.datum))  
 
-              // Set the date from which you want the items shown. 
-              // Set the date like this: 
-              // const date = new Date("2023-01-01");
-              // If you don't want to filter by dates, set the value to "null
-              const date = new Date("2021-01-01");
+            //   // Set the date from which you want the items shown. 
+            //   // Set the date like this: 
+            //   // const date = new Date("2023-01-01");
+            //   // If you don't want to filter by dates, set the value to "null
+            //   const date = new Date("2021-01-01");
 
-              //Set the category you want to show, like this: 
-              // const category = 'arbetstid'
-              // If you don't want to filter by category, set the value to 'null'
-              const category = null;
+            //   //Set the category you want to show, like this: 
+            //   // const category = 'arbetstid'
+            //   // If you don't want to filter by category, set the value to 'null'
+            //   const category = null;
 
-              //Checks if there is a valid date. Returns true if date/category is 'null', meaning it will not filter out any dates/categories.
-              const dateMatches = date ? item.datum > date : true;
-              const categoryMatches = category ? item.kategori === category : true;
+            //   //Checks if there is a valid date. Returns true if date/category is 'null', meaning it will not filter out any dates/categories.
+            //   const dateMatches = date ? item.datum > date : true;
+            //   const categoryMatches = category ? item.kategori === category : true;
 
 
 
-              // return item.datum > date && item.kategori == category
-              return dateMatches && categoryMatches;
-             }
+            //   // return item.datum > date && item.kategori == category
+            //   return dateMatches && categoryMatches;
+            //  }
             
             //get img urls to preload them
-            const imageUrls = [];      
-            result.forEach(function(item) {        
-              imageUrls.push(item.bildurl)
-            })
+            // const imageUrls = [];      
+            // result.forEach(function(item) {        
+            //   imageUrls.push(item.bildurl)
+            // })
 
             function preloadImages(urls) {
               urls.forEach(url => {
@@ -233,7 +235,11 @@ document.addEventListener("DOMContentLoaded", function() {
             .on("mouseout", hideTooltip);
 
             // Add labels with "ort" and "citat" for each circle
-            svg
+            const labelGroup = svg
+            .append("g")
+            .attr("class", "label-group");
+
+            labelGroup
             .selectAll("myLabels")
             .data(result)
             .enter()
@@ -242,7 +248,6 @@ document.addEventListener("DOMContentLoaded", function() {
             .attr("y", function(d){ return projection([d.long, d.lat])[1] + 4; })
             .attr("class", "label-ort BodyImage-caption")
             .attr("text-anchor", "start")
-            .style("font-size", "12px")
             .style("fill", "#333")
             .text(function(d) { return d.ort; });
 

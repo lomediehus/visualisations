@@ -101,12 +101,23 @@ label:hover {
   background-color: gray;
 }
 
-/* g.label-group text.label-ort {
-  font-size: small;
+/* .label-ort {
+  font-size: xx-small;
+  color: black;
+  line-height: 1;
+  pointer-events: none;
+} */
+
+
+g.label-group text.label-ort {
+  font-size: x-small;
+  /* font-weight: bold; */
+  pointer-events: none;
 }
+
   g.label-group text.label-citat {
   font-size: medium;
-} */
+}
 
 foreignObject .label-citat {
   font-size: 16px;
