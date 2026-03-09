@@ -64,6 +64,12 @@ input[name="inputLon"], select[name="fack"] {
 	/* font-size: 1em; */
 }
 
+#inputLon::placeholder {
+	color: #767676;
+	opacity: 0.6;
+
+}
+
   select, form,label, input {
 	display: inline;
   }
