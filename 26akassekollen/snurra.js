@@ -72,6 +72,12 @@ const ticksEl = document.getElementById("ticks");
 let fors1;
 let fors2;
 
+function getFirstSelectableUnionIndex() {
+  if (!select || select.options.length === 0) return -1;
+  const firstValue = Number(select.options[0].value);
+  return Number.isFinite(firstValue) ? firstValue : -1;
+}
+
 // Put the text "nonsense" in the a-kassa input field
 if (akassa) akassa.value = "nonsense";
 
@@ -95,25 +101,29 @@ fetch('data.json')
     
     // Populate select with data from JSON
     fackData.forEach((item, index) => {
+      const fackName = typeof item?.Fack === 'string' ? item.Fack.trim() : '';
+      if (!fackName) return;
+
       const option = document.createElement('option');
       option.value = index;
-      option.textContent = item.Fack;
+      option.textContent = fackName;
       select.appendChild(option);
     });
+    c(fackData.map(item => item.Fack));
 
-    if (fackData.length > 0) {
+    const firstSelectableIndex = getFirstSelectableUnionIndex();
+    if (firstSelectableIndex >= 0) {
       // Force visible default in all environments/browsers.
-      select.selectedIndex = 0;
-      select.value = '0';
-      if (select.options[0]) {
-        select.options[0].selected = true;
+      select.value = String(firstSelectableIndex);
+      if (select.selectedIndex < 0) {
+        select.selectedIndex = 0;
       }
 
-      selectedUnion = fackData[0];
+      selectedUnion = fackData[firstSelectableIndex];
       i1 = Number(selectedUnion.Tak) || 0;
       fors1 = Number(selectedUnion.Dagar) + 1 || 0;
       fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) + 1 || 0;
-      lastSelectedUnionIndex = 0;
+      lastSelectedUnionIndex = firstSelectableIndex;
     }
     
     // Calculate initial values
@@ -349,11 +359,19 @@ if (ejmedlemCheckbox) {
     } else if (selectedUnion) {
       select.disabled = false; // Enable select when member
       if (fackData.length > 0) {
+        const fallbackIndex = getFirstSelectableUnionIndex();
         const restoreIndex = (lastSelectedUnionIndex >= 0 && lastSelectedUnionIndex < fackData.length)
           ? lastSelectedUnionIndex
-          : 0;
-        select.value = String(restoreIndex);
-        selectedUnion = fackData[restoreIndex];
+          : fallbackIndex;
+        const hasRestoreOption = restoreIndex >= 0 && !!select.querySelector(`option[value="${restoreIndex}"]`);
+
+        if (hasRestoreOption) {
+          select.value = String(restoreIndex);
+          selectedUnion = fackData[restoreIndex];
+        } else if (fallbackIndex >= 0) {
+          select.value = String(fallbackIndex);
+          selectedUnion = fackData[fallbackIndex];
+        }
       }
 
       // Restore original values for the newly selected union if needed
