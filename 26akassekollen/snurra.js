@@ -72,6 +72,20 @@ const ticksEl = document.getElementById("ticks");
 let fors1;
 let fors2;
 
+function normalizeUnionItem(item) {
+  if (!item || typeof item !== 'object') return {};
+
+  const normalized = {};
+  Object.keys(item).forEach((key) => {
+    const normalizedKey = String(key).replace(/^\uFEFF/, '').trim();
+    if (!(normalizedKey in normalized)) {
+      normalized[normalizedKey] = item[key];
+    }
+  });
+
+  return normalized;
+}
+
 function getFirstSelectableUnionIndex() {
   if (!select || select.options.length === 0) return -1;
   const firstValue = Number(select.options[0].value);
@@ -94,7 +108,7 @@ const MIN_SALARY = 11000;
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    fackData = Array.isArray(data) ? data : [];
+    fackData = (Array.isArray(data) ? data : []).map(normalizeUnionItem);
     
     // Clear existing options
     select.innerHTML = '';
@@ -102,11 +116,10 @@ fetch('data.json')
     // Populate select with data from JSON
     fackData.forEach((item, index) => {
       const fackName = typeof item?.Fack === 'string' ? item.Fack.trim() : '';
-      if (!fackName) return;
 
       const option = document.createElement('option');
       option.value = index;
-      option.textContent = fackName;
+      option.textContent = fackName || 'Okänt fackförbund';
       select.appendChild(option);
     });
     c(fackData.map(item => item.Fack));
