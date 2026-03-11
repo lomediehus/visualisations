@@ -72,18 +72,59 @@ const ticksEl = document.getElementById("ticks");
 let fors1;
 let fors2;
 
+function cleanHiddenChars(value) {
+  return String(value).replace(/[\uFEFF\u200B-\u200D\u2060]/g, '');
+}
+
+function normalizeObjectKey(key) {
+  return cleanHiddenChars(key).trim();
+}
+
+function normalizeText(value) {
+  return cleanHiddenChars(value).trim();
+}
+
 function normalizeUnionItem(item) {
   if (!item || typeof item !== 'object') return {};
 
   const normalized = {};
   Object.keys(item).forEach((key) => {
-    const normalizedKey = String(key).replace(/^\uFEFF/, '').trim();
+    const normalizedKey = normalizeObjectKey(key);
     if (!(normalizedKey in normalized)) {
-      normalized[normalizedKey] = item[key];
+      const rawValue = item[key];
+      normalized[normalizedKey] = typeof rawValue === 'string' ? normalizeText(rawValue) : rawValue;
     }
   });
 
   return normalized;
+}
+
+function getUnionName(item) {
+  if (!item || typeof item !== 'object') return '';
+
+  if (typeof item.Fack === 'string' && item.Fack.trim()) {
+    return normalizeText(item.Fack);
+  }
+
+  // Fallback: hitta nyckel som motsvarar "Fack" även med osynliga tecken.
+  for (const key of Object.keys(item)) {
+    if (normalizeObjectKey(key).toLowerCase() === 'fack') {
+      const value = item[key];
+      if (typeof value === 'string' && value.trim()) {
+        return normalizeText(value);
+      }
+    }
+  }
+
+  // Sista fallback: första icke-numeriska textvärdet i objektet.
+  for (const value of Object.values(item)) {
+    if (typeof value !== 'string') continue;
+    const text = normalizeText(value);
+    if (!text) continue;
+    if (!/^\d+$/.test(text)) return text;
+  }
+
+  return '';
 }
 
 function getFirstSelectableUnionIndex() {
@@ -115,14 +156,14 @@ fetch('data.json')
     
     // Populate select with data from JSON
     fackData.forEach((item, index) => {
-      const fackName = typeof item?.Fack === 'string' ? item.Fack.trim() : '';
+      const fackName = getUnionName(item);
 
       const option = document.createElement('option');
       option.value = index;
-      option.textContent = fackName || 'Okänt fackförbund';
+      option.textContent = fackName;
       select.appendChild(option);
     });
-    c(fackData.map(item => item.Fack));
+    c(fackData.map(item => getUnionName(item)));
 
     const firstSelectableIndex = getFirstSelectableUnionIndex();
     if (firstSelectableIndex >= 0) {
