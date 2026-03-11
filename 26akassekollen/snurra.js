@@ -88,26 +88,33 @@ const MIN_SALARY = 11000;
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
-    fackData = data;
+    fackData = Array.isArray(data) ? data : [];
     
     // Clear existing options
     select.innerHTML = '';
     
     // Populate select with data from JSON
-    data.forEach((item, index) => {
+    fackData.forEach((item, index) => {
       const option = document.createElement('option');
       option.value = index;
       option.textContent = item.Fack;
       select.appendChild(option);
-      
-      // Set first value as default
-      if (index === 0) {
-        selectedUnion = item;
-        i1 = Number(item.Tak);
-        fors1 = Number(item.Dagar) + 1 || 0;
-        fors2 = Number(item.Dagar) + Number(item.DagarFler) + 1 || 0;
-      }
     });
+
+    if (fackData.length > 0) {
+      // Force visible default in all environments/browsers.
+      select.selectedIndex = 0;
+      select.value = '0';
+      if (select.options[0]) {
+        select.options[0].selected = true;
+      }
+
+      selectedUnion = fackData[0];
+      i1 = Number(selectedUnion.Tak) || 0;
+      fors1 = Number(selectedUnion.Dagar) + 1 || 0;
+      fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) + 1 || 0;
+      lastSelectedUnionIndex = 0;
+    }
     
     // Calculate initial values
     calculateBenefit();
@@ -362,7 +369,7 @@ if (ejmedlemCheckbox) {
       }
 
       tillaggCheckbox.disabled = false; // Enable tillagg checkbox when member
-      c(tillagg.disabled);
+      c(tillaggCheckbox.disabled);
     }
     renderTicks();
     calculateBenefit();
