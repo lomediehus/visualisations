@@ -1,17 +1,31 @@
 [
   {
-    "Fack":" ",
+    "Fack":"Akademikerförbundet SSR",
     "Tak":100000.0,
-    "Dagar":"140 ",
+    "Dagar":"140",
     "TakHogt":160000.0,
-    "DagarFler":"160 "
+    "DagarFler":"160"
+  },
+  {
+    "Fack":"Akademikerförbundet SSR",
+    "Tak":100000.0,
+    "Dagar":"140",
+    "TakHogt":160000.0,
+    "DagarFler":"160"
   },
   {
     "Fack":"Akavia",
     "Tak":100000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":160000.0,
-    "DagarFler":"150 "
+    "DagarFler":"150"
+  },
+  {
+    "Fack":"Arbetsterapeuterna",
+    "Tak":50000.0,
+    "Dagar":"120",
+    "TakHogt":160000.0,
+    "DagarFler":"180"
   },
   {
     "Fack":"Byggnads",
@@ -23,16 +37,16 @@
   {
     "Fack":"DIK",
     "Tak":100000.0,
-    "Dagar":"120 ",
+    "Dagar":"120",
     "TakHogt":160000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"Elektrikerförbundet",
     "Tak":80000.0,
-    "Dagar":"100 ",
+    "Dagar":"100",
     "TakHogt":160000.0,
-    "DagarFler":"200 "
+    "DagarFler":"200"
   },
   {
     "Fack":"Fastighets",
@@ -44,93 +58,93 @@
   {
     "Fack":"Finansförbundet",
     "Tak":80000.0,
-    "Dagar":"120 ",
+    "Dagar":"120",
     "TakHogt":120000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"Forena",
     "Tak":60000.0,
-    "Dagar":"120 ",
+    "Dagar":"120",
     "TakHogt":100000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"Fysioterapeuterna",
     "Tak":50000.0,
-    "Dagar":"120 ",
+    "Dagar":"120",
     "TakHogt":110000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"GS",
     "Tak":45000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":160000.0,
-    "DagarFler":"150 "
+    "DagarFler":"150"
   },
   {
     "Fack":"Handels",
     "Tak":100000.0,
-    "Dagar":"100 ",
+    "Dagar":"100",
     "TakHogt":160000.0,
-    "DagarFler":"200 "
+    "DagarFler":"200"
   },
   {
     "Fack":"Hotell- och restaurang",
     "Tak":50000.0,
-    "Dagar":"100 ",
+    "Dagar":"100",
     "TakHogt":160000.0,
-    "DagarFler":"200 "
+    "DagarFler":"200"
   },
   {
     "Fack":"IF Metall",
     "Tak":60000.0,
-    "Dagar":"100 ",
+    "Dagar":"100",
     "TakHogt":160000.0,
-    "DagarFler":"200 "
+    "DagarFler":"200"
   },
   {
     "Fack":"Journalistförbundet",
     "Tak":60000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":120000.0,
     "DagarFler":120
   },
   {
     "Fack":"Kommunal",
     "Tak":45000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":160000.0,
     "DagarFler":null
   },
   {
     "Fack":"Kyrkans akademikerförbund",
     "Tak":100000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":null,
     "DagarFler":null
   },
   {
     "Fack":"Läkarförbundet",
     "Tak":100000.0,
-    "Dagar":"120 ",
+    "Dagar":"120",
     "TakHogt":160000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"Ledarna",
     "Tak":80000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":170000.0,
-    "DagarFler":"100 "
+    "DagarFler":"100"
   },
   {
     "Fack":"Livs",
     "Tak":200000.0,
-    "Dagar":"200 ",
+    "Dagar":"200",
     "TakHogt":160000.0,
-    "DagarFler":"100 "
+    "DagarFler":"100"
   },
   {
     "Fack":"Musikerförbundet",
@@ -142,16 +156,23 @@
   {
     "Fack":"Naturvetarna",
     "Tak":100000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":160000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"Pappers",
     "Tak":50000.0,
-    "Dagar":"300 ",
+    "Dagar":"300",
     "TakHogt":160000.0,
     "DagarFler":null
+  },
+  {
+    "Fack":"Psykologförbundet",
+    "Tak":80000.0,
+    "Dagar":"120",
+    "TakHogt":140000.0,
+    "DagarFler":"180"
   },
   {
     "Fack":"Säljarna",
@@ -163,12 +184,12 @@
   {
     "Fack":"Seko",
     "Tak":1000000.0,
-    "Dagar":"100 ",
+    "Dagar":"100",
     "TakHogt":160000.0,
-    "DagarFler":"200 "
+    "DagarFler":"200"
   },
   {
-    "Fack":"Sjöbefälsförening",
+    "Fack":"Sjöbefälsföreningen",
     "Tak":null,
     "Dagar":null,
     "TakHogt":null,
@@ -177,107 +198,93 @@
   {
     "Fack":"SRAT",
     "Tak":100000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":160000.0,
-    "DagarFler":"150 "
+    "DagarFler":"150"
   },
   {
     "Fack":"ST",
     "Tak":80000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":160000.0,
-    "DagarFler":"150 "
+    "DagarFler":"150"
   },
   {
     "Fack":"SULF",
     "Tak":80000.0,
-    "Dagar":"175 ",
+    "Dagar":"175",
     "TakHogt":160000.0,
-    "DagarFler":"125 "
-  },
-  {
-    "Fack":"Arbetsterapeuterna",
-    "Tak":50000.0,
-    "Dagar":"120 ",
-    "TakHogt":160000.0,
-    "DagarFler":"180 "
+    "DagarFler":"125"
   },
   {
     "Fack":"Sveriges arkitekter",
     "Tak":100000.0,
-    "Dagar":"120 ",
+    "Dagar":"120",
     "TakHogt":160000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"Sveriges farmaceuter",
     "Tak":80000.0,
-    "Dagar":"120 ",
+    "Dagar":"120",
     "TakHogt":160000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"Sveriges ingenjörer",
     "Tak":100000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":160000.0,
-    "DagarFler":"150 "
+    "DagarFler":"150"
   },
   {
     "Fack":"Sveriges Lärare",
     "Tak":100000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":null,
     "DagarFler":null
   },
   {
-    "Fack":"Psykologförbundet",
-    "Tak":80000.0,
-    "Dagar":"120 ",
-    "TakHogt":140000.0,
-    "DagarFler":"180 "
-  },
-  {
     "Fack":"Sveriges skolledare",
     "Tak":100000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":null,
     "DagarFler":null
   },
   {
     "Fack":"Tjänstetandläkarna",
     "Tak":80000.0,
-    "Dagar":"100 ",
+    "Dagar":"100",
     "TakHogt":160000.0,
-    "DagarFler":"200 "
+    "DagarFler":"200"
   },
   {
     "Fack":"Transport",
     "Tak":80000.0,
-    "Dagar":"100 ",
+    "Dagar":"100",
     "TakHogt":160000.0,
-    "DagarFler":"200 "
+    "DagarFler":"200"
   },
   {
     "Fack":"Unionen",
     "Tak":60000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":150000.0,
-    "DagarFler":"50 "
+    "DagarFler":"50"
   },
   {
     "Fack":"Vårdförbundet",
     "Tak":100000.0,
-    "Dagar":"150 ",
+    "Dagar":"150",
     "TakHogt":160000.0,
-    "DagarFler":"150 "
+    "DagarFler":"150"
   },
   {
     "Fack":"Veterinärförbundet",
     "Tak":60000.0,
-    "Dagar":"120 ",
+    "Dagar":"120",
     "TakHogt":120000.0,
-    "DagarFler":"180 "
+    "DagarFler":"180"
   },
   {
     "Fack":"Vision",
