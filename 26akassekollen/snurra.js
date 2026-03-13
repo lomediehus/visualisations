@@ -7,7 +7,6 @@ if (host.includes("github")) {
   document.querySelector("link[rel='shortcut icon']").href = "favicon2.ico";
 }
 
-c("kör skript version ")
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -44,7 +43,6 @@ if (!calculationInfo) {
   } else {
     document.body.appendChild(calculationInfo);
   }
-  c('note: created calculationInfo fallback');
 }
 let fackData = [];
 let selectedUnion = null;
@@ -163,7 +161,6 @@ fetch('data.json')
       option.textContent = fackName;
       select.appendChild(option);
     });
-    c(fackData.map(item => getUnionName(item)));
 
     const firstSelectableIndex = getFirstSelectableUnionIndex();
     if (firstSelectableIndex >= 0) {
@@ -250,7 +247,6 @@ function calculateBenefit(event) {
   
   // Determine percentage and ceiling based on days
   const dagar = Number(selectedUnion.Dagar) || 0;
-  c("dagar från facket:", dagar);
   const dagarFler = Number(selectedUnion.DagarFler) || 0;
   const forsakringDagarDefault = dagar;
   const forsakringDagarTillagg = dagar + dagarFler;
@@ -291,7 +287,6 @@ function calculateBenefit(event) {
  
   
   // Calculate benefit with ceiling
-  c(percentage, ceiling);
   const calculatedBenefit = salary * percentage;
 
   const finalBenefit = salary > ceiling ? ceiling * percentage : calculatedBenefit;
@@ -301,8 +296,7 @@ function calculateBenefit(event) {
   }
 
   if (percentage === aKassa_400 && resultEl) {
-    resultEl.innerHTML += "<br><span class='aktivitetstod-info'>Efter 300 dagar är a-kassan slut och man kan istället få aktivitetsstöd. Det är först 60% av inkomsten upp till taket, och trappas sedan ner var hundrade dag.</span>";
-    c("nu blir det aktivitetsstöd efter 300 dagar");
+    resultEl.innerHTML += "<br><span class='aktivitetstod-info'>Efter 300 dagar är a-kassan slut och man kan istället få aktivitetsstöd. Klicka härunder för att läsa mer.</span>";
   }
   if (calculationInfo) {
     calculationInfo.textContent = info + (finalBenefit < calculatedBenefit ? `, tak: ${formatSwedishNumber(ceiling)} kr` : "");
@@ -312,12 +306,28 @@ function calculateBenefit(event) {
     else c('warning: calculationInfo element not found');
   }
 
+const akassaLimitDay =
+  days <= 100 ? 100 :
+  days <= 200 ? 200 :
+  300;
+
+const insuranceLimitDay = tillagg ? forsakringDagarTillagg : forsakringDagarDefault;
+const currentLimitDay = Number(ceiling) === defaultCeiling
+  ? 300
+  : (days <= insuranceLimitDay ? insuranceLimitDay : akassaLimitDay);
+
+  const afterDay300InfoText = "Aktivitetsstödet är först 60% av inkomsten upp till taket, och trappas sedan ner med fem procentenheter var hundrade dag. Lägsta ersättningen är 365 kr/dag. Övergångsregler kan gälla.";
+  if (days > 300) {
+    forklaring.innerHTML = afterDay300InfoText;
+    return;
+  }
+
   let kryssad = tillagg ? "Du har kryssat i tilläggsförsäkring.<br>" : "";
 
   let infoText1 = `Valt fackförbund är ${selectedUnion.Fack}.`
   let infoText2 = `Inget fackförbund är valt.`
   let infoText3 = `
-  <br>Din lön är ${formatSwedishNumber(salary)} kr.<br>${kryssad}Du får ${Math.round(percentage * 100)}% av din lön (upp till taket) alltså ${formatSwedishNumber(finalBenefit)} kr/månad. Vid ${days} dagars arbetslöshet är taket ${formatSwedishNumber(ceiling)} kr.<br>
+  <br>Din lön är ${formatSwedishNumber(salary)} kr.<br>${kryssad}Du får ${Math.round(percentage * 100)} % av din lön (upp till taket) alltså ${formatSwedishNumber(finalBenefit)}&nbsp;kr/månad. Taket är ${formatSwedishNumber(ceiling)} kr till och med dag ${currentLimitDay}.<br>
   `
 
   if (select.disabled) {
@@ -342,7 +352,6 @@ select.addEventListener("change", function(){
   if (!isNaN(index) && index >= 0 && index < fackData.length) {
     lastSelectedUnionIndex = index;
   }
-  c("Selected union:", selectedUnion);
   
   // Check if "ejmedlem" is checked
   const ejmedlemCheckbox = document.getElementById("ejmedlem");
@@ -374,8 +383,6 @@ select.addEventListener("change", function(){
 const tillaggCheckbox = document.getElementById("tillagg");
 if (tillaggCheckbox) {
   tillaggCheckbox.addEventListener("change", function() {
-    c("Tillägg är nu:", this.checked);
-    c(this.checked);
     renderTicks();
     calculateBenefit();
   });
@@ -437,11 +444,9 @@ if (ejmedlemCheckbox) {
 
         fors1 = Number(selectedUnion.Dagar) + 1 || 0;
         fors2 = Number(selectedUnion.Dagar) + Number(selectedUnion.DagarFler) + 1 || 0;
-        c(fors1 + ' ' + fors2);
       }
 
       tillaggCheckbox.disabled = false; // Enable tillagg checkbox when member
-      c(tillaggCheckbox.disabled);
     }
     renderTicks();
     calculateBenefit();
