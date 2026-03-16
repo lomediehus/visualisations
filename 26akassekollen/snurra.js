@@ -296,7 +296,7 @@ function calculateBenefit(event) {
   }
 
   if (percentage === aKassa_400 && resultEl) {
-    resultEl.innerHTML += "<br><span class='aktivitetstod-info'>Efter 300 dagar är a-kassan slut och man kan istället få aktivitetsstöd. Klicka härunder för att läsa mer.</span>";
+    resultEl.innerHTML += "<span class='aktivitetstod-info'>Efter 300 dagar är a-kassan slut och man kan istället få aktivitetsstöd. Klicka härunder för att läsa mer.</span>";
   }
   if (calculationInfo) {
     calculationInfo.textContent = info + (finalBenefit < calculatedBenefit ? `, tak: ${formatSwedishNumber(ceiling)} kr` : "");
@@ -327,7 +327,7 @@ const currentLimitDay = Number(ceiling) === defaultCeiling
   let infoText1 = `Valt fackförbund är ${selectedUnion.Fack}.`
   let infoText2 = `Inget fackförbund är valt.`
   let infoText3 = `
-  <br>Din lön är ${formatSwedishNumber(salary)} kr.<br>${kryssad}Du får ${Math.round(percentage * 100)} % av din lön (upp till taket) alltså ${formatSwedishNumber(finalBenefit)}&nbsp;kr/månad. Taket är ${formatSwedishNumber(ceiling)} kr till och med dag ${currentLimitDay}.<br>
+  <br>Din lön är ${formatSwedishNumber(salary)} kr.<br>${kryssad}Du får ${Math.round(percentage * 100)} % av din lön (upp till taket) alltså ${formatSwedishNumber(finalBenefit)}&nbsp;kr/månad. Taket är ${formatSwedishNumber(ceiling)} kr till och med dag ${currentLimitDay}*.<br>
   `
 
   if (select.disabled) {
@@ -499,7 +499,7 @@ window.addEventListener("resize", function() {
 daysSlider.addEventListener("input", function(){
   const value = Number(this.value);
   daysValue.textContent = value;
-  document.getElementById("daysText").textContent = value === 1 ? "dag" : "dagar";
+  document.getElementById("daysText").textContent = value === 1 ? "dag*" : "dagar*";
   updateLabelPosition();
   calculateBenefit();
 });
@@ -508,7 +508,7 @@ daysSlider.addEventListener("input", function(){
 daysSlider.addEventListener("change", function(){
   const value = Number(this.value);
   daysValue.textContent = value;
-  document.getElementById("daysText").textContent = value === 1 ? "dag" : "dagar";
+  document.getElementById("daysText").textContent = value === 1 ? "dag*" : "dagar*";
   updateLabelPosition();
   calculateBenefit();
 });

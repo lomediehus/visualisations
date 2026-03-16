@@ -50,9 +50,9 @@
          
 
           <div class="flexitem" id="sliderbox">
-            <h3 class="rubrik">Hur många dagar har du varit arbetslös?</h3>
+            <h3 class="rubrik">Hur många dagar* har du varit arbetslös?</h3>
             <div class="slider">
-              <label for="daysSlider"><span id="daysValue">1</span> <span id="daysText">dag</span></label><br>
+              <label for="daysSlider"><span id="daysValue">1</span> <span id="daysText">dag*</span></label><br>
               <input type="range" id="daysSlider" min="1" max="320" value="1" class="boxwidth">
               <div class="ticks" id="ticks" aria-hidden="true"></div>
             </div>
@@ -62,7 +62,7 @@
         <!-- </div> -->
 
         <!-- <div class="flexcontainerInner"> -->
-
+        <div id="stunningWrapper">  
            <div class="flexitem stunning" id="resultbox">
             <h3>Så mycket får du före skatt:</h3>
             <p class="stunningText"id="akassa"></p>
@@ -73,6 +73,10 @@
           <div id="forklaringRubrik"><span>Om beräkningen</span>
             <div id="forklaring"> </div>  
           </div>
+          <div id="fotnotDiv">
+            <span id="fet">* </span>Med ”dagar” avses ersättnings-<br>dagar från a-kassan.
+          </div>
+        </div>
 
 
           <!-- <div class="" id="resultbox2" style="visibility: hidden;">
