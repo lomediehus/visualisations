@@ -1702,5 +1702,41 @@
     "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/02\/13102044\/miriami.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum":"2026\/02\/16",
     "ort":"Köping"
+  },
+  {
+    "rubrik":"Vårdpersonal får extra betalt när lokal marknad blir storhelg: ”Känns jätteroligt”",
+    "kortrubrik":"De får extra ob på marknadshelgen",
+    "kategori":"lön",
+    "kategori_detaljerad":"ob",
+    "lat":64.16,
+    "long":17.3498,
+    "url":"https:\/\/arbetet.se\/2026\/03\/02\/vardpersonal-far-extra-betalt-nar-lokal-marknad-blir-storhelg-kanns-jatteroligt\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/02\/26140830\/asele.jpg",
+    "datum":"2026\/03\/02",
+    "ort":"Åsele"
+  },
+  {
+    "rubrik":"Marit fick 4 000 mer på två år – här har undersköterskornas lön ökat i raketfart",
+    "kortrubrik":"Här har lönen ökat i raketfart",
+    "kategori":"lön",
+    "kategori_detaljerad":"lön",
+    "lat":57.6,
+    "long":11.2,
+    "url":"https:\/\/arbetet.se\/2026\/03\/13\/marit-fick-4-000-mer-pa-tva-ar-underskoterskornas-lon-i-goteborg-okar-i-raketfart\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/03\/12084934\/g0vPjAOaPCo-Marit_Gamboa_DSC5524_.jpg",
+    "datum":"2026\/03\/13",
+    "ort":"Göteborg"
+  },
+  {
+    "rubrik":"Veronica upptäckte ledighetsmiss – hon och kollegorna får 5 000",
+    "kortrubrik":"Fick 5000 för missade fridagar",
+    "kategori":"arbetstid",
+    "kategori_detaljerad":"ledighet",
+    "lat":60.1498,
+    "long":15.1878,
+    "url":"https:\/\/arbetet.se\/2026\/03\/11\/veronicas-upptackt-gav-kollegorna-5000-kronor-i-ersattning\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/03\/11105225\/ka-veronicas-upptackt.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/03\/11",
+    "ort":"Ludvika"
   }
 ]
