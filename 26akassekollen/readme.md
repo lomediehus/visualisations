@@ -1,1 +1,2 @@
-https://arbetet.se/2024/02/22/se-hur-mycket-du-borde-tjana-om-lonen-foljt-inflationen/
+Publicerad här:
+https://arbetet.se/2026/03/25/a-kassekollen/
