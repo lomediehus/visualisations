@@ -190,7 +190,9 @@ function formatSwedishNumber(num) {
   return Math.round(num).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '\u00A0');
 }
 
-const minSalaryText = formatSwedishNumber(MIN_SALARY);
+// const minSalaryText = formatSwedishNumber(MIN_SALARY);
+const minSalaryText = MIN_SALARY.toString();
+
 const minSalaryMessage = `Ange minst ${minSalaryText} kr i lön för att få ett resultat.`;
 
 if (inputLon) {
@@ -203,9 +205,12 @@ if (inputLon) {
 
 // Calculate benefit based on salary, days, and union
 function calculateBenefit(event) {
-  const rawSalaryInput = (inputLon.value || "").trim();
-  const hadNonNumericInput = rawSalaryInput !== "" && !/^\d+$/.test(rawSalaryInput);
-  const salary = Number(rawSalaryInput.replace(/\s+/g, ""));
+  const rawSalaryInput = inputLon.value || "";
+  const trimmedInput = rawSalaryInput.trim();
+  // Only allow pure digits, no spaces or other characters
+  const hadNonNumericInput =
+    (rawSalaryInput !== "" && !/^\d+$/.test(trimmedInput));
+  const salary = Number(trimmedInput); // Only digits allowed, so no need to replace spaces
   const days = Number(daysSlider.value) || 0;
   let tillagg = false;
 
@@ -342,7 +347,7 @@ const currentLimitDay = Number(ceiling) === defaultCeiling
 
 
 
-// inputLon.addEventListener("keyup", calculateBenefit);
+// inputLon.addEventListener("keydown", calculateBenefit);
 inputLon.addEventListener("input", calculateBenefit);
 
 
