@@ -1204,8 +1204,8 @@
     "kortrubrik":null,
     "kategori":"lön",
     "kategori_detaljerad":"lön",
-    "lat":56.2718,
-    "long":14.5289,
+    "lat":56.3,
+    "long":14.9,
     "url":"https:\/\/arbetet.se\/2024\/11\/25\/efter-kas-granskning-har-ska-lonerna-oka-for-de-som-tjanar-minst\/",
     "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2024\/11\/hampusolofsson-sajt.jpeg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum":"2024\/11\/25",
@@ -1721,7 +1721,7 @@
     "kategori":"lön",
     "kategori_detaljerad":"lön",
     "lat":57.6,
-    "long":11.2,
+    "long":13.0,
     "url":"https:\/\/arbetet.se\/2026\/03\/13\/marit-fick-4-000-mer-pa-tva-ar-underskoterskornas-lon-i-goteborg-okar-i-raketfart\/",
     "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/03\/12084934\/g0vPjAOaPCo-Marit_Gamboa_DSC5524_.jpg",
     "datum":"2026\/03\/13",
@@ -1738,5 +1738,29 @@
     "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/03\/11105225\/ka-veronicas-upptackt.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum":"2026\/03\/11",
     "ort":"Ludvika"
+  },
+  {
+    "rubrik":"Undersköterskorna fick kommunen att backa om nattpassen – genom 6 smarta steg",
+    "kortrubrik":"Lyckad kamp mot korta nattpass",
+    "kategori":"arbetstid",
+    "kategori_detaljerad":"schema",
+    "lat":56.276,
+    "long":14.531,
+    "url":"https:\/\/arbetet.se\/2026\/04\/15\/underskoterskorna-fick-kommunen-att-backa-om-nattpassen-genom-6-smarta-steg\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/04\/14103837\/olofstrom.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1780&h=1095",
+    "datum":"2026\/04\/15",
+    "ort":"Olofström"
+  },
+  {
+    "rubrik":"Efter protesterna: Barnskötarna får stanna – åtminstone ett år",
+    "kortrubrik":"Barnskötarna fick bli kvar",
+    "kategori":"arbetsvillkor",
+    "kategori_detaljerad":"bemanning",
+    "lat":61.828,
+    "long":16.105,
+    "url":"https:\/\/arbetet.se\/2026\/05\/06\/efter-protesterna-barnskotarna-far-behalla-jobbet-atminstone-ett-ar\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/05\/04125706\/ka-barnskotare-blir-kvar.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1780&h=1095",
+    "datum":"2026\/05\/06",
+    "ort":"Ljusdal"
   }
 ]
