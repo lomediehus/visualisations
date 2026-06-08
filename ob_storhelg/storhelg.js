@@ -127,6 +127,19 @@ function doStuff() {
   var overskrift, rubrik, text, extraxtext1, extratext2, extratext3, extratext4 = '';
   //Replaces any
   const patt = new RegExp('[0-9]+(,[0-9]+)*' + '\\s' + 'kr/tim', 'g');
+  function replaceLonAfterSentence(match, ...args) {
+    const offset = args[args.length - 2];
+    const source = args[args.length - 1];
+    const prefix = source.slice(Math.max(0, offset - 8), offset);
+    const hasSentenceDelimiter = /(?:\. |\.\s*<br>)$/.test(prefix);
+    const alreadyHasBreak = /<br>\s*$/.test(source.slice(0, offset));
+    const shouldAddBreak = hasSentenceDelimiter && !alreadyHasBreak;
+    return (shouldAddBreak ? '<br>' : '') + '<span class="fetLon">' + match + '</span>';
+  }
+
+  function replaceLonNoBreak(match) {
+    return '<span class="fetLon">' + match + '</span>';
+  }
   let flag;
   let helgord = document.getElementById("word");
 
@@ -159,7 +172,7 @@ function doStuff() {
   var paskdatum = new Date("February 21 2026");
   var pingstdatum = new Date("April 22 2023");
 
-  var midsommardatum = new Date("May 22 2025");
+  var midsommardatum = new Date("May 22 2026");
 
   //Variable for current date
   //variables for set dates
@@ -170,10 +183,10 @@ function doStuff() {
 
 
     //if current date is also after nyar
-    if (date.getTime() > paskdatum.getTime()) {
-      document.getElementById("helgbild").src = 'pask.svg';
-      goActive(helgknapp4);
-      helgnr = "4";
+    if (date.getTime() > midsommardatum.getTime()) {
+      document.getElementById("helgbild").src = 'midsommar.svg';
+      goActive(helgknapp6);
+      helgnr = "6";
     }
     else {
       document.getElementById("helgbild").src = 'nyar.svg';
@@ -403,7 +416,7 @@ function doStuff() {
   }
 
   //complete list of yrken
-  var yrken = [ "administratör", "aktiveringsassistent", "aktiveringspedagog", "aktivitetsledare", "ambulanssjukvårdare", "anläggningsarbetare", "arbetshandledare", "arbetsledare", "assistent/församlingsarbete", "avbytare", "badmästare", "badpersonal", "banarbetare", "barnskötare", "barnsköterska", "barntimmeledare", "behandlare", "behandlingsassistent", "biträde", "boendeassistent", "boendehandledare", "boendestödjare", "brandman", "buss övriga", "bussförare", "busschaufför", "butikspersonal", "chaufför", "diakoniassistent", "djursjukskötare", "djurskötare", "djurvårdare", "driftsledare", "ekonomibiträde", "elevassistent", "fastighetsskötare", "fordonsförare", "fotvårdare", "fritidsledare", "fältarbetare", "fönsterputsare", "förrådsarbetare", "församlingshemsvärd", "garagepersonal", "habiliteringsassistent", "habiliteringsbiträde", "habiliteringspedagog", "habiliteringspersonal", "handledare", "husmor", "instruktör", "internlärare", "kock", "kokerska", "kontorsvaktmästare", "kundtjänstmedarbetare", "kyrkogårdsarbetare", "kyrkogårdsföreståndare", "kyrkvaktmästare", "köksbiträde", "kökspersonal", "laboratoriebiträde", "lagerarbetare", "lantarbetare", "ledsagare", "logopedassistent", "lokalvårdare", "maskinförare", "maskinskötare", "medlevare", "mekaniker", "montör", "motorfordonsmekaniker", "måltidspersonal", "obduktionstekniker", "omsorgsassistent", "park- och trädgårdsarbetare", "personlig assistent", "receptionist", "renhållningsarbetare", "reparatör", "serveringsbiträde", "servicevärd", "sjukgymnastassistent", "sjukvårdsbiträde", "skötare", "socialpedagog", "specialistundersköterska", "spårvagnsförare", "städare", "stödassistent", "stödbiträde", "stödpedagog", "stödpersonal", "teamledare", "traktorförare", "tvätteribiträde", "tvätterimedarbetare", "tvättmaskinskötare", "undersköterska", "ungdomsassistent", "ungdomsledare", "vaktmästare", "verkstadspersonal", "vård- och omsorgspersonal", "vårdare", "vårdbiträde"]
+  var yrken = [ "administratör", "aktiveringsassistent", "aktiveringspedagog", "aktivitetsledare", "ambulanssjukvårdare", "anläggningsarbetare", "arbetshandledare", "arbetsledare", "assistent/församlingsarbete", "avbytare", "badmästare", "badpersonal", "banarbetare", "barnskötare", "barnsköterska", "barntimmeledare", "behandlare", "behandlingsassistent", "biträde", "boendeassistent", "boendehandledare", "boendestödjare", "brandman", "buss övriga", "bussförare", "busschaufför", "butikspersonal", "chaufför", "diakoniassistent", "driftsledare", "ekonomibiträde", "elevassistent", "fastighetsskötare", "fordonsförare", "fotvårdare", "fritidsledare", "fältarbetare", "fönsterputsare", "förrådsarbetare", "församlingshemsvärd", "garagepersonal", "habiliteringsassistent", "habiliteringsbiträde", "habiliteringspedagog", "habiliteringspersonal", "handledare", "husmor", "instruktör", "internlärare", "kock", "kokerska", "kontorsvaktmästare", "kundtjänstmedarbetare", "kyrkogårdsarbetare", "kyrkogårdsföreståndare", "kyrkvaktmästare", "köksbiträde", "kökspersonal", "laboratoriebiträde", "lagerarbetare", "lantarbetare", "ledsagare", "logopedassistent", "lokalvårdare", "maskinförare", "maskinskötare", "medlevare", "mekaniker", "montör", "motorfordonsmekaniker", "måltidspersonal", "obduktionstekniker", "omsorgsassistent", "park- och trädgårdsarbetare", "personlig assistent", "receptionist", "renhållningsarbetare", "reparatör", "serveringsbiträde", "servicevärd", "sjukgymnastassistent", "sjukvårdsbiträde", "skötare", "socialpedagog", "specialistundersköterska", "spårvagnsförare", "städare", "stödassistent", "stödbiträde", "stödpedagog", "stödpersonal", "teamledare", "traktorförare", "tvätteribiträde", "tvätterimedarbetare", "tvättmaskinskötare", "undersköterska", "ungdomsassistent", "ungdomsledare", "vaktmästare", "verkstadspersonal", "vård- och omsorgspersonal", "vårdare", "vårdbiträde"]
 
 
 
@@ -439,24 +452,28 @@ function doStuff() {
   }
 
   //kollar om det sökta yrket finns med i avtalsobjektten och lägger i så fall till yrket i listan 'message'
+  // TODO(refactor): matchaYrke() och avtalstext() bygger nästan samma HTML. Bryt ut gemensam rendering till en helper, t.ex. renderAvtalBlock(item, helgnr, patt), så vi slipper dubbellogik och inkonsekvenser (t.ex. <br> före fetLon).
   function matchaYrke(yrke, text) {
     hittad = false;
-    if (yrke.startsWith('usk')|| yrke.startsWith('uska')) {
+    yrke = yrke.toLowerCase().trim();
+    const yrkeCompact = yrke.replace(/[\s./_-]+/g, '');
+    if (yrke.startsWith('usk') || yrkeCompact.startsWith('usk') || yrke.startsWith('undersk')) {
       yrke = 'undersköterska';
     }
     if (yrke.startsWith('bussch')) {
       yrke = "bussförare";
     }
-    if (yrke.startsWith('djursjukskötare')) {
-      yrke = 'legitimerad djursjukskötare';
-    }
+    // if (yrke.startsWith('djursjukskötare') || yrke.startsWith('leg djursjuk') || yrke.startsWith('legitimerad djursjuk')) {
+    //   yrke = 'djursjukskötare';
+    // }
     messagediv.innerHTML = '';
     for (var i = 0; i < kombo.length; i++) {
       for (var j = 0; j < kombo[i].yrke.length; j++) {
+        const listYrke = kombo[i].yrke[j].trim().toLowerCase();
         //använder "startsWith" för att användare ska få träff även om de skriver in ett mellanslag efter yrkestiteln
-        if (yrke.startsWith(kombo[i].yrke[j])) {
+        if (yrke.startsWith(listYrke)) {
           hittad = true;
-          valtYrke = kombo[i].yrke[j];
+          valtYrke = kombo[i].yrke[j].trim();
 
           rubrik = `
             <h3 class="u-textMetaDeca" style="font-weight: bold">  ${kombo[i].avtalsrubrik} </h3>
@@ -496,16 +513,18 @@ function doStuff() {
           }
 
           textvarre = textvarre.replace(/100 procent/g, "<strong>100 procent</strong>");
-          textvarre = textvarre.replace(/\r\n/g, "<br>");
+          textvarre = textvarre.replace(/\r?\n/g, "<br>");
 
           text = `
-            <p>${textvarre.replace(patt, '<span class="fetLon">$&</span>')}</p>
+            <p>${textvarre.replace(patt, replaceLonAfterSentence)}</p>
           `;
+
+          
 
           //stay blank if content is null;
           if (helgvarre && helgvarre.fall1) {
             extratext1 = `
-            <div class="inFrame counter"><p>${helgvarre.fall1.replace(patt, '<span class="fetLon">$&</span>')}</p></div>
+            <div class="inFrame counter"><p>${helgvarre.fall1.replace(patt, replaceLonNoBreak)}</p></div>
             `;
             }
             else extratext1 = '';
@@ -513,21 +532,21 @@ function doStuff() {
 
           if (helgvarre && helgvarre.fall2) {
             extratext2 = `
-            <div class="inFrame counter"><p>${helgvarre.fall2.replace(patt, '<span class="fetLon">$&</span>')}</p></div>
+            <div class="inFrame counter"><p>${helgvarre.fall2.replace(patt, replaceLonNoBreak)}</p></div>
             `;
             }
             else extratext2 = '';
 
           if (helgvarre && helgvarre.fall3) {
             extratext3 = `
-            <div class="inFrame counter"><p>${helgvarre.fall3.replace(patt, '<span class="fetLon">$&</span>')}</p></div>
+            <div class="inFrame counter"><p>${helgvarre.fall3.replace(patt, replaceLonNoBreak)}</p></div>
             `;
             }
             else extratext3 = '';
 
           if (helgvarre && helgvarre.fall4) {
             extratext4 = `
-            <div class="inFrame counter"><p>${helgvarre.fall4.replace(patt, '<span class="fetLon">$&</span>')}</p></div>
+            <div class="inFrame counter"><p>${helgvarre.fall4.replace(patt, replaceLonNoBreak)}</p></div>
             `
             }
             else extratext4 = '';
@@ -693,8 +712,7 @@ function doStuff() {
       informHeight();
     }
   }
-
-  //NEW update of function: fill the div allaAvtalWrapper with text from array "kombo"
+  // TODO(refactor): matchaYrke() och avtalstext() bygger nästan samma HTML. Bryt ut gemensam rendering till en helper, t.ex. renderAvtalBlock(item, helgnr, patt),så vi slipper dubbellogik och inkonsekvenser (t.ex. <br> före fetLon).
   function avtalstext(text){
     allaAvtal.innerHTML = '';
 
@@ -742,37 +760,37 @@ function doStuff() {
       
 
       textvarre = textvarre.replace(/100 procent/g, "<strong>100 procent</strong>");
-      textvarre = textvarre.replace(/\r\n/g, "<br>")
+      textvarre = textvarre.replace(/\r?\n/g, "<br>")
 
       text = `
-        <p>${textvarre.replace(patt, '<span class="fetLon">$&</span>')}</p>
+        <p>${textvarre.replace(patt, replaceLonAfterSentence)}</p>
       `;
 
       //stay blank if content is null;
       if (helgvarre && helgvarre.fall1) {
         extratext1 = `
-        <div class="inFrame counter"><p>${helgvarre.fall1.replace(patt, '<span class="fetLon">$&</span>')}</p></div>
+        <div class="inFrame counter"><p>${helgvarre.fall1.replace(patt, replaceLonNoBreak)}</p></div>
         `;
         }
         else extratext3 = '';
 
       if (helgvarre && helgvarre.fall2) {
         extratext2 = `
-        <div class="inFrame counter"><p>${helgvarre.fall2.replace(patt, '<span class="fetLon">$&</span>')}</p></div>
+        <div class="inFrame counter"><p>${helgvarre.fall2.replace(patt, replaceLonNoBreak)}</p></div>
         `;
         }
         else extratext2 = '';
 
       if (helgvarre && helgvarre.fall3) {
         extratext3 = `
-        <div class="inFrame counter"><p>${helgvarre.fall3.replace(patt, '<span class="fetLon">$&</span>')}</p></div>
+        <div class="inFrame counter"><p>${helgvarre.fall3.replace(patt, replaceLonNoBreak)}</p></div>
         `;
         }
         else extratext3 = '';
 
       if (helgvarre && helgvarre.fall4) {
         extratext4 = `
-        <div class="inFrame counter"><p>${helgvarre.fall4.replace(patt, '<span class="fetLon">$&</span>')}</p></div>
+        <div class="inFrame counter"><p>${helgvarre.fall4.replace(patt, replaceLonNoBreak)}</p></div>
         `
         }
         else extratext4 = '';

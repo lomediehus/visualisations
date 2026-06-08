@@ -298,6 +298,11 @@ input {
   margin-right: 20px;
 }
 
+.inFrame .Label {
+  background-color: #fdf06f;
+}
+
+
 
 h4.underline {
   font-weight: bold;
