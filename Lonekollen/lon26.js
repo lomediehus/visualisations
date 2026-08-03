@@ -89,7 +89,7 @@ window.riksYrken = [
   },
   {
     "yrke": "Fritidsledare",
-    "lön": 32105
+    "lön": 32092
   },
   {
     "yrke": "Förrådsarbetare",
