@@ -1061,7 +1061,7 @@
     "kategori":"utbildning",
     "kategori_detaljerad":"yrkesbevis",
     "lat":59.6153,
-    "long":16.5433,
+    "long":16.7,
     "url":"https:\/\/arbetet.se\/2024\/06\/28\/over-80-000-underskoterskor-har-fatt-skyddad-yrkestitel-pernilla-hojde-lonen-med-yrkesbeviset\/",
     "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2024\/06\/pernilla.png?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum":"2024\/06\/28",
@@ -1858,5 +1858,29 @@
     "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/06\/12140715\/fredric-jakobsson-dsc5317.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum":"2026\/06\/15",
     "ort":"Göteborg"
+  },
+  {
+    "rubrik":"Vänta med böter och lugnare ton – så krossade p-vakterna fördomarna",
+    "kortrubrik":"P-vakter krossar fördomar",
+    "kategori":"arbetsvillkor",
+    "kategori_detaljerad":"arbetsmiljö",
+    "lat":60.0,
+    "long":17.65,
+    "url":"https:\/\/arbetet.se\/2026\/05\/07\/vanta-med-boter-och-lugnare-ton-sa-krossade-p-vakterna-fordomarna\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/04\/28104458\/OUTc-MSXh70-Parkeringsvakt_05.JPG?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/05\/07",
+    "ort":"Uppsala"
+  },
+  {
+    "rubrik":"Camilla får lägga sitt eget schema – och hinner med fritiden",
+    "kortrubrik":"De lägger schemat själva",
+    "kategori":"arbetstid",
+    "kategori_detaljerad":"schema",
+    "lat":59.3666,
+    "long":16.8,
+    "url":"https:\/\/arbetet.se\/2026\/06\/10\/camilla-far-lagga-sitt-eget-schema-och-hinner-med-fritiden\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/05\/08103832\/tmoTnvWVDQA-Grupp-9.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
+    "datum":"2026\/06\/10",
+    "ort":"Eskilstuna"
   }
 ]
