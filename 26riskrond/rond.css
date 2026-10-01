@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #181818;
+  background: #f3f1ed;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+}
+
+.risk-round {
+  width: min(100% - 32px, 760px);
+  margin-inline: auto;
+  padding-block: 48px;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.eyebrow,
+.step {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.risk-stop {
+  margin-bottom: 20px;
+}
+
+.risk-stop img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.risk-stop h2 {
+  margin: 20px 0 16px;
+  font-size: clamp(1.35rem, 4vw, 2rem);
+}
+
+details {
+  /* border-top: 1px solid #999; */
+  border-bottom: 1px solid #999;
+}
+
+summary {
+  padding: 16px 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
+summary:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 4px;
+}
+
+.hide-label {
+  display: none;
+}
+
+details[open] .show-label {
+  display: none;
+}
+
+details[open] .hide-label {
+  display: inline;
+}
+
+.answer {
+  padding: 4px 4px 24px;
+}
+
+.answer section {
+  margin-top: 24px;
+  padding-left: 16px;
+  border-left: 5px solid #c9382d;
+}
+
+.answer h3 {
+  margin-bottom: 4px;
+}
+
+.answer p {
+  margin-top: 0;
+}
+
+.responsibility {
+  margin-top: 32px;
+  padding: 16px;
+  background: #dedbd3;
+}
