@@ -51,4 +51,10 @@
 
   window.addEventListener('resize', debouncedInformHeight, false);
   window.addEventListener('load', debouncedInformHeight, false);
+
+  //Eget tillägg till filen för att få uppdatering av höjd i grafiken 26riskrond
+  if ('ResizeObserver' in window) {
+    var resizeObserver = new ResizeObserver(debouncedInformHeight);
+    resizeObserver.observe(body);
+  }
 })();
