@@ -10,6 +10,10 @@ body {
   line-height: 1;
 }
 
+.Body q {
+  quotes: "”" "”" "’" "’";
+}
+
 .risk-round {
   width: min(100% - 32px, 760px);
   margin-inline: auto;
@@ -38,9 +42,14 @@ body {
   height: auto;
 }
 
-.risk-stop h2 {
+/* .risk-stop h2 {
   margin: 20px 0 16px;
   font-size: clamp(1.35rem, 4vw, 2rem);
+} */
+
+.risk-stop h3 {
+  margin: 20px 0 16px;
+  /* font-size: clamp(1.35rem, 4vw, 2rem); */
 }
 
 details {
