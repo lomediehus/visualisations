@@ -1,7 +1,7 @@
 * {
 	margin-left: 0px;
 	margin-right: 0px;
-	padding: 0px;
+	/* padding: 0px; */
 	box-sizing: border-box;
   }
   
@@ -9,11 +9,15 @@
   html {
 	scrollbar-width: none;
   }
+
+  body {
+		background-color: #fef5a1;
+
+  }
   
   body {
-	padding: 0px;
 	/* background-color: #fcfaf5; */
-	background-color: #fef5a1;
+	/* background-color: #fef5a1; */
 	/* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
 	-ms-overflow-style: none;
   }
@@ -26,12 +30,12 @@
 /* #content {
 } */
 
-
-body {
-	font-family: Arial, sans-serif;
+#content {
+	/* font-family: Arial, sans-serif; */
+	padding: 20px;
 	max-width: 600px;
 	margin: 40px auto;
-	padding: 0 20px;
+	/* padding: 0 20px; */
 	line-height: 1.5;
 }
 
