@@ -116,6 +116,8 @@ c("kör skript version ")
       uppdatera();
     });
 
+    informHeight();
+
     // Läs in data och rita första gången
     fetch("jamfor.json")
       .then(r => r.json())
