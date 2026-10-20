@@ -1,0 +1,80 @@
+* {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+  }
+  
+  /* For hiding scrollbar in Firefox without impacting scrolling function */
+  html {
+	scrollbar-width: none;
+  }
+  
+  body {
+	padding: 0px;
+	background-color: #fcfaf5;
+	/* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+	-ms-overflow-style: none;
+  }
+  
+  /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+  body::-webkit-scrollbar {
+	display: none;
+  }
+  
+/* #content {
+} */
+
+
+body {
+	font-family: Arial, sans-serif;
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 0 20px;
+	line-height: 1.5;
+}
+
+label {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+input, select {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+}
+
+input.initial-value {
+	color: #757575;
+}
+
+#resultat {
+	margin-top: 30px;
+	padding: 20px;
+	background: #f1f3f5;
+}
+
+.stapel {
+	height: 20px;
+	background: #ddd;
+	margin-bottom: 15px;
+}
+
+.fyllning {
+	height: 100%;
+	background: steelblue;
+	width: 0;
+}
+  
+
+  @media only screen and (max-width: 570px) {
+	/* .flexcontainer {
+		flex-direction: column;
+	}
+	.flexcontainerInner {
+		width: 100%;
+	} */
+}
