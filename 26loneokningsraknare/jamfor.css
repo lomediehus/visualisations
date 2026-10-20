@@ -12,7 +12,8 @@
   
   body {
 	padding: 0px;
-	background-color: #fcfaf5;
+	/* background-color: #fcfaf5; */
+	background-color: #fef5a1;
 	/* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
 	-ms-overflow-style: none;
   }
@@ -54,7 +55,9 @@ input.initial-value {
 #resultat {
 	margin-top: 30px;
 	padding: 20px;
-	background: #f1f3f5;
+	background: #ffffff;
+	/* background: #f1f3f5; */
+
 }
 
 .stapel {
@@ -68,7 +71,25 @@ input.initial-value {
 	background: steelblue;
 	width: 0;
 }
+
+.fet {
+	font-weight: bold;
+}
   
+#storRubrik{
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.storFet {
+	font-weight: bold;
+	font-size: 1.5em;
+
+}	
+
+#resultat p {
+	margin-bottom: 0px;
+}
 
   @media only screen and (max-width: 570px) {
 	/* .flexcontainer {

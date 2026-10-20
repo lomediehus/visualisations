@@ -55,7 +55,8 @@ c("kör skript version ")
       formatKr(loner[startAr]) + " kr/mån";
       document.querySelector("#genomsnittLonSlut").textContent =
       formatKr(loner[2025]) + " kr/mån";
-      c("Genomsnittlig månadslön: " + formatKr(loner[startAr]) + " kr/mån");
+      // document.querySelector("#yrkeText").textContent = yrke.options[yrke.selectedIndex].text.toLowerCase();
+     
 
       const faktor = loner[2025] / loner[startAr];
       const jamforelseLon = startLon * faktor;
@@ -72,13 +73,13 @@ c("kör skript version ")
         formatProcent(snittOkning);
 
       // Rita staplar (längsta positiva stapeln = 100 %)
-      const max = Math.max(egenOkning, snittOkning, 1);
+      // const max = Math.max(egenOkning, snittOkning, 1);
 
-      document.querySelector("#egenStapel").style.width =
-        Math.max(0, egenOkning / max * 100) + "%";
+      // document.querySelector("#egenStapel").style.width =
+      //   Math.max(0, egenOkning / max * 100) + "%";
 
-      document.querySelector("#snittStapel").style.width =
-        Math.max(0, snittOkning / max * 100) + "%";
+      // document.querySelector("#snittStapel").style.width =
+      //   Math.max(0, snittOkning / max * 100) + "%";
 
       // Skriv slutsats
       let text = "";
