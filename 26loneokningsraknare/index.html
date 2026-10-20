@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Har din lön hängt med?</title>
+  <link rel="stylesheet" href="jamfor.css" type="text/css">
+  <link rel="stylesheet" href="../arbetet_assets/stylesheets/arbetet.css" type="text/css">
+
+  <!-- <link rel="stylesheet" type="text/css" href="../iframe-helper/ka.css"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="../ka_assets/favicon.ico">
+
+<script src="d3.v5.min.js"></script>
+<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+
+
+</head>
+
+<body>
+
+  <h1>Har din lön hängt med?</h1>
+
+  <p>
+    Jämför din löneutveckling med den genomsnittliga
+    utvecklingen för anläggningsarbetare.
+  </p>
+
+  <label for="yrke">Välj yrke</label>
+  <select id="yrke">
+    <option value="anlaggning">Anläggningsarbetare</option>
+    <option value="renhallning">Renhållningsarbetare</option>
+    <option value="tradgård">Trädgårdsanläggare</option>
+  </select>
+
+
+  <label for="ar">Välj startår</label>
+  <select id="ar"></select>
+
+  <label for="startlon">Din månadslön det året</label>
+  <input type="number" id="startlon" value="250000" min="1" class="initial-value">
+  <p><small>Genomsnittlig månadslön: <span id="genomsnittLon"></span></small></p>
+
+  <label for="slutlon">Din månadslön 2025</label>
+  <input type="number" id="slutlon" value="320000" min="3" class="initial-value">
+  <p><small>Genomsnittlig månadslön: <span id="genomsnittLonSlut"></span></small></p>
+
+  <div id="resultat" aria-live="polite">
+    <h2>Din löneutveckling</h2>
+
+    <p>Din ökning: <b id="egenProcent"></b></p>
+    <div class="stapel">
+      <div class="fyllning" id="egenStapel"></div>
+    </div>
+
+    <p>Genomsnittlig ökning: <b id="snittProcent"></b></p>
+    <div class="stapel">
+      <div class="fyllning" id="snittStapel"></div>
+    </div>
+
+    <p id="jamforelse"></p>
+  </div>
+
+  <!-- <p><small>
+    Obs! Genomsnittslönerna är påhittade exempel.
+    Jämförelsen tar inte hänsyn till inflation.
+  </small></p> -->
+
+  <script src="../iframe-helper/iframe-helper.js"></script>
+  <script type="text/javascript" src="jamfor.js"></script>
+
+</body>
+</html>
