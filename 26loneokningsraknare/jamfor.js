@@ -17,6 +17,7 @@ c("kör skript version ")
     const yrke = document.querySelector("#yrke");
     const startlon = document.querySelector("#startlon");
     const slutlon = document.querySelector("#slutlon");
+    const startAr = document.querySelector("#startAr");
 
     const formatKr = n =>
       Math.round(n).toLocaleString("sv-SE");
@@ -42,7 +43,7 @@ c("kör skript version ")
 
     // Beräkna och uppdatera grafiken
     function uppdatera() {
-      const startAr = Number(ar.value);
+      const startArValue = Number(ar.value);
       const startLon = Number(startlon.value);
       const slutLon = Number(slutlon.value);
 
@@ -53,13 +54,13 @@ c("kör skript version ")
 
       document.querySelector("#resultat").style.display = "block";
       document.querySelector("#genomsnittLon").textContent =
-      formatKr(loner[startAr]) + " kr/mån";
+      formatKr(loner[startArValue]) + " kr/mån";
       document.querySelector("#genomsnittLonSlut").textContent =
       formatKr(loner[2025]) + " kr/mån";
       // document.querySelector("#yrkeText").textContent = yrke.options[yrke.selectedIndex].text.toLowerCase();
      
 
-      const faktor = loner[2025] / loner[startAr];
+      const faktor = loner[2025] / loner[startArValue];
       const jamforelseLon = startLon * faktor;
 
       const egenOkning = (slutLon / startLon - 1) * 100;
@@ -72,6 +73,8 @@ c("kör skript version ")
 
       document.querySelector("#snittProcent").textContent =
         formatProcent(snittOkning);
+
+      startAr.textContent = startArValue;
 
       // Rita staplar (längsta positiva stapeln = 100 %)
       // const max = Math.max(egenOkning, snittOkning, 1);
@@ -86,17 +89,22 @@ c("kör skript version ")
       let text = "";
 
       if (Math.abs(skillnad) < 0.5) {
-        text = "Din lön har följt genomsnittets utveckling.";
+        text = "Din lön har följt genomsnittets utveckling för ";
       } else if (skillnad > 0) {
-        text = "Din lön har ökat mer än genomsnittet.";
+        text = "Din lön har ökat mer än genomsnittet för ";
       } else {
-        text = "Din lön har ökat mindre än genomsnittet.";
+        text = "Din lön har ökat mindre än genomsnittet för ";
       }
 
-      text += " Om din lön hade följt genomsnittet " +
-        "skulle du ha tjänat " +
+      text+= yrke.options[yrke.selectedIndex].text.toLowerCase() + ".";
+
+      if (Math.abs(skillnad) > 0.5) {
+
+      text += " Om din lön hade följt genomsnittet"  +
+        " skulle du ha tjänat " +
         formatKr(jamforelseLon) +
         " kr/mån 2025.";
+      }
 
       document.querySelector("#jamforelse").textContent = text;
     }
