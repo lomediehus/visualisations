@@ -20,7 +20,7 @@
 </head>
 
 <body class="Body">
-  <div id="content">
+  <div id="content" class="BodyImage-caption">
 
   <h2 id="storRubrik">Har din lön hängt med?</h2>
 
@@ -32,22 +32,24 @@
   </p>
 
   <label for="yrke">Välj yrke</label>
-  <select id="yrke">
-    <option value="anlaggning">Anläggningsarbetare</option>
-    <option value="renhallning">Renhållningsarbetare</option>
-    <option value="tradgård">Trädgårdsanläggare</option>
+  <select id="yrke" class="BodyImage-caption">
+    <option class="BodyImage-caption" value="anlaggning">Anläggningsarbetare</option>
+    <option class="BodyImage-caption" value="kyrkvakt">Kyrkvaktmästare</option>
+    <option class="BodyImage-caption" value="kyrkogard">Kyrkogårdsarbetare</option>
+    <option class="BodyImage-caption" value="renhallning">Renhållningsarbetare</option>
+    <option class="BodyImage-caption" value="tradgard">Trädgårdsanläggare</option>
   </select>
 
 
   <label for="ar">Välj startår</label>
-  <select id="ar"></select>
+  <select id="ar" class="BodyImage-caption"></select>
 
   <label for="startlon">Skriv in din månadslön det året</label>
-  <input type="number" id="startlon" value="25000" min="1" class="initial-value">
+  <input type="number" id="startlon" value="25000" min="1" class="initial-value BodyImage-caption">
   <p><small>Genomsnittlig månadslön: <span id="genomsnittLon"></span></small></p>
 
   <label for="slutlon">Skriv in din månadslön 2025</label>
-  <input type="number" id="slutlon" value="32000" min="3" class="initial-value">
+  <input type="number" id="slutlon" value="32000" min="3" class="initial-value BodyImage-caption">
   <p><small>Genomsnittlig månadslön: <span id="genomsnittLonSlut"></span></small></p>
 
   <div id="resultat" aria-live="polite">

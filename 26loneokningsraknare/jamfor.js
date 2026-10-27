@@ -34,6 +34,7 @@ c("kör skript version ")
         const option = document.createElement("option");
         option.value = year;
         option.textContent = year;
+        c(year);
         ar.appendChild(option);
       });
       if (tidigare && loner[tidigare]) ar.value = tidigare;

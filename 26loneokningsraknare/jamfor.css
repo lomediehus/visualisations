@@ -30,6 +30,13 @@
 /* #content {
 } */
 
+select, input {
+	background-color: #ffffff;
+	border-radius: 6px !important;
+	border: 1px solid #ccc;
+	padding: 3px 5px;
+  }
+
 #content {
 	/* font-family: Arial, sans-serif; */
 	padding: 20px;
