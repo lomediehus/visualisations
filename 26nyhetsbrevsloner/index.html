@@ -1,84 +1,40 @@
 
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <title>Lönekarta</title>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <style>
-    body { font-family: Arial, sans-serif; }
-    path { stroke: white; stroke-width: 1; }
-    path:hover { stroke: black; stroke-width: 2; }
-    #tooltip {
-      position: absolute;
-      background: white;
-      padding: 10px;
-      border: 1px solid #aaa;
-      pointer-events: none;
-      display: none;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Nyhetsbrevslöner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Har din lön hängt med?</title>
+    <link rel="stylesheet" href="lonkarta.css" type="text/css">
+    <link rel="stylesheet" href="../arbetet_assets/stylesheets/arbetet.css" type="text/css">
 
-<h2>Lön för anläggningsarbetare</h2>
-<svg width="500" height="700"></svg>
-<div id="tooltip"></div>
+    <!-- <link rel="stylesheet" type="text/css" href="../iframe-helper/ka.css"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../arbetet_assets/img/favicon.ico">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
-<script>
-const loner = {
-  SE11: 38500,
-  SE12: 35200,
-  SE21: 34100,
-  SE22: 35800,
-  SE23: 37200,
-  SE31: 33900,
-  SE32: 36100,
-  SE33: 37400
-};
+  </head>
+  <body class="Body">
+    <div id="content">  
 
-const svg = d3.select("svg");
-const tooltip = d3.select("#tooltip");
+      <!-- <h2 id="rubrik">Jobbar du med anläggning, renhållning eller trädgård? Här kan du se lönerna i ditt yrke</h2> -->
+      <select class="BodyImage-caption fet" id="yrke">
+        <option class="BodyImage-caption" value="Anlagg">Anläggningsarbetare</option>
+        <!-- <option class="BodyImage-caption" value="Kyrkvakt">Kyrkvaktmästare</option>
+        <option class="BodyImage-caption" value="Kyrkogard">Kyrkogårdsarbetare</option> -->
+        <option class="BodyImage-caption" value="Renhall">Renhållningsarbetare</option>
+        <option class="BodyImage-caption" value="Park">Parkarbetare</option>
+      </select>
+      <svg class="map"></svg>
+      <div id="tooltip"></div>
 
-d3.json("Sverige_NUTS2_2024.geojson").then(data => {
+    </div>
 
-  // const projection = d3.geoMercator()
-    const projection = d3.geoConicEqualArea()
 
-    .fitSize([500, 700], data);
 
-  const path = d3.geoPath().projection(projection);
+    <script src="../iframe-helper/iframe-helper.js"></script>
+    <script type="text/javascript" src="lonkarta.js"></script>
 
-  const color = d3.scaleSequential(d3.interpolateBlues)
-    .domain([33000, 39000]);
 
-  svg.selectAll("path")
-    .data(data.features)
-    .enter()
-    .append("path")
-    .attr("d", path)
-    .attr("fill", d => color(loner[d.properties.NUTS_ID]))
-    .on("mouseover", function(d) {
-      const kod = d.properties.NUTS_ID;
-      const namn = d.properties.NAME_LATN;
-
-      tooltip
-        .style("display", "block")
-        .html(`Lön för anläggningsarbetare i
-          ${namn}: <b>${loner[kod].toLocaleString("sv-SE")}
-          kr/månad</b>`);
-    })
-    .on("mousemove", function() {
-      tooltip
-        .style("left", (d3.event.pageX + 15) + "px")
-        .style("top", (d3.event.pageY + 15) + "px");
-    })
-    .on("mouseout", function() {
-      tooltip.style("display", "none");
-    });
-
-});
-</script>
-
-</body>
+  </body>
 </html>

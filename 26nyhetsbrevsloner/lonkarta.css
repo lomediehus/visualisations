@@ -1,0 +1,92 @@
+* {
+	margin-left: 0px;
+	margin-right: 0px;
+	/* padding: 0px; */
+	box-sizing: border-box;
+  }
+  
+  /* For hiding scrollbar in Firefox without impacting scrolling function */
+  html {
+	scrollbar-width: none;
+  }
+
+  
+  body {
+	/* background-color: #fcfaf5; */
+
+	width: 100%;
+	/* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+	-ms-overflow-style: none;
+  }
+  
+  /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+  body::-webkit-scrollbar {
+	display: none;
+  }
+
+  select {
+	background-color: #ffffff;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	padding: 3px 5px;
+  }
+
+  select#yrke {
+	width: 100%;
+	/* position: absolute;
+	top: 20px; */
+  }
+  
+
+
+#content {
+	/* font-family: Arial, sans-serif; */
+	background-color: #fef5a1;
+	padding: 20px;
+	/* max-width: 600px; */
+	width: 100%;
+	/* margin: 40px auto; */
+	/* padding: 0 20px; */
+	line-height: 1.5;
+	min-height: 100vh;
+}
+
+ path { stroke: white; stroke-width: 0.5; }
+ @media (hover: hover) {
+	path:hover { stroke: white; stroke-width: 1; }
+}
+ #tooltip {
+      position: absolute;
+      background: white;
+      padding: 10px;
+      border: 1px solid #aaa;
+      pointer-events: none;
+      display: none;
+}
+
+svg.map {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	position: absolute;
+	top: 40px;
+	left: 20px;
+}
+
+#rubrik {
+	/* z-index: 10; */
+	position: relative;
+}
+
+.fet {
+	font-weight: bold;
+}
+
+  @media only screen and (max-width: 570px) {
+	/* .flexcontainer {
+		flex-direction: column;
+	}
+	.flexcontainerInner {
+		width: 100%;
+	} */
+}

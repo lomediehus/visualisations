@@ -1,0 +1,56 @@
+[
+  {
+    "Kod":"SE Riket",
+    "Renhall":30800,
+    "Anlagg":34000,
+    "Park":30900
+  },
+  {
+    "Kod":"SE11 Stockholm",
+    "Renhall":"",
+    "Anlagg":34500,
+    "Park":30900
+  },
+  {
+    "Kod":"SE12 Östra Mellansverige",
+    "Renhall":30400,
+    "Anlagg":33500,
+    "Park":30700
+  },
+  {
+    "Kod":"SE21 Småland med öarna",
+    "Renhall":30500,
+    "Anlagg":34300,
+    "Park":31300
+  },
+  {
+    "Kod":"SE22 Sydsverige",
+    "Renhall":32000,
+    "Anlagg":34000,
+    "Park":30000
+  },
+  {
+    "Kod":"SE23 Västsverige",
+    "Renhall":31200,
+    "Anlagg":34500,
+    "Park":31700
+  },
+  {
+    "Kod":"SE31 Norra Mellansverige",
+    "Renhall":29900,
+    "Anlagg":33900,
+    "Park":31000
+  },
+  {
+    "Kod":"SE32 Mellersta Norrland",
+    "Renhall":29700,
+    "Anlagg":31600,
+    "Park":30500
+  },
+  {
+    "Kod":"SE33 Övre Norrland",
+    "Renhall":30200,
+    "Anlagg":33200,
+    "Park":31000
+  }
+]
