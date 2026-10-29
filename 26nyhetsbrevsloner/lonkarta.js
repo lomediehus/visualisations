@@ -25,8 +25,8 @@ c(select.value)
 let alla = [];
 let loner = {};
 
-const snittText1 = "Genomsnittslöner 2025.<br>Hela landet: <span class='fet stor'>";
-const snittText2 = "</span> kr/mån.";
+const snittText1 = "Genomsnitts-<br>löner 2025.<br>Hela landet: <span class='fet stor'>";
+const snittText2 = "</span><br> kr/mån.";
 
 function yrkesnyckel() {
   const v = select.value;
@@ -66,7 +66,7 @@ Promise.all([
   .parallels([55.327583999999995,69.059967]) //parallels for conic projection
   .rotate([343.6173436862723]) //rotation for conic projection
   // .translate([432.31469742010825,256.8639471506867]) //translate to center the map in view;
-  .translate([w*1.2, h/2.25]); //translate to center the map in view;
+  .translate([w*1.1, h/2.25]); //translate to center the map in view;
 
   // .fitSize([500, 700], data);
 
