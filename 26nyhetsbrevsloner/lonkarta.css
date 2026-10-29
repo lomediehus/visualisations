@@ -64,7 +64,9 @@
 #snitt {
 	position: absolute;
 	width: 150px;
-	top: 250px;
+	/* top: 250px; */
+	top: 40%;
+	/* transform: translateY(-50%); */
 	right: 40px;
 
 }
