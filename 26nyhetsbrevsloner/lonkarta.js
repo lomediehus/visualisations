@@ -154,6 +154,8 @@ function flyttaTooltip() {
   const x = Math.min(d3.event.pageX + 15, window.innerWidth - bredd - 10);
   tooltip
     .style("left", Math.max(x, 5) + "px")
-    .style("top", (d3.event.pageY + 15) + "px");
+    .style("top", (d3.event.pageY - 10) + "px");
+    // .style("top", (d3.event.pageY + 15) + "px");
+
 }
 
