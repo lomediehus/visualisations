@@ -61,6 +61,12 @@
       display: none;
 }
 
+#snitt {
+	position: absolute;
+	top: 60px;
+
+}
+
 svg.map {
 	display: block;
 	position: relative;
@@ -80,6 +86,10 @@ svg.map {
 
 .fet {
 	font-weight: bold;
+}
+
+.stor {
+	font-size: 1.5em;
 }
 
   @media only screen and (max-width: 570px) {

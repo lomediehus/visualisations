@@ -21,8 +21,12 @@ c("kör skript version ")
     //   });
 
 const select = document.querySelector("select");
+c(select.value)
 let alla = [];
 let loner = {};
+
+const snittText1 = "Genomsnittslöner 2025.<br>Hela landet: <span class='fet stor'>";
+const snittText2 = "</span> kr/mån.";
 
 function yrkesnyckel() {
   const v = select.value;
@@ -40,6 +44,7 @@ const harVarde = v => typeof v === "number" && Number.isFinite(v);
 
 const svg = d3.select("svg");
 const tooltip = d3.select("#tooltip").attr("class", "BodyImage-caption");
+// const snitt = d3.select("#snitt").attr("class", "BodyImage-caption").text(select.value);
 
 const w = 320;
 const h = 435;
@@ -61,7 +66,7 @@ Promise.all([
   .parallels([55.327583999999995,69.059967]) //parallels for conic projection
   .rotate([343.6173436862723]) //rotation for conic projection
   // .translate([432.31469742010825,256.8639471506867]) //translate to center the map in view;
-  .translate([w*1.1, h/2.25]); //translate to center the map in view;
+  .translate([w*1.2, h/2.25]); //translate to center the map in view;
 
   // .fitSize([500, 700], data);
 
@@ -74,6 +79,17 @@ Promise.all([
   const color = d3.scaleSequential(
   d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"])
 );
+
+c(alla[0][select.value])
+
+// let snittTextTotal = snittText1 + "<br>" + snittText2 + " <span class='fet'>" + alla[0][select.value] + "</span> kr/mån."
+
+let snitt = d3.select("#snitt")
+              .attr("class", "BodyImage-caption")
+              // .html(snittText1 + "<br>" + snittText2 + " <span class='fet'>" + alla[0][select.value] + "</span> kr/mån.");
+              .html(snittText1 + alla[0][select.value] + snittText2);
+// snitt.textContent = "bla bla";
+
 function faerg() {
     const varden = data.features
       .map(f => loner[f.properties.NUTS_ID])
@@ -106,10 +122,19 @@ function faerg() {
     laddaLoner();
     faerg();
     tooltip.style("display", "none");
+    snitt = d3.select("#snitt")
+              .attr("class", "BodyImage-caption")
+              .html(snittText1 + alla[0][select.value] + snittText2);
   });
 
   // Tryck utanför kartan stänger tooltipen (pekskärmar)
   d3.select("body").on("click", () => tooltip.style("display", "none"));
+
+  // snitt.text(`Genomsnitt: ${harVarde(alla[select.value]) ? alla[select.value].toLocaleString("sv-SE") + " kr/månad" : "uppgift saknas"}`);
+
+  // snitt.innerHTML = snitt.text();
+  // c(lonedata)
+  // c(lonedata[0][select.value])
 
 });
 
@@ -120,8 +145,9 @@ function visaTooltip(d) {
 
     tooltip
     .style("display", "block")
-    .html(`${select.options[select.selectedIndex].text} i
-      ${namn}: <b>${harVarde(lon) ? lon.toLocaleString("sv-SE") + " kr/månad" : "uppgift saknas"}</b>`);
+    // .html(`${select.options[select.selectedIndex].text} i
+    //   ${namn}: <b>${harVarde(lon) ? lon.toLocaleString("sv-SE") + " kr/månad" : "uppgift saknas"}</b>`);
+      .html(`${namn}: <br>${harVarde(lon) ? lon.toLocaleString("sv-SE") + " kr/mån" : "uppgift saknas"}</b>`);
 }
 
 function flyttaTooltip() {
