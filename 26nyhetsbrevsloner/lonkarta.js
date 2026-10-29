@@ -130,7 +130,9 @@ function faerg() {
   // Tryck utanför kartan stänger tooltipen (pekskärmar)
   d3.select("body").on("click", () => tooltip.style("display", "none"));
 
-  informHeight();
+  requestAnimationFrame(informHeight);
+
+  
 
  
 });
