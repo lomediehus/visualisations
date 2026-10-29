@@ -130,12 +130,9 @@ function faerg() {
   // Tryck utanför kartan stänger tooltipen (pekskärmar)
   d3.select("body").on("click", () => tooltip.style("display", "none"));
 
-  // snitt.text(`Genomsnitt: ${harVarde(alla[select.value]) ? alla[select.value].toLocaleString("sv-SE") + " kr/månad" : "uppgift saknas"}`);
+  informHeight();
 
-  // snitt.innerHTML = snitt.text();
-  // c(lonedata)
-  // c(lonedata[0][select.value])
-
+ 
 });
 
 function visaTooltip(d) {
