@@ -63,7 +63,9 @@
 
 #snitt {
 	position: absolute;
-	top: 60px;
+	width: 150px;
+	top: 250px;
+	right: 40px;
 
 }
 
