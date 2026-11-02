@@ -52,6 +52,28 @@
  @media (hover: hover) {
 	path:hover { stroke: white; stroke-width: 1; }
 }
+
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  max-width: 500px;
+  font-size: 0.85em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+
  #tooltip {
       position: absolute;
       background: white;
@@ -81,6 +103,29 @@ svg.map {
 	/* position: absolute;
 	top: 40px;
 	left: 20px; */
+}
+
+/* Behållaren: lägger raderna bredvid varandra och bryter rad vid brist på plats */
+#legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 14px; /* 8px mellan rader, 14px mellan kolumner */
+	max-width: 500px; /* samma bredd som kartan */
+	font-size: 0.85em;
+}
+
+/* En rad i legenden: färgruta + text, centrerade i höjdled */
+.legend-item {
+	display: flex;
+	align-items: center;
+	gap: 5px; /* avstånd mellan ruta och text */
+}
+
+/* Den färgade rutan; färgen sätts från JavaScript */
+.legend-swatch {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
 }
 
 #rubrik {

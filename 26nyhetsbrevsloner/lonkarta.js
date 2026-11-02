@@ -76,11 +76,63 @@ Promise.all([
   //   .domain([33000, 39000]);
 
   // const color = d3.scaleSequential(d3.interpolateBlues);
-  const color = d3.scaleSequential(
-  d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"])
-);
+  // const color = d3.scaleSequential(
+  // d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"])
 
-c(alla[0][select.value])
+  const color = d3.scaleThreshold()
+  .domain([31000, 33000])
+  .range(d3.quantize(
+    d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"]),
+    3
+  ));
+// );
+
+// Hämta gränsvärdena (31000, 33000, 35000) från färgskalan, så att legenden alltid stämmer med kartan och du bara behöver ändra på ett ställe
+const granser = color.domain();
+
+// Hjälpfunktion som skriver tal på svenskt vis: 31000 -> "31 000"
+const format = v => v.toLocaleString("sv-SE");
+
+// Skapa en lista med ett objekt per färg: { farg: "#...", etikett: "text" }
+// color.range() är listan med färgerna, i är färgens index
+const legendData = color.range().map((farg, i) => {
+  let etikett;
+
+  if (i === 0) {
+    // Första färgen: allt under den lägsta gränsen
+    etikett = `Under ${format(granser[0])}`;
+  } else if (i === color.range().length - 1) {
+    // Sista färgen: allt från den högsta gränsen och uppåt
+    etikett = `${format(granser[i - 1])} eller mer`;
+  } else {
+    // Färgerna emellan: från förra gränsen till (men inte med) nästa
+    etikett = `${format(granser[i - 1])} till <${format(granser[i])}`;
+  }
+
+  return { farg, etikett };
+});
+
+// Extra rad för områden som saknar uppgift (grå, som på kartan)
+legendData.push({ farg: "#ccc", etikett: "Uppgift saknas" });
+
+// Skapa en div per post i legendData inuti <div id="legend">
+const legend = d3.select("#legend")
+  .selectAll(".legend-item")   // väljer (ännu icke existerande) rader
+  .data(legendData)            // koppla datan till raderna
+  .enter()                     // ett element per dataobjekt som saknar rad
+  .append("div")
+  .attr("class", "legend-item");
+
+// Färgrutan i varje rad, färgad med objektets färg
+legend.append("span")
+  .attr("class", "legend-swatch")
+  .style("background-color", d => d.farg);
+
+// Texten bredvid färgrutan
+legend.append("span")
+  .text(d => d.etikett);
+
+// c(alla[0][select.value])
 
 // let snittTextTotal = snittText1 + "<br>" + snittText2 + " <span class='fet'>" + alla[0][select.value] + "</span> kr/mån."
 
@@ -95,7 +147,7 @@ function faerg() {
       .map(f => loner[f.properties.NUTS_ID])
       .filter(harVarde)
       .filter(v => v !== undefined);
-    color.domain(d3.extent(varden));
+    // color.domain(d3.extent(varden));
     svg.selectAll("path")
       .attr("fill", d => harVarde(loner[d.properties.NUTS_ID]) 
         ? color(loner[d.properties.NUTS_ID])
