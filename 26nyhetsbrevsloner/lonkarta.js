@@ -25,7 +25,7 @@ c(select.value)
 let alla = [];
 let loner = {};
 
-const snittText1 = "Genomsnitts-<br>löner 2025.<br>Hela landet: <span class='fet stor'>";
+const snittText1 = "Hela landet: <span class='fet stor'>";
 const snittText2 = "</span><br> kr/mån.";
 
 function yrkesnyckel() {
@@ -72,20 +72,25 @@ Promise.all([
 
   const path2 = d3.geoPath().projection(projection);
 
-  // const color = d3.scaleSequential(d3.interpolateBlues)
-  //   .domain([33000, 39000]);
-
   // const color = d3.scaleSequential(d3.interpolateBlues);
   // const color = d3.scaleSequential(
   // d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"])
 
   const color = d3.scaleThreshold()
-  .domain([31000, 33000])
+  .domain([30000,31000,32000,33000,34000])
   .range(d3.quantize(
     d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"]),
-    3
+    6
   ));
-// );
+
+
+  // Alternativ färgskala med färre steg
+  // const color = d3.scaleThreshold()
+  // .domain([31000, 33000])
+  // .range(d3.quantize(
+  //   d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"]),
+  //   3
+  // ));
 
 // Hämta gränsvärdena (31000, 33000, 35000) från färgskalan, så att legenden alltid stämmer med kartan och du bara behöver ändra på ett ställe
 const granser = color.domain();

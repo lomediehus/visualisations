@@ -58,7 +58,6 @@
   flex-wrap: wrap;
   gap: 8px 14px;
   max-width: 500px;
-  font-size: 0.85em;
 }
 
 .legend-item {
@@ -111,7 +110,6 @@ svg.map {
 	flex-wrap: wrap;
 	gap: 8px 14px; /* 8px mellan rader, 14px mellan kolumner */
 	max-width: 500px; /* samma bredd som kartan */
-	font-size: 0.85em;
 }
 
 /* En rad i legenden: färgruta + text, centrerade i höjdled */
@@ -148,4 +146,11 @@ svg.map {
 	.flexcontainerInner {
 		width: 100%;
 	} */
+}
+
+ @media only screen and (min-width: 600px) {
+	#snitt {
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
