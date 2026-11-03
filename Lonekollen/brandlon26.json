@@ -439,11 +439,7 @@
     "Lon":31098.0,
     "Kommunlista":["Motala", "Vadstena"]
   },
-  {
-    "Raddningstjanst":"Mullsjö Räddningstjänst",
-    "Lon":33394.0,
-    "Kommunlista":["Askersund", "Hallsberg", "Kumla", "Laxå", "Lekeberg", "Lindesberg", "Ljusnarsberg", "Nora", "Örebro"]
-  },
+
   {
     "Raddningstjanst":"Höglandets Räddningstjänstförbund",
     "Lon":31942.0,
