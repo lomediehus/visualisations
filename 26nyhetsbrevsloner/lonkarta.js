@@ -128,6 +128,7 @@ const legend = d3.select("#legend")
   .append("div")
   .attr("class", "legend-item");
 
+
 // Färgrutan i varje rad, färgad med objektets färg
 legend.append("span")
   .attr("class", "legend-swatch")
@@ -136,6 +137,8 @@ legend.append("span")
 // Texten bredvid färgrutan
 legend.append("span")
   .text(d => d.etikett);
+
+informHeight();
 
 // c(alla[0][select.value])
 

@@ -112,6 +112,7 @@ svg.map {
 
 /* Behållaren: lägger raderna bredvid varandra och bryter rad vid brist på plats */
 #legend {
+	margin-top: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 8px 14px; /* 8px mellan rader, 14px mellan kolumner */
