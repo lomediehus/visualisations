@@ -46,7 +46,7 @@ const svg = d3.select("svg");
 const tooltip = d3.select("#tooltip").attr("class", "BodyImage-caption");
 // const snitt = d3.select("#snitt").attr("class", "BodyImage-caption").text(select.value);
 
-const w = 320;
+const w = 200;
 const h = 435;
 svg.attr("viewBox", "0 0 " + w + " " + h)
 
@@ -66,7 +66,7 @@ Promise.all([
   .parallels([55.327583999999995,69.059967]) //parallels for conic projection
   .rotate([343.6173436862723]) //rotation for conic projection
   // .translate([432.31469742010825,256.8639471506867]) //translate to center the map in view;
-  .translate([w*1.1, h/2.25]); //translate to center the map in view;
+  .translate([w*1.7, h/2.25]); //translate to center the map in view;
 
   // .fitSize([500, 700], data);
 

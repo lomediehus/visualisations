@@ -82,13 +82,17 @@
       display: none;
 }
 
+#kartbox {
+ display: flex;
+ flex-direction: row;
+ justify-content: start;
+}
+
 #snitt {
-	position: absolute;
 	width: 150px;
-	/* top: 250px; */
 	top: 40%;
-	/* transform: translateY(-50%); */
-	left: 60%;
+	/* left: min(500px, 100% - 40px); */
+    /* margin-left: 20px; */
 
 }
 
@@ -148,9 +152,7 @@ svg.map {
 	} */
 }
 
- @media only screen and (min-width: 600px) {
-	#snitt {
-		left: 50%;
-		transform: translateX(-50%);
-	}
+ @media only screen and (min-width: 590px) {
+ /* #snitt { margin-left: 50px; } */
+
 }
