@@ -1,1 +1,46 @@
 
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nyhetsbrevslöner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Har din lön hängt med?</title>
+    <link rel="stylesheet" href="lonkarta.css" type="text/css">
+    <link rel="stylesheet" href="../arbetet_assets/stylesheets/arbetet.css" type="text/css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="../iframe-helper/ka.css"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../arbetet_assets/img/favicon.ico">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  </head>
+  <body class="Body">
+    <div id="content">  
+
+      <!-- <h2 id="rubrik">Jobbar du med anläggning, renhållning eller trädgård? Här kan du se lönerna i ditt yrke</h2> -->
+      <select class="BodyImage-caption fet" id="yrke">
+        <option class="BodyImage-caption" value="Anlagg">Anläggningsarbetare</option>
+        <option class="BodyImage-caption" value="Kyrkvaktmastare">Kyrkvaktmästare</option>
+        <option class="BodyImage-caption" value="Kyrkogardsarbetare">Kyrkogårdsarbetare</option>
+        <option class="BodyImage-caption" value="Renhall">Renhållningsarbetare</option>
+        <option class="BodyImage-caption" value="Park">Parkarbetare</option>
+      </select>
+      <div id="forklaring" class="BodyImage-caption">Genomsnittslöner 2025.</div>
+      <div id="kartbox">
+          <svg class="map"></svg>
+          <div id="snitt"></div>
+      </div>
+      <div id="legend" class="BodyImage-caption"></div>
+      <div id="legend"></div>
+      <div id="tooltip"></div>
+
+    </div>
+
+
+
+    <script src="../iframe-helper/iframe-helper.js"></script>
+    <script type="text/javascript" src="lonkarta.js"></script>
+
+
+  </body>
+</html>
