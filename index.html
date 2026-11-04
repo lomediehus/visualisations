@@ -1,94 +1,46 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Framgångskartan</title>
-  <link rel="stylesheet" href="framgang.css" type="text/css">
-  <link rel="stylesheet" href="../arbetet_assets/stylesheets/arbetet.css" type="text/css">
 
-  <!-- <link rel="stylesheet" type="text/css" href="../iframe-helper/ka.css"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="../ka_assets/favicon.ico">
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nyhetsbrevslöner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Har din lön hängt med?</title>
+    <link rel="stylesheet" href="lonkarta.css" type="text/css">
+    <link rel="stylesheet" href="../arbetet_assets/stylesheets/arbetet.css" type="text/css">
 
-<script src="d3.v5.min.js"></script>
-<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../iframe-helper/ka.css"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../arbetet_assets/img/favicon.ico">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
+  </head>
+  <body class="Body">
+    <div id="content">  
 
-</head>
+      <!-- <h2 id="rubrik">Jobbar du med anläggning, renhållning eller trädgård? Här kan du se lönerna i ditt yrke</h2> -->
+      <select class="BodyImage-caption fet" id="yrke">
+        <option class="BodyImage-caption" value="Anlagg">Anläggningsarbetare</option>
+        <option class="BodyImage-caption" value="Kyrkvaktmastare">Kyrkvaktmästare</option>
+        <option class="BodyImage-caption" value="Kyrkogardsarbetare">Kyrkogårdsarbetare</option>
+        <option class="BodyImage-caption" value="Renhall">Renhållningsarbetare</option>
+        <option class="BodyImage-caption" value="Park">Parkarbetare</option>
+      </select>
+      <div id="forklaring" class="BodyImage-caption">Genomsnittslöner 2025.</div>
+      <div id="kartbox">
+          <svg class="map"></svg>
+          <div id="snitt"></div>
+      </div>
+      <div id="legend" class="BodyImage-caption"></div>
+      <div id="legend"></div>
+      <div id="tooltip"></div>
 
-<body>
-
-  <div id="content">
-
-  <div id="loadercontainer">
-    
-    <!-- <audio id="hjulljud" src="hjulljud.mp3" preload="auto">
-      Your browser does not support the <code>audio</code> element.
-    </audio>
-    <div id="hjul" class="wheel"><img id="hjulimg" src="lyckohjul.png"></div>
-    <div id="hjultext">    <h3>Snurra hjulet!</h3>
-    <p class="u-textMeta">Klicka för att slumpa fram en framgång!</p></div> -->
-
-  </div>
-
-  <!-- <div id="vinjett">
-    <img id="vinjettbild" src="vinjett.png">
-  </div> -->
-
-  
-
-
-  <div id="kartpopup"></div>
-
-  <div id="overlay"></div>
+    </div>
 
 
 
-  <div id="kartdiv"></div>
-
-  <!-- <div id="radiobuttons" class="u-textMeta" style="display:none;">
-    <p class="u-textMeta" >Välj ämne här:</p>
-    <form class="kategori">
-      <input type="radio" id="kat7"class="checkbox" name="kategorier" value="minutstyrning">
-      <label for="kat7" class="pink">Minutstyrning</label><br>
-
-      <input type="radio" id="kat4"class="checkbox" name="kategorier" value="arbetsvillkor">
-      <label for="kat4" class="darkgreen">Arbetsvillkor</label><br>  
-
-      <input type="radio" id="kat1"class="checkbox" name="kategorier" value="arbetskläder">
-      <label for="kat1" class="blue">Arbetskläder</label><br>
-
-      <input type="radio" id="kat10"class="checkbox" name="kategorier" value="utbildning">
-      <label for="kat10" class="orange">Utbildning</label><br>
-
-      <input type="radio" id="kat5"class="checkbox" name="kategorier" value="dygnsvila">
-      <label for="kat5" class="lila">Dygnsvila</label><br>  
-      
-      <input type="radio" id="kat3"class="checkbox" name="kategorier" value="arbetstid">
-      <label for="kat3" class="green">Arbetstid</label><br>
-      
-      <input type="radio" id="kat6"class="checkbox" name="kategorier" value="lön">
-      <label for="kat6" class="turkos">Lön</label><br>  
-
-      <input type="radio" id="allaKategorier"class="checkbox" name="kategorier" value="alla">
-      <label for="allaKategorier" class="red inactive">Se alla</label><br><br>
-
-    </form>
-  </div> -->
-
-</div>
+    <script src="../iframe-helper/iframe-helper.js"></script>
+    <script type="text/javascript" src="lonkarta.js"></script>
 
 
-
-
-
-
-
-  <script src="../iframe-helper/iframe-helper.js"></script>
-
-
-  <script type="text/javascript" src="framgang.js"></script>
-
-
-</body>
-
+  </body>
+</html>
