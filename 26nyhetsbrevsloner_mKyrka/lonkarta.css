@@ -1,0 +1,161 @@
+* {
+	margin-left: 0px;
+	margin-right: 0px;
+	/* padding: 0px; */
+	box-sizing: border-box;
+  }
+  
+  /* For hiding scrollbar in Firefox without impacting scrolling function */
+  html {
+	scrollbar-width: none;
+  }
+
+  
+  body {
+	/* background-color: #fcfaf5; */
+
+	width: 100%;
+	/* For hiding scrollbar in Edge and Explorer without impacting scrolling function */
+	-ms-overflow-style: none;
+  }
+  
+  /* For hiding scrollbar in Chrome, Safari, Opera and other webkit browsers, without impacting scrolling function */
+  body::-webkit-scrollbar {
+	display: none;
+  }
+
+  select {
+	background-color: #ffffff;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	padding: 3px 5px;
+  }
+
+  select#yrke {
+	width: 100%;
+	/* position: absolute;
+	top: 20px; */
+  }
+  
+
+
+#content {
+	/* font-family: Arial, sans-serif; */
+	background-color: #fef5a1;
+	padding: 20px;
+	width: 100%;
+	line-height: 1.5;
+	/* min-height: 770px; */
+}
+
+ path { stroke: white; stroke-width: 0.5; }
+ @media (hover: hover) {
+	path:hover { stroke: white; stroke-width: 1; }
+}
+
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  max-width: 500px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+
+ #tooltip {
+      position: absolute;
+      background: white;
+      padding: 10px;
+      border: 1px solid #aaa;
+      pointer-events: none;
+      display: none;
+}
+
+#kartbox {
+ display: flex;
+ flex-direction: row;
+ justify-content: start;
+ align-items: center;
+}
+
+#snitt {
+	width: 150px;
+	top: 40%;
+	height: 150px;
+	/* left: min(500px, 100% - 40px); */
+    /* margin-left: 20px; */
+
+}
+
+svg.map {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	/* margin-top: 20px; */
+	/* position: absolute;
+	top: 40px;
+	left: 20px; */
+}
+
+/* Behållaren: lägger raderna bredvid varandra och bryter rad vid brist på plats */
+#legend {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 14px; /* 8px mellan rader, 14px mellan kolumner */
+	max-width: 500px; /* samma bredd som kartan */
+}
+
+/* En rad i legenden: färgruta + text, centrerade i höjdled */
+.legend-item {
+	display: flex;
+	align-items: center;
+	gap: 5px; /* avstånd mellan ruta och text */
+}
+
+/* Den färgade rutan; färgen sätts från JavaScript */
+.legend-swatch {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+}
+
+#rubrik {
+	/* z-index: 10; */
+	position: relative;
+}
+
+.fet {
+	font-weight: bold;
+}
+
+.stor {
+	font-size: 1.5em;
+}
+
+  @media only screen and (max-width: 570px) {
+	/* .flexcontainer {
+		flex-direction: column;
+	}
+	.flexcontainerInner {
+		width: 100%;
+	} */
+}
+
+ @media only screen and (min-width: 590px) {
+ /* #snitt { margin-left: 50px; } */
+
+}
