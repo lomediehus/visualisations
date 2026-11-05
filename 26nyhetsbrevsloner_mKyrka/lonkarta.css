@@ -48,13 +48,13 @@
 	/* min-height: 770px; */
 }
 
-#forklaring {
+/* #forklaring {
 	position:absolute;
 	top: 60px;
 	left: 20px;
 	width: 30%;
 	margin-left: 5px;
-}
+} */
 
  path { stroke: white; stroke-width: 0.5; }
  @media (hover: hover) {
@@ -111,7 +111,7 @@
 
 #snitt {
 	top: 40%;
-	height: 70px;
+	/* height: 70px; */
 	/* left: min(500px, 100% - 40px); */
     /* margin-left: 20px; */
 
@@ -165,13 +165,19 @@ svg.map {
 	font-size: 1.5em;
 }
 
-  @media only screen and (max-width: 570px) {
+  @media only screen and (max-width: 450px) {
 	/* .flexcontainer {
 		flex-direction: column;
 	}
 	.flexcontainerInner {
 		width: 100%;
 	} */
+	 .stor {
+	font-size: 1.2em;
+	}
+	#snittbox {
+		padding: 5px;
+	}	
 }
 
  @media only screen and (min-width: 590px) {
