@@ -97,10 +97,21 @@
  align-items: center;
 }
 
-#snitt {
+#snittbox {
 	width: 150px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	padding: 10px;
+	
+
+	/* display: flex; */
+	/* flex-direction: column;
+	align-items: start; */
+}
+
+#snitt {
 	top: 40%;
-	height: 150px;
+	height: 70px;
 	/* left: min(500px, 100% - 40px); */
     /* margin-left: 20px; */
 
