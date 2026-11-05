@@ -42,7 +42,7 @@
 #content {
 	/* font-family: Arial, sans-serif; */
 	background-color: #fef5a1;
-	padding: 20px;
+	padding: 5px;
 	width: 100%;
 	line-height: 1.5;
 	/* min-height: 770px; */
@@ -98,15 +98,11 @@
 }
 
 #snittbox {
-	width: 150px;
+	width: 100px;
 	background-color: #ffffff;
 	border-radius: 6px;
 	padding: 10px;
-	
-
-	/* display: flex; */
-	/* flex-direction: column;
-	align-items: start; */
+	flex-shrink: 0;
 }
 
 #snitt {
@@ -121,12 +117,9 @@ svg.map {
 	display: block;
 	position: relative;
 	width: 100%;
-	max-width: 500px;
+	max-width: 100%;
 	height: auto;
-	/* margin-top: 20px; */
-	/* position: absolute;
-	top: 40px;
-	left: 20px; */
+	flex-grow: 1;
 }
 
 /* Behållaren: lägger raderna bredvid varandra och bryter rad vid brist på plats */
@@ -136,6 +129,7 @@ svg.map {
 	flex-wrap: wrap;
 	gap: 8px 14px; /* 8px mellan rader, 14px mellan kolumner */
 	max-width: 500px; /* samma bredd som kartan */
+	display: none;
 }
 
 /* En rad i legenden: färgruta + text, centrerade i höjdled */
@@ -177,6 +171,7 @@ svg.map {
 	}
 	#snittbox {
 		padding: 5px;
+		width: 70px;
 	}	
 }
 

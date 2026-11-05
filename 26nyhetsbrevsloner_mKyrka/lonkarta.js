@@ -64,7 +64,7 @@ const svg = d3.select("svg");
 const tooltip = d3.select("#tooltip").attr("class", "BodyImage-caption");
 
 const w = 200;
-const h = 435;
+const h = 470;
 svg.attr("viewBox", "0 0 " + w + " " + h)
 
 Promise.all([
@@ -77,7 +77,7 @@ Promise.all([
   laddaLoner();
 // const projection = d3.geoMercator()
   const projection = d3.geoConicEqualArea()
-  .scale(1800)
+  .scale(1900)
   // .center([17.2,62.34103687152436]) //projection center
   .center([17.2,62]) //projection center
 
@@ -85,7 +85,7 @@ Promise.all([
   .parallels([55.327583999999995,69.059967]) //parallels for conic projection
   .rotate([343.6173436862723]) //rotation for conic projection
   // .translate([432.31469742010825,256.8639471506867]) //translate to center the map in view;
-  .translate([w*1.7, h/2.25]); //translate to center the map in view;
+  .translate([w*1.8, h/2.25]); //translate to center the map in view;
 
   // .fitSize([500, 700], data);
 
