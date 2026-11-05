@@ -10,15 +10,6 @@ if (host.includes("github")) {
 c("kör skript version ")
 
 
-
-// Läs in data
-    // fetch("loner.json")
-    //   .then(r => r.json())
-    //   .then(data => {
-    //     alla = data;
-    //     // c(alla)
-       
-    //   });
 // Vilken karta varje yrke använder (nycklarna = value i <select> = nycklar i loner.json)
 const yrken = {
   Anlagg:            { karta: "nuts" },
@@ -41,6 +32,16 @@ c(select.value)
 let alla = [];
 let loner = {};
 
+const regionStift = document.querySelector("#region_stift");
+function uppdateraRegionStift(text) {
+  if (select.value === "Kyrkogardsarbetare" || select.value === "Kyrkvaktmastare") {
+    regionStift.innerHTML = "Kartan visar Sveriges 13 stift.";
+  } else {
+    regionStift.innerHTML = "Kartans visar regionindelning enligt EU:s NUTS-system";
+  }
+ 
+}
+
 const snittText1 = "Hela landet: <span class='fet stor'>";
 const snittText2 = "</span><br> kr/mån.";
 
@@ -61,7 +62,6 @@ const harVarde = v => typeof v === "number" && Number.isFinite(v);
 
 const svg = d3.select("svg");
 const tooltip = d3.select("#tooltip").attr("class", "BodyImage-caption");
-// const snitt = d3.select("#snitt").attr("class", "BodyImage-caption").text(select.value);
 
 const w = 200;
 const h = 435;
@@ -103,10 +103,10 @@ Promise.all([
   // d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"])
 
   const color = d3.scaleThreshold()
-  .domain([30000,31000,32000,33000,34000])
+  .domain([29000,30000,31000,32000,33000,34000])
   .range(d3.quantize(
     d3.interpolateRgbBasis(["#d1edf2", "#00bbdf", "#2e4874"]),
-    6
+    7
   ));
 
 
@@ -166,10 +166,6 @@ legend.append("span")
 
 informHeight();
 
-// c(alla[0][select.value])
-
-// let snittTextTotal = snittText1 + "<br>" + snittText2 + " <span class='fet'>" + alla[0][select.value] + "</span> kr/mån."
-
 const snitt = d3.select("#snitt").attr("class", "BodyImage-caption");
 
 // Visas bara om det finns ett riksvärde för yrket (raden "SE Riket" i loner.json)
@@ -223,6 +219,7 @@ function faerg() {
     ritaKarta();
     tooltip.style("display", "none");
     visaSnitt();
+    uppdateraRegionStift("Kartan visar Sveriges 13 stift.");
   });
 
   ritaKarta();

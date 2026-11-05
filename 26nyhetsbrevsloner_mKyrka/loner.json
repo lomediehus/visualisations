@@ -4,8 +4,8 @@
     "Renhall":30800,
     "Anlagg":34000,
     "Park":30900,
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":29800,
+    "Kyrkvaktmastare":32500
   },
   {
     "Kod":"SE11 Stockholm",
@@ -55,69 +55,69 @@
     "Anlagg":33200,
     "Park":31000
   },
-   {
+    {
     "Kod":"Uppsala stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":29600,
+    "Kyrkvaktmastare":32700
   },
   {
     "Kod":"Linköpings stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":29200,
+    "Kyrkvaktmastare":31800
   },
   {
     "Kod":"Skara stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":29900,
+    "Kyrkvaktmastare":32000
   },
   {
     "Kod":"Strängnäs stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":29800,
+    "Kyrkvaktmastare":33300
   },
   {
     "Kod":"Västerås stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":30100,
+    "Kyrkvaktmastare":32300
   },
   {
     "Kod":"Växjö stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":30300,
+    "Kyrkvaktmastare":31900
   },
   {
     "Kod":"Lunds stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":29800,
+    "Kyrkvaktmastare":32900
   },
   {
     "Kod":"Göteborgs stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":30800,
+    "Kyrkvaktmastare":32500
   },
   {
     "Kod":"Karlstads stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":29700,
+    "Kyrkvaktmastare":32300
   },
   {
     "Kod":"Härnösands stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":28300,
+    "Kyrkvaktmastare":32300
   },
   {
     "Kod":"Luleå stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":28800,
+    "Kyrkvaktmastare":32800
   },
   {
     "Kod":"Visby stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":"",
+    "Kyrkvaktmastare":31700
   },
   {
     "Kod":"Stockholms stift",
-    "Kyrkogardsarbetare":30000,
-    "Kyrkvaktmastare":30000
+    "Kyrkogardsarbetare":30800,
+    "Kyrkvaktmastare":33800
   }
 ]

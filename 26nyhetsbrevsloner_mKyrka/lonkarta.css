@@ -48,6 +48,14 @@
 	/* min-height: 770px; */
 }
 
+#forklaring {
+	position:absolute;
+	top: 60px;
+	left: 20px;
+	width: 30%;
+	margin-left: 5px;
+}
+
  path { stroke: white; stroke-width: 0.5; }
  @media (hover: hover) {
 	path:hover { stroke: white; stroke-width: 1; }
