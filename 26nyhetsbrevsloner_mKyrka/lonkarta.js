@@ -37,7 +37,7 @@ function uppdateraRegionStift(text) {
   if (select.value === "Kyrkogardsarbetare" || select.value === "Kyrkvaktmastare") {
     regionStift.innerHTML = "Kartan visar Sveriges 13 stift.";
   } else {
-    regionStift.innerHTML = "Regioner enligt EU:s NUTS-system.";
+    regionStift.innerHTML = "Kartan är indelad i regioner enligt EU:s så kallade NUTS-system.";
   }
  
 }
