@@ -1882,5 +1882,41 @@
     "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/05\/08103832\/tmoTnvWVDQA-Grupp-9.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=1800&h=1012",
     "datum":"2026\/06\/10",
     "ort":"Eskilstuna"
+  },
+  {
+    "rubrik":"Så fick Magdalena stopp på våldet mot personliga assistenter",
+    "kortrubrik":"Så stoppades våldet i assistansen",
+    "kategori":"arbetsvillkor",
+    "kategori_detaljerad":"arbetsmiljö",
+    "lat":56.0313,
+    "long":14.1737,
+    "url":"https:\/\/arbetet.se\/2026\/10\/07\/sa-fick-magdalena-stopp-pa-valdet-mot-personliga-assistenter\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/10\/01145752\/ka-kristianstad-uppfoljning.png",
+    "datum":"2026\/10\/07",
+    "ort":"Kristianstad"
+  },
+  {
+    "rubrik":"Vårdbiträdet Jonas fick rätt till övertids­pengar – efter fackets krav",
+    "kortrubrik":"Fick rätt till pengar för övertid",
+    "kategori":"lön",
+    "kategori_detaljerad":"lön",
+    "lat":58.2314,
+    "long":14.6536,
+    "url":"https:\/\/arbetet.se\/2026\/10\/05\/vardbitradet-jonas-fick-ratt-till-overtidspengar-efter-fackets-krav\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/10\/02112206\/ka-overtid-odeshog.png",
+    "datum":"2026\/10\/05",
+    "ort":"Ödeshög"
+  },
+  {
+    "rubrik":"Ella lurades på fast jobb – fick 100 000 i ersättning: ”Ett slags erkännande”",
+    "kortrubrik":null,
+    "kategori":"trygghet",
+    "kategori_detaljerad":"anställning",
+    "lat":59.2094,
+    "long":18.5,
+    "url":"https:\/\/arbetet.se\/2026\/11\/10\/ella-lurades-pa-fast-jobb-fick-100-000-i-ersattning-ett-slags-erkannande\/",
+    "bildurl":"https:\/\/media.arto.se\/app\/uploads\/sites\/10\/2026\/11\/06143424\/ka-ella.png",
+    "datum":"2026\/11\/10",
+    "ort":"Stockholm"
   }
 ]

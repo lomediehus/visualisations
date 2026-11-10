@@ -148,6 +148,11 @@ label:hover {
   background-color: red;
 }
 
+.gra {
+  fill: #807f7d;
+  background-color: #807f7d;
+}
+
 .inactive {
   opacity: 0.2;
   pointer-events: none;
